@@ -9,9 +9,10 @@ Expected public URL: https://gjinge.github.io/Personal_Website/
 ```text
 index.html                  Page content and metadata
 photography.html            Photo collections and fullscreen viewer
-videos.html                 Video portfolio with external work links
-assets/js/portfolio-data.js  Real photo and video entries
-assets/js/portfolio.js       Collection filters, photo viewer, video cards
+social.html                 Personal social accounts and channels
+videos.html                 Redirect for the former page URL
+assets/js/portfolio-data.js  Real photos and public account entries
+assets/js/portfolio.js       Collection filters, photo viewer, account cards
 assets/css/styles.css       Responsive styles
 assets/js/main.js           Theme, motion controls, and navigation feedback
 assets/js/visitors.js       Map loading, timeout recovery, and resizing
@@ -36,11 +37,11 @@ From this directory, run `python -m http.server 8000 --bind 127.0.0.1`, then ope
 - **Appearance:** edit `assets/css/styles.css`; check desktop and mobile layouts and keyboard focus after changes.
 - **Display preferences:** the header provides theme and motion controls. `jg-theme` and `jg-motion` in localStorage retain only these preferences. The default is dark; reduced-motion system preferences disable decorative animation. The page remains readable when JavaScript or localStorage is unavailable. Print styles use a light background.
 
-## Photography and video portfolio
+## Photography and social accounts
 
-The header links to About, Publications, Projects, CV, Photography, and Videos. Existing research, education, honors, and contact sections remain on the homepage. The old `#manuscripts` link remains available; review status must not be represented as an accepted publication.
+The header links to About, Publications, Projects, CV, Photography, and Social. Social is a directory of the owner's social media accounts and channels. The former `videos.html` URL redirects to `social.html`. Existing research, education, honors, and contact sections remain on the homepage. The old `#manuscripts` link remains available; review status must not be represented as an accepted publication.
 
-Both creative pages initially show an honest empty state. Add real works to `assets/js/portfolio-data.js`. No demo images or invented video links are published. The following is a schema example, not an existing work:
+Both pages initially show an honest empty state. Add real photos and user-provided public account links to `assets/js/portfolio-data.js`. No demo images or invented accounts are published. The following is a schema example, not an existing account or work:
 
 ```js
 window.portfolio = {
@@ -52,22 +53,23 @@ window.portfolio = {
     collection: 'Your series name',
     caption: 'Optional place, date, or short story'
   }],
-  videos: [{
-    url: 'https://your-video-platform.example/your-work',
-    title: 'Your video title',
-    description: 'A short description of the work',
-    poster: 'assets/videos/your-cover.webp', // optional
-    platform: 'Your video platform'
+  accounts: [{
+    url: 'https://your-platform.example/your-profile',
+    name: 'Your account display name',
+    handle: '@your-handle', // optional
+    description: 'What you share on this account',
+    avatar: 'assets/social/your-avatar.webp', // optional
+    platform: 'Your social platform'
   }]
 };
 ```
 
 - Photos retain their proportions in a responsive column layout. Series names create filters automatically. Click to open the modal viewer; use Previous/Next, arrow keys, or Escape to close. The modal restores keyboard focus to the opening photo.
 - Export web-sized photos before adding them; include descriptive alt text. Publish only selected images and captions. Strip location metadata if you do not want it exposed.
-- Video cards use local covers and HTTPS links. A missing cover uses a neutral play panel. The player opens on the original platform in a new tab; this site does not preload external players.
-- Keep actual video files on the selected video platform, and store their public work links here. No account credentials are needed in this repository.
+- Account cards display the platform, account name, optional handle/avatar, and content focus. HTTPS profile links open in a new tab. Missing avatars use a neutral @ symbol.
+- Use account/channel homepages rather than individual video URLs. No account credentials are needed in this repository, and this page does not preload platform feeds or players.
 - Update shared navigation in all three HTML pages together. Theme controls use the same preferences across pages.
-- Photos and videos require JavaScript for rendering; an explanatory message is shown when it is disabled.
+- Photos and account cards require JavaScript for rendering; an explanatory message is shown when it is disabled.
 
 ## Visitor map
 

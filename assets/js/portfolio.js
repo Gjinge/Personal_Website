@@ -17,20 +17,23 @@
     img.src = src; img.alt = alt; img.loading = 'lazy'; img.decoding = 'async';
     return img;
   };
-  if (kind === 'videos') {
+  if (kind === 'accounts') {
     items.forEach(item => {
       let url;
       try { url = new URL(item.url); } catch (_) { return; }
       if (url.protocol !== 'https:') return;
-      const card = node('a', 'video-card');
+      const card = node('a', 'social-card');
       card.href = url.href; card.target = '_blank'; card.rel = 'noopener noreferrer';
-      const cover = node('div', 'video-cover');
-      if (item.poster) cover.append(image(item.poster, ''));
-      cover.append(node('span', 'video-play', '▶'));
-      cover.setAttribute('aria-hidden', 'true');
-      const info = node('div', 'video-info');
-      info.append(node('p', 'eyebrow', item.platform || url.hostname), node('h2', '', item.title), node('p', '', item.description), node('span', 'text-link', 'Watch video ↗'));
-      card.append(cover, info); grid.append(card);
+      const avatar = node('div', 'social-avatar');
+      if (item.avatar) avatar.append(image(item.avatar, ''));
+      else avatar.textContent = '@';
+      avatar.setAttribute('aria-hidden', 'true');
+      const info = node('div', 'social-info');
+      info.append(node('p', 'eyebrow', item.platform || url.hostname), node('h2', '', item.name || item.platform || url.hostname));
+      if (item.handle) info.append(node('p', 'social-handle', item.handle));
+      if (item.description) info.append(node('p', '', item.description));
+      info.append(node('span', 'text-link', 'Visit profile ↗'));
+      card.append(avatar, info); grid.append(card);
     });
     if (!grid.children.length) document.getElementById('portfolio-empty').hidden = false;
     return;

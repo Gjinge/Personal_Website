@@ -1,4 +1,4 @@
-// Add only real, reviewed works. Paths are relative to the site root.
+// Add only real photos and user-provided public accounts. Paths are relative to the site root.
 // Photo: {src, alt, title, collection, caption}; full is an optional larger image.
-// Video: {url, title, description, poster, platform}; poster is an optional local image.
-window.portfolio = { photos: [], videos: [] };
+// Account: {url, name, description, platform, handle, avatar}; handle and local avatar are optional.
+window.portfolio = { photos: [], accounts: [] };
