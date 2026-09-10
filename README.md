@@ -37,6 +37,7 @@ From this directory, run `python -m http.server 8000 --bind 127.0.0.1`, then ope
 
 ## Update content
 
+- **News:** edit the `#news` section in `index.html`. Add one `<li>` per announcement, newest first, with a `.news-date` label and a paragraph containing at least one relevant link (university, paper, project, or venue). The first entry announces the Fall 2026 UW–Madison visiting semester. Future submission and acceptance news should use confirmed dates and exact statuses; do not describe submitted or under-review work as accepted. Use a term or month label when no exact date is known.
 - **CV:** replace `cv.pdf` with a reviewed, public version. Check both the PDF text and embedded links for private information before publishing.
 - **Research and manuscripts:** edit the corresponding sections in `index.html`. Preserve the exact status of submitted work; add authors or paper links only when confirmed. Update the footer date when content changes.
 - **Hero illustration:** `.research-visual` in `index.html` is a decorative SVG research constellation with a JG monogram. It represents research themes, not measured results. Replace it with a real photograph if desired and provide descriptive alt text.

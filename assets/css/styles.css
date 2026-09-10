@@ -107,6 +107,13 @@ h1 { font-size: clamp(64px, 7.3vw, 102px); line-height: 1.04; font-weight: 650; 
 .core-monogram>span { font-size: 54px; font-weight: 300; line-height: 1.2; letter-spacing: -5px; padding-right: 5px; color: var(--accent); }.core-monogram small { font-family: var(--mono); font-size: 7px; letter-spacing: 1px; color: var(--muted); margin-top: 8px; }
 .orbit-label { position: absolute; border: 1px solid var(--rule); border-radius: 4px; padding: 5px 9px; background: var(--surface); color: var(--muted); font: 8px/1.5 var(--mono); letter-spacing: .8px; }
 .label-memory { left: 1%; top: 29%; }.label-modal { right: 0; top: 20%; color: var(--violet); }.label-wireless { right: 1%; bottom: 21%; color: var(--accent); }
+.news-section { padding: 42px 0 48px; border-top: 1px solid var(--rule); }
+.news-section h2 { font-size: 29px; font-weight: 500; letter-spacing: -.8px; margin-bottom: 28px; }
+.news-list { list-style: none; margin: 0; padding: 0; }
+.news-list li { display: grid; grid-template-columns: 180px minmax(0, 1fr); gap: 25px; align-items: baseline; }
+.news-list li+li { margin-top: 24px; }
+.news-date { color: var(--muted); font: 12px/1.8 var(--mono); }
+.news-list p { margin: 0; font-size: 16px; line-height: 1.85; }
 .interests { display: grid; grid-template-columns: 180px 1fr; align-items: center; gap: 25px; padding: 23px 0; border-block: 1px solid var(--rule); }
 .interests h2 { font-family: var(--mono); font-size: 11px; line-height: 1.7; text-transform: uppercase; letter-spacing: 1.3px; font-weight: 400; margin: 0; color: var(--muted); }
 .interest-tags { margin: 0; padding: 0; list-style: none; display: flex; flex-wrap: wrap; gap: 9px; }
@@ -160,6 +167,10 @@ footer { border-top: 1px solid var(--rule); padding: 25px 0 35px; display: flex;
   .interests { grid-template-columns: 150px 1fr; }.entry-heading { display: block; }
 }
 @media (max-width: 760px) {
+  .news-section { padding: 30px 0; }
+  .news-section h2 { font-size: 25px; margin-bottom: 22px; }
+  .news-list li { grid-template-columns: 1fr; gap: 7px; }
+  .news-list p { font-size: 14px; }
   .site-header, main, footer { width: calc(100% - 40px); }
   .site-header { min-height: 108px; flex-wrap: wrap; justify-content: space-between; align-content: center; gap: 8px; padding-block: 11px; }
   .wordmark>span:last-child { display: inline; }.small-monogram { width: 30px; height: 30px; font-size: 14px; border-radius: 8px 2px 8px 2px; }
