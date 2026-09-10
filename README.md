@@ -8,8 +8,9 @@ Expected public URL: https://gjinge.github.io/Personal_Website/
 
 ```text
 index.html                  Page content and metadata
-projects/index.html         Unity topic and project cards at /projects/
-projects/*/index.html       Five project detail pages at /projects/<slug>/
+projects/index.html         Main project cards at /projects/
+projects/unity/index.html   Unity overview: two games and grouped code notes
+projects/*/index.html       Game details and redirects for former exercise pages
 projects.html, unity-*.html  Redirects for older project URLs
 source/unity/               Project Assets, Packages, ProjectSettings, and manifests
 assets/downloads/           Per-project Unity source ZIPs
@@ -82,7 +83,9 @@ window.portfolio = {
 
 ## Unity projects
 
-The Projects navigation opens `projects/`. Individual pages have shareable directory URLs such as `projects/apple-picker/`. Older `projects.html` and `unity-*.html` links redirect, preserving query strings and fragments when JavaScript is enabled. Relative asset, document, and navigation links account for the nested directories. The Unity topic covers Apple Picker, Mission Demolition, Collections, Hello World, and the Boids scene starter. Each detail page has overview, source-backed highlights, a visual, an inline source excerpt, individual file links, a GitHub source directory, and a ZIP download.
+The Projects navigation opens `projects/`, where Unity Game Development is one main project with the original Apple Picker gameplay image as its cover. The cover and title open `projects/unity/`. This overview links to the two game pages, `projects/apple-picker/` and `projects/mission-demolition/`, and groups Collections, Hello World, and Boids under Code & scene notes. These exercises have collapsible code excerpts, file links, and ZIP downloads rather than standalone project cards.
+
+The former `projects/{collections,hello-world,boids}/` and matching `unity-*.html` URLs redirect to the corresponding `#practice-<slug>` anchors on the Unity overview, preserving query strings. Other legacy project URLs retain their existing redirects. Game pages return to the Unity overview. Original source files and downloads are unchanged.
 
 Card images use a shared 16:9 frame, capped at 300 px high. Detail images retain their full proportions, fit a 930 px gallery column, and are capped at 540 px high. Clicking a detail image opens the original image. Images are not cropped to fit the frame.
 
@@ -93,7 +96,7 @@ Card images use a shared 16:9 frame, capped at 300 px high. Detail images retain
 - `mission-demolition-game.png` is an edit-mode rendering of the original scene with a wider camera and a neutral background, excluding UI. The runtime check exposed missing UI references and an empty level list. The page labels it an editor overview and records limitations.
 - Other previews are labelled SVG source excerpts, not gameplay screenshots. Boids has scene/prefab files but no custom behavior scripts in the supplied Assets, so no flocking implementation is claimed.
 - Original projects were not modified. No Unity capture scripts or test logs are published. Hash manifests and code excerpt graphics were generated from the supplied project files.
-- The older homepage `#projects` anchor remains and links to the new topic. Adding another project requires updating the Projects index and adding its detail page/assets.
+- The homepage `#projects` entry links to the Unity overview. Adding another main project requires its own cover card on the Projects index and a detail page; related games and exercises belong inside that project.
 
 ## Reading notes
 

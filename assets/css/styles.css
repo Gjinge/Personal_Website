@@ -270,6 +270,15 @@ nav a[aria-current="page"] { color: var(--accent); border-bottom: 2px solid var(
 .project-card-body { padding: 25px; }.project-card-body .eyebrow { margin-bottom: 14px; }.project-card h3 { font-size: 25px; }.project-card h3 a { color: var(--ink); text-decoration: none; }.project-card h3 a:hover { color: var(--accent); }
 .project-card-body>p:not(.eyebrow) { color: var(--muted); font-size: 14px; }
 .project-actions { display: flex; align-items: center; gap: 24px; flex-wrap: wrap; font-size: 13px; }
+.project-index-grid .project-card { background: transparent; border: 0; border-radius: 0; }
+.project-index-grid .project-card-body { padding: 23px 0 0; }
+.project-index-grid .project-cover { border-radius: 6px; }
+.practice-section { padding-block: 20px; }
+.practice-note { padding: 26px 0; border-bottom: 1px solid var(--rule); }
+.practice-note h3 { font-size: 19px; }
+.practice-note>p, .practice-caveat { color: var(--muted); font-size: 14px; }
+.practice-note .source-files { max-width: 930px; }
+.practice-note .source-files>p { overflow-wrap: anywhere; }
 .project-detail .portfolio-intro h1 { font-size: clamp(42px,6vw,76px); }
 .project-facts { display: flex; gap: 20px 35px; flex-wrap: wrap; padding: 25px 0; border-bottom: 1px solid var(--rule); color: var(--muted); font: 12px/1.8 var(--mono); }
 .project-prose { padding-top: 45px; max-width: 930px; }.project-prose h2, .project-gallery h2 { font-size: 29px; font-weight: 500; margin-bottom: 24px; }.project-prose p, .project-prose li { color: var(--muted); font-size: 15px; }.project-prose li { margin-bottom: 18px; }.project-prose strong { color: var(--ink); }.project-prose h2:not(:first-child) { margin-top: 40px; }
