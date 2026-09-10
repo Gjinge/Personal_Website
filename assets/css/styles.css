@@ -140,6 +140,12 @@ h3 { font-size: 19px; font-weight: 550; letter-spacing: -.35px; margin-bottom: 1
 .skills-list { margin: 0; }.skills-list>div { display: grid; grid-template-columns: 155px 1fr; gap: 20px; }.skills-list>div+div { margin-top: 22px; }dt { font: 11px/2 var(--mono); color: var(--accent); }dd { margin: 0; font-size: 14px; color: var(--muted); }
 .contact-section { position: relative; padding: 65px 0; }.contact-section .eyebrow { margin-bottom: 17px; }.contact-section h2 { font-size: clamp(28px, 3.2vw, 43px); font-weight: 450; letter-spacing: -1.2px; margin-bottom: 19px; }.contact-section>p:not(.eyebrow) { color: var(--muted); font-size: 14px; }.contact-links { display: flex; gap: 35px; flex-wrap: wrap; font-size: 15px; }
 .visitor-section { border-top: 1px solid var(--rule); text-align: center; padding: 50px 0; }.visitor-section .eyebrow { margin-bottom: 12px; }.visitor-section h2 { font-size: 32px; font-weight: 450; letter-spacing: -1px; margin-bottom: 30px; }.visitor-map { width: 100%; max-width: 780px; min-height: 165px; margin: 0 auto; border: 1px solid var(--rule); border-radius: 8px; overflow: hidden; }.visitor-map #mapmyvisitors-widget, .visitor-map .mapmyvisitors-map { max-width: 100%; }.visitor-caption { font-size: 12px; color: var(--muted); margin: 20px 0 7px; }.visitor-privacy { font-size: 11px; color: var(--muted); margin: 0; }
+.visitor-map-content { width: 100%; }
+.visitor-map .mapmyvisitors-map { width: 100% !important; height: auto !important; aspect-ratio: 2.04; background-size: 100% 100%; }
+.visitor-map-status { padding: 17px 20px; margin: 0; color: var(--muted); font-size: 13px; }
+.visitor-fallback { display: block; }
+.visitor-fallback img { display: block; width: 100%; height: auto; }
+.visitor-map[data-state="unavailable"] { min-height: 0; }
 footer { border-top: 1px solid var(--rule); padding: 25px 0 35px; display: flex; gap: 25px; font: 10px/1.8 var(--mono); color: var(--muted); }footer a { margin-left: auto; }
 [data-motion="paused"] *, [data-motion="paused"] *::before, [data-motion="paused"] *::after { animation-play-state: paused !important; transition: none !important; }
 [data-motion="paused"] { scroll-behavior: auto; }

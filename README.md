@@ -10,6 +10,7 @@ Expected public URL: https://gjinge.github.io/Personal_Website/
 index.html                  Page content and metadata
 assets/css/styles.css       Responsive styles
 assets/js/main.js           Theme, motion controls, and navigation feedback
+assets/js/visitors.js       Map loading, timeout recovery, and resizing
 assets/img/favicon.svg      JG favicon
 assets/img/og-image.png      Social sharing preview
 cv.pdf                      Public curriculum vitae
@@ -35,11 +36,13 @@ From this directory, run `python -m http.server 8000 --bind 127.0.0.1`, then ope
 
 The `Visitors` section near the footer loads the MapMyVisitors interactive map. Its public statistics page is https://mapmyvisitors.com/web/1c84z and is registered for this website. The embed identifier is public, not an account credential.
 
-- Keep exactly one `id="mapmyvisitors"` script on the page to avoid duplicate counting.
+- `assets/js/visitors.js` inserts exactly one `id="mapmyvisitors"` script. Do not add another embed in the HTML.
 - The HTTPS script loads asynchronously. `w=a` sizes the map to its parent, which is limited to 780 px and fits mobile screens.
 - MapMyVisitors processes visitor IP addresses for approximate geolocation and statistics. The page includes attribution and a privacy-policy link. Ad blockers or network restrictions can prevent the map or counting from working.
 - Public-page checks and local previews with the widget enabled can contribute test visits. Do not interpret pageviews as distinct people.
-- To replace the widget, obtain the new complete embed code from MapMyVisitors and update both its script URL and the statistics link in `index.html`.
+- If the script fails or the interactive map is not ready within 10 seconds, the page tries the provider's official static map once. If that also fails or times out, it displays an unavailable message and retains the statistics link. Recovery from a partial load can produce an additional recorded request; no automatic retry loop runs.
+- The map's aspect ratio, background, and marker projection adapt when the browser or side panel changes width. The injected statistics link is normalized to HTTPS.
+- To replace the widget, obtain its new complete embed code from MapMyVisitors, update the identifier and statistics URL in `assets/js/visitors.js`, and update the statistics link in `index.html`.
 
 ## Deploy through GitHub Pages
 
