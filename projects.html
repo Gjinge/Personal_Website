@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark light">
+  <meta name="theme-color" content="#080d17">
+  <title>Projects | Jinge Guo</title>
+  <meta name="description" content="Unity game prototypes, C# studies, and scene experiments by Jinge Guo.">
+  <link rel="canonical" href="https://gjinge.github.io/Personal_Website/projects.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Projects | Jinge Guo">
+  <meta property="og:description" content="Unity game prototypes, C# studies, and scene experiments by Jinge Guo.">
+  <meta property="og:url" content="https://gjinge.github.io/Personal_Website/projects.html">
+  <meta property="og:image" content="https://gjinge.github.io/Personal_Website/assets/img/og-image.png">
+  <meta property="og:image:alt" content="Jinge Guo — undergraduate researcher at SUSTech and visiting student at UW–Madison">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <script>
+    try {
+      const theme = localStorage.getItem('jg-theme');
+      if (theme === 'light' || theme === 'dark') document.documentElement.dataset.theme = theme;
+      if (localStorage.getItem('jg-motion') === 'paused' || matchMedia('(prefers-reduced-motion: reduce)').matches) document.documentElement.dataset.motion = 'paused';
+    } catch (_) {}
+  </script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script defer src="assets/js/main.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="reading-progress" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="wordmark" href="index.html#about" aria-label="Jinge Guo, home"><span class="small-monogram" aria-hidden="true">JG</span><span>Jinge Guo</span></a>
+    <nav aria-label="Main navigation">
+      <a href="index.html#about">About</a><a href="index.html#publications">Publications</a><a href="projects.html" aria-current="page">Projects</a><a class="nav-cv" href="cv.pdf">CV <span aria-hidden="true">↗</span></a><a href="photography.html">Photography</a><a href="social.html">Social</a>
+      <a href="reading.html">Reading Notes</a>
+    </nav>
+    <div class="display-controls" hidden>
+      <button class="icon-button" id="motion-toggle" type="button" aria-label="Pause decorative motion" title="Pause decorative motion"><svg class="pause-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14M16 5v14"/></svg><svg class="play-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m8 5 11 7-11 7Z"/></svg></button>
+      <button class="icon-button" id="theme-toggle" type="button" aria-label="Switch to light theme" title="Switch to light theme"><svg class="sun-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/></svg><svg class="moon-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14A8 8 0 0 1 10 4a8.5 8.5 0 1 0 10 10Z"/></svg></button>
+    </div>
+  </header>
+  <main id="main" class="portfolio-page"><section class="portfolio-intro"><p class="eyebrow">Build / Learn / Iterate</p><h1>Projects<span class="name-period" aria-hidden="true">.</span></h1><p class="portfolio-subtitle">Small experiments. Working ideas. Lessons from building.</p></section><section id="unity" class="project-topic"><div class="topic-heading"><div><p class="eyebrow">01 / Game development</p><h2>Unity &amp; C#</h2></div><p>2 game prototypes · 2 scripting studies · 1 scene starter</p></div><p class="topic-intro">A collection from my Unity coursework and practice: from catching games and projectile physics to object lifecycles and scene setup.</p><div class="projects-grid"><article class="project-card"><a class="project-cover" href="unity-apple-picker.html"><img src="assets/img/unity/apple-picker-game.png" alt="Apple Picker — Unity project capture" loading="lazy" width="1200" height="750"></a><div class="project-card-body"><p class="eyebrow">Game prototype</p><h3><a href="unity-apple-picker.html">Apple Picker</a></h3><p>A mouse-controlled catching game with scoring, lives, and increasing difficulty.</p><div class="project-actions"><a href="unity-apple-picker.html">Explore project ↗</a><a href="https://github.com/Gjinge/Personal_Website/tree/main/source/unity/apple-picker">Code ↗</a></div></div></article><article class="project-card"><a class="project-cover" href="unity-mission-demolition.html"><img src="assets/img/unity/mission-demolition-game.png" alt="Mission Demolition — Unity project capture" loading="lazy" width="1200" height="750"></a><div class="project-card-body"><p class="eyebrow">Game prototype</p><h3><a href="unity-mission-demolition.html">Mission Demolition</a></h3><p>A slingshot physics prototype with projectile control and destructible structures.</p><div class="project-actions"><a href="unity-mission-demolition.html">Explore project ↗</a><a href="https://github.com/Gjinge/Personal_Website/tree/main/source/unity/mission-demolition">Code ↗</a></div></div></article><article class="project-card"><a class="project-cover" href="unity-collections.html"><img src="assets/img/unity/collections-code.svg" alt="Collections &amp; Object Lifecycles — source excerpt" loading="lazy" width="1200" height="750"></a><div class="project-card-body"><p class="eyebrow">C# study</p><h3><a href="unity-collections.html">Collections & Object Lifecycles</a></h3><p>Exercises in lists, runtime objects, and deferred removal.</p><div class="project-actions"><a href="unity-collections.html">Explore project ↗</a><a href="https://github.com/Gjinge/Personal_Website/tree/main/source/unity/collections">Code ↗</a></div></div></article><article class="project-card"><a class="project-cover" href="unity-hello-world.html"><img src="assets/img/unity/hello-world-code.svg" alt="Hello World: Cube Spawner — source excerpt" loading="lazy" width="1200" height="750"></a><div class="project-card-body"><p class="eyebrow">C# study</p><h3><a href="unity-hello-world.html">Hello World: Cube Spawner</a></h3><p>A first experiment with prefab instantiation, random color, and object lifetime.</p><div class="project-actions"><a href="unity-hello-world.html">Explore project ↗</a><a href="https://github.com/Gjinge/Personal_Website/tree/main/source/unity/hello-world">Code ↗</a></div></div></article><article class="project-card"><a class="project-cover" href="unity-boids.html"><img src="assets/img/unity/boids-code.svg" alt="Boids: Scene Starter — source excerpt" loading="lazy" width="1200" height="750"></a><div class="project-card-body"><p class="eyebrow">Scene study</p><h3><a href="unity-boids.html">Boids: Scene Starter</a></h3><p>An early scene setup for exploring flocking systems.</p><div class="project-actions"><a href="unity-boids.html">Explore project ↗</a><a href="https://github.com/Gjinge/Personal_Website/tree/main/source/unity/boids">Scene files ↗</a></div></div></article></div></section></main>
+  <footer><span>© 2026 Jinge Guo</span><span>Unity / coursework &amp; prototypes</span><a href="projects.html">All projects ↗</a></footer>
+</body>
+</html>

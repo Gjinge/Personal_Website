@@ -1,0 +1,27 @@
+[
+  {
+    "path": "Assets/CubeSpawer3.cs",
+    "sha256": "a8309d9d36f2a8c18d4c180b820a7184ab7ce2f668b98e80c711e8bb11ea2855",
+    "bytes": 1816
+  },
+  {
+    "path": "Assets/CubeSpawer3.cs.meta",
+    "sha256": "330a5238b848bc5ebed8ecf95cf0a526a3766707ffbfc87674f91911595c9398",
+    "bytes": 59
+  },
+  {
+    "path": "Assets/Scenes/New Scene.unity",
+    "sha256": "5ddef9ba272e5d11129f4b4f0d80e74233a39f7bd6d4343ef0baa7540328cf7e",
+    "bytes": 26807
+  },
+  {
+    "path": "Assets/Scenes/New Scene.unity.meta",
+    "sha256": "8abe60c68d00ddf288a47a1ce3512e896afd9be7a2b9b6e2fa39cb1c587c2210",
+    "bytes": 155
+  },
+  {
+    "path": "ProjectSettings/ProjectVersion.txt",
+    "sha256": "c325261275ff230e74aed1bfad3dbbb3eeaac4d102c581798cbcc6637174592b",
+    "bytes": 85
+  }
+]

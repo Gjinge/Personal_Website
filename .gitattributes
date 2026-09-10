@@ -1,0 +1,3 @@
+# Preserve archived Unity file bytes and their manifest hashes on all platforms.
+source/unity/** -text -whitespace
+assets/downloads/*.zip -text

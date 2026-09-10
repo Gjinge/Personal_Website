@@ -1,0 +1,207 @@
+[
+  {
+    "path": "Assets/GameObjects/Apple.prefab",
+    "sha256": "42be2ff4378bd6f114e541444296660144261b8c1f07c61fc94e0f16159e44a9",
+    "bytes": 4299
+  },
+  {
+    "path": "Assets/GameObjects/Apple.prefab.meta",
+    "sha256": "a2a366ab45437c85ebe405361b75f134b5dab3f7114b7969dc512b4c95a2b7c4",
+    "bytes": 154
+  },
+  {
+    "path": "Assets/GameObjects/AppleTree.prefab",
+    "sha256": "abbd77af744c6537f9d8cac8f2431d05b9ef1bdb5e419f8e76c578f864fe0470",
+    "bytes": 8434
+  },
+  {
+    "path": "Assets/GameObjects/AppleTree.prefab.meta",
+    "sha256": "5c0ccff87076eb3a4bdd83ceb1b6c902f342ac62e146e7a1ba01f53cd50a66f5",
+    "bytes": 154
+  },
+  {
+    "path": "Assets/GameObjects/Basket.prefab",
+    "sha256": "54db2cd16ebd2fc04d4a61b6561644550b031cd95f27aa4311e95dfa55c7ba60",
+    "bytes": 4334
+  },
+  {
+    "path": "Assets/GameObjects/Basket.prefab.meta",
+    "sha256": "02bde5ab08789b0e2f5d3a98dbac103beb8e39e1a1115d31eeb320c296ab9664",
+    "bytes": 154
+  },
+  {
+    "path": "Assets/Materials/Mat_Apple.mat",
+    "sha256": "e36d8bb808c7d12ce9af6d8b6690a5babf128d01266aa8271bac09b45341786d",
+    "bytes": 3740
+  },
+  {
+    "path": "Assets/Materials/Mat_Apple.mat.meta",
+    "sha256": "67e8cf25f90185becdd3e8b557eeeb5db640f6eef5c9aff5312991072122d55e",
+    "bytes": 188
+  },
+  {
+    "path": "Assets/Materials/Mat_Basket.mat",
+    "sha256": "43117cf7a6360ba95c14eb2579e2501bdf488f9ff34aa7c6ac2b77874f030104",
+    "bytes": 3740
+  },
+  {
+    "path": "Assets/Materials/Mat_Basket.mat.meta",
+    "sha256": "d71982a4e907807dc995c9edfb5be220f980fd6899ae7bf9205459aa56249978",
+    "bytes": 188
+  },
+  {
+    "path": "Assets/Materials/Mat_Leaves.mat",
+    "sha256": "a1a0ff46aab827684bc52305fb98865d584e7db11fd58276c86486cc602b4746",
+    "bytes": 3739
+  },
+  {
+    "path": "Assets/Materials/Mat_Leaves.mat.meta",
+    "sha256": "75baa07c5c281e447fcf1c08105dcb89f69e443be2a0262fbae4b63caab672e2",
+    "bytes": 188
+  },
+  {
+    "path": "Assets/Materials/Mat_Wood.mat",
+    "sha256": "1e6e0622d4a3a1dd4a5c57d98ddd6ede1d760844c47cbe35f59a885fb1e402be",
+    "bytes": 3742
+  },
+  {
+    "path": "Assets/Materials/Mat_Wood.mat.meta",
+    "sha256": "a2e76af8ff54048e043ab969893c35f2059a2f31fc5bec986ad87911b5f21ecc",
+    "bytes": 188
+  },
+  {
+    "path": "Assets/Scenes/_GameOverScene.unity",
+    "sha256": "d0a08fae27e94dd2473407c91c38f1c823326ba28acc2e64276ffaf5cd28afce",
+    "bytes": 78552
+  },
+  {
+    "path": "Assets/Scenes/_GameOverScene.unity.meta",
+    "sha256": "9bcdc458ddf973b3987f34a312dcc7813ec0bf7f8cef8a3e4e91631465465642",
+    "bytes": 155
+  },
+  {
+    "path": "Assets/Scenes/_Scene_0.unity",
+    "sha256": "305f86a52e0b9c3a692e5dcd1ced2f3c3cbaeaa1b20bc5c2b622365559669905",
+    "bytes": 32301
+  },
+  {
+    "path": "Assets/Scenes/_Scene_0.unity.meta",
+    "sha256": "9e118bfefd0360cb0ad20d994a629e2b7b31aeb60fddf94968a48f9c667e5bbc",
+    "bytes": 155
+  },
+  {
+    "path": "Assets/Scenes/_StartScene.unity",
+    "sha256": "ad7dfe6e2739b691b832280e1c50e610a6c85317e7c2fe688f2a459fd65d05bf",
+    "bytes": 35855
+  },
+  {
+    "path": "Assets/Scenes/_StartScene.unity.meta",
+    "sha256": "80d24437286db9804aed67721f70a3511800c09b93fb5fdea758201995ee9972",
+    "bytes": 155
+  },
+  {
+    "path": "Assets/Scripts/Apple.cs",
+    "sha256": "077170a69ae16e344aa32edbc14bb7d2ca9b90a661a1e6fd2afa7990b83ba884",
+    "bytes": 704
+  },
+  {
+    "path": "Assets/Scripts/Apple.cs.meta",
+    "sha256": "1c090baebc6543ef0c2f260c7f094d5b7044918137d794e955fef6bb8e089e4e",
+    "bytes": 322
+  },
+  {
+    "path": "Assets/Scripts/ApplePicker.cs",
+    "sha256": "749b8c81186cab41c65bf3c0010510c473c57b0700c6c16da02f6a0bd6cfd426",
+    "bytes": 1785
+  },
+  {
+    "path": "Assets/Scripts/ApplePicker.cs.meta",
+    "sha256": "868b8a992fa5abb5d72e080638c270b07b93f54266b99e9f1ac3cf8f9da30195",
+    "bytes": 356
+  },
+  {
+    "path": "Assets/Scripts/AppleTree.cs",
+    "sha256": "585bc98e660d61e58e7ac86ed8de65f36489a86e21d42e70f12d78c87b5f39f8",
+    "bytes": 1354
+  },
+  {
+    "path": "Assets/Scripts/AppleTree.cs.meta",
+    "sha256": "32694ff727840d6ef5ecd00912074245eeaf77908e36eb7cf1747722d6ae6907",
+    "bytes": 59
+  },
+  {
+    "path": "Assets/Scripts/Basket.cs",
+    "sha256": "539eb81f82656fd8542d0403f1fcba788b4c50cf3410344775162ab5b219f337",
+    "bytes": 1893
+  },
+  {
+    "path": "Assets/Scripts/Basket.cs.meta",
+    "sha256": "d09ecc141053a87cfdedab7bca665e9b9c2f6225d5a15b90d10e0741ec3c865d",
+    "bytes": 59
+  },
+  {
+    "path": "Assets/Scripts/DifficultyManager.cs",
+    "sha256": "8002e308784490b31c9ab21e608dc2f0b2e6c8ad07342b12a96d0692b4fa1612",
+    "bytes": 1001
+  },
+  {
+    "path": "Assets/Scripts/DifficultyManager.cs.meta",
+    "sha256": "2123d36c15f25bfe1876238ae276391112034b6820ff425be6e3f22839facf50",
+    "bytes": 59
+  },
+  {
+    "path": "Assets/Scripts/GameOver.cs",
+    "sha256": "3c476f1adbfd5d3ed5ae5bbb4285df99a57b1c55599ccc60713eb45f8d529bae",
+    "bytes": 1225
+  },
+  {
+    "path": "Assets/Scripts/GameOver.cs.meta",
+    "sha256": "9a3a49a6e76faab2bed6d7fda3e49983dd15295308bf1cf54abea690ad95124a",
+    "bytes": 59
+  },
+  {
+    "path": "Assets/Scripts/HighScore.cs",
+    "sha256": "8525ab0543d2d16ee23768f07ae9ab8cb5f1aa5c623b5f65f48cb088af1091ab",
+    "bytes": 1177
+  },
+  {
+    "path": "Assets/Scripts/HighScore.cs.meta",
+    "sha256": "ed9b822c0e14ab2339d1a779c119f42a37cd68be810d2a2cbd748b989c142f88",
+    "bytes": 59
+  },
+  {
+    "path": "Assets/Scripts/QuitGame.cs",
+    "sha256": "86e11f5efaf09ab6f85fe560fc91a99f3cafde8689f2829251bc89ce3cca7117",
+    "bytes": 229
+  },
+  {
+    "path": "Assets/Scripts/QuitGame.cs.meta",
+    "sha256": "dbf873d5272a12f648e8a772ce3f2943511a2598f735068606b27d4fb346a88a",
+    "bytes": 59
+  },
+  {
+    "path": "Assets/Scripts/ScoreManager.cs",
+    "sha256": "85ff1bcb18ea68f83c10966009359206e72c93a50dfd80c94623da6b60fa9a9c",
+    "bytes": 302
+  },
+  {
+    "path": "Assets/Scripts/ScoreManager.cs.meta",
+    "sha256": "9faaafbcd885d7f88b3f53305750ae66fd4d7227f6c0f612d962196273cc6a8d",
+    "bytes": 59
+  },
+  {
+    "path": "Assets/Scripts/StartGame.cs",
+    "sha256": "625b36276887e52aed237ee53751402e31d2b136192f08fadda6371b8423ac97",
+    "bytes": 192
+  },
+  {
+    "path": "Assets/Scripts/StartGame.cs.meta",
+    "sha256": "03cad1b515a8c4da98dd73b68f1fb4ada9e03860c7dd5896d7a9d2d7561a4a01",
+    "bytes": 59
+  },
+  {
+    "path": "ProjectSettings/ProjectVersion.txt",
+    "sha256": "9cff2bddd3015855b632b952724165f400d6902a4e0665254666179ee2b33d99",
+    "bytes": 85
+  }
+]

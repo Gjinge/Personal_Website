@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark light">
+  <meta name="theme-color" content="#080d17">
+  <title>Mission Demolition | Jinge Guo</title>
+  <meta name="description" content="A slingshot physics prototype with projectile control and destructible structures.">
+  <link rel="canonical" href="https://gjinge.github.io/Personal_Website/unity-mission-demolition.html">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Mission Demolition | Jinge Guo">
+  <meta property="og:description" content="A slingshot physics prototype with projectile control and destructible structures.">
+  <meta property="og:url" content="https://gjinge.github.io/Personal_Website/unity-mission-demolition.html">
+  <meta property="og:image" content="https://gjinge.github.io/Personal_Website/assets/img/og-image.png">
+  <meta property="og:image:alt" content="Jinge Guo — undergraduate researcher at SUSTech and visiting student at UW–Madison">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <script>
+    try {
+      const theme = localStorage.getItem('jg-theme');
+      if (theme === 'light' || theme === 'dark') document.documentElement.dataset.theme = theme;
+      if (localStorage.getItem('jg-motion') === 'paused' || matchMedia('(prefers-reduced-motion: reduce)').matches) document.documentElement.dataset.motion = 'paused';
+    } catch (_) {}
+  </script>
+  <link rel="stylesheet" href="assets/css/styles.css">
+  <script defer src="assets/js/main.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="reading-progress" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="wordmark" href="index.html#about" aria-label="Jinge Guo, home"><span class="small-monogram" aria-hidden="true">JG</span><span>Jinge Guo</span></a>
+    <nav aria-label="Main navigation">
+      <a href="index.html#about">About</a><a href="index.html#publications">Publications</a><a href="projects.html" aria-current="page">Projects</a><a class="nav-cv" href="cv.pdf">CV <span aria-hidden="true">↗</span></a><a href="photography.html">Photography</a><a href="social.html">Social</a>
+      <a href="reading.html">Reading Notes</a>
+    </nav>
+    <div class="display-controls" hidden>
+      <button class="icon-button" id="motion-toggle" type="button" aria-label="Pause decorative motion" title="Pause decorative motion"><svg class="pause-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14M16 5v14"/></svg><svg class="play-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m8 5 11 7-11 7Z"/></svg></button>
+      <button class="icon-button" id="theme-toggle" type="button" aria-label="Switch to light theme" title="Switch to light theme"><svg class="sun-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/></svg><svg class="moon-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14A8 8 0 0 1 10 4a8.5 8.5 0 1 0 10 10Z"/></svg></button>
+    </div>
+  </header>
+  <main id="main" class="project-detail">
+    <section class="portfolio-intro"><p class="eyebrow"><a href="projects.html#unity">Projects / Unity</a> / Game prototype</p><h1>Mission Demolition<span class="name-period" aria-hidden="true">.</span></h1><p class="portfolio-subtitle">A slingshot physics prototype with projectile control and destructible structures.</p><div class="project-actions"><a class="button" href="https://github.com/Gjinge/Personal_Website/tree/main/source/unity/mission-demolition">Browse source ↗</a><a class="text-link" href="assets/downloads/mission-demolition-source.zip" download>Download source ZIP ↓</a></div></section>
+    <div class="project-facts"><span>Unity 6000.0.44f1</span><span>Game prototype</span><span>8 C# scripts</span></div>
+    <section class="project-prose"><h2>Overview</h2><p>A Unity coursework prototype exploring mouse input, rigid-body projectiles, castle structures, and camera tracking. The source separates launching, goal detection, level management, and projectile-line drawing into small components.</p><h2>Implementation highlights</h2><ul><li><strong>Slingshot input.</strong> Slingshot.cs constrains the drag distance and converts the release offset into rigid-body velocity.</li><li><strong>Physics and camera.</strong> The scene includes a ground plane, slingshot, and castle structure. FollowCam.cs interpolates the camera toward a point of interest.</li><li><strong>Level and goal logic.</strong> MissionDemolition.cs tracks shots and level state; Goal.cs detects goal contact. ProjectileLine.cs implements sampled path drawing.</li></ul></section>
+    <section class="project-gallery"><h2>Project gallery</h2><figure><a href="assets/img/unity/mission-demolition-game.png"><img src="assets/img/unity/mission-demolition-game.png" alt="Mission Demolition editor scene overview showing the slingshot and castle" width="1440" height="900" loading="lazy"></a><figcaption>Original scene rendered in Unity with a wider portfolio camera; editor overview, not a completed gameplay demonstration.</figcaption></figure></section>
+    <section class="project-prose"><h2>Inside the code</h2><p><code>Assets/Scripts/Slingshot.cs</code></p><pre class="source-code"><code>        float maxMagnitude = this.GetComponent&lt;SphereCollider&gt;().radius;
+        if (mouseDelta.magnitude &gt; maxMagnitude)
+        {
+            mouseDelta.Normalize();
+            mouseDelta *= maxMagnitude;
+        }
+        Vector3 projPos = lauchPos + mouseDelta;
+        projectile.transform.position = projPos;
+        if (Input.GetMouseButtonUp(0))
+        {
+            aimingMode = false;
+            projectile.GetComponent&lt;Rigidbody&gt;().isKinematic = false;
+            projectile.GetComponent&lt;Rigidbody&gt;().linearVelocity = -mouseDelta * velocityMult;
+
+            FollowCam.POI = projectile;
+            projectile = null;
+
+            MissionDemolition.ShotFired();</code></pre><details class="source-files"><summary>Browse all C# files</summary><ul><li><a href="source/unity/mission-demolition/Assets/Cloud.cs">Assets/Cloud.cs</a></li><li><a href="source/unity/mission-demolition/Assets/Scripts/CloudCrafter.cs">Assets/Scripts/CloudCrafter.cs</a></li><li><a href="source/unity/mission-demolition/Assets/Scripts/FollowCam.cs">Assets/Scripts/FollowCam.cs</a></li><li><a href="source/unity/mission-demolition/Assets/Scripts/Goal.cs">Assets/Scripts/Goal.cs</a></li><li><a href="source/unity/mission-demolition/Assets/Scripts/MissionDemolition.cs">Assets/Scripts/MissionDemolition.cs</a></li><li><a href="source/unity/mission-demolition/Assets/Scripts/ProjectileLine.cs">Assets/Scripts/ProjectileLine.cs</a></li><li><a href="source/unity/mission-demolition/Assets/Scripts/RigidbodySleep.cs">Assets/Scripts/RigidbodySleep.cs</a></li><li><a href="source/unity/mission-demolition/Assets/Scripts/Slingshot.cs">Assets/Scripts/Slingshot.cs</a></li></ul></details></section>
+    <aside class="project-scope"><h2>Prototype notes</h2><p>Work in progress: the saved scene has unassigned UI references and an empty level list; a launch check reported errors. The camera-switch cases also contain leading spaces, and the slingshot clears its projectile reference before assigning it to the line component. This page documents the prototype; it does not claim a fully validated game.</p><p>The download contains selected original code and scene files. It is not a complete Unity project; asset and package dependencies are described in its README.</p></aside>
+    <p class="project-return"><a href="projects.html#unity">← Back to Unity projects</a></p>
+  </main>
+  <footer><span>© 2026 Jinge Guo</span><span>Unity / coursework &amp; prototypes</span><a href="projects.html">All projects ↗</a></footer>
+</body>
+</html>

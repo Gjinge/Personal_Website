@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 49c2103d8a3130847ba650e18b8fc119
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - basketPrefab: {instanceID: 0}
+  - fallSound: {fileID: 8300000, guid: 3084ce87aaaaa974aa328fef15713ef7, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

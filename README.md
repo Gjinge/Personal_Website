@@ -8,6 +8,10 @@ Expected public URL: https://gjinge.github.io/Personal_Website/
 
 ```text
 index.html                  Page content and metadata
+projects.html               Unity topic and project cards
+unity-*.html                Five project detail pages
+source/unity/               Selected original code, scene files, and manifests
+assets/downloads/           Per-project source snapshot ZIPs
 photography.html            Photo collections and fullscreen viewer
 social.html                 Personal social accounts and channels
 reading.html                Searchable reading notes index
@@ -71,8 +75,20 @@ window.portfolio = {
 - Export web-sized photos before adding them; include descriptive alt text. Publish only selected images and captions. Strip location metadata if you do not want it exposed.
 - Account cards display the platform, account name, optional handle/avatar, and content focus. HTTPS profile links open in a new tab. Missing avatars use a neutral @ symbol.
 - Use account/channel homepages rather than individual video URLs. No account credentials are needed in this repository, and this page does not preload platform feeds or players.
-- Update shared navigation in all four main HTML pages together. Theme controls use the same preferences across pages.
+- Update shared navigation in all content HTML pages together. Theme controls use the same preferences across pages.
 - Photos and account cards require JavaScript for rendering; an explanatory message is shown when it is disabled.
+
+## Unity projects
+
+The Projects navigation opens `projects.html`. The Unity topic covers Apple Picker, Mission Demolition, Collections, Hello World, and the Boids scene starter. Each detail page has overview, source-backed highlights, a visual, an inline source excerpt, individual file links, a GitHub source directory, and a ZIP download.
+
+- Source snapshots preserve 23 C# scripts and selected scenes, prefabs, materials, metadata, and editor version files. Per-project `manifest.json` files record SHA-256 hashes of the originals. ZIP contents match the published source directories.
+- Snapshots are for source browsing, not complete runnable Unity projects. Package dependencies, textures, audio, fonts, plugins, caches, and third-party sample folders are excluded. Original comments and tutorial context are preserved. No broad new source license is assigned.
+- `assets/img/unity/apple-picker-game.png` is a real Unity 6000.0.44f1 play-mode camera capture from an isolated copy. The screen-space UI was attached to the capture camera; the original background and game assets are visible.
+- `mission-demolition-game.png` is an edit-mode rendering of the original scene with a wider camera and a neutral background, excluding UI. The runtime check exposed missing UI references and an empty level list. The page labels it an editor overview and records limitations.
+- Other previews are labelled SVG source excerpts, not gameplay screenshots. Boids has scene/prefab files but no custom behavior scripts in the supplied Assets, so no flocking implementation is claimed.
+- Original projects were not modified. No Unity capture scripts or test logs are published. Hash manifests and code excerpt graphics were generated from the selected source files.
+- The older homepage `#projects` anchor remains and links to the new topic. Adding another project requires updating the Projects index and adding its detail page/assets.
 
 ## Reading notes
 
