@@ -1,27 +1,513 @@
 [
   {
+    "path": "Assets/Cube Prefab.prefab",
+    "sha256": "8945c6a5b3a5b44cb2b1dec8b9587d38779b7131c8652a6c678a43b69461ec1a",
+    "original_sha256": "8945c6a5b3a5b44cb2b1dec8b9587d38779b7131c8652a6c678a43b69461ec1a",
+    "bytes": 3806,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Cube Prefab.prefab.meta",
+    "sha256": "df698bee1c003950a5bb86f2d045ded130ac6cf48deafcf74b742883bb1ff726",
+    "original_sha256": "df698bee1c003950a5bb86f2d045ded130ac6cf48deafcf74b742883bb1ff726",
+    "bytes": 154,
+    "sanitized": false
+  },
+  {
     "path": "Assets/CubeSpawer3.cs",
     "sha256": "a8309d9d36f2a8c18d4c180b820a7184ab7ce2f668b98e80c711e8bb11ea2855",
-    "bytes": 1816
+    "original_sha256": "a8309d9d36f2a8c18d4c180b820a7184ab7ce2f668b98e80c711e8bb11ea2855",
+    "bytes": 1816,
+    "sanitized": false
   },
   {
     "path": "Assets/CubeSpawer3.cs.meta",
     "sha256": "330a5238b848bc5ebed8ecf95cf0a526a3766707ffbfc87674f91911595c9398",
-    "bytes": 59
+    "original_sha256": "330a5238b848bc5ebed8ecf95cf0a526a3766707ffbfc87674f91911595c9398",
+    "bytes": 59,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/InputSystem_Actions.inputactions",
+    "sha256": "cd5a6308f9bce6ddac2023b5ed185ff6bc36ac09fbfd9680054d367822203812",
+    "original_sha256": "cd5a6308f9bce6ddac2023b5ed185ff6bc36ac09fbfd9680054d367822203812",
+    "bytes": 42061,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/InputSystem_Actions.inputactions.meta",
+    "sha256": "3b4e424a80f5b4fa76b6abd774884a24285eaa61f22ff9bb20e5ad505fd8b569",
+    "original_sha256": "3b4e424a80f5b4fa76b6abd774884a24285eaa61f22ff9bb20e5ad505fd8b569",
+    "bytes": 376,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Readme.asset",
+    "sha256": "6d098604e909b6a0e64fe5910c2719704864d49678bcf5413bd47b67e5490107",
+    "original_sha256": "6d098604e909b6a0e64fe5910c2719704864d49678bcf5413bd47b67e5490107",
+    "bytes": 1144,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Readme.asset.meta",
+    "sha256": "46c6b89ac1d47bd0c0d1a8b141ae3e32cd95d3e74c49381f0d9f942488c254ce",
+    "original_sha256": "46c6b89ac1d47bd0c0d1a8b141ae3e32cd95d3e74c49381f0d9f942488c254ce",
+    "bytes": 182,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Scenes/Cube.prefab",
+    "sha256": "3e2948acd4a2f3b9a37ee8ee4fba6991903e3783f1b9be29d05a2bc28da2c981",
+    "original_sha256": "3e2948acd4a2f3b9a37ee8ee4fba6991903e3783f1b9be29d05a2bc28da2c981",
+    "bytes": 3097,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Scenes/Cube.prefab.meta",
+    "sha256": "64c273b43e6b12eecdcd5681ed50df24a990fc6b4c489c92ccc95a8c6108fc36",
+    "original_sha256": "64c273b43e6b12eecdcd5681ed50df24a990fc6b4c489c92ccc95a8c6108fc36",
+    "bytes": 154,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Scenes/New Material 1.mat",
+    "sha256": "7319d523e22a6c89440328011ed5fd60b1c1a376272f33f551596fcfb5613743",
+    "original_sha256": "7319d523e22a6c89440328011ed5fd60b1c1a376272f33f551596fcfb5613743",
+    "bytes": 3692,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Scenes/New Material 1.mat.meta",
+    "sha256": "cb9265abcf06828fe6c09ecb1d032ff40efd6a7315b164779e5d6232239e514c",
+    "original_sha256": "cb9265abcf06828fe6c09ecb1d032ff40efd6a7315b164779e5d6232239e514c",
+    "bytes": 188,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Scenes/New Material.mat",
+    "sha256": "f3611b73e2c9c27229f359ff9f93d6520df610b556c8a8186b9c58b44d702ced",
+    "original_sha256": "f3611b73e2c9c27229f359ff9f93d6520df610b556c8a8186b9c58b44d702ced",
+    "bytes": 3751,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Scenes/New Material.mat.meta",
+    "sha256": "5dcd02e0f7e869360bd26e11dc386f134608b10b9fae1c104368bf92e8cd8182",
+    "original_sha256": "5dcd02e0f7e869360bd26e11dc386f134608b10b9fae1c104368bf92e8cd8182",
+    "bytes": 188,
+    "sanitized": false
   },
   {
     "path": "Assets/Scenes/New Scene.unity",
     "sha256": "5ddef9ba272e5d11129f4b4f0d80e74233a39f7bd6d4343ef0baa7540328cf7e",
-    "bytes": 26807
+    "original_sha256": "5ddef9ba272e5d11129f4b4f0d80e74233a39f7bd6d4343ef0baa7540328cf7e",
+    "bytes": 26807,
+    "sanitized": false
   },
   {
     "path": "Assets/Scenes/New Scene.unity.meta",
     "sha256": "8abe60c68d00ddf288a47a1ce3512e896afd9be7a2b9b6e2fa39cb1c587c2210",
-    "bytes": 155
+    "original_sha256": "8abe60c68d00ddf288a47a1ce3512e896afd9be7a2b9b6e2fa39cb1c587c2210",
+    "bytes": 155,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Scenes/SampleScene.unity",
+    "sha256": "07fce8b04804ddccb3026db5b43d8dc41ba138e49d50d36a5c24877081eacdca",
+    "original_sha256": "07fce8b04804ddccb3026db5b43d8dc41ba138e49d50d36a5c24877081eacdca",
+    "bytes": 11413,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Scenes/SampleScene.unity.meta",
+    "sha256": "b5815a6b12afaf810577bc89041c4ce46516c7cd6609693f8db616f8e5584d80",
+    "original_sha256": "b5815a6b12afaf810577bc89041c4ce46516c7cd6609693f8db616f8e5584d80",
+    "bytes": 155,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Scenes.meta",
+    "sha256": "92598ef42aeaa7813a50e780bcee1ad6c832b257592d09ffb0e6fb6116bb703f",
+    "original_sha256": "92598ef42aeaa7813a50e780bcee1ad6c832b257592d09ffb0e6fb6116bb703f",
+    "bytes": 172,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Settings/DefaultVolumeProfile.asset",
+    "sha256": "3a6f825e8d07fe8b9f3b52e7d4e2dfa0e22c555b22335adb19f0ecc66dfa38dd",
+    "original_sha256": "3a6f825e8d07fe8b9f3b52e7d4e2dfa0e22c555b22335adb19f0ecc66dfa38dd",
+    "bytes": 23987,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Settings/DefaultVolumeProfile.asset.meta",
+    "sha256": "efbcb026cee6b8e32fdf27018c06b0515296a6ccbb43969e792fea270310700a",
+    "original_sha256": "efbcb026cee6b8e32fdf27018c06b0515296a6ccbb43969e792fea270310700a",
+    "bytes": 189,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Settings/Mobile_Renderer.asset",
+    "sha256": "b4efbcfdf69acb1e1e25e8afff9ba99009cfc47eb0b05a284648c5448e4d846f",
+    "original_sha256": "b4efbcfdf69acb1e1e25e8afff9ba99009cfc47eb0b05a284648c5448e4d846f",
+    "bytes": 1713,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Settings/Mobile_Renderer.asset.meta",
+    "sha256": "a148ee2b4987b05b8ff7ae5f9bf84916184f77aefddc821dceb551f5a69f8179",
+    "original_sha256": "a148ee2b4987b05b8ff7ae5f9bf84916184f77aefddc821dceb551f5a69f8179",
+    "bytes": 189,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Settings/Mobile_RPAsset.asset",
+    "sha256": "867614875f5afc87b9712ceec320d81a119ffa65aaed7ffc4af9b00ba148b282",
+    "original_sha256": "867614875f5afc87b9712ceec320d81a119ffa65aaed7ffc4af9b00ba148b282",
+    "bytes": 4345,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Settings/Mobile_RPAsset.asset.meta",
+    "sha256": "53ea46647712c615fd1a3f2e0dddfa8559eeedc649e9a1dbf93ff913de28544c",
+    "original_sha256": "53ea46647712c615fd1a3f2e0dddfa8559eeedc649e9a1dbf93ff913de28544c",
+    "bytes": 189,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Settings/PC_Renderer.asset",
+    "sha256": "3d0b01d8ded3327263b6690be128a3de58d17c514943ae42fe743a3e084a9c79",
+    "original_sha256": "3d0b01d8ded3327263b6690be128a3de58d17c514943ae42fe743a3e084a9c79",
+    "bytes": 3439,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Settings/PC_Renderer.asset.meta",
+    "sha256": "b5df8ddb2708c6ed4c133a5ff9ee95a75cc20e4ee3ed6181366a61aedbaf31ec",
+    "original_sha256": "b5df8ddb2708c6ed4c133a5ff9ee95a75cc20e4ee3ed6181366a61aedbaf31ec",
+    "bytes": 189,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Settings/PC_RPAsset.asset",
+    "sha256": "bcef31006339d245d47d5e8ad208f9f34471618496d08e9f9d06e8d449c71d97",
+    "original_sha256": "bcef31006339d245d47d5e8ad208f9f34471618496d08e9f9d06e8d449c71d97",
+    "bytes": 4364,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Settings/PC_RPAsset.asset.meta",
+    "sha256": "bb469b9b6f318e9e9bed29c3b2e73e79371c04743c6f95dd6603941f1cd3e53e",
+    "original_sha256": "bb469b9b6f318e9e9bed29c3b2e73e79371c04743c6f95dd6603941f1cd3e53e",
+    "bytes": 189,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Settings/SampleSceneProfile.asset",
+    "sha256": "a8677d4bac051d24caa11cd622e39f968155ee277bfce132274f1de225692fe9",
+    "original_sha256": "a8677d4bac051d24caa11cd622e39f968155ee277bfce132274f1de225692fe9",
+    "bytes": 3703,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Settings/SampleSceneProfile.asset.meta",
+    "sha256": "2e23abc214069f0adbf2b2207f1db54be7876629ec2a3681d0f4aa5b61622ef0",
+    "original_sha256": "2e23abc214069f0adbf2b2207f1db54be7876629ec2a3681d0f4aa5b61622ef0",
+    "bytes": 182,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Settings/UniversalRenderPipelineGlobalSettings.asset",
+    "sha256": "0a4ccaf0b3f0cf22728a18cdfdb7831ce1691bbe92baaeb5b1284d49d1a80d4b",
+    "original_sha256": "0a4ccaf0b3f0cf22728a18cdfdb7831ce1691bbe92baaeb5b1284d49d1a80d4b",
+    "bytes": 15044,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Settings/UniversalRenderPipelineGlobalSettings.asset.meta",
+    "sha256": "f61661d8bc8dbe531daf09f6211ef978c7ba145c9207c8e76524396ae0722d7c",
+    "original_sha256": "f61661d8bc8dbe531daf09f6211ef978c7ba145c9207c8e76524396ae0722d7c",
+    "bytes": 189,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Settings.meta",
+    "sha256": "73c8e19843240273facb0af6bdbf430d719e397aded705629594060ce25ce7ad",
+    "original_sha256": "73c8e19843240273facb0af6bdbf430d719e397aded705629594060ce25ce7ad",
+    "bytes": 172,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TutorialInfo/Icons/URP.png",
+    "sha256": "1d17a9ff3537859abe2c008603d29d90cf43191ae77aa386167cc65e53ba03d9",
+    "original_sha256": "1d17a9ff3537859abe2c008603d29d90cf43191ae77aa386167cc65e53ba03d9",
+    "bytes": 24069,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TutorialInfo/Icons/URP.png.meta",
+    "sha256": "b330f1fcfc4e6ceccc95fc34a38434141603469b135633e1c4e8a03c19f9fdbc",
+    "original_sha256": "b330f1fcfc4e6ceccc95fc34a38434141603469b135633e1c4e8a03c19f9fdbc",
+    "bytes": 3156,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TutorialInfo/Icons.meta",
+    "sha256": "546e7d7af6b4d5e17d284c8f1188d05472e681911b8359905ee9b9e20769a106",
+    "original_sha256": "546e7d7af6b4d5e17d284c8f1188d05472e681911b8359905ee9b9e20769a106",
+    "bytes": 193,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TutorialInfo/Layout.wlt",
+    "sha256": "30d232879ca5c0c7377f245c9601feaf77053e5d70c222419ef25782e3272d2c",
+    "original_sha256": "30d232879ca5c0c7377f245c9601feaf77053e5d70c222419ef25782e3272d2c",
+    "bytes": 16133,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TutorialInfo/Layout.wlt.meta",
+    "sha256": "b8745a251df078ffa75dbaac0c4c6debecb61ab306b5b119a490ce6c635a11d8",
+    "original_sha256": "b8745a251df078ffa75dbaac0c4c6debecb61ab306b5b119a490ce6c635a11d8",
+    "bytes": 176,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TutorialInfo/Scripts/Editor/ReadmeEditor.cs",
+    "sha256": "b1b509be41113e31b8ee3c30ca0a00aaf006fdcae69aac749899eed2c4cc4a7d",
+    "original_sha256": "b1b509be41113e31b8ee3c30ca0a00aaf006fdcae69aac749899eed2c4cc4a7d",
+    "bytes": 6919,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TutorialInfo/Scripts/Editor/ReadmeEditor.cs.meta",
+    "sha256": "f59080b424c16fa13edd105bf006fdbad98c11fce0c921043e63c8877f144cd9",
+    "original_sha256": "f59080b424c16fa13edd105bf006fdbad98c11fce0c921043e63c8877f144cd9",
+    "bytes": 264,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TutorialInfo/Scripts/Editor.meta",
+    "sha256": "7036bdbc8af05799b5fd508484343b35c28a68b390198da4673d34357d7d667f",
+    "original_sha256": "7036bdbc8af05799b5fd508484343b35c28a68b390198da4673d34357d7d667f",
+    "bytes": 193,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TutorialInfo/Scripts/Readme.cs",
+    "sha256": "baa133f5baae44c1217e10c64061f8fb7d56878477339d746470502165d35019",
+    "original_sha256": "baa133f5baae44c1217e10c64061f8fb7d56878477339d746470502165d35019",
+    "bytes": 318,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TutorialInfo/Scripts/Readme.cs.meta",
+    "sha256": "80a3df9969fab6e656583ee9bbca884d0507e2b7de3417f6ea3118fba901cd60",
+    "original_sha256": "80a3df9969fab6e656583ee9bbca884d0507e2b7de3417f6ea3118fba901cd60",
+    "bytes": 317,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TutorialInfo/Scripts.meta",
+    "sha256": "930d0c8276cea1559a3e315f8500ea6ca8b58d980eee3b44aaa1d461742c47e0",
+    "original_sha256": "930d0c8276cea1559a3e315f8500ea6ca8b58d980eee3b44aaa1d461742c47e0",
+    "bytes": 193,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TutorialInfo.meta",
+    "sha256": "07f022e5932c833d026e020b27d73452ebd781993b616d76003494af1e140946",
+    "original_sha256": "07f022e5932c833d026e020b27d73452ebd781993b616d76003494af1e140946",
+    "bytes": 172,
+    "sanitized": false
+  },
+  {
+    "path": "Packages/manifest.json",
+    "sha256": "dae95dc541369a2a4867d9b2770907fcaa2d2350ad467015a06ef3deae7c39c3",
+    "original_sha256": "dae95dc541369a2a4867d9b2770907fcaa2d2350ad467015a06ef3deae7c39c3",
+    "bytes": 1914,
+    "sanitized": false
+  },
+  {
+    "path": "Packages/packages-lock.json",
+    "sha256": "f221a7966af9f96961819da28608c26bbb7d7db8a3a09cc5fb7af4f6b4b4a2e8",
+    "original_sha256": "f221a7966af9f96961819da28608c26bbb7d7db8a3a09cc5fb7af4f6b4b4a2e8",
+    "bytes": 12400,
+    "sanitized": false
+  },
+  {
+    "path": "ProjectSettings/AudioManager.asset",
+    "sha256": "aeedeb3243f07b61dbbe854aa08b5ef6f0b5274dd9852ad9f6129dde3e105a31",
+    "original_sha256": "aeedeb3243f07b61dbbe854aa08b5ef6f0b5274dd9852ad9f6129dde3e105a31",
+    "bytes": 413,
+    "sanitized": false
+  },
+  {
+    "path": "ProjectSettings/ClusterInputManager.asset",
+    "sha256": "40e65dd214bf254955d2c8829ca8ce2130fd3510485560ce012e9a1ddd93e623",
+    "original_sha256": "40e65dd214bf254955d2c8829ca8ce2130fd3510485560ce012e9a1ddd93e623",
+    "bytes": 114,
+    "sanitized": false
+  },
+  {
+    "path": "ProjectSettings/DynamicsManager.asset",
+    "sha256": "b7c9a9dc08b98990109d4346f68745e15e238de400f96c583e53e1c83c743a78",
+    "original_sha256": "b7c9a9dc08b98990109d4346f68745e15e238de400f96c583e53e1c83c743a78",
+    "bytes": 1254,
+    "sanitized": false
+  },
+  {
+    "path": "ProjectSettings/EditorBuildSettings.asset",
+    "sha256": "348ba1eca4b0698957f264f877f76227b78583acd3138fd5fc85be92f158e261",
+    "original_sha256": "348ba1eca4b0698957f264f877f76227b78583acd3138fd5fc85be92f158e261",
+    "bytes": 401,
+    "sanitized": false
+  },
+  {
+    "path": "ProjectSettings/EditorSettings.asset",
+    "sha256": "e604d57e55c4533bbcf097da9e8c564aa5393f186bc793d01d60e0c3194b4847",
+    "original_sha256": "e604d57e55c4533bbcf097da9e8c564aa5393f186bc793d01d60e0c3194b4847",
+    "bytes": 1518,
+    "sanitized": false
+  },
+  {
+    "path": "ProjectSettings/GraphicsSettings.asset",
+    "sha256": "9c1bb28a2aac0fee9d3cfd844f6f345fe573f18d35a5c9fd3048b9e9a066c4df",
+    "original_sha256": "9c1bb28a2aac0fee9d3cfd844f6f345fe573f18d35a5c9fd3048b9e9a066c4df",
+    "bytes": 2568,
+    "sanitized": false
+  },
+  {
+    "path": "ProjectSettings/InputManager.asset",
+    "sha256": "7a1bb836a1008d26d0860d143e9d9df7ca41731d30a72901b518063819c62df2",
+    "original_sha256": "7a1bb836a1008d26d0860d143e9d9df7ca41731d30a72901b518063819c62df2",
+    "bytes": 9731,
+    "sanitized": false
+  },
+  {
+    "path": "ProjectSettings/MemorySettings.asset",
+    "sha256": "1e8379a461b10ae09f3f696911088c16875d63e87ed5f2d95df9e1892703f9fd",
+    "original_sha256": "1e8379a461b10ae09f3f696911088c16875d63e87ed5f2d95df9e1892703f9fd",
+    "bytes": 1192,
+    "sanitized": false
+  },
+  {
+    "path": "ProjectSettings/MultiplayerManager.asset",
+    "sha256": "aba89fd1a1ddad182727ad82727e536d27372e90328a8196da2a4560398983dd",
+    "original_sha256": "aba89fd1a1ddad182727ad82727e536d27372e90328a8196da2a4560398983dd",
+    "bytes": 157,
+    "sanitized": false
+  },
+  {
+    "path": "ProjectSettings/NavMeshAreas.asset",
+    "sha256": "80106cfa7e6181a1928b142c075f3e510d527441e3d79bc83590e4ac91e7cd66",
+    "original_sha256": "80106cfa7e6181a1928b142c075f3e510d527441e3d79bc83590e4ac91e7cd66",
+    "bytes": 1308,
+    "sanitized": false
+  },
+  {
+    "path": "ProjectSettings/PackageManagerSettings.asset",
+    "sha256": "a7dabba589abe7fc2b45bd3d3fba3fe9be97043492703f716da2d9131c13a807",
+    "original_sha256": "a7dabba589abe7fc2b45bd3d3fba3fe9be97043492703f716da2d9131c13a807",
+    "bytes": 1003,
+    "sanitized": false
+  },
+  {
+    "path": "ProjectSettings/Physics2DSettings.asset",
+    "sha256": "e3cbdbf0be15244b7b67d2f07bdb8e8981911c11a8c7fe8035f5261272fec658",
+    "original_sha256": "e3cbdbf0be15244b7b67d2f07bdb8e8981911c11a8c7fe8035f5261272fec658",
+    "bytes": 2028,
+    "sanitized": false
+  },
+  {
+    "path": "ProjectSettings/PresetManager.asset",
+    "sha256": "29c125923fe6e29f90190d4fce1c82d660e7051546e2c9d02908d18c9cf2436c",
+    "original_sha256": "29c125923fe6e29f90190d4fce1c82d660e7051546e2c9d02908d18c9cf2436c",
+    "bytes": 146,
+    "sanitized": false
+  },
+  {
+    "path": "ProjectSettings/ProjectSettings.asset",
+    "sha256": "ef96f8a3a8fd176b7a5367dd390750822be6537ac33006ec570abb2f318ce877",
+    "original_sha256": "c1286d62a6a65a21797ffa4c3d04466397894194b9567ab666aa4107065ea572",
+    "bytes": 24900,
+    "sanitized": true
   },
   {
     "path": "ProjectSettings/ProjectVersion.txt",
     "sha256": "c325261275ff230e74aed1bfad3dbbb3eeaac4d102c581798cbcc6637174592b",
-    "bytes": 85
+    "original_sha256": "c325261275ff230e74aed1bfad3dbbb3eeaac4d102c581798cbcc6637174592b",
+    "bytes": 85,
+    "sanitized": false
+  },
+  {
+    "path": "ProjectSettings/QualitySettings.asset",
+    "sha256": "6814d6cc3eb850dd7d2a069a8b17ba9f7591deba8b1758a855978bd9c8627643",
+    "original_sha256": "6814d6cc3eb850dd7d2a069a8b17ba9f7591deba8b1758a855978bd9c8627643",
+    "bytes": 3662,
+    "sanitized": false
+  },
+  {
+    "path": "ProjectSettings/SceneTemplateSettings.json",
+    "sha256": "bb9098b3bfcde78d93e264b96f7b77b5430e64e8c57a7aad7f5a5d9c3945e16a",
+    "original_sha256": "bb9098b3bfcde78d93e264b96f7b77b5430e64e8c57a7aad7f5a5d9c3945e16a",
+    "bytes": 3535,
+    "sanitized": false
+  },
+  {
+    "path": "ProjectSettings/ShaderGraphSettings.asset",
+    "sha256": "773803237466ffe9bbfed9ecef9bbe25f63196dd47ab6b3003f0cd1649fd2bd0",
+    "original_sha256": "773803237466ffe9bbfed9ecef9bbe25f63196dd47ab6b3003f0cd1649fd2bd0",
+    "bytes": 524,
+    "sanitized": false
+  },
+  {
+    "path": "ProjectSettings/TagManager.asset",
+    "sha256": "23fc56b484aa3d7edf5914cd3591f7a823ccef5e3f3496f8a51f30388ead63dc",
+    "original_sha256": "23fc56b484aa3d7edf5914cd3591f7a823ccef5e3f3496f8a51f30388ead63dc",
+    "bytes": 657,
+    "sanitized": false
+  },
+  {
+    "path": "ProjectSettings/TimeManager.asset",
+    "sha256": "1a83e54adbbda7c9f4851103a0c6ab7f6448a3343d4ea5b7620452fa08416ecd",
+    "original_sha256": "1a83e54adbbda7c9f4851103a0c6ab7f6448a3343d4ea5b7620452fa08416ecd",
+    "bytes": 202,
+    "sanitized": false
+  },
+  {
+    "path": "ProjectSettings/UnityConnectSettings.asset",
+    "sha256": "d6034acbef6c9e3179866486c31eab81fcbe5e7ed350ce71e0fa2b1449b77109",
+    "original_sha256": "d6034acbef6c9e3179866486c31eab81fcbe5e7ed350ce71e0fa2b1449b77109",
+    "bytes": 943,
+    "sanitized": false
+  },
+  {
+    "path": "ProjectSettings/URPProjectSettings.asset",
+    "sha256": "a3a626cb529ccfc0a82e388b8cd32bc60888f7226c33412fad3bc50aba802cd7",
+    "original_sha256": "a3a626cb529ccfc0a82e388b8cd32bc60888f7226c33412fad3bc50aba802cd7",
+    "bytes": 410,
+    "sanitized": false
+  },
+  {
+    "path": "ProjectSettings/VersionControlSettings.asset",
+    "sha256": "e7bda45bf7a394745fee1316e6c71fa676004d591ad1f3aa247fd3e4ceb86071",
+    "original_sha256": "e7bda45bf7a394745fee1316e6c71fa676004d591ad1f3aa247fd3e4ceb86071",
+    "bytes": 188,
+    "sanitized": false
+  },
+  {
+    "path": "ProjectSettings/VFXManager.asset",
+    "sha256": "f066c6483919961332415ee64204f74fe52f38c02e82892eb02b7a5b2e381f0e",
+    "original_sha256": "f066c6483919961332415ee64204f74fe52f38c02e82892eb02b7a5b2e381f0e",
+    "bytes": 308,
+    "sanitized": false
+  },
+  {
+    "path": "ProjectSettings/XRSettings.asset",
+    "sha256": "edd2beb4a2e388312b4b7da241aa51070434005d82c59363f1237dd2e567585f",
+    "original_sha256": "edd2beb4a2e388312b4b7da241aa51070434005d82c59363f1237dd2e567585f",
+    "bytes": 158,
+    "sanitized": false
   }
 ]

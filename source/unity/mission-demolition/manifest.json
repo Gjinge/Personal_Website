@@ -2,231 +2,3326 @@
   {
     "path": "Assets/Cloud.cs",
     "sha256": "6a5dee73736b3e0b85d01e9f6f6154c06694ad920e32ae3d4b57fa9222ffbc7d",
-    "bytes": 1912
+    "original_sha256": "6a5dee73736b3e0b85d01e9f6f6154c06694ad920e32ae3d4b57fa9222ffbc7d",
+    "bytes": 1912,
+    "sanitized": false
   },
   {
     "path": "Assets/Cloud.cs.meta",
     "sha256": "2735f2888c7e61dde27823384c1523db47e345064f8e2796bcab8ebc6f7706b9",
-    "bytes": 59
+    "original_sha256": "2735f2888c7e61dde27823384c1523db47e345064f8e2796bcab8ebc6f7706b9",
+    "bytes": 59,
+    "sanitized": false
   },
   {
     "path": "Assets/GameObjects/Cloud.prefab",
     "sha256": "5bda1d20e1aeba69cd03897acf6e28a4ee4e19f3e795d53522877fbaf1071fb7",
-    "bytes": 1614
+    "original_sha256": "5bda1d20e1aeba69cd03897acf6e28a4ee4e19f3e795d53522877fbaf1071fb7",
+    "bytes": 1614,
+    "sanitized": false
   },
   {
     "path": "Assets/GameObjects/Cloud.prefab.meta",
     "sha256": "02dd6d02832065c7e790cea8fb1ddb65650323ecabe0e87191207f4b0eb25876",
-    "bytes": 154
+    "original_sha256": "02dd6d02832065c7e790cea8fb1ddb65650323ecabe0e87191207f4b0eb25876",
+    "bytes": 154,
+    "sanitized": false
   },
   {
     "path": "Assets/GameObjects/CloudSphere.prefab",
     "sha256": "848b00aa038ab87793ed35f9b3669c2b3a23ce7b3a90eb9e050b533d167d0148",
-    "bytes": 2533
+    "original_sha256": "848b00aa038ab87793ed35f9b3669c2b3a23ce7b3a90eb9e050b533d167d0148",
+    "bytes": 2533,
+    "sanitized": false
   },
   {
     "path": "Assets/GameObjects/CloudSphere.prefab.meta",
     "sha256": "d9e3ce0d1f37c70df9b45a03f23ff737c3b85f35b9b8d3e593353316b2df3cf7",
-    "bytes": 154
+    "original_sha256": "d9e3ce0d1f37c70df9b45a03f23ff737c3b85f35b9b8d3e593353316b2df3cf7",
+    "bytes": 154,
+    "sanitized": false
   },
   {
     "path": "Assets/GameObjects/Goal.prefab",
     "sha256": "b5cade0604a169cc5806478b6246da4da59ef196fc524b99450e0781134736e2",
-    "bytes": 3520
+    "original_sha256": "b5cade0604a169cc5806478b6246da4da59ef196fc524b99450e0781134736e2",
+    "bytes": 3520,
+    "sanitized": false
   },
   {
     "path": "Assets/GameObjects/Goal.prefab.meta",
     "sha256": "d159bbf41a26813e9199e675de1b3b122a1929e63ea52e100d17e707b3e72048",
-    "bytes": 154
+    "original_sha256": "d159bbf41a26813e9199e675de1b3b122a1929e63ea52e100d17e707b3e72048",
+    "bytes": 154,
+    "sanitized": false
   },
   {
     "path": "Assets/GameObjects/Mat_Cloud.mat",
     "sha256": "543e23088935f3abeff9c278faaf7399b82f064b27c169a25a2d9f337a6ddfd4",
-    "bytes": 3814
+    "original_sha256": "543e23088935f3abeff9c278faaf7399b82f064b27c169a25a2d9f337a6ddfd4",
+    "bytes": 3814,
+    "sanitized": false
   },
   {
     "path": "Assets/GameObjects/Mat_Cloud.mat.meta",
     "sha256": "0e78236750a6f91151dba02b33b7412147d8325c8c4c9e6501b0b7343c3e46fe",
-    "bytes": 188
+    "original_sha256": "0e78236750a6f91151dba02b33b7412147d8325c8c4c9e6501b0b7343c3e46fe",
+    "bytes": 188,
+    "sanitized": false
   },
   {
     "path": "Assets/GameObjects/Mat_Stone.mat",
     "sha256": "55eb767476fa84dddf0d34fad1b1cddd354327b3cf2f0ce295501ff758581660",
-    "bytes": 3814
+    "original_sha256": "55eb767476fa84dddf0d34fad1b1cddd354327b3cf2f0ce295501ff758581660",
+    "bytes": 3814,
+    "sanitized": false
   },
   {
     "path": "Assets/GameObjects/Mat_Stone.mat.meta",
     "sha256": "82e79f57358732facea1729720ddffefb803acdc71ed1b3f492624c4e91d1ec3",
-    "bytes": 188
+    "original_sha256": "82e79f57358732facea1729720ddffefb803acdc71ed1b3f492624c4e91d1ec3",
+    "bytes": 188,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/GameObjects/PMat_Projectile.physicMaterial",
+    "sha256": "408c6d07bfb92945a703f89f98392a697e3cc5588f98001498e8e989478ecf38",
+    "original_sha256": "408c6d07bfb92945a703f89f98392a697e3cc5588f98001498e8e989478ecf38",
+    "bytes": 366,
+    "sanitized": false
   },
   {
     "path": "Assets/GameObjects/PMat_Projectile.physicMaterial.meta",
     "sha256": "457a6c82dd6876ea87e57fee3b33924169b098e10a57a639707de2934b71afd7",
-    "bytes": 189
+    "original_sha256": "457a6c82dd6876ea87e57fee3b33924169b098e10a57a639707de2934b71afd7",
+    "bytes": 189,
+    "sanitized": false
   },
   {
     "path": "Assets/GameObjects/Projectile.prefab",
     "sha256": "97531750c6754c0acb53b2c7f9f150db41496223538c4fe9531a17a23a1bd60e",
-    "bytes": 3862
+    "original_sha256": "97531750c6754c0acb53b2c7f9f150db41496223538c4fe9531a17a23a1bd60e",
+    "bytes": 3862,
+    "sanitized": false
   },
   {
     "path": "Assets/GameObjects/Projectile.prefab.meta",
     "sha256": "8e9c1e9d997eaee59d8f7d79eaae14543e5c7af34da7da297fa98bc9852399a6",
-    "bytes": 154
+    "original_sha256": "8e9c1e9d997eaee59d8f7d79eaae14543e5c7af34da7da297fa98bc9852399a6",
+    "bytes": 154,
+    "sanitized": false
   },
   {
     "path": "Assets/GameObjects/Slab.prefab",
     "sha256": "0064ca026c691be2a89b3b50c3a88fce4507c2429e37b0305ed7b9a74dbece23",
-    "bytes": 4230
+    "original_sha256": "0064ca026c691be2a89b3b50c3a88fce4507c2429e37b0305ed7b9a74dbece23",
+    "bytes": 4230,
+    "sanitized": false
   },
   {
     "path": "Assets/GameObjects/Slab.prefab.meta",
     "sha256": "3158c1e41cb53eaf4aa369d60846c0a1aa134696fe51ccdad489ea88bb20f069",
-    "bytes": 154
+    "original_sha256": "3158c1e41cb53eaf4aa369d60846c0a1aa134696fe51ccdad489ea88bb20f069",
+    "bytes": 154,
+    "sanitized": false
   },
   {
     "path": "Assets/GameObjects/Wall.prefab",
     "sha256": "b87fd50b4ad73aa8a650ddf3757b3dcd2e121fe91dcb722c2c924eca3e620f2b",
-    "bytes": 4226
+    "original_sha256": "b87fd50b4ad73aa8a650ddf3757b3dcd2e121fe91dcb722c2c924eca3e620f2b",
+    "bytes": 4226,
+    "sanitized": false
   },
   {
     "path": "Assets/GameObjects/Wall.prefab.meta",
     "sha256": "cc920230996611e98e2ca857c156eeb6d5955e4bbdda547102248fe52c114fed",
-    "bytes": 154
+    "original_sha256": "cc920230996611e98e2ca857c156eeb6d5955e4bbdda547102248fe52c114fed",
+    "bytes": 154,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/GameObjects.meta",
+    "sha256": "d124fef38da0c4365b35b1c6b6bb5c5d5562e547b75c49dbb33f0035f79f22fe",
+    "original_sha256": "d124fef38da0c4365b35b1c6b6bb5c5d5562e547b75c49dbb33f0035f79f22fe",
+    "bytes": 172,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/InputSystem_Actions.inputactions",
+    "sha256": "cd5a6308f9bce6ddac2023b5ed185ff6bc36ac09fbfd9680054d367822203812",
+    "original_sha256": "cd5a6308f9bce6ddac2023b5ed185ff6bc36ac09fbfd9680054d367822203812",
+    "bytes": 42061,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/InputSystem_Actions.inputactions.meta",
+    "sha256": "3b4e424a80f5b4fa76b6abd774884a24285eaa61f22ff9bb20e5ad505fd8b569",
+    "original_sha256": "3b4e424a80f5b4fa76b6abd774884a24285eaa61f22ff9bb20e5ad505fd8b569",
+    "bytes": 376,
+    "sanitized": false
   },
   {
     "path": "Assets/Materials/Mat_Cloud.mat",
     "sha256": "927e99efdd7a1c7cabcca3863e8815c37e3d555f2004f65ff624559a49bed659",
-    "bytes": 3786
+    "original_sha256": "927e99efdd7a1c7cabcca3863e8815c37e3d555f2004f65ff624559a49bed659",
+    "bytes": 3786,
+    "sanitized": false
   },
   {
     "path": "Assets/Materials/Mat_Cloud.mat.meta",
     "sha256": "384969e1867eb260476c42f900888a218609922fd7cb4077c305e24822862428",
-    "bytes": 188
+    "original_sha256": "384969e1867eb260476c42f900888a218609922fd7cb4077c305e24822862428",
+    "bytes": 188,
+    "sanitized": false
   },
   {
     "path": "Assets/Materials/Mat_Ground.mat",
     "sha256": "5ba31bace4b8c5c3e6b75ccb7fab6ca1cfe92f0246467a1218fffa12208ec357",
-    "bytes": 3737
+    "original_sha256": "5ba31bace4b8c5c3e6b75ccb7fab6ca1cfe92f0246467a1218fffa12208ec357",
+    "bytes": 3737,
+    "sanitized": false
   },
   {
     "path": "Assets/Materials/Mat_Ground.mat.meta",
     "sha256": "03ac04ccf44cbfd17a58b19949ee3a4e6f2b9fff6754870824698c4aed681739",
-    "bytes": 188
+    "original_sha256": "03ac04ccf44cbfd17a58b19949ee3a4e6f2b9fff6754870824698c4aed681739",
+    "bytes": 188,
+    "sanitized": false
   },
   {
     "path": "Assets/Materials/Mat_Projectile.mat",
     "sha256": "c6e4738f47f7b902fe0dbdf33a43fd5c07776d89a1a49bd84ec6c2fa12f2f1b0",
-    "bytes": 3744
+    "original_sha256": "c6e4738f47f7b902fe0dbdf33a43fd5c07776d89a1a49bd84ec6c2fa12f2f1b0",
+    "bytes": 3744,
+    "sanitized": false
   },
   {
     "path": "Assets/Materials/Mat_Projectile.mat.meta",
     "sha256": "4d4e52c89bd421be3efad544fad2ba9f31c87b666944ca831ef183e64af33896",
-    "bytes": 188
+    "original_sha256": "4d4e52c89bd421be3efad544fad2ba9f31c87b666944ca831ef183e64af33896",
+    "bytes": 188,
+    "sanitized": false
   },
   {
     "path": "Assets/Materials/Mat_Slingshot.mat",
     "sha256": "8657fb7daad95ca99fd4d828349f23ba4ca0c08b6b8ac5f606781b4eddf23d9f",
-    "bytes": 3740
+    "original_sha256": "8657fb7daad95ca99fd4d828349f23ba4ca0c08b6b8ac5f606781b4eddf23d9f",
+    "bytes": 3740,
+    "sanitized": false
   },
   {
     "path": "Assets/Materials/Mat_Slingshot.mat.meta",
     "sha256": "2470c5ce937e282026eb8ddfc76703bf9a66a4c10112180b5473f4b36ab59f92",
-    "bytes": 188
+    "original_sha256": "2470c5ce937e282026eb8ddfc76703bf9a66a4c10112180b5473f4b36ab59f92",
+    "bytes": 188,
+    "sanitized": false
   },
   {
     "path": "Assets/Materials/MatGoal.mat",
     "sha256": "4907eb98b42351a61fce3846eb88a4f38162ea33dcbb7cd12dfb282cc8909d8c",
-    "bytes": 3671
+    "original_sha256": "4907eb98b42351a61fce3846eb88a4f38162ea33dcbb7cd12dfb282cc8909d8c",
+    "bytes": 3671,
+    "sanitized": false
   },
   {
     "path": "Assets/Materials/MatGoal.mat.meta",
     "sha256": "6101d9cc870c0ee29d234dbaff483b8c40bb1a99d980be3c14f92958ec8df853",
-    "bytes": 188
+    "original_sha256": "6101d9cc870c0ee29d234dbaff483b8c40bb1a99d980be3c14f92958ec8df853",
+    "bytes": 188,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Materials.meta",
+    "sha256": "bf9e3e47148b056cd0e59e7490625029890f2f5df4f141973d392f553c1b571a",
+    "original_sha256": "bf9e3e47148b056cd0e59e7490625029890f2f5df4f141973d392f553c1b571a",
+    "bytes": 172,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Readme.asset",
+    "sha256": "6d098604e909b6a0e64fe5910c2719704864d49678bcf5413bd47b67e5490107",
+    "original_sha256": "6d098604e909b6a0e64fe5910c2719704864d49678bcf5413bd47b67e5490107",
+    "bytes": 1144,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Readme.asset.meta",
+    "sha256": "46c6b89ac1d47bd0c0d1a8b141ae3e32cd95d3e74c49381f0d9f942488c254ce",
+    "original_sha256": "46c6b89ac1d47bd0c0d1a8b141ae3e32cd95d3e74c49381f0d9f942488c254ce",
+    "bytes": 182,
+    "sanitized": false
   },
   {
     "path": "Assets/Scenes/_Scene_0.unity",
     "sha256": "0096c2d70e5a0b667a74d245a14ace9e95596ea012f01c8b1becb24d71f7fa1e",
-    "bytes": 112571
+    "original_sha256": "0096c2d70e5a0b667a74d245a14ace9e95596ea012f01c8b1becb24d71f7fa1e",
+    "bytes": 112571,
+    "sanitized": false
   },
   {
     "path": "Assets/Scenes/_Scene_0.unity.meta",
     "sha256": "5d65cbb0d117ec4e1b53530fecd5634c98f03bbc50cd70a364230eb04b17810f",
-    "bytes": 155
+    "original_sha256": "5d65cbb0d117ec4e1b53530fecd5634c98f03bbc50cd70a364230eb04b17810f",
+    "bytes": 155,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Scenes.meta",
+    "sha256": "92598ef42aeaa7813a50e780bcee1ad6c832b257592d09ffb0e6fb6116bb703f",
+    "original_sha256": "92598ef42aeaa7813a50e780bcee1ad6c832b257592d09ffb0e6fb6116bb703f",
+    "bytes": 172,
+    "sanitized": false
   },
   {
     "path": "Assets/Scripts/CloudCrafter.cs",
     "sha256": "155bd940088b92714afe71679a1e3d103b25d377b202f5ffea0351d724fd2047",
-    "bytes": 1886
+    "original_sha256": "155bd940088b92714afe71679a1e3d103b25d377b202f5ffea0351d724fd2047",
+    "bytes": 1886,
+    "sanitized": false
   },
   {
     "path": "Assets/Scripts/CloudCrafter.cs.meta",
     "sha256": "0e964aed7426417239ec9c581c8e07ca47f737d1cd38f6ca9834e25929c5b346",
-    "bytes": 59
+    "original_sha256": "0e964aed7426417239ec9c581c8e07ca47f737d1cd38f6ca9834e25929c5b346",
+    "bytes": 59,
+    "sanitized": false
   },
   {
     "path": "Assets/Scripts/FollowCam.cs",
     "sha256": "7ea786f4d8778494aaf6e9f653c0916652496cdd42f99dc3463d510e0258a88d",
-    "bytes": 1307
+    "original_sha256": "7ea786f4d8778494aaf6e9f653c0916652496cdd42f99dc3463d510e0258a88d",
+    "bytes": 1307,
+    "sanitized": false
   },
   {
     "path": "Assets/Scripts/FollowCam.cs.meta",
     "sha256": "246b681b727419df08ddce6a8decb748024452f8beaa8573f0fbd881d5720fa7",
-    "bytes": 59
+    "original_sha256": "246b681b727419df08ddce6a8decb748024452f8beaa8573f0fbd881d5720fa7",
+    "bytes": 59,
+    "sanitized": false
   },
   {
     "path": "Assets/Scripts/Goal.cs",
     "sha256": "27c375640564b1a0bda3daffc63ca128116483878f61301888ecd5f28e27fe21",
-    "bytes": 406
+    "original_sha256": "27c375640564b1a0bda3daffc63ca128116483878f61301888ecd5f28e27fe21",
+    "bytes": 406,
+    "sanitized": false
   },
   {
     "path": "Assets/Scripts/Goal.cs.meta",
     "sha256": "04ae4c22d3c5571b001f299dbac769ab32d4fa7448694ab7ee13e72fe4be0941",
-    "bytes": 59
+    "original_sha256": "04ae4c22d3c5571b001f299dbac769ab32d4fa7448694ab7ee13e72fe4be0941",
+    "bytes": 59,
+    "sanitized": false
   },
   {
     "path": "Assets/Scripts/MissionDemolition.cs",
     "sha256": "f720b373305a6351da1343c2f32186c74b6e362af0eaaf52ce4ef9c626cbf48a",
-    "bytes": 2762
+    "original_sha256": "f720b373305a6351da1343c2f32186c74b6e362af0eaaf52ce4ef9c626cbf48a",
+    "bytes": 2762,
+    "sanitized": false
   },
   {
     "path": "Assets/Scripts/MissionDemolition.cs.meta",
     "sha256": "36a97d827d92931c6dfa95704be1e266526bfa72601da9a807556ca4a4bcb2b7",
-    "bytes": 59
+    "original_sha256": "36a97d827d92931c6dfa95704be1e266526bfa72601da9a807556ca4a4bcb2b7",
+    "bytes": 59,
+    "sanitized": false
   },
   {
     "path": "Assets/Scripts/ProjectileLine.cs",
     "sha256": "6c242950d79cde11d4a08777ec20755928b3255051895648294ea972b3a01b66",
-    "bytes": 2516
+    "original_sha256": "6c242950d79cde11d4a08777ec20755928b3255051895648294ea972b3a01b66",
+    "bytes": 2516,
+    "sanitized": false
   },
   {
     "path": "Assets/Scripts/ProjectileLine.cs.meta",
     "sha256": "c909881d96cfc7b0fa0c5fa5665e8f154ba860aa0588778699dad6144d587026",
-    "bytes": 59
+    "original_sha256": "c909881d96cfc7b0fa0c5fa5665e8f154ba860aa0588778699dad6144d587026",
+    "bytes": 59,
+    "sanitized": false
   },
   {
     "path": "Assets/Scripts/RigidbodySleep.cs",
     "sha256": "3b5e3cd61b4163cbdf9828cab7675cf4846f19a0d2484c1b80eb2df32dc2cd00",
-    "bytes": 327
+    "original_sha256": "3b5e3cd61b4163cbdf9828cab7675cf4846f19a0d2484c1b80eb2df32dc2cd00",
+    "bytes": 327,
+    "sanitized": false
   },
   {
     "path": "Assets/Scripts/RigidbodySleep.cs.meta",
     "sha256": "72879df59a4cd5b0e274a57d5bb782bfaa660ed57c6ca7c9aa6e8b85b6184d75",
-    "bytes": 59
+    "original_sha256": "72879df59a4cd5b0e274a57d5bb782bfaa660ed57c6ca7c9aa6e8b85b6184d75",
+    "bytes": 59,
+    "sanitized": false
   },
   {
     "path": "Assets/Scripts/Slingshot.cs",
     "sha256": "47447d7c387c76b7d6d95faaa716c1602c1c3db7ac6f82ecb6fa86ef117b5d0f",
-    "bytes": 2525
+    "original_sha256": "47447d7c387c76b7d6d95faaa716c1602c1c3db7ac6f82ecb6fa86ef117b5d0f",
+    "bytes": 2525,
+    "sanitized": false
   },
   {
     "path": "Assets/Scripts/Slingshot.cs.meta",
     "sha256": "9e1b61d0cbfa9de50ab106f49f2533cde2498bb04a61243dfb955569ceeee5b6",
-    "bytes": 59
+    "original_sha256": "9e1b61d0cbfa9de50ab106f49f2533cde2498bb04a61243dfb955569ceeee5b6",
+    "bytes": 59,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Scripts.meta",
+    "sha256": "4a3fd503928dded785968f9b37c4769284cd2c7953ae82b875e006a9076b2795",
+    "original_sha256": "4a3fd503928dded785968f9b37c4769284cd2c7953ae82b875e006a9076b2795",
+    "bytes": 172,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Settings/DefaultVolumeProfile.asset",
+    "sha256": "3a6f825e8d07fe8b9f3b52e7d4e2dfa0e22c555b22335adb19f0ecc66dfa38dd",
+    "original_sha256": "3a6f825e8d07fe8b9f3b52e7d4e2dfa0e22c555b22335adb19f0ecc66dfa38dd",
+    "bytes": 23987,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Settings/DefaultVolumeProfile.asset.meta",
+    "sha256": "efbcb026cee6b8e32fdf27018c06b0515296a6ccbb43969e792fea270310700a",
+    "original_sha256": "efbcb026cee6b8e32fdf27018c06b0515296a6ccbb43969e792fea270310700a",
+    "bytes": 189,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Settings/Mobile_Renderer.asset",
+    "sha256": "b4efbcfdf69acb1e1e25e8afff9ba99009cfc47eb0b05a284648c5448e4d846f",
+    "original_sha256": "b4efbcfdf69acb1e1e25e8afff9ba99009cfc47eb0b05a284648c5448e4d846f",
+    "bytes": 1713,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Settings/Mobile_Renderer.asset.meta",
+    "sha256": "a148ee2b4987b05b8ff7ae5f9bf84916184f77aefddc821dceb551f5a69f8179",
+    "original_sha256": "a148ee2b4987b05b8ff7ae5f9bf84916184f77aefddc821dceb551f5a69f8179",
+    "bytes": 189,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Settings/Mobile_RPAsset.asset",
+    "sha256": "867614875f5afc87b9712ceec320d81a119ffa65aaed7ffc4af9b00ba148b282",
+    "original_sha256": "867614875f5afc87b9712ceec320d81a119ffa65aaed7ffc4af9b00ba148b282",
+    "bytes": 4345,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Settings/Mobile_RPAsset.asset.meta",
+    "sha256": "53ea46647712c615fd1a3f2e0dddfa8559eeedc649e9a1dbf93ff913de28544c",
+    "original_sha256": "53ea46647712c615fd1a3f2e0dddfa8559eeedc649e9a1dbf93ff913de28544c",
+    "bytes": 189,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Settings/PC_Renderer.asset",
+    "sha256": "3d0b01d8ded3327263b6690be128a3de58d17c514943ae42fe743a3e084a9c79",
+    "original_sha256": "3d0b01d8ded3327263b6690be128a3de58d17c514943ae42fe743a3e084a9c79",
+    "bytes": 3439,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Settings/PC_Renderer.asset.meta",
+    "sha256": "b5df8ddb2708c6ed4c133a5ff9ee95a75cc20e4ee3ed6181366a61aedbaf31ec",
+    "original_sha256": "b5df8ddb2708c6ed4c133a5ff9ee95a75cc20e4ee3ed6181366a61aedbaf31ec",
+    "bytes": 189,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Settings/PC_RPAsset.asset",
+    "sha256": "bcef31006339d245d47d5e8ad208f9f34471618496d08e9f9d06e8d449c71d97",
+    "original_sha256": "bcef31006339d245d47d5e8ad208f9f34471618496d08e9f9d06e8d449c71d97",
+    "bytes": 4364,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Settings/PC_RPAsset.asset.meta",
+    "sha256": "bb469b9b6f318e9e9bed29c3b2e73e79371c04743c6f95dd6603941f1cd3e53e",
+    "original_sha256": "bb469b9b6f318e9e9bed29c3b2e73e79371c04743c6f95dd6603941f1cd3e53e",
+    "bytes": 189,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Settings/SampleSceneProfile.asset",
+    "sha256": "a8677d4bac051d24caa11cd622e39f968155ee277bfce132274f1de225692fe9",
+    "original_sha256": "a8677d4bac051d24caa11cd622e39f968155ee277bfce132274f1de225692fe9",
+    "bytes": 3703,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Settings/SampleSceneProfile.asset.meta",
+    "sha256": "2e23abc214069f0adbf2b2207f1db54be7876629ec2a3681d0f4aa5b61622ef0",
+    "original_sha256": "2e23abc214069f0adbf2b2207f1db54be7876629ec2a3681d0f4aa5b61622ef0",
+    "bytes": 182,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Settings/UniversalRenderPipelineGlobalSettings.asset",
+    "sha256": "d031b623a7b01c2c67047a34212db936c014bf3b1adb305fbdc9819b8d121b45",
+    "original_sha256": "d031b623a7b01c2c67047a34212db936c014bf3b1adb305fbdc9819b8d121b45",
+    "bytes": 15044,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Settings/UniversalRenderPipelineGlobalSettings.asset.meta",
+    "sha256": "f61661d8bc8dbe531daf09f6211ef978c7ba145c9207c8e76524396ae0722d7c",
+    "original_sha256": "f61661d8bc8dbe531daf09f6211ef978c7ba145c9207c8e76524396ae0722d7c",
+    "bytes": 189,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Settings.meta",
+    "sha256": "73c8e19843240273facb0af6bdbf430d719e397aded705629594060ce25ce7ad",
+    "original_sha256": "73c8e19843240273facb0af6bdbf430d719e397aded705629594060ce25ce7ad",
+    "bytes": 172,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Fonts/Anton OFL.txt",
+    "sha256": "c74c9ec4afa0128eed49616da63c36ac45bb97e17b9d0b363c226cf4aebfdc8e",
+    "original_sha256": "c74c9ec4afa0128eed49616da63c36ac45bb97e17b9d0b363c226cf4aebfdc8e",
+    "bytes": 4394,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Fonts/Anton OFL.txt.meta",
+    "sha256": "b5a10dbed0d0eeb3a7656c173d866ea1f2b234653dc11a48fbc925598087fcd1",
+    "original_sha256": "b5a10dbed0d0eeb3a7656c173d866ea1f2b234653dc11a48fbc925598087fcd1",
+    "bytes": 177,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Fonts/Anton.ttf",
+    "sha256": "d86f6a6f364ab85b0ab275f770355d9847bbe5feff040b55bb392e825c50b4bc",
+    "original_sha256": "d86f6a6f364ab85b0ab275f770355d9847bbe5feff040b55bb392e825c50b4bc",
+    "bytes": 42376,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Fonts/Anton.ttf.meta",
+    "sha256": "b532d182a0eda3a999ab33e5f40dfb4832f4755d275cbc1161742dc21cbe70da",
+    "original_sha256": "b532d182a0eda3a999ab33e5f40dfb4832f4755d275cbc1161742dc21cbe70da",
+    "bytes": 414,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Fonts/Bangers - OFL.txt",
+    "sha256": "d5b6e9e1ee44dd04ff03c9ac8bfa940744a50d268f8240e05b9dced9cc51d2c3",
+    "original_sha256": "d5b6e9e1ee44dd04ff03c9ac8bfa940744a50d268f8240e05b9dced9cc51d2c3",
+    "bytes": 4398,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Fonts/Bangers - OFL.txt.meta",
+    "sha256": "4574163241b04e6a94a13c92cb786e9b2ff9177e9dea64a3e99c95161fe528ef",
+    "original_sha256": "4574163241b04e6a94a13c92cb786e9b2ff9177e9dea64a3e99c95161fe528ef",
+    "bytes": 177,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Fonts/Bangers.ttf",
+    "sha256": "321ffd247939d12810b05472fb87e2bdac3fb8fcb430d1817b934b3ad55caf40",
+    "original_sha256": "321ffd247939d12810b05472fb87e2bdac3fb8fcb430d1817b934b3ad55caf40",
+    "bytes": 39676,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Fonts/Bangers.ttf.meta",
+    "sha256": "2c63489845beb43bfb1c242d3a311ac0a9a0c16d1c1e71741b77940f099db5fe",
+    "original_sha256": "2c63489845beb43bfb1c242d3a311ac0a9a0c16d1c1e71741b77940f099db5fe",
+    "bytes": 414,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Fonts/Electronic Highway Sign.TTF",
+    "sha256": "09c9c0e13ed67bf202a61057afb0b6e4feb4241e74561624a2ed6cf03307ec3c",
+    "original_sha256": "09c9c0e13ed67bf202a61057afb0b6e4feb4241e74561624a2ed6cf03307ec3c",
+    "bytes": 73060,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Fonts/Electronic Highway Sign.TTF.meta",
+    "sha256": "8935522851857fc12b1f49925b475aadcf72e5a16afbadc85372a28008e5dddf",
+    "original_sha256": "8935522851857fc12b1f49925b475aadcf72e5a16afbadc85372a28008e5dddf",
+    "bytes": 524,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Fonts/Oswald-Bold - OFL.txt",
+    "sha256": "d2ebf6d5fada406bc5884baade82d498526ff4597d9350926bb540be9cfdb1ef",
+    "original_sha256": "d2ebf6d5fada406bc5884baade82d498526ff4597d9350926bb540be9cfdb1ef",
+    "bytes": 4402,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Fonts/Oswald-Bold - OFL.txt.meta",
+    "sha256": "d139bd7e51e1a565bc36d5db833768dceb69cd3f44e5cde6f51adc280e55ffc0",
+    "original_sha256": "d139bd7e51e1a565bc36d5db833768dceb69cd3f44e5cde6f51adc280e55ffc0",
+    "bytes": 177,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Fonts/Oswald-Bold.ttf",
+    "sha256": "fddd19f5a6d8e9f5ccf42fa3cb4542db815b05ba14c0b1cd00f484e6c1c431a1",
+    "original_sha256": "fddd19f5a6d8e9f5ccf42fa3cb4542db815b05ba14c0b1cd00f484e6c1c431a1",
+    "bytes": 53056,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Fonts/Oswald-Bold.ttf.meta",
+    "sha256": "3b178c056217261cea5757dcfc6dc538ecf4c6ccb67e48a4aa5f9d85a091476e",
+    "original_sha256": "3b178c056217261cea5757dcfc6dc538ecf4c6ccb67e48a4aa5f9d85a091476e",
+    "bytes": 414,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Fonts/Roboto-Bold - AFL.txt",
+    "sha256": "58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd",
+    "original_sha256": "58d1e17ffe5109a7ae296caafcadfdbe6a7d176f0bc4ab01e12a689b0499d8bd",
+    "bytes": 11357,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Fonts/Roboto-Bold - AFL.txt.meta",
+    "sha256": "369f1ddc6c505117d084a2bd5678218a42a921ae8f1416f8342a207e99a093ec",
+    "original_sha256": "369f1ddc6c505117d084a2bd5678218a42a921ae8f1416f8342a207e99a093ec",
+    "bytes": 177,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Fonts/Roboto-Bold - License.txt",
+    "sha256": "6e87a552f5023123d86dc44110e3c389576a5dae7a7864df41d1242eb3dadbad",
+    "original_sha256": "6e87a552f5023123d86dc44110e3c389576a5dae7a7864df41d1242eb3dadbad",
+    "bytes": 154,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Fonts/Roboto-Bold - License.txt.meta",
+    "sha256": "353cd6e1dfeceb7f8f530b986e10e1a08cb87a7d9786993717b2e6d08f2ceaa4",
+    "original_sha256": "353cd6e1dfeceb7f8f530b986e10e1a08cb87a7d9786993717b2e6d08f2ceaa4",
+    "bytes": 177,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Fonts/Roboto-Bold.ttf",
+    "sha256": "7d0b991ee3e0be7af01ad7ea8cd2beea6c00a25e679a0226b6737f079aafff86",
+    "original_sha256": "7d0b991ee3e0be7af01ad7ea8cd2beea6c00a25e679a0226b6737f079aafff86",
+    "bytes": 170760,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Fonts/Roboto-Bold.ttf.meta",
+    "sha256": "38aeeacae30a7631034b81001bb7298a3265f8edce94dd4f9cb58afe50354fed",
+    "original_sha256": "38aeeacae30a7631034b81001bb7298a3265f8edce94dd4f9cb58afe50354fed",
+    "bytes": 490,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Fonts/Unity - OFL.txt",
+    "sha256": "9b51bb33aa695067b0779fa0ab1603234378b7cbb1afab2a548accd307116c2f",
+    "original_sha256": "9b51bb33aa695067b0779fa0ab1603234378b7cbb1afab2a548accd307116c2f",
+    "bytes": 4366,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Fonts/Unity - OFL.txt.meta",
+    "sha256": "07faf4338c4db6ff57043865c7997670aff3eaff40cf7f40245c0157a9bf7fe4",
+    "original_sha256": "07faf4338c4db6ff57043865c7997670aff3eaff40cf7f40245c0157a9bf7fe4",
+    "bytes": 177,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Fonts/Unity.ttf",
+    "sha256": "ce3de0bbc029e078b12675c8c4de0d0104763ee68d3695baee9d82fef8b1adde",
+    "original_sha256": "ce3de0bbc029e078b12675c8c4de0d0104763ee68d3695baee9d82fef8b1adde",
+    "bytes": 1644,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Fonts/Unity.ttf.meta",
+    "sha256": "7a21481bfe8df32e57ffee9215a79c7a78de57310beed3c2797d64fe955b79ae",
+    "original_sha256": "7a21481bfe8df32e57ffee9215a79c7a78de57310beed3c2797d64fe955b79ae",
+    "bytes": 470,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Fonts.meta",
+    "sha256": "7465b3c8148c6da331f7b809b8a451b4e393490c711f9562159b324253ed3780",
+    "original_sha256": "7465b3c8148c6da331f7b809b8a451b4e393490c711f9562159b324253ed3780",
+    "bytes": 172,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Materials/Crate - Surface Shader Scene.mat",
+    "sha256": "ebc8c340585ca7a518aff843b5c5c74d95fa846291de8dce2e8fb556f0983859",
+    "original_sha256": "ebc8c340585ca7a518aff843b5c5c74d95fa846291de8dce2e8fb556f0983859",
+    "bytes": 2464,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Materials/Crate - Surface Shader Scene.mat.meta",
+    "sha256": "2041d1ee1609048c3638f1d611d351e06148caa0686e3697a9de883af2188f7b",
+    "original_sha256": "2041d1ee1609048c3638f1d611d351e06148caa0686e3697a9de883af2188f7b",
+    "bytes": 138,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Materials/Crate - URP.mat",
+    "sha256": "52fee3018e418c749bc5e301f109565529b0c4764c9c0f4e93b3c3f2f9d46f05",
+    "original_sha256": "52fee3018e418c749bc5e301f109565529b0c4764c9c0f4e93b3c3f2f9d46f05",
+    "bytes": 3896,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Materials/Crate - URP.mat.meta",
+    "sha256": "3fc43de8d2159fb6b7f06bfdd34e7b70ca7b39606ea135dbcb090629ca91ec84",
+    "original_sha256": "3fc43de8d2159fb6b7f06bfdd34e7b70ca7b39606ea135dbcb090629ca91ec84",
+    "bytes": 188,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Materials/Ground - Logo Scene.mat",
+    "sha256": "fda6bae82624f138c076725f1cce343558e910f5fd4fb8472791292239c6e3ea",
+    "original_sha256": "fda6bae82624f138c076725f1cce343558e910f5fd4fb8472791292239c6e3ea",
+    "bytes": 4694,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Materials/Ground - Logo Scene.mat.meta",
+    "sha256": "c1390805b079c9e7f500a9d1e934a5578d51a1b34288058a4dd3e225ffd90e21",
+    "original_sha256": "c1390805b079c9e7f500a9d1e934a5578d51a1b34288058a4dd3e225ffd90e21",
+    "bytes": 138,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Materials/Ground - Surface Shader Scene.mat",
+    "sha256": "5a08582af650eede69109141d56131179dc3246dab20ea9cdb475df208333b10",
+    "original_sha256": "5a08582af650eede69109141d56131179dc3246dab20ea9cdb475df208333b10",
+    "bytes": 3150,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Materials/Ground - Surface Shader Scene.mat.meta",
+    "sha256": "2fd4df8d8d8bcc4c20ae6f02fc1028a3fe5e5c6277de856e60fa1d45219ee923",
+    "original_sha256": "2fd4df8d8d8bcc4c20ae6f02fc1028a3fe5e5c6277de856e60fa1d45219ee923",
+    "bytes": 138,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Materials/Ground - URP.mat",
+    "sha256": "4ac67ab1040d25e49e726c2698f86adb7b88554a3f157c56fd337ffcd93c03da",
+    "original_sha256": "4ac67ab1040d25e49e726c2698f86adb7b88554a3f157c56fd337ffcd93c03da",
+    "bytes": 4800,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Materials/Ground - URP.mat.meta",
+    "sha256": "c7cc288e73eafdc2460285ad345fe31bfa70fd284ed9106d0c5d68b1dee92ad9",
+    "original_sha256": "c7cc288e73eafdc2460285ad345fe31bfa70fd284ed9106d0c5d68b1dee92ad9",
+    "bytes": 188,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Materials/Small Crate_diffuse.mat",
+    "sha256": "512d7928b723d288f69e4cbecfcc5bdbc29503f711536c7772525356fcb1188f",
+    "original_sha256": "512d7928b723d288f69e4cbecfcc5bdbc29503f711536c7772525356fcb1188f",
+    "bytes": 2975,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Materials/Small Crate_diffuse.mat.meta",
+    "sha256": "433f9db6a13fc0347e57574805f53625e7fe627c064ddfecbfb11964d7d264c4",
+    "original_sha256": "433f9db6a13fc0347e57574805f53625e7fe627c064ddfecbfb11964d7d264c4",
+    "bytes": 179,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Materials.meta",
+    "sha256": "06c890adf936365d71fd0b415d0ecdb421d0b86f1050f9e5ec46e167550eb988",
+    "original_sha256": "06c890adf936365d71fd0b415d0ecdb421d0b86f1050f9e5ec46e167550eb988",
+    "bytes": 191,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Prefabs/Text Popup.prefab",
+    "sha256": "8e49a094dd05df0060b49a714668957d3e26867498791edd836475b0b1c36d00",
+    "original_sha256": "8e49a094dd05df0060b49a714668957d3e26867498791edd836475b0b1c36d00",
+    "bytes": 7583,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Prefabs/Text Popup.prefab.meta",
+    "sha256": "36d62361b7d236711e555a65c5d79787e9ee181ec832688eb710dbeba2edcbd5",
+    "original_sha256": "36d62361b7d236711e555a65c5d79787e9ee181ec832688eb710dbeba2edcbd5",
+    "bytes": 181,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Prefabs/TextMeshPro - Prefab 1.prefab",
+    "sha256": "3396857b80ee1a4ac5c55e9ef022b65be8ef737699df19892ebc2d00212799f3",
+    "original_sha256": "3396857b80ee1a4ac5c55e9ef022b65be8ef737699df19892ebc2d00212799f3",
+    "bytes": 5797,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Prefabs/TextMeshPro - Prefab 1.prefab.meta",
+    "sha256": "ab7b74e875d61b2f13cd8e1801fc1fe758fdf66bff8bec77082e869f2031c677",
+    "original_sha256": "ab7b74e875d61b2f13cd8e1801fc1fe758fdf66bff8bec77082e869f2031c677",
+    "bytes": 138,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Prefabs/TextMeshPro - Prefab 2.prefab",
+    "sha256": "46da6ce5f47a4a5ec4f37e27e509179f41d07d484309e4970c82f4191135deaa",
+    "original_sha256": "46da6ce5f47a4a5ec4f37e27e509179f41d07d484309e4970c82f4191135deaa",
+    "bytes": 5793,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Prefabs/TextMeshPro - Prefab 2.prefab.meta",
+    "sha256": "252a47ff1f2fa60c6d2bfee4a4dba6df2a1cddb99d48b58028533617f04caa47",
+    "original_sha256": "252a47ff1f2fa60c6d2bfee4a4dba6df2a1cddb99d48b58028533617f04caa47",
+    "bytes": 138,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Prefabs.meta",
+    "sha256": "71f2d1caa7a15f48f2667bcf7247f80d9b8b77e268d73194f531bdfc142d6946",
+    "original_sha256": "71f2d1caa7a15f48f2667bcf7247f80d9b8b77e268d73194f531bdfc142d6946",
+    "bytes": 191,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Resources/Color Gradient Presets/Blue to Purple - Vertical.asset",
+    "sha256": "364e5cc1a41094e73de2861ffeccbd4521fef8eee2d9dbe775be1034221074b6",
+    "original_sha256": "364e5cc1a41094e73de2861ffeccbd4521fef8eee2d9dbe775be1034221074b6",
+    "bytes": 588,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Resources/Color Gradient Presets/Blue to Purple - Vertical.asset.meta",
+    "sha256": "9b6e648d9aa42f50cfbd91e58b2de9bcf18e40c990a64444e9a948f73e3e0495",
+    "original_sha256": "9b6e648d9aa42f50cfbd91e58b2de9bcf18e40c990a64444e9a948f73e3e0495",
+    "bytes": 179,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Resources/Color Gradient Presets/Dark to Light Green - Vertical.asset",
+    "sha256": "2847d59896844029ba9868e3cceb3cbe965de6810ffdcff22807ca34657dc9c0",
+    "original_sha256": "2847d59896844029ba9868e3cceb3cbe965de6810ffdcff22807ca34657dc9c0",
+    "bytes": 609,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Resources/Color Gradient Presets/Dark to Light Green - Vertical.asset.meta",
+    "sha256": "b95947283933041fe7d501db70375348419ba6ee62b0e87dfd11abef3bd503b0",
+    "original_sha256": "b95947283933041fe7d501db70375348419ba6ee62b0e87dfd11abef3bd503b0",
+    "bytes": 179,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Resources/Color Gradient Presets/Light to Dark Green - Vertical.asset",
+    "sha256": "cd36765d6c276a209a823cd3f3fb599e93e1b9736ccd7d7028291383ab569b29",
+    "original_sha256": "cd36765d6c276a209a823cd3f3fb599e93e1b9736ccd7d7028291383ab569b29",
+    "bytes": 585,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Resources/Color Gradient Presets/Light to Dark Green - Vertical.asset.meta",
+    "sha256": "6866ae9d579e30bbdc647555dc5c801c6cf44261ced2ca1b1afe6f5b664e7e14",
+    "original_sha256": "6866ae9d579e30bbdc647555dc5c801c6cf44261ced2ca1b1afe6f5b664e7e14",
+    "bytes": 179,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Resources/Color Gradient Presets/Yellow to Orange - Vertical.asset",
+    "sha256": "f7153f57eee3cfaae12db51576c348577e29b06583d63c922dff1b27bd155929",
+    "original_sha256": "f7153f57eee3cfaae12db51576c348577e29b06583d63c922dff1b27bd155929",
+    "bytes": 544,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Resources/Color Gradient Presets/Yellow to Orange - Vertical.asset.meta",
+    "sha256": "1e5388612701e1ca072d19053b1c1ca37eaf9c4c0c75893133b3c650ef24d15e",
+    "original_sha256": "1e5388612701e1ca072d19053b1c1ca37eaf9c4c0c75893133b3c650ef24d15e",
+    "bytes": 179,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Resources/Color Gradient Presets.meta",
+    "sha256": "9ce552ea61975670ce37af068e256d726ae5bcc94a65eca60dd461f08c9c4b04",
+    "original_sha256": "9ce552ea61975670ce37af068e256d726ae5bcc94a65eca60dd461f08c9c4b04",
+    "bytes": 172,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Anton SDF - Drop Shadow.mat",
+    "sha256": "e6becca5841f5f4351d14c00af76e26eaa324d7fff79950117563bf8d5555819",
+    "original_sha256": "e6becca5841f5f4351d14c00af76e26eaa324d7fff79950117563bf8d5555819",
+    "bytes": 2906,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Anton SDF - Drop Shadow.mat.meta",
+    "sha256": "b3460c01082846061280c21c58a0aba4b160e1fc65b74d063f3a010993c9aed0",
+    "original_sha256": "b3460c01082846061280c21c58a0aba4b160e1fc65b74d063f3a010993c9aed0",
+    "bytes": 179,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Anton SDF - Outline.mat",
+    "sha256": "aca1f8d8a23ac43aa0094e8f73ebc64a0db82ec32cf2c86d1988163f40d1c426",
+    "original_sha256": "aca1f8d8a23ac43aa0094e8f73ebc64a0db82ec32cf2c86d1988163f40d1c426",
+    "bytes": 2888,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Anton SDF - Outline.mat.meta",
+    "sha256": "748c8fd66e3bdf5f1b743efdb232a73335f7dd148b77c10eed36d2db008e0661",
+    "original_sha256": "748c8fd66e3bdf5f1b743efdb232a73335f7dd148b77c10eed36d2db008e0661",
+    "bytes": 179,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Anton SDF - Sunny Days.mat",
+    "sha256": "26e757964c9390a78510bbd64739bb25ab1cb03911cad2c454424e22d4787fd6",
+    "original_sha256": "26e757964c9390a78510bbd64739bb25ab1cb03911cad2c454424e22d4787fd6",
+    "bytes": 3069,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Anton SDF - Sunny Days.mat.meta",
+    "sha256": "7a59e3c0f595d129e49af3e8c9864a3cf848b25bc0b5e724e9ba5616d3edf763",
+    "original_sha256": "7a59e3c0f595d129e49af3e8c9864a3cf848b25bc0b5e724e9ba5616d3edf763",
+    "bytes": 188,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Anton SDF.asset",
+    "sha256": "12b1d8689d7c42ed4f1b379ca63eaafd195ae391f1c0abc267902d8da5ec1c58",
+    "original_sha256": "12b1d8689d7c42ed4f1b379ca63eaafd195ae391f1c0abc267902d8da5ec1c58",
+    "bytes": 8393,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Anton SDF.asset.meta",
+    "sha256": "221f85b87f5db42c5f2ca78e04f4924b855e4ea6818d8c988817604bedc84849",
+    "original_sha256": "221f85b87f5db42c5f2ca78e04f4924b855e4ea6818d8c988817604bedc84849",
+    "bytes": 179,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Bangers SDF - Drop Shadow - 2 Pass.mat",
+    "sha256": "230bd3aa780dea9092f65127b3df8e4fc1e190964d2b4f83c36bd71d3a72e8ab",
+    "original_sha256": "230bd3aa780dea9092f65127b3df8e4fc1e190964d2b4f83c36bd71d3a72e8ab",
+    "bytes": 3136,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Bangers SDF - Drop Shadow - 2 Pass.mat.meta",
+    "sha256": "6ce5589434bc21f64aeb254c558679bf240607ee2587f5bd4627d4c2c4022f84",
+    "original_sha256": "6ce5589434bc21f64aeb254c558679bf240607ee2587f5bd4627d4c2c4022f84",
+    "bytes": 188,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Bangers SDF - Drop Shadow.mat",
+    "sha256": "b506b76550fa402deef1f5d09ef7a70ae811e103797c884a2304aae26546326f",
+    "original_sha256": "b506b76550fa402deef1f5d09ef7a70ae811e103797c884a2304aae26546326f",
+    "bytes": 3081,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Bangers SDF - Drop Shadow.mat.meta",
+    "sha256": "2f863d1056e6985d2ac4127c251cc6b6f929e0689d61c7883c61e2c11ca54619",
+    "original_sha256": "2f863d1056e6985d2ac4127c251cc6b6f929e0689d61c7883c61e2c11ca54619",
+    "bytes": 181,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Bangers SDF - Outline.mat",
+    "sha256": "b0d5971eafef1fdf53246fcd6cbf767493d0d251f495ce5fe4dcb83d34774ea1",
+    "original_sha256": "b0d5971eafef1fdf53246fcd6cbf767493d0d251f495ce5fe4dcb83d34774ea1",
+    "bytes": 3053,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Bangers SDF - Outline.mat.meta",
+    "sha256": "f6359a71400c7f496bd0a40b71d6c2576ae429da72ac6d3fa90e7c0d527667c3",
+    "original_sha256": "f6359a71400c7f496bd0a40b71d6c2576ae429da72ac6d3fa90e7c0d527667c3",
+    "bytes": 181,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Bangers SDF Glow.mat",
+    "sha256": "e75316746e0a0946a4b4db839c05bb25dfd130d31b955d7613116e1831b163f5",
+    "original_sha256": "e75316746e0a0946a4b4db839c05bb25dfd130d31b955d7613116e1831b163f5",
+    "bytes": 3213,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Bangers SDF Glow.mat.meta",
+    "sha256": "dbc98e8a91931e45fc228486e81731e8b2c5659c7b17e079c35b194070d6c955",
+    "original_sha256": "dbc98e8a91931e45fc228486e81731e8b2c5659c7b17e079c35b194070d6c955",
+    "bytes": 181,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Bangers SDF Logo - URP.mat",
+    "sha256": "b6c4916f4be3406a04d4f3bb9e50c2ae1c5ffbad1dac316e15e57c730f0c2826",
+    "original_sha256": "b6c4916f4be3406a04d4f3bb9e50c2ae1c5ffbad1dac316e15e57c730f0c2826",
+    "bytes": 4641,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Bangers SDF Logo - URP.mat.meta",
+    "sha256": "20b25ba8def038363799d668ee6b2df39de8d45a0db1cb75cf09a9698b9e80d5",
+    "original_sha256": "20b25ba8def038363799d668ee6b2df39de8d45a0db1cb75cf09a9698b9e80d5",
+    "bytes": 188,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Bangers SDF Logo.mat",
+    "sha256": "2ad848e2b2b4eb4e6590cdcd5551a10df04a78451c9f3e587f66d58dc7deac01",
+    "original_sha256": "2ad848e2b2b4eb4e6590cdcd5551a10df04a78451c9f3e587f66d58dc7deac01",
+    "bytes": 3044,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Bangers SDF Logo.mat.meta",
+    "sha256": "bedf7e755eaf9cd4940bf3a5f07fd6415416a27103f39bbb46080a31767fd03e",
+    "original_sha256": "bedf7e755eaf9cd4940bf3a5f07fd6415416a27103f39bbb46080a31767fd03e",
+    "bytes": 138,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Bangers SDF.asset",
+    "sha256": "bd316d2c795f6493c7c0e0fc5c7a5e409e1e41ca2ed4f88fa9fd637765651e66",
+    "original_sha256": "bd316d2c795f6493c7c0e0fc5c7a5e409e1e41ca2ed4f88fa9fd637765651e66",
+    "bytes": 7992,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Bangers SDF.asset.meta",
+    "sha256": "bd8964e831bbffb4d4eb30ef635b48e97d0857cacc13ce4be5256e4946062e0f",
+    "original_sha256": "bd8964e831bbffb4d4eb30ef635b48e97d0857cacc13ce4be5256e4946062e0f",
+    "bytes": 138,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Electronic Highway Sign SDF.asset",
+    "sha256": "f9582b5ae6b28ed36dccc9824fcc9f8bcc63bce57958b9bcc3f6201f32195432",
+    "original_sha256": "f9582b5ae6b28ed36dccc9824fcc9f8bcc63bce57958b9bcc3f6201f32195432",
+    "bytes": 8126,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Electronic Highway Sign SDF.asset.meta",
+    "sha256": "e6001e47ce8d65f8b6a5acac9820e14cfba25f13bc8975afcb8cc236ba8c1b3d",
+    "original_sha256": "e6001e47ce8d65f8b6a5acac9820e14cfba25f13bc8975afcb8cc236ba8c1b3d",
+    "bytes": 179,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/LiberationSans SDF - Metalic Green.mat",
+    "sha256": "b12d06bb62031709f4ba3cf125875ab5f580ff17099e505b355762effbebaaf4",
+    "original_sha256": "b12d06bb62031709f4ba3cf125875ab5f580ff17099e505b355762effbebaaf4",
+    "bytes": 3082,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/LiberationSans SDF - Metalic Green.mat.meta",
+    "sha256": "1e318205e72d49db86abd04f19c6e073ca7253fa985c171aa28a47d085045ec7",
+    "original_sha256": "1e318205e72d49db86abd04f19c6e073ca7253fa985c171aa28a47d085045ec7",
+    "bytes": 179,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/LiberationSans SDF - Overlay.mat",
+    "sha256": "9bf0ef632fa609a465899a85d6791ae7a6e882f4330043a3f424bda15dff4225",
+    "original_sha256": "9bf0ef632fa609a465899a85d6791ae7a6e882f4330043a3f424bda15dff4225",
+    "bytes": 1690,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/LiberationSans SDF - Overlay.mat.meta",
+    "sha256": "435ce4d8555d61c966222cf068580605d1815e2e4712d98bf3d9bc065bbe4d99",
+    "original_sha256": "435ce4d8555d61c966222cf068580605d1815e2e4712d98bf3d9bc065bbe4d99",
+    "bytes": 179,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/LiberationSans SDF - Soft Mask.mat",
+    "sha256": "a25eb8647b1adf129a7a2b534bc0ea3d9136e8b4fa39da91591cce9e4f35b12f",
+    "original_sha256": "a25eb8647b1adf129a7a2b534bc0ea3d9136e8b4fa39da91591cce9e4f35b12f",
+    "bytes": 3188,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/LiberationSans SDF - Soft Mask.mat.meta",
+    "sha256": "7bb03cbee9569994620a771befbaa3c9e2f653e38fb7eb75ace36fdd8258fdd6",
+    "original_sha256": "7bb03cbee9569994620a771befbaa3c9e2f653e38fb7eb75ace36fdd8258fdd6",
+    "bytes": 179,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Oswald Bold SDF.asset",
+    "sha256": "33bbc43d20add08e6d7675053d59b9809a7b670d071aeb6c7b8d77b8663b3f05",
+    "original_sha256": "33bbc43d20add08e6d7675053d59b9809a7b670d071aeb6c7b8d77b8663b3f05",
+    "bytes": 8040,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Oswald Bold SDF.asset.meta",
+    "sha256": "8ab3bc38faba5853ade337c3e98d4d26dee8381f8917dbeaf0b21df03f7f25f4",
+    "original_sha256": "8ab3bc38faba5853ade337c3e98d4d26dee8381f8917dbeaf0b21df03f7f25f4",
+    "bytes": 179,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Roboto-Bold SDF - Drop Shadow.mat",
+    "sha256": "1028421fdd364fbefeda8e39b1484ebf3eddf83f09aca6cf3c6baca88c54e26a",
+    "original_sha256": "1028421fdd364fbefeda8e39b1484ebf3eddf83f09aca6cf3c6baca88c54e26a",
+    "bytes": 2909,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Roboto-Bold SDF - Drop Shadow.mat.meta",
+    "sha256": "09899ea2d7c4ee0e8f474e370ac31a23b58865a4b4a33a3a9367d54225212a00",
+    "original_sha256": "09899ea2d7c4ee0e8f474e370ac31a23b58865a4b4a33a3a9367d54225212a00",
+    "bytes": 179,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Roboto-Bold SDF - HDRP Unlit.mat",
+    "sha256": "e804d896cc129f93c61f44e47059cea8683d8b926bcbdd21a4a7ba281779585d",
+    "original_sha256": "e804d896cc129f93c61f44e47059cea8683d8b926bcbdd21a4a7ba281779585d",
+    "bytes": 5745,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Roboto-Bold SDF - HDRP Unlit.mat.meta",
+    "sha256": "a7965f3a1dfd55a90f08b104e4cc770fa400e3600a8c78c37c59d31b524146cb",
+    "original_sha256": "a7965f3a1dfd55a90f08b104e4cc770fa400e3600a8c78c37c59d31b524146cb",
+    "bytes": 188,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Roboto-Bold SDF - Surface.mat",
+    "sha256": "1ddb959948c15e062fa161014ef050ac85ae7881c9b30093d753d5e4f5687ae3",
+    "original_sha256": "1ddb959948c15e062fa161014ef050ac85ae7881c9b30093d753d5e4f5687ae3",
+    "bytes": 3011,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Roboto-Bold SDF - Surface.mat.meta",
+    "sha256": "8591ccd16d4712346da600a43b0706d25c1ba0a0e907d272cd099b11a6407639",
+    "original_sha256": "8591ccd16d4712346da600a43b0706d25c1ba0a0e907d272cd099b11a6407639",
+    "bytes": 179,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Roboto-Bold SDF - URP.mat",
+    "sha256": "bbd1e23cf6e0961b1d6ee9059adf95c389945268cf14b090832be20e74c72460",
+    "original_sha256": "bbd1e23cf6e0961b1d6ee9059adf95c389945268cf14b090832be20e74c72460",
+    "bytes": 4563,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Roboto-Bold SDF - URP.mat.meta",
+    "sha256": "8476938a684793dd5ecad97e660a2ec2475879a2d5c231f0b4f35f518ec349f7",
+    "original_sha256": "8476938a684793dd5ecad97e660a2ec2475879a2d5c231f0b4f35f518ec349f7",
+    "bytes": 188,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Roboto-Bold SDF.asset",
+    "sha256": "05482923f877d35d41ca99edfd07bbff32cbd9cb8dff31c684bf42de9ca3587f",
+    "original_sha256": "05482923f877d35d41ca99edfd07bbff32cbd9cb8dff31c684bf42de9ca3587f",
+    "bytes": 8050,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Roboto-Bold SDF.asset.meta",
+    "sha256": "f065dd4978f91dac25867c3d42fdfb037a1f77159872fb86edc148859fd09c58",
+    "original_sha256": "f065dd4978f91dac25867c3d42fdfb037a1f77159872fb86edc148859fd09c58",
+    "bytes": 179,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Unity SDF - HDRP LIT - Bloom.mat",
+    "sha256": "d2b0b972067fe04af7d891bf474c93896e5f4bc5e8a3efdb613e8bd09a60353f",
+    "original_sha256": "d2b0b972067fe04af7d891bf474c93896e5f4bc5e8a3efdb613e8bd09a60353f",
+    "bytes": 6433,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Unity SDF - HDRP LIT - Bloom.mat.meta",
+    "sha256": "084186a206560fd9273e33dcb6885bbd2046cb683093816714a3937f57728344",
+    "original_sha256": "084186a206560fd9273e33dcb6885bbd2046cb683093816714a3937f57728344",
+    "bytes": 188,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Unity SDF - HDRP LIT - Outline.mat",
+    "sha256": "300da06c2b4ad2e4a777dbc0a60646fc21f7cb9ad901e3eebdcea7294eb53c9d",
+    "original_sha256": "300da06c2b4ad2e4a777dbc0a60646fc21f7cb9ad901e3eebdcea7294eb53c9d",
+    "bytes": 5041,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Unity SDF - HDRP LIT - Outline.mat.meta",
+    "sha256": "33f44d1c574f6182c34e235915eca2519d8ed59ce65d5f4081834072271d7a3e",
+    "original_sha256": "33f44d1c574f6182c34e235915eca2519d8ed59ce65d5f4081834072271d7a3e",
+    "bytes": 188,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Unity SDF.asset",
+    "sha256": "bd8dc506b04814fff01e0fa2fb159907655d17c5df5a2114deccf87f381ada4b",
+    "original_sha256": "bd8dc506b04814fff01e0fa2fb159907655d17c5df5a2114deccf87f381ada4b",
+    "bytes": 2107512,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials/Unity SDF.asset.meta",
+    "sha256": "2b377bc6268d402bfee34524a6f30dae7a63f5eea0b6343ca7045fd7b9f98075",
+    "original_sha256": "2b377bc6268d402bfee34524a6f30dae7a63f5eea0b6343ca7045fd7b9f98075",
+    "bytes": 189,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Resources/Fonts & Materials.meta",
+    "sha256": "dcd0b25055cc640c716db88753fd315dea594e6d92a98cd6d99867ef21d7472d",
+    "original_sha256": "dcd0b25055cc640c716db88753fd315dea594e6d92a98cd6d99867ef21d7472d",
+    "bytes": 191,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Resources/Sprite Assets/Default Sprite Asset.asset",
+    "sha256": "bebe187d44d93cd9e164ecc01b89dd34ecc8f0591e2c5640c18abc0be7a87dc8",
+    "original_sha256": "bebe187d44d93cd9e164ecc01b89dd34ecc8f0591e2c5640c18abc0be7a87dc8",
+    "bytes": 7862,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Resources/Sprite Assets/Default Sprite Asset.asset.meta",
+    "sha256": "0861757bcec3b9780088789c7e1575c19a4a47cff36778b729dce5a1b613828d",
+    "original_sha256": "0861757bcec3b9780088789c7e1575c19a4a47cff36778b729dce5a1b613828d",
+    "bytes": 179,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Resources/Sprite Assets/DropCap Numbers.asset",
+    "sha256": "a328bb918959deef7877a91e1f7c5fc7418665bde6da3bbac86167408c9eb276",
+    "original_sha256": "a328bb918959deef7877a91e1f7c5fc7418665bde6da3bbac86167408c9eb276",
+    "bytes": 9803,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Resources/Sprite Assets/DropCap Numbers.asset.meta",
+    "sha256": "a828a1894c10bee3cbc339108d3a3f36479097dd70b1f902dd7730f39fa09eea",
+    "original_sha256": "a828a1894c10bee3cbc339108d3a3f36479097dd70b1f902dd7730f39fa09eea",
+    "bytes": 179,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Resources/Sprite Assets.meta",
+    "sha256": "095bc38b6fc21d8dd07bb48a3d56003fb4a15db29700faaf1fe43cb318719429",
+    "original_sha256": "095bc38b6fc21d8dd07bb48a3d56003fb4a15db29700faaf1fe43cb318719429",
+    "bytes": 191,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Resources.meta",
+    "sha256": "216e16dbda0f1c52b4f570b9a3b7662b3af643f4896c9cf79b8ba2f685149928",
+    "original_sha256": "216e16dbda0f1c52b4f570b9a3b7662b3af643f4896c9cf79b8ba2f685149928",
+    "bytes": 191,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Scenes/01-  Single Line TextMesh Pro.unity",
+    "sha256": "cdb80b42a580232c8d60f04e3c6d2cafbd2d99b57322a8a8b11008a1828d905e",
+    "original_sha256": "cdb80b42a580232c8d60f04e3c6d2cafbd2d99b57322a8a8b11008a1828d905e",
+    "bytes": 10375,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Scenes/01-  Single Line TextMesh Pro.unity.meta",
+    "sha256": "c5d3d384d38fde30c5b9985f08ec65c87113656e148e03c51083f3d52c4e9b41",
+    "original_sha256": "c5d3d384d38fde30c5b9985f08ec65c87113656e148e03c51083f3d52c4e9b41",
+    "bytes": 292,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Scenes/02 - Multi-line TextMesh Pro.unity",
+    "sha256": "317ec754c02a4eb508daf5c4a7f2329e18534ad4b9fd71cc8d6a33f468502685",
+    "original_sha256": "317ec754c02a4eb508daf5c4a7f2329e18534ad4b9fd71cc8d6a33f468502685",
+    "bytes": 10445,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Scenes/02 - Multi-line TextMesh Pro.unity.meta",
+    "sha256": "db92c746c08f62686e70f44b85c34ea755969070498a7392f190f5352ab65529",
+    "original_sha256": "db92c746c08f62686e70f44b85c34ea755969070498a7392f190f5352ab65529",
+    "bytes": 292,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Scenes/03 - Line Justification.unity",
+    "sha256": "bd892ffa1a656548b15e5edde17c64c298988dac71336c17c32294554aff9a55",
+    "original_sha256": "bd892ffa1a656548b15e5edde17c64c298988dac71336c17c32294554aff9a55",
+    "bytes": 24596,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Scenes/03 - Line Justification.unity.meta",
+    "sha256": "9d450bc8bfda37a28730417514414a8e744faec1ba6803dc90256e4dfc6eefe7",
+    "original_sha256": "9d450bc8bfda37a28730417514414a8e744faec1ba6803dc90256e4dfc6eefe7",
+    "bytes": 292,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Scenes/04 - Word Wrapping.unity",
+    "sha256": "0a01fb45fe50894c66c63c169b92aae766c4472f64cdae6b3eb986a00e7e25f9",
+    "original_sha256": "0a01fb45fe50894c66c63c169b92aae766c4472f64cdae6b3eb986a00e7e25f9",
+    "bytes": 10389,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Scenes/04 - Word Wrapping.unity.meta",
+    "sha256": "40518181cfb876cd4c681cb030de7d7119ce3856e7902f51d300ee5649f8f851",
+    "original_sha256": "40518181cfb876cd4c681cb030de7d7119ce3856e7902f51d300ee5649f8f851",
+    "bytes": 292,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Scenes/05 - Style Tags.unity",
+    "sha256": "83da37c6865a7fa31a32c67d73616406768afc72d9aee23b6b2fc6168dbd3887",
+    "original_sha256": "83da37c6865a7fa31a32c67d73616406768afc72d9aee23b6b2fc6168dbd3887",
+    "bytes": 28548,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Scenes/05 - Style Tags.unity.meta",
+    "sha256": "8d72eb635358975ebba1cf0820a1e5f1a75c0f40182803f56410a028d5bcfb5c",
+    "original_sha256": "8d72eb635358975ebba1cf0820a1e5f1a75c0f40182803f56410a028d5bcfb5c",
+    "bytes": 292,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Scenes/06 - Extra Rich Text Examples.unity",
+    "sha256": "737bfc9df61a0a0b57edcc55aae53778085e99d534886800f5498096c9f88f2a",
+    "original_sha256": "737bfc9df61a0a0b57edcc55aae53778085e99d534886800f5498096c9f88f2a",
+    "bytes": 19196,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Scenes/06 - Extra Rich Text Examples.unity.meta",
+    "sha256": "0954b7a59b9677c05aa7137f992e90581d76ccea3677f1f22f4447443e98845b",
+    "original_sha256": "0954b7a59b9677c05aa7137f992e90581d76ccea3677f1f22f4447443e98845b",
+    "bytes": 133,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Scenes/07 - Superscript & Subscript Example.unity",
+    "sha256": "e4ae928851c690246ce2fdd39464869889f6c4228603a68db2af20f21dbd91b5",
+    "original_sha256": "e4ae928851c690246ce2fdd39464869889f6c4228603a68db2af20f21dbd91b5",
+    "bytes": 10533,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Scenes/07 - Superscript & Subscript Example.unity.meta",
+    "sha256": "34af12f0787c85a2deb836e104e25219b247873ed1df010dac828e06fa58ec43",
+    "original_sha256": "34af12f0787c85a2deb836e104e25219b247873ed1df010dac828e06fa58ec43",
+    "bytes": 292,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Scenes/08 - Improved Text Alignment.unity",
+    "sha256": "05c6a6b85b52972b39cbb2eeb7aaee4b51793eeb1e627bdaeb5a21e7ca4802d4",
+    "original_sha256": "05c6a6b85b52972b39cbb2eeb7aaee4b51793eeb1e627bdaeb5a21e7ca4802d4",
+    "bytes": 15890,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Scenes/08 - Improved Text Alignment.unity.meta",
+    "sha256": "5d5c6e67288cf86894444f2877eb42c7db891e29ddcb6430ad825513908a8607",
+    "original_sha256": "5d5c6e67288cf86894444f2877eb42c7db891e29ddcb6430ad825513908a8607",
+    "bytes": 133,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Scenes/09 - Margin Tag Example.unity",
+    "sha256": "ec6ab2d9e38290113e795c1b86735b64fe6d775200a3ef9092e9a745ad6b3bf0",
+    "original_sha256": "ec6ab2d9e38290113e795c1b86735b64fe6d775200a3ef9092e9a745ad6b3bf0",
+    "bytes": 26630,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Scenes/09 - Margin Tag Example.unity.meta",
+    "sha256": "97c701985aa7430bd7a2a6df48c5a3ce9ac82d63679cf2c262158d255c5a4cb6",
+    "original_sha256": "97c701985aa7430bd7a2a6df48c5a3ce9ac82d63679cf2c262158d255c5a4cb6",
+    "bytes": 176,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Scenes/10 - Bullets & Numbered List Example.unity",
+    "sha256": "d468902d557d03ae822e0b7ff2539b44c1a276c48d487a98163abcf4c5ca88ce",
+    "original_sha256": "d468902d557d03ae822e0b7ff2539b44c1a276c48d487a98163abcf4c5ca88ce",
+    "bytes": 19166,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Scenes/10 - Bullets & Numbered List Example.unity.meta",
+    "sha256": "54dc9fb39dce9272f37c0d1ed4c7381402d5b0148a44b3fd78b7a056353dc0cf",
+    "original_sha256": "54dc9fb39dce9272f37c0d1ed4c7381402d5b0148a44b3fd78b7a056353dc0cf",
+    "bytes": 174,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Scenes/11 - The Style Tag.unity",
+    "sha256": "80010ddbda5e6b95f784abf21a58a5e90dfe41b5e525e2ae02c7c9c98cb7f9be",
+    "original_sha256": "80010ddbda5e6b95f784abf21a58a5e90dfe41b5e525e2ae02c7c9c98cb7f9be",
+    "bytes": 15327,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Scenes/11 - The Style Tag.unity.meta",
+    "sha256": "14728a276f6d23177630dbf7f6dff6c93e2b8e0a81a2261a5c12cd72bb5cbdbb",
+    "original_sha256": "14728a276f6d23177630dbf7f6dff6c93e2b8e0a81a2261a5c12cd72bb5cbdbb",
+    "bytes": 174,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Scenes/12 - Link Example.unity",
+    "sha256": "bb48a2600e7dfcaf5ad49d79b7fb83adb42451ce4b9f10fa00549b56eeb69231",
+    "original_sha256": "bb48a2600e7dfcaf5ad49d79b7fb83adb42451ce4b9f10fa00549b56eeb69231",
+    "bytes": 22098,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Scenes/12 - Link Example.unity.meta",
+    "sha256": "3629aa85c40d8f714ee124296d7030fe0fb48ff5590972c27cddc7cca23f63aa",
+    "original_sha256": "3629aa85c40d8f714ee124296d7030fe0fb48ff5590972c27cddc7cca23f63aa",
+    "bytes": 176,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Scenes/12a - Text Interactions.unity",
+    "sha256": "0fe20354a634ffb2f6cb41ca92cca582ee42079aebf340adb56c15372841a994",
+    "original_sha256": "0fe20354a634ffb2f6cb41ca92cca582ee42079aebf340adb56c15372841a994",
+    "bytes": 22236,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Scenes/12a - Text Interactions.unity.meta",
+    "sha256": "3946c8c5631ff10bf8c8e888b12f785f5ad614b3d39c6ba62e0811ca56e88a55",
+    "original_sha256": "3946c8c5631ff10bf8c8e888b12f785f5ad614b3d39c6ba62e0811ca56e88a55",
+    "bytes": 174,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Scenes/13 - Soft Hyphenation.unity",
+    "sha256": "be93ce1673df9882b08c46468079bcf5b1b2701c0f30cee8769117a177f2c4cd",
+    "original_sha256": "be93ce1673df9882b08c46468079bcf5b1b2701c0f30cee8769117a177f2c4cd",
+    "bytes": 13939,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Scenes/13 - Soft Hyphenation.unity.meta",
+    "sha256": "2c3c2268402cd021aba01ae4d0646b327bf2e5d0a6e227dbeec874f13099d1e7",
+    "original_sha256": "2c3c2268402cd021aba01ae4d0646b327bf2e5d0a6e227dbeec874f13099d1e7",
+    "bytes": 174,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Scenes/14 - Multi Font & Sprites.unity",
+    "sha256": "8893d1091228960c45ecc650a6f1a75a3e691319b3f9052b54126aaf77cd01bc",
+    "original_sha256": "8893d1091228960c45ecc650a6f1a75a3e691319b3f9052b54126aaf77cd01bc",
+    "bytes": 14912,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Scenes/14 - Multi Font & Sprites.unity.meta",
+    "sha256": "af7ba34acfbe9bf30adf42156b0ea6c237284ebb016088c49cafe32ebbdebfd8",
+    "original_sha256": "af7ba34acfbe9bf30adf42156b0ea6c237284ebb016088c49cafe32ebbdebfd8",
+    "bytes": 174,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Scenes/15 - Inline Graphics & Sprites.unity",
+    "sha256": "530947500e5ba5c6d173ee7efcf5c0854d7fa1dda030f7bf21a85b43c182364a",
+    "original_sha256": "530947500e5ba5c6d173ee7efcf5c0854d7fa1dda030f7bf21a85b43c182364a",
+    "bytes": 16827,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Scenes/15 - Inline Graphics & Sprites.unity.meta",
+    "sha256": "370db9213928264929b4555a0850de1a4a62639bf9b1eda3b74f74cc3881b462",
+    "original_sha256": "370db9213928264929b4555a0850de1a4a62639bf9b1eda3b74f74cc3881b462",
+    "bytes": 133,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Scenes/16 - Linked text overflow mode example.unity",
+    "sha256": "4246dd769fe6c6fbc5bef742e8e57e0cc906539867cdfa9ae61706cc65486b31",
+    "original_sha256": "4246dd769fe6c6fbc5bef742e8e57e0cc906539867cdfa9ae61706cc65486b31",
+    "bytes": 30275,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Scenes/16 - Linked text overflow mode example.unity.meta",
+    "sha256": "d375b55baa669ecc6796bfb9802e588cae2daf2135a3ac6cc090d90013f21abc",
+    "original_sha256": "d375b55baa669ecc6796bfb9802e588cae2daf2135a3ac6cc090d90013f21abc",
+    "bytes": 174,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Scenes/17 - Old Computer Terminal.unity",
+    "sha256": "ca97ddbaae007aed4a31083590f6a2c4bb758bbc608f0d84409a9149301b7612",
+    "original_sha256": "ca97ddbaae007aed4a31083590f6a2c4bb758bbc608f0d84409a9149301b7612",
+    "bytes": 19648,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Scenes/17 - Old Computer Terminal.unity.meta",
+    "sha256": "ea65e53cb4e8f997cd2879759bb8a2a350085c088306cdd430f5eb29f92ab4b4",
+    "original_sha256": "ea65e53cb4e8f997cd2879759bb8a2a350085c088306cdd430f5eb29f92ab4b4",
+    "bytes": 176,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Scenes/18 - ScrollRect & Masking & Layout.unity",
+    "sha256": "8aa2e52132a0d83bd1fb2a58604334b75700bf51a47b31136212c607cecaf515",
+    "original_sha256": "8aa2e52132a0d83bd1fb2a58604334b75700bf51a47b31136212c607cecaf515",
+    "bytes": 276567,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Scenes/18 - ScrollRect & Masking & Layout.unity.meta",
+    "sha256": "88a010e5bfe7fc234bba388c2aea8a625f878696499fe01d4a09580c1608d296",
+    "original_sha256": "88a010e5bfe7fc234bba388c2aea8a625f878696499fe01d4a09580c1608d296",
+    "bytes": 174,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Scenes/19 - Masking Texture & Soft Mask.unity",
+    "sha256": "349c3c87b99d67c912daab798392404603970eacb87dee2f3cea712cbd7a21b8",
+    "original_sha256": "349c3c87b99d67c912daab798392404603970eacb87dee2f3cea712cbd7a21b8",
+    "bytes": 16596,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Scenes/19 - Masking Texture & Soft Mask.unity.meta",
+    "sha256": "cb2b204bb732892865dad17182bc04fda73e852e87048b93260b756b180ecd3c",
+    "original_sha256": "cb2b204bb732892865dad17182bc04fda73e852e87048b93260b756b180ecd3c",
+    "bytes": 174,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Scenes/20 - Input Field with Scrollbar.unity",
+    "sha256": "97a7bfb9ec437c5931e288ba8a635f6838ad12b51ca04447fe8c40481fc7c6a2",
+    "original_sha256": "97a7bfb9ec437c5931e288ba8a635f6838ad12b51ca04447fe8c40481fc7c6a2",
+    "bytes": 62898,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Scenes/20 - Input Field with Scrollbar.unity.meta",
+    "sha256": "7f9eb969414a9226429679f1f4b4c2e41c56b2bdf51cbc3211f01e63a42c132b",
+    "original_sha256": "7f9eb969414a9226429679f1f4b4c2e41c56b2bdf51cbc3211f01e63a42c132b",
+    "bytes": 174,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Scenes/21 - Script Example.unity",
+    "sha256": "237c42e7460f753dad428fc6a52a175c48e85a462acf7eec70e654840c57a46f",
+    "original_sha256": "237c42e7460f753dad428fc6a52a175c48e85a462acf7eec70e654840c57a46f",
+    "bytes": 6347,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Scenes/21 - Script Example.unity.meta",
+    "sha256": "6ec97cdb774a36d3663eba9fd8306887c71942e97b6951e0028ea186c74ddfc2",
+    "original_sha256": "6ec97cdb774a36d3663eba9fd8306887c71942e97b6951e0028ea186c74ddfc2",
+    "bytes": 292,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Scenes/22 - Basic Scripting Example.unity",
+    "sha256": "7a79a85bc46a80489a62838e70a80f7bf90086836f2a5c828b0b7ec47530693a",
+    "original_sha256": "7a79a85bc46a80489a62838e70a80f7bf90086836f2a5c828b0b7ec47530693a",
+    "bytes": 12075,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Scenes/22 - Basic Scripting Example.unity.meta",
+    "sha256": "b2c49accf2716dba928ef8062a3f0fd66f2434729e9aeb0df9ee002453a6e5dd",
+    "original_sha256": "b2c49accf2716dba928ef8062a3f0fd66f2434729e9aeb0df9ee002453a6e5dd",
+    "bytes": 174,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Scenes/23 - Animating Vertex Attributes.unity",
+    "sha256": "82254ebd51a288a14af09d5b15cdbf7150cdabc1938daead04a1cd4419bd0808",
+    "original_sha256": "82254ebd51a288a14af09d5b15cdbf7150cdabc1938daead04a1cd4419bd0808",
+    "bytes": 14217,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Scenes/23 - Animating Vertex Attributes.unity.meta",
+    "sha256": "f66bdca94b213dc1ef51e8e4230911d174806ff0f799f7b6907d4eb497b92925",
+    "original_sha256": "f66bdca94b213dc1ef51e8e4230911d174806ff0f799f7b6907d4eb497b92925",
+    "bytes": 174,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Scenes/24 - Surface Shader Example URP.unity",
+    "sha256": "b8d7e0f4c3e326d70ccacd8439804047961d5e5f31f0d6843691a3ddf86175c3",
+    "original_sha256": "b8d7e0f4c3e326d70ccacd8439804047961d5e5f31f0d6843691a3ddf86175c3",
+    "bytes": 84017,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Scenes/24 - Surface Shader Example URP.unity.meta",
+    "sha256": "41b78107d77a36bb39ad8590f98f0f914507a3a26ebfb6de38aa9c5093ec635a",
+    "original_sha256": "41b78107d77a36bb39ad8590f98f0f914507a3a26ebfb6de38aa9c5093ec635a",
+    "bytes": 292,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Scenes/24 - Surface Shader Example.unity",
+    "sha256": "ab9a5656b3914249c0e806b2ca7f8349f38eb2b51e5910b182148e0effc4376d",
+    "original_sha256": "ab9a5656b3914249c0e806b2ca7f8349f38eb2b51e5910b182148e0effc4376d",
+    "bytes": 70666,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Scenes/24 - Surface Shader Example.unity.meta",
+    "sha256": "e0f69ee2625921b175262a754d22ded5afb9f1f384ce433ae2e8764ccd8ba26e",
+    "original_sha256": "e0f69ee2625921b175262a754d22ded5afb9f1f384ce433ae2e8764ccd8ba26e",
+    "bytes": 292,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Scenes/25 - Sunny Days Example.unity",
+    "sha256": "2d79de75b0f4ffe3e0475337d140c52c24451ba2d7d23b2142daff275e781f4e",
+    "original_sha256": "2d79de75b0f4ffe3e0475337d140c52c24451ba2d7d23b2142daff275e781f4e",
+    "bytes": 16835,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Scenes/25 - Sunny Days Example.unity.meta",
+    "sha256": "b43956cc3b250d41d077275485117d0c42826fb68cd0db873713bb94b3556d1a",
+    "original_sha256": "b43956cc3b250d41d077275485117d0c42826fb68cd0db873713bb94b3556d1a",
+    "bytes": 175,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Scenes/26 - Dropdown Placeholder Example.unity",
+    "sha256": "ee4ae9adad47b9f739e13e939febdb9f7e43b558c2d7227cb17375e410a314e2",
+    "original_sha256": "ee4ae9adad47b9f739e13e939febdb9f7e43b558c2d7227cb17375e410a314e2",
+    "bytes": 97009,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Scenes/26 - Dropdown Placeholder Example.unity.meta",
+    "sha256": "bbc0ec4c691d6a2ef417c3600d6f760ccdf1496fc660e0c8a05afd686970db83",
+    "original_sha256": "bbc0ec4c691d6a2ef417c3600d6f760ccdf1496fc660e0c8a05afd686970db83",
+    "bytes": 155,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Scenes/27 - Double Pass Shader Example.unity",
+    "sha256": "101246bb9c509c6a08f4228e4e9ba07496089762fbc3ad0af67a293f84e0a1eb",
+    "original_sha256": "101246bb9c509c6a08f4228e4e9ba07496089762fbc3ad0af67a293f84e0a1eb",
+    "bytes": 14948,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Scenes/27 - Double Pass Shader Example.unity.meta",
+    "sha256": "ad9682988b6e3c0d7a1e5f96247b657e1e97c047af430ac6b1ec9c86416eb375",
+    "original_sha256": "ad9682988b6e3c0d7a1e5f96247b657e1e97c047af430ac6b1ec9c86416eb375",
+    "bytes": 155,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Scenes/28 - HDRP Shader Example/Sky and Fog Volume Profile.asset",
+    "sha256": "c0d29be6c47019ad7fa082e4a441bbbf9727048ceae3648f5bdb48d7bb26f197",
+    "original_sha256": "c0d29be6c47019ad7fa082e4a441bbbf9727048ceae3648f5bdb48d7bb26f197",
+    "bytes": 1423,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Scenes/28 - HDRP Shader Example/Sky and Fog Volume Profile.asset.meta",
+    "sha256": "284302befa0b613474b03b25cb2b42711e83d994a0fbc69d98323f937806d47b",
+    "original_sha256": "284302befa0b613474b03b25cb2b42711e83d994a0fbc69d98323f937806d47b",
+    "bytes": 189,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Scenes/28 - HDRP Shader Example.meta",
+    "sha256": "4d57e01e00aaf4814d3060dddc1c050f0feb22c17e4377ac822b413b3968c700",
+    "original_sha256": "4d57e01e00aaf4814d3060dddc1c050f0feb22c17e4377ac822b413b3968c700",
+    "bytes": 172,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Scenes/28 - HDRP Shader Example.unity",
+    "sha256": "fa4aa2c8b01d52d0fcbe52a6877397782444efdcf682404c835645e7b6322674",
+    "original_sha256": "fa4aa2c8b01d52d0fcbe52a6877397782444efdcf682404c835645e7b6322674",
+    "bytes": 60267,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Scenes/28 - HDRP Shader Example.unity.meta",
+    "sha256": "bf1c53bfe54ae32f103ad35682dfc62bef1741ee7923389a288761ded508d1cd",
+    "original_sha256": "bf1c53bfe54ae32f103ad35682dfc62bef1741ee7923389a288761ded508d1cd",
+    "bytes": 155,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Scenes/Benchmark (Floating Text).unity",
+    "sha256": "fcb878e08ccd7df8361b9cb1a0c86fcf9d72547c3904b1d9247bd6bc9d5243d1",
+    "original_sha256": "fcb878e08ccd7df8361b9cb1a0c86fcf9d72547c3904b1d9247bd6bc9d5243d1",
+    "bytes": 11380,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Scenes/Benchmark (Floating Text).unity.meta",
+    "sha256": "be1da996238cf37f42e1f453e4391bf6690fe87b1d98217ba67da5e363a92a65",
+    "original_sha256": "be1da996238cf37f42e1f453e4391bf6690fe87b1d98217ba67da5e363a92a65",
+    "bytes": 292,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Scenes.meta",
+    "sha256": "0d31f4602648ffe7aeabe7388235fd0f1ad01f30dae35d8421929d02235b7587",
+    "original_sha256": "0d31f4602648ffe7aeabe7388235fd0f1ad01f30dae35d8421929d02235b7587",
+    "bytes": 191,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01.cs",
+    "sha256": "ee5af35b3e3e6e4bbbd3e8d7fc86329b7a8885d54bf1b9fed2f4a4312c54ccee",
+    "original_sha256": "ee5af35b3e3e6e4bbbd3e8d7fc86329b7a8885d54bf1b9fed2f4a4312c54ccee",
+    "bytes": 4311,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01.cs.meta",
+    "sha256": "4bbf1250e079a2d6debf0e0500d1d405a98b1ae16f8f427913e0c7d8cac17d6e",
+    "original_sha256": "4bbf1250e079a2d6debf0e0500d1d405a98b1ae16f8f427913e0c7d8cac17d6e",
+    "bytes": 221,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01_UGUI.cs",
+    "sha256": "99c88ada7f9cda09c0bb6d6deaaabc3b66845550f61d4fb41745005761cff298",
+    "original_sha256": "99c88ada7f9cda09c0bb6d6deaaabc3b66845550f61d4fb41745005761cff298",
+    "bytes": 4573,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark01_UGUI.cs.meta",
+    "sha256": "606008cee33b68171e2c51b240a2c7d181860d2d59a931e96d2e14f7287e2de2",
+    "original_sha256": "606008cee33b68171e2c51b240a2c7d181860d2d59a931e96d2e14f7287e2de2",
+    "bytes": 221,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark02.cs",
+    "sha256": "3bdb131f2363c695f26848ff893f1ea11394600139f83b70a4fa2c491976dbb5",
+    "original_sha256": "3bdb131f2363c695f26848ff893f1ea11394600139f83b70a4fa2c491976dbb5",
+    "bytes": 3610,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark02.cs.meta",
+    "sha256": "2d82acd844e4ffab19c49e87abf777d424adc91a360c3c5023b204fcc13a105b",
+    "original_sha256": "2d82acd844e4ffab19c49e87abf777d424adc91a360c3c5023b204fcc13a105b",
+    "bytes": 247,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark03.cs",
+    "sha256": "31ac73ac6a23a98c7e8ea480aa09c5abdb8ac8598a3de68b6933df7ea16c3d66",
+    "original_sha256": "31ac73ac6a23a98c7e8ea480aa09c5abdb8ac8598a3de68b6933df7ea16c3d66",
+    "bytes": 3696,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark03.cs.meta",
+    "sha256": "d4d9c6e26626ccb8c351c5e88a587edc2d9a283ef79cb6db7ce1fad3c9413296",
+    "original_sha256": "d4d9c6e26626ccb8c351c5e88a587edc2d9a283ef79cb6db7ce1fad3c9413296",
+    "bytes": 247,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark04.cs",
+    "sha256": "ffc9ac6e5976c181e9b19d7ddff31208df2664691edbb23ef80496175f61256b",
+    "original_sha256": "ffc9ac6e5976c181e9b19d7ddff31208df2664691edbb23ef80496175f61256b",
+    "bytes": 3068,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Scripts/Benchmark04.cs.meta",
+    "sha256": "bdd72314da401c0c71d8d604bc211f08671baa1a44b698714ccfbf423866c328",
+    "original_sha256": "bdd72314da401c0c71d8d604bc211f08671baa1a44b698714ccfbf423866c328",
+    "bytes": 247,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Scripts/CameraController.cs",
+    "sha256": "76575f9a696f7400c5a3c78e7b5b5ee540de2dacf691dcd322f63be00c4520fa",
+    "original_sha256": "76575f9a696f7400c5a3c78e7b5b5ee540de2dacf691dcd322f63be00c4520fa",
+    "bytes": 10637,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Scripts/CameraController.cs.meta",
+    "sha256": "e528828d96bd45a20345eb32ef518209cdbace4254cf167c6112ca80aef5d1a5",
+    "original_sha256": "e528828d96bd45a20345eb32ef518209cdbace4254cf167c6112ca80aef5d1a5",
+    "bytes": 221,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Scripts/ChatController.cs",
+    "sha256": "14479ee971d6b8eceae82e9eb9c03389df611a825051df6e2b10e53a60ae1c9f",
+    "original_sha256": "14479ee971d6b8eceae82e9eb9c03389df611a825051df6e2b10e53a60ae1c9f",
+    "bytes": 1332,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Scripts/ChatController.cs.meta",
+    "sha256": "887534736fcf5fc4b985c58f566de299a3418794364807723e69343d7040f99f",
+    "original_sha256": "887534736fcf5fc4b985c58f566de299a3418794364807723e69343d7040f99f",
+    "bytes": 262,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Scripts/DropdownSample.cs",
+    "sha256": "e163035bc080b98e90ef130abc969e8cefa32a630783650e68e724316b359332",
+    "original_sha256": "e163035bc080b98e90ef130abc969e8cefa32a630783650e68e724316b359332",
+    "bytes": 507,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Scripts/DropdownSample.cs.meta",
+    "sha256": "711d845331b6174ee6e65f377ebafbef78b909b92c91996092b9b2cdd4fea3f7",
+    "original_sha256": "711d845331b6174ee6e65f377ebafbef78b909b92c91996092b9b2cdd4fea3f7",
+    "bytes": 243,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Scripts/EnvMapAnimator.cs",
+    "sha256": "6d5b1670e18606f4b4026828ea61470638cd9bf0a12891a90b55c046549f7444",
+    "original_sha256": "6d5b1670e18606f4b4026828ea61470638cd9bf0a12891a90b55c046549f7444",
+    "bytes": 1125,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Scripts/EnvMapAnimator.cs.meta",
+    "sha256": "c1c631e87b7681d2b7a3d3f6bc1436beb1c87d6833ee591014629afabb613df9",
+    "original_sha256": "c1c631e87b7681d2b7a3d3f6bc1436beb1c87d6833ee591014629afabb613df9",
+    "bytes": 262,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Scripts/ObjectSpin.cs",
+    "sha256": "78226bf906fcccac438e4cd9fbc757722d05c3aaa6eb43862b2702f699a61682",
+    "original_sha256": "78226bf906fcccac438e4cd9fbc757722d05c3aaa6eb43862b2702f699a61682",
+    "bytes": 2344,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Scripts/ObjectSpin.cs.meta",
+    "sha256": "8b0af4b06fd87aebfae368d0d0ac83548b608061f0b7dd54b295e8815236634f",
+    "original_sha256": "8b0af4b06fd87aebfae368d0d0ac83548b608061f0b7dd54b295e8815236634f",
+    "bytes": 221,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Scripts/ShaderPropAnimator.cs",
+    "sha256": "ede5388968001b879abe9bfeac8d87ed0905e301a4a789a301726257685513a3",
+    "original_sha256": "ede5388968001b879abe9bfeac8d87ed0905e301a4a789a301726257685513a3",
+    "bytes": 1353,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Scripts/ShaderPropAnimator.cs.meta",
+    "sha256": "312f06f737ae9b769c49e396f09208e5bb86abe76bfaac57b4b00e1992526fd8",
+    "original_sha256": "312f06f737ae9b769c49e396f09208e5bb86abe76bfaac57b4b00e1992526fd8",
+    "bytes": 221,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Scripts/SimpleScript.cs",
+    "sha256": "9c7204adfbc08becb75a66f2e328f2bc4a393af90b269571eb2c0e83a7b94b0a",
+    "original_sha256": "9c7204adfbc08becb75a66f2e328f2bc4a393af90b269571eb2c0e83a7b94b0a",
+    "bytes": 1815,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Scripts/SimpleScript.cs.meta",
+    "sha256": "e668710db8277599b55e81d89ff6e0cb89df28ad5eddf964433616c697d2b639",
+    "original_sha256": "e668710db8277599b55e81d89ff6e0cb89df28ad5eddf964433616c697d2b639",
+    "bytes": 221,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Scripts/SkewTextExample.cs",
+    "sha256": "c9e6d50712b15ece9a7874026c2085b26c90f52d85de10202e8b36e3fea4f7e9",
+    "original_sha256": "c9e6d50712b15ece9a7874026c2085b26c90f52d85de10202e8b36e3fea4f7e9",
+    "bytes": 6837,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Scripts/SkewTextExample.cs.meta",
+    "sha256": "0d8881cdffe930f83812cc151a7b697af2179601437d383ba18b1b589059f81a",
+    "original_sha256": "0d8881cdffe930f83812cc151a7b697af2179601437d383ba18b1b589059f81a",
+    "bytes": 262,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Scripts/TeleType.cs",
+    "sha256": "60aef074b2c7a64952977a081fe941e7c358893519a4bf678406fabb8f616820",
+    "original_sha256": "60aef074b2c7a64952977a081fe941e7c358893519a4bf678406fabb8f616820",
+    "bytes": 2834,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Scripts/TeleType.cs.meta",
+    "sha256": "d280daf4594ac90c2baabf55c160afcd2368e710d95672300cdf8eb310b38897",
+    "original_sha256": "d280daf4594ac90c2baabf55c160afcd2368e710d95672300cdf8eb310b38897",
+    "bytes": 221,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Scripts/TextConsoleSimulator.cs",
+    "sha256": "96d0c388d9f8742b63a924114947d3d6737f2dc558b527cd4e9bf88ad36f1631",
+    "original_sha256": "96d0c388d9f8742b63a924114947d3d6737f2dc558b527cd4e9bf88ad36f1631",
+    "bytes": 3782,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Scripts/TextConsoleSimulator.cs.meta",
+    "sha256": "4c73ebbc4fc69615eeaf18f4f8c6a50c867e5f9066acec3d18f5d98ab1642d8d",
+    "original_sha256": "4c73ebbc4fc69615eeaf18f4f8c6a50c867e5f9066acec3d18f5d98ab1642d8d",
+    "bytes": 264,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs",
+    "sha256": "bd271a4266afd3ec49db4861402b971037931567882c8ec7c4845cc3a304e2e4",
+    "original_sha256": "bd271a4266afd3ec49db4861402b971037931567882c8ec7c4845cc3a304e2e4",
+    "bytes": 9122,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshProFloatingText.cs.meta",
+    "sha256": "2c6b4bd0ca3e9a029e349da4446d3b2569a085f540446577310f8bceee26fbb3",
+    "original_sha256": "2c6b4bd0ca3e9a029e349da4446d3b2569a085f540446577310f8bceee26fbb3",
+    "bytes": 247,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshSpawner.cs",
+    "sha256": "f4b25e169766fad6769f11526dbaaffb259731c2a2e5279bbee8ed4152384036",
+    "original_sha256": "f4b25e169766fad6769f11526dbaaffb259731c2a2e5279bbee8ed4152384036",
+    "bytes": 2780,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Scripts/TextMeshSpawner.cs.meta",
+    "sha256": "171e9687c4c1b16141a84617096706927bcd34afd43d82cf7e920df2112b417e",
+    "original_sha256": "171e9687c4c1b16141a84617096706927bcd34afd43d82cf7e920df2112b417e",
+    "bytes": 247,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_DigitValidator.cs",
+    "sha256": "f6c9a606954beebc086b45d6997f89de40a29fcc35584fbbd2818d4a7a7e3c67",
+    "original_sha256": "f6c9a606954beebc086b45d6997f89de40a29fcc35584fbbd2818d4a7a7e3c67",
+    "bytes": 726,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_DigitValidator.cs.meta",
+    "sha256": "1aa61975478366b8bad6f15e6be1397de331d9ce73c46b9c92f1df8e8e8b2bea",
+    "original_sha256": "1aa61975478366b8bad6f15e6be1397de331d9ce73c46b9c92f1df8e8e8b2bea",
+    "bytes": 262,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_ExampleScript_01.cs",
+    "sha256": "3a61c0f7256d8fbeb739f25e5c1627dcf6b6517158eef38c5fa450c688201ffa",
+    "original_sha256": "3a61c0f7256d8fbeb739f25e5c1627dcf6b6517158eef38c5fa450c688201ffa",
+    "bytes": 2122,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_ExampleScript_01.cs.meta",
+    "sha256": "ff5ab2aecc8a43ac24394f2896a0a7cc4bc941f08db598854390c8336f68c168",
+    "original_sha256": "ff5ab2aecc8a43ac24394f2896a0a7cc4bc941f08db598854390c8336f68c168",
+    "bytes": 262,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_FrameRateCounter.cs",
+    "sha256": "c44ed4746adddac59fae9a4f45df9d1f97bfa24a99267a855ae5310b1e98da2b",
+    "original_sha256": "c44ed4746adddac59fae9a4f45df9d1f97bfa24a99267a855ae5310b1e98da2b",
+    "bytes": 5163,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_FrameRateCounter.cs.meta",
+    "sha256": "437a6e5f2ec3123f9ef49b833249073c5f70c815c776c19f09cabbb5342927a6",
+    "original_sha256": "437a6e5f2ec3123f9ef49b833249073c5f70c815c776c19f09cabbb5342927a6",
+    "bytes": 221,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_PhoneNumberValidator.cs",
+    "sha256": "db98aef0ef8c1ad063aee3fd316c6d7137a783371003c0339ba9ffec25157a17",
+    "original_sha256": "db98aef0ef8c1ad063aee3fd316c6d7137a783371003c0339ba9ffec25157a17",
+    "bytes": 3521,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_PhoneNumberValidator.cs.meta",
+    "sha256": "4d1c09234431dc78c787aef9af51eae9de5f96134e6e644e415127781df38cd2",
+    "original_sha256": "4d1c09234431dc78c787aef9af51eae9de5f96134e6e644e415127781df38cd2",
+    "bytes": 262,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextEventCheck.cs",
+    "sha256": "b59f9d1c7fddffaeec2b2523c338cc32d4c40c18fa8dd7f540b6e3b22a3f36e5",
+    "original_sha256": "b59f9d1c7fddffaeec2b2523c338cc32d4c40c18fa8dd7f540b6e3b22a3f36e5",
+    "bytes": 2664,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextEventCheck.cs.meta",
+    "sha256": "2d1d12e5b8072cffdd92fd947dda5cb231e30b4760c532718859cc9677a3e41d",
+    "original_sha256": "2d1d12e5b8072cffdd92fd947dda5cb231e30b4760c532718859cc9677a3e41d",
+    "bytes": 262,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextEventHandler.cs",
+    "sha256": "b7a2a56edf40f6033b242c0971858607353eacd5323c74c2b5e496be0a838942",
+    "original_sha256": "b7a2a56edf40f6033b242c0971858607353eacd5323c74c2b5e496be0a838942",
+    "bytes": 9668,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextEventHandler.cs.meta",
+    "sha256": "aa8b937e39741acd2244a98c30814a26d242064c982b2f33f3178ea16abbc62b",
+    "original_sha256": "aa8b937e39741acd2244a98c30814a26d242064c982b2f33f3178ea16abbc62b",
+    "bytes": 262,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextInfoDebugTool.cs",
+    "sha256": "cd8f39066cf3c6835e1b61503b06ef7a3fd409437baa2e5569ec27a02ea408c4",
+    "original_sha256": "cd8f39066cf3c6835e1b61503b06ef7a3fd409437baa2e5569ec27a02ea408c4",
+    "bytes": 30811,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextInfoDebugTool.cs.meta",
+    "sha256": "55562ed20412699c10b1b1b38b63029f2bc155bec4c00d959f376edf6090a347",
+    "original_sha256": "55562ed20412699c10b1b1b38b63029f2bc155bec4c00d959f376edf6090a347",
+    "bytes": 264,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs",
+    "sha256": "e9c85049e2db34237663df431af7685b6c527554aadae03d01e5b999702a7948",
+    "original_sha256": "e9c85049e2db34237663df431af7685b6c527554aadae03d01e5b999702a7948",
+    "bytes": 6825,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_A.cs.meta",
+    "sha256": "35772983e31f857570a4e6c7f2924df75c4d0db6a27ca01ff216467e9b1db9d9",
+    "original_sha256": "35772983e31f857570a4e6c7f2924df75c4d0db6a27ca01ff216467e9b1db9d9",
+    "bytes": 262,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs",
+    "sha256": "abf848317fe552b5a3feae76851e0d41145aa0caedd984799512e940277dae4a",
+    "original_sha256": "abf848317fe552b5a3feae76851e0d41145aa0caedd984799512e940277dae4a",
+    "bytes": 24590,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_TextSelector_B.cs.meta",
+    "sha256": "23cb3b2b5c3bdc479e9c9f1bee5989ce7cab6852cc954c6bce2972fda74fb601",
+    "original_sha256": "23cb3b2b5c3bdc479e9c9f1bee5989ce7cab6852cc954c6bce2972fda74fb601",
+    "bytes": 360,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_UiFrameRateCounter.cs",
+    "sha256": "d5029ca1fedf88455e622e0c7f48147f4b7c736be3b78be65dbea67e83606df2",
+    "original_sha256": "d5029ca1fedf88455e622e0c7f48147f4b7c736be3b78be65dbea67e83606df2",
+    "bytes": 4894,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Scripts/TMP_UiFrameRateCounter.cs.meta",
+    "sha256": "f856ca9c55317f4a730bb9b55ee5abc6b94e92a090b64e96af4e253356ba497b",
+    "original_sha256": "f856ca9c55317f4a730bb9b55ee5abc6b94e92a090b64e96af4e253356ba497b",
+    "bytes": 262,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Scripts/TMPro_InstructionOverlay.cs",
+    "sha256": "03933725d53aa925c5f55f7c831a88ceb28b78bc38aff5736bc06e2716e6d7ca",
+    "original_sha256": "03933725d53aa925c5f55f7c831a88ceb28b78bc38aff5736bc06e2716e6d7ca",
+    "bytes": 3329,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Scripts/TMPro_InstructionOverlay.cs.meta",
+    "sha256": "ee275331813e05b969701bcea6c903913d41eefebf14cf927e65c8ab84888722",
+    "original_sha256": "ee275331813e05b969701bcea6c903913d41eefebf14cf927e65c8ab84888722",
+    "bytes": 221,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Scripts/VertexColorCycler.cs",
+    "sha256": "b7ab939290ed6e64ef779d91925fa44edea787a5fd73bfd784466f22f53ceb6c",
+    "original_sha256": "b7ab939290ed6e64ef779d91925fa44edea787a5fd73bfd784466f22f53ceb6c",
+    "bytes": 3127,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Scripts/VertexColorCycler.cs.meta",
+    "sha256": "07afcec3cf8aac169b7d9547b88545216556e981e705fe53e5e5f6e2c950835d",
+    "original_sha256": "07afcec3cf8aac169b7d9547b88545216556e981e705fe53e5e5f6e2c950835d",
+    "bytes": 262,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs",
+    "sha256": "4e934def3bee0a2806572824cb7007efcb05f9b1082a24400e35d4de209d8506",
+    "original_sha256": "4e934def3bee0a2806572824cb7007efcb05f9b1082a24400e35d4de209d8506",
+    "bytes": 7113,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Scripts/VertexJitter.cs.meta",
+    "sha256": "a0de5a2634598a37509b0c75500807440fd3dbe6dd2fbb28d2654ec50324db66",
+    "original_sha256": "a0de5a2634598a37509b0c75500807440fd3dbe6dd2fbb28d2654ec50324db66",
+    "bytes": 262,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs",
+    "sha256": "3e9b5d4c3ccaa63663098964a33bd3640e4e67e61e4dda00dc90dc047d67f339",
+    "original_sha256": "3e9b5d4c3ccaa63663098964a33bd3640e4e67e61e4dda00dc90dc047d67f339",
+    "bytes": 6846,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeA.cs.meta",
+    "sha256": "c0bac9fc94b5b3acd3369b7e866f3e60dd8b8025fd47b8db79df62e05be3525f",
+    "original_sha256": "c0bac9fc94b5b3acd3369b7e866f3e60dd8b8025fd47b8db79df62e05be3525f",
+    "bytes": 262,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs",
+    "sha256": "6162673abf5de78d60b478dc1572b92b6108162390f4b37886afa52f66a7a613",
+    "original_sha256": "6162673abf5de78d60b478dc1572b92b6108162390f4b37886afa52f66a7a613",
+    "bytes": 8724,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Scripts/VertexShakeB.cs.meta",
+    "sha256": "a9951fa0f99be560a68a5bfe6f512d164d7d423f292c2ade28dc3aa2f7f04d65",
+    "original_sha256": "a9951fa0f99be560a68a5bfe6f512d164d7d423f292c2ade28dc3aa2f7f04d65",
+    "bytes": 262,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs",
+    "sha256": "06b01d3c103cf9190b2b7ab561194f8af09b9359398ec1336d7e6d210c1769eb",
+    "original_sha256": "06b01d3c103cf9190b2b7ab561194f8af09b9359398ec1336d7e6d210c1769eb",
+    "bytes": 8533,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Scripts/VertexZoom.cs.meta",
+    "sha256": "9a710ddb5f3a80b7c6252376ba1d387f2ec74afcf9ef04fc3f75b678584f6544",
+    "original_sha256": "9a710ddb5f3a80b7c6252376ba1d387f2ec74afcf9ef04fc3f75b678584f6544",
+    "bytes": 262,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs",
+    "sha256": "71b9808aca4e1c6ba124152a48c4eea1e10fc0ff7a66de5ef2ab26561123cbfe",
+    "original_sha256": "71b9808aca4e1c6ba124152a48c4eea1e10fc0ff7a66de5ef2ab26561123cbfe",
+    "bytes": 5999,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Scripts/WarpTextExample.cs.meta",
+    "sha256": "9311e7b22a36417d3cf38ab5f55d0e12fd8241016a5c39f04bf39f0350df0553",
+    "original_sha256": "9311e7b22a36417d3cf38ab5f55d0e12fd8241016a5c39f04bf39f0350df0553",
+    "bytes": 262,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Scripts.meta",
+    "sha256": "8f5e4474ea44651852c1d63ba0d678d8e86ccdfafb99045b63d6469850be4505",
+    "original_sha256": "8f5e4474ea44651852c1d63ba0d678d8e86ccdfafb99045b63d6469850be4505",
+    "bytes": 191,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Sprites/Default Sprites.png",
+    "sha256": "f0ed23200980b5dfc4115a3ea99d26706d06a00f4946e4ccc01b83950456201b",
+    "original_sha256": "f0ed23200980b5dfc4115a3ea99d26706d06a00f4946e4ccc01b83950456201b",
+    "bytes": 178491,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Sprites/Default Sprites.png.meta",
+    "sha256": "65c002b99d50ce15e91707e99991c794ed3c15cb95387646de7ece7f0df305f9",
+    "original_sha256": "65c002b99d50ce15e91707e99991c794ed3c15cb95387646de7ece7f0df305f9",
+    "bytes": 10304,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Sprites/DropCap Numbers.psd",
+    "sha256": "a8da6e26a9dd8789a9d55d80636e4955ddd2c8ce5388cb0344eef52029eca106",
+    "original_sha256": "a8da6e26a9dd8789a9d55d80636e4955ddd2c8ce5388cb0344eef52029eca106",
+    "bytes": 482546,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Sprites/DropCap Numbers.psd.meta",
+    "sha256": "e440592fb43d3a59fa232bc51160ea52e6df1aa2783c175c7423ee3c33792bcb",
+    "original_sha256": "e440592fb43d3a59fa232bc51160ea52e6df1aa2783c175c7423ee3c33792bcb",
+    "bytes": 3433,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Sprites.meta",
+    "sha256": "12dac607ac5b4d150dbd7054b5c584fe76c256e9bd6b8b20dd1a9259118e3f9c",
+    "original_sha256": "12dac607ac5b4d150dbd7054b5c584fe76c256e9bd6b8b20dd1a9259118e3f9c",
+    "bytes": 191,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Textures/Brushed Metal 3.jpg",
+    "sha256": "7d21ed4aeaed1db486303adb34f3687f2ec9bdac1167cbb1d4cb9bc0974cfdb8",
+    "original_sha256": "7d21ed4aeaed1db486303adb34f3687f2ec9bdac1167cbb1d4cb9bc0974cfdb8",
+    "bytes": 28175,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Textures/Brushed Metal 3.jpg.meta",
+    "sha256": "4ebd4856b876f11c04ea0b5b6d5e81f6bfd76cb19bd68f5509f582551e89fba5",
+    "original_sha256": "4ebd4856b876f11c04ea0b5b6d5e81f6bfd76cb19bd68f5509f582551e89fba5",
+    "bytes": 1121,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Textures/Floor Cement.jpg",
+    "sha256": "d9c5332cbdaeacae60a48e31ebdd565cb93545605193ba7d5aa4e2f5ac92d6d5",
+    "original_sha256": "d9c5332cbdaeacae60a48e31ebdd565cb93545605193ba7d5aa4e2f5ac92d6d5",
+    "bytes": 71537,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Textures/Floor Cement.jpg.meta",
+    "sha256": "974258c4e79b6e687dc66590acdb5652f0a1b9b92d1f08c4b80ef738a1584e8a",
+    "original_sha256": "974258c4e79b6e687dc66590acdb5652f0a1b9b92d1f08c4b80ef738a1584e8a",
+    "bytes": 1121,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Textures/Floor Tiles 1 - diffuse.jpg",
+    "sha256": "17cac82ba5118e5f057461eb8f5c85126c57a7186a41f62c95cca6203ff4d245",
+    "original_sha256": "17cac82ba5118e5f057461eb8f5c85126c57a7186a41f62c95cca6203ff4d245",
+    "bytes": 155648,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Textures/Floor Tiles 1 - diffuse.jpg.meta",
+    "sha256": "279150a2babfcddffb3c556cfabbab618562e3d8a4ecd59dbeadba09a4455755",
+    "original_sha256": "279150a2babfcddffb3c556cfabbab618562e3d8a4ecd59dbeadba09a4455755",
+    "bytes": 1121,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Textures/Fruit Jelly (B&W).jpg",
+    "sha256": "dcdb715f73dda61219860185eccc1a6bd81fbeacc171d7bf2a5f766f8eea8e0c",
+    "original_sha256": "dcdb715f73dda61219860185eccc1a6bd81fbeacc171d7bf2a5f766f8eea8e0c",
+    "bytes": 150089,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Textures/Fruit Jelly (B&W).jpg.meta",
+    "sha256": "7748d768ccad1f22073edb454ba433027b89938e2073d4f165b3e3d5fcd69295",
+    "original_sha256": "7748d768ccad1f22073edb454ba433027b89938e2073d4f165b3e3d5fcd69295",
+    "bytes": 1121,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Textures/Gradient Diagonal (Color).jpg",
+    "sha256": "51735b2a99f9d6baae14b01cf2e01fa1aeef69c9a95553b73bdea5a8957a19a7",
+    "original_sha256": "51735b2a99f9d6baae14b01cf2e01fa1aeef69c9a95553b73bdea5a8957a19a7",
+    "bytes": 11688,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Textures/Gradient Diagonal (Color).jpg.meta",
+    "sha256": "bcf5c8ce570d1978154396557a1769d41877876624f81117c510de129bfa42ae",
+    "original_sha256": "bcf5c8ce570d1978154396557a1769d41877876624f81117c510de129bfa42ae",
+    "bytes": 1207,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Textures/Gradient Horizontal (Color).jpg",
+    "sha256": "b2099f0fd08520b82fefb8e4e37dfdaefd283cf4aedb074d11dcfdd9841f24f1",
+    "original_sha256": "b2099f0fd08520b82fefb8e4e37dfdaefd283cf4aedb074d11dcfdd9841f24f1",
+    "bytes": 11341,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Textures/Gradient Horizontal (Color).jpg.meta",
+    "sha256": "8dcacdd853bcd5cdebe1dc91793a35f6f690f670ba4cd026819e9946aabe44f6",
+    "original_sha256": "8dcacdd853bcd5cdebe1dc91793a35f6f690f670ba4cd026819e9946aabe44f6",
+    "bytes": 1121,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Textures/Gradient Vertical (Color).jpg",
+    "sha256": "d9d7ab2c8d016b29574b13607e0579983d13b3377a6a3a330b945c5f07adc059",
+    "original_sha256": "d9d7ab2c8d016b29574b13607e0579983d13b3377a6a3a330b945c5f07adc059",
+    "bytes": 11336,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Textures/Gradient Vertical (Color).jpg.meta",
+    "sha256": "4748489313248ad50705f19ed24705f025b6710e41ed7e73865e878be01a27f3",
+    "original_sha256": "4748489313248ad50705f19ed24705f025b6710e41ed7e73865e878be01a27f3",
+    "bytes": 1121,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Textures/Mask Zig-n-Zag.psd",
+    "sha256": "62c198307c982df2e7fecc53cfb5d932ffad8f1056f046448619c6f314dac249",
+    "original_sha256": "62c198307c982df2e7fecc53cfb5d932ffad8f1056f046448619c6f314dac249",
+    "bytes": 38488,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Textures/Mask Zig-n-Zag.psd.meta",
+    "sha256": "a7c638c42960b504201dc4db0d71b204b425a63d20b6ae22d941eaab796de07e",
+    "original_sha256": "a7c638c42960b504201dc4db0d71b204b425a63d20b6ae22d941eaab796de07e",
+    "bytes": 1184,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Textures/Small Crate_diffuse.jpg",
+    "sha256": "79d17105e2a4ba39880b0092d6792d985c380789047fd0459e1af099ccf8521d",
+    "original_sha256": "79d17105e2a4ba39880b0092d6792d985c380789047fd0459e1af099ccf8521d",
+    "bytes": 95326,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Textures/Small Crate_diffuse.jpg.meta",
+    "sha256": "f85c2c8dd12ffd36fc13afedc4de7c1673bd0fc1a8245d3977439a4268d7f6cc",
+    "original_sha256": "f85c2c8dd12ffd36fc13afedc4de7c1673bd0fc1a8245d3977439a4268d7f6cc",
+    "bytes": 3063,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Textures/Small Crate_normal.jpg",
+    "sha256": "432295d5fef530c8927b80cfb1b33ee58d1b6060237df82a0cc460e784074460",
+    "original_sha256": "432295d5fef530c8927b80cfb1b33ee58d1b6060237df82a0cc460e784074460",
+    "bytes": 126976,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Textures/Small Crate_normal.jpg.meta",
+    "sha256": "66f5dd9834ac51c3d48078f9d81efac7003913955ef2fe7eb85ddad448f77007",
+    "original_sha256": "66f5dd9834ac51c3d48078f9d81efac7003913955ef2fe7eb85ddad448f77007",
+    "bytes": 3063,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Textures/Sunny Days - Seamless.jpg",
+    "sha256": "ab6536daf74188dfc075d65f5d85aca9efeaead7f03b905514e53076d854f365",
+    "original_sha256": "ab6536daf74188dfc075d65f5d85aca9efeaead7f03b905514e53076d854f365",
+    "bytes": 273488,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Textures/Sunny Days - Seamless.jpg.meta",
+    "sha256": "596e19b10e94d98699ccf3f49fd1efa8a36dbaa87e94d5dce20f73579e046dde",
+    "original_sha256": "596e19b10e94d98699ccf3f49fd1efa8a36dbaa87e94d5dce20f73579e046dde",
+    "bytes": 3064,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Textures/Text Overflow - Linked Text Image 1.png",
+    "sha256": "a1cee03c0ad0d42b302819e32c87651c946583a1f9c755b421a6a438f593bb67",
+    "original_sha256": "a1cee03c0ad0d42b302819e32c87651c946583a1f9c755b421a6a438f593bb67",
+    "bytes": 26169,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Textures/Text Overflow - Linked Text Image 1.png.meta",
+    "sha256": "fd52dc7264a3f97437b771338a376bb1d5fd6f545ec670eadc3ffb54bb12629b",
+    "original_sha256": "fd52dc7264a3f97437b771338a376bb1d5fd6f545ec670eadc3ffb54bb12629b",
+    "bytes": 1261,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Textures/Text Overflow - Linked Text UI Screenshot.png",
+    "sha256": "6085a191a9981df78a26f7218bc051fd113430674b545f0889dd757e87df0941",
+    "original_sha256": "6085a191a9981df78a26f7218bc051fd113430674b545f0889dd757e87df0941",
+    "bytes": 49290,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Textures/Text Overflow - Linked Text UI Screenshot.png.meta",
+    "sha256": "25ec536ff14a39d265e6ce047e25acb1d89c8d57ddf037f7966b748ebd020b17",
+    "original_sha256": "25ec536ff14a39d265e6ce047e25acb1d89c8d57ddf037f7966b748ebd020b17",
+    "bytes": 1260,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Textures/Wipe Pattern - Circle.psd",
+    "sha256": "9146c89277cda5a0a4c5b00e7c9ff089b3486af113c09a5a3bfaefd103ed7e01",
+    "original_sha256": "9146c89277cda5a0a4c5b00e7c9ff089b3486af113c09a5a3bfaefd103ed7e01",
+    "bytes": 32696,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Textures/Wipe Pattern - Circle.psd.meta",
+    "sha256": "975746b6c0cb2150cbb7ec6a28e119b4efdb5977773c02d316310c149a74dc71",
+    "original_sha256": "975746b6c0cb2150cbb7ec6a28e119b4efdb5977773c02d316310c149a74dc71",
+    "bytes": 1258,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Textures/Wipe Pattern - Diagonal.psd",
+    "sha256": "9dd31b2053ce4f178d014a87e70ad1d829229aaf486aa9607c7ba8370b1f631e",
+    "original_sha256": "9dd31b2053ce4f178d014a87e70ad1d829229aaf486aa9607c7ba8370b1f631e",
+    "bytes": 33064,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Textures/Wipe Pattern - Diagonal.psd.meta",
+    "sha256": "b7f3d0734fdde1454999af1b43dae45c5f8f0550d1cd144b41eafe1bd299c888",
+    "original_sha256": "b7f3d0734fdde1454999af1b43dae45c5f8f0550d1cd144b41eafe1bd299c888",
+    "bytes": 1228,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Textures/Wipe Pattern - Radial Double.psd",
+    "sha256": "6cdbce6a3732ce075694a0b18630847b9df8c96ce73cbbbe7154a5dfb2660f23",
+    "original_sha256": "6cdbce6a3732ce075694a0b18630847b9df8c96ce73cbbbe7154a5dfb2660f23",
+    "bytes": 33155,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Textures/Wipe Pattern - Radial Double.psd.meta",
+    "sha256": "44ccd8f153d82ed5600ff784ab3b5dbe795c2f0541ed86df9bc635e33dac3787",
+    "original_sha256": "44ccd8f153d82ed5600ff784ab3b5dbe795c2f0541ed86df9bc635e33dac3787",
+    "bytes": 1228,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Textures/Wipe Pattern - Radial Quad.psd",
+    "sha256": "e014157602c4e690f54c01f221b15d2c428f8131dce86ce0fc21ba5c6ad9495d",
+    "original_sha256": "e014157602c4e690f54c01f221b15d2c428f8131dce86ce0fc21ba5c6ad9495d",
+    "bytes": 34433,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Textures/Wipe Pattern - Radial Quad.psd.meta",
+    "sha256": "95530e983aae4ca42d6fe3a82053b8db3a10fd9b7f8ab672bd43aaa7ffe4c6da",
+    "original_sha256": "95530e983aae4ca42d6fe3a82053b8db3a10fd9b7f8ab672bd43aaa7ffe4c6da",
+    "bytes": 1257,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras/Textures.meta",
+    "sha256": "bff86b21b02132e38e58f03e107f74095216d9bc5fbb4a05c25c5b87165c477c",
+    "original_sha256": "bff86b21b02132e38e58f03e107f74095216d9bc5fbb4a05c25c5b87165c477c",
+    "bytes": 191,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Examples & Extras.meta",
+    "sha256": "b660b2e4da9688bfe55c6455d3ebdfae911a3e52edcf5306071a7a9cb06aa3c8",
+    "original_sha256": "b660b2e4da9688bfe55c6455d3ebdfae911a3e52edcf5306071a7a9cb06aa3c8",
+    "bytes": 172,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Fonts/LiberationSans - OFL.txt",
+    "sha256": "37f8552e9a874ec10710dc0ede6a9adf168e6609fbd02a507f35629373b85a48",
+    "original_sha256": "37f8552e9a874ec10710dc0ede6a9adf168e6609fbd02a507f35629373b85a48",
+    "bytes": 4469,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Fonts/LiberationSans - OFL.txt.meta",
+    "sha256": "5dbec32c014c17d94674af5f1494d49b42ba00edd50397f895f088c868ccbf86",
+    "original_sha256": "5dbec32c014c17d94674af5f1494d49b42ba00edd50397f895f088c868ccbf86",
+    "bytes": 177,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Fonts/LiberationSans.ttf",
+    "sha256": "e5b0af421ea2bfbc1ac8d251d647268087ae82786234c57f757d1f0b90fa8b49",
+    "original_sha256": "e5b0af421ea2bfbc1ac8d251d647268087ae82786234c57f757d1f0b90fa8b49",
+    "bytes": 350200,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Fonts/LiberationSans.ttf.meta",
+    "sha256": "e2e35a015703584fb119355fa02631764d111c3e112d32519801d46bd697b596",
+    "original_sha256": "e2e35a015703584fb119355fa02631764d111c3e112d32519801d46bd697b596",
+    "bytes": 414,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Fonts.meta",
+    "sha256": "11e80153fa39b86efadb8917ecde12a0402fe0729f2c88f6f8d1999f3fb04748",
+    "original_sha256": "11e80153fa39b86efadb8917ecde12a0402fe0729f2c88f6f8d1999f3fb04748",
+    "bytes": 172,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Drop Shadow.mat",
+    "sha256": "b6b65c34e4907dd3006c2217fc8a4cef81b6da24df0a3de8e2288199eb6c5a9d",
+    "original_sha256": "b6b65c34e4907dd3006c2217fc8a4cef81b6da24df0a3de8e2288199eb6c5a9d",
+    "bytes": 2975,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Drop Shadow.mat.meta",
+    "sha256": "ef2eee63b288d47823da38109e3e8c879f4717a82dc662ac2d5e2460dacde698",
+    "original_sha256": "ef2eee63b288d47823da38109e3e8c879f4717a82dc662ac2d5e2460dacde698",
+    "bytes": 179,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset",
+    "sha256": "e2d77876f2b90d98ba2424f6fc32b1403ea701de8fd24a8fe8e571ecc3cdc10a",
+    "original_sha256": "e2d77876f2b90d98ba2424f6fc32b1403ea701de8fd24a8fe8e571ecc3cdc10a",
+    "bytes": 9365,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset.meta",
+    "sha256": "d6d86504040cf6e736767fda9bdef494afb06d5304384243e2dd703eba3a4a3d",
+    "original_sha256": "d6d86504040cf6e736767fda9bdef494afb06d5304384243e2dd703eba3a4a3d",
+    "bytes": 179,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Outline.mat",
+    "sha256": "25874340976d40e9f9e8abf731b7f32e5a478541dead9288140bd60c7a3287d9",
+    "original_sha256": "25874340976d40e9f9e8abf731b7f32e5a478541dead9288140bd60c7a3287d9",
+    "bytes": 2889,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Outline.mat.meta",
+    "sha256": "a8cf0ee9888a163e892368b4660b9c62a7375e7f8afdb8ee02e5c91ca1cdb355",
+    "original_sha256": "a8cf0ee9888a163e892368b4660b9c62a7375e7f8afdb8ee02e5c91ca1cdb355",
+    "bytes": 179,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset",
+    "sha256": "c3ff50e3133d989180b187748ffc67903f1fede099a5b85b4fcbd8cb6e8be958",
+    "original_sha256": "c3ff50e3133d989180b187748ffc67903f1fede099a5b85b4fcbd8cb6e8be958",
+    "bytes": 2256862,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset.meta",
+    "sha256": "37233890984555987cb585551bc885069f2849a9b0d1c2191af073b9376aa10f",
+    "original_sha256": "37233890984555987cb585551bc885069f2849a9b0d1c2191af073b9376aa10f",
+    "bytes": 179,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Resources/Fonts & Materials.meta",
+    "sha256": "8917470a9265beb1ef55a28c6a3718eb12ec8004554499998cc345056247995f",
+    "original_sha256": "8917470a9265beb1ef55a28c6a3718eb12ec8004554499998cc345056247995f",
+    "bytes": 191,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Resources/LineBreaking Following Characters.txt",
+    "sha256": "3a73e5ffe2510756dd3c2e982fdc1218b4be82c6e21abde88070d6860e1bc8e6",
+    "original_sha256": "3a73e5ffe2510756dd3c2e982fdc1218b4be82c6e21abde88070d6860e1bc8e6",
+    "bytes": 269,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Resources/LineBreaking Following Characters.txt.meta",
+    "sha256": "d5a86d8b7db6aa3ca6f4a63750eb94e0c42a64909b47d8c6c6f2565845534490",
+    "original_sha256": "d5a86d8b7db6aa3ca6f4a63750eb94e0c42a64909b47d8c6c6f2565845534490",
+    "bytes": 179,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Resources/LineBreaking Leading Characters.txt",
+    "sha256": "62d3f4d5f64aaf885692d2d13a8313f6918e6e4c5aeb3990a43f614652bfd89c",
+    "original_sha256": "62d3f4d5f64aaf885692d2d13a8313f6918e6e4c5aeb3990a43f614652bfd89c",
+    "bytes": 95,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Resources/LineBreaking Leading Characters.txt.meta",
+    "sha256": "6a925814d5e251a0ced6de210db2bacf2de29b4f0dc2991e85c908632e9565e4",
+    "original_sha256": "6a925814d5e251a0ced6de210db2bacf2de29b4f0dc2991e85c908632e9565e4",
+    "bytes": 179,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Resources/Sprite Assets/EmojiOne.asset",
+    "sha256": "155fff99f467baa93dd2d0886df466bd242cd5e3c8c60c9d43e9cdad269f7f54",
+    "original_sha256": "155fff99f467baa93dd2d0886df466bd242cd5e3c8c60c9d43e9cdad269f7f54",
+    "bytes": 13441,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Resources/Sprite Assets/EmojiOne.asset.meta",
+    "sha256": "097525b164260b0fb34b4e0c73b3187c693f4dfe2991f475b5b416dbf07dfbbc",
+    "original_sha256": "097525b164260b0fb34b4e0c73b3187c693f4dfe2991f475b5b416dbf07dfbbc",
+    "bytes": 179,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Resources/Sprite Assets.meta",
+    "sha256": "5605affac803b81f876f35577f075c9b7e5ea73cf812fdfcc74277bf0f40140e",
+    "original_sha256": "5605affac803b81f876f35577f075c9b7e5ea73cf812fdfcc74277bf0f40140e",
+    "bytes": 191,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Resources/Style Sheets/Default Style Sheet.asset",
+    "sha256": "93e073cdb91b7e3d2fa31e2dd13626d7b9d2f327904ba8c3c2b97a3eecfbabac",
+    "original_sha256": "93e073cdb91b7e3d2fa31e2dd13626d7b9d2f327904ba8c3c2b97a3eecfbabac",
+    "bytes": 5539,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Resources/Style Sheets/Default Style Sheet.asset.meta",
+    "sha256": "b832663ca09ec7af8c8e816fd91a718b2af6c21ab4f126fa818871ad53bce763",
+    "original_sha256": "b832663ca09ec7af8c8e816fd91a718b2af6c21ab4f126fa818871ad53bce763",
+    "bytes": 181,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Resources/Style Sheets.meta",
+    "sha256": "1fdf0423552f46284fb97894f36adcd34d32e595aaf5c7cf1ce38a2349faaf89",
+    "original_sha256": "1fdf0423552f46284fb97894f36adcd34d32e595aaf5c7cf1ce38a2349faaf89",
+    "bytes": 191,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Resources/TMP Settings.asset",
+    "sha256": "7be438062cdc296835a1258b68bcbeb8e9fdc4b01ea27c05a24a1074260f7424",
+    "original_sha256": "7be438062cdc296835a1258b68bcbeb8e9fdc4b01ea27c05a24a1074260f7424",
+    "bytes": 1852,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Resources/TMP Settings.asset.meta",
+    "sha256": "a65193b095ec3606789a3191751a837704cf52d4f461993ae7903024c6d43f45",
+    "original_sha256": "a65193b095ec3606789a3191751a837704cf52d4f461993ae7903024c6d43f45",
+    "bytes": 179,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Resources.meta",
+    "sha256": "167448559db07c9857b206a0f5a0aedcd6a6dad900d618b35b0702d636573805",
+    "original_sha256": "167448559db07c9857b206a0f5a0aedcd6a6dad900d618b35b0702d636573805",
+    "bytes": 172,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Shaders/SDFFunctions.hlsl",
+    "sha256": "88cf0f62e4000b71750c059d0886b19504cd1cf10f39bb61ddc11b77a882d417",
+    "original_sha256": "88cf0f62e4000b71750c059d0886b19504cd1cf10f39bb61ddc11b77a882d417",
+    "bytes": 6021,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Shaders/SDFFunctions.hlsl.meta",
+    "sha256": "e1d0c5347b3c55930759f5bc0985e11611a4b2ff22eef24523eb108687bd1642",
+    "original_sha256": "e1d0c5347b3c55930759f5bc0985e11611a4b2ff22eef24523eb108687bd1642",
+    "bytes": 230,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Shaders/TMP_Bitmap-Custom-Atlas.shader",
+    "sha256": "42892a52f22bdde6d482cf2da5f35e4b813063fc6fe42189eee5562080079494",
+    "original_sha256": "42892a52f22bdde6d482cf2da5f35e4b813063fc6fe42189eee5562080079494",
+    "bytes": 3836,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Shaders/TMP_Bitmap-Custom-Atlas.shader.meta",
+    "sha256": "91be1d5618a7da33c878e20cf2be3e13b897d4976c70bde0cda7a67dbd502cd2",
+    "original_sha256": "91be1d5618a7da33c878e20cf2be3e13b897d4976c70bde0cda7a67dbd502cd2",
+    "bytes": 204,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Shaders/TMP_Bitmap-Mobile.shader",
+    "sha256": "b50afc7edc8a710f8b4159149b2391e7238b5e4076cc0ea2119090ed29e13b4a",
+    "original_sha256": "b50afc7edc8a710f8b4159149b2391e7238b5e4076cc0ea2119090ed29e13b4a",
+    "bytes": 4071,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Shaders/TMP_Bitmap-Mobile.shader.meta",
+    "sha256": "7430f3e97ae1b46f34e1ca75508705bb7b944307c41dc568ea728011f327086d",
+    "original_sha256": "7430f3e97ae1b46f34e1ca75508705bb7b944307c41dc568ea728011f327086d",
+    "bytes": 204,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Shaders/TMP_Bitmap.shader",
+    "sha256": "1d32f34c71276c1321aa0540a2410e15808743a38b2026923045a4dec4a79b58",
+    "original_sha256": "1d32f34c71276c1321aa0540a2410e15808743a38b2026923045a4dec4a79b58",
+    "bytes": 3839,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Shaders/TMP_Bitmap.shader.meta",
+    "sha256": "3d462e6f8ba57f45dc5e6000020db066c36ed5a1a24f74f749727812373c2325",
+    "original_sha256": "3d462e6f8ba57f45dc5e6000020db066c36ed5a1a24f74f749727812373c2325",
+    "bytes": 204,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Shaders/TMP_SDF Overlay.shader",
+    "sha256": "a0d318756cba0f95a7052c387e629d0add3e9a4125c8333f1d1ed591af5f17cb",
+    "original_sha256": "a0d318756cba0f95a7052c387e629d0add3e9a4125c8333f1d1ed591af5f17cb",
+    "bytes": 11054,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Shaders/TMP_SDF Overlay.shader.meta",
+    "sha256": "fb8fc84b612e19c169cdf3596195b416e68d227a8987a0eaa90d8c137fb69797",
+    "original_sha256": "fb8fc84b612e19c169cdf3596195b416e68d227a8987a0eaa90d8c137fb69797",
+    "bytes": 204,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Shaders/TMP_SDF SSD.shader",
+    "sha256": "2a991951b00b0c052363a1025f655450054325437b3d13c2623a987c8ec77c30",
+    "original_sha256": "2a991951b00b0c052363a1025f655450054325437b3d13c2623a987c8ec77c30",
+    "bytes": 12438,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Shaders/TMP_SDF SSD.shader.meta",
+    "sha256": "bea74d576f181a8bb04b8cf02eedd0136540325ecb2824928a3aa52c75adcb13",
+    "original_sha256": "bea74d576f181a8bb04b8cf02eedd0136540325ecb2824928a3aa52c75adcb13",
+    "bytes": 204,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Shaders/TMP_SDF-HDRP LIT.shadergraph",
+    "sha256": "bf68062f68b38b588abd1c354f64e905f824d9a2c47f92ebdd70a32989eb2097",
+    "original_sha256": "bf68062f68b38b588abd1c354f64e905f824d9a2c47f92ebdd70a32989eb2097",
+    "bytes": 287427,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Shaders/TMP_SDF-HDRP LIT.shadergraph.meta",
+    "sha256": "d1b70558e8b974d918e13c010db6d375fef815ba530bc2421ab031aa3a784ee8",
+    "original_sha256": "d1b70558e8b974d918e13c010db6d375fef815ba530bc2421ab031aa3a784ee8",
+    "bytes": 285,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Shaders/TMP_SDF-HDRP UNLIT.shadergraph",
+    "sha256": "8a969c2d775079cce4e1c45d5eb6d3964b27d44dc884178363050c74fd5e9742",
+    "original_sha256": "8a969c2d775079cce4e1c45d5eb6d3964b27d44dc884178363050c74fd5e9742",
+    "bytes": 279909,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Shaders/TMP_SDF-HDRP UNLIT.shadergraph.meta",
+    "sha256": "8cd498ce8f6ed2e7c0560d605eb912455cd6fdaf09a4d545d9743f63b3426bd0",
+    "original_sha256": "8cd498ce8f6ed2e7c0560d605eb912455cd6fdaf09a4d545d9743f63b3426bd0",
+    "bytes": 285,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Masking.shader",
+    "sha256": "41cff58473557bf760d03513a8c098f43a24e4eeb4c8ccd7d828c045a338a9ed",
+    "original_sha256": "41cff58473557bf760d03513a8c098f43a24e4eeb4c8ccd7d828c045a338a9ed",
+    "bytes": 8273,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Masking.shader.meta",
+    "sha256": "3744d078f9a8b6d3c5d9bca51e43f9223544fcafaf9396e121f49ea84a0609d3",
+    "original_sha256": "3744d078f9a8b6d3c5d9bca51e43f9223544fcafaf9396e121f49ea84a0609d3",
+    "bytes": 204,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Overlay.shader",
+    "sha256": "fb286386d0592ce6d63eb736f180b4b0f638ec538b0855aa54767a438ebd1173",
+    "original_sha256": "fb286386d0592ce6d63eb736f180b4b0f638ec538b0855aa54767a438ebd1173",
+    "bytes": 8081,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Overlay.shader.meta",
+    "sha256": "1eeca1536c7506f79d4d877b866a5fb88db8f402634e091b6d78aa9d21c9d18b",
+    "original_sha256": "1eeca1536c7506f79d4d877b866a5fb88db8f402634e091b6d78aa9d21c9d18b",
+    "bytes": 204,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile SSD.shader",
+    "sha256": "8b30c140f6af9134392fe6ecf4c0676db73f873489ac52adfb47bbd288cb51b8",
+    "original_sha256": "8b30c140f6af9134392fe6ecf4c0676db73f873489ac52adfb47bbd288cb51b8",
+    "bytes": 3064,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile SSD.shader.meta",
+    "sha256": "e3412891b9306b017e60cba4ae4f6d258ee8b161d986dcde9cefb3d60345514d",
+    "original_sha256": "e3412891b9306b017e60cba4ae4f6d258ee8b161d986dcde9cefb3d60345514d",
+    "bytes": 204,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile-2-Pass.shader",
+    "sha256": "4bc2db64befbd0e37e23539f21096ad2fcd9d61b36d2174d208a7d831a0883f7",
+    "original_sha256": "4bc2db64befbd0e37e23539f21096ad2fcd9d61b36d2174d208a7d831a0883f7",
+    "bytes": 11795,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile-2-Pass.shader.meta",
+    "sha256": "65ecbce6f1621f2d7ddc5e6004dda5e55e1f58ec6e01178f3691e1e81e01de55",
+    "original_sha256": "65ecbce6f1621f2d7ddc5e6004dda5e55e1f58ec6e01178f3691e1e81e01de55",
+    "bytes": 204,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile.shader",
+    "sha256": "44c39aabc7e88e7e1feffc1880df754f4adf86b62e9512aa89e9d2d65171aff4",
+    "original_sha256": "44c39aabc7e88e7e1feffc1880df754f4adf86b62e9512aa89e9d2d65171aff4",
+    "bytes": 8074,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile.shader.meta",
+    "sha256": "f2112f50c72762d4e6731391495ea11f76975d677b698e9bcfdd38275ea18f9d",
+    "original_sha256": "f2112f50c72762d4e6731391495ea11f76975d677b698e9bcfdd38275ea18f9d",
+    "bytes": 204,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Shaders/TMP_SDF-Surface-Mobile.shader",
+    "sha256": "f9fae5906dd37d89298338953294459975de58a5421e68dd9e82a79794b95509",
+    "original_sha256": "f9fae5906dd37d89298338953294459975de58a5421e68dd9e82a79794b95509",
+    "bytes": 3523,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Shaders/TMP_SDF-Surface-Mobile.shader.meta",
+    "sha256": "95aa060f371ee503a22c0a0b018e029c0328bd82b9317feaa784432b0a787343",
+    "original_sha256": "95aa060f371ee503a22c0a0b018e029c0328bd82b9317feaa784432b0a787343",
+    "bytes": 204,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Shaders/TMP_SDF-Surface.shader",
+    "sha256": "5dadb68b56429547918b392626e9af8fd5173936d20bb43cfca58dfa00947257",
+    "original_sha256": "5dadb68b56429547918b392626e9af8fd5173936d20bb43cfca58dfa00947257",
+    "bytes": 4353,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Shaders/TMP_SDF-Surface.shader.meta",
+    "sha256": "42439f5ac7491998f562e8ede73d64c3512953eb99fb1b49e833f5d9999a7660",
+    "original_sha256": "42439f5ac7491998f562e8ede73d64c3512953eb99fb1b49e833f5d9999a7660",
+    "bytes": 204,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Shaders/TMP_SDF-URP Lit.shadergraph",
+    "sha256": "e0148ce8e5904232a4e711376a45b7af2a007fb9690c5a69c1cb4952a696cdbf",
+    "original_sha256": "e0148ce8e5904232a4e711376a45b7af2a007fb9690c5a69c1cb4952a696cdbf",
+    "bytes": 283866,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Shaders/TMP_SDF-URP Lit.shadergraph.meta",
+    "sha256": "4c36abf5f2611c9d2cb04e7da8c30e42077503a17cb218020e171b6d3ff664f7",
+    "original_sha256": "4c36abf5f2611c9d2cb04e7da8c30e42077503a17cb218020e171b6d3ff664f7",
+    "bytes": 285,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Shaders/TMP_SDF-URP Unlit.shadergraph",
+    "sha256": "dc15b6819ad87a4b34ed888ae2c274624efc0ada902d1a9e7752d87922414dcc",
+    "original_sha256": "dc15b6819ad87a4b34ed888ae2c274624efc0ada902d1a9e7752d87922414dcc",
+    "bytes": 277012,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Shaders/TMP_SDF-URP Unlit.shadergraph.meta",
+    "sha256": "f1ef815e2672fd770f47ee424c64f7ecdbdc642b7475828c29db032586aa10b6",
+    "original_sha256": "f1ef815e2672fd770f47ee424c64f7ecdbdc642b7475828c29db032586aa10b6",
+    "bytes": 285,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Shaders/TMP_SDF.shader",
+    "sha256": "10efe6d4728474a09970b857faf37913793e168dc13dbd4d7316b54b37615d97",
+    "original_sha256": "10efe6d4728474a09970b857faf37913793e168dc13dbd4d7316b54b37615d97",
+    "bytes": 11027,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Shaders/TMP_SDF.shader.meta",
+    "sha256": "0897fb06d170043fffa2d28783b347bbaee87a3f09f08374ca44b2c3848697d6",
+    "original_sha256": "0897fb06d170043fffa2d28783b347bbaee87a3f09f08374ca44b2c3848697d6",
+    "bytes": 204,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Shaders/TMP_Sprite.shader",
+    "sha256": "af669bb9ae136c8099f8e0a94a6933fd2f1e1fb0a6842129939a319fab4b8dbb",
+    "original_sha256": "af669bb9ae136c8099f8e0a94a6933fd2f1e1fb0a6842129939a319fab4b8dbb",
+    "bytes": 3446,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Shaders/TMP_Sprite.shader.meta",
+    "sha256": "9609584c5249687f3765f0018a93dfd6445c7e35d5aee4e87556f111c8852819",
+    "original_sha256": "9609584c5249687f3765f0018a93dfd6445c7e35d5aee4e87556f111c8852819",
+    "bytes": 204,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Shaders/TMPro.cginc",
+    "sha256": "14edb7d7b88caf2b82cae68200abe895e5b5b3474c3fffbf0e9b4b09a4e2467e",
+    "original_sha256": "14edb7d7b88caf2b82cae68200abe895e5b5b3474c3fffbf0e9b4b09a4e2467e",
+    "bytes": 2277,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Shaders/TMPro.cginc.meta",
+    "sha256": "a9cf9d5431b809e36b8ffff4377b5ebda7d386a36d48838cd134bc09f3caec6c",
+    "original_sha256": "a9cf9d5431b809e36b8ffff4377b5ebda7d386a36d48838cd134bc09f3caec6c",
+    "bytes": 215,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Shaders/TMPro_Mobile.cginc",
+    "sha256": "d9d43ddd9810476162f21b42477d9ce2cdc4e6cc7571d354c3253aafc6673ead",
+    "original_sha256": "d9d43ddd9810476162f21b42477d9ce2cdc4e6cc7571d354c3253aafc6673ead",
+    "bytes": 5453,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Shaders/TMPro_Mobile.cginc.meta",
+    "sha256": "2e16fa15ef884a60a402d8b696f8b09e5315cbb468ba223d256030c7fe2b0667",
+    "original_sha256": "2e16fa15ef884a60a402d8b696f8b09e5315cbb468ba223d256030c7fe2b0667",
+    "bytes": 204,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Shaders/TMPro_Properties.cginc",
+    "sha256": "66db1f03e8d7a413eba79bcb6602fdb2de710b586f34a6f2584ed6f68f028e90",
+    "original_sha256": "66db1f03e8d7a413eba79bcb6602fdb2de710b586f34a6f2584ed6f68f028e90",
+    "bytes": 2707,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Shaders/TMPro_Properties.cginc.meta",
+    "sha256": "edace33591894d86d9a4144466fb3606e538d3341030fe22f908551755120ea5",
+    "original_sha256": "edace33591894d86d9a4144466fb3606e538d3341030fe22f908551755120ea5",
+    "bytes": 204,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Shaders/TMPro_Surface.cginc",
+    "sha256": "244b442520282a66363d121c8d2aeeb30bb1e72cbbadbf41ce68d9100322ade5",
+    "original_sha256": "244b442520282a66363d121c8d2aeeb30bb1e72cbbadbf41ce68d9100322ade5",
+    "bytes": 3515,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Shaders/TMPro_Surface.cginc.meta",
+    "sha256": "247746f3a4e39dd24d1ad99e4fae03ae8976586307948b2846529a876dcb0a63",
+    "original_sha256": "247746f3a4e39dd24d1ad99e4fae03ae8976586307948b2846529a876dcb0a63",
+    "bytes": 204,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Shaders.meta",
+    "sha256": "c109eb7e331affedb377f7051df3d4881f8529b65f9593234585713e6e94ed30",
+    "original_sha256": "c109eb7e331affedb377f7051df3d4881f8529b65f9593234585713e6e94ed30",
+    "bytes": 172,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Sprites/EmojiOne Attribution.txt",
+    "sha256": "4b65f8960e4f4c5c8b35fd139e369265e9bb45667fc16461b2ba01188d464d93",
+    "original_sha256": "4b65f8960e4f4c5c8b35fd139e369265e9bb45667fc16461b2ba01188d464d93",
+    "bytes": 185,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Sprites/EmojiOne Attribution.txt.meta",
+    "sha256": "9fffc8ac513116b8ac394d86d81ca9ac4ec52ee92c63c114d355808384ea16fc",
+    "original_sha256": "9fffc8ac513116b8ac394d86d81ca9ac4ec52ee92c63c114d355808384ea16fc",
+    "bytes": 158,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Sprites/EmojiOne.json",
+    "sha256": "b85c4b3001b6ba82d175f4cd5dab83da467bbc2527d3d447b66919d2d20c4faf",
+    "original_sha256": "b85c4b3001b6ba82d175f4cd5dab83da467bbc2527d3d447b66919d2d20c4faf",
+    "bytes": 3966,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Sprites/EmojiOne.json.meta",
+    "sha256": "ac2c551b5bc7f7d636d54ded634dfc3493e249567283b2efc06d1299f9360061",
+    "original_sha256": "ac2c551b5bc7f7d636d54ded634dfc3493e249567283b2efc06d1299f9360061",
+    "bytes": 177,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Sprites/EmojiOne.png",
+    "sha256": "a87b965a701de3dc31d7401e542b1fc946587f912c51d7a26e46ade9f098bd1a",
+    "original_sha256": "a87b965a701de3dc31d7401e542b1fc946587f912c51d7a26e46ade9f098bd1a",
+    "bytes": 112319,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Sprites/EmojiOne.png.meta",
+    "sha256": "eb63c0321658b980b138ce5f675d44689b8c7144df43976931e132e7706d1e1a",
+    "original_sha256": "eb63c0321658b980b138ce5f675d44689b8c7144df43976931e132e7706d1e1a",
+    "bytes": 9784,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Sprites.meta",
+    "sha256": "41e002b97ba2235689fba502d1ee4419f50ea0095cd3632cdc50bc90ca8a94de",
+    "original_sha256": "41e002b97ba2235689fba502d1ee4419f50ea0095cd3632cdc50bc90ca8a94de",
+    "bytes": 172,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro.meta",
+    "sha256": "8529d84d190a68aeb1a16e0a90308081bd30a738dbcc63c63b2a93c53b9a11b3",
+    "original_sha256": "8529d84d190a68aeb1a16e0a90308081bd30a738dbcc63c63b2a93c53b9a11b3",
+    "bytes": 172,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TutorialInfo/Icons/URP.png",
+    "sha256": "1d17a9ff3537859abe2c008603d29d90cf43191ae77aa386167cc65e53ba03d9",
+    "original_sha256": "1d17a9ff3537859abe2c008603d29d90cf43191ae77aa386167cc65e53ba03d9",
+    "bytes": 24069,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TutorialInfo/Icons/URP.png.meta",
+    "sha256": "b330f1fcfc4e6ceccc95fc34a38434141603469b135633e1c4e8a03c19f9fdbc",
+    "original_sha256": "b330f1fcfc4e6ceccc95fc34a38434141603469b135633e1c4e8a03c19f9fdbc",
+    "bytes": 3156,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TutorialInfo/Icons.meta",
+    "sha256": "546e7d7af6b4d5e17d284c8f1188d05472e681911b8359905ee9b9e20769a106",
+    "original_sha256": "546e7d7af6b4d5e17d284c8f1188d05472e681911b8359905ee9b9e20769a106",
+    "bytes": 193,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TutorialInfo/Layout.wlt",
+    "sha256": "30d232879ca5c0c7377f245c9601feaf77053e5d70c222419ef25782e3272d2c",
+    "original_sha256": "30d232879ca5c0c7377f245c9601feaf77053e5d70c222419ef25782e3272d2c",
+    "bytes": 16133,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TutorialInfo/Layout.wlt.meta",
+    "sha256": "b8745a251df078ffa75dbaac0c4c6debecb61ab306b5b119a490ce6c635a11d8",
+    "original_sha256": "b8745a251df078ffa75dbaac0c4c6debecb61ab306b5b119a490ce6c635a11d8",
+    "bytes": 176,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TutorialInfo/Scripts/Editor/ReadmeEditor.cs",
+    "sha256": "b1b509be41113e31b8ee3c30ca0a00aaf006fdcae69aac749899eed2c4cc4a7d",
+    "original_sha256": "b1b509be41113e31b8ee3c30ca0a00aaf006fdcae69aac749899eed2c4cc4a7d",
+    "bytes": 6919,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TutorialInfo/Scripts/Editor/ReadmeEditor.cs.meta",
+    "sha256": "f59080b424c16fa13edd105bf006fdbad98c11fce0c921043e63c8877f144cd9",
+    "original_sha256": "f59080b424c16fa13edd105bf006fdbad98c11fce0c921043e63c8877f144cd9",
+    "bytes": 264,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TutorialInfo/Scripts/Editor.meta",
+    "sha256": "7036bdbc8af05799b5fd508484343b35c28a68b390198da4673d34357d7d667f",
+    "original_sha256": "7036bdbc8af05799b5fd508484343b35c28a68b390198da4673d34357d7d667f",
+    "bytes": 193,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TutorialInfo/Scripts/Readme.cs",
+    "sha256": "baa133f5baae44c1217e10c64061f8fb7d56878477339d746470502165d35019",
+    "original_sha256": "baa133f5baae44c1217e10c64061f8fb7d56878477339d746470502165d35019",
+    "bytes": 318,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TutorialInfo/Scripts/Readme.cs.meta",
+    "sha256": "80a3df9969fab6e656583ee9bbca884d0507e2b7de3417f6ea3118fba901cd60",
+    "original_sha256": "80a3df9969fab6e656583ee9bbca884d0507e2b7de3417f6ea3118fba901cd60",
+    "bytes": 317,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TutorialInfo/Scripts.meta",
+    "sha256": "930d0c8276cea1559a3e315f8500ea6ca8b58d980eee3b44aaa1d461742c47e0",
+    "original_sha256": "930d0c8276cea1559a3e315f8500ea6ca8b58d980eee3b44aaa1d461742c47e0",
+    "bytes": 193,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TutorialInfo.meta",
+    "sha256": "07f022e5932c833d026e020b27d73452ebd781993b616d76003494af1e140946",
+    "original_sha256": "07f022e5932c833d026e020b27d73452ebd781993b616d76003494af1e140946",
+    "bytes": 172,
+    "sanitized": false
+  },
+  {
+    "path": "Packages/manifest.json",
+    "sha256": "44ec309b696f6d2537fa397c455a2352cacacc883a10d70c8117613a12fa6912",
+    "original_sha256": "44ec309b696f6d2537fa397c455a2352cacacc883a10d70c8117613a12fa6912",
+    "bytes": 1975,
+    "sanitized": false
+  },
+  {
+    "path": "Packages/packages-lock.json",
+    "sha256": "f7310f236c7e92f9adc100cc7326b53fb18b8d78768a3eb685fe3ad89fe23f24",
+    "original_sha256": "f7310f236c7e92f9adc100cc7326b53fb18b8d78768a3eb685fe3ad89fe23f24",
+    "bytes": 13016,
+    "sanitized": false
+  },
+  {
+    "path": "ProjectSettings/AudioManager.asset",
+    "sha256": "aeedeb3243f07b61dbbe854aa08b5ef6f0b5274dd9852ad9f6129dde3e105a31",
+    "original_sha256": "aeedeb3243f07b61dbbe854aa08b5ef6f0b5274dd9852ad9f6129dde3e105a31",
+    "bytes": 413,
+    "sanitized": false
+  },
+  {
+    "path": "ProjectSettings/ClusterInputManager.asset",
+    "sha256": "40e65dd214bf254955d2c8829ca8ce2130fd3510485560ce012e9a1ddd93e623",
+    "original_sha256": "40e65dd214bf254955d2c8829ca8ce2130fd3510485560ce012e9a1ddd93e623",
+    "bytes": 114,
+    "sanitized": false
+  },
+  {
+    "path": "ProjectSettings/DynamicsManager.asset",
+    "sha256": "377f3c32a96ab183c2dadb59f1c420253e2a37611de09567d43e02d7f439e73e",
+    "original_sha256": "377f3c32a96ab183c2dadb59f1c420253e2a37611de09567d43e02d7f439e73e",
+    "bytes": 1286,
+    "sanitized": false
+  },
+  {
+    "path": "ProjectSettings/EditorBuildSettings.asset",
+    "sha256": "348ba1eca4b0698957f264f877f76227b78583acd3138fd5fc85be92f158e261",
+    "original_sha256": "348ba1eca4b0698957f264f877f76227b78583acd3138fd5fc85be92f158e261",
+    "bytes": 401,
+    "sanitized": false
+  },
+  {
+    "path": "ProjectSettings/EditorSettings.asset",
+    "sha256": "e604d57e55c4533bbcf097da9e8c564aa5393f186bc793d01d60e0c3194b4847",
+    "original_sha256": "e604d57e55c4533bbcf097da9e8c564aa5393f186bc793d01d60e0c3194b4847",
+    "bytes": 1518,
+    "sanitized": false
+  },
+  {
+    "path": "ProjectSettings/GraphicsSettings.asset",
+    "sha256": "9c1bb28a2aac0fee9d3cfd844f6f345fe573f18d35a5c9fd3048b9e9a066c4df",
+    "original_sha256": "9c1bb28a2aac0fee9d3cfd844f6f345fe573f18d35a5c9fd3048b9e9a066c4df",
+    "bytes": 2568,
+    "sanitized": false
+  },
+  {
+    "path": "ProjectSettings/InputManager.asset",
+    "sha256": "7a1bb836a1008d26d0860d143e9d9df7ca41731d30a72901b518063819c62df2",
+    "original_sha256": "7a1bb836a1008d26d0860d143e9d9df7ca41731d30a72901b518063819c62df2",
+    "bytes": 9731,
+    "sanitized": false
+  },
+  {
+    "path": "ProjectSettings/MemorySettings.asset",
+    "sha256": "1e8379a461b10ae09f3f696911088c16875d63e87ed5f2d95df9e1892703f9fd",
+    "original_sha256": "1e8379a461b10ae09f3f696911088c16875d63e87ed5f2d95df9e1892703f9fd",
+    "bytes": 1192,
+    "sanitized": false
+  },
+  {
+    "path": "ProjectSettings/MultiplayerManager.asset",
+    "sha256": "aba89fd1a1ddad182727ad82727e536d27372e90328a8196da2a4560398983dd",
+    "original_sha256": "aba89fd1a1ddad182727ad82727e536d27372e90328a8196da2a4560398983dd",
+    "bytes": 157,
+    "sanitized": false
+  },
+  {
+    "path": "ProjectSettings/NavMeshAreas.asset",
+    "sha256": "80106cfa7e6181a1928b142c075f3e510d527441e3d79bc83590e4ac91e7cd66",
+    "original_sha256": "80106cfa7e6181a1928b142c075f3e510d527441e3d79bc83590e4ac91e7cd66",
+    "bytes": 1308,
+    "sanitized": false
+  },
+  {
+    "path": "ProjectSettings/PackageManagerSettings.asset",
+    "sha256": "a7dabba589abe7fc2b45bd3d3fba3fe9be97043492703f716da2d9131c13a807",
+    "original_sha256": "a7dabba589abe7fc2b45bd3d3fba3fe9be97043492703f716da2d9131c13a807",
+    "bytes": 1003,
+    "sanitized": false
+  },
+  {
+    "path": "ProjectSettings/Physics2DSettings.asset",
+    "sha256": "e3cbdbf0be15244b7b67d2f07bdb8e8981911c11a8c7fe8035f5261272fec658",
+    "original_sha256": "e3cbdbf0be15244b7b67d2f07bdb8e8981911c11a8c7fe8035f5261272fec658",
+    "bytes": 2028,
+    "sanitized": false
+  },
+  {
+    "path": "ProjectSettings/PresetManager.asset",
+    "sha256": "29c125923fe6e29f90190d4fce1c82d660e7051546e2c9d02908d18c9cf2436c",
+    "original_sha256": "29c125923fe6e29f90190d4fce1c82d660e7051546e2c9d02908d18c9cf2436c",
+    "bytes": 146,
+    "sanitized": false
+  },
+  {
+    "path": "ProjectSettings/ProjectSettings.asset",
+    "sha256": "a900541a06fbcdc7bc9244fa0df65cd552a2cdba2ab6daf837e0df884b00f808",
+    "original_sha256": "ce0e97b253c1791366a7974ac782b2ec7bd84691b10af07574e245fe705c3ce9",
+    "bytes": 24951,
+    "sanitized": true
   },
   {
     "path": "ProjectSettings/ProjectVersion.txt",
     "sha256": "9cff2bddd3015855b632b952724165f400d6902a4e0665254666179ee2b33d99",
-    "bytes": 85
+    "original_sha256": "9cff2bddd3015855b632b952724165f400d6902a4e0665254666179ee2b33d99",
+    "bytes": 85,
+    "sanitized": false
+  },
+  {
+    "path": "ProjectSettings/QualitySettings.asset",
+    "sha256": "6814d6cc3eb850dd7d2a069a8b17ba9f7591deba8b1758a855978bd9c8627643",
+    "original_sha256": "6814d6cc3eb850dd7d2a069a8b17ba9f7591deba8b1758a855978bd9c8627643",
+    "bytes": 3662,
+    "sanitized": false
+  },
+  {
+    "path": "ProjectSettings/SceneTemplateSettings.json",
+    "sha256": "bb9098b3bfcde78d93e264b96f7b77b5430e64e8c57a7aad7f5a5d9c3945e16a",
+    "original_sha256": "bb9098b3bfcde78d93e264b96f7b77b5430e64e8c57a7aad7f5a5d9c3945e16a",
+    "bytes": 3535,
+    "sanitized": false
+  },
+  {
+    "path": "ProjectSettings/ShaderGraphSettings.asset",
+    "sha256": "773803237466ffe9bbfed9ecef9bbe25f63196dd47ab6b3003f0cd1649fd2bd0",
+    "original_sha256": "773803237466ffe9bbfed9ecef9bbe25f63196dd47ab6b3003f0cd1649fd2bd0",
+    "bytes": 524,
+    "sanitized": false
+  },
+  {
+    "path": "ProjectSettings/TagManager.asset",
+    "sha256": "afe0722ad96169ece36f509eb484b472db83a63492be4f5a7cafc2beab09ca56",
+    "original_sha256": "afe0722ad96169ece36f509eb484b472db83a63492be4f5a7cafc2beab09ca56",
+    "bytes": 549,
+    "sanitized": false
+  },
+  {
+    "path": "ProjectSettings/TimeManager.asset",
+    "sha256": "1a83e54adbbda7c9f4851103a0c6ab7f6448a3343d4ea5b7620452fa08416ecd",
+    "original_sha256": "1a83e54adbbda7c9f4851103a0c6ab7f6448a3343d4ea5b7620452fa08416ecd",
+    "bytes": 202,
+    "sanitized": false
+  },
+  {
+    "path": "ProjectSettings/UnityConnectSettings.asset",
+    "sha256": "d6034acbef6c9e3179866486c31eab81fcbe5e7ed350ce71e0fa2b1449b77109",
+    "original_sha256": "d6034acbef6c9e3179866486c31eab81fcbe5e7ed350ce71e0fa2b1449b77109",
+    "bytes": 943,
+    "sanitized": false
+  },
+  {
+    "path": "ProjectSettings/URPProjectSettings.asset",
+    "sha256": "a3a626cb529ccfc0a82e388b8cd32bc60888f7226c33412fad3bc50aba802cd7",
+    "original_sha256": "a3a626cb529ccfc0a82e388b8cd32bc60888f7226c33412fad3bc50aba802cd7",
+    "bytes": 410,
+    "sanitized": false
+  },
+  {
+    "path": "ProjectSettings/VersionControlSettings.asset",
+    "sha256": "e7bda45bf7a394745fee1316e6c71fa676004d591ad1f3aa247fd3e4ceb86071",
+    "original_sha256": "e7bda45bf7a394745fee1316e6c71fa676004d591ad1f3aa247fd3e4ceb86071",
+    "bytes": 188,
+    "sanitized": false
+  },
+  {
+    "path": "ProjectSettings/VFXManager.asset",
+    "sha256": "f066c6483919961332415ee64204f74fe52f38c02e82892eb02b7a5b2e381f0e",
+    "original_sha256": "f066c6483919961332415ee64204f74fe52f38c02e82892eb02b7a5b2e381f0e",
+    "bytes": 308,
+    "sanitized": false
+  },
+  {
+    "path": "ProjectSettings/XRSettings.asset",
+    "sha256": "edd2beb4a2e388312b4b7da241aa51070434005d82c59363f1237dd2e567585f",
+    "original_sha256": "edd2beb4a2e388312b4b7da241aa51070434005d82c59363f1237dd2e567585f",
+    "bytes": 158,
+    "sanitized": false
   }
 ]

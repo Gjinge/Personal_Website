@@ -1,207 +1,2732 @@
 [
   {
+    "path": "Assets/0003.png",
+    "sha256": "f6437045419f42a3f42e3b11e9907f4c195d28d8accff635724d41b31fd70327",
+    "original_sha256": "f6437045419f42a3f42e3b11e9907f4c195d28d8accff635724d41b31fd70327",
+    "bytes": 14606,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/0003.png.meta",
+    "sha256": "7649cf361c8c2ed21c0a0fc9a3fcc08b0d13a36ab5dec338bde48798b068cb9b",
+    "original_sha256": "7649cf361c8c2ed21c0a0fc9a3fcc08b0d13a36ab5dec338bde48798b068cb9b",
+    "bytes": 3039,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/AppleAuthSample/LandscapeSampleScene.unity",
+    "sha256": "1922b96610c2bb26a7a0d0cdfd47330a5d4d86e86e0f876bf1535f58f1a1360b",
+    "original_sha256": "1922b96610c2bb26a7a0d0cdfd47330a5d4d86e86e0f876bf1535f58f1a1360b",
+    "bytes": 51709,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/AppleAuthSample/LandscapeSampleScene.unity.meta",
+    "sha256": "c2baa6d78f95ea914a492200a0ea8b829bb704ed53b6fc2e79961173b6547d78",
+    "original_sha256": "c2baa6d78f95ea914a492200a0ea8b829bb704ed53b6fc2e79961173b6547d78",
+    "bytes": 155,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/AppleAuthSample/LandscapeSampleSceneSettings.lighting",
+    "sha256": "3cecc18d7804ec16a9e31f85bbcbc57d32953bb8bed84160249e59c3157bff71",
+    "original_sha256": "3cecc18d7804ec16a9e31f85bbcbc57d32953bb8bed84160249e59c3157bff71",
+    "bytes": 1809,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/AppleAuthSample/LandscapeSampleSceneSettings.lighting.meta",
+    "sha256": "945e6ee734fb79557b11e0a72ceb6884e6102fa8e1711172d1504c18c52b96c6",
+    "original_sha256": "945e6ee734fb79557b11e0a72ceb6884e6102fa8e1711172d1504c18c52b96c6",
+    "bytes": 200,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/AppleAuthSample.meta",
+    "sha256": "fd9be587856412e43b7a67c120c736dbeb611ab7de6a67d404b85f82b8291a1e",
+    "original_sha256": "fd9be587856412e43b7a67c120c736dbeb611ab7de6a67d404b85f82b8291a1e",
+    "bytes": 172,
+    "sanitized": false
+  },
+  {
     "path": "Assets/GameObjects/Apple.prefab",
     "sha256": "42be2ff4378bd6f114e541444296660144261b8c1f07c61fc94e0f16159e44a9",
-    "bytes": 4299
+    "original_sha256": "42be2ff4378bd6f114e541444296660144261b8c1f07c61fc94e0f16159e44a9",
+    "bytes": 4299,
+    "sanitized": false
   },
   {
     "path": "Assets/GameObjects/Apple.prefab.meta",
     "sha256": "a2a366ab45437c85ebe405361b75f134b5dab3f7114b7969dc512b4c95a2b7c4",
-    "bytes": 154
+    "original_sha256": "a2a366ab45437c85ebe405361b75f134b5dab3f7114b7969dc512b4c95a2b7c4",
+    "bytes": 154,
+    "sanitized": false
   },
   {
     "path": "Assets/GameObjects/AppleTree.prefab",
     "sha256": "abbd77af744c6537f9d8cac8f2431d05b9ef1bdb5e419f8e76c578f864fe0470",
-    "bytes": 8434
+    "original_sha256": "abbd77af744c6537f9d8cac8f2431d05b9ef1bdb5e419f8e76c578f864fe0470",
+    "bytes": 8434,
+    "sanitized": false
   },
   {
     "path": "Assets/GameObjects/AppleTree.prefab.meta",
     "sha256": "5c0ccff87076eb3a4bdd83ceb1b6c902f342ac62e146e7a1ba01f53cd50a66f5",
-    "bytes": 154
+    "original_sha256": "5c0ccff87076eb3a4bdd83ceb1b6c902f342ac62e146e7a1ba01f53cd50a66f5",
+    "bytes": 154,
+    "sanitized": false
   },
   {
     "path": "Assets/GameObjects/Basket.prefab",
     "sha256": "54db2cd16ebd2fc04d4a61b6561644550b031cd95f27aa4311e95dfa55c7ba60",
-    "bytes": 4334
+    "original_sha256": "54db2cd16ebd2fc04d4a61b6561644550b031cd95f27aa4311e95dfa55c7ba60",
+    "bytes": 4334,
+    "sanitized": false
   },
   {
     "path": "Assets/GameObjects/Basket.prefab.meta",
     "sha256": "02bde5ab08789b0e2f5d3a98dbac103beb8e39e1a1115d31eeb320c296ab9664",
-    "bytes": 154
+    "original_sha256": "02bde5ab08789b0e2f5d3a98dbac103beb8e39e1a1115d31eeb320c296ab9664",
+    "bytes": 154,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/GameObjects.meta",
+    "sha256": "0fdd9686d8c27e7ea21a7a4c8ff8d8f000aa40dea2bd8e7185cd84f08817b5d3",
+    "original_sha256": "0fdd9686d8c27e7ea21a7a4c8ff8d8f000aa40dea2bd8e7185cd84f08817b5d3",
+    "bytes": 172,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/GameOver.jpg",
+    "sha256": "01abd2281f00fe5d436a6602690fa60811c35a0b72ba2ce33f826fe0dadcb59e",
+    "original_sha256": "01abd2281f00fe5d436a6602690fa60811c35a0b72ba2ce33f826fe0dadcb59e",
+    "bytes": 22319,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/GameOver.jpg.meta",
+    "sha256": "f374922623caade0c9b7216ecbbd33dc148c0a74a144e9f5ea59a224b999c4e6",
+    "original_sha256": "f374922623caade0c9b7216ecbbd33dc148c0a74a144e9f5ea59a224b999c4e6",
+    "bytes": 3039,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/InputSystem_Actions.inputactions",
+    "sha256": "1c6cbb519d65ecfe19a29231735b7f54741a20ac1a8ad4f46a18e1bfb28a3c39",
+    "original_sha256": "1c6cbb519d65ecfe19a29231735b7f54741a20ac1a8ad4f46a18e1bfb28a3c39",
+    "bytes": 41005,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/InputSystem_Actions.inputactions.meta",
+    "sha256": "3b4e424a80f5b4fa76b6abd774884a24285eaa61f22ff9bb20e5ad505fd8b569",
+    "original_sha256": "3b4e424a80f5b4fa76b6abd774884a24285eaa61f22ff9bb20e5ad505fd8b569",
+    "bytes": 376,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/arrow/Arrow 1.controller",
+    "sha256": "b0b6ba9cc90ccd03e3e4cf8b5977985fe1a06a243c3e0ec8ded79aa0e9c408d0",
+    "original_sha256": "b0b6ba9cc90ccd03e3e4cf8b5977985fe1a06a243c3e0ec8ded79aa0e9c408d0",
+    "bytes": 8759,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/arrow/Arrow 1.controller.meta",
+    "sha256": "1504151c1321d02b0f08da0ac2c5ff3c66be77f2bae6b22bd4752f48362f1977",
+    "original_sha256": "1504151c1321d02b0f08da0ac2c5ff3c66be77f2bae6b22bd4752f48362f1977",
+    "bytes": 409,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/arrow/Arrow Deactivate.anim",
+    "sha256": "2ef1ca45e337caa3ebd11d03f6886b22180aeca22a7b4a0e3483e8937c676e4d",
+    "original_sha256": "2ef1ca45e337caa3ebd11d03f6886b22180aeca22a7b4a0e3483e8937c676e4d",
+    "bytes": 8147,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/arrow/Arrow Deactivate.anim.meta",
+    "sha256": "4c7f046fd006a458ddc09e6e3d7885d103e5ca97d31d6ddaffc87916d2d57a6a",
+    "original_sha256": "4c7f046fd006a458ddc09e6e3d7885d103e5ca97d31d6ddaffc87916d2d57a6a",
+    "bytes": 412,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/arrow/Arrow Move.anim",
+    "sha256": "00c69b02a05e8975056a4b8f13cc184326e2bbcae8cbbb202416513027d5fe03",
+    "original_sha256": "00c69b02a05e8975056a4b8f13cc184326e2bbcae8cbbb202416513027d5fe03",
+    "bytes": 9491,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/arrow/Arrow Move.anim.meta",
+    "sha256": "d9227c4072e1c54c2fb7ea6ceed6d43bb7c6cf6cf69c32d954fe673ea97b9fd8",
+    "original_sha256": "d9227c4072e1c54c2fb7ea6ceed6d43bb7c6cf6cf69c32d954fe673ea97b9fd8",
+    "bytes": 406,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/arrow/Arrow Static.anim",
+    "sha256": "533866d9870a9c58fefd0e9252fc5e6616853a4d706d8ba5ebc18e95747125c8",
+    "original_sha256": "533866d9870a9c58fefd0e9252fc5e6616853a4d706d8ba5ebc18e95747125c8",
+    "bytes": 1300,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/arrow/Arrow Static.anim.meta",
+    "sha256": "94494b8ddda39091797c1f29a9ce3d1d0c09c0b80ff94db9ad6a3a8b1d5e9b68",
+    "original_sha256": "94494b8ddda39091797c1f29a9ce3d1d0c09c0b80ff94db9ad6a3a8b1d5e9b68",
+    "bytes": 408,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/arrow/Flecha1.png",
+    "sha256": "4140235f40623549d90cee6fb29a6ce67d4be28e764d398a2f1597eae7ac2a78",
+    "original_sha256": "4140235f40623549d90cee6fb29a6ce67d4be28e764d398a2f1597eae7ac2a78",
+    "bytes": 3701,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/arrow/Flecha1.png.meta",
+    "sha256": "7b6ea30c7b1829c4176ecdf0b3d3c83f4c024d040b885bf46b268c701cfef90a",
+    "original_sha256": "7b6ea30c7b1829c4176ecdf0b3d3c83f4c024d040b885bf46b268c701cfef90a",
+    "bytes": 3262,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/arrow/Flecha2.png",
+    "sha256": "136ceef45c48b26b2662cf9603473353156b20b8b2f3b34ba282546d91a6c47c",
+    "original_sha256": "136ceef45c48b26b2662cf9603473353156b20b8b2f3b34ba282546d91a6c47c",
+    "bytes": 638,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/arrow/Flecha2.png.meta",
+    "sha256": "a90363bddfb27c6dcce01a3f1743e2d58451ab54029e9fd961d2a1a38c0ca5e0",
+    "original_sha256": "a90363bddfb27c6dcce01a3f1743e2d58451ab54029e9fd961d2a1a38c0ca5e0",
+    "bytes": 3262,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/arrow/Flecha3.png",
+    "sha256": "27a17838384d0c8e64b16d8d061053e4664d87fc94b53d164b803ca2bfb17cdf",
+    "original_sha256": "27a17838384d0c8e64b16d8d061053e4664d87fc94b53d164b803ca2bfb17cdf",
+    "bytes": 738,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/arrow/Flecha3.png.meta",
+    "sha256": "99f74f68abc9bee9c2881396ca6b625752db19206b42b2037aa597ff035880cb",
+    "original_sha256": "99f74f68abc9bee9c2881396ca6b625752db19206b42b2037aa597ff035880cb",
+    "bytes": 3262,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/arrow/Flecha4.png",
+    "sha256": "8373c22aa1ee0ff008bfe254349b99c02a4ffdf42d7a6f1aeae516e70e4fa557",
+    "original_sha256": "8373c22aa1ee0ff008bfe254349b99c02a4ffdf42d7a6f1aeae516e70e4fa557",
+    "bytes": 1550,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/arrow/Flecha4.png.meta",
+    "sha256": "39c558c00f6f6cad008548d30c428ca5e6523d77436e0ed80920feaf666c17e8",
+    "original_sha256": "39c558c00f6f6cad008548d30c428ca5e6523d77436e0ed80920feaf666c17e8",
+    "bytes": 3262,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/arrow/Inactive.anim",
+    "sha256": "d31058b37aad63deb43d2cacf5233985d9bdd906532b0bae1fa51fcb75942bc9",
+    "original_sha256": "d31058b37aad63deb43d2cacf5233985d9bdd906532b0bae1fa51fcb75942bc9",
+    "bytes": 6386,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/arrow/Inactive.anim.meta",
+    "sha256": "cf26c5d4357438e6681e379e1102669a5b53b134cb6ffbaf55fc1fbb4bdadd94",
+    "original_sha256": "cf26c5d4357438e6681e379e1102669a5b53b134cb6ffbaf55fc1fbb4bdadd94",
+    "bytes": 404,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/arrow.meta",
+    "sha256": "d5ad0a47f25ded9dc29a31df116323e1ee3f700c62a25d677bc3bfbed520b805",
+    "original_sha256": "d5ad0a47f25ded9dc29a31df116323e1ee3f700c62a25d677bc3bfbed520b805",
+    "bytes": 193,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds/bck 1/Background 1.prefab",
+    "sha256": "a1d89745d8acc8630978c5d4dd4d86d4ba8c43b7d22eb47156398b95253d3712",
+    "original_sha256": "a1d89745d8acc8630978c5d4dd4d86d4ba8c43b7d22eb47156398b95253d3712",
+    "bytes": 5217,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds/bck 1/Background 1.prefab.meta",
+    "sha256": "81c1f3ccd872316373c0957a0905c4459daf90ad5dc51ae857c4cb5ca3d5aa39",
+    "original_sha256": "81c1f3ccd872316373c0957a0905c4459daf90ad5dc51ae857c4cb5ca3d5aa39",
+    "bytes": 438,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds/bck 1/background0.png",
+    "sha256": "daf463213ae58beb688c6c33ebbe548c9492c08614cbce4303b7c8542fa55310",
+    "original_sha256": "daf463213ae58beb688c6c33ebbe548c9492c08614cbce4303b7c8542fa55310",
+    "bytes": 1116457,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds/bck 1/background0.png.meta",
+    "sha256": "4413c7545b19f7027fe61f8edd7c0b29fcc7c1efc4800d22a0022075abe9cb4c",
+    "original_sha256": "4413c7545b19f7027fe61f8edd7c0b29fcc7c1efc4800d22a0022075abe9cb4c",
+    "bytes": 3294,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds/bck 1.meta",
+    "sha256": "374681d7d99f1dc4df7360665a73774c2bbef218dca8ebbcd3ef000e759bfa32",
+    "original_sha256": "374681d7d99f1dc4df7360665a73774c2bbef218dca8ebbcd3ef000e759bfa32",
+    "bytes": 193,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds/bck 2/Background 2.prefab",
+    "sha256": "6d3d77a95a0241c55a1630dbe93e48ff36048b3bee2ff74ed69083d09692fbf6",
+    "original_sha256": "6d3d77a95a0241c55a1630dbe93e48ff36048b3bee2ff74ed69083d09692fbf6",
+    "bytes": 5217,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds/bck 2/Background 2.prefab.meta",
+    "sha256": "cd2b500bd905d91f218dbf3d5a2907dd7dead18cd4e81f3b77003306306cf7b3",
+    "original_sha256": "cd2b500bd905d91f218dbf3d5a2907dd7dead18cd4e81f3b77003306306cf7b3",
+    "bytes": 438,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds/bck 2/background1-720.png",
+    "sha256": "49bf61cfb815703c0303935aef58ad6883482039172eea31975fea1051bae7af",
+    "original_sha256": "49bf61cfb815703c0303935aef58ad6883482039172eea31975fea1051bae7af",
+    "bytes": 441388,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds/bck 2/background1-720.png.meta",
+    "sha256": "3d0273d4198b663aa2f58be06473f9742afc162c862a69beac8b8982804caec5",
+    "original_sha256": "3d0273d4198b663aa2f58be06473f9742afc162c862a69beac8b8982804caec5",
+    "bytes": 3298,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds/bck 2.meta",
+    "sha256": "a7bc6f91af56e7237c932d1106154fa5d1c46e983cfe163e8c07cf42b552e075",
+    "original_sha256": "a7bc6f91af56e7237c932d1106154fa5d1c46e983cfe163e8c07cf42b552e075",
+    "bytes": 193,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds/bck 3/Background 3.prefab",
+    "sha256": "6584be149d704ae1813b47f7362fda7caba02e27b1c57fd45f940bd3fce0933f",
+    "original_sha256": "6584be149d704ae1813b47f7362fda7caba02e27b1c57fd45f940bd3fce0933f",
+    "bytes": 5221,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds/bck 3/Background 3.prefab.meta",
+    "sha256": "06a116b2909df161670d3d984a7c8d74316be0a9939651f0e1c6ccc07eccaaf1",
+    "original_sha256": "06a116b2909df161670d3d984a7c8d74316be0a9939651f0e1c6ccc07eccaaf1",
+    "bytes": 438,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds/bck 3/background3-720.png",
+    "sha256": "9c22d60dd783e2887e853200eef44c4b1ed59abcb392377e6ddecdf30e97a766",
+    "original_sha256": "9c22d60dd783e2887e853200eef44c4b1ed59abcb392377e6ddecdf30e97a766",
+    "bytes": 745970,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds/bck 3/background3-720.png.meta",
+    "sha256": "88e04ce7284efa721018bd85f76a531849cb8b6751059cb55117d93592f62955",
+    "original_sha256": "88e04ce7284efa721018bd85f76a531849cb8b6751059cb55117d93592f62955",
+    "bytes": 3298,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds/bck 3.meta",
+    "sha256": "6f257530e2abce1b2f7b983d4d45aaeca455ea9708b48c2d3c54c5c071a9a6a3",
+    "original_sha256": "6f257530e2abce1b2f7b983d4d45aaeca455ea9708b48c2d3c54c5c071a9a6a3",
+    "bytes": 193,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds/bck 4/Background 4.prefab",
+    "sha256": "8f87bf4f7e2652a225e41dda27be4b69597e84cbb56357294d280b4dbc803bde",
+    "original_sha256": "8f87bf4f7e2652a225e41dda27be4b69597e84cbb56357294d280b4dbc803bde",
+    "bytes": 5221,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds/bck 4/Background 4.prefab.meta",
+    "sha256": "965edb19da4e0d9385ec7f995eefbdbb4b0ab6e9d4c2bbec316a6b43842b659c",
+    "original_sha256": "965edb19da4e0d9385ec7f995eefbdbb4b0ab6e9d4c2bbec316a6b43842b659c",
+    "bytes": 438,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds/bck 4/rock.png",
+    "sha256": "877c8e1d51c0ed87df1a52e296b520a8e2f3c943c5f7e4ef0611d967ec510d33",
+    "original_sha256": "877c8e1d51c0ed87df1a52e296b520a8e2f3c943c5f7e4ef0611d967ec510d33",
+    "bytes": 1569166,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds/bck 4/rock.png.meta",
+    "sha256": "9a7e417bfc877739d7cd270b36f1c5d27d99289d421ccd8a41347ae4b0e03bdf",
+    "original_sha256": "9a7e417bfc877739d7cd270b36f1c5d27d99289d421ccd8a41347ae4b0e03bdf",
+    "bytes": 3287,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds/bck 4.meta",
+    "sha256": "2fb35a2199074e0db06c86bed47773e1a0a8042e6950ea589453ec60f263dafa",
+    "original_sha256": "2fb35a2199074e0db06c86bed47773e1a0a8042e6950ea589453ec60f263dafa",
+    "bytes": 193,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds Parallax/Background Anim.controller",
+    "sha256": "6ca7f08957194d5aa0ed602d4f287e6ee75ed81695e1c7d1ed13bcc53ba9ccdc",
+    "original_sha256": "6ca7f08957194d5aa0ed602d4f287e6ee75ed81695e1c7d1ed13bcc53ba9ccdc",
+    "bytes": 1200,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds Parallax/Background Anim.controller.meta",
+    "sha256": "ab50831393f4a9e737973618df3a91dc6fd9a51bc3c7418f20e7b2dce4a28c46",
+    "original_sha256": "ab50831393f4a9e737973618df3a91dc6fd9a51bc3c7418f20e7b2dce4a28c46",
+    "bytes": 448,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds Parallax/Bck 1/Move.anim",
+    "sha256": "c219122f0bfd8c8530e5bc19dd0745f0c91eb11ea92e30cc9e62f2bd32235317",
+    "original_sha256": "c219122f0bfd8c8530e5bc19dd0745f0c91eb11ea92e30cc9e62f2bd32235317",
+    "bytes": 1292,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds Parallax/Bck 1/Move.anim.meta",
+    "sha256": "052623065eea68dd0bdf27d0765d4f9641f038203e18daa0200e93fe79fafc97",
+    "original_sha256": "052623065eea68dd0bdf27d0765d4f9641f038203e18daa0200e93fe79fafc97",
+    "bytes": 437,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds Parallax/Bck 1/Parallax Scene 1.prefab",
+    "sha256": "2ad64b4052a870069c6558b6e472b702fc00e7da354ff47228a6d0afdb8c06ba",
+    "original_sha256": "2ad64b4052a870069c6558b6e472b702fc00e7da354ff47228a6d0afdb8c06ba",
+    "bytes": 18783,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds Parallax/Bck 1/Parallax Scene 1.prefab.meta",
+    "sha256": "19d7b8a077b6623fb450a6d841b14fca2ada72d923059134c8e9e5b5aad8ddd4",
+    "original_sha256": "19d7b8a077b6623fb450a6d841b14fca2ada72d923059134c8e9e5b5aad8ddd4",
+    "bytes": 451,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds Parallax/Bck 1/skill-desc_0000_foreground.png",
+    "sha256": "c1d2a4e0885aa816b4b29d6ef04f061563536213bea47f41add79b5311f64c92",
+    "original_sha256": "c1d2a4e0885aa816b4b29d6ef04f061563536213bea47f41add79b5311f64c92",
+    "bytes": 6340,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds Parallax/Bck 1/skill-desc_0000_foreground.png.meta",
+    "sha256": "af63a037a2e84c23da46c48ca9844edd0b6b06c122af4db186509b6b90ff047e",
+    "original_sha256": "af63a037a2e84c23da46c48ca9844edd0b6b06c122af4db186509b6b90ff047e",
+    "bytes": 3318,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds Parallax/Bck 1/skill-desc_0001_buildings.png",
+    "sha256": "335e5b31d2c74348c80c45623f6298fff7382d0259bda9f89e286de9199f600e",
+    "original_sha256": "335e5b31d2c74348c80c45623f6298fff7382d0259bda9f89e286de9199f600e",
+    "bytes": 1718,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds Parallax/Bck 1/skill-desc_0001_buildings.png.meta",
+    "sha256": "acbf3ee61f69cdf2e55b4813bbcbb86dfe54bc7212baf06ae043f47d06ce003a",
+    "original_sha256": "acbf3ee61f69cdf2e55b4813bbcbb86dfe54bc7212baf06ae043f47d06ce003a",
+    "bytes": 3317,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds Parallax/Bck 1/skill-desc_0002_far-buildings.png",
+    "sha256": "cd1ecb998416d598a461081a96572a41e3b25425ec8341d40fc226a3f06861c3",
+    "original_sha256": "cd1ecb998416d598a461081a96572a41e3b25425ec8341d40fc226a3f06861c3",
+    "bytes": 1027,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds Parallax/Bck 1/skill-desc_0002_far-buildings.png.meta",
+    "sha256": "2c569036703cda326cee7ced0206e36783387dd4f4b31682d69ca01a50b8cac3",
+    "original_sha256": "2c569036703cda326cee7ced0206e36783387dd4f4b31682d69ca01a50b8cac3",
+    "bytes": 3321,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds Parallax/Bck 1/skill-desc_0003_bg.png",
+    "sha256": "c9db5cd26963fe4688a3b69caedb04ef353cbfff31a00d19ea9632411c4ac903",
+    "original_sha256": "c9db5cd26963fe4688a3b69caedb04ef353cbfff31a00d19ea9632411c4ac903",
+    "bytes": 1353,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds Parallax/Bck 1/skill-desc_0003_bg.png.meta",
+    "sha256": "d01898c56e30174832c189847f4804149e67cf3b1a566039656bd9969f7732cc",
+    "original_sha256": "d01898c56e30174832c189847f4804149e67cf3b1a566039656bd9969f7732cc",
+    "bytes": 3310,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds Parallax/Bck 1.meta",
+    "sha256": "7165f693ef571837f5454b6b6df3d67195598bd607472e31e3921b2179e114d1",
+    "original_sha256": "7165f693ef571837f5454b6b6df3d67195598bd607472e31e3921b2179e114d1",
+    "bytes": 193,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds Parallax/Bck 2/PARALLAX/layer_01_1920 x 1080.png",
+    "sha256": "333c5c8e1e46d279f8ecaf3cda7659837d428575d557c0e79db7641a42ed9cab",
+    "original_sha256": "333c5c8e1e46d279f8ecaf3cda7659837d428575d557c0e79db7641a42ed9cab",
+    "bytes": 55662,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds Parallax/Bck 2/PARALLAX/layer_01_1920 x 1080.png.meta",
+    "sha256": "6f123ac0b4abfd4623119370e904cf7fd0760638c88f04898a11e98033d6e122",
+    "original_sha256": "6f123ac0b4abfd4623119370e904cf7fd0760638c88f04898a11e98033d6e122",
+    "bytes": 3321,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds Parallax/Bck 2/PARALLAX/layer_02_1920 x 1080.png",
+    "sha256": "c094d17f87d2c9acc35584b6db459ebc960a601e3d76986eb6c03238f535ea1c",
+    "original_sha256": "c094d17f87d2c9acc35584b6db459ebc960a601e3d76986eb6c03238f535ea1c",
+    "bytes": 89454,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds Parallax/Bck 2/PARALLAX/layer_02_1920 x 1080.png.meta",
+    "sha256": "d46e66bc6c71c772711902517fb0f65a85552af4f5dad24160089754d932e666",
+    "original_sha256": "d46e66bc6c71c772711902517fb0f65a85552af4f5dad24160089754d932e666",
+    "bytes": 3321,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds Parallax/Bck 2/PARALLAX/layer_03_1920 x 1080.png",
+    "sha256": "655d859070eee806e6373fbb0ea242a2ebc5d168d574f635faf1ef54ec064ccb",
+    "original_sha256": "655d859070eee806e6373fbb0ea242a2ebc5d168d574f635faf1ef54ec064ccb",
+    "bytes": 194799,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds Parallax/Bck 2/PARALLAX/layer_03_1920 x 1080.png.meta",
+    "sha256": "b985d5131649c7ae01afd57421c087f3c448564aa2c0f309260c1a269c9e02c5",
+    "original_sha256": "b985d5131649c7ae01afd57421c087f3c448564aa2c0f309260c1a269c9e02c5",
+    "bytes": 3321,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds Parallax/Bck 2/PARALLAX/layer_04_1920 x 1080.png",
+    "sha256": "660f85fb59986b8ea8f47dc112c79dac7ac0b319e44bdc0cfd8254f0f923f86f",
+    "original_sha256": "660f85fb59986b8ea8f47dc112c79dac7ac0b319e44bdc0cfd8254f0f923f86f",
+    "bytes": 172657,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds Parallax/Bck 2/PARALLAX/layer_04_1920 x 1080.png.meta",
+    "sha256": "657c2ab468b9c201ba654563b2d8b07fe7e299205bb9e325f1220d0013003fef",
+    "original_sha256": "657c2ab468b9c201ba654563b2d8b07fe7e299205bb9e325f1220d0013003fef",
+    "bytes": 3321,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds Parallax/Bck 2/PARALLAX/layer_05_1920 x 1080.png",
+    "sha256": "ef9335c0109b997b91216bc3377f1cd4f6c6676ca7e3cf123a8795030533196a",
+    "original_sha256": "ef9335c0109b997b91216bc3377f1cd4f6c6676ca7e3cf123a8795030533196a",
+    "bytes": 94984,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds Parallax/Bck 2/PARALLAX/layer_05_1920 x 1080.png.meta",
+    "sha256": "99c6ebe6df88c474bbb8228983ad1d69daf7d66998efb71a8a5bde23d4510cab",
+    "original_sha256": "99c6ebe6df88c474bbb8228983ad1d69daf7d66998efb71a8a5bde23d4510cab",
+    "bytes": 3321,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds Parallax/Bck 2/Parallax Scene 2.prefab",
+    "sha256": "23d4b1cc11c0b56b558e1beabd9aafde618fce82835cbe52f769c70315fcce56",
+    "original_sha256": "23d4b1cc11c0b56b558e1beabd9aafde618fce82835cbe52f769c70315fcce56",
+    "bytes": 22368,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds Parallax/Bck 2/Parallax Scene 2.prefab.meta",
+    "sha256": "7b17f3c7ca20935213e1c222cf545e6a9851eb132f8df5fbf073d7e9126a6daf",
+    "original_sha256": "7b17f3c7ca20935213e1c222cf545e6a9851eb132f8df5fbf073d7e9126a6daf",
+    "bytes": 451,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds Parallax/Bck 2/PARALLAX.meta",
+    "sha256": "270762b6f9c4c735726203c429380b4bef81449caf596b1e8d0e1fde923a206e",
+    "original_sha256": "270762b6f9c4c735726203c429380b4bef81449caf596b1e8d0e1fde923a206e",
+    "bytes": 193,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds Parallax/Bck 2.meta",
+    "sha256": "2f27049a9f596b2b00ab791cbce699b9be2ccf193193c11762db50671da81d76",
+    "original_sha256": "2f27049a9f596b2b00ab791cbce699b9be2ccf193193c11762db50671da81d76",
+    "bytes": 193,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds Parallax/Bck 3/1920x1080/layer_01_1920 x 1080.png",
+    "sha256": "dfb13586ae0199f4024663adf01ec1a2929aedb3d710737aaf65c92133114360",
+    "original_sha256": "dfb13586ae0199f4024663adf01ec1a2929aedb3d710737aaf65c92133114360",
+    "bytes": 284256,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds Parallax/Bck 3/1920x1080/layer_01_1920 x 1080.png.meta",
+    "sha256": "0619b2b9cb438c0d3d297b5dbfffbb376413d7c7485052bcf7f176b007d51316",
+    "original_sha256": "0619b2b9cb438c0d3d297b5dbfffbb376413d7c7485052bcf7f176b007d51316",
+    "bytes": 3322,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds Parallax/Bck 3/1920x1080/layer_02_1920 x 1080.png",
+    "sha256": "33b6b68eb8ac7084df39f1ccf9ac4c1acec336112c8bbd6b99461e4d4c5b5fc1",
+    "original_sha256": "33b6b68eb8ac7084df39f1ccf9ac4c1acec336112c8bbd6b99461e4d4c5b5fc1",
+    "bytes": 60486,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds Parallax/Bck 3/1920x1080/layer_02_1920 x 1080.png.meta",
+    "sha256": "0f1aaa45082e3dd6f31c8edf763645312e62331a4dbcfecaaa174d8f028391aa",
+    "original_sha256": "0f1aaa45082e3dd6f31c8edf763645312e62331a4dbcfecaaa174d8f028391aa",
+    "bytes": 3322,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds Parallax/Bck 3/1920x1080/layer_03_1920 x 1080.png",
+    "sha256": "cc8d6ab18841ff95331d8fed0e3852690f5107f5ecfd639ee6d2374f8aac31fa",
+    "original_sha256": "cc8d6ab18841ff95331d8fed0e3852690f5107f5ecfd639ee6d2374f8aac31fa",
+    "bytes": 141328,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds Parallax/Bck 3/1920x1080/layer_03_1920 x 1080.png.meta",
+    "sha256": "0d3a26df5c0a05437f991fd731b225d768661bc5535aeafd37ed90239a6c60b4",
+    "original_sha256": "0d3a26df5c0a05437f991fd731b225d768661bc5535aeafd37ed90239a6c60b4",
+    "bytes": 3322,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds Parallax/Bck 3/1920x1080/layer_04_1920 x 1080.png",
+    "sha256": "1bf7281313ed9affbf42e428a24fce3d232359c31423bf006a1305212148db43",
+    "original_sha256": "1bf7281313ed9affbf42e428a24fce3d232359c31423bf006a1305212148db43",
+    "bytes": 264437,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds Parallax/Bck 3/1920x1080/layer_04_1920 x 1080.png.meta",
+    "sha256": "437d9dfc064fda23b1be468ffd59c81e433f517f544edc12f60101998a1665f5",
+    "original_sha256": "437d9dfc064fda23b1be468ffd59c81e433f517f544edc12f60101998a1665f5",
+    "bytes": 3322,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds Parallax/Bck 3/1920x1080/layer_05_1920 x 1080.png",
+    "sha256": "3ebd830f06fbbfc95240d1859b1e6857e87a1037967248250a0894f7d448fa39",
+    "original_sha256": "3ebd830f06fbbfc95240d1859b1e6857e87a1037967248250a0894f7d448fa39",
+    "bytes": 257586,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds Parallax/Bck 3/1920x1080/layer_05_1920 x 1080.png.meta",
+    "sha256": "d66d172548e4b007440dd78599df9c08e36a74ee1450da3bcd973fb25505a8af",
+    "original_sha256": "d66d172548e4b007440dd78599df9c08e36a74ee1450da3bcd973fb25505a8af",
+    "bytes": 3322,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds Parallax/Bck 3/1920x1080/layer_06_1920 x 1080.png",
+    "sha256": "bf285678b83a57b353c017522e9d6a3a49e47e687344c96bfbe41a108987328b",
+    "original_sha256": "bf285678b83a57b353c017522e9d6a3a49e47e687344c96bfbe41a108987328b",
+    "bytes": 38731,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds Parallax/Bck 3/1920x1080/layer_06_1920 x 1080.png.meta",
+    "sha256": "06fad9261c3cf329767bf4b9f046d46495bdca401701b33c4a5e8b93e8ab71fb",
+    "original_sha256": "06fad9261c3cf329767bf4b9f046d46495bdca401701b33c4a5e8b93e8ab71fb",
+    "bytes": 3322,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds Parallax/Bck 3/1920x1080/layer_07_1920 x 1080.png",
+    "sha256": "341e5881f62baec7147370ab0e118f79f00652b132c7adf8f721db2f10bcd3cb",
+    "original_sha256": "341e5881f62baec7147370ab0e118f79f00652b132c7adf8f721db2f10bcd3cb",
+    "bytes": 124519,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds Parallax/Bck 3/1920x1080/layer_07_1920 x 1080.png.meta",
+    "sha256": "429f63c2b7673e055dba1c284185b40f3979714a92ab3c25bd98123bda2880af",
+    "original_sha256": "429f63c2b7673e055dba1c284185b40f3979714a92ab3c25bd98123bda2880af",
+    "bytes": 3322,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds Parallax/Bck 3/1920x1080.meta",
+    "sha256": "40b928dcbb8dc1440478b20bebcf46ede8f9cc7f4e3c6f357a44a3d26a36594c",
+    "original_sha256": "40b928dcbb8dc1440478b20bebcf46ede8f9cc7f4e3c6f357a44a3d26a36594c",
+    "bytes": 193,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds Parallax/Bck 3/Parallax Scene 3.prefab",
+    "sha256": "77dc4a583f8ab0c7c7f48b14183412aa9a96b03224c8ed7546f38895e3546696",
+    "original_sha256": "77dc4a583f8ab0c7c7f48b14183412aa9a96b03224c8ed7546f38895e3546696",
+    "bytes": 21910,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds Parallax/Bck 3/Parallax Scene 3.prefab.meta",
+    "sha256": "4d4e2fc9066552b9d17b374ea32203d500929ab42e52418ef5dcbd9955e5365c",
+    "original_sha256": "4d4e2fc9066552b9d17b374ea32203d500929ab42e52418ef5dcbd9955e5365c",
+    "bytes": 451,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds Parallax/Bck 3.meta",
+    "sha256": "61ebd64c234e6f6ed71b889c81a56ea98252a3a60d8db6bae89a025fdb620580",
+    "original_sha256": "61ebd64c234e6f6ed71b889c81a56ea98252a3a60d8db6bae89a025fdb620580",
+    "bytes": 193,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds Parallax/Bck 4/PARALLAX/layer_01_1920 x 1080.png",
+    "sha256": "ffc614ad1a2bab13c1e6aea7528b0ee7ef22eea57331de18b4c7ae3bc47e07f1",
+    "original_sha256": "ffc614ad1a2bab13c1e6aea7528b0ee7ef22eea57331de18b4c7ae3bc47e07f1",
+    "bytes": 53005,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds Parallax/Bck 4/PARALLAX/layer_01_1920 x 1080.png.meta",
+    "sha256": "37bd66349a224482715b6a8c1bd50a96acc42acbeb24b6989d0c3d27e8075d8d",
+    "original_sha256": "37bd66349a224482715b6a8c1bd50a96acc42acbeb24b6989d0c3d27e8075d8d",
+    "bytes": 3321,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds Parallax/Bck 4/PARALLAX/layer_02_1920 x 1080.png",
+    "sha256": "cb877a6a774492325554cdc92689347b5b913b94690f60ee1a8625aba5452af3",
+    "original_sha256": "cb877a6a774492325554cdc92689347b5b913b94690f60ee1a8625aba5452af3",
+    "bytes": 161959,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds Parallax/Bck 4/PARALLAX/layer_02_1920 x 1080.png.meta",
+    "sha256": "cf8b35fc0a4f504e70ccf24dcd3eda2b68b57950d23ce7bfc0ea9d9dba740727",
+    "original_sha256": "cf8b35fc0a4f504e70ccf24dcd3eda2b68b57950d23ce7bfc0ea9d9dba740727",
+    "bytes": 3321,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds Parallax/Bck 4/PARALLAX/layer_03_1920 x 1080.png",
+    "sha256": "d4bae2c3d7bd7f64d0940de4c1b40278ac68910e9a56c56d2f8150e7a8be6c00",
+    "original_sha256": "d4bae2c3d7bd7f64d0940de4c1b40278ac68910e9a56c56d2f8150e7a8be6c00",
+    "bytes": 146753,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds Parallax/Bck 4/PARALLAX/layer_03_1920 x 1080.png.meta",
+    "sha256": "7ecf3930fbd59e95f9e59437e9c2c7aa42af584e716ea1bf6a29fae81af47a39",
+    "original_sha256": "7ecf3930fbd59e95f9e59437e9c2c7aa42af584e716ea1bf6a29fae81af47a39",
+    "bytes": 3321,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds Parallax/Bck 4/PARALLAX/layer_04_1920 x 1080.png",
+    "sha256": "1ed1aedff558a6d9df3853a29a4f3df656c2f87daa944594a2cb6df72a018443",
+    "original_sha256": "1ed1aedff558a6d9df3853a29a4f3df656c2f87daa944594a2cb6df72a018443",
+    "bytes": 56330,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds Parallax/Bck 4/PARALLAX/layer_04_1920 x 1080.png.meta",
+    "sha256": "69091741e326c23867007d7f401b54eee4d3c46a8a16d6a7f4d965677b8843b8",
+    "original_sha256": "69091741e326c23867007d7f401b54eee4d3c46a8a16d6a7f4d965677b8843b8",
+    "bytes": 3321,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds Parallax/Bck 4/PARALLAX/layer_05_1920 x 1080.png",
+    "sha256": "e6dc9f2dd3ce3acc6ce0c0830d392efb71627bb362f883c47157d96b5d1b16cb",
+    "original_sha256": "e6dc9f2dd3ce3acc6ce0c0830d392efb71627bb362f883c47157d96b5d1b16cb",
+    "bytes": 32775,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds Parallax/Bck 4/PARALLAX/layer_05_1920 x 1080.png.meta",
+    "sha256": "a3f8a4aa3a233635f7546050f6caf76eb0deae9b0a524d94d78a7cb478377306",
+    "original_sha256": "a3f8a4aa3a233635f7546050f6caf76eb0deae9b0a524d94d78a7cb478377306",
+    "bytes": 3321,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds Parallax/Bck 4/PARALLAX/layer_06_1920 x 1080.png",
+    "sha256": "ae33a543335c1d663a03c5d10a4ee31db20a50c89e4c43a2ae01129dd2730b4b",
+    "original_sha256": "ae33a543335c1d663a03c5d10a4ee31db20a50c89e4c43a2ae01129dd2730b4b",
+    "bytes": 41367,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds Parallax/Bck 4/PARALLAX/layer_06_1920 x 1080.png.meta",
+    "sha256": "a4318a13f919b91c84235260ab3c3ee0d4f22c0cce8be963eec371a003dec878",
+    "original_sha256": "a4318a13f919b91c84235260ab3c3ee0d4f22c0cce8be963eec371a003dec878",
+    "bytes": 3321,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds Parallax/Bck 4/PARALLAX/layer_07_1920 x 1080.png",
+    "sha256": "321c624664838d32eabba0254dd33619612df26fd878bf27496b3e835d5e759f",
+    "original_sha256": "321c624664838d32eabba0254dd33619612df26fd878bf27496b3e835d5e759f",
+    "bytes": 93456,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds Parallax/Bck 4/PARALLAX/layer_07_1920 x 1080.png.meta",
+    "sha256": "76d8deec99f84668707671dd7f10c5074d955bdbbabcca1b371eb3a9b37fffac",
+    "original_sha256": "76d8deec99f84668707671dd7f10c5074d955bdbbabcca1b371eb3a9b37fffac",
+    "bytes": 3321,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds Parallax/Bck 4/PARALLAX/layer_08_1920 x 1080.png",
+    "sha256": "168c34bbdd54714eabc34dc2eb9d90b130d251437963511d63b71901fc26403b",
+    "original_sha256": "168c34bbdd54714eabc34dc2eb9d90b130d251437963511d63b71901fc26403b",
+    "bytes": 21086,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds Parallax/Bck 4/PARALLAX/layer_08_1920 x 1080.png.meta",
+    "sha256": "b2a304350ca2da862acdeed5d62a7b290a3d174eee24b7cc69fa7a060b48f20e",
+    "original_sha256": "b2a304350ca2da862acdeed5d62a7b290a3d174eee24b7cc69fa7a060b48f20e",
+    "bytes": 3321,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds Parallax/Bck 4/Parallax Scene 4.prefab",
+    "sha256": "e4d90d316ef0717b166891a10d7fff189350a5ca24ca6cb1028524c6d28a02fa",
+    "original_sha256": "e4d90d316ef0717b166891a10d7fff189350a5ca24ca6cb1028524c6d28a02fa",
+    "bytes": 29997,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds Parallax/Bck 4/Parallax Scene 4.prefab.meta",
+    "sha256": "0a6fcdf71e47a86cf1c703c451c547da6a204aa51d575704e39a0aba69c25401",
+    "original_sha256": "0a6fcdf71e47a86cf1c703c451c547da6a204aa51d575704e39a0aba69c25401",
+    "bytes": 451,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds Parallax/Bck 4/PARALLAX.meta",
+    "sha256": "5b8ad823c55a2897942d8eb2e21d4df1b12e6e2ea564ed8262aa258c0a58eb14",
+    "original_sha256": "5b8ad823c55a2897942d8eb2e21d4df1b12e6e2ea564ed8262aa258c0a58eb14",
+    "bytes": 193,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds Parallax/Bck 4.meta",
+    "sha256": "49a491901d1cf90bf87a357c1d7de6f3884deb7f42b396df74ae58b2ee7bf911",
+    "original_sha256": "49a491901d1cf90bf87a357c1d7de6f3884deb7f42b396df74ae58b2ee7bf911",
+    "bytes": 193,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds Parallax.meta",
+    "sha256": "97f5e09f049d212c98ec5be3b56452d5bf4f4b97e7ff506e337075c95b502072",
+    "original_sha256": "97f5e09f049d212c98ec5be3b56452d5bf4f4b97e7ff506e337075c95b502072",
+    "bytes": 193,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/Demo Assets/Backgrounds.meta",
+    "sha256": "ca10f3cb4917fdb2829ae8515b2e3c8263a3d85b15adc305d1327b73e293dbc2",
+    "original_sha256": "ca10f3cb4917fdb2829ae8515b2e3c8263a3d85b15adc305d1327b73e293dbc2",
+    "bytes": 193,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/Demo Assets/Font/entsani.ttf",
+    "sha256": "16fd244c819b7b27a8a07b023f89752ea761395a2d34f2b9b4430e127d06d1bc",
+    "original_sha256": "16fd244c819b7b27a8a07b023f89752ea761395a2d34f2b9b4430e127d06d1bc",
+    "bytes": 73624,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/Demo Assets/Font/entsani.ttf.meta",
+    "sha256": "a62f0f1ece90b5fa7a2fe349332a69479bc3de759a2517a9a686ec37a7c8685d",
+    "original_sha256": "a62f0f1ece90b5fa7a2fe349332a69479bc3de759a2517a9a686ec37a7c8685d",
+    "bytes": 655,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/Demo Assets/Font/entsans.ttf",
+    "sha256": "5325336673664b6fdba02003c566b5723cb550a53676a3ce381dceb330af4819",
+    "original_sha256": "5325336673664b6fdba02003c566b5723cb550a53676a3ce381dceb330af4819",
+    "bytes": 48728,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/Demo Assets/Font/entsans.ttf.meta",
+    "sha256": "b8fb3c8dc334298ebe4a4982b5992fdee83b150e7cf0bec21d59816eb398962f",
+    "original_sha256": "b8fb3c8dc334298ebe4a4982b5992fdee83b150e7cf0bec21d59816eb398962f",
+    "bytes": 655,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/Demo Assets/Font.meta",
+    "sha256": "398a0ba8aaf81934c9cacba14825846e0f4968127218b6adb41e286f2d1e40e9",
+    "original_sha256": "398a0ba8aaf81934c9cacba14825846e0f4968127218b6adb41e286f2d1e40e9",
+    "bytes": 193,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/Demo Assets/Main Background/Background.prefab",
+    "sha256": "3890a6d799d3dc7c29e6d74c904882beac24aa2f14fd80fc15cc3122eb2f865a",
+    "original_sha256": "3890a6d799d3dc7c29e6d74c904882beac24aa2f14fd80fc15cc3122eb2f865a",
+    "bytes": 2102,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/Demo Assets/Main Background/Background.prefab.meta",
+    "sha256": "bd21a60648dcd49bea550bae2b019c8315b172ab1ce6c9d3899d3b97190a2f92",
+    "original_sha256": "bd21a60648dcd49bea550bae2b019c8315b172ab1ce6c9d3899d3b97190a2f92",
+    "bytes": 430,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/Demo Assets/Main Background/background3-720.png",
+    "sha256": "9c22d60dd783e2887e853200eef44c4b1ed59abcb392377e6ddecdf30e97a766",
+    "original_sha256": "9c22d60dd783e2887e853200eef44c4b1ed59abcb392377e6ddecdf30e97a766",
+    "bytes": 745970,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/Demo Assets/Main Background/background3-720.png.meta",
+    "sha256": "e42cc159e89a7119e6e4e49805acd85fca906a29b511aca72de8ce756900d95b",
+    "original_sha256": "e42cc159e89a7119e6e4e49805acd85fca906a29b511aca72de8ce756900d95b",
+    "bytes": 3292,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/Demo Assets/Main Background Parallax/Parallax 1.prefab",
+    "sha256": "ce8b05f5a94a96dfa1d179ff9e0e87d930e92a4e05131112546c2372f184114d",
+    "original_sha256": "ce8b05f5a94a96dfa1d179ff9e0e87d930e92a4e05131112546c2372f184114d",
+    "bytes": 18245,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/Demo Assets/Main Background Parallax/Parallax 1.prefab.meta",
+    "sha256": "55dbcd093bd99f3a963a1f8ff7ebd9e594b44cdf5f8b92f554ceaa049a83b408",
+    "original_sha256": "55dbcd093bd99f3a963a1f8ff7ebd9e594b44cdf5f8b92f554ceaa049a83b408",
+    "bytes": 443,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/Demo Assets/Main Background Parallax/parallax-mountain-bg.png",
+    "sha256": "dbe7e1c6fa0fe6c630797d410fc1542e229909940a08d1a63c341e894559de55",
+    "original_sha256": "dbe7e1c6fa0fe6c630797d410fc1542e229909940a08d1a63c341e894559de55",
+    "bytes": 2025,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/Demo Assets/Main Background Parallax/parallax-mountain-bg.png.meta",
+    "sha256": "3f0feeec874d0c797e659af58628f3c57e10960fac37efd9c9bd3042843e1863",
+    "original_sha256": "3f0feeec874d0c797e659af58628f3c57e10960fac37efd9c9bd3042843e1863",
+    "bytes": 3310,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/Demo Assets/Main Background Parallax/parallax-mountain-foreground-trees.png",
+    "sha256": "27c7d400bce84c0cccc05726d0a91f48adc7c33eeb537b2bcf1544530740c5d3",
+    "original_sha256": "27c7d400bce84c0cccc05726d0a91f48adc7c33eeb537b2bcf1544530740c5d3",
+    "bytes": 6703,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/Demo Assets/Main Background Parallax/parallax-mountain-foreground-trees.png.meta",
+    "sha256": "ffaba79a898e052d32396c7e6ab61f9d9d3d169b3c8d893feac378622a8f562f",
+    "original_sha256": "ffaba79a898e052d32396c7e6ab61f9d9d3d169b3c8d893feac378622a8f562f",
+    "bytes": 3324,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/Demo Assets/Main Background Parallax/parallax-mountain-montain-far.png",
+    "sha256": "b979acfecb27133832f475a2930c0a24cf4a4f7af27d4a93e51ec44544e63411",
+    "original_sha256": "b979acfecb27133832f475a2930c0a24cf4a4f7af27d4a93e51ec44544e63411",
+    "bytes": 1093,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/Demo Assets/Main Background Parallax/parallax-mountain-montain-far.png.meta",
+    "sha256": "7aa2e6da1e7436e5ea6e47093fae9b2f2af8e19e8505852dd4d768596509c34b",
+    "original_sha256": "7aa2e6da1e7436e5ea6e47093fae9b2f2af8e19e8505852dd4d768596509c34b",
+    "bytes": 3319,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/Demo Assets/Main Background Parallax/parallax-mountain-mountains.png",
+    "sha256": "43ab010e08cda6ec0aa448c57e4ac8368dcfc9c0353964c1f57ef562f8fe30cc",
+    "original_sha256": "43ab010e08cda6ec0aa448c57e4ac8368dcfc9c0353964c1f57ef562f8fe30cc",
+    "bytes": 4729,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/Demo Assets/Main Background Parallax/parallax-mountain-mountains.png.meta",
+    "sha256": "b80e76c7681199fe08bdf9336099ffbee5b8ad44685e627c1ee9a956c6089962",
+    "original_sha256": "b80e76c7681199fe08bdf9336099ffbee5b8ad44685e627c1ee9a956c6089962",
+    "bytes": 3317,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/Demo Assets/Main Background Parallax/parallax-mountain-trees.png",
+    "sha256": "1eee173d04338010de36cd0014e5f5e71eaabb31b6716ce2f0eeb25b0cdf0c52",
+    "original_sha256": "1eee173d04338010de36cd0014e5f5e71eaabb31b6716ce2f0eeb25b0cdf0c52",
+    "bytes": 4500,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/Demo Assets/Main Background Parallax/parallax-mountain-trees.png.meta",
+    "sha256": "66cc54da52ebc53e5f886ee5476e2a5f2c7e92f3d3f67d2f7c0f4ca78b2136f7",
+    "original_sha256": "66cc54da52ebc53e5f886ee5476e2a5f2c7e92f3d3f67d2f7c0f4ca78b2136f7",
+    "bytes": 3313,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/Demo Assets/Main Background Parallax.meta",
+    "sha256": "c4472512c6f1d333707ee70b7e89d55b8ad4b27d384f6a59974eedce9af8183c",
+    "original_sha256": "c4472512c6f1d333707ee70b7e89d55b8ad4b27d384f6a59974eedce9af8183c",
+    "bytes": 193,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/Demo Assets/Main Background.meta",
+    "sha256": "44513f07c0b85d687ec8779bcce5a8e75738eb5384189de1298a00b66db4b021",
+    "original_sha256": "44513f07c0b85d687ec8779bcce5a8e75738eb5384189de1298a00b66db4b021",
+    "bytes": 193,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/Demo Assets/Select.wav",
+    "sha256": "273710831a20c1ef4e499787657a40c142e76766b490a4eb785ad2909e58a45f",
+    "original_sha256": "273710831a20c1ef4e499787657a40c142e76766b490a4eb785ad2909e58a45f",
+    "bytes": 3164,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/Demo Assets/Select.wav.meta",
+    "sha256": "9680c0ec60f24fc0fbf9304bcf8be1a5249233afc9608375cf236c52c7d013ea",
+    "original_sha256": "9680c0ec60f24fc0fbf9304bcf8be1a5249233afc9608375cf236c52c7d013ea",
+    "bytes": 690,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/Demo Assets.meta",
+    "sha256": "df7a3473b5ecee22f190b46924ec301064a0e38eb3a304faa56d3e6402bdf518",
+    "original_sha256": "df7a3473b5ecee22f190b46924ec301064a0e38eb3a304faa56d3e6402bdf518",
+    "bytes": 193,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/Exit Menu/Exit Menu.prefab",
+    "sha256": "94818ad8d7f09897c259b960ed7935f173b919555ffb983c97867f5f50235a35",
+    "original_sha256": "94818ad8d7f09897c259b960ed7935f173b919555ffb983c97867f5f50235a35",
+    "bytes": 16846,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/Exit Menu/Exit Menu.prefab.meta",
+    "sha256": "a1d76fc7f5947b3bb245a0e797f3c985311ade5b2f31e63907074a52802a8525",
+    "original_sha256": "a1d76fc7f5947b3bb245a0e797f3c985311ade5b2f31e63907074a52802a8525",
+    "bytes": 411,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/Exit Menu/Fade In.anim",
+    "sha256": "ee07b4e235eb227cc02f847021d1216f9592e7dfbaa288c252bd9ded9655d2b0",
+    "original_sha256": "ee07b4e235eb227cc02f847021d1216f9592e7dfbaa288c252bd9ded9655d2b0",
+    "bytes": 3678,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/Exit Menu/Fade In.anim.meta",
+    "sha256": "9a0ce15179c1d0455617f4fd868a59bf46861288636f14cb096af11ab7a500ce",
+    "original_sha256": "9a0ce15179c1d0455617f4fd868a59bf46861288636f14cb096af11ab7a500ce",
+    "bytes": 407,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/Exit Menu/Fade out.anim",
+    "sha256": "c9b6de5c73ef1aecfe49a7ddff6bbcdaafe3647085cea16db616ade765b9c6ef",
+    "original_sha256": "c9b6de5c73ef1aecfe49a7ddff6bbcdaafe3647085cea16db616ade765b9c6ef",
+    "bytes": 2685,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/Exit Menu/Fade out.anim.meta",
+    "sha256": "b5d7efcd8f841d0f27b5b82f1cf342cf069376b4f6b5311f1727dda0940b7508",
+    "original_sha256": "b5d7efcd8f841d0f27b5b82f1cf342cf069376b4f6b5311f1727dda0940b7508",
+    "bytes": 408,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/Exit Menu.meta",
+    "sha256": "7f07934ae999a0a7dcb7959d50211f58250681553fb83cbda731721c9d93996c",
+    "original_sha256": "7f07934ae999a0a7dcb7959d50211f58250681553fb83cbda731721c9d93996c",
+    "bytes": 193,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/Menu bar.png",
+    "sha256": "97e8f7d814aa448fd3d5f3504cc1d39cb978385339809ce87ea9e72bb632008e",
+    "original_sha256": "97e8f7d814aa448fd3d5f3504cc1d39cb978385339809ce87ea9e72bb632008e",
+    "bytes": 3285,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets/Menu bar.png.meta",
+    "sha256": "e552f6918d538419e485dbde19b115d312aecc2d64751e560c421584341f7b8f",
+    "original_sha256": "e552f6918d538419e485dbde19b115d312aecc2d64751e560c421584341f7b8f",
+    "bytes": 3257,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Assets.meta",
+    "sha256": "31d68b19601b9dc18f308c5076d84616d2e1cd5ed18131b1db56357718d22c36",
+    "original_sha256": "31d68b19601b9dc18f308c5076d84616d2e1cd5ed18131b1db56357718d22c36",
+    "bytes": 193,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Editor/MenuEditor.cs",
+    "sha256": "5241f9de10c11da9772bc49280e837ee3c4f8e8f8a2dea467efa76ae0417938a",
+    "original_sha256": "5241f9de10c11da9772bc49280e837ee3c4f8e8f8a2dea467efa76ae0417938a",
+    "bytes": 2655,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Editor/MenuEditor.cs.meta",
+    "sha256": "6b295580c483ae43f1c8a50cb741c2d5fd7db5b7e4ebef46bd383ed4d2b30778",
+    "original_sha256": "6b295580c483ae43f1c8a50cb741c2d5fd7db5b7e4ebef46bd383ed4d2b30778",
+    "bytes": 481,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Editor.meta",
+    "sha256": "58a015f4da5d764199fd3a6c19401698f087d04e9da4a83f983265a71081d249",
+    "original_sha256": "58a015f4da5d764199fd3a6c19401698f087d04e9da4a83f983265a71081d249",
+    "bytes": 193,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Main Menu Demo/LightingData.asset",
+    "sha256": "f18561e5d5bb488f29c5de07b71c0a65373296c3ace37a82cfc2f17be130f8f3",
+    "original_sha256": "f18561e5d5bb488f29c5de07b71c0a65373296c3ace37a82cfc2f17be130f8f3",
+    "bytes": 17681,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Main Menu Demo/LightingData.asset.meta",
+    "sha256": "1c8a71e225ab0d885f55ebf99045a36234d06021c1d6b7e8dd3adba73b9bbb0d",
+    "original_sha256": "1c8a71e225ab0d885f55ebf99045a36234d06021c1d6b7e8dd3adba73b9bbb0d",
+    "bytes": 190,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Main Menu Demo.meta",
+    "sha256": "4735dedec2d62e8b383d256f1c490ce0e9ae202ed35fdbb9f94c2ca3835acf8a",
+    "original_sha256": "4735dedec2d62e8b383d256f1c490ce0e9ae202ed35fdbb9f94c2ca3835acf8a",
+    "bytes": 172,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Main Menu DemoSettings.lighting",
+    "sha256": "63dcc901f8003511c8d39831aa7ef40ebb45bf52ad2dc3614b78ed05a9c765d2",
+    "original_sha256": "63dcc901f8003511c8d39831aa7ef40ebb45bf52ad2dc3614b78ed05a9c765d2",
+    "bytes": 1803,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Main Menu DemoSettings.lighting.meta",
+    "sha256": "11ba15543cc832bc177e4a8eedbe78a46de8dba4609de902acd4d420f76b6696",
+    "original_sha256": "11ba15543cc832bc177e4a8eedbe78a46de8dba4609de902acd4d420f76b6696",
+    "bytes": 200,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Main menu.prefab",
+    "sha256": "baa0c2af64c6bec70dc97416673e49ae003ad0b2e52e5a7415fafbb811fdd9c5",
+    "original_sha256": "baa0c2af64c6bec70dc97416673e49ae003ad0b2e52e5a7415fafbb811fdd9c5",
+    "bytes": 208573,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Main menu.prefab.meta",
+    "sha256": "c90d772820c6911358580100a15c7fab6bfd26d03369d0b8d394c4e8f7320834",
+    "original_sha256": "c90d772820c6911358580100a15c7fab6bfd26d03369d0b8d394c4e8f7320834",
+    "bytes": 394,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Readme.pdf",
+    "sha256": "5f2d562de9b6b2ce42353d9192d0e446d0a6127a4b415f9cba4acedadf810065",
+    "original_sha256": "5f2d562de9b6b2ce42353d9192d0e446d0a6127a4b415f9cba4acedadf810065",
+    "bytes": 525184,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Readme.pdf.meta",
+    "sha256": "b05fbce4c04fb6d7ff9ce0d910c94d73e947b8efef401b6fb5ce364c55922749",
+    "original_sha256": "b05fbce4c04fb6d7ff9ce0d910c94d73e947b8efef401b6fb5ce364c55922749",
+    "bytes": 383,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Scripts/ActivateParallax.cs",
+    "sha256": "417c95a47e7e1e8232ce574ff530791f99521808709c3654201df31ab00e7b26",
+    "original_sha256": "417c95a47e7e1e8232ce574ff530791f99521808709c3654201df31ab00e7b26",
+    "bytes": 699,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Scripts/ActivateParallax.cs.meta",
+    "sha256": "61c1a39e5099abda255e2f5381b0c22a47604e31e85c5e19187923c6527c4b04",
+    "original_sha256": "61c1a39e5099abda255e2f5381b0c22a47604e31e85c5e19187923c6527c4b04",
+    "bytes": 488,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Scripts/Arrow.cs",
+    "sha256": "3568e1fcebe45c2fbc7fc000e824e983129ba68d0bfae807be705df33b3b56d9",
+    "original_sha256": "3568e1fcebe45c2fbc7fc000e824e983129ba68d0bfae807be705df33b3b56d9",
+    "bytes": 289,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Scripts/Arrow.cs.meta",
+    "sha256": "e14210f585d564314e2b485ce3beb2883e17bdb83ebf6b09de349ee95cbeccc8",
+    "original_sha256": "e14210f585d564314e2b485ce3beb2883e17bdb83ebf6b09de349ee95cbeccc8",
+    "bytes": 477,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Scripts/MenuController.cs",
+    "sha256": "9c379668afa240270324c054a8f3adef8a431012580ad2a5d23bd2915a275ff7",
+    "original_sha256": "9c379668afa240270324c054a8f3adef8a431012580ad2a5d23bd2915a275ff7",
+    "bytes": 14023,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Scripts/MenuController.cs.meta",
+    "sha256": "2fb1bcb210c518bc3c344b90d74aab846ac8e549a5b34f0c9f0c94640eb95c2f",
+    "original_sha256": "2fb1bcb210c518bc3c344b90d74aab846ac8e549a5b34f0c9f0c94640eb95c2f",
+    "bytes": 486,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Scripts/Parallax.cs",
+    "sha256": "39fb6a5a8aa5a00daadad589d4f7eaf5ab86347cb8d775463f5fcbe7a8e6ae2b",
+    "original_sha256": "39fb6a5a8aa5a00daadad589d4f7eaf5ab86347cb8d775463f5fcbe7a8e6ae2b",
+    "bytes": 726,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Scripts/Parallax.cs.meta",
+    "sha256": "7d8e4373c28e49d0c9d4a358b8cdcd71ac2fccf6e5a4215335fc17f411c61cb2",
+    "original_sha256": "7d8e4373c28e49d0c9d4a358b8cdcd71ac2fccf6e5a4215335fc17f411c61cb2",
+    "bytes": 480,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Scripts/SceneController.cs",
+    "sha256": "cca281ff604f87a41da82fe141c43fe23c352b83c6670175072ec78234b62f25",
+    "original_sha256": "cca281ff604f87a41da82fe141c43fe23c352b83c6670175072ec78234b62f25",
+    "bytes": 1279,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Scripts/SceneController.cs.meta",
+    "sha256": "0c77963d1bb6bb2c36cc8ba66ac1dc04692931dbfa0e97d9fa991fc8a31bef09",
+    "original_sha256": "0c77963d1bb6bb2c36cc8ba66ac1dc04692931dbfa0e97d9fa991fc8a31bef09",
+    "bytes": 487,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Scripts/Settings.cs",
+    "sha256": "5b773bf5609e3a7b2e6d63ac234b0eecf7439a23fbac2563af058d92193687c6",
+    "original_sha256": "5b773bf5609e3a7b2e6d63ac234b0eecf7439a23fbac2563af058d92193687c6",
+    "bytes": 242,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Scripts/Settings.cs.meta",
+    "sha256": "1a339c35ddf5d3bec90a4d96dbc0e6f8f23ec15b5be57999fc1a3c1b1ec25727",
+    "original_sha256": "1a339c35ddf5d3bec90a4d96dbc0e6f8f23ec15b5be57999fc1a3c1b1ec25727",
+    "bytes": 480,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Scripts/SettingsController.cs",
+    "sha256": "a473fe34875e580c682c687382e7138fee11455232af02830f386c5dfb6a4d77",
+    "original_sha256": "a473fe34875e580c682c687382e7138fee11455232af02830f386c5dfb6a4d77",
+    "bytes": 3138,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Scripts/SettingsController.cs.meta",
+    "sha256": "86e9d5e30e3f14a6b335a45156c444562c3dc7df8950f5de18f579bc5e6292d7",
+    "original_sha256": "86e9d5e30e3f14a6b335a45156c444562c3dc7df8950f5de18f579bc5e6292d7",
+    "bytes": 490,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE/Scripts.meta",
+    "sha256": "f95ef2b622b7b6eb4946c058ca2ca0ed209ff0180f2f6eeb94c679a357f6ebb4",
+    "original_sha256": "f95ef2b622b7b6eb4946c058ca2ca0ed209ff0180f2f6eeb94c679a357f6ebb4",
+    "bytes": 193,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Main menu with parallax FREE.meta",
+    "sha256": "96aa99864601e719f91b665ed53b9b28eb02580f660fc834924d59dda3bfcd94",
+    "original_sha256": "96aa99864601e719f91b665ed53b9b28eb02580f660fc834924d59dda3bfcd94",
+    "bytes": 172,
+    "sanitized": false
   },
   {
     "path": "Assets/Materials/Mat_Apple.mat",
     "sha256": "e36d8bb808c7d12ce9af6d8b6690a5babf128d01266aa8271bac09b45341786d",
-    "bytes": 3740
+    "original_sha256": "e36d8bb808c7d12ce9af6d8b6690a5babf128d01266aa8271bac09b45341786d",
+    "bytes": 3740,
+    "sanitized": false
   },
   {
     "path": "Assets/Materials/Mat_Apple.mat.meta",
     "sha256": "67e8cf25f90185becdd3e8b557eeeb5db640f6eef5c9aff5312991072122d55e",
-    "bytes": 188
+    "original_sha256": "67e8cf25f90185becdd3e8b557eeeb5db640f6eef5c9aff5312991072122d55e",
+    "bytes": 188,
+    "sanitized": false
   },
   {
     "path": "Assets/Materials/Mat_Basket.mat",
     "sha256": "43117cf7a6360ba95c14eb2579e2501bdf488f9ff34aa7c6ac2b77874f030104",
-    "bytes": 3740
+    "original_sha256": "43117cf7a6360ba95c14eb2579e2501bdf488f9ff34aa7c6ac2b77874f030104",
+    "bytes": 3740,
+    "sanitized": false
   },
   {
     "path": "Assets/Materials/Mat_Basket.mat.meta",
     "sha256": "d71982a4e907807dc995c9edfb5be220f980fd6899ae7bf9205459aa56249978",
-    "bytes": 188
+    "original_sha256": "d71982a4e907807dc995c9edfb5be220f980fd6899ae7bf9205459aa56249978",
+    "bytes": 188,
+    "sanitized": false
   },
   {
     "path": "Assets/Materials/Mat_Leaves.mat",
     "sha256": "a1a0ff46aab827684bc52305fb98865d584e7db11fd58276c86486cc602b4746",
-    "bytes": 3739
+    "original_sha256": "a1a0ff46aab827684bc52305fb98865d584e7db11fd58276c86486cc602b4746",
+    "bytes": 3739,
+    "sanitized": false
   },
   {
     "path": "Assets/Materials/Mat_Leaves.mat.meta",
     "sha256": "75baa07c5c281e447fcf1c08105dcb89f69e443be2a0262fbae4b63caab672e2",
-    "bytes": 188
+    "original_sha256": "75baa07c5c281e447fcf1c08105dcb89f69e443be2a0262fbae4b63caab672e2",
+    "bytes": 188,
+    "sanitized": false
   },
   {
     "path": "Assets/Materials/Mat_Wood.mat",
     "sha256": "1e6e0622d4a3a1dd4a5c57d98ddd6ede1d760844c47cbe35f59a885fb1e402be",
-    "bytes": 3742
+    "original_sha256": "1e6e0622d4a3a1dd4a5c57d98ddd6ede1d760844c47cbe35f59a885fb1e402be",
+    "bytes": 3742,
+    "sanitized": false
   },
   {
     "path": "Assets/Materials/Mat_Wood.mat.meta",
     "sha256": "a2e76af8ff54048e043ab969893c35f2059a2f31fc5bec986ad87911b5f21ecc",
-    "bytes": 188
+    "original_sha256": "a2e76af8ff54048e043ab969893c35f2059a2f31fc5bec986ad87911b5f21ecc",
+    "bytes": 188,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Materials.meta",
+    "sha256": "2a9d8c2767fb74be45d07ebc8778568a39848084fbf4a6d2a718e6e637448cfa",
+    "original_sha256": "2a9d8c2767fb74be45d07ebc8778568a39848084fbf4a6d2a718e6e637448cfa",
+    "bytes": 172,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/R.png",
+    "sha256": "f6682cbbc7e2709f72f5200d95c8325cc23e0a1e2385b38a5277d952a19f78ef",
+    "original_sha256": "f6682cbbc7e2709f72f5200d95c8325cc23e0a1e2385b38a5277d952a19f78ef",
+    "bytes": 301804,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/R.png.meta",
+    "sha256": "e29a48ad6441126d782e8ce24baa7c60410ca1abd4207d320ecd6817df0a8aca",
+    "original_sha256": "e29a48ad6441126d782e8ce24baa7c60410ca1abd4207d320ecd6817df0a8aca",
+    "bytes": 3393,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/R_cursor.png",
+    "sha256": "04b102d166604ad57ec61cde056f552bdb2e0af2071bbf4629094771683a758c",
+    "original_sha256": "04b102d166604ad57ec61cde056f552bdb2e0af2071bbf4629094771683a758c",
+    "bytes": 9244,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/R_cursor.png.meta",
+    "sha256": "a645a7a9026e549ddd075e256ebc203b4a92ccc87cd972b83917b818550cb556",
+    "original_sha256": "a645a7a9026e549ddd075e256ebc203b4a92ccc87cd972b83917b818550cb556",
+    "bytes": 3361,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Readme.asset",
+    "sha256": "6d098604e909b6a0e64fe5910c2719704864d49678bcf5413bd47b67e5490107",
+    "original_sha256": "6d098604e909b6a0e64fe5910c2719704864d49678bcf5413bd47b67e5490107",
+    "bytes": 1144,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Readme.asset.meta",
+    "sha256": "46c6b89ac1d47bd0c0d1a8b141ae3e32cd95d3e74c49381f0d9f942488c254ce",
+    "original_sha256": "46c6b89ac1d47bd0c0d1a8b141ae3e32cd95d3e74c49381f0d9f942488c254ce",
+    "bytes": 182,
+    "sanitized": false
   },
   {
     "path": "Assets/Scenes/_GameOverScene.unity",
     "sha256": "d0a08fae27e94dd2473407c91c38f1c823326ba28acc2e64276ffaf5cd28afce",
-    "bytes": 78552
+    "original_sha256": "d0a08fae27e94dd2473407c91c38f1c823326ba28acc2e64276ffaf5cd28afce",
+    "bytes": 78552,
+    "sanitized": false
   },
   {
     "path": "Assets/Scenes/_GameOverScene.unity.meta",
     "sha256": "9bcdc458ddf973b3987f34a312dcc7813ec0bf7f8cef8a3e4e91631465465642",
-    "bytes": 155
+    "original_sha256": "9bcdc458ddf973b3987f34a312dcc7813ec0bf7f8cef8a3e4e91631465465642",
+    "bytes": 155,
+    "sanitized": false
   },
   {
     "path": "Assets/Scenes/_Scene_0.unity",
     "sha256": "305f86a52e0b9c3a692e5dcd1ced2f3c3cbaeaa1b20bc5c2b622365559669905",
-    "bytes": 32301
+    "original_sha256": "305f86a52e0b9c3a692e5dcd1ced2f3c3cbaeaa1b20bc5c2b622365559669905",
+    "bytes": 32301,
+    "sanitized": false
   },
   {
     "path": "Assets/Scenes/_Scene_0.unity.meta",
     "sha256": "9e118bfefd0360cb0ad20d994a629e2b7b31aeb60fddf94968a48f9c667e5bbc",
-    "bytes": 155
+    "original_sha256": "9e118bfefd0360cb0ad20d994a629e2b7b31aeb60fddf94968a48f9c667e5bbc",
+    "bytes": 155,
+    "sanitized": false
   },
   {
     "path": "Assets/Scenes/_StartScene.unity",
     "sha256": "ad7dfe6e2739b691b832280e1c50e610a6c85317e7c2fe688f2a459fd65d05bf",
-    "bytes": 35855
+    "original_sha256": "ad7dfe6e2739b691b832280e1c50e610a6c85317e7c2fe688f2a459fd65d05bf",
+    "bytes": 35855,
+    "sanitized": false
   },
   {
     "path": "Assets/Scenes/_StartScene.unity.meta",
     "sha256": "80d24437286db9804aed67721f70a3511800c09b93fb5fdea758201995ee9972",
-    "bytes": 155
+    "original_sha256": "80d24437286db9804aed67721f70a3511800c09b93fb5fdea758201995ee9972",
+    "bytes": 155,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Scenes/Main Menu Demo.unity",
+    "sha256": "bf4cbd92e3c5a455413df2e53cd92872a0cc72d7eab76adc03c5ee828be33b44",
+    "original_sha256": "bf4cbd92e3c5a455413df2e53cd92872a0cc72d7eab76adc03c5ee828be33b44",
+    "bytes": 18326,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Scenes/Main Menu Demo.unity.meta",
+    "sha256": "211fcf3075481a8f0e340d2e55ef41e1f2564a8d4f4f9645af1fc577d0dec20f",
+    "original_sha256": "211fcf3075481a8f0e340d2e55ef41e1f2564a8d4f4f9645af1fc577d0dec20f",
+    "bytes": 393,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Scenes.meta",
+    "sha256": "92598ef42aeaa7813a50e780bcee1ad6c832b257592d09ffb0e6fb6116bb703f",
+    "original_sha256": "92598ef42aeaa7813a50e780bcee1ad6c832b257592d09ffb0e6fb6116bb703f",
+    "bytes": 172,
+    "sanitized": false
   },
   {
     "path": "Assets/Scripts/Apple.cs",
     "sha256": "077170a69ae16e344aa32edbc14bb7d2ca9b90a661a1e6fd2afa7990b83ba884",
-    "bytes": 704
+    "original_sha256": "077170a69ae16e344aa32edbc14bb7d2ca9b90a661a1e6fd2afa7990b83ba884",
+    "bytes": 704,
+    "sanitized": false
   },
   {
     "path": "Assets/Scripts/Apple.cs.meta",
     "sha256": "1c090baebc6543ef0c2f260c7f094d5b7044918137d794e955fef6bb8e089e4e",
-    "bytes": 322
+    "original_sha256": "1c090baebc6543ef0c2f260c7f094d5b7044918137d794e955fef6bb8e089e4e",
+    "bytes": 322,
+    "sanitized": false
   },
   {
     "path": "Assets/Scripts/ApplePicker.cs",
     "sha256": "749b8c81186cab41c65bf3c0010510c473c57b0700c6c16da02f6a0bd6cfd426",
-    "bytes": 1785
+    "original_sha256": "749b8c81186cab41c65bf3c0010510c473c57b0700c6c16da02f6a0bd6cfd426",
+    "bytes": 1785,
+    "sanitized": false
   },
   {
     "path": "Assets/Scripts/ApplePicker.cs.meta",
     "sha256": "868b8a992fa5abb5d72e080638c270b07b93f54266b99e9f1ac3cf8f9da30195",
-    "bytes": 356
+    "original_sha256": "868b8a992fa5abb5d72e080638c270b07b93f54266b99e9f1ac3cf8f9da30195",
+    "bytes": 356,
+    "sanitized": false
   },
   {
     "path": "Assets/Scripts/AppleTree.cs",
     "sha256": "585bc98e660d61e58e7ac86ed8de65f36489a86e21d42e70f12d78c87b5f39f8",
-    "bytes": 1354
+    "original_sha256": "585bc98e660d61e58e7ac86ed8de65f36489a86e21d42e70f12d78c87b5f39f8",
+    "bytes": 1354,
+    "sanitized": false
   },
   {
     "path": "Assets/Scripts/AppleTree.cs.meta",
     "sha256": "32694ff727840d6ef5ecd00912074245eeaf77908e36eb7cf1747722d6ae6907",
-    "bytes": 59
+    "original_sha256": "32694ff727840d6ef5ecd00912074245eeaf77908e36eb7cf1747722d6ae6907",
+    "bytes": 59,
+    "sanitized": false
   },
   {
     "path": "Assets/Scripts/Basket.cs",
     "sha256": "539eb81f82656fd8542d0403f1fcba788b4c50cf3410344775162ab5b219f337",
-    "bytes": 1893
+    "original_sha256": "539eb81f82656fd8542d0403f1fcba788b4c50cf3410344775162ab5b219f337",
+    "bytes": 1893,
+    "sanitized": false
   },
   {
     "path": "Assets/Scripts/Basket.cs.meta",
     "sha256": "d09ecc141053a87cfdedab7bca665e9b9c2f6225d5a15b90d10e0741ec3c865d",
-    "bytes": 59
+    "original_sha256": "d09ecc141053a87cfdedab7bca665e9b9c2f6225d5a15b90d10e0741ec3c865d",
+    "bytes": 59,
+    "sanitized": false
   },
   {
     "path": "Assets/Scripts/DifficultyManager.cs",
     "sha256": "8002e308784490b31c9ab21e608dc2f0b2e6c8ad07342b12a96d0692b4fa1612",
-    "bytes": 1001
+    "original_sha256": "8002e308784490b31c9ab21e608dc2f0b2e6c8ad07342b12a96d0692b4fa1612",
+    "bytes": 1001,
+    "sanitized": false
   },
   {
     "path": "Assets/Scripts/DifficultyManager.cs.meta",
     "sha256": "2123d36c15f25bfe1876238ae276391112034b6820ff425be6e3f22839facf50",
-    "bytes": 59
+    "original_sha256": "2123d36c15f25bfe1876238ae276391112034b6820ff425be6e3f22839facf50",
+    "bytes": 59,
+    "sanitized": false
   },
   {
     "path": "Assets/Scripts/GameOver.cs",
     "sha256": "3c476f1adbfd5d3ed5ae5bbb4285df99a57b1c55599ccc60713eb45f8d529bae",
-    "bytes": 1225
+    "original_sha256": "3c476f1adbfd5d3ed5ae5bbb4285df99a57b1c55599ccc60713eb45f8d529bae",
+    "bytes": 1225,
+    "sanitized": false
   },
   {
     "path": "Assets/Scripts/GameOver.cs.meta",
     "sha256": "9a3a49a6e76faab2bed6d7fda3e49983dd15295308bf1cf54abea690ad95124a",
-    "bytes": 59
+    "original_sha256": "9a3a49a6e76faab2bed6d7fda3e49983dd15295308bf1cf54abea690ad95124a",
+    "bytes": 59,
+    "sanitized": false
   },
   {
     "path": "Assets/Scripts/HighScore.cs",
     "sha256": "8525ab0543d2d16ee23768f07ae9ab8cb5f1aa5c623b5f65f48cb088af1091ab",
-    "bytes": 1177
+    "original_sha256": "8525ab0543d2d16ee23768f07ae9ab8cb5f1aa5c623b5f65f48cb088af1091ab",
+    "bytes": 1177,
+    "sanitized": false
   },
   {
     "path": "Assets/Scripts/HighScore.cs.meta",
     "sha256": "ed9b822c0e14ab2339d1a779c119f42a37cd68be810d2a2cbd748b989c142f88",
-    "bytes": 59
+    "original_sha256": "ed9b822c0e14ab2339d1a779c119f42a37cd68be810d2a2cbd748b989c142f88",
+    "bytes": 59,
+    "sanitized": false
   },
   {
     "path": "Assets/Scripts/QuitGame.cs",
     "sha256": "86e11f5efaf09ab6f85fe560fc91a99f3cafde8689f2829251bc89ce3cca7117",
-    "bytes": 229
+    "original_sha256": "86e11f5efaf09ab6f85fe560fc91a99f3cafde8689f2829251bc89ce3cca7117",
+    "bytes": 229,
+    "sanitized": false
   },
   {
     "path": "Assets/Scripts/QuitGame.cs.meta",
     "sha256": "dbf873d5272a12f648e8a772ce3f2943511a2598f735068606b27d4fb346a88a",
-    "bytes": 59
+    "original_sha256": "dbf873d5272a12f648e8a772ce3f2943511a2598f735068606b27d4fb346a88a",
+    "bytes": 59,
+    "sanitized": false
   },
   {
     "path": "Assets/Scripts/ScoreManager.cs",
     "sha256": "85ff1bcb18ea68f83c10966009359206e72c93a50dfd80c94623da6b60fa9a9c",
-    "bytes": 302
+    "original_sha256": "85ff1bcb18ea68f83c10966009359206e72c93a50dfd80c94623da6b60fa9a9c",
+    "bytes": 302,
+    "sanitized": false
   },
   {
     "path": "Assets/Scripts/ScoreManager.cs.meta",
     "sha256": "9faaafbcd885d7f88b3f53305750ae66fd4d7227f6c0f612d962196273cc6a8d",
-    "bytes": 59
+    "original_sha256": "9faaafbcd885d7f88b3f53305750ae66fd4d7227f6c0f612d962196273cc6a8d",
+    "bytes": 59,
+    "sanitized": false
   },
   {
     "path": "Assets/Scripts/StartGame.cs",
     "sha256": "625b36276887e52aed237ee53751402e31d2b136192f08fadda6371b8423ac97",
-    "bytes": 192
+    "original_sha256": "625b36276887e52aed237ee53751402e31d2b136192f08fadda6371b8423ac97",
+    "bytes": 192,
+    "sanitized": false
   },
   {
     "path": "Assets/Scripts/StartGame.cs.meta",
     "sha256": "03cad1b515a8c4da98dd73b68f1fb4ada9e03860c7dd5896d7a9d2d7561a4a01",
-    "bytes": 59
+    "original_sha256": "03cad1b515a8c4da98dd73b68f1fb4ada9e03860c7dd5896d7a9d2d7561a4a01",
+    "bytes": 59,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Scripts.meta",
+    "sha256": "1ed60f7ff0c63f1b1eca15c42f6379484dbf3ec6b38cefe82d8b9d5f87697792",
+    "original_sha256": "1ed60f7ff0c63f1b1eca15c42f6379484dbf3ec6b38cefe82d8b9d5f87697792",
+    "bytes": 172,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Settings/Build Profiles/New macOS Profile 1.asset",
+    "sha256": "0099619ffdc175cd2e8e1100333fc1c9871240c2419a4e091e2a8571a6dd2384",
+    "original_sha256": "0099619ffdc175cd2e8e1100333fc1c9871240c2419a4e091e2a8571a6dd2384",
+    "bytes": 1350,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Settings/Build Profiles/New macOS Profile 1.asset.meta",
+    "sha256": "f2f20714833c67e56805de2d31eca8eae1eebc75379037d3178e514725021089",
+    "original_sha256": "f2f20714833c67e56805de2d31eca8eae1eebc75379037d3178e514725021089",
+    "bytes": 189,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Settings/Build Profiles/New macOS Profile.asset",
+    "sha256": "a51c0fd47276ff64f783d41a2f8a08eed672da5a0a052fbce47710947fc43c0c",
+    "original_sha256": "a51c0fd47276ff64f783d41a2f8a08eed672da5a0a052fbce47710947fc43c0c",
+    "bytes": 1348,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Settings/Build Profiles/New macOS Profile.asset.meta",
+    "sha256": "cf478d2f30e5c7b852180cb2acda8ccd84b1975badb0d7d85d829e5d3c936e28",
+    "original_sha256": "cf478d2f30e5c7b852180cb2acda8ccd84b1975badb0d7d85d829e5d3c936e28",
+    "bytes": 189,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Settings/Build Profiles/New Windows Profile 1.asset",
+    "sha256": "c501cbc31fb07c9e4e573be4a8d5008456f268ce05da1af4140dab2070f1fa82",
+    "original_sha256": "c501cbc31fb07c9e4e573be4a8d5008456f268ce05da1af4140dab2070f1fa82",
+    "bytes": 1471,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Settings/Build Profiles/New Windows Profile 1.asset.meta",
+    "sha256": "807f885c95e0656874608bcc8ac2008b03279b8427af757a4d42c9d6b38f81dd",
+    "original_sha256": "807f885c95e0656874608bcc8ac2008b03279b8427af757a4d42c9d6b38f81dd",
+    "bytes": 189,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Settings/Build Profiles/New Windows Profile.asset",
+    "sha256": "a741224b907963857fb31e0ffe80cd98c4a324591ad21ddb16c54d1b7df17e87",
+    "original_sha256": "a741224b907963857fb31e0ffe80cd98c4a324591ad21ddb16c54d1b7df17e87",
+    "bytes": 1467,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Settings/Build Profiles/New Windows Profile.asset.meta",
+    "sha256": "7c623b22a3bc598a79427c6a90ff7da69fdea87efd7d33f6ee167216afaba557",
+    "original_sha256": "7c623b22a3bc598a79427c6a90ff7da69fdea87efd7d33f6ee167216afaba557",
+    "bytes": 189,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Settings/Build Profiles.meta",
+    "sha256": "7f68cb313840be886bad7d2a5a86d257f5a3e2d8a51a937f489459b29df60558",
+    "original_sha256": "7f68cb313840be886bad7d2a5a86d257f5a3e2d8a51a937f489459b29df60558",
+    "bytes": 172,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Settings/DefaultVolumeProfile.asset",
+    "sha256": "6698bfacfad479acfd9766d00aba81ab52527d3b15c8b133d03ed7a2401499d6",
+    "original_sha256": "6698bfacfad479acfd9766d00aba81ab52527d3b15c8b133d03ed7a2401499d6",
+    "bytes": 23987,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Settings/DefaultVolumeProfile.asset.meta",
+    "sha256": "efbcb026cee6b8e32fdf27018c06b0515296a6ccbb43969e792fea270310700a",
+    "original_sha256": "efbcb026cee6b8e32fdf27018c06b0515296a6ccbb43969e792fea270310700a",
+    "bytes": 189,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Settings/Mobile_Renderer.asset",
+    "sha256": "b4efbcfdf69acb1e1e25e8afff9ba99009cfc47eb0b05a284648c5448e4d846f",
+    "original_sha256": "b4efbcfdf69acb1e1e25e8afff9ba99009cfc47eb0b05a284648c5448e4d846f",
+    "bytes": 1713,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Settings/Mobile_Renderer.asset.meta",
+    "sha256": "a148ee2b4987b05b8ff7ae5f9bf84916184f77aefddc821dceb551f5a69f8179",
+    "original_sha256": "a148ee2b4987b05b8ff7ae5f9bf84916184f77aefddc821dceb551f5a69f8179",
+    "bytes": 189,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Settings/Mobile_RPAsset.asset",
+    "sha256": "24e5026151fb6b2d79196d69e2c3623e3238a1a6d39467db3c00df29acf2b8dd",
+    "original_sha256": "24e5026151fb6b2d79196d69e2c3623e3238a1a6d39467db3c00df29acf2b8dd",
+    "bytes": 4382,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Settings/Mobile_RPAsset.asset.meta",
+    "sha256": "53ea46647712c615fd1a3f2e0dddfa8559eeedc649e9a1dbf93ff913de28544c",
+    "original_sha256": "53ea46647712c615fd1a3f2e0dddfa8559eeedc649e9a1dbf93ff913de28544c",
+    "bytes": 189,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Settings/PC_Renderer.asset",
+    "sha256": "3d0b01d8ded3327263b6690be128a3de58d17c514943ae42fe743a3e084a9c79",
+    "original_sha256": "3d0b01d8ded3327263b6690be128a3de58d17c514943ae42fe743a3e084a9c79",
+    "bytes": 3439,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Settings/PC_Renderer.asset.meta",
+    "sha256": "b5df8ddb2708c6ed4c133a5ff9ee95a75cc20e4ee3ed6181366a61aedbaf31ec",
+    "original_sha256": "b5df8ddb2708c6ed4c133a5ff9ee95a75cc20e4ee3ed6181366a61aedbaf31ec",
+    "bytes": 189,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Settings/PC_RPAsset.asset",
+    "sha256": "842b931e93d12dde64242e03574fe385f65a7ece043a08a136ea3df181209d6b",
+    "original_sha256": "842b931e93d12dde64242e03574fe385f65a7ece043a08a136ea3df181209d6b",
+    "bytes": 4401,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Settings/PC_RPAsset.asset.meta",
+    "sha256": "bb469b9b6f318e9e9bed29c3b2e73e79371c04743c6f95dd6603941f1cd3e53e",
+    "original_sha256": "bb469b9b6f318e9e9bed29c3b2e73e79371c04743c6f95dd6603941f1cd3e53e",
+    "bytes": 189,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Settings/SampleSceneProfile.asset",
+    "sha256": "a8677d4bac051d24caa11cd622e39f968155ee277bfce132274f1de225692fe9",
+    "original_sha256": "a8677d4bac051d24caa11cd622e39f968155ee277bfce132274f1de225692fe9",
+    "bytes": 3703,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Settings/SampleSceneProfile.asset.meta",
+    "sha256": "2e23abc214069f0adbf2b2207f1db54be7876629ec2a3681d0f4aa5b61622ef0",
+    "original_sha256": "2e23abc214069f0adbf2b2207f1db54be7876629ec2a3681d0f4aa5b61622ef0",
+    "bytes": 182,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Settings/UniversalRenderPipelineGlobalSettings.asset",
+    "sha256": "6980ad5da0ffe14ecbbbe201db02f53f9029aecb851374e05dd44ef64607531d",
+    "original_sha256": "6980ad5da0ffe14ecbbbe201db02f53f9029aecb851374e05dd44ef64607531d",
+    "bytes": 15371,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Settings/UniversalRenderPipelineGlobalSettings.asset.meta",
+    "sha256": "f61661d8bc8dbe531daf09f6211ef978c7ba145c9207c8e76524396ae0722d7c",
+    "original_sha256": "f61661d8bc8dbe531daf09f6211ef978c7ba145c9207c8e76524396ae0722d7c",
+    "bytes": 189,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/Settings.meta",
+    "sha256": "73c8e19843240273facb0af6bdbf430d719e397aded705629594060ce25ce7ad",
+    "original_sha256": "73c8e19843240273facb0af6bdbf430d719e397aded705629594060ce25ce7ad",
+    "bytes": 172,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/STXINGKA SDF.asset",
+    "sha256": "b8ea514ec5f7d9c624bda0eaa61586a673d49f5066fa11e80708a6db86df80d0",
+    "original_sha256": "b8ea514ec5f7d9c624bda0eaa61586a673d49f5066fa11e80708a6db86df80d0",
+    "bytes": 7654,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/STXINGKA SDF.asset.meta",
+    "sha256": "101ac6c04fbef8cf16eee105483129a25b94d6a6d545d1887c3d2e8c8dedf3d1",
+    "original_sha256": "101ac6c04fbef8cf16eee105483129a25b94d6a6d545d1887c3d2e8c8dedf3d1",
+    "bytes": 189,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/STXINGKA.TTF",
+    "sha256": "7f901dfb0526d542740264fb5ba8dfe483293ad060270d273593e2f04a69d080",
+    "original_sha256": "7f901dfb0526d542740264fb5ba8dfe483293ad060270d273593e2f04a69d080",
+    "bytes": 4016288,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/STXINGKA.TTF.meta",
+    "sha256": "9dce825be6014910280ed6ca8f602c491e2c3ffdf49aaed27468babc18d6709c",
+    "original_sha256": "9dce825be6014910280ed6ca8f602c491e2c3ffdf49aaed27468babc18d6709c",
+    "bytes": 474,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Fonts/LiberationSans - OFL.txt",
+    "sha256": "37f8552e9a874ec10710dc0ede6a9adf168e6609fbd02a507f35629373b85a48",
+    "original_sha256": "37f8552e9a874ec10710dc0ede6a9adf168e6609fbd02a507f35629373b85a48",
+    "bytes": 4469,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Fonts/LiberationSans - OFL.txt.meta",
+    "sha256": "5dbec32c014c17d94674af5f1494d49b42ba00edd50397f895f088c868ccbf86",
+    "original_sha256": "5dbec32c014c17d94674af5f1494d49b42ba00edd50397f895f088c868ccbf86",
+    "bytes": 177,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Fonts/LiberationSans.ttf",
+    "sha256": "e5b0af421ea2bfbc1ac8d251d647268087ae82786234c57f757d1f0b90fa8b49",
+    "original_sha256": "e5b0af421ea2bfbc1ac8d251d647268087ae82786234c57f757d1f0b90fa8b49",
+    "bytes": 350200,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Fonts/LiberationSans.ttf.meta",
+    "sha256": "e2e35a015703584fb119355fa02631764d111c3e112d32519801d46bd697b596",
+    "original_sha256": "e2e35a015703584fb119355fa02631764d111c3e112d32519801d46bd697b596",
+    "bytes": 414,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Fonts.meta",
+    "sha256": "11e80153fa39b86efadb8917ecde12a0402fe0729f2c88f6f8d1999f3fb04748",
+    "original_sha256": "11e80153fa39b86efadb8917ecde12a0402fe0729f2c88f6f8d1999f3fb04748",
+    "bytes": 172,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Drop Shadow.mat",
+    "sha256": "b6b65c34e4907dd3006c2217fc8a4cef81b6da24df0a3de8e2288199eb6c5a9d",
+    "original_sha256": "b6b65c34e4907dd3006c2217fc8a4cef81b6da24df0a3de8e2288199eb6c5a9d",
+    "bytes": 2975,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Drop Shadow.mat.meta",
+    "sha256": "ef2eee63b288d47823da38109e3e8c879f4717a82dc662ac2d5e2460dacde698",
+    "original_sha256": "ef2eee63b288d47823da38109e3e8c879f4717a82dc662ac2d5e2460dacde698",
+    "bytes": 179,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset",
+    "sha256": "e2d77876f2b90d98ba2424f6fc32b1403ea701de8fd24a8fe8e571ecc3cdc10a",
+    "original_sha256": "e2d77876f2b90d98ba2424f6fc32b1403ea701de8fd24a8fe8e571ecc3cdc10a",
+    "bytes": 9365,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Fallback.asset.meta",
+    "sha256": "d6d86504040cf6e736767fda9bdef494afb06d5304384243e2dd703eba3a4a3d",
+    "original_sha256": "d6d86504040cf6e736767fda9bdef494afb06d5304384243e2dd703eba3a4a3d",
+    "bytes": 179,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Outline.mat",
+    "sha256": "25874340976d40e9f9e8abf731b7f32e5a478541dead9288140bd60c7a3287d9",
+    "original_sha256": "25874340976d40e9f9e8abf731b7f32e5a478541dead9288140bd60c7a3287d9",
+    "bytes": 2889,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF - Outline.mat.meta",
+    "sha256": "a8cf0ee9888a163e892368b4660b9c62a7375e7f8afdb8ee02e5c91ca1cdb355",
+    "original_sha256": "a8cf0ee9888a163e892368b4660b9c62a7375e7f8afdb8ee02e5c91ca1cdb355",
+    "bytes": 179,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset",
+    "sha256": "aeab92cadc178631272a7863e1f80cfba3e037f2293c029d977034f993ded479",
+    "original_sha256": "aeab92cadc178631272a7863e1f80cfba3e037f2293c029d977034f993ded479",
+    "bytes": 2264703,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Resources/Fonts & Materials/LiberationSans SDF.asset.meta",
+    "sha256": "37233890984555987cb585551bc885069f2849a9b0d1c2191af073b9376aa10f",
+    "original_sha256": "37233890984555987cb585551bc885069f2849a9b0d1c2191af073b9376aa10f",
+    "bytes": 179,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Resources/Fonts & Materials.meta",
+    "sha256": "8917470a9265beb1ef55a28c6a3718eb12ec8004554499998cc345056247995f",
+    "original_sha256": "8917470a9265beb1ef55a28c6a3718eb12ec8004554499998cc345056247995f",
+    "bytes": 191,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Resources/LineBreaking Following Characters.txt",
+    "sha256": "3a73e5ffe2510756dd3c2e982fdc1218b4be82c6e21abde88070d6860e1bc8e6",
+    "original_sha256": "3a73e5ffe2510756dd3c2e982fdc1218b4be82c6e21abde88070d6860e1bc8e6",
+    "bytes": 269,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Resources/LineBreaking Following Characters.txt.meta",
+    "sha256": "d5a86d8b7db6aa3ca6f4a63750eb94e0c42a64909b47d8c6c6f2565845534490",
+    "original_sha256": "d5a86d8b7db6aa3ca6f4a63750eb94e0c42a64909b47d8c6c6f2565845534490",
+    "bytes": 179,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Resources/LineBreaking Leading Characters.txt",
+    "sha256": "62d3f4d5f64aaf885692d2d13a8313f6918e6e4c5aeb3990a43f614652bfd89c",
+    "original_sha256": "62d3f4d5f64aaf885692d2d13a8313f6918e6e4c5aeb3990a43f614652bfd89c",
+    "bytes": 95,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Resources/LineBreaking Leading Characters.txt.meta",
+    "sha256": "6a925814d5e251a0ced6de210db2bacf2de29b4f0dc2991e85c908632e9565e4",
+    "original_sha256": "6a925814d5e251a0ced6de210db2bacf2de29b4f0dc2991e85c908632e9565e4",
+    "bytes": 179,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Resources/Sprite Assets/EmojiOne.asset",
+    "sha256": "155fff99f467baa93dd2d0886df466bd242cd5e3c8c60c9d43e9cdad269f7f54",
+    "original_sha256": "155fff99f467baa93dd2d0886df466bd242cd5e3c8c60c9d43e9cdad269f7f54",
+    "bytes": 13441,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Resources/Sprite Assets/EmojiOne.asset.meta",
+    "sha256": "097525b164260b0fb34b4e0c73b3187c693f4dfe2991f475b5b416dbf07dfbbc",
+    "original_sha256": "097525b164260b0fb34b4e0c73b3187c693f4dfe2991f475b5b416dbf07dfbbc",
+    "bytes": 179,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Resources/Sprite Assets.meta",
+    "sha256": "5605affac803b81f876f35577f075c9b7e5ea73cf812fdfcc74277bf0f40140e",
+    "original_sha256": "5605affac803b81f876f35577f075c9b7e5ea73cf812fdfcc74277bf0f40140e",
+    "bytes": 191,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Resources/Style Sheets/Default Style Sheet.asset",
+    "sha256": "93e073cdb91b7e3d2fa31e2dd13626d7b9d2f327904ba8c3c2b97a3eecfbabac",
+    "original_sha256": "93e073cdb91b7e3d2fa31e2dd13626d7b9d2f327904ba8c3c2b97a3eecfbabac",
+    "bytes": 5539,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Resources/Style Sheets/Default Style Sheet.asset.meta",
+    "sha256": "b832663ca09ec7af8c8e816fd91a718b2af6c21ab4f126fa818871ad53bce763",
+    "original_sha256": "b832663ca09ec7af8c8e816fd91a718b2af6c21ab4f126fa818871ad53bce763",
+    "bytes": 181,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Resources/Style Sheets.meta",
+    "sha256": "1fdf0423552f46284fb97894f36adcd34d32e595aaf5c7cf1ce38a2349faaf89",
+    "original_sha256": "1fdf0423552f46284fb97894f36adcd34d32e595aaf5c7cf1ce38a2349faaf89",
+    "bytes": 191,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Resources/TMP Settings.asset",
+    "sha256": "7be438062cdc296835a1258b68bcbeb8e9fdc4b01ea27c05a24a1074260f7424",
+    "original_sha256": "7be438062cdc296835a1258b68bcbeb8e9fdc4b01ea27c05a24a1074260f7424",
+    "bytes": 1852,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Resources/TMP Settings.asset.meta",
+    "sha256": "a65193b095ec3606789a3191751a837704cf52d4f461993ae7903024c6d43f45",
+    "original_sha256": "a65193b095ec3606789a3191751a837704cf52d4f461993ae7903024c6d43f45",
+    "bytes": 179,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Resources.meta",
+    "sha256": "167448559db07c9857b206a0f5a0aedcd6a6dad900d618b35b0702d636573805",
+    "original_sha256": "167448559db07c9857b206a0f5a0aedcd6a6dad900d618b35b0702d636573805",
+    "bytes": 172,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Shaders/SDFFunctions.hlsl",
+    "sha256": "88cf0f62e4000b71750c059d0886b19504cd1cf10f39bb61ddc11b77a882d417",
+    "original_sha256": "88cf0f62e4000b71750c059d0886b19504cd1cf10f39bb61ddc11b77a882d417",
+    "bytes": 6021,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Shaders/SDFFunctions.hlsl.meta",
+    "sha256": "e1d0c5347b3c55930759f5bc0985e11611a4b2ff22eef24523eb108687bd1642",
+    "original_sha256": "e1d0c5347b3c55930759f5bc0985e11611a4b2ff22eef24523eb108687bd1642",
+    "bytes": 230,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Shaders/TMP_Bitmap-Custom-Atlas.shader",
+    "sha256": "42892a52f22bdde6d482cf2da5f35e4b813063fc6fe42189eee5562080079494",
+    "original_sha256": "42892a52f22bdde6d482cf2da5f35e4b813063fc6fe42189eee5562080079494",
+    "bytes": 3836,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Shaders/TMP_Bitmap-Custom-Atlas.shader.meta",
+    "sha256": "91be1d5618a7da33c878e20cf2be3e13b897d4976c70bde0cda7a67dbd502cd2",
+    "original_sha256": "91be1d5618a7da33c878e20cf2be3e13b897d4976c70bde0cda7a67dbd502cd2",
+    "bytes": 204,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Shaders/TMP_Bitmap-Mobile.shader",
+    "sha256": "b50afc7edc8a710f8b4159149b2391e7238b5e4076cc0ea2119090ed29e13b4a",
+    "original_sha256": "b50afc7edc8a710f8b4159149b2391e7238b5e4076cc0ea2119090ed29e13b4a",
+    "bytes": 4071,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Shaders/TMP_Bitmap-Mobile.shader.meta",
+    "sha256": "7430f3e97ae1b46f34e1ca75508705bb7b944307c41dc568ea728011f327086d",
+    "original_sha256": "7430f3e97ae1b46f34e1ca75508705bb7b944307c41dc568ea728011f327086d",
+    "bytes": 204,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Shaders/TMP_Bitmap.shader",
+    "sha256": "1d32f34c71276c1321aa0540a2410e15808743a38b2026923045a4dec4a79b58",
+    "original_sha256": "1d32f34c71276c1321aa0540a2410e15808743a38b2026923045a4dec4a79b58",
+    "bytes": 3839,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Shaders/TMP_Bitmap.shader.meta",
+    "sha256": "3d462e6f8ba57f45dc5e6000020db066c36ed5a1a24f74f749727812373c2325",
+    "original_sha256": "3d462e6f8ba57f45dc5e6000020db066c36ed5a1a24f74f749727812373c2325",
+    "bytes": 204,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Shaders/TMP_SDF Overlay.shader",
+    "sha256": "a0d318756cba0f95a7052c387e629d0add3e9a4125c8333f1d1ed591af5f17cb",
+    "original_sha256": "a0d318756cba0f95a7052c387e629d0add3e9a4125c8333f1d1ed591af5f17cb",
+    "bytes": 11054,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Shaders/TMP_SDF Overlay.shader.meta",
+    "sha256": "fb8fc84b612e19c169cdf3596195b416e68d227a8987a0eaa90d8c137fb69797",
+    "original_sha256": "fb8fc84b612e19c169cdf3596195b416e68d227a8987a0eaa90d8c137fb69797",
+    "bytes": 204,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Shaders/TMP_SDF SSD.shader",
+    "sha256": "2a991951b00b0c052363a1025f655450054325437b3d13c2623a987c8ec77c30",
+    "original_sha256": "2a991951b00b0c052363a1025f655450054325437b3d13c2623a987c8ec77c30",
+    "bytes": 12438,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Shaders/TMP_SDF SSD.shader.meta",
+    "sha256": "bea74d576f181a8bb04b8cf02eedd0136540325ecb2824928a3aa52c75adcb13",
+    "original_sha256": "bea74d576f181a8bb04b8cf02eedd0136540325ecb2824928a3aa52c75adcb13",
+    "bytes": 204,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Shaders/TMP_SDF-HDRP LIT.shadergraph",
+    "sha256": "bf68062f68b38b588abd1c354f64e905f824d9a2c47f92ebdd70a32989eb2097",
+    "original_sha256": "bf68062f68b38b588abd1c354f64e905f824d9a2c47f92ebdd70a32989eb2097",
+    "bytes": 287427,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Shaders/TMP_SDF-HDRP LIT.shadergraph.meta",
+    "sha256": "d1b70558e8b974d918e13c010db6d375fef815ba530bc2421ab031aa3a784ee8",
+    "original_sha256": "d1b70558e8b974d918e13c010db6d375fef815ba530bc2421ab031aa3a784ee8",
+    "bytes": 285,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Shaders/TMP_SDF-HDRP UNLIT.shadergraph",
+    "sha256": "8a969c2d775079cce4e1c45d5eb6d3964b27d44dc884178363050c74fd5e9742",
+    "original_sha256": "8a969c2d775079cce4e1c45d5eb6d3964b27d44dc884178363050c74fd5e9742",
+    "bytes": 279909,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Shaders/TMP_SDF-HDRP UNLIT.shadergraph.meta",
+    "sha256": "8cd498ce8f6ed2e7c0560d605eb912455cd6fdaf09a4d545d9743f63b3426bd0",
+    "original_sha256": "8cd498ce8f6ed2e7c0560d605eb912455cd6fdaf09a4d545d9743f63b3426bd0",
+    "bytes": 285,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Masking.shader",
+    "sha256": "41cff58473557bf760d03513a8c098f43a24e4eeb4c8ccd7d828c045a338a9ed",
+    "original_sha256": "41cff58473557bf760d03513a8c098f43a24e4eeb4c8ccd7d828c045a338a9ed",
+    "bytes": 8273,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Masking.shader.meta",
+    "sha256": "3744d078f9a8b6d3c5d9bca51e43f9223544fcafaf9396e121f49ea84a0609d3",
+    "original_sha256": "3744d078f9a8b6d3c5d9bca51e43f9223544fcafaf9396e121f49ea84a0609d3",
+    "bytes": 204,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Overlay.shader",
+    "sha256": "fb286386d0592ce6d63eb736f180b4b0f638ec538b0855aa54767a438ebd1173",
+    "original_sha256": "fb286386d0592ce6d63eb736f180b4b0f638ec538b0855aa54767a438ebd1173",
+    "bytes": 8081,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile Overlay.shader.meta",
+    "sha256": "1eeca1536c7506f79d4d877b866a5fb88db8f402634e091b6d78aa9d21c9d18b",
+    "original_sha256": "1eeca1536c7506f79d4d877b866a5fb88db8f402634e091b6d78aa9d21c9d18b",
+    "bytes": 204,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile SSD.shader",
+    "sha256": "8b30c140f6af9134392fe6ecf4c0676db73f873489ac52adfb47bbd288cb51b8",
+    "original_sha256": "8b30c140f6af9134392fe6ecf4c0676db73f873489ac52adfb47bbd288cb51b8",
+    "bytes": 3064,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile SSD.shader.meta",
+    "sha256": "e3412891b9306b017e60cba4ae4f6d258ee8b161d986dcde9cefb3d60345514d",
+    "original_sha256": "e3412891b9306b017e60cba4ae4f6d258ee8b161d986dcde9cefb3d60345514d",
+    "bytes": 204,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile-2-Pass.shader",
+    "sha256": "4bc2db64befbd0e37e23539f21096ad2fcd9d61b36d2174d208a7d831a0883f7",
+    "original_sha256": "4bc2db64befbd0e37e23539f21096ad2fcd9d61b36d2174d208a7d831a0883f7",
+    "bytes": 11795,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile-2-Pass.shader.meta",
+    "sha256": "65ecbce6f1621f2d7ddc5e6004dda5e55e1f58ec6e01178f3691e1e81e01de55",
+    "original_sha256": "65ecbce6f1621f2d7ddc5e6004dda5e55e1f58ec6e01178f3691e1e81e01de55",
+    "bytes": 204,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile.shader",
+    "sha256": "44c39aabc7e88e7e1feffc1880df754f4adf86b62e9512aa89e9d2d65171aff4",
+    "original_sha256": "44c39aabc7e88e7e1feffc1880df754f4adf86b62e9512aa89e9d2d65171aff4",
+    "bytes": 8074,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Shaders/TMP_SDF-Mobile.shader.meta",
+    "sha256": "f2112f50c72762d4e6731391495ea11f76975d677b698e9bcfdd38275ea18f9d",
+    "original_sha256": "f2112f50c72762d4e6731391495ea11f76975d677b698e9bcfdd38275ea18f9d",
+    "bytes": 204,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Shaders/TMP_SDF-Surface-Mobile.shader",
+    "sha256": "f9fae5906dd37d89298338953294459975de58a5421e68dd9e82a79794b95509",
+    "original_sha256": "f9fae5906dd37d89298338953294459975de58a5421e68dd9e82a79794b95509",
+    "bytes": 3523,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Shaders/TMP_SDF-Surface-Mobile.shader.meta",
+    "sha256": "95aa060f371ee503a22c0a0b018e029c0328bd82b9317feaa784432b0a787343",
+    "original_sha256": "95aa060f371ee503a22c0a0b018e029c0328bd82b9317feaa784432b0a787343",
+    "bytes": 204,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Shaders/TMP_SDF-Surface.shader",
+    "sha256": "5dadb68b56429547918b392626e9af8fd5173936d20bb43cfca58dfa00947257",
+    "original_sha256": "5dadb68b56429547918b392626e9af8fd5173936d20bb43cfca58dfa00947257",
+    "bytes": 4353,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Shaders/TMP_SDF-Surface.shader.meta",
+    "sha256": "42439f5ac7491998f562e8ede73d64c3512953eb99fb1b49e833f5d9999a7660",
+    "original_sha256": "42439f5ac7491998f562e8ede73d64c3512953eb99fb1b49e833f5d9999a7660",
+    "bytes": 204,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Shaders/TMP_SDF-URP Lit.shadergraph",
+    "sha256": "e0148ce8e5904232a4e711376a45b7af2a007fb9690c5a69c1cb4952a696cdbf",
+    "original_sha256": "e0148ce8e5904232a4e711376a45b7af2a007fb9690c5a69c1cb4952a696cdbf",
+    "bytes": 283866,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Shaders/TMP_SDF-URP Lit.shadergraph.meta",
+    "sha256": "4c36abf5f2611c9d2cb04e7da8c30e42077503a17cb218020e171b6d3ff664f7",
+    "original_sha256": "4c36abf5f2611c9d2cb04e7da8c30e42077503a17cb218020e171b6d3ff664f7",
+    "bytes": 285,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Shaders/TMP_SDF-URP Unlit.shadergraph",
+    "sha256": "dc15b6819ad87a4b34ed888ae2c274624efc0ada902d1a9e7752d87922414dcc",
+    "original_sha256": "dc15b6819ad87a4b34ed888ae2c274624efc0ada902d1a9e7752d87922414dcc",
+    "bytes": 277012,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Shaders/TMP_SDF-URP Unlit.shadergraph.meta",
+    "sha256": "f1ef815e2672fd770f47ee424c64f7ecdbdc642b7475828c29db032586aa10b6",
+    "original_sha256": "f1ef815e2672fd770f47ee424c64f7ecdbdc642b7475828c29db032586aa10b6",
+    "bytes": 285,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Shaders/TMP_SDF.shader",
+    "sha256": "10efe6d4728474a09970b857faf37913793e168dc13dbd4d7316b54b37615d97",
+    "original_sha256": "10efe6d4728474a09970b857faf37913793e168dc13dbd4d7316b54b37615d97",
+    "bytes": 11027,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Shaders/TMP_SDF.shader.meta",
+    "sha256": "0897fb06d170043fffa2d28783b347bbaee87a3f09f08374ca44b2c3848697d6",
+    "original_sha256": "0897fb06d170043fffa2d28783b347bbaee87a3f09f08374ca44b2c3848697d6",
+    "bytes": 204,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Shaders/TMP_Sprite.shader",
+    "sha256": "af669bb9ae136c8099f8e0a94a6933fd2f1e1fb0a6842129939a319fab4b8dbb",
+    "original_sha256": "af669bb9ae136c8099f8e0a94a6933fd2f1e1fb0a6842129939a319fab4b8dbb",
+    "bytes": 3446,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Shaders/TMP_Sprite.shader.meta",
+    "sha256": "9609584c5249687f3765f0018a93dfd6445c7e35d5aee4e87556f111c8852819",
+    "original_sha256": "9609584c5249687f3765f0018a93dfd6445c7e35d5aee4e87556f111c8852819",
+    "bytes": 204,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Shaders/TMPro.cginc",
+    "sha256": "14edb7d7b88caf2b82cae68200abe895e5b5b3474c3fffbf0e9b4b09a4e2467e",
+    "original_sha256": "14edb7d7b88caf2b82cae68200abe895e5b5b3474c3fffbf0e9b4b09a4e2467e",
+    "bytes": 2277,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Shaders/TMPro.cginc.meta",
+    "sha256": "a9cf9d5431b809e36b8ffff4377b5ebda7d386a36d48838cd134bc09f3caec6c",
+    "original_sha256": "a9cf9d5431b809e36b8ffff4377b5ebda7d386a36d48838cd134bc09f3caec6c",
+    "bytes": 215,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Shaders/TMPro_Mobile.cginc",
+    "sha256": "d9d43ddd9810476162f21b42477d9ce2cdc4e6cc7571d354c3253aafc6673ead",
+    "original_sha256": "d9d43ddd9810476162f21b42477d9ce2cdc4e6cc7571d354c3253aafc6673ead",
+    "bytes": 5453,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Shaders/TMPro_Mobile.cginc.meta",
+    "sha256": "2e16fa15ef884a60a402d8b696f8b09e5315cbb468ba223d256030c7fe2b0667",
+    "original_sha256": "2e16fa15ef884a60a402d8b696f8b09e5315cbb468ba223d256030c7fe2b0667",
+    "bytes": 204,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Shaders/TMPro_Properties.cginc",
+    "sha256": "66db1f03e8d7a413eba79bcb6602fdb2de710b586f34a6f2584ed6f68f028e90",
+    "original_sha256": "66db1f03e8d7a413eba79bcb6602fdb2de710b586f34a6f2584ed6f68f028e90",
+    "bytes": 2707,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Shaders/TMPro_Properties.cginc.meta",
+    "sha256": "edace33591894d86d9a4144466fb3606e538d3341030fe22f908551755120ea5",
+    "original_sha256": "edace33591894d86d9a4144466fb3606e538d3341030fe22f908551755120ea5",
+    "bytes": 204,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Shaders/TMPro_Surface.cginc",
+    "sha256": "244b442520282a66363d121c8d2aeeb30bb1e72cbbadbf41ce68d9100322ade5",
+    "original_sha256": "244b442520282a66363d121c8d2aeeb30bb1e72cbbadbf41ce68d9100322ade5",
+    "bytes": 3515,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Shaders/TMPro_Surface.cginc.meta",
+    "sha256": "247746f3a4e39dd24d1ad99e4fae03ae8976586307948b2846529a876dcb0a63",
+    "original_sha256": "247746f3a4e39dd24d1ad99e4fae03ae8976586307948b2846529a876dcb0a63",
+    "bytes": 204,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Shaders.meta",
+    "sha256": "c109eb7e331affedb377f7051df3d4881f8529b65f9593234585713e6e94ed30",
+    "original_sha256": "c109eb7e331affedb377f7051df3d4881f8529b65f9593234585713e6e94ed30",
+    "bytes": 172,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Sprites/EmojiOne Attribution.txt",
+    "sha256": "4b65f8960e4f4c5c8b35fd139e369265e9bb45667fc16461b2ba01188d464d93",
+    "original_sha256": "4b65f8960e4f4c5c8b35fd139e369265e9bb45667fc16461b2ba01188d464d93",
+    "bytes": 185,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Sprites/EmojiOne Attribution.txt.meta",
+    "sha256": "9fffc8ac513116b8ac394d86d81ca9ac4ec52ee92c63c114d355808384ea16fc",
+    "original_sha256": "9fffc8ac513116b8ac394d86d81ca9ac4ec52ee92c63c114d355808384ea16fc",
+    "bytes": 158,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Sprites/EmojiOne.json",
+    "sha256": "b85c4b3001b6ba82d175f4cd5dab83da467bbc2527d3d447b66919d2d20c4faf",
+    "original_sha256": "b85c4b3001b6ba82d175f4cd5dab83da467bbc2527d3d447b66919d2d20c4faf",
+    "bytes": 3966,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Sprites/EmojiOne.json.meta",
+    "sha256": "ac2c551b5bc7f7d636d54ded634dfc3493e249567283b2efc06d1299f9360061",
+    "original_sha256": "ac2c551b5bc7f7d636d54ded634dfc3493e249567283b2efc06d1299f9360061",
+    "bytes": 177,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Sprites/EmojiOne.png",
+    "sha256": "a87b965a701de3dc31d7401e542b1fc946587f912c51d7a26e46ade9f098bd1a",
+    "original_sha256": "a87b965a701de3dc31d7401e542b1fc946587f912c51d7a26e46ade9f098bd1a",
+    "bytes": 112319,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Sprites/EmojiOne.png.meta",
+    "sha256": "eb63c0321658b980b138ce5f675d44689b8c7144df43976931e132e7706d1e1a",
+    "original_sha256": "eb63c0321658b980b138ce5f675d44689b8c7144df43976931e132e7706d1e1a",
+    "bytes": 9784,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro/Sprites.meta",
+    "sha256": "41e002b97ba2235689fba502d1ee4419f50ea0095cd3632cdc50bc90ca8a94de",
+    "original_sha256": "41e002b97ba2235689fba502d1ee4419f50ea0095cd3632cdc50bc90ca8a94de",
+    "bytes": 172,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TextMesh Pro.meta",
+    "sha256": "8529d84d190a68aeb1a16e0a90308081bd30a738dbcc63c63b2a93c53b9a11b3",
+    "original_sha256": "8529d84d190a68aeb1a16e0a90308081bd30a738dbcc63c63b2a93c53b9a11b3",
+    "bytes": 172,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TutorialInfo/Icons/URP.png",
+    "sha256": "1d17a9ff3537859abe2c008603d29d90cf43191ae77aa386167cc65e53ba03d9",
+    "original_sha256": "1d17a9ff3537859abe2c008603d29d90cf43191ae77aa386167cc65e53ba03d9",
+    "bytes": 24069,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TutorialInfo/Icons/URP.png.meta",
+    "sha256": "b330f1fcfc4e6ceccc95fc34a38434141603469b135633e1c4e8a03c19f9fdbc",
+    "original_sha256": "b330f1fcfc4e6ceccc95fc34a38434141603469b135633e1c4e8a03c19f9fdbc",
+    "bytes": 3156,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TutorialInfo/Icons.meta",
+    "sha256": "546e7d7af6b4d5e17d284c8f1188d05472e681911b8359905ee9b9e20769a106",
+    "original_sha256": "546e7d7af6b4d5e17d284c8f1188d05472e681911b8359905ee9b9e20769a106",
+    "bytes": 193,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TutorialInfo/Layout.wlt",
+    "sha256": "30d232879ca5c0c7377f245c9601feaf77053e5d70c222419ef25782e3272d2c",
+    "original_sha256": "30d232879ca5c0c7377f245c9601feaf77053e5d70c222419ef25782e3272d2c",
+    "bytes": 16133,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TutorialInfo/Layout.wlt.meta",
+    "sha256": "b8745a251df078ffa75dbaac0c4c6debecb61ab306b5b119a490ce6c635a11d8",
+    "original_sha256": "b8745a251df078ffa75dbaac0c4c6debecb61ab306b5b119a490ce6c635a11d8",
+    "bytes": 176,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TutorialInfo/Scripts/Editor/ReadmeEditor.cs",
+    "sha256": "b1b509be41113e31b8ee3c30ca0a00aaf006fdcae69aac749899eed2c4cc4a7d",
+    "original_sha256": "b1b509be41113e31b8ee3c30ca0a00aaf006fdcae69aac749899eed2c4cc4a7d",
+    "bytes": 6919,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TutorialInfo/Scripts/Editor/ReadmeEditor.cs.meta",
+    "sha256": "f59080b424c16fa13edd105bf006fdbad98c11fce0c921043e63c8877f144cd9",
+    "original_sha256": "f59080b424c16fa13edd105bf006fdbad98c11fce0c921043e63c8877f144cd9",
+    "bytes": 264,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TutorialInfo/Scripts/Editor.meta",
+    "sha256": "7036bdbc8af05799b5fd508484343b35c28a68b390198da4673d34357d7d667f",
+    "original_sha256": "7036bdbc8af05799b5fd508484343b35c28a68b390198da4673d34357d7d667f",
+    "bytes": 193,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TutorialInfo/Scripts/Readme.cs",
+    "sha256": "baa133f5baae44c1217e10c64061f8fb7d56878477339d746470502165d35019",
+    "original_sha256": "baa133f5baae44c1217e10c64061f8fb7d56878477339d746470502165d35019",
+    "bytes": 318,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TutorialInfo/Scripts/Readme.cs.meta",
+    "sha256": "80a3df9969fab6e656583ee9bbca884d0507e2b7de3417f6ea3118fba901cd60",
+    "original_sha256": "80a3df9969fab6e656583ee9bbca884d0507e2b7de3417f6ea3118fba901cd60",
+    "bytes": 317,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TutorialInfo/Scripts.meta",
+    "sha256": "930d0c8276cea1559a3e315f8500ea6ca8b58d980eee3b44aaa1d461742c47e0",
+    "original_sha256": "930d0c8276cea1559a3e315f8500ea6ca8b58d980eee3b44aaa1d461742c47e0",
+    "bytes": 193,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/TutorialInfo.meta",
+    "sha256": "07f022e5932c833d026e020b27d73452ebd781993b616d76003494af1e140946",
+    "original_sha256": "07f022e5932c833d026e020b27d73452ebd781993b616d76003494af1e140946",
+    "bytes": 172,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/\u7262\u5927\u7684\u5c0f\u66f2_\u7231\u7ed9\u7f51_aigei_com.mp3",
+    "sha256": "c2b3deaf497a40beacde0fc2ef5ea99c5752c19af044f4b457afa7d1ffcce21a",
+    "original_sha256": "c2b3deaf497a40beacde0fc2ef5ea99c5752c19af044f4b457afa7d1ffcce21a",
+    "bytes": 1589494,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/\u7262\u5927\u7684\u5c0f\u66f2_\u7231\u7ed9\u7f51_aigei_com.mp3.meta",
+    "sha256": "0d036e3549a5589c78dfad56dabcd03f09ffa696641d34269e2ee16a7201e464",
+    "original_sha256": "0d036e3549a5589c78dfad56dabcd03f09ffa696641d34269e2ee16a7201e464",
+    "bytes": 485,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/\u7537\u4ebaman1_\u7231\u7ed9\u7f51_aigei_com.mp3",
+    "sha256": "dbe82f9e48a0573d8b804f3da04e45b591eafb6ec54086bd095ab14f8f802c81",
+    "original_sha256": "dbe82f9e48a0573d8b804f3da04e45b591eafb6ec54086bd095ab14f8f802c81",
+    "bytes": 30322,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/\u7537\u4ebaman1_\u7231\u7ed9\u7f51_aigei_com.mp3.meta",
+    "sha256": "9a28eee784ba2ec57702af0bc56d3ab5a055d827fe4b80650bee82cc89e20cd5",
+    "original_sha256": "9a28eee784ba2ec57702af0bc56d3ab5a055d827fe4b80650bee82cc89e20cd5",
+    "bytes": 485,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/\u79d1\u6bd4 \u66fc\u5df4out_\u7231\u7ed9\u7f51_aigei_com.mp3",
+    "sha256": "bbb9c2edfbd8ae553abd6420b5e2ebbcd943632eae4daa33dee6d4b1a6013687",
+    "original_sha256": "bbb9c2edfbd8ae553abd6420b5e2ebbcd943632eae4daa33dee6d4b1a6013687",
+    "bytes": 13590,
+    "sanitized": false
+  },
+  {
+    "path": "Assets/\u79d1\u6bd4 \u66fc\u5df4out_\u7231\u7ed9\u7f51_aigei_com.mp3.meta",
+    "sha256": "9575d8a9e3d37ea64d50fd4ab9c783574172738e69a593467d0577c5dfbeb4d3",
+    "original_sha256": "9575d8a9e3d37ea64d50fd4ab9c783574172738e69a593467d0577c5dfbeb4d3",
+    "bytes": 485,
+    "sanitized": false
+  },
+  {
+    "path": "Packages/manifest.json",
+    "sha256": "1dc6afcd09bf492a6b701a48663721a0b7ca00c322e0e7c2b05766ec4b255fbe",
+    "original_sha256": "1dc6afcd09bf492a6b701a48663721a0b7ca00c322e0e7c2b05766ec4b255fbe",
+    "bytes": 2011,
+    "sanitized": false
+  },
+  {
+    "path": "Packages/packages-lock.json",
+    "sha256": "0a88a1b31f115ecd5baaa7c3d6c9b176764ccc8675da325534cb2bf45490311d",
+    "original_sha256": "0a88a1b31f115ecd5baaa7c3d6c9b176764ccc8675da325534cb2bf45490311d",
+    "bytes": 13148,
+    "sanitized": false
+  },
+  {
+    "path": "ProjectSettings/AudioManager.asset",
+    "sha256": "aeedeb3243f07b61dbbe854aa08b5ef6f0b5274dd9852ad9f6129dde3e105a31",
+    "original_sha256": "aeedeb3243f07b61dbbe854aa08b5ef6f0b5274dd9852ad9f6129dde3e105a31",
+    "bytes": 413,
+    "sanitized": false
+  },
+  {
+    "path": "ProjectSettings/ClusterInputManager.asset",
+    "sha256": "40e65dd214bf254955d2c8829ca8ce2130fd3510485560ce012e9a1ddd93e623",
+    "original_sha256": "40e65dd214bf254955d2c8829ca8ce2130fd3510485560ce012e9a1ddd93e623",
+    "bytes": 114,
+    "sanitized": false
+  },
+  {
+    "path": "ProjectSettings/DynamicsManager.asset",
+    "sha256": "f1395cca0718f1d84bb2a4e3019831385d3990b04844c61457acc3c9165561cc",
+    "original_sha256": "f1395cca0718f1d84bb2a4e3019831385d3990b04844c61457acc3c9165561cc",
+    "bytes": 1287,
+    "sanitized": false
+  },
+  {
+    "path": "ProjectSettings/EditorBuildSettings.asset",
+    "sha256": "d33334837cff5403af002dfc2e7b30f1a81e4437dafae6aa803734c2d6eb46af",
+    "original_sha256": "d33334837cff5403af002dfc2e7b30f1a81e4437dafae6aa803734c2d6eb46af",
+    "bytes": 601,
+    "sanitized": false
+  },
+  {
+    "path": "ProjectSettings/EditorSettings.asset",
+    "sha256": "e604d57e55c4533bbcf097da9e8c564aa5393f186bc793d01d60e0c3194b4847",
+    "original_sha256": "e604d57e55c4533bbcf097da9e8c564aa5393f186bc793d01d60e0c3194b4847",
+    "bytes": 1518,
+    "sanitized": false
+  },
+  {
+    "path": "ProjectSettings/GraphicsSettings.asset",
+    "sha256": "56c816bd980ca4b9c5a33f5ef233bcaea6c08505a1af65ac5e5e633ce8bad6fe",
+    "original_sha256": "56c816bd980ca4b9c5a33f5ef233bcaea6c08505a1af65ac5e5e633ce8bad6fe",
+    "bytes": 2554,
+    "sanitized": false
+  },
+  {
+    "path": "ProjectSettings/InputManager.asset",
+    "sha256": "7a1bb836a1008d26d0860d143e9d9df7ca41731d30a72901b518063819c62df2",
+    "original_sha256": "7a1bb836a1008d26d0860d143e9d9df7ca41731d30a72901b518063819c62df2",
+    "bytes": 9731,
+    "sanitized": false
+  },
+  {
+    "path": "ProjectSettings/MemorySettings.asset",
+    "sha256": "1e8379a461b10ae09f3f696911088c16875d63e87ed5f2d95df9e1892703f9fd",
+    "original_sha256": "1e8379a461b10ae09f3f696911088c16875d63e87ed5f2d95df9e1892703f9fd",
+    "bytes": 1192,
+    "sanitized": false
+  },
+  {
+    "path": "ProjectSettings/MultiplayerManager.asset",
+    "sha256": "aba89fd1a1ddad182727ad82727e536d27372e90328a8196da2a4560398983dd",
+    "original_sha256": "aba89fd1a1ddad182727ad82727e536d27372e90328a8196da2a4560398983dd",
+    "bytes": 157,
+    "sanitized": false
+  },
+  {
+    "path": "ProjectSettings/NavMeshAreas.asset",
+    "sha256": "80106cfa7e6181a1928b142c075f3e510d527441e3d79bc83590e4ac91e7cd66",
+    "original_sha256": "80106cfa7e6181a1928b142c075f3e510d527441e3d79bc83590e4ac91e7cd66",
+    "bytes": 1308,
+    "sanitized": false
+  },
+  {
+    "path": "ProjectSettings/PackageManagerSettings.asset",
+    "sha256": "a7dabba589abe7fc2b45bd3d3fba3fe9be97043492703f716da2d9131c13a807",
+    "original_sha256": "a7dabba589abe7fc2b45bd3d3fba3fe9be97043492703f716da2d9131c13a807",
+    "bytes": 1003,
+    "sanitized": false
+  },
+  {
+    "path": "ProjectSettings/Physics2DSettings.asset",
+    "sha256": "e3cbdbf0be15244b7b67d2f07bdb8e8981911c11a8c7fe8035f5261272fec658",
+    "original_sha256": "e3cbdbf0be15244b7b67d2f07bdb8e8981911c11a8c7fe8035f5261272fec658",
+    "bytes": 2028,
+    "sanitized": false
+  },
+  {
+    "path": "ProjectSettings/PresetManager.asset",
+    "sha256": "29c125923fe6e29f90190d4fce1c82d660e7051546e2c9d02908d18c9cf2436c",
+    "original_sha256": "29c125923fe6e29f90190d4fce1c82d660e7051546e2c9d02908d18c9cf2436c",
+    "bytes": 146,
+    "sanitized": false
+  },
+  {
+    "path": "ProjectSettings/ProjectSettings.asset",
+    "sha256": "d812e033e8f87ff3e739f359c93cb3da897b9358cb49f087dd4039649c45b28a",
+    "original_sha256": "2ef65af5741a6920e0c6a0d33e877543efbe572728ffa3ea043bf5b6211fbd60",
+    "bytes": 26075,
+    "sanitized": true
   },
   {
     "path": "ProjectSettings/ProjectVersion.txt",
     "sha256": "9cff2bddd3015855b632b952724165f400d6902a4e0665254666179ee2b33d99",
-    "bytes": 85
+    "original_sha256": "9cff2bddd3015855b632b952724165f400d6902a4e0665254666179ee2b33d99",
+    "bytes": 85,
+    "sanitized": false
+  },
+  {
+    "path": "ProjectSettings/QualitySettings.asset",
+    "sha256": "6814d6cc3eb850dd7d2a069a8b17ba9f7591deba8b1758a855978bd9c8627643",
+    "original_sha256": "6814d6cc3eb850dd7d2a069a8b17ba9f7591deba8b1758a855978bd9c8627643",
+    "bytes": 3662,
+    "sanitized": false
+  },
+  {
+    "path": "ProjectSettings/SceneTemplateSettings.json",
+    "sha256": "bb9098b3bfcde78d93e264b96f7b77b5430e64e8c57a7aad7f5a5d9c3945e16a",
+    "original_sha256": "bb9098b3bfcde78d93e264b96f7b77b5430e64e8c57a7aad7f5a5d9c3945e16a",
+    "bytes": 3535,
+    "sanitized": false
+  },
+  {
+    "path": "ProjectSettings/ShaderGraphSettings.asset",
+    "sha256": "773803237466ffe9bbfed9ecef9bbe25f63196dd47ab6b3003f0cd1649fd2bd0",
+    "original_sha256": "773803237466ffe9bbfed9ecef9bbe25f63196dd47ab6b3003f0cd1649fd2bd0",
+    "bytes": 524,
+    "sanitized": false
+  },
+  {
+    "path": "ProjectSettings/TagManager.asset",
+    "sha256": "494245c8e19c063fb5bebe8167d50cf6e9e167eca75927a015a97944f3c138dc",
+    "original_sha256": "494245c8e19c063fb5bebe8167d50cf6e9e167eca75927a015a97944f3c138dc",
+    "bytes": 564,
+    "sanitized": false
+  },
+  {
+    "path": "ProjectSettings/TimeManager.asset",
+    "sha256": "1a83e54adbbda7c9f4851103a0c6ab7f6448a3343d4ea5b7620452fa08416ecd",
+    "original_sha256": "1a83e54adbbda7c9f4851103a0c6ab7f6448a3343d4ea5b7620452fa08416ecd",
+    "bytes": 202,
+    "sanitized": false
+  },
+  {
+    "path": "ProjectSettings/UnityConnectSettings.asset",
+    "sha256": "d6034acbef6c9e3179866486c31eab81fcbe5e7ed350ce71e0fa2b1449b77109",
+    "original_sha256": "d6034acbef6c9e3179866486c31eab81fcbe5e7ed350ce71e0fa2b1449b77109",
+    "bytes": 943,
+    "sanitized": false
+  },
+  {
+    "path": "ProjectSettings/URPProjectSettings.asset",
+    "sha256": "a3a626cb529ccfc0a82e388b8cd32bc60888f7226c33412fad3bc50aba802cd7",
+    "original_sha256": "a3a626cb529ccfc0a82e388b8cd32bc60888f7226c33412fad3bc50aba802cd7",
+    "bytes": 410,
+    "sanitized": false
+  },
+  {
+    "path": "ProjectSettings/VersionControlSettings.asset",
+    "sha256": "e7bda45bf7a394745fee1316e6c71fa676004d591ad1f3aa247fd3e4ceb86071",
+    "original_sha256": "e7bda45bf7a394745fee1316e6c71fa676004d591ad1f3aa247fd3e4ceb86071",
+    "bytes": 188,
+    "sanitized": false
+  },
+  {
+    "path": "ProjectSettings/VFXManager.asset",
+    "sha256": "f066c6483919961332415ee64204f74fe52f38c02e82892eb02b7a5b2e381f0e",
+    "original_sha256": "f066c6483919961332415ee64204f74fe52f38c02e82892eb02b7a5b2e381f0e",
+    "bytes": 308,
+    "sanitized": false
+  },
+  {
+    "path": "ProjectSettings/XRSettings.asset",
+    "sha256": "edd2beb4a2e388312b4b7da241aa51070434005d82c59363f1237dd2e567585f",
+    "original_sha256": "edd2beb4a2e388312b4b7da241aa51070434005d82c59363f1237dd2e567585f",
+    "bytes": 158,
+    "sanitized": false
   }
 ]
