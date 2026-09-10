@@ -10,10 +10,12 @@ Expected public URL: https://gjinge.github.io/Personal_Website/
 index.html                  Page content and metadata
 projects/index.html         Main project cards at /projects/
 projects/unity/index.html   Unity overview: two games and grouped code notes
+projects/fpga-gomoku/index.html  FPGA Gomoku (VHDL) project page
 projects/*/index.html       Game details and redirects for former exercise pages
 projects.html, unity-*.html  Redirects for older project URLs
 source/unity/               Project Assets, Packages, ProjectSettings, and manifests
-assets/downloads/           Per-project Unity source ZIPs
+source/fpga-gomoku/         VHDL sources, constraints, .coe image data, Vivado reports, bitstream, project file
+assets/downloads/           Per-project source ZIPs and the FPGA project report
 photography.html            Photo collections and fullscreen viewer
 social.html                 Personal social accounts and channels
 reading.html                Searchable reading notes index
@@ -83,6 +85,10 @@ window.portfolio = {
 - Photos and account cards require JavaScript for rendering; an explanatory message is shown when it is disabled.
 
 ## Unity projects
+
+`projects/` lists one card per main project. **FPGA Gomoku** (`projects/fpga-gomoku/`) is a four-person Digital System Design course project in VHDL: 640x480 VGA rendering, PS/2 mouse input, a 15x15 board held in two 225-bit vectors, undo via a move stack, win detection, and a heuristic AI opponent, targeting a Nexys 4 DDR board (Artix-7 `xc7a100tcsg324-1`, Vivado 2020.2, top module `vga_ctrl`). The page carries two photographs of the VGA output, the module and implementation tables, an AI scoring excerpt, a link to `source/fpga-gomoku/`, a source ZIP, and the project report.
+
+Resource, timing, and power figures on that page are read from the Vivado reports of the final build in `source/fpga-gomoku/reports/`, which includes the start-screen image ROM; the written report analyses an earlier build and its tables differ. Source comments were originally GBK and are stored here converted to UTF-8, logic unchanged. The Block Memory Generator IP is not committed and is re-created from `source/fpga-gomoku/ip/fmxxx_rgb444.coe`. The report PDF is published with the four authors credited and their student ID numbers removed from page 1; that page is therefore a rendered image while pages 2-5 remain text. Third-party Gomoku projects collected as course reference material are not included.
 
 The Projects navigation opens `projects/`, where Unity Game Development is one main project with the original Apple Picker gameplay image as its cover. The cover and title open `projects/unity/`. This overview links to the two game pages, `projects/apple-picker/` and `projects/mission-demolition/`, and groups Collections, Hello World, and Boids under Code & scene notes. These exercises have collapsible code excerpts, file links, and ZIP downloads rather than standalone project cards.
 

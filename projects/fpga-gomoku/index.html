@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="dark light">
+  <meta name="theme-color" content="#080d17">
+  <title>FPGA Gomoku | Jinge Guo</title>
+  <meta name="description" content="A hardware Gomoku game in VHDL on an Artix-7 FPGA: 640x480 VGA rendering, PS/2 mouse input, undo, win detection and a heuristic AI opponent.">
+  <link rel="canonical" href="https://gjinge.github.io/Personal_Website/projects/fpga-gomoku/">
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="FPGA Gomoku | Jinge Guo">
+  <meta property="og:description" content="A hardware Gomoku game in VHDL on an Artix-7 FPGA: 640x480 VGA rendering, PS/2 mouse input, undo, win detection and a heuristic AI opponent.">
+  <meta property="og:url" content="https://gjinge.github.io/Personal_Website/projects/fpga-gomoku/">
+  <meta property="og:image" content="https://gjinge.github.io/Personal_Website/assets/img/og-image.png">
+  <meta property="og:image:alt" content="Jinge Guo — undergraduate researcher at SUSTech and visiting student at UW–Madison">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="../../assets/img/favicon.svg" type="image/svg+xml">
+  <script>
+    try {
+      const theme = localStorage.getItem('jg-theme');
+      if (theme === 'light' || theme === 'dark') document.documentElement.dataset.theme = theme;
+      if (localStorage.getItem('jg-motion') === 'paused' || matchMedia('(prefers-reduced-motion: reduce)').matches) document.documentElement.dataset.motion = 'paused';
+    } catch (_) {}
+  </script>
+  <link rel="stylesheet" href="../../assets/css/styles.css">
+  <script defer src="../../assets/js/main.js"></script>
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <div class="reading-progress" aria-hidden="true"></div>
+  <header class="site-header">
+    <a class="wordmark" href="../../index.html#about" aria-label="Jinge Guo, home"><span class="small-monogram" aria-hidden="true">JG</span><span>Jinge Guo</span></a>
+    <nav aria-label="Main navigation">
+      <a href="../../index.html#about">About</a><a href="../../index.html#publications">Publications</a><a href="../../projects/" aria-current="page">Projects</a><a class="nav-cv" href="../../cv.pdf">CV <span aria-hidden="true">↗</span></a><a href="../../photography.html">Photography</a><a href="../../social.html">Social</a>
+      <a href="../../reading.html">Reading Notes</a>
+    </nav>
+    <div class="display-controls" hidden>
+      <button class="icon-button" id="motion-toggle" type="button" aria-label="Pause decorative motion" title="Pause decorative motion"><svg class="pause-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14M16 5v14"/></svg><svg class="play-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m8 5 11 7-11 7Z"/></svg></button>
+      <button class="icon-button" id="theme-toggle" type="button" aria-label="Switch to light theme" title="Switch to light theme"><svg class="sun-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/></svg><svg class="moon-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14A8 8 0 0 1 10 4a8.5 8.5 0 1 0 10 10Z"/></svg></button>
+    </div>
+  </header>
+    <main id="main" class="project-detail">
+    <section class="portfolio-intro">
+      <p class="eyebrow"><a href="../">Projects</a> / Digital hardware</p>
+      <h1>FPGA Gomoku<span class="name-period" aria-hidden="true">.</span></h1>
+      <p class="portfolio-subtitle">A five-in-a-row game built entirely in hardware: VGA rendering, PS/2 mouse control, and a heuristic AI opponent on an Artix-7 FPGA.</p>
+      <div class="project-actions"><a class="button" href="https://github.com/Gjinge/Personal_Website/tree/main/source/fpga-gomoku">Browse source ↗</a><a href="../../assets/downloads/fpga-gomoku-report.pdf">Project report (PDF) ↗</a><a href="../../assets/downloads/fpga-gomoku-source.zip" download>Download sources ↓</a></div>
+    </section>
+    <div class="project-facts"><span>VHDL / Vivado 2020.2</span><span>Nexys 4 DDR · Artix-7 xc7a100tcsg324-1</span><span>Digital System Design · SUSTech</span><span>Team project (4 members)</span></div>
+
+    <section class="project-prose" aria-labelledby="overview-title">
+      <h2 id="overview-title">Overview</h2>
+      <p>Gomoku is simple enough to state in a sentence and awkward enough to build in hardware: there is no processor, no operating system and no framebuffer to draw into. Every pixel of the 640×480 VGA frame is decided combinationally while the beam scans, the board lives in flip-flops rather than memory, and the opponent has to make up its mind inside the same clock domain that is drawing the picture.</p>
+      <p>The system runs on a Digilent Nexys 4 DDR board. A PS/2 mouse is the only input device: left click places a stone, right click undoes the last move, middle click resets to the menu. The design supports player-versus-player and player-versus-AI, detects five in a row in all four directions, and marks the winning line in red on screen. <code>vga_ctrl</code> is the synthesized top module; it instantiates the mouse subsystem, the game controller and the AI controller, and renders either the mode-selection screen or the board.</p>
+      <p>This was a four-person course project for Digital System Design at SUSTech, by Zeng Dingyao, Han Yuzhou, Jin Wenyuan and Jinge Guo.</p>
+    </section>
+
+    <section class="project-gallery" aria-labelledby="gallery-title">
+      <h2 id="gallery-title">On the board</h2>
+      <figure>
+        <a href="../../assets/img/fpga/gomoku-win.jpg"><img src="../../assets/img/fpga/gomoku-win.jpg" alt="VGA monitor showing the 15 by 15 Gomoku board with five black stones in a vertical line, marked in red as the winning line" width="1200" height="902" loading="lazy"></a>
+        <figcaption>Win detection: five consecutive stones are found and the winning line is marked in red. Photographed from the VGA output.</figcaption>
+      </figure>
+      <figure>
+        <a href="../../assets/img/fpga/gomoku-play.jpg"><img src="../../assets/img/fpga/gomoku-play.jpg" alt="The Gomoku board mid-game with several black stones and the white cross mouse cursor over a red hover indicator" width="1200" height="913" loading="lazy"></a>
+        <figcaption>Mid-game. The white cross is the PS/2 mouse cursor; the red marker is the hover indicator for the cell under it.</figcaption>
+      </figure>
+    </section>
+
+    <section class="project-prose" aria-labelledby="design-title">
+      <h2 id="design-title">How it works</h2>
+      <p><strong>Video.</strong> The renderer follows standard 640×480 VGA timing — <code>H_ACTIVE</code> 640 of <code>H_TOTAL</code> 800, <code>V_ACTIVE</code> 480 of <code>V_TOTAL</code> 525 — driven by a divided clock. The 15×15 board is drawn as 28-pixel cells separated by 2-pixel grid lines, centred in the active frame. Menu, board, stones, cursor, hover marker and the red winning line are all decided per pixel; the start screen is read from a Block Memory ROM initialised from an RGB444 image.</p>
+      <p><strong>Board state.</strong> Two 225-bit vectors hold the game: <code>board_pieces</code> records occupancy and <code>board_colors</code> records the stone colour, indexed by <code>idx = y × 15 + x</code>. Splitting them keeps both checks trivial in logic. A move stack of up to 100 entries records history, which is what makes right-click undo possible — pop the last position, clear it, flip the turn.</p>
+      <p><strong>Control.</strong> The game controller is a two-state machine: <code>MODE_SELECT</code> and <code>PLAYING</code>. Clicking the PvP or PvE button initialises a board and enters play; from there clicks are validated against occupancy, the turn alternates, and after every move the win checker scans the four directions from the last stone.</p>
+      <p><strong>The opponent.</strong> The AI controller is its own <code>IDLE → THINKING → DONE</code> machine. It walks all 225 cells, one per clock, and scores each empty one with a directional heuristic: how long a run the AI itself would make in each of the four directions, how long a run it would deny the opponent, and how close the cell is to the centre. An open three is worth more than a closed one, a four is worth more than everything else, and the same weights are applied to the opponent's shapes so that blocking falls out of the same score.</p>
+
+      <h2>Key code</h2>
+      <p>The heart of the AI is the scoring function. The centre-preference term seeds the score, then each of the four directions adds attack value; the same block runs again with the opponent's colour to add defensive value.</p>
+      <pre class="source-code"><code>        total := (7 - abs(r-7)) * (7 - abs(r-7)) + (7 - abs(c-7)) * (7 - abs(c-7));
+        
+        for d in 0 to 3 loop
+            -- 己方评分
+            cnt := count_dir(pieces, colors, r, c, DIR_R(d), DIR_C(d), self_c);
+            left_open := has_open(pieces, colors, r, c, DIR_R(d), DIR_C(d), self_c, 1);
+            right_open := has_open(pieces, colors, r, c, DIR_R(d), DIR_C(d), self_c, 0);
+            
+            if cnt = 4 then
+                total := total + 10000;
+            elsif cnt = 3 then
+                if left_open and right_open then
+                    total := total + 2000;
+                elsif left_open or right_open then
+                    total := total + 500;
+                else
+                    total := total + 100;
+                end if;
+            elsif cnt = 2 then
+                if left_open and right_open then
+                    total := total + 200;
+                elsif left_open or right_open then
+                    total := total + 50;
+                else
+                    total := total + 10;
+                end if;
+            elsif cnt = 1 then
+                if left_open or right_open then
+                    total := total + 10;
+                end if;
+            end if;
+            
+            -- 对方评分（防守）
+            cnt := count_dir(pieces, colors, r, c, DIR_R(d), DIR_C(d), enemy_c);</code></pre>
+      <details class="source-files"><summary>All VHDL sources</summary>
+        <ul>
+<li><a href="https://github.com/Gjinge/Personal_Website/tree/main/source/fpga-gomoku/src/MouseCtl.vhd">MouseCtl.vhd</a></li>
+<li><a href="https://github.com/Gjinge/Personal_Website/tree/main/source/fpga-gomoku/src/MouseDisplay.vhd">MouseDisplay.vhd</a></li>
+<li><a href="https://github.com/Gjinge/Personal_Website/tree/main/source/fpga-gomoku/src/Ps2Interface.vhd">Ps2Interface.vhd</a></li>
+<li><a href="https://github.com/Gjinge/Personal_Website/tree/main/source/fpga-gomoku/src/TopGobangSystem.vhd">TopGobangSystem.vhd</a></li>
+<li><a href="https://github.com/Gjinge/Personal_Website/tree/main/source/fpga-gomoku/src/ai_controller.vhd">ai_controller.vhd</a></li>
+<li><a href="https://github.com/Gjinge/Personal_Website/tree/main/source/fpga-gomoku/src/clk_wiz_0.vhd">clk_wiz_0.vhd</a></li>
+<li><a href="https://github.com/Gjinge/Personal_Website/tree/main/source/fpga-gomoku/src/clk_wiz_0_clk_wiz.vhd">clk_wiz_0_clk_wiz.vhd</a></li>
+<li><a href="https://github.com/Gjinge/Personal_Website/tree/main/source/fpga-gomoku/src/display_controller.vhd">display_controller.vhd</a></li>
+<li><a href="https://github.com/Gjinge/Personal_Website/tree/main/source/fpga-gomoku/src/game_controller.vhd">game_controller.vhd</a></li>
+<li><a href="https://github.com/Gjinge/Personal_Website/tree/main/source/fpga-gomoku/src/start_screen_controller.vhd">start_screen_controller.vhd</a></li>
+<li><a href="https://github.com/Gjinge/Personal_Website/tree/main/source/fpga-gomoku/src/vga_ctrl.vhd">vga_ctrl.vhd</a></li>
+        </ul>
+        <p>Also included: pin and clock constraints for the Nexys 4 DDR, the start-screen <code>.coe</code> image data, Vivado utilization, timing and power reports, the generated bitstream, and the Vivado project file.</p>
+      </details>
+    </section>
+
+    <section class="project-prose" aria-labelledby="results-title">
+      <h2 id="results-title">Implementation results</h2>
+      <p>Synthesis, placement, routing and bitstream generation all complete for <code>xc7a100tcsg324-1</code>. Numbers below are read from the Vivado reports for this build, the final version with the start-screen image ROM.</p>
+      <div class="table-wrap"><table class="data-table">
+        <thead><tr><th scope="col">Metric</th><th scope="col">Used</th><th scope="col">Available</th><th scope="col">Utilization</th></tr></thead>
+        <tbody>
+          <tr><td>Slice LUTs</td><td>27,933</td><td>63,400</td><td>44.06%</td></tr>
+          <tr><td>Slice registers</td><td>1,027</td><td>126,800</td><td>0.81%</td></tr>
+          <tr><td>Block RAM tiles</td><td>103.5</td><td>135</td><td>76.67%</td></tr>
+          <tr><td>DSP slices</td><td>37</td><td>240</td><td>15.42%</td></tr>
+          <tr><td>Bonded IOBs</td><td>17</td><td>210</td><td>8.10%</td></tr>
+        </tbody>
+      </table></div>
+      <p>Timing closes with 8.367 ns worst negative slack and 0.284 ns worst hold slack, no failing endpoints. Estimated total on-chip power is 0.618 W. The logic is LUT-heavy because the renderer evaluates pixel-dependent conditions every active pixel and the AI scores cells combinationally; block RAM is almost entirely the start-screen image.</p>
+      <p>The written report analyses an earlier build of the same design, before the image ROM was added, and its resource and power tables differ from the ones above for that reason.</p>
+    </section>
+
+    <aside class="project-scope"><h2>Scope and provenance</h2><p>A group coursework project, presented here with the four authors credited. The download contains the design sources, constraints, image data, Vivado reports, bitstream and project file. Source comments were originally saved in GBK and are converted to UTF-8 in these copies so they display correctly; the logic is unchanged. The Block Memory Generator IP is not bundled and is re-created from the included <code>.coe</code> file when rebuilding from scratch. Third-party Gomoku projects that were collected as reference material during the course are deliberately not included here.</p></aside>
+    <p class="project-return"><a href="../">← All projects</a></p>
+  </main>
+  <footer><span>© 2026 Jinge Guo</span><span>Unity / coursework &amp; prototypes</span><a href="../../projects/">All projects ↗</a></footer>
+</body>
+</html>
