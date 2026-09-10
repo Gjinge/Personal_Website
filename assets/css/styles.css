@@ -65,7 +65,7 @@ h1, h2, h3 { line-height: 1.25; }
 }
 .wordmark { display: flex; align-items: center; gap: 12px; color: var(--ink); text-decoration: none; white-space: nowrap; font-size: 15px; font-weight: 600; letter-spacing: -.2px; }
 .small-monogram { display: grid; place-items: center; width: 38px; height: 38px; border: 1px solid var(--accent); border-radius: 10px 3px 10px 3px; color: var(--accent); font-size: 17px; letter-spacing: -1px; }
-nav { display: flex; align-items: center; gap: 26px; margin-left: auto; font-size: 13px; }
+nav { display: flex; flex-wrap: wrap; align-items: center; justify-content: flex-end; gap: 5px 20px; margin-left: auto; font-size: 13px; }
 nav a { color: var(--muted); text-decoration: none; position: relative; padding: 8px 0; }
 nav a:hover, nav a[aria-current="location"] { color: var(--accent); text-decoration: none; }
 nav a[aria-current="location"]::after { content: ""; position: absolute; bottom: 0; left: 0; right: 0; height: 2px; background: var(--accent); }
@@ -189,7 +189,7 @@ nav a[aria-current="page"] { color: var(--accent); border-bottom: 2px solid var(
 .legacy-anchor { scroll-margin-top: 140px; }
 .creative-section { padding: 64px 0; border-bottom: 1px solid var(--rule); }
 .creative-section h2 { font-size: clamp(28px, 4vw, 44px); font-weight: 450; letter-spacing: -1px; }
-.creative-links { display: grid; grid-template-columns: 1fr 1fr; gap: 22px; }
+.creative-links { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 22px; }
 .creative-card { display: block; padding: 30px; border: 1px solid var(--rule); border-radius: 10px; background: linear-gradient(135deg, var(--surface), var(--soft)); color: var(--ink); text-decoration: none; }
 .creative-card:hover { border-color: var(--accent); text-decoration: none; }
 .creative-card .eyebrow { display: block; margin-bottom: 35px; }
@@ -229,13 +229,25 @@ nav a[aria-current="page"] { color: var(--accent); border-bottom: 2px solid var(
 @media (max-width: 760px) {
   nav { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 0 12px; align-items: center; }
   nav a { justify-self: start; }
-  .site-header { min-height: 108px; } html { scroll-padding-top: 160px; }
+  .site-header { min-height: 108px; } html { scroll-padding-top: 200px; }
   .creative-links, .portfolio-empty, .social-grid { grid-template-columns: 1fr; }
   .creative-section { padding: 38px 0; }.creative-card { padding: 24px; }
   .portfolio-intro { padding: 48px 0 30px; }.portfolio-subtitle { font-size: 16px; }
   .portfolio-empty { gap: 30px; padding: 35px 0; }.portfolio-empty h2 { font-size: 25px; }
 }
 @media (max-width: 440px) { .photo-grid { columns: 1; } }
+.reading-intro { color: var(--muted); font-size: 14px; }
+.reading-tools { display: grid; grid-template-columns: 2fr 1fr; gap: 16px 24px; padding: 30px 0; }
+.reading-tools label { display: grid; gap: 8px; font-size: 12px; color: var(--muted); }
+.reading-tools input, .reading-tools select { width: 100%; min-width: 0; padding: 12px; color: var(--ink); background: var(--surface); border: 1px solid var(--rule); border-radius: 5px; font: inherit; font-size: 14px; }
+.reading-tools :is(input, select):focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+#reading-result { grid-column: 1/-1; margin: 0; font: 12px var(--mono); color: var(--muted); }
+.reading-list { display: grid; grid-template-columns: 1fr 1fr; gap: 24px; }
+.reading-card { min-width: 0; padding: 28px; background: var(--surface); border: 1px solid var(--rule); border-radius: 8px; overflow-wrap: anywhere; }
+.reading-meta { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 20px; font: 11px/1.8 var(--mono); color: var(--muted); }
+.reading-card h2 { font-size: 24px; }.reading-card h2 a { color: var(--ink); text-decoration: none; }.reading-card h2 a:hover { color: var(--accent); text-decoration: underline; }
+.reading-summary { color: var(--muted); font-size: 14px; }
+@media (max-width: 760px) { .reading-list, .reading-tools { grid-template-columns: 1fr; }.reading-card { padding: 22px; } }
 @media print {
   :root { color-scheme: light; --bg: white; --ink: #15273c; --muted: #394c64; --accent: #086578; --violet: #6545a9; --rule: #ced9e8; --surface: white; }
   body { background: white; font-size: 11pt; } body::before, .site-header, .reading-progress, .research-visual, .hero-links, .skip-link, .visitor-section, footer { display: none; }

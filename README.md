@@ -10,6 +10,9 @@ Expected public URL: https://gjinge.github.io/Personal_Website/
 index.html                  Page content and metadata
 photography.html            Photo collections and fullscreen viewer
 social.html                 Personal social accounts and channels
+reading.html                Searchable reading notes index
+assets/js/reading-data.js    Published note metadata and links
+assets/js/reading.js         Note cards, search, topic filter, date ordering
 videos.html                 Redirect for the former page URL
 assets/js/portfolio-data.js  Real photos and public account entries
 assets/js/portfolio.js       Collection filters, photo viewer, account cards
@@ -39,7 +42,7 @@ From this directory, run `python -m http.server 8000 --bind 127.0.0.1`, then ope
 
 ## Photography and social accounts
 
-The header links to About, Publications, Projects, CV, Photography, and Social. Social is a directory of the owner's social media accounts and channels. The former `videos.html` URL redirects to `social.html`. Existing research, education, honors, and contact sections remain on the homepage. The old `#manuscripts` link remains available; review status must not be represented as an accepted publication.
+The header links to About, Publications, Projects, CV, Photography, Social, and Reading Notes. Social is a directory of the owner's social media accounts and channels. The former `videos.html` URL redirects to `social.html`. Existing research, education, honors, and contact sections remain on the homepage. The old `#manuscripts` link remains available; review status must not be represented as an accepted publication.
 
 Both pages initially show an honest empty state. Add real photos and user-provided public account links to `assets/js/portfolio-data.js`. No demo images or invented accounts are published. The following is a schema example, not an existing account or work:
 
@@ -68,8 +71,27 @@ window.portfolio = {
 - Export web-sized photos before adding them; include descriptive alt text. Publish only selected images and captions. Strip location metadata if you do not want it exposed.
 - Account cards display the platform, account name, optional handle/avatar, and content focus. HTTPS profile links open in a new tab. Missing avatars use a neutral @ symbol.
 - Use account/channel homepages rather than individual video URLs. No account credentials are needed in this repository, and this page does not preload platform feeds or players.
-- Update shared navigation in all three HTML pages together. Theme controls use the same preferences across pages.
+- Update shared navigation in all four main HTML pages together. Theme controls use the same preferences across pages.
 - Photos and account cards require JavaScript for rendering; an explanatory message is shown when it is disabled.
+
+## Reading notes
+
+`reading.html` shows a notebook empty state until real entries are added. It supports full-text matching across title, author, summary, and tags, combined with topic filtering. Entries appear newest first using ISO dates (`YYYY-MM-DD`); undated entries appear last. No sample notes are published.
+
+Put the reviewed note PDF or HTML under `notes/` (create the folder when adding the first note), then add its metadata to `assets/js/reading-data.js`. External HTTPS article links also work. This is an example schema only:
+
+```js
+window.readingNotes = [{
+  title: 'Book title — chapter or note title',
+  author: 'Book author',
+  date: '2026-09-09',
+  tags: ['Your topic'],
+  summary: 'A short introduction to your reflections.',
+  url: 'notes/your-reading-note.pdf'
+}];
+```
+
+Use an HTML page or PDF for directly readable notes; Markdown can be converted to HTML before publishing. Clicking a note title opens its document. External links open in a new tab. Relative document links work on both GitHub Pages and the local HTTP preview. The site has no upload backend: add files and update the data array, then deploy normally. Search only covers the listed metadata, not the full text inside linked files.
 
 ## Visitor map
 
