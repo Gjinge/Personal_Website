@@ -8,6 +8,10 @@ Expected public URL: https://gjinge.github.io/Personal_Website/
 
 ```text
 index.html                  Page content and metadata
+photography.html            Photo collections and fullscreen viewer
+videos.html                 Video portfolio with external work links
+assets/js/portfolio-data.js  Real photo and video entries
+assets/js/portfolio.js       Collection filters, photo viewer, video cards
 assets/css/styles.css       Responsive styles
 assets/js/main.js           Theme, motion controls, and navigation feedback
 assets/js/visitors.js       Map loading, timeout recovery, and resizing
@@ -31,6 +35,39 @@ From this directory, run `python -m http.server 8000 --bind 127.0.0.1`, then ope
 - **Address change:** update the canonical URL, `og:url`, `og:image`, and Schema.org `url` in `index.html`, plus this README.
 - **Appearance:** edit `assets/css/styles.css`; check desktop and mobile layouts and keyboard focus after changes.
 - **Display preferences:** the header provides theme and motion controls. `jg-theme` and `jg-motion` in localStorage retain only these preferences. The default is dark; reduced-motion system preferences disable decorative animation. The page remains readable when JavaScript or localStorage is unavailable. Print styles use a light background.
+
+## Photography and video portfolio
+
+The header links to About, Publications, Projects, CV, Photography, and Videos. Existing research, education, honors, and contact sections remain on the homepage. The old `#manuscripts` link remains available; review status must not be represented as an accepted publication.
+
+Both creative pages initially show an honest empty state. Add real works to `assets/js/portfolio-data.js`. No demo images or invented video links are published. The following is a schema example, not an existing work:
+
+```js
+window.portfolio = {
+  photos: [{
+    src: 'assets/photos/your-photo.webp',
+    full: 'assets/photos/your-photo-large.jpg', // optional
+    alt: 'Describe what is visible in this photograph',
+    title: 'Your photo title',
+    collection: 'Your series name',
+    caption: 'Optional place, date, or short story'
+  }],
+  videos: [{
+    url: 'https://your-video-platform.example/your-work',
+    title: 'Your video title',
+    description: 'A short description of the work',
+    poster: 'assets/videos/your-cover.webp', // optional
+    platform: 'Your video platform'
+  }]
+};
+```
+
+- Photos retain their proportions in a responsive column layout. Series names create filters automatically. Click to open the modal viewer; use Previous/Next, arrow keys, or Escape to close. The modal restores keyboard focus to the opening photo.
+- Export web-sized photos before adding them; include descriptive alt text. Publish only selected images and captions. Strip location metadata if you do not want it exposed.
+- Video cards use local covers and HTTPS links. A missing cover uses a neutral play panel. The player opens on the original platform in a new tab; this site does not preload external players.
+- Keep actual video files on the selected video platform, and store their public work links here. No account credentials are needed in this repository.
+- Update shared navigation in all three HTML pages together. Theme controls use the same preferences across pages.
+- Photos and videos require JavaScript for rendering; an explanatory message is shown when it is disabled.
 
 ## Visitor map
 

@@ -61,7 +61,7 @@
   }
 
   const visual = document.querySelector('.research-visual');
-  if (matchMedia('(hover: hover) and (pointer: fine)').matches) {
+  if (visual && matchMedia('(hover: hover) and (pointer: fine)').matches) {
     visual.addEventListener('pointermove', event => {
       if (reducedMotion.matches || root.dataset.motion === 'paused') return;
       const bounds = visual.getBoundingClientRect();
