@@ -58,25 +58,52 @@ h1, h2, h3 { line-height: 1.25; }
 .site-header, main, footer { width: min(1200px, calc(100% - 96px)); margin-inline: auto; }
 .skip-link { position: fixed; left: 16px; top: -100px; padding: 10px 18px; background: var(--accent); color: var(--accent-ink); z-index: 100; }
 .skip-link:focus { top: 12px; }
-.reading-progress { --pacman: #ffd34e; --pellet: #dce6f5; display: none; position: fixed; inset: 0 0 auto; z-index: 30; height: 20px; background: var(--bg); pointer-events: none; overflow: hidden; }
+/* Reading progress: Pac-Man rail with pellets, section power pellets and chasing ghosts. */
+.reading-progress {
+  --pacman: #ffd34e; --pellet: #c9d8ee; --ghost-a: #ff5d5d; --ghost-b: #ffa8dd; --ghost-c: #63dcff; --scared: #4a63ff; --scared-ink: #dbe4ff;
+  display: none; position: fixed; inset: 0 0 auto; z-index: 30; height: 24px; background: var(--bg); pointer-events: none;
+}
 .reading-progress.is-ready { display: block; }
 .reading-progress:focus-within { outline: 2px solid var(--accent); outline-offset: -2px; }
-.progress-seek { position: absolute; left: 0; top: 0; width: 100%; height: 20px; margin: 0; padding: 0 2px; border: 0; opacity: 0; appearance: none; background: transparent; cursor: pointer; pointer-events: auto; }
-.progress-seek::-webkit-slider-thumb { appearance: none; width: 16px; height: 16px; border: 0; }
-.progress-seek::-moz-range-thumb { width: 16px; height: 16px; border: 0; }
-[data-theme="light"] .reading-progress { --pacman: #e5a900; --pellet: #52647a; }
-.has-reading-progress .site-header { top: 20px; }
-.progress-dots { position: absolute; inset: 0 10px; background: radial-gradient(circle, var(--pellet) 0 1.5px, transparent 2px) 0 0 / 20px 20px repeat-x; clip-path: inset(0 0 0 var(--progress-x, 0px)); }
-.progress-trail { position: absolute; left: 0; bottom: 0; width: var(--progress-percent, 0%); height: 2px; background: linear-gradient(90deg, var(--accent), var(--pacman)); }
-.progress-pacman { position: absolute; left: 0; top: 2px; width: 16px; height: 16px; transform: translateX(var(--progress-x, 2px)); }
+[data-theme="light"] .reading-progress { --pacman: #e0a200; --pellet: #6c7f96; --ghost-a: #dc4747; --ghost-b: #e072b8; --ghost-c: #1fa2d8; --scared: #2f49cf; --scared-ink: #eaefff; }
+.has-reading-progress .site-header { top: 24px; }
+.progress-track { position: absolute; inset: 0; overflow: hidden; border-bottom: 1px solid var(--rule); }
+.progress-seek { position: absolute; inset: 0; width: 100%; height: 100%; margin: 0; padding: 0 2px; border: 0; opacity: 0; appearance: none; background: transparent; cursor: pointer; pointer-events: auto; }
+.progress-seek::-webkit-slider-thumb { appearance: none; width: 18px; height: 18px; border: 0; }
+.progress-seek::-moz-range-thumb { width: 18px; height: 18px; border: 0; }
+.progress-dots { position: absolute; inset: 0 10px; background: radial-gradient(circle at center, var(--pellet) 0 1.6px, transparent 2.3px) 0 50% / 18px 100% repeat-x; opacity: .8; clip-path: inset(0 0 0 var(--progress-x, 0px)); }
+.progress-marks { position: absolute; inset: 0; }
+.progress-eaten { position: absolute; left: 0; top: 0; bottom: 0; width: var(--progress-percent, 0%); background: linear-gradient(90deg, transparent, color-mix(in srgb, var(--accent) 13%, transparent)); }
+.progress-eaten::after { content: ""; position: absolute; left: 0; right: 0; bottom: 0; height: 2px; background: linear-gradient(90deg, transparent, var(--accent) 45%, var(--pacman)); }
+.progress-mark { position: absolute; top: 50%; width: 7px; height: 7px; margin: -3.5px 0 0 -3.5px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 3px var(--bg), 0 0 8px color-mix(in srgb, var(--accent) 65%, transparent); transition: opacity .18s ease, transform .18s ease; }
+.reading-progress.is-moving .progress-mark { animation: pellet-pulse .55s ease-in-out infinite alternate; }
+.progress-mark.is-eaten { opacity: 0; transform: scale(.3); }
+.progress-pacman { position: absolute; left: 0; top: 50%; width: 16px; height: 16px; margin-top: -8px; transform: translateX(var(--progress-x, 2px)) scaleX(var(--facing, 1)); }
 .progress-pacman::before, .progress-pacman::after { content: ""; position: absolute; inset: 0; border-radius: 50%; background: var(--pacman); animation: pacman-top .24s ease-in-out infinite alternate paused; }
-.progress-pacman::before { clip-path: inset(0 0 50% 0); transform: rotate(-30deg); }
-.progress-pacman::after { clip-path: inset(50% 0 0 0); transform: rotate(30deg); animation-name: pacman-bottom; }
-.progress-eye { position: absolute; left: 7px; top: 3px; z-index: 1; width: 2px; height: 2px; border-radius: 50%; background: #111827; }
+.progress-pacman::before { clip-path: inset(0 0 50% 0); transform: rotate(-32deg); }
+.progress-pacman::after { clip-path: inset(50% 0 0 0); transform: rotate(32deg); animation-name: pacman-bottom; }
+.progress-eye { position: absolute; left: 7px; top: 3px; z-index: 1; width: 2px; height: 2px; border-radius: 50%; background: #10192b; }
+.progress-ghost {
+  position: absolute; left: 0; top: 50%; width: 14px; height: 14px; margin-top: -7px; background: var(--ghost);
+  transform: translateX(calc(var(--progress-x, 2px) - var(--facing, 1) * var(--gap)));
+  clip-path: polygon(0 100%, 0 45%, 7% 22%, 22% 7%, 45% 0, 55% 0, 78% 7%, 93% 22%, 100% 45%, 100% 100%, 83% 86%, 66% 100%, 50% 86%, 34% 100%, 17% 86%);
+}
+.reading-progress.is-moving .progress-ghost { animation: ghost-feet .42s steps(1, end) infinite; }
+.progress-ghost::before, .progress-ghost::after { content: ""; position: absolute; top: 3px; width: 4px; height: 5px; border-radius: 50%; background-color: #fdfefe; background-image: radial-gradient(circle 1.3px at calc(50% + var(--facing, 1) * 1px) 60%, #172440 0 100%); }
+.progress-ghost::before { left: 2px; }
+.progress-ghost::after { left: 8px; }
+.reading-progress.is-cleared .progress-ghost { background: var(--scared); }
+.reading-progress.is-cleared .progress-ghost::before, .reading-progress.is-cleared .progress-ghost::after { background-color: var(--scared-ink); background-image: none; width: 3px; height: 3px; top: 4px; }
+.progress-label { position: absolute; top: calc(100% + 6px); left: 0; z-index: 1; padding: 4px 9px; border: 1px solid var(--rule); border-radius: 5px; background: var(--surface-raised); color: var(--ink); font: 11px/1.4 var(--mono); white-space: nowrap; transform: translateX(-50%); pointer-events: none; }
+@keyframes pacman-top { from { transform: rotate(-32deg); } to { transform: rotate(0); } }
+@keyframes pacman-bottom { from { transform: rotate(32deg); } to { transform: rotate(0); } }
+@keyframes pellet-pulse { from { transform: scale(.75); } to { transform: scale(1.15); } }
+@keyframes ghost-feet {
+  50% { clip-path: polygon(0 100%, 0 45%, 7% 22%, 22% 7%, 45% 0, 55% 0, 78% 7%, 93% 22%, 100% 45%, 100% 86%, 83% 100%, 66% 86%, 50% 100%, 34% 86%, 17% 100%); }
+}
 .reading-progress.is-moving .progress-pacman::before, .reading-progress.is-moving .progress-pacman::after { animation-play-state: running; }
-@keyframes pacman-top { from { transform: rotate(-30deg); } to { transform: rotate(0); } }
-@keyframes pacman-bottom { from { transform: rotate(30deg); } to { transform: rotate(0); } }
-@media (prefers-reduced-motion: reduce) { .progress-pacman::before, .progress-pacman::after { animation: none; } }
+[data-motion="paused"] .reading-progress.is-ready .progress-pacman::before, [data-motion="paused"] .reading-progress.is-ready .progress-pacman::after, [data-motion="paused"] .reading-progress.is-ready .progress-ghost, [data-motion="paused"] .reading-progress.is-ready .progress-mark { animation: none; }
+@media (prefers-reduced-motion: reduce) { .reading-progress.is-ready .progress-pacman::before, .reading-progress.is-ready .progress-pacman::after, .reading-progress.is-ready .progress-ghost, .reading-progress.is-ready .progress-mark { animation: none; } }
 .site-header {
   position: sticky; top: 0; z-index: 20; display: flex; align-items: center; gap: 28px;
   min-height: 88px; border-bottom: 1px solid var(--rule); background: var(--header); backdrop-filter: blur(18px);

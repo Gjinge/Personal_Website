@@ -35,30 +35,79 @@
   updateControls();
 
   const progress = document.querySelector('.reading-progress');
-  progress.innerHTML = '<span class="progress-dots" aria-hidden="true"></span><span class="progress-trail" aria-hidden="true"></span><span class="progress-pacman" aria-hidden="true"><span class="progress-eye"></span></span><input class="progress-seek" type="range" min="0" max="100" step="any" value="0" aria-label="Reading progress" title="Click a dot or drag to jump through the page">';
+  const ghosts = [['var(--ghost-a)', '20px'], ['var(--ghost-b)', '34px'], ['var(--ghost-c)', '48px']]
+    .map(([color, gap]) => `<span class="progress-ghost" style="--ghost:${color};--gap:${gap}"></span>`).join('');
+  progress.innerHTML = `<span class="progress-track" aria-hidden="true"><span class="progress-eaten"></span><span class="progress-dots"></span><span class="progress-marks"></span>${ghosts}<span class="progress-pacman"><span class="progress-eye"></span></span></span><span class="progress-label" aria-hidden="true" hidden></span><input class="progress-seek" type="range" min="0" max="100" step="any" value="0" aria-label="Reading progress" title="Click a pellet or drag to jump through the page">`;
   progress.removeAttribute('aria-hidden');
-  const progressSeek = progress.querySelector('.progress-seek');
   progress.classList.add('is-ready');
   root.classList.add('has-reading-progress');
+  const progressSeek = progress.querySelector('.progress-seek');
+  const marksHost = progress.querySelector('.progress-marks');
+  const progressLabel = progress.querySelector('.progress-label');
+  const sections = [...document.querySelectorAll('main > section[id]')];
+  const scrollDistance = () => Math.max(0, root.scrollHeight - innerHeight);
+  let marks = [];
+
+  function buildMarks() {
+    const distance = scrollDistance();
+    const rail = Math.max(1, progress.clientWidth - 20);
+    marksHost.textContent = '';
+    let lastPosition = -Infinity;
+    marks = [];
+    sections.forEach(section => {
+      const top = section.getBoundingClientRect().top + scrollY - 90;
+      const fraction = distance > 0 ? Math.min(1, Math.max(0, top / distance)) : 0;
+      if (fraction * rail - lastPosition < 26) return;
+      lastPosition = fraction * rail;
+      const dot = document.createElement('span');
+      dot.className = 'progress-mark';
+      dot.style.left = `calc(10px + ${fraction} * (100% - 20px))`;
+      marksHost.append(dot);
+      const heading = section.querySelector('h1, h2');
+      marks.push({ dot, fraction, name: (heading ? heading.textContent : section.id).trim() });
+    });
+  }
+
   let scheduled = false;
   let motionTimeout;
+  let lastScrollY = scrollY;
+  let lastHeight = 0;
+  let facing = 1;
   const updateProgress = () => {
-    const distance = root.scrollHeight - innerHeight;
+    if (root.scrollHeight !== lastHeight) { lastHeight = root.scrollHeight; buildMarks(); }
+    const distance = scrollDistance();
     const fraction = distance > 0 ? Math.min(1, Math.max(0, scrollY / distance)) : 1;
-    const position = 2 + fraction * Math.max(0, progress.clientWidth - 20);
-    progress.style.setProperty('--progress-x', `${position}px`);
+    if (scrollY > lastScrollY + 1) facing = 1;
+    else if (scrollY < lastScrollY - 1) facing = -1;
+    lastScrollY = scrollY;
+    progress.style.setProperty('--facing', facing);
+    progress.style.setProperty('--progress-x', `${2 + fraction * Math.max(0, progress.clientWidth - 20)}px`);
     progress.style.setProperty('--progress-percent', `${fraction * 100}%`);
+    progress.classList.toggle('is-cleared', fraction > 0.995);
+    marks.forEach(mark => mark.dot.classList.toggle('is-eaten', mark.fraction <= fraction + 0.002));
     progressSeek.value = fraction * 100;
     progressSeek.setAttribute('aria-valuetext', `${Math.round(fraction * 100)}% through the page`);
     progressSeek.disabled = distance <= 0;
     scheduled = false;
   };
   progressSeek.addEventListener('input', () => {
-    const fraction = Number(progressSeek.value) / 100;
-    const distance = Math.max(0, root.scrollHeight - innerHeight);
-    scrollTo({ top: fraction * distance, behavior: 'instant' });
+    scrollTo({ top: Number(progressSeek.value) / 100 * scrollDistance(), behavior: 'instant' });
     updateProgress();
   });
+  if (matchMedia('(hover: hover) and (pointer: fine)').matches) {
+    progressSeek.addEventListener('pointermove', event => {
+      if (!marks.length) return;
+      const bounds = progress.getBoundingClientRect();
+      const fraction = Math.min(1, Math.max(0, (event.clientX - bounds.left - 10) / Math.max(1, bounds.width - 20)));
+      let nearest = marks[0];
+      marks.forEach(mark => { if (mark.fraction <= fraction + 0.015) nearest = mark; });
+      progressLabel.textContent = nearest.name;
+      progressLabel.hidden = false;
+      progressLabel.style.left = `${Math.min(bounds.width - 14, Math.max(14, event.clientX - bounds.left))}px`;
+    }, { passive: true });
+    progressSeek.addEventListener('pointerleave', () => { progressLabel.hidden = true; });
+    progressSeek.addEventListener('blur', () => { progressLabel.hidden = true; });
+  }
   const scheduleProgress = () => {
     if (!scheduled) { scheduled = true; requestAnimationFrame(updateProgress); }
   };
@@ -66,12 +115,13 @@
     scheduleProgress();
     progress.classList.add('is-moving');
     clearTimeout(motionTimeout);
-    motionTimeout = setTimeout(() => progress.classList.remove('is-moving'), 160);
+    motionTimeout = setTimeout(() => progress.classList.remove('is-moving'), 200);
   }, { passive: true });
   addEventListener('resize', scheduleProgress, { passive: true });
   addEventListener('load', scheduleProgress, { once: true });
   if ('ResizeObserver' in window) new ResizeObserver(scheduleProgress).observe(document.body);
   updateProgress();
+
 
   const links = [...document.querySelectorAll('nav a[href^="#"]')];
   if ('IntersectionObserver' in window) {
