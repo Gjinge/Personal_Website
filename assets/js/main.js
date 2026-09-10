@@ -35,16 +35,31 @@
   updateControls();
 
   const progress = document.querySelector('.reading-progress');
+  progress.innerHTML = '<span class="progress-dots"></span><span class="progress-trail"></span><span class="progress-pacman"><span class="progress-eye"></span></span>';
+  progress.classList.add('is-ready');
+  root.classList.add('has-reading-progress');
   let scheduled = false;
+  let motionTimeout;
   const updateProgress = () => {
     const distance = root.scrollHeight - innerHeight;
-    progress.style.transform = `scaleX(${distance > 0 ? Math.min(1, Math.max(0, scrollY / distance)) : 0})`;
+    const fraction = distance > 0 ? Math.min(1, Math.max(0, scrollY / distance)) : 1;
+    const position = 2 + fraction * Math.max(0, progress.clientWidth - 20);
+    progress.style.setProperty('--progress-x', `${position}px`);
+    progress.style.setProperty('--progress-percent', `${fraction * 100}%`);
     scheduled = false;
   };
-  addEventListener('scroll', () => {
+  const scheduleProgress = () => {
     if (!scheduled) { scheduled = true; requestAnimationFrame(updateProgress); }
+  };
+  addEventListener('scroll', () => {
+    scheduleProgress();
+    progress.classList.add('is-moving');
+    clearTimeout(motionTimeout);
+    motionTimeout = setTimeout(() => progress.classList.remove('is-moving'), 160);
   }, { passive: true });
-  addEventListener('resize', updateProgress, { passive: true });
+  addEventListener('resize', scheduleProgress, { passive: true });
+  addEventListener('load', scheduleProgress, { once: true });
+  if ('ResizeObserver' in window) new ResizeObserver(scheduleProgress).observe(document.body);
   updateProgress();
 
   const links = [...document.querySelectorAll('nav a[href^="#"]')];

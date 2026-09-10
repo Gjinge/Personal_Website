@@ -58,7 +58,21 @@ h1, h2, h3 { line-height: 1.25; }
 .site-header, main, footer { width: min(1200px, calc(100% - 96px)); margin-inline: auto; }
 .skip-link { position: fixed; left: 16px; top: -100px; padding: 10px 18px; background: var(--accent); color: var(--accent-ink); z-index: 100; }
 .skip-link:focus { top: 12px; }
-.reading-progress { position: fixed; left: 0; top: 0; z-index: 30; width: 100%; height: 2px; transform: scaleX(0); transform-origin: left; background: linear-gradient(90deg, var(--accent), var(--violet)); }
+.reading-progress { --pacman: #ffd34e; --pellet: #dce6f5; display: none; position: fixed; inset: 0 0 auto; z-index: 30; height: 20px; background: var(--bg); pointer-events: none; overflow: hidden; }
+.reading-progress.is-ready { display: block; }
+[data-theme="light"] .reading-progress { --pacman: #e5a900; --pellet: #52647a; }
+.has-reading-progress .site-header { top: 20px; }
+.progress-dots { position: absolute; inset: 0 10px; background: radial-gradient(circle, var(--pellet) 0 1.5px, transparent 2px) 0 0 / 20px 20px repeat-x; clip-path: inset(0 0 0 var(--progress-x, 0px)); }
+.progress-trail { position: absolute; left: 0; bottom: 0; width: var(--progress-percent, 0%); height: 2px; background: linear-gradient(90deg, var(--accent), var(--pacman)); }
+.progress-pacman { position: absolute; left: 0; top: 2px; width: 16px; height: 16px; transform: translateX(var(--progress-x, 2px)); }
+.progress-pacman::before, .progress-pacman::after { content: ""; position: absolute; inset: 0; border-radius: 50%; background: var(--pacman); animation: pacman-top .24s ease-in-out infinite alternate paused; }
+.progress-pacman::before { clip-path: inset(0 0 50% 0); transform: rotate(-30deg); }
+.progress-pacman::after { clip-path: inset(50% 0 0 0); transform: rotate(30deg); animation-name: pacman-bottom; }
+.progress-eye { position: absolute; left: 7px; top: 3px; z-index: 1; width: 2px; height: 2px; border-radius: 50%; background: #111827; }
+.reading-progress.is-moving .progress-pacman::before, .reading-progress.is-moving .progress-pacman::after { animation-play-state: running; }
+@keyframes pacman-top { from { transform: rotate(-30deg); } to { transform: rotate(0); } }
+@keyframes pacman-bottom { from { transform: rotate(30deg); } to { transform: rotate(0); } }
+@media (prefers-reduced-motion: reduce) { .progress-pacman::before, .progress-pacman::after { animation: none; } }
 .site-header {
   position: sticky; top: 0; z-index: 20; display: flex; align-items: center; gap: 28px;
   min-height: 88px; border-bottom: 1px solid var(--rule); background: var(--header); backdrop-filter: blur(18px);
@@ -288,6 +302,7 @@ nav a[aria-current="page"] { color: var(--accent); border-bottom: 2px solid var(
 .project-scope { border-left: 2px solid var(--violet); padding: 10px 0 10px 25px; margin: 45px 0; max-width: 930px; }.project-scope h2 { font-size: 20px; }.project-scope p { font-size: 13px; color: var(--muted); }.project-scope p:last-child { margin: 0; }.project-return { padding-bottom: 35px; }
 @media (max-width:760px) { .projects-grid { grid-template-columns: 1fr; gap: 26px; }.topic-heading { display: block; }.project-card-body { padding: 22px; }.project-topic { padding-top: 30px; }.project-prose { padding-top: 30px; }.project-facts { gap: 12px 22px; }.project-prose p, .project-prose li { font-size: 14px; }.project-prose ul { padding-left: 22px; }.project-prose h2, .project-gallery h2 { font-size: 25px; } }
 @media print {
+  .reading-progress.is-ready { display: none; }
   :root { color-scheme: light; --bg: white; --ink: #15273c; --muted: #394c64; --accent: #086578; --violet: #6545a9; --rule: #ced9e8; --surface: white; }
   body { background: white; font-size: 11pt; } body::before, .site-header, .reading-progress, .research-visual, .hero-links, .skip-link, .visitor-section, footer { display: none; }
   main { width: 100%; }.hero { display: block; min-height: 0; padding: 0 0 20px; }h1 { font-size: 34pt; letter-spacing: -1px; }

@@ -46,6 +46,7 @@ From this directory, run `python -m http.server 8000 --bind 127.0.0.1`, then ope
 - **Address change:** update the canonical URL, `og:url`, `og:image`, and Schema.org `url` in `index.html`, plus this README.
 - **Appearance:** edit `assets/css/styles.css`; check desktop and mobile layouts and keyboard focus after changes.
 - **Display preferences:** the header provides theme and motion controls. `jg-theme` and `jg-motion` in localStorage retain only these preferences. The default is dark; reduced-motion system preferences disable decorative animation. The page remains readable when JavaScript or localStorage is unavailable. Print styles use a light background.
+- **Reading progress:** the shared top rail shows a CSS Pac-Man character eating dots as the page scrolls. Its position and the thin trail reflect the current reading position, including after images load or code notes expand. Chomping runs only during scrolling and respects the motion toggle and reduced-motion preference. The rail is decorative, ignores pointer events, and is hidden in print and without JavaScript.
 
 ## Photography and social accounts
 
