@@ -1,6 +1,6 @@
 # Jinge Guo — Academic website
 
-Static academic homepage, designed for GitHub Pages. Plain HTML and CSS; no build step, JavaScript, external fonts, analytics, or cookies.
+Static academic homepage, designed for GitHub Pages. Plain HTML and CSS with an asynchronous MapMyVisitors widget; no build step or external fonts.
 
 Expected public URL: https://gjinge.github.io/Personal_Website/
 
@@ -28,6 +28,16 @@ From this directory, run `python -m http.server 8000 --bind 127.0.0.1`, then ope
 - **Links:** edit existing links in `index.html`. Add academic profiles only after verifying their URLs.
 - **Address change:** update the canonical URL, `og:url`, `og:image`, and Schema.org `url` in `index.html`, plus this README.
 - **Appearance:** edit `assets/css/styles.css`; check desktop and mobile layouts and keyboard focus after changes.
+
+## Visitor map
+
+The `Visitors` section near the footer loads the MapMyVisitors interactive map. Its public statistics page is https://mapmyvisitors.com/web/1c84z and is registered for this website. The embed identifier is public, not an account credential.
+
+- Keep exactly one `id="mapmyvisitors"` script on the page to avoid duplicate counting.
+- The HTTPS script loads asynchronously. `w=a` sizes the map to its parent, which is limited to 780 px and fits mobile screens.
+- MapMyVisitors processes visitor IP addresses for approximate geolocation and statistics. The page includes attribution and a privacy-policy link. Ad blockers or network restrictions can prevent the map or counting from working.
+- Public-page checks and local previews with the widget enabled can contribute test visits. Do not interpret pageviews as distinct people.
+- To replace the widget, obtain the new complete embed code from MapMyVisitors and update both its script URL and the statistics link in `index.html`.
 
 ## Deploy through GitHub Pages
 
