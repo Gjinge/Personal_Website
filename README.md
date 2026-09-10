@@ -1,6 +1,6 @@
 # Jinge Guo — Academic website
 
-Static academic homepage, designed for GitHub Pages. Plain HTML and CSS with an asynchronous MapMyVisitors widget; no build step or external fonts.
+Static academic homepage, designed for GitHub Pages. A dark technology theme with a light alternative, an animated research illustration, and an asynchronous MapMyVisitors widget. Plain HTML, CSS, and small vanilla JavaScript; no build step or external fonts.
 
 Expected public URL: https://gjinge.github.io/Personal_Website/
 
@@ -9,6 +9,7 @@ Expected public URL: https://gjinge.github.io/Personal_Website/
 ```text
 index.html                  Page content and metadata
 assets/css/styles.css       Responsive styles
+assets/js/main.js           Theme, motion controls, and navigation feedback
 assets/img/favicon.svg      JG favicon
 assets/img/og-image.png      Social sharing preview
 cv.pdf                      Public curriculum vitae
@@ -24,10 +25,11 @@ From this directory, run `python -m http.server 8000 --bind 127.0.0.1`, then ope
 
 - **CV:** replace `cv.pdf` with a reviewed, public version. Check both the PDF text and embedded links for private information before publishing.
 - **Research and manuscripts:** edit the corresponding sections in `index.html`. Preserve the exact status of submitted work; add authors or paper links only when confirmed. Update the footer date when content changes.
-- **Photograph:** the initial design uses a CSS JG monogram. To add a real photograph, place it in `assets/img/`, replace `.hero-monogram` with an image with descriptive alt text, and size it responsively.
+- **Hero illustration:** `.research-visual` in `index.html` is a decorative SVG research constellation with a JG monogram. It represents research themes, not measured results. Replace it with a real photograph if desired and provide descriptive alt text.
 - **Links:** edit existing links in `index.html`. Add academic profiles only after verifying their URLs.
 - **Address change:** update the canonical URL, `og:url`, `og:image`, and Schema.org `url` in `index.html`, plus this README.
 - **Appearance:** edit `assets/css/styles.css`; check desktop and mobile layouts and keyboard focus after changes.
+- **Display preferences:** the header provides theme and motion controls. `jg-theme` and `jg-motion` in localStorage retain only these preferences. The default is dark; reduced-motion system preferences disable decorative animation. The page remains readable when JavaScript or localStorage is unavailable. Print styles use a light background.
 
 ## Visitor map
 
