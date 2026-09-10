@@ -35,7 +35,9 @@
   updateControls();
 
   const progress = document.querySelector('.reading-progress');
-  progress.innerHTML = '<span class="progress-dots"></span><span class="progress-trail"></span><span class="progress-pacman"><span class="progress-eye"></span></span>';
+  progress.innerHTML = '<span class="progress-dots" aria-hidden="true"></span><span class="progress-trail" aria-hidden="true"></span><span class="progress-pacman" aria-hidden="true"><span class="progress-eye"></span></span><input class="progress-seek" type="range" min="0" max="100" step="any" value="0" aria-label="Reading progress" title="Click a dot or drag to jump through the page">';
+  progress.removeAttribute('aria-hidden');
+  const progressSeek = progress.querySelector('.progress-seek');
   progress.classList.add('is-ready');
   root.classList.add('has-reading-progress');
   let scheduled = false;
@@ -46,8 +48,17 @@
     const position = 2 + fraction * Math.max(0, progress.clientWidth - 20);
     progress.style.setProperty('--progress-x', `${position}px`);
     progress.style.setProperty('--progress-percent', `${fraction * 100}%`);
+    progressSeek.value = fraction * 100;
+    progressSeek.setAttribute('aria-valuetext', `${Math.round(fraction * 100)}% through the page`);
+    progressSeek.disabled = distance <= 0;
     scheduled = false;
   };
+  progressSeek.addEventListener('input', () => {
+    const fraction = Number(progressSeek.value) / 100;
+    const distance = Math.max(0, root.scrollHeight - innerHeight);
+    scrollTo({ top: fraction * distance, behavior: 'instant' });
+    updateProgress();
+  });
   const scheduleProgress = () => {
     if (!scheduled) { scheduled = true; requestAnimationFrame(updateProgress); }
   };
