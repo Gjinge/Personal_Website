@@ -1,0 +1,1045 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="dark light">
+<title>朝闻道 · Reading Notes — Liu Cixin</title>
+<meta name="description" content="Reading notes on Liu Cixin's collection 朝闻道: 87 passages marked in the paper book, with page numbers. Chinese original with AI translations into English, French and Spanish.">
+<style>
+:root{
+  --bg:#080d17; --panel:#101828; --panel-2:#0c1422; --line:#1e2c44;
+  --ink:#e6edf7; --muted:#8fa3bf; --dim:#63758f;
+  --accent:#7cc5ff; --accent-2:#ffc46b; --mark:#ff8a6b; --warn:#b98cff;
+  --serif:"Noto Serif CJK SC","Source Han Serif SC","Songti SC",Georgia,"Times New Roman",serif;
+  --sans:"Noto Sans CJK SC","PingFang SC","Hiragino Sans GB","Microsoft YaHei",system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+  background-image:radial-gradient(1200px 600px at 15% -10%,rgba(124,197,255,.10),transparent 60%),
+                   radial-gradient(900px 500px at 95% 8%,rgba(255,196,107,.07),transparent 60%);
+  background-attachment:fixed;}
+.wrap{max-width:900px;margin:0 auto;padding:16px}
+a{color:var(--accent)}
+
+/* ---------- language bar ---------- */
+.langbar{display:flex;justify-content:flex-end;gap:6px;padding-block:14px 0;flex-wrap:wrap}
+.langbar a.back{margin-right:auto;font-size:.8rem;color:var(--muted);text-decoration:none;align-self:center}
+.langbar a.back:hover{color:var(--ink)}
+.langbar button{background:transparent;border:1px solid var(--line);color:var(--muted);border-radius:999px;
+  padding:5px 12px;font-size:.76rem;letter-spacing:.05em;cursor:pointer;font-family:inherit;transition:.15s}
+.langbar button:hover{color:var(--ink);border-color:var(--accent)}
+.langbar button[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:#06121f;font-weight:600}
+
+/* ---------- header ---------- */
+header.hero{padding-block:34px 28px;border-bottom:1px solid var(--line)}
+.eyebrow{font-size:.74rem;letter-spacing:.22em;text-transform:uppercase;color:var(--dim);margin:0 0 14px}
+h1{font-family:var(--serif);font-size:clamp(1.9rem,6vw,3rem);line-height:1.25;margin:0 0 6px;font-weight:600}
+h1 .by{display:block;font-family:var(--sans);font-size:.9rem;font-weight:400;letter-spacing:.16em;color:var(--muted);margin-top:12px}
+.hero-note{color:var(--muted);max-width:62ch;margin:18px 0 0;font-size:.95rem}
+.facts{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px;padding:0;list-style:none}
+.facts li{background:var(--panel);border:1px solid var(--line);border-radius:999px;
+  padding:7px 14px;font-size:.8rem;color:var(--muted)}
+.facts b{color:var(--ink);font-weight:600}
+
+/* ---------- provenance banner ---------- */
+.provenance{margin-top:26px;border:1px solid rgba(185,140,255,.38);background:rgba(185,140,255,.09);
+  border-radius:14px;padding:18px 20px}
+.provenance h2{font-family:var(--sans);font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--warn);margin:0 0 10px;font-weight:700;display:flex;align-items:center;gap:8px}
+.provenance h2 svg{width:15px;height:15px;flex:0 0 auto;stroke:currentColor;fill:none;stroke-width:1.8}
+.provenance p{margin:0 0 8px;font-size:.88rem;color:#ded2f5}
+.provenance p:last-child{margin-bottom:0}
+.provenance dl{margin:12px 0 0;display:grid;grid-template-columns:auto 1fr;gap:5px 14px;font-size:.82rem}
+.provenance dt{color:var(--warn);white-space:nowrap}
+.provenance dd{margin:0;color:#ded2f5}
+.provenance code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.94em;
+  background:rgba(0,0,0,.3);padding:1px 6px;border-radius:5px;color:#efe6ff}
+
+/* ---------- toc / filter ---------- */
+nav.toc{position:sticky;top:0;z-index:5;background:rgba(8,13,23,.93);backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line);margin-inline:-16px;padding:10px 16px}
+.toc-row{max-width:900px;margin:0 auto;display:flex;gap:8px;overflow-x:auto;scrollbar-width:thin;padding-bottom:2px}
+.toc-row button{flex:0 0 auto;background:transparent;border:1px solid var(--line);color:var(--muted);
+  border-radius:999px;padding:6px 13px;font-size:.8rem;cursor:pointer;font-family:inherit;white-space:nowrap;transition:.15s}
+.toc-row button:hover{color:var(--ink);border-color:var(--accent)}
+.toc-row button[aria-pressed="true"]{background:var(--accent);border-color:var(--accent);color:#06121f;font-weight:600}
+
+/* ---------- story ---------- */
+section.story{padding-block:44px 8px;border-bottom:1px solid var(--line)}
+section.story:last-of-type{border-bottom:0}
+.story-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:12px;margin-bottom:4px}
+h2.story-title{font-family:var(--serif);font-size:clamp(1.35rem,4vw,1.8rem);margin:0;font-weight:600}
+.story-zh{font-family:var(--serif);color:var(--muted);font-size:1rem}
+.range{font-size:.78rem;color:var(--dim);letter-spacing:.06em}
+.story-sub{color:var(--muted);font-size:.88rem;margin:8px 0 26px;max-width:62ch}
+
+/* ---------- entry ---------- */
+.entry{background:var(--panel-2);border:1px solid var(--line);border-radius:14px;padding:20px 22px;margin-bottom:16px}
+.entry:hover{border-color:#2b3f60}
+.entry-top{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-bottom:12px}
+.page{font-family:var(--serif);font-size:.82rem;color:var(--accent);border:1px solid rgba(124,197,255,.35);
+  background:rgba(124,197,255,.08);border-radius:6px;padding:2px 9px;letter-spacing:.04em}
+.page.approx{color:var(--muted);border-color:var(--line);background:transparent}
+.kind{font-size:.72rem;letter-spacing:.08em;color:var(--dim);border:1px solid var(--line);border-radius:6px;padding:2px 8px}
+.kind.circle{color:var(--accent-2);border-color:rgba(255,196,107,.35)}
+.star{color:var(--accent-2);font-size:.9rem}
+blockquote{margin:0;font-family:var(--serif);font-size:1.02rem;line-height:2;color:var(--ink);
+  border-left:2px solid #2b3f60;padding-left:16px}
+blockquote.latin{line-height:1.85}
+blockquote em{font-style:italic;color:var(--dim)}
+blockquote b{color:#fff;font-weight:600}
+.orig{margin:14px 0 0;border-left:2px solid #22324c;padding-left:16px}
+.orig-label{font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:var(--dim);margin:0 0 6px;
+  display:flex;align-items:center;gap:6px}
+.orig-label::before{content:"";width:14px;height:1px;background:var(--dim);display:inline-block}
+.orig p{margin:0;font-family:var(--serif);font-size:.94rem;line-height:1.95;color:var(--muted)}
+.mynote{margin:14px 0 0;padding:11px 14px;border-radius:10px;background:rgba(255,138,107,.08);
+  border:1px solid rgba(255,138,107,.28);font-size:.9rem;color:#ffd9cd}
+.mynote b{color:var(--mark);font-weight:600;letter-spacing:.06em;font-size:.72rem;display:block;margin-bottom:3px;text-transform:uppercase}
+.mynote .note-orig{display:block;margin-top:5px;font-family:var(--serif);color:#c7a396;font-size:.88rem}
+.src{margin:12px 0 0;font-size:.72rem;color:#4d5e77;letter-spacing:.03em;font-family:ui-monospace,SFMono-Regular,Menlo,monospace}
+
+/* ---------- footer ---------- */
+footer{padding-block:40px 60px;color:var(--dim);font-size:.82rem;border-top:1px solid var(--line);margin-top:40px}
+footer p{margin:0 0 8px;max-width:72ch}
+.legend{display:flex;flex-wrap:wrap;gap:16px;margin:0 0 18px;padding:0;list-style:none;font-size:.78rem}
+.legend li{display:flex;align-items:center;gap:7px}
+.swatch{width:11px;height:11px;border-radius:3px;display:inline-block;flex:0 0 auto}
+
+@media (max-width:560px){
+  .entry{padding:16px 15px;border-radius:12px}
+  blockquote{font-size:.98rem;line-height:1.95;padding-left:13px}
+  .provenance{padding:15px 16px}
+}
+@media print{
+  body{background:#fff;color:#000}
+  nav.toc,.langbar{display:none}
+  .entry{break-inside:avoid;border-color:#ccc;background:#fff}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="langbar">
+    <a class="back" href="../reading.html" id="backlink">← Reading Notes</a>
+    <button type="button" data-l="en" aria-pressed="true">English</button>
+    <button type="button" data-l="zh" aria-pressed="false">简体中文</button>
+    <button type="button" data-l="fr" aria-pressed="false">Français</button>
+    <button type="button" data-l="es" aria-pressed="false">Español</button>
+  </div>
+
+  <header class="hero">
+    <p class="eyebrow" id="eyebrow"></p>
+    <h1><span id="booktitle"></span><span class="by" id="byline"></span></h1>
+    <p class="hero-note" id="heronote"></p>
+    <ul class="facts" id="facts"></ul>
+
+    <section class="provenance" aria-labelledby="prov-title">
+      <h2 id="prov-title">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v18M3 7h6M15 7h6M6 12l-3 5h6ZM18 12l-3 5h6Z"/></svg>
+        <span id="prov-heading"></span>
+      </h2>
+      <p id="prov-body"></p>
+      <dl>
+        <dt id="prov-k1"></dt><dd id="prov-v1"></dd>
+        <dt id="prov-k2"></dt><dd id="prov-v2"></dd>
+        <dt id="prov-k3"></dt><dd id="prov-v3"></dd>
+        <dt id="prov-k4"></dt><dd id="prov-v4"></dd>
+      </dl>
+    </section>
+  </header>
+
+  <nav class="toc" aria-label="Stories"><div class="toc-row" id="filters"></div></nav>
+
+  <main id="main"></main>
+
+  <footer>
+    <ul class="legend" id="legend"></ul>
+    <div id="footnotes"></div>
+    <p style="margin-top:18px" id="signature"></p>
+  </footer>
+
+</div>
+
+<script>
+const LANGS = ['en','zh','fr','es'];
+
+const UI = {
+  back:   {en:'← Reading Notes', zh:'← 读书笔记', fr:'← Notes de lecture', es:'← Notas de lectura'},
+  eyebrow:{en:'Reading notes · Liu Cixin', zh:'读书笔记 · 刘慈欣', fr:'Notes de lecture · Liu Cixin', es:'Notas de lectura · Liu Cixin'},
+  byline: {
+    en:'LIU CIXIN · science-fiction collection · lit. “to hear the Way at dawn”',
+    zh:'刘慈欣 · 科幻小说集',
+    fr:'LIU CIXIN · recueil de science-fiction · litt. « entendre la Voie au matin »',
+    es:'LIU CIXIN · colección de ciencia ficción · lit. «oír el Camino al amanecer»'
+  },
+  hero: {
+    en:'Read 15–17 February 2025. I marked up the paper book as I went — underlines, circles, and a few notes in the margin. This page transcribes every mark: the Chinese original, the story it belongs to, and the page number.',
+    zh:'2025 年 2 月 15–17 日读完，边读边在书上划线、圈注，并随手写了几条批注。这里把纸本上的痕迹逐条整理成文字：保留中文原文，标注所属篇目与页码。',
+    fr:'Lu du 15 au 17 février 2025. J’ai annoté le livre papier au fil de la lecture — soulignements, passages entourés, quelques notes en marge. Cette page transcrit chaque marque : le texte chinois original, la nouvelle concernée et le numéro de page.',
+    es:'Leído del 15 al 17 de febrero de 2025. Fui marcando el libro en papel — subrayados, círculos y algunas notas al margen. Esta página transcribe cada marca: el texto original en chino, el relato al que pertenece y el número de página.'
+  },
+  facts: {
+    en:[['6','stories'],['113','marked passages'],['7','handwritten notes'],['15–17 Feb 2025','read'],['pp. 1–258','print edition']],
+    zh:[['6','篇小说'],['113','处标记'],['7','条手写批注'],['2025.02.15–17','阅读期间'],['p.1–258','纸质底本']],
+    fr:[['6','nouvelles'],['113','passages marqués'],['7','notes manuscrites'],['15–17 févr. 2025','lecture'],['p. 1–258','édition papier']],
+    es:[['6','relatos'],['113','pasajes marcados'],['7','notas manuscritas'],['15–17 feb. 2025','lectura'],['pp. 1–258','edición impresa']]
+  },
+  provHead:{en:'Translation notice', zh:'翻译说明', fr:'Avis de traduction', es:'Aviso de traducción'},
+  provBody:{
+    en:'Everything quoted on this page was written in Chinese. The English, French and Spanish wordings are machine translations produced by an AI model and have not been reviewed by a professional translator. The Chinese original is printed under every passage and is the only authoritative text — where the two disagree, trust the Chinese.',
+    zh:'本页引用的全部文字原文为中文。页面上的英文、法文、西班牙文均由 AI 模型机器翻译生成，未经专业译者校订。每条引文下方均附中文原文，原文为唯一准据 —— 若译文与原文有出入，以中文为准。',
+    fr:'Tout ce qui est cité sur cette page a été écrit en chinois. Les versions anglaise, française et espagnole sont des traductions automatiques produites par un modèle d’IA et n’ont pas été revues par un traducteur professionnel. Le texte chinois original figure sous chaque passage et fait seul foi : en cas de divergence, c’est le chinois qui prime.',
+    es:'Todo lo citado en esta página se escribió originalmente en chino. Las versiones en inglés, francés y español son traducciones automáticas generadas por un modelo de IA y no han sido revisadas por un traductor profesional. El original chino aparece bajo cada pasaje y es el único texto con valor de referencia: si ambos discrepan, vale el chino.'
+  },
+  provKeys:{
+    en:['Original language','Source text','Translated by','Translated on'],
+    zh:['原文语言','底本','翻译','翻译日期'],
+    fr:['Langue d’origine','Texte source','Traduit par','Date de traduction'],
+    es:['Lengua original','Texto fuente','Traducido por','Fecha de traducción']
+  },
+  provVals:{
+    en:['Chinese (Simplified) — 简体中文',
+        'Liu Cixin, 《朝闻道》, print edition, pp. 1–258. The story 朝闻道 was additionally checked line by line against an EPUB of the text.',
+        'Anthropic Claude — <code>claude-opus-5</code> (machine translation, not post-edited)',
+        '11 September 2026'],
+    zh:['简体中文',
+        '刘慈欣《朝闻道》纸质版，p.1–258。其中《朝闻道》一篇另与 EPUB 正文逐句校对。',
+        'Anthropic Claude — <code>claude-opus-5</code>（机器翻译，未经人工润色）',
+        '2026 年 9 月 11 日'],
+    fr:['chinois simplifié — 简体中文',
+        'Liu Cixin, 《朝闻道》, édition papier, p. 1–258. La nouvelle 朝闻道 a en outre été collationnée phrase par phrase avec un EPUB.',
+        'Anthropic Claude — <code>claude-opus-5</code> (traduction automatique, sans post-édition)',
+        '11 septembre 2026'],
+    es:['chino simplificado — 简体中文',
+        'Liu Cixin, 《朝闻道》, edición impresa, pp. 1–258. El relato 朝闻道 se cotejó además frase por frase con un EPUB.',
+        'Anthropic Claude — <code>claude-opus-5</code> (traducción automática, sin posedición)',
+        '11 de septiembre de 2026']
+  },
+  all:{en:'All stories', zh:'全部篇目', fr:'Toutes les nouvelles', es:'Todos los relatos'},
+  kinds:{
+    u:   {en:'underline', zh:'划线', fr:'souligné', es:'subrayado'},
+    u2:  {en:'double underline', zh:'划线（双线）', fr:'double soulignement', es:'doble subrayado'},
+    c:   {en:'circled', zh:'圈注', fr:'entouré', es:'rodeado'},
+    cend:{en:'last line circled', zh:'末句加圈', fr:'dernière phrase entourée', es:'última frase rodeada'},
+    span:{en:'across two pages', zh:'跨页', fr:'sur deux pages', es:'en dos páginas'},
+    cu:  {en:'circled + underlined', zh:'圈注 ＋ 划线', fr:'entouré et souligné', es:'rodeado y subrayado'},
+    fn:  {en:'with footnote', zh:'含脚注', fr:'avec note de bas de page', es:'con nota al pie'},
+    qg:  {en:'“doctorate in quantum gravity” also circled', zh:'「量子引力专业的博士学位」另加圈', fr:'« doctorat en gravité quantique » également entouré', es:'«doctorado en gravedad cuántica» también rodeado'}
+  },
+  star:    {en:'★ note in margin', zh:'★ 有批注', fr:'★ note en marge', es:'★ nota al margen'},
+  starOnly:{en:'★ starred in margin', zh:'★ 旁加星号', fr:'★ étoile en marge', es:'★ estrella al margen'},
+  orig:    {en:'Chinese original', zh:'原文', fr:'Original chinois', es:'Original en chino'},
+  myNote:  {en:'My margin note', zh:'我的批注', fr:'Ma note en marge', es:'Mi nota al margen'},
+  legend:{
+    en:['Page number read off the printed page in the photo','“≈ p. XX” is estimated from the nearest visible page numbers','Circled, or starred in the margin','A handwritten note of mine'],
+    zh:['页码来自照片上可见的印刷页码','「≈ p.XX」为依据前后可见页码推算','圈注 / 星号','手写批注'],
+    fr:['Numéro de page lu sur la page imprimée, d’après la photo','« ≈ p. XX » : estimation d’après les pages visibles voisines','Entouré, ou marqué d’une étoile en marge','Une note manuscrite de ma main'],
+    es:['Número de página leído en la página impresa de la foto','«≈ p. XX»: estimación a partir de las páginas visibles cercanas','Rodeado, o con estrella al margen','Una nota manuscrita mía']
+  },
+  foot:{
+    en:['Passages were transcribed from the underlines and circles in the paper book. A few could not be read with certainty because of the camera angle or my own cursive; those entries say so.',
+        'The IMG_… code under each entry is the photograph of that page, in my album 《朝闻道》 刘慈欣.'],
+    zh:['原文依纸质书上的划线与圈注逐条录入。少数段落因拍摄角度或草书笔迹无法完全辨认，已在条目中注明。',
+        '每条底部的 IMG_… 为对应照片文件名，可回到《朝闻道》 刘慈欣 相册核对原页。'],
+    fr:['Les passages ont été transcrits à partir des soulignements et des cercles tracés dans le livre papier. Quelques-uns n’ont pu être déchiffrés avec certitude, à cause de l’angle de la photo ou de ma propre écriture cursive ; ces entrées le signalent.',
+        'Le code IMG_… sous chaque entrée renvoie à la photo de la page correspondante, dans mon album 《朝闻道》 刘慈欣.'],
+    es:['Los pasajes se transcribieron a partir de los subrayados y círculos del libro en papel. Algunos no pudieron leerse con certeza por el ángulo de la foto o por mi propia letra cursiva; esas entradas lo indican.',
+        'El código IMG_… bajo cada entrada corresponde a la fotografía de esa página, en mi álbum 《朝闻道》 刘慈欣.']
+  },
+  sig:{en:'Compiled September 2026 · Jinge Guo', zh:'整理于 2026 年 9 月 · 郭晋阁', fr:'Compilé en septembre 2026 · Jinge Guo', es:'Recopilado en septiembre de 2026 · Jinge Guo'}
+};
+
+const STORIES = [
+  {id:'eyes', zh:'带上她的眼睛', range:'p.1 – p.20',
+   t:{en:'With Her Eyes', zh:'带上她的眼睛', fr:'Avec ses yeux', es:'Con sus ojos'},
+   s:{en:'“Sunset 6” is stranded at the centre of the Earth. A girl who will never see the surface again lends someone else her eyes.',
+      zh:'「落日六号」沉入地心，一个再也看不到地面的姑娘，把她的眼睛借给了别人。',
+      fr:'« Coucher de soleil 6 » est immobilisé au centre de la Terre. Une jeune femme qui ne reverra jamais la surface prête ses yeux à un autre.',
+      es:'«Puesta de Sol 6» queda varado en el centro de la Tierra. Una muchacha que nunca volverá a ver la superficie le presta sus ojos a otro.'}},
+  {id:'dao', zh:'朝闻道', range:'p.21 – p.60',
+   t:{en:'Hearing the Way', zh:'朝闻道', fr:'Entendre la Voie', es:'Oír el Camino'},
+   s:{en:'The Einstein Equator, the Sentinel, the Altar of Truth. Is one answer worth a life? (This story was cross-checked line by line against the electronic text.)',
+      zh:'爱因斯坦赤道、排险者、真理祭坛。用生命换一个答案，值不值？（本篇已与电子版原文逐句校对）',
+      fr:'L’équateur d’Einstein, le Démineur, l’autel de la Vérité. Une réponse vaut-elle une vie ? (Cette nouvelle a été collationnée phrase par phrase avec le texte électronique.)',
+      es:'El Ecuador de Einstein, el Desactivador, el Altar de la Verdad. ¿Vale una vida a cambio de una respuesta? (Este relato se cotejó frase por frase con el texto electrónico.)'}},
+  {id:'thinker', zh:'思想者', range:'≈ p.61 – p.84',
+   t:{en:'The Thinker', zh:'思想者', fr:'Le Penseur', es:'El Pensador'},
+   s:{en:'The Siyun Mountain observatory; thirty-four years and four climbs. The flickering of the stars is the firing of an immense brain.',
+      zh:'思云山天文台，三十四年，四次上山。恒星的闪烁是宇宙这颗大脑的神经脉冲。',
+      fr:'L’observatoire du mont Siyun ; trente-quatre ans et quatre ascensions. Le scintillement des étoiles est l’influx nerveux d’un cerveau immense.',
+      es:'El observatorio del monte Siyun; treinta y cuatro años y cuatro ascensos. El parpadeo de las estrellas es el impulso nervioso de un cerebro inmenso.'}},
+  {id:'sun', zh:'中国太阳', range:'≈ p.85 – p.140',
+   t:{en:'Sun of China', zh:'中国太阳', fr:'Le Soleil de Chine', es:'El Sol de China'},
+   s:{en:'Shui Wa walks out of a drought-stricken village in the northwest, up the skyscrapers of Beijing, onto a mirror in orbit — and finally onto the roof of the universe.',
+      zh:'水娃从西北旱村走到北京，从擦玻璃走到镜面太阳，最后走向宇宙的楼顶。',
+      fr:'Shui Wa quitte un village desséché du Nord-Ouest pour les gratte-ciel de Pékin, puis un miroir en orbite — et enfin le toit de l’univers.',
+      es:'Shui Wa sale de una aldea reseca del noroeste, sube a los rascacielos de Pekín, llega a un espejo en órbita y, al final, al tejado del universo.'}},
+  {id:'collapse', zh:'坍缩', range:'≈ p.141 – p.154',
+   t:{en:'Contraction', zh:'坍缩', fr:'Contraction', es:'Contracción'},
+   s:{en:'On the night the universe stops expanding, Ding Yi and the governor wait on an observatory roof for red shift to turn blue.',
+      zh:'宇宙停止膨胀的那一夜，丁仪和省长在天文台上等一个红移变蓝移的瞬间。',
+      fr:'La nuit où l’univers cesse de s’étendre, Ding Yi et le gouverneur attendent sur le toit d’un observatoire que le décalage vers le rouge devienne bleu.',
+      es:'La noche en que el universo deja de expandirse, Ding Yi y el gobernador esperan en un observatorio el instante en que el corrimiento al rojo se vuelva azul.'}},
+  {id:'jam', zh:'全频带阻塞干扰', range:'≈ p.155 – p.217',
+   t:{en:'Full-Spectrum Barrage Jamming', zh:'全频带阻塞干扰', fr:'Brouillage sur toute la bande', es:'Interferencia de barrera en todo el espectro'},
+   s:{en:'Karina, Marshal Levchenko, Misha and the Eternal Blizzard. A war that ends by turning the sun itself into a weapon.',
+      zh:'卡琳娜、列夫森科元帅、米沙与「万年风雪号」。一场把太阳当武器的战争。',
+      fr:'Karina, le maréchal Levtchenko, Micha et le « Blizzard éternel ». Une guerre qui finit par faire du Soleil une arme.',
+      es:'Karina, el mariscal Levchenko, Misha y el «Ventisca Eterna». Una guerra que acaba convirtiendo el Sol en un arma.'}},
+  {id:'cloud', zh:'诗云', range:'≈ p.218 – p.258',
+   t:{en:'The Poetry Cloud', zh:'诗云', fr:'Le Nuage de poésie', es:'La Nube de poesía'},
+   s:{en:'A god, the Devourer Empire, Yi Yi — and a god of technology who calls himself Li Bai. Writing every poem that could ever exist, out of an entire solar system.',
+      zh:'神、吞食帝国、伊依，和一个自称李白的技术之神。用整个太阳系写尽所有的诗。',
+      fr:'Un dieu, l’Empire dévoreur, Yi Yi — et un dieu de la technique qui se fait appeler Li Bai. Écrire tous les poèmes possibles avec un système solaire entier.',
+      es:'Un dios, el Imperio Devorador, Yi Yi — y un dios de la técnica que se hace llamar Li Bai. Escribir todos los poemas posibles con un sistema solar entero.'}}
+];
+
+const ENTRIES = [
+/* ========== 带上她的眼睛 ========== */
+{s:'eyes',p:'3',k:['u'],src:'IMG_20250215_211027',
+ zh:'在庞大的太空服中，她更显得矮小，一副可怜兮兮的样子，显然刚刚体会到太空不是她在大学图书馆中想象的浪漫天堂，某些方面可能比地狱还稍差些。',
+ en:'Inside the huge spacesuit she looked smaller still, and rather pitiful — she had clearly just discovered that space was not the romantic paradise she had imagined in the university library, and that in some respects it was rather worse than hell.',
+ fr:'Dans son énorme combinaison, elle paraissait plus petite encore, et plutôt pitoyable : elle venait manifestement de découvrir que l’espace n’était pas le paradis romantique qu’elle avait imaginé à la bibliothèque universitaire, et qu’à certains égards il valait un peu moins que l’enfer.',
+ es:'Dentro del enorme traje espacial parecía aún más menuda, con un aire lastimoso: era evidente que acababa de descubrir que el espacio no era el paraíso romántico que había imaginado en la biblioteca de la universidad y que, en ciertos aspectos, resultaba algo peor que el infierno.'},
+{s:'eyes',p:'10',k:['u2'],src:'IMG_20250215_212101',
+ zh:'所以人们不再珍视什么了，面对着一大堆伸手可得的水果，他们把拿起的每一个咬一口就扔掉。',
+ en:'And so people no longer treasured anything. Faced with a great heap of fruit all within arm’s reach, they took a bite out of each piece and threw it away.',
+ fr:'Aussi les gens ne tenaient-ils plus rien pour précieux. Devant un grand tas de fruits tous à portée de main, ils croquaient chacun une fois, puis le jetaient.',
+ es:'Por eso la gente ya no valoraba nada. Ante un gran montón de frutas al alcance de la mano, daban un mordisco a cada una y la tiraban.'},
+{s:'eyes',p:'14',a:1,k:['u'],src:'IMG_20250215_212536',
+ zh:'世界在我的眼中仍是灰色的，但星星点点的嫩绿在其中出现，并在增多。当这种变化发展到让我觉察出来时，我又想起了她。也是无意识的。',
+ en:'The world was still grey to me, but points of tender green had begun to appear in it, and to multiply. By the time the change had gone far enough for me to notice it, I was thinking of her again — and again without meaning to.',
+ fr:'Le monde restait gris à mes yeux, mais des points de vert tendre y apparaissaient, et se multipliaient. Quand ce changement fut assez avancé pour que je le remarque, je repensais à elle — là encore, sans l’avoir voulu.',
+ es:'El mundo seguía siendo gris para mí, pero en él empezaban a aparecer puntos de verde tierno, y se multiplicaban. Cuando el cambio avanzó lo bastante para que yo lo notara, volvía a pensar en ella; también esta vez, sin proponérmelo.'},
+{s:'eyes',p:'19',k:['u'],src:'IMG_20250215_213252',
+ zh:'那个没有日出的细雨蒙蒙的草原早晨，竟是她最后看到的地面世界。',
+ en:'That drizzling morning on the grassland, with no sunrise in it, turned out to be the last of the surface world she would ever see.',
+ fr:'Ce matin de bruine sur la steppe, sans lever de soleil, fut le dernier morceau du monde de surface qu’elle devait voir.',
+ es:'Aquella mañana de llovizna en la pradera, sin amanecer, resultó ser lo último que vería del mundo de la superficie.'},
+{s:'eyes',p:'19',k:['u'],src:'IMG_20250215_213252',
+ zh:'后来「落日六号」同地面只能保持着语音和数据通信，而这个联系也在一天深夜中断了，她被永远孤独地封闭于地心中。',
+ en:'After that, “Sunset 6” could keep only voice and data contact with the surface — and late one night even that link broke off. She was sealed into the centre of the Earth, alone, for good.',
+ fr:'Par la suite, « Coucher de soleil 6 » ne conserva avec la surface qu’une liaison vocale et de données — et, tard un soir, ce lien lui-même se rompit. Elle fut scellée au centre de la Terre, seule, pour toujours.',
+ es:'Después, «Puesta de Sol 6» solo pudo mantener con la superficie comunicación de voz y datos, y una noche también ese enlace se cortó. Quedó encerrada para siempre, sola, en el centro de la Tierra.'},
+
+/* ========== 朝闻道 ========== */
+{s:'dao',p:'29',a:1,k:['c'],src:'IMG_20250215_214409',
+ zh:'正当丁仪陷入绝望之时，茫茫的星海扰动起来，群星汇成的洪流在旋转奔涌，当一切都平静下来时，宇宙间的所有星星构成了一只大眼睛，那只百亿光年大小的眼睛如钻石粉末在黑色的天鹅绒上撒出的图案，它盯着丁仪看，波函数在瞬间坍缩，如倒着放映的焰火影片，他的量子存在凝聚于宇宙中微不足道的一点上，他睁开双眼，回到了现实。',
+ en:'Just as Ding Yi was sinking into despair, the boundless sea of stars began to stir; the torrent of massed suns wheeled and surged, and when everything had settled again, all the stars in the universe had formed a single enormous eye — an eye ten billion light-years across, like a pattern of diamond dust scattered on black velvet. It fixed its gaze on Ding Yi. In an instant the wave function collapsed; like a film of fireworks run backwards, his quantum existence condensed onto one negligible point in the universe. He opened his eyes and was back in the real world.',
+ fr:'Au moment où Ding Yi sombrait dans le désespoir, l’immense mer d’étoiles s’agita ; le torrent des soleils rassemblés tournoya et déferla, et lorsque tout se fut apaisé, toutes les étoiles de l’univers formaient un unique œil gigantesque — un œil de dix milliards d’années-lumière, semblable à de la poussière de diamant répandue sur du velours noir. Il fixait Ding Yi. En un instant, la fonction d’onde s’effondra ; comme un film de feu d’artifice projeté à l’envers, son existence quantique se condensa en un point insignifiant de l’univers. Il ouvrit les yeux et retrouva le réel.',
+ es:'Justo cuando Ding Yi se hundía en la desesperación, el inmenso mar de estrellas se agitó; el torrente de soles reunidos giró y se desbordó, y cuando todo volvió a calmarse, todas las estrellas del universo formaban un único ojo enorme: un ojo de diez mil millones de años luz, como un dibujo de polvo de diamante esparcido sobre terciopelo negro. Miraba fijamente a Ding Yi. En un instante la función de onda colapsó; como una película de fuegos artificiales proyectada al revés, su existencia cuántica se condensó en un punto insignificante del universo. Abrió los ojos y regresó a la realidad.'},
+{s:'dao',p:'38',a:1,k:['c'],src:'IMG_20250215_215423',
+ zh:'丁仪若有所悟地点点头：「要说也是这样，那个伟大的望星人！」……以后我就来到了你们的世界，监视着文明的进程，像是守护着一个玩火的孩子，周围被火光照亮的宇宙使这孩子着迷，他不顾一切地把火越燃越烧旺，直到现在，宇宙已有被这火烧毁的危险。',
+ en:'Ding Yi nodded, as if something had dawned on him: “Put that way, it is the same — that great star-gazer!” … After that I came to your world and watched over the progress of civilisation, like someone minding a child playing with fire. The universe lit up around him by the flames fascinates the child, and he feeds the fire higher and higher, heedless of everything, until now the universe itself is in danger of being burned away.',
+ fr:'Ding Yi hocha la tête, comme éclairé : « À ce compte-là, c’est pareil — ce grand contemplateur d’étoiles ! » … Ensuite, je suis venu dans votre monde surveiller la marche de la civilisation, comme on garde un enfant qui joue avec le feu. L’univers éclairé alentour par les flammes fascine cet enfant, et il attise le feu de plus en plus fort, sans rien vouloir entendre, si bien qu’à présent l’univers risque d’être consumé.',
+ es:'Ding Yi asintió, como si algo se le hubiera revelado: «Dicho así, es lo mismo: ¡aquel gran contemplador de estrellas!» … Después vine a vuestro mundo y vigilé el avance de la civilización, como quien cuida a un niño que juega con fuego. El universo iluminado alrededor por las llamas fascina al niño, y él aviva el fuego cada vez más, sin atender a nada, hasta que ahora el propio universo corre el riesgo de arder.'},
+{s:'dao',p:'41',a:1,k:['u'],src:'IMG_20250215_215543',
+ zh:'而大统一模型在技术上的应用会使你们拥有产生更高能量过程的手段，你们会试图用这种能量过程击穿不同宇宙间的壁垒，不同宇宙间的真空存在着能级差，这就会导致真空衰变，同时毁灭两个或更多的宇宙。',
+ en:'And the technological application of the grand unified model would give you the means to produce higher-energy processes. You would try to use such processes to punch through the barrier between different universes; and because the vacua of different universes are at different energy levels, that would set off vacuum decay and destroy two or more universes at once.',
+ fr:'Or l’application technique du modèle de grande unification vous donnerait les moyens de produire des processus de plus haute énergie. Vous tenteriez de vous en servir pour percer la barrière entre des univers différents ; et comme les vides de ces univers se situent à des niveaux d’énergie différents, cela déclencherait une désintégration du vide et détruirait d’un coup deux univers, ou davantage.',
+ es:'Y la aplicación técnica del modelo de gran unificación os daría los medios para generar procesos de energía aún mayor. Intentaríais usarlos para perforar la barrera entre universos distintos; y como los vacíos de esos universos están a niveles de energía diferentes, eso desencadenaría una desintegración del vacío y destruiría a la vez dos universos, o más.'},
+{s:'dao',p:'42',a:1,k:['c'],src:'IMG_20250215_215620',
+ zh:'「你把宇宙的终极奥秘告诉我，然后毁灭我。」排险者对他点点头：「说说看。」……「给你三天时间考虑。」排险者说，他的回答不假思索，十分迅速，紧接着丁仪的话。丁仪欣喜若狂：「你是说这可行？！」排险者点点头。',
+ en:'“Tell me the ultimate secret of the universe, and then destroy me.” The Sentinel nodded at him: “Go on.” … “You have three days to think it over,” said the Sentinel. The answer came without hesitation, very fast, right on the heels of Ding Yi’s words. Ding Yi was beside himself: “You mean it can be done?!” The Sentinel nodded.',
+ fr:'« Révèle-moi le secret ultime de l’univers, puis détruis-moi. » Le Démineur lui fit un signe de tête : « Continue. » … « Tu as trois jours pour y réfléchir », dit le Démineur. La réponse vint sans hésitation, très vite, dans le sillage immédiat des mots de Ding Yi. Ding Yi exulta : « Vous voulez dire que c’est possible ?! » Le Démineur acquiesça.',
+ es:'«Dime el secreto último del universo y después destrúyeme.» El Desactivador asintió: «Sigue.» … «Tienes tres días para pensarlo», dijo el Desactivador. La respuesta llegó sin vacilar, muy rápida, pisando las palabras de Ding Yi. Ding Yi se llenó de júbilo: «¿Quiere decir que es posible?» El Desactivador asintió.'},
+{s:'dao',p:'44',k:['u'],src:'IMG_20250215_220145 / 220216',
+ zh:'没人能惩罚你，你也别把即将发生的事伪装成一种惩罚，你正走在通向自己梦中天堂的路上！',
+ en:'No one can punish you, and don’t you dress up what is about to happen as a punishment either — you are walking the road to your own dreamed-of paradise!',
+ fr:'Personne ne peut te punir, et ne va pas déguiser en châtiment ce qui va arriver : tu marches sur la route du paradis dont tu rêves !',
+ es:'Nadie puede castigarte, y no disfraces de castigo lo que está a punto de ocurrir: ¡vas camino del paraíso con el que sueñas!'},
+{s:'dao',p:'50',k:['u'],src:'IMG_20250215_221047',
+ zh:'即使在我自己的世界中，也并非所有的成员都愿意为此牺牲一切。所以，我们自己没有继续进行探索超统一模型的高能试验，并在整个宇宙中建立了排险系统。',
+ en:'Even in my own world, not every member is willing to sacrifice everything for this. That is why we ourselves stopped carrying out the high-energy experiments that probe the super-unified model, and why we built the sentinel system across the whole universe.',
+ fr:'Même dans mon propre monde, tous les membres ne sont pas prêts à tout sacrifier pour cela. Voilà pourquoi nous avons nous-mêmes cessé les expériences de haute énergie qui sondent le modèle super-unifié, et pourquoi nous avons établi le système de déminage dans tout l’univers.',
+ es:'Incluso en mi propio mundo, no todos sus miembros están dispuestos a sacrificarlo todo por esto. Por eso nosotros mismos dejamos de realizar los experimentos de alta energía que exploran el modelo superunificado, y por eso instalamos el sistema de desactivación en todo el universo.'},
+{s:'dao',p:'51 – 52',k:['u','span'],src:'IMG_20250215_221235 / 221243',
+ zh:'他们声称为全人类的利益而研究，其实只是拿社会的财富满足自己的欲望，满足他们对那种玄虚的宇宙和谐美的变态欲望，这和拿公款嫖娼有什么区别？！',
+ en:'They claim to do research for the good of all humanity, but in fact they are spending society’s wealth to gratify their own craving — their perverse craving for that airy “harmonious beauty of the universe”. How is that any different from whoring on public money?!',
+ fr:'Ils prétendent chercher pour le bien de l’humanité entière, mais en réalité ils dépensent la richesse de la société pour assouvir leur propre désir — leur désir pervers de cette « beauté harmonieuse de l’univers » toute vaporeuse. En quoi est-ce différent d’aller aux filles avec l’argent public ?!',
+ es:'Dicen investigar por el bien de toda la humanidad, pero en realidad gastan la riqueza de la sociedad para satisfacer su propio deseo: ese deseo perverso de la etérea «belleza armónica del universo». ¿En qué se diferencia eso de irse de putas con dinero público?'},
+{s:'dao',p:'56',k:['u'],src:'IMG_20250215_221732',
+ zh:'文文，你爸爸是世界上最坏的爸爸，但他真的很想去那个动物园。',
+ en:'Wenwen, your father is the worst father in the world — but he really does want to go to that zoo.',
+ fr:'Wenwen, ton papa est le pire papa du monde — mais il a vraiment très envie d’aller dans ce zoo-là.',
+ es:'Wenwen, tu papá es el peor papá del mundo, pero de verdad tiene muchas ganas de ir a ese zoológico.'},
+{s:'dao',p:'56',k:['u'],src:'IMG_20250215_221732',
+ zh:'你听到这回答后很失望，说我并不是真的爱你，如果我真的爱你，就会弄瞎自己的双眼，让一个美丽的泉子永远留在心中。',
+ en:'You were disappointed by that answer. You said I didn’t really love you — that if I really loved you I would blind myself, so that a beautiful Quanzi would stay in my heart for ever.',
+ fr:'Cette réponse t’a déçue. Tu as dit que je ne t’aimais pas vraiment : que si je t’aimais vraiment, je me crèverais les yeux, pour qu’une belle Quanzi demeure à jamais dans mon cœur.',
+ es:'Aquella respuesta te decepcionó. Dijiste que yo no te amaba de verdad: que si te amara de verdad, me cegaría los ojos para que una hermosa Quanzi permaneciera para siempre en mi corazón.'},
+{s:'dao',p:'59',k:['u','qg'],src:'IMG_20250215_221953',
+ zh:'文文，你当初报考你爸爸母校的物理系，现在又要攻读量子引力专业的博士学位，妈都没拦你。你可以成为一名理论物理学家，甚至可以把这门学科当作自己唯一的精神寄托，但，文文，妈求你了，千万不要越过那条线啊！',
+ en:'Wenwen, when you applied to the physics department at your father’s old university, and now that you want a doctorate in quantum gravity, I never stood in your way. You may become a theoretical physicist; you may even make the subject the one thing you live for. But Wenwen — I’m begging you — whatever you do, never cross that line!',
+ fr:'Wenwen, quand tu as demandé à entrer au département de physique de l’université de ton père, et maintenant que tu veux un doctorat en gravité quantique, je ne t’ai jamais retenue. Tu peux devenir physicienne théoricienne ; tu peux même faire de cette discipline ton unique raison de vivre. Mais Wenwen — je t’en supplie — surtout, ne franchis jamais cette ligne !',
+ es:'Wenwen, cuando te presentaste al departamento de física de la universidad de tu padre, y ahora que quieres un doctorado en gravedad cuántica, nunca te lo impedí. Puedes ser física teórica; puedes incluso hacer de esa disciplina tu único sostén espiritual. Pero, Wenwen, te lo ruego: no cruces jamás esa línea.'},
+
+/* ========== 思想者 ========== */
+{s:'thinker',p:'66',k:['c'],src:'IMG_20250216_113323',
+ zh:'「我觉得自己在从事一项很美的事业，走进恒星世界，就像进入一个无限广阔的花园，这里的每一朵花都不相同……您肯定觉得这个比喻有些奇怪，但我确实有这种感觉。」',
+ en:'“I feel I am engaged in a very beautiful line of work. Entering the world of the stars is like walking into an infinitely wide garden where no two flowers are alike… You must find the comparison odd, but that really is how it feels to me.”',
+ fr:'« J’ai le sentiment d’exercer un très beau métier. Entrer dans le monde des étoiles, c’est comme pénétrer dans un jardin infiniment vaste où aucune fleur ne ressemble à une autre… Vous devez trouver cette comparaison bizarre, mais c’est vraiment ce que je ressens. »',
+ es:'«Siento que me dedico a un oficio muy hermoso. Entrar en el mundo de las estrellas es como entrar en un jardín infinitamente vasto donde no hay dos flores iguales… Seguro que le parece una comparación extraña, pero es exactamente lo que siento.»'},
+{s:'thinker',p:'67',a:1,k:['u'],src:'IMG_20250216_113507',
+ zh:'他生活的那座大都市里，每时每刻都有上百万个青春靓丽的女孩子在追逐着浮华和虚荣，像一大群做布朗运动的分子，没有给思想留出哪怕一瞬间的宁静。但谁能想到，在这远离尘嚣的云山上，却有一个文静的女孩子在长久地凝视星空……',
+ en:'In the great city where he lived, at every moment a million young and beautiful girls were chasing glitter and vanity, like a vast swarm of molecules in Brownian motion, leaving thought not one instant of quiet. And yet, who would have guessed that up here on this cloud-covered mountain, far from the din of the world, a quiet girl was gazing at the stars, hour after hour…',
+ fr:'Dans la grande ville où il vivait, à chaque instant un million de jeunes filles ravissantes couraient après le clinquant et la vanité, comme un immense essaim de molécules en mouvement brownien, sans laisser à la pensée un seul instant de calme. Et pourtant, qui aurait cru que là-haut, sur cette montagne noyée de nuages, loin du vacarme du monde, une jeune fille silencieuse contemplait longuement le ciel étoilé…',
+ es:'En la gran ciudad donde vivía, a cada instante un millón de muchachas jóvenes y hermosas perseguían el oropel y la vanidad, como un enjambre inmenso de moléculas en movimiento browniano, sin dejar al pensamiento ni un instante de sosiego. Y sin embargo, quién iba a imaginar que allá arriba, en aquella montaña entre nubes, lejos del estruendo del mundo, una muchacha callada contemplaba largamente el cielo estrellado…'},
+{s:'thinker',p:'69',a:1,k:['u'],src:'IMG_20250216_113647',
+ zh:'后来，他渐渐意识到自己的什么东西留在了思云山上。',
+ en:'Later he came slowly to realise that something of his own had been left behind on Siyun Mountain.',
+ fr:'Plus tard, il comprit peu à peu qu’une part de lui-même était restée sur le mont Siyun.',
+ es:'Más tarde fue comprendiendo poco a poco que algo suyo se había quedado en el monte Siyun.'},
+{s:'thinker',p:'70',a:1,k:['u'],src:'IMG_20250216_113904',
+ zh:'想到十年后她还能认出自己，他感到一丝安慰。',
+ en:'The thought that she could still recognise him ten years later gave him a small measure of comfort.',
+ fr:'L’idée qu’elle pût encore le reconnaître dix ans après lui procura une petite consolation.',
+ es:'Pensar que ella todavía pudiera reconocerlo diez años después le dio un pequeño consuelo.'},
+{s:'thinker',p:'73',a:1,k:['u'],src:'IMG_20250216_114504',
+ zh:'您同别人讨论思想是来自大脑还是心脏，有什么感觉？',
+ en:'How would you feel, discussing with someone whether thought comes from the brain or from the heart?',
+ fr:'Que ressentiriez-vous, à discuter avec quelqu’un pour savoir si la pensée vient du cerveau ou du cœur ?',
+ es:'¿Qué sentiría usted si tuviera que discutir con alguien si el pensamiento viene del cerebro o del corazón?'},
+{s:'thinker',p:'73',a:1,k:['c'],src:'IMG_20250216_114504',
+ zh:'他无话可说了，看到她在看表，他便起身告辞，她没有挽留他，但沿下山的公路送了他很远。他克制了朝她要电话号码的冲动，因为他知道，自己在她眼中不过是一个十年后又偶然重逢的陌路人而已。',
+ en:'He had nothing left to say. Seeing her glance at her watch, he rose and took his leave; she did not press him to stay, but walked with him a long way down the mountain road. He suppressed the urge to ask for her phone number, because he knew that in her eyes he was no more than a stranger she happened to run into again after ten years.',
+ fr:'Il n’avait plus rien à dire. La voyant regarder sa montre, il se leva et prit congé ; elle ne le retint pas, mais l’accompagna longtemps sur la route qui descendait la montagne. Il réprima l’envie de lui demander son numéro, car il savait qu’à ses yeux il n’était qu’un inconnu croisé de nouveau par hasard, dix ans plus tard.',
+ es:'No le quedaba nada que decir. Al verla mirar el reloj, se levantó y se despidió; ella no lo retuvo, pero lo acompañó un buen trecho por la carretera que bajaba de la montaña. Él reprimió el impulso de pedirle su número, porque sabía que a sus ojos no era más que un desconocido con el que se había topado otra vez, diez años después.'},
+{s:'thinker',p:'75',a:1,k:['u','cend'],src:'IMG_20250216_114826',
+ zh:'思云山天文台在四年前就不存在了，那里的建筑变成了度假别墅，在这个季节已空无一人，他到那儿去干什么？想到这里他停下了脚步，这七年的岁月显示出了它的力量，他再也不可能像当年那样轻松地登山了。他犹豫了一会儿，最终还是放弃了返回的念头，<b>继续向前走。</b>',
+ en:'The Siyun Mountain observatory had ceased to exist four years earlier; its buildings had been turned into holiday villas, empty at this season. What was he going up there for? The thought stopped him in his tracks. Those seven years had shown their power: he could no longer climb as easily as he once had. He hesitated a while, then gave up the idea of turning back and <b>walked on.</b>',
+ fr:'L’observatoire du mont Siyun n’existait plus depuis quatre ans ; ses bâtiments avaient été convertis en villas de villégiature, désertes en cette saison. Qu’allait-il donc faire là-haut ? Cette pensée l’arrêta net. Ces sept années avaient montré leur force : il ne pouvait plus grimper aussi aisément qu’autrefois. Il hésita un moment, puis renonça à faire demi-tour et <b>continua d’avancer.</b>',
+ es:'El observatorio del monte Siyun había dejado de existir cuatro años antes; sus edificios se habían convertido en chalés de vacaciones, vacíos en esa estación. ¿A qué iba él allí? La idea lo detuvo en seco. Aquellos siete años habían mostrado su fuerza: ya no podía subir con la ligereza de antes. Vaciló un momento y al final abandonó la idea de volverse y <b>siguió adelante.</b>'},
+{s:'thinker',p:'77',a:1,k:['u'],src:'IMG_20250216_115220',
+ zh:'在第三次从思云山返回后，他突然看到了生命的尽头，他和她的生命都再也没有多少个十七年了，宇宙的广漠使光都慢得像蜗牛，生命更是灰尘般微不足道。',
+ en:'After coming down from Siyun Mountain the third time, he suddenly saw the end of life. Neither his life nor hers had many more seventeen-year spans left in it. The vastness of the universe makes even light crawl like a snail; a life is more negligible still, a speck of dust.',
+ fr:'Après être redescendu du mont Siyun pour la troisième fois, il aperçut soudain la fin de la vie. Ni sa vie ni celle de cette femme ne comptaient encore beaucoup de tranches de dix-sept ans. L’immensité de l’univers fait ramper la lumière elle-même comme un escargot ; une vie est plus négligeable encore, un grain de poussière.',
+ es:'Tras bajar del monte Siyun por tercera vez, vio de pronto el final de la vida. Ni a la de él ni a la de ella les quedaban muchos tramos de diecisiete años. La inmensidad del universo hace que hasta la luz se arrastre como un caracol; una vida es aún más insignificante, una mota de polvo.'},
+{s:'thinker',p:'80',k:['u'],src:'IMG_20250216_115515',
+ zh:'但今夜没有月亮，无论怎样想象，他都觉得面前的她还是三十四年前那个月光中的少女，她的双眸映着星光，让他的心溶化在往昔的感觉中。',
+ en:'But there was no moon that night. However he tried to picture it, the woman before him was still the girl in the moonlight of thirty-four years ago; starlight was reflected in her eyes, and his heart dissolved into the feeling of that former time.',
+ fr:'Mais cette nuit-là, il n’y avait pas de lune. Il avait beau s’efforcer de l’imaginer, la femme devant lui restait la jeune fille du clair de lune, trente-quatre ans plus tôt ; la lumière des étoiles se reflétait dans ses yeux, et son cœur à lui se dissolvait dans la sensation d’autrefois.',
+ es:'Pero aquella noche no había luna. Por más que intentara imaginarlo, la mujer que tenía delante seguía siendo la muchacha bajo la luz de la luna de treinta y cuatro años atrás; la luz de las estrellas se reflejaba en sus ojos, y el corazón de él se disolvía en la sensación de aquel tiempo.'},
+{s:'thinker',p:'83',a:1,k:['u'],src:'IMG_20250216_120529',
+ zh:'那个宇宙，要比这个星光灿烂的已膨胀了一百五十亿年的外部宇宙更为宏大，外部宇宙虽然广阔，毕竟已被证明是有限的，而思想的宇宙是无限。',
+ en:'That universe is grander than this star-blazing outer universe that has been expanding for fifteen billion years. Vast as the outer universe is, it has after all been proved finite — whereas the universe of thought is infinite.',
+ fr:'Cet univers-là est plus vaste que cet univers extérieur, éclatant d’étoiles, qui s’étend depuis quinze milliards d’années. Si immense soit-il, l’univers extérieur a tout de même été démontré fini — tandis que l’univers de la pensée est infini.',
+ es:'Ese universo es más grandioso que este universo exterior, resplandeciente de estrellas, que lleva quince mil millones de años expandiéndose. Por vasto que sea, el universo exterior ha quedado demostrado finito; en cambio, el universo del pensamiento es infinito.'},
+
+/* ========== 中国太阳 ========== */
+{s:'sun',p:'87',a:1,k:['u'],src:'IMG_20250216_123036',
+ zh:'他就走在多皱的脸上，看着周围这广阔的黄土地，干干的黄褐色，布满了水土流失刻出的裂纹……他看不到这张伸向天边的巨脸的眼睛，但能觉到它的存在吗？这里的什么都是这样，树、地、房子、人，黑黄黑黄，皱巴巴的。',
+ en:'He was walking on a wrinkled face. Around him lay this wide loess land, a dry yellow-brown scored all over with the cracks that erosion had cut… He could not see the eyes of that enormous face stretching to the horizon — but could he feel that it was there? Everything here was like that: the trees, the ground, the houses, the people, all of them a dark sallow yellow, all of them creased.',
+ fr:'Il marchait sur un visage ridé. Autour de lui s’étendait cette vaste terre de lœss, d’un brun jaune et sec, tout entaillée des fissures creusées par l’érosion… Il ne voyait pas les yeux de cet immense visage qui s’étirait jusqu’à l’horizon — mais pouvait-il en sentir la présence ? Ici, tout était ainsi : les arbres, le sol, les maisons, les gens, d’un jaune sombre et terne, et tout fripé.',
+ es:'Caminaba sobre un rostro arrugado. A su alrededor se extendía esta ancha tierra de loess, de un pardo amarillento y seco, surcada por completo de grietas abiertas por la erosión… No alcanzaba a ver los ojos de aquel rostro inmenso que llegaba hasta el horizonte, pero ¿podía sentir que estaba allí? Aquí todo era así: los árboles, el suelo, las casas, la gente, todo de un amarillo oscuro y macilento, todo arrugado.'},
+{s:'sun',p:'89',a:1,k:['u'],src:'IMG_20250216_123147',
+ zh:'国强告诉他，矿上打的是深井，水当然不苦了，但他又加了一句：「城里的水才叫好喝呢！」',
+ en:'Guoqiang told him that the mine had sunk a deep well, so of course the water wasn’t bitter — and then he added: “Now, the water in the city, that’s what I call good!”',
+ fr:'Guoqiang lui expliqua que la mine avait creusé un puits profond, et que l’eau n’était donc pas amère — puis il ajouta : « Mais l’eau de la ville, ça, c’est de la bonne eau ! »',
+ es:'Guoqiang le contó que en la mina habían abierto un pozo profundo, así que el agua no era amarga; y luego añadió: «¡El agua de la ciudad sí que es buena!»'},
+{s:'sun',p:'91',k:['u'],src:'IMG_20250216_123304',
+ zh:'可都是甜水啊！因为有了甜水，这个黑乎乎的世界在水娃眼中变得美丽无比。',
+ en:'But it was all sweet water! Because of that sweet water, this grimy black world became, in Shui Wa’s eyes, beautiful beyond measure.',
+ fr:'Mais c’était de l’eau douce, toute cette eau ! Grâce à elle, ce monde tout noir devint, aux yeux de Shui Wa, d’une beauté sans pareille.',
+ es:'¡Pero toda era agua dulce! Gracias a esa agua dulce, aquel mundo ennegrecido se volvió, a los ojos de Shui Wa, hermosísimo.'},
+{s:'sun',p:'93',a:1,k:['u'],st:1,src:'IMG_20250216_123556',
+ zh:'这一晚上到十一点，水娃竟挣了十四块！但在回去的路上，二宝一脸晦气，说今天生意不好，言下之意显然是水娃抢了他的买卖。',
+ en:'By eleven that evening Shui Wa had made fourteen yuan! But on the way back Erbao wore a sour face and said business had been bad today — plainly implying that Shui Wa had taken his trade.',
+ fr:'Ce soir-là, à onze heures, Shui Wa avait gagné quatorze yuans ! Mais sur le chemin du retour, Erbao faisait grise mine et disait que les affaires avaient été mauvaises — sous-entendant clairement que Shui Wa lui avait pris ses clients.',
+ es:'¡Esa noche, a las once, Shui Wa había ganado catorce yuanes! Pero de vuelta, Erbao puso mala cara y dijo que ese día el negocio había ido mal, dando a entender claramente que Shui Wa le había quitado la clientela.',
+ n:{zh:'确实好多想不到的「平常」。',
+    en:'There really are so many kinds of “ordinary” you’d never think of.',
+    fr:'Il y a vraiment tant de sortes d’« ordinaire » auxquelles on ne penserait jamais.',
+    es:'De verdad hay muchísimas clases de «lo normal» en las que uno nunca pensaría.'}},
+{s:'sun',p:'95',k:['u'],src:'IMG_20250216_124242',
+ zh:'虽落到这地步，但这人一点儿都没有消沉，每天仍东奔西跑，企图为这种新材料的应用找到出路，他告诉水娃，这是自己跑过的第十三个城市了。',
+ en:'Reduced to this, the man was not in the least downcast: he still ran about from dawn to dusk trying to find an application for this new material. He told Shui Wa that this was the thirteenth city he had worked his way through.',
+ fr:'Réduit à cette condition, l’homme n’était nullement abattu : il courait encore du matin au soir pour trouver un débouché à ce nouveau matériau. Il dit à Shui Wa que c’était la treizième ville qu’il écumait ainsi.',
+ es:'Pese a haber caído tan bajo, aquel hombre no estaba nada abatido: seguía corriendo de un lado a otro tratando de encontrar una salida para ese nuevo material. Le dijo a Shui Wa que esta era la decimotercera ciudad que recorría.'},
+{s:'sun',p:'97',a:1,k:['c'],src:'IMG_20250216_124810',
+ zh:'他现在想到了什么呢？这事与他陆海，一个住在闷热的简易房中的潦倒流浪者，能有什么关系？',
+ en:'What was he thinking about now? What could any of this have to do with him — Lu Hai, a down-and-out drifter living in a stifling shack?',
+ fr:'À quoi pensait-il donc ? Qu’est-ce que tout cela pouvait bien avoir à faire avec lui, Lu Hai, vagabond sans le sou logé dans une baraque étouffante ?',
+ es:'¿En qué estaba pensando ahora? ¿Qué podía tener que ver todo eso con él, Lu Hai, un vagabundo arruinado que vivía en un barracón sofocante?'},
+{s:'sun',p:'97',a:1,k:['u'],src:'IMG_20250216_124810',
+ zh:'好大的一只金鸟儿，其实它以前一直在我的头顶盘旋，我他妈居然没感觉到！',
+ en:'What a huge golden bird — and it had been circling over my head all along, and I damn well never felt it!',
+ fr:'Quel énorme oiseau d’or — et il tournoyait au-dessus de ma tête depuis toujours, et moi, bon sang, je ne l’avais pas senti !',
+ es:'¡Qué pájaro dorado tan enorme! Y llevaba todo el tiempo dando vueltas sobre mi cabeza, y yo, maldita sea, ni lo noté.'},
+{s:'sun',p:'98',a:1,k:['u'],src:'IMG_20250216_124923',
+ zh:'这人现在已一文不名，今天连旅馆都住不起了，早餐还是水娃出的钱，甚至连他那个大太阳灶，也在起程前留给房东顶了房费，现在，他已是一个除了梦之外什么都没有的乞丐。',
+ en:'The man was now without a penny; today he could not even afford a hotel, and Shui Wa had paid for his breakfast. Even his big solar cooker had been left with the landlord before he set out, to cover the rent. He was now a beggar who owned nothing but a dream.',
+ fr:'L’homme n’avait plus un sou ; ce jour-là il ne pouvait même pas se payer une chambre d’hôtel, et c’est Shui Wa qui avait réglé le petit-déjeuner. Même son grand cuiseur solaire, il l’avait laissé au propriétaire avant de partir, en paiement du loyer. Il était désormais un mendiant qui ne possédait rien qu’un rêve.',
+ es:'El hombre no tenía ya un céntimo; ese día ni siquiera podía pagarse un hotel, y el desayuno lo había pagado Shui Wa. Incluso su gran cocina solar se la había dejado al casero antes de partir, para saldar el alquiler. Ahora era un mendigo que no poseía nada salvo un sueño.'},
+{s:'sun',p:'99',k:['u'],src:'IMG_20250216_125103',
+ zh:'你嘛，每月工资一千五，工作日管午餐，公司代买人身保险。',
+ en:'As for you: fifteen hundred a month, lunch provided on working days, and the company takes out personal insurance for you.',
+ fr:'Quant à toi : mille cinq cents par mois, déjeuner fourni les jours ouvrés, et l’entreprise te souscrit une assurance personnelle.',
+ es:'En cuanto a ti: mil quinientos al mes, comida los días de trabajo y la empresa te contrata un seguro personal.'},
+{s:'sun',p:'100',k:['u'],src:'IMG_20250216_125414',
+ zh:'这位著名建筑师说，倾斜更能表现出上升感。……但这位建筑大师的祖宗八代都被北京的蜘蛛人骂遍了，清洗航天大厦的活儿对他们几乎是一场噩梦，因为这个倾斜的大厦整整一面全是倒角墙，高达四百米，与地面的角度小到六十五度。',
+ en:'The famous architect said that the tilt expressed a stronger sense of ascent. … But Beijing’s spidermen cursed that master architect back eight generations: cleaning the Aerospace Tower was very nearly a nightmare for them, because one entire face of the leaning building was an overhanging wall, four hundred metres high and set at only sixty-five degrees to the ground.',
+ fr:'Le célèbre architecte expliquait que l’inclinaison exprimait mieux l’élan vers le haut. … Mais les « hommes-araignées » de Pékin maudissaient ce grand architecte jusqu’à la huitième génération de ses ancêtres : nettoyer la tour de l’Aérospatiale tenait pour eux du cauchemar, car toute une face de l’édifice penché était un mur en surplomb, haut de quatre cents mètres et incliné à seulement soixante-cinq degrés par rapport au sol.',
+ es:'El famoso arquitecto decía que la inclinación expresaba mejor la sensación de ascenso. … Pero los «hombres araña» de Pekín maldecían a aquel maestro hasta la octava generación de sus antepasados: limpiar la Torre Aeroespacial era para ellos poco menos que una pesadilla, porque toda una cara del edificio inclinado era un muro en voladizo de cuatrocientos metros de altura, con solo sesenta y cinco grados respecto al suelo.'},
+{s:'sun',p:'101',a:1,k:['u'],src:'IMG_20250216_125542',
+ zh:'镀膜高级建筑玻璃让他这一年的活儿白干了。',
+ en:'Coated high-grade architectural glass had made a whole year of his work count for nothing.',
+ fr:'Le verre architectural haut de gamme à revêtement avait réduit à néant une année entière de son travail.',
+ es:'El vidrio arquitectónico de alta gama con recubrimiento dejó en nada todo un año de su trabajo.'},
+{s:'sun',p:'102',a:1,k:['c'],src:'IMG_20250216_125727',
+ zh:'水娃从这经历中学到了一个哲理：事情得从高处才能看清楚。如果你淹没于这座大都市之中，周围的一切是那么纷繁复杂，城市仿佛是一个无边无际的迷宫，但从这高处一看，整座城市不过是一个有一千多万人的大蚂蚁窝罢了，而它周围的世界又是那么广阔。',
+ en:'From this Shui Wa drew a piece of philosophy: you can only see a thing clearly from high up. Down in the great city, everything around you is so tangled and complicated that the place seems a maze without end; but seen from up here, the whole city is nothing more than a big anthill with ten million ants in it — and the world around it is so very wide.',
+ fr:'Shui Wa tira de cela une petite philosophie : on ne voit clairement les choses que d’en haut. Noyé dans la grande ville, tout ce qui vous entoure est si enchevêtré et si complexe que l’endroit ressemble à un labyrinthe sans fin ; mais vu d’ici, la ville entière n’est qu’une grosse fourmilière de dix millions de fourmis — et le monde alentour est si vaste.',
+ es:'De esto Shui Wa sacó una filosofía: las cosas solo se ven claras desde lo alto. Si te hundes en la gran ciudad, todo lo que te rodea es tan enmarañado y complejo que parece un laberinto sin fin; pero visto desde aquí arriba, la ciudad entera no es más que un gran hormiguero con diez millones de hormigas, y el mundo que la rodea es tan ancho.'},
+{s:'sun',p:'105',a:1,k:['u'],src:'IMG_20250216_130133',
+ zh:'我几乎对一切都失去了信心……但这个时代真的充满了机遇。水娃点点头：「到处都是金色的鸟儿。」',
+ en:'I had almost lost faith in everything… but this age really is full of opportunity. Shui Wa nodded: “Golden birds everywhere.”',
+ fr:'J’avais presque perdu foi en tout… mais cette époque est vraiment pleine d’occasions. Shui Wa hocha la tête : « Des oiseaux d’or partout. »',
+ es:'Casi había perdido la fe en todo… pero esta época está de verdad llena de oportunidades. Shui Wa asintió: «Pájaros dorados por todas partes.»'},
+{s:'sun',p:'114',a:1,k:['u'],src:'IMG_20250216_131625',
+ zh:'在我的童年和少年时代，进入太空是一种飘渺的事业，我清楚地记得，一位伟人在访问肯尼迪航天中心时，把一位美国宇航员称作神仙。',
+ en:'In my childhood and youth, going into space was a remote and hazy sort of undertaking. I remember clearly that a great man, visiting the Kennedy Space Center, called an American astronaut an immortal.',
+ fr:'Dans mon enfance et mon adolescence, aller dans l’espace était une entreprise vaporeuse et lointaine. Je me souviens nettement qu’un grand homme, en visite au centre spatial Kennedy, avait qualifié un astronaute américain d’immortel.',
+ es:'En mi infancia y juventud, ir al espacio era una empresa vaga y lejana. Recuerdo con claridad que un gran hombre, de visita en el Centro Espacial Kennedy, llamó «inmortal» a un astronauta estadounidense.'},
+{s:'sun',p:'116',k:['u'],src:'IMG_20250216_131945',
+ zh:'水娃震惊地发现，这个小黑点竟是这银色大地上的一座大楼，这座大楼是一个全密封的圆柱体，水娃知道，这就是中国太阳的控制站。',
+ en:'To his astonishment, Shui Wa saw that the little black dot was a building standing on this silver land — a fully sealed cylinder. He knew what it was: the control station of the Sun of China.',
+ fr:'Stupéfait, Shui Wa découvrit que ce petit point noir était un bâtiment dressé sur cette terre d’argent — un cylindre entièrement hermétique. Il savait ce que c’était : la station de contrôle du Soleil de Chine.',
+ es:'Shui Wa descubrió, atónito, que aquel puntito negro era un edificio alzado sobre esa tierra plateada: un cilindro completamente sellado. Sabía lo que era: la estación de control del Sol de China.'},
+{s:'sun',p:'118',a:1,k:['u'],src:'IMG_20250216_132304',
+ zh:'娃啊，你是在那个日头上吗，它在俺们头上照着呢，这夜跟白天一样啊！',
+ en:'Son, are you up on that sun? It’s shining right over our heads — this night is like broad daylight!',
+ fr:'Petit, tu es sur ce soleil-là ? Il brille juste au-dessus de nos têtes — cette nuit, c’est comme en plein jour !',
+ es:'Hijo, ¿estás en ese sol? Nos alumbra justo encima de la cabeza: ¡esta noche parece pleno día!'},
+{s:'sun',p:'123',a:1,k:['u'],src:'IMG_20250216_141256',
+ zh:'他明白了自己所看到的所有星空，在大得无法想象的宇宙中也只是一粒灰尘，而这整个宇宙，不过是百亿年前一次壮丽焰火的余烬。',
+ en:'He understood that all the starry sky he could see was only a speck of dust in a universe too large to imagine — and that this whole universe was no more than the embers of one magnificent firework, ten billion years ago.',
+ fr:'Il comprit que tout le ciel étoilé qu’il voyait n’était qu’un grain de poussière dans un univers trop vaste pour être imaginé — et que cet univers entier n’était que la cendre d’un feu d’artifice magnifique, dix milliards d’années plus tôt.',
+ es:'Comprendió que todo el cielo estrellado que alcanzaba a ver era apenas una mota de polvo en un universo demasiado grande para imaginarlo, y que ese universo entero no era más que el rescoldo de unos fuegos artificiales magníficos, diez mil millones de años atrás.'},
+{s:'sun',p:'123',a:1,k:['u'],src:'IMG_20250216_141256',
+ zh:'许多年前作为蜘蛛人踏上第一座高楼的楼顶时，水娃看到了整个北京；来到中国太阳时，他看到了整个地球；现在，水娃面对着他人生第三个壮丽的时刻，他站到了宇宙的楼顶上。',
+ en:'Many years ago, when as a spiderman he first set foot on the roof of a high building, Shui Wa saw the whole of Beijing; when he came to the Sun of China, he saw the whole Earth. Now he stood before the third magnificent moment of his life: he had climbed onto the roof of the universe.',
+ fr:'Bien des années plus tôt, quand, en « homme-araignée », il avait posé le pied sur le toit de son premier gratte-ciel, Shui Wa avait vu tout Pékin ; en arrivant au Soleil de Chine, il avait vu toute la Terre. À présent il se tenait devant le troisième moment magnifique de sa vie : il était monté sur le toit de l’univers.',
+ es:'Muchos años atrás, cuando como «hombre araña» pisó por primera vez la azotea de un rascacielos, Shui Wa vio todo Pekín; al llegar al Sol de China, vio toda la Tierra. Ahora estaba ante el tercer momento magnífico de su vida: se había subido al tejado del universo.'},
+{s:'sun',p:'124',a:1,k:['u'],st:1,src:'IMG_20250216_141627',
+ zh:'「不是说不好，但经济利益更好，如果从那时开始人类就不惜代价，做飞向外太空的赔本买卖，地球现在可能还在贫困之中，你我这样的普通人反而不可能进入太空，虽然只是在近地空间。朋友，别忘了霍金的话，他那套东西一般人玩不了的！」',
+ en:'“I’m not saying it isn’t good — but economic return is better. If from that time on humanity had spared no cost and gone in for the loss-making business of flying to deep space, the Earth might still be mired in poverty, and ordinary people like you and me would never have got into space at all, even just into near-Earth orbit. My friend, don’t forget what Hawking said: that sort of thing isn’t for ordinary people to play with!”',
+ fr:'« Je ne dis pas que ce n’est pas bien — mais le rendement économique, c’est mieux. Si, dès cette époque, l’humanité n’avait reculé devant aucun coût pour se lancer dans le commerce à perte des vols vers l’espace lointain, la Terre serait peut-être encore dans la misère, et des gens ordinaires comme toi et moi n’auraient jamais atteint l’espace, fût-ce l’orbite basse. Mon ami, n’oublie pas ce que disait Hawking : ce genre de chose n’est pas à la portée du commun des mortels ! »',
+ es:'«No digo que no esté bien, pero el beneficio económico está mejor. Si desde entonces la humanidad no hubiera reparado en gastos y se hubiera metido en el negocio ruinoso de volar al espacio profundo, la Tierra quizá seguiría sumida en la pobreza, y gente corriente como tú y como yo jamás habría llegado al espacio, ni siquiera a la órbita baja. Amigo, no olvides lo que dijo Hawking: ¡esas cosas no son para que las maneje cualquiera!»',
+ n:{zh:'这就显出 Elon Musk 之伟力了。大家都这么想，但他做到了。',
+    en:'This is exactly what makes Elon Musk’s achievement so striking. Everyone thinks this way — he actually did it.',
+    fr:'C’est précisément ce qui fait ressortir la force d’Elon Musk. Tout le monde raisonne ainsi ; lui, il l’a fait.',
+    es:'Esto es justo lo que hace resaltar la fuerza de Elon Musk. Todo el mundo piensa así; él lo hizo.'}},
+{s:'sun',p:'126',k:['u'],src:'IMG_20250216_142311',
+ zh:'现在进入近地空间的费用，只及乘飞机飞越太平洋费用的一半，太空旅行已变成了一件平常而平淡的事。但新一代人很难想象，在二十年前进入太空对一个普通人来说意味着什么。',
+ en:'Getting into near-Earth space now costs only half as much as flying across the Pacific, and space travel has become an ordinary, unremarkable thing. But the new generation finds it hard to imagine what going into space meant to an ordinary person twenty years ago.',
+ fr:'Atteindre l’orbite basse coûte aujourd’hui moitié moins qu’un vol au-dessus du Pacifique, et le voyage spatial est devenu une chose ordinaire, banale. Mais la nouvelle génération a peine à imaginer ce que signifiait, il y a vingt ans, aller dans l’espace pour une personne ordinaire.',
+ es:'Llegar al espacio cercano cuesta hoy la mitad que un vuelo sobre el Pacífico, y viajar al espacio se ha vuelto algo corriente y anodino. Pero a la nueva generación le cuesta imaginar lo que significaba, hace veinte años, ir al espacio para una persona común.'},
+{s:'sun',p:'126',a:1,k:['u'],src:'IMG_20250216_142316',
+ zh:'我们这些人很普通，没什么可说的，我们能有这样不寻常的经历是因为中国太阳。这二十年来，它已成为我们的第二家园，在我们的心目中它很像一个微缩的地球。……我们每个人的家乡在镜面上也都有对应的位置，对那一块我们擦得最勤……',
+ en:'We are ordinary people; there is nothing much to say about us. We have had this extraordinary experience only because of the Sun of China. Over these twenty years it has become our second home, and in our minds it is very like a miniature Earth. … Each of us has a spot on the mirror that corresponds to our home town, and that is the patch we polish most often…',
+ fr:'Nous sommes des gens ordinaires, il n’y a pas grand-chose à dire de nous. Si nous avons vécu une expérience aussi extraordinaire, c’est grâce au Soleil de Chine. En vingt ans, il est devenu notre second foyer, et dans notre esprit il ressemble beaucoup à une Terre miniature. … Chacun de nous a, sur le miroir, un endroit qui correspond à son pays natal, et c’est ce carré-là que nous astiquons le plus souvent…',
+ es:'Somos gente corriente, no hay mucho que contar de nosotros. Si hemos vivido una experiencia tan extraordinaria es gracias al Sol de China. En estos veinte años se ha convertido en nuestro segundo hogar, y en nuestra imaginación se parece mucho a una Tierra en miniatura. … Cada uno de nosotros tiene en el espejo un punto que corresponde a su tierra natal, y esa es la zona que fregamos con más esmero…'},
+{s:'sun',p:'127',a:1,k:['c'],st:1,src:'IMG_20250216_142544',
+ zh:'已是太空产业部部长的陆海接过了话头说……',
+ en:'Lu Hai — by now Minister of the Space Industry — took up the thread and said…',
+ fr:'Lu Hai — devenu entre-temps ministre de l’Industrie spatiale — reprit la parole et dit…',
+ es:'Lu Hai —para entonces ya ministro de Industria Espacial— tomó la palabra y dijo…',
+ n:{zh:'魔幻（第三字辨认不清，待确认）',
+    en:'Magical realism. (The third character is illegible — to be confirmed.)',
+    fr:'Réalisme magique. (Le troisième caractère est illisible — à confirmer.)',
+    es:'Realismo mágico. (El tercer carácter es ilegible; queda por confirmar.)'}},
+{s:'sun',p:'128',a:1,k:['u'],st:1,src:'IMG_20250216_142830',
+ zh:'上世纪冷战结束后，经济准则一天天地统治世界，人类在这个准则下也取得了巨大的成就：现在，我们消灭了战争和贫困，恢复了生态，地球正在变成一个乐园。这就使我们更加坚信经济准则的正确性，它已变得至高无上，渗透到我们的每个细胞中，人类社会已变成了百分之百的经济社会，投入大于产出的事是再也不会做了。对月球的开发没有经济意义，至于进行恒星际航行，那是地地道道的精神变态，现在，人类只知道投入、产出，并享受这些产出了！',
+ en:'After the Cold War ended last century, the economic criterion came day by day to rule the world, and under it humanity did achieve a great deal: we have now abolished war and poverty, restored the ecosystem, and the Earth is turning into a paradise. That only convinced us further that the economic criterion was right. It has become supreme; it has soaked into every one of our cells. Human society has become a one-hundred-per-cent economic society, and nothing whose input exceeds its output will ever be done again. Developing the Moon has no economic meaning; as for interstellar flight, that is out-and-out mental perversion. All humanity knows now is input, output, and enjoying the output!',
+ fr:'Après la fin de la guerre froide, au siècle dernier, le critère économique en est venu, jour après jour, à régir le monde ; et sous son règne l’humanité a bel et bien accompli de grandes choses : nous avons aboli la guerre et la pauvreté, rétabli l’écosystème, et la Terre devient un paradis. Cela n’a fait que nous convaincre davantage de la justesse du critère économique. Il est devenu suprême, il a imprégné chacune de nos cellules. La société humaine est devenue une société cent pour cent économique, et l’on ne fera plus jamais rien dont la dépense excède le rendement. Exploiter la Lune n’a aucun sens économique ; quant au vol interstellaire, c’est de la perversion mentale pure et simple. Aujourd’hui, l’humanité ne connaît plus que l’investissement, le rendement, et la jouissance de ce rendement !',
+ es:'Tras el fin de la Guerra Fría el siglo pasado, el criterio económico fue gobernando el mundo día tras día, y bajo él la humanidad logró de veras cosas enormes: hoy hemos eliminado la guerra y la pobreza, hemos restaurado el ecosistema y la Tierra se está convirtiendo en un paraíso. Eso no hizo sino convencernos más de que el criterio económico era el correcto. Se ha vuelto supremo; ha calado en cada una de nuestras células. La sociedad humana se ha vuelto cien por cien económica, y jamás se hará nada cuya inversión supere al rendimiento. Explotar la Luna carece de sentido económico; en cuanto al vuelo interestelar, es pura y llana perversión mental. Hoy la humanidad solo sabe de inversión, de rendimiento y de disfrutar ese rendimiento.',
+ n:{zh:'Musk 就是变态',
+    en:'Musk is exactly that kind of “pervert”.',
+    fr:'Musk est précisément ce genre de « perverti ».',
+    es:'Musk es exactamente ese tipo de «pervertido».'}},
+{s:'sun',p:'130',a:1,k:['c'],src:'IMG_20250216_143421',
+ zh:'水娃点点头：「是的，回不来了。有人满足于老婆孩子热炕头，从不向与己无关的尘世之外扫一眼；有的人则用尽全部生命，只为看一眼人类从未见过的事物。这两种人我都做过，我们有权选择各种生活，包括在十几光年之遥的太空中飘荡的一面镜子上的生活。」',
+ en:'Shui Wa nodded: “That’s right, there is no coming back. Some people are content with a wife, children and a warm bed, and never once glance beyond the corner of the world that concerns them; others spend their whole lives just to catch sight of something no human being has ever seen. I have been both kinds of person. We have the right to choose any life we like — including life on a mirror drifting through space a dozen light-years away.”',
+ fr:'Shui Wa hocha la tête : « Oui, il n’y a pas de retour. Certains se contentent d’une femme, d’enfants et d’un lit bien chaud, et ne jettent jamais un regard hors du coin de monde qui les concerne ; d’autres dépensent leur vie entière rien que pour apercevoir une chose qu’aucun être humain n’a jamais vue. J’ai été l’un et l’autre. Nous avons le droit de choisir n’importe quelle vie — y compris la vie sur un miroir dérivant dans l’espace à une douzaine d’années-lumière. »',
+ es:'Shui Wa asintió: «Sí, no hay vuelta. Hay quien se contenta con mujer, hijos y una cama caliente, y jamás mira más allá del rincón del mundo que le atañe; y hay quien gasta la vida entera solo por vislumbrar algo que ningún ser humano ha visto nunca. Yo he sido las dos cosas. Tenemos derecho a elegir cualquier vida, incluida la vida sobre un espejo que flota en el espacio a más de diez años luz.»'},
+{s:'sun',p:'133',a:1,k:['u'],src:'IMG_20250216_143949',
+ zh:'这时北京的天已经大亮，陆海仍站在航天大厦的楼顶，望着朦胧的希望在这条小路上渐渐远去。',
+ en:'By now the sky over Beijing was fully light, and Lu Hai was still standing on the roof of the Aerospace Tower, watching a dim hope recede along that little road.',
+ fr:'Le ciel de Pékin était désormais tout à fait clair, et Lu Hai se tenait encore sur le toit de la tour de l’Aérospatiale, regardant un espoir confus s’éloigner le long de ce petit chemin.',
+ es:'Para entonces el cielo de Pekín ya estaba del todo claro, y Lu Hai seguía en la azotea de la Torre Aeroespacial, viendo alejarse por aquel caminito una esperanza borrosa.'},
+{s:'sun',p:'134',a:1,k:['u'],src:'IMG_20250216_144051',
+ zh:'但水娃始终会牢记母亲行星上的一个叫中国的国度，牢记那个国度西部一片干旱土地上的一个小村庄，牢记村前的那条小路，他就是从那里启程的。',
+ en:'But Shui Wa would always remember a country called China on his mother planet; would remember a small village on a stretch of arid land in the west of that country; would remember the little road in front of that village. It was from there that he set out.',
+ fr:'Mais Shui Wa se souviendrait toujours d’un pays appelé Chine, sur sa planète mère ; d’un petit village posé sur une terre aride, à l’ouest de ce pays ; du petit chemin devant ce village. C’est de là qu’il était parti.',
+ es:'Pero Shui Wa recordaría siempre un país llamado China en su planeta madre; recordaría una aldea pequeña en una tierra árida del oeste de ese país; recordaría el caminito que había delante de la aldea. Fue de allí de donde partió.'},
+
+/* ========== 坍缩 ========== */
+{s:'collapse',p:'142',a:1,k:['u'],src:'IMG_20250216_145639',
+ zh:'我的世界是一个现实的，无诗意的，烦琐的世界，我们整天像蚂蚁一样忙碌，目光也像蚂蚁一样受到局限。有时深夜从办公室里出来，抬头看着星空，已是难得的奢侈了。您的世界充满着空灵与玄妙，您的思想跨越上百光年的空间和上百亿年的时间，地球对于您只是宇宙中的一粒灰尘，现世对于您只是永恒中短得无法测量的一瞬，整个宇宙似乎都是为了满足您的好奇心而存在的。说句真话，丁老，我真有些嫉妒您。我年轻时做过那样的梦，但进入您的世界太难了。',
+ en:'My world is a real, unpoetic, fussy sort of world. We are busy all day like ants, and our field of vision is as narrow as an ant’s. To come out of the office late at night and lift my head to the stars is already a rare luxury. Your world is full of the ethereal and the profound; your thoughts span hundreds of light-years of space and tens of billions of years of time. To you the Earth is one speck of dust in the universe, and this present age an immeasurably brief instant in eternity — the whole universe seems to exist merely to satisfy your curiosity. To tell the truth, Old Ding, I do rather envy you. I dreamed that dream when I was young, but it is very hard to get into your world.',
+ fr:'Mon monde est un monde réel, sans poésie, encombré de détails. Nous nous affairons tout le jour comme des fourmis, et notre regard est borné comme celui d’une fourmi. Sortir du bureau tard dans la nuit et lever les yeux vers les étoiles est déjà un luxe rare. Votre monde, lui, est plein d’éther et de mystère ; votre pensée franchit des centaines d’années-lumière et des dizaines de milliards d’années. Pour vous, la Terre n’est qu’un grain de poussière dans l’univers, et le temps présent un instant si bref qu’on ne peut le mesurer dans l’éternité — l’univers entier semble n’exister que pour satisfaire votre curiosité. À vrai dire, vieux Ding, je vous envie un peu. J’ai fait ce rêve dans ma jeunesse, mais il est bien difficile d’entrer dans votre monde.',
+ es:'Mi mundo es un mundo real, sin poesía, lleno de menudencias. Nos afanamos todo el día como hormigas, y nuestra mirada está tan limitada como la de una hormiga. Salir de la oficina de madrugada y alzar la vista a las estrellas ya es un lujo raro. Su mundo, en cambio, está lleno de lo etéreo y lo profundo; su pensamiento cruza cientos de años luz y decenas de miles de millones de años. Para usted la Tierra es una mota de polvo en el universo, y este presente un instante tan breve que no puede medirse en la eternidad: el universo entero parece existir solo para satisfacer su curiosidad. La verdad, viejo Ding, le envidio un poco. De joven tuve ese sueño, pero entrar en su mundo es muy difícil.'},
+{s:'collapse',p:'142',a:1,k:['c'],src:'IMG_20250216_145639',
+ zh:'但今天晚上并不难，您至少可以在丁老的世界中待一会儿，一起目睹这个世界最伟大的一瞬间。',
+ en:'But tonight it isn’t difficult at all — you can at least spend a little while inside Old Ding’s world, and witness with him the greatest instant that world has to offer.',
+ fr:'Mais ce soir, ce n’est pas difficile du tout : vous pouvez au moins passer un moment dans le monde du vieux Ding, et assister avec lui à l’instant le plus grandiose que ce monde ait à offrir.',
+ es:'Pero esta noche no es nada difícil: al menos puede pasar un rato dentro del mundo del viejo Ding y presenciar con él el instante más grandioso de ese mundo.'},
+{s:'collapse',p:'146',a:1,k:['u'],src:'IMG_20250216_150304',
+ zh:'您的坍缩，不过是夜空中那弱得不能再弱的光线频率的一点点变化而已，这变化，甚至那光线，如果不是由精密仪器放大上万倍，谁都看不到！坍缩是什么？对普通人来说什么都不是！宇宙膨胀或坍缩，对我们有什么区别？！但父亲对我们是重要的，您明白吗？！',
+ en:'Your contraction is nothing but a tiny change in the frequency of the faintest possible light in the night sky. That change — even that light — no one can see at all unless precision instruments magnify it ten thousand times! What is contraction? To an ordinary person it is nothing! Whether the universe expands or contracts, what difference does it make to us?! But a father matters to us — do you understand that?!',
+ fr:'Votre contraction n’est qu’une minuscule variation dans la fréquence de la lumière la plus faible qui soit dans le ciel nocturne. Cette variation — et même cette lumière — personne ne peut la voir, à moins que des instruments de précision ne l’amplifient dix mille fois ! Qu’est-ce que la contraction ? Pour une personne ordinaire, rien du tout ! Que l’univers s’étende ou se contracte, quelle différence cela fait-il pour nous ?! Mais un père, lui, compte pour nous — le comprenez-vous ?!',
+ es:'Su contracción no es más que un cambio ínfimo en la frecuencia de la luz más débil que existe en el cielo nocturno. Ese cambio —y hasta esa luz— nadie puede verlo si no lo amplían diez mil veces unos instrumentos de precisión. ¿Qué es la contracción? Para una persona corriente, ¡nada! Que el universo se expanda o se contraiga, ¿qué diferencia nos hace? Pero un padre sí nos importa. ¿Lo entiende?'},
+{s:'collapse',p:'147',a:1,k:['c'],src:'IMG_20250216_150503',
+ zh:'但可悲的是，人们总要把这两个世界分开。……「不！基本粒子虽小，却组成了我们；宇宙虽大，我们身在其中。微观和宏观世界的每一个变化都牵动着我们的一切。」「可即将发生的宇宙坍缩牵动着我们的什么呢？」',
+ en:'The sad thing is that people insist on keeping the two worlds apart. … “No! Elementary particles may be small, but they make us up; the universe may be vast, but we are inside it. Every change in the microscopic and the macroscopic world tugs at everything we are.” “And the coming contraction of the universe — what exactly does it tug at in us?”',
+ fr:'Le triste, c’est que les gens tiennent toujours à séparer ces deux mondes. … « Non ! Les particules élémentaires ont beau être minuscules, elles nous composent ; l’univers a beau être immense, nous sommes dedans. Chaque changement du monde microscopique et du monde macroscopique tire sur tout ce que nous sommes. » « Et la contraction de l’univers qui vient — sur quoi tire-t-elle en nous, au juste ? »',
+ es:'Lo triste es que la gente siempre quiere separar esos dos mundos. … «¡No! Las partículas elementales serán pequeñas, pero nos componen; el universo será enorme, pero estamos dentro de él. Cada cambio del mundo microscópico y del macroscópico tira de todo lo que somos.» «Y la contracción del universo que se avecina, ¿de qué tira exactamente en nosotros?»'},
+{s:'collapse',p:'151',k:['c'],src:'IMG_20250216_151133',
+ zh:'「不会的，你将在另一个时间里，现在的过去将是您的未来，我们现在就在那时的未来里。您不可能记住未来，蓝移开始时，您的未来一片空白，对它，您什么都不记得，什么都不知道。」',
+ en:'“No, you won’t. You will be in another time: what is now the past will be your future, and we are already in that time’s future. You cannot remember the future. When the blue shift begins, your future will be a blank — of it you will remember nothing and know nothing.”',
+ fr:'« Non. Vous serez dans un autre temps : ce qui est aujourd’hui le passé sera votre avenir, et nous sommes déjà dans l’avenir de ce temps-là. On ne peut pas se souvenir de l’avenir. Quand le décalage vers le bleu commencera, votre avenir sera une page blanche : vous n’en garderez aucun souvenir, vous n’en saurez rien. »',
+ es:'«No lo hará. Estará usted en otro tiempo: lo que ahora es el pasado será su futuro, y nosotros ya estamos en el futuro de aquel tiempo. Nadie puede recordar el futuro. Cuando empiece el corrimiento al azul, su futuro será una página en blanco: no recordará nada de él, no sabrá nada.»'},
+{s:'collapse',p:'151',k:['u'],src:'IMG_20250216_151133',
+ zh:'您将会发现，从老年走向幼年，从成熟走向幼稚是多么合理，多么理所当然。',
+ en:'You will find how reasonable, how entirely a matter of course it is to go from old age towards childhood, from maturity towards innocence.',
+ fr:'Vous découvrirez à quel point il est raisonnable, à quel point il va de soi, d’aller de la vieillesse vers l’enfance, de la maturité vers la naïveté.',
+ es:'Descubrirá lo razonable, lo absolutamente natural que resulta ir de la vejez a la niñez, de la madurez a la inocencia.'},
+{s:'collapse',p:'152',a:1,k:['u'],src:'IMG_20250216_151139',
+ zh:'……时间奇点，在那一点时间不存在。然后，我们将进入一个……',
+ en:'…a time singularity; at that point time does not exist. And then we shall enter a…',
+ fr:'… une singularité temporelle ; en ce point, le temps n’existe pas. Et ensuite, nous entrerons dans un…',
+ es:'…una singularidad temporal; en ese punto el tiempo no existe. Y luego entraremos en un…',
+ nt:1},
+
+/* ========== 全频带阻塞干扰 ========== */
+{s:'jam',p:'157',a:1,k:['u'],src:'IMG_20250216_170056',
+ zh:'那是混杂在一起的歼击机的航迹，是俄罗斯空军和北约空军为争夺制空权所进行的一夜激战留下的。',
+ en:'Those were the tangled contrails of fighter aircraft, left by a night of fierce fighting between the Russian and NATO air forces over control of the sky.',
+ fr:'C’étaient les traînées entremêlées des chasseurs, laissées par une nuit de combats acharnés entre l’aviation russe et celle de l’OTAN pour la maîtrise du ciel.',
+ es:'Eran las estelas entremezcladas de los cazas, dejadas por una noche de combates encarnizados entre la fuerza aérea rusa y la de la OTAN por el dominio del cielo.'},
+{s:'jam',p:'158',k:['u'],src:'IMG_20250216_170348',
+ zh:'她用手撑着坐直身体，右手触到了一团黏糊糊的冰冷绵软的东西，看上去像一个粘满了黑色弹灰的泥团。她突然意识到那是一颗……',
+ en:'She braced herself up on her hands and sat straight; her right hand touched something sticky, cold and soft, which looked like a lump of mud caked in black powder residue. She suddenly realised it was a…',
+ fr:'Elle prit appui sur ses mains pour se redresser ; sa main droite rencontra une chose gluante, froide et molle, qui ressemblait à une motte de boue couverte de suie noire. Elle comprit soudain que c’était une…',
+ es:'Se incorporó apoyándose en las manos; con la derecha tocó algo viscoso, frío y blando, que parecía un terrón de barro cubierto de hollín negro. De pronto comprendió que era una…'},
+{s:'jam',p:'158',k:['u'],src:'IMG_20250216_170350',
+ zh:'在昨夜的那次致命打击中，阵亡了一名中尉，两名少尉和八名士兵。',
+ en:'In last night’s fatal strike, one lieutenant, two second lieutenants and eight soldiers were killed.',
+ fr:'Dans la frappe meurtrière de la nuit passée, un lieutenant, deux sous-lieutenants et huit soldats avaient été tués.',
+ es:'En el ataque mortal de la noche anterior habían caído un teniente, dos alféreces y ocho soldados.'},
+{s:'jam',p:'160',a:1,k:['u'],src:'IMG_20250216_170944',
+ zh:'卡琳娜感到整个宇宙都在这撕人心肺的巨响中化为碎片，并向无限深处坠落……就在她的神经几乎崩溃时，这场坦克战结束了，它只持续了约三十秒钟。',
+ en:'Karina felt the entire universe shatter in that heart-tearing roar and fall away into infinite depth… Just as her nerves were about to give way, the tank battle ended. It had lasted about thirty seconds.',
+ fr:'Karina sentit l’univers entier se briser dans ce fracas à déchirer le cœur et tomber vers une profondeur infinie… Au moment où ses nerfs allaient lâcher, la bataille de chars prit fin. Elle avait duré une trentaine de secondes.',
+ es:'Karina sintió que el universo entero se hacía añicos en aquel estruendo desgarrador y caía hacia una profundidad infinita… Justo cuando sus nervios iban a ceder, la batalla de tanques terminó. Había durado unos treinta segundos.'},
+{s:'jam',p:'160',a:1,k:['u'],src:'IMG_20250216_171103',
+ zh:'她通过底门，看到车内已成了一座小型的炼狱，在那暗红色的透明的火焰中，坦克手一动不动的身影清晰可见，像在水中一样波动着。',
+ en:'Through the belly hatch she saw that the inside of the tank had become a small inferno; in that dark-red, transparent flame the motionless silhouettes of the crew stood out clearly, rippling as though under water.',
+ fr:'Par la trappe de secours, elle vit que l’intérieur du char était devenu un petit enfer ; dans cette flamme rouge sombre et transparente, les silhouettes immobiles de l’équipage se découpaient nettement, ondulant comme sous l’eau.',
+ es:'Por la escotilla inferior vio que el interior del tanque se había convertido en un pequeño infierno; en aquella llama transparente de un rojo oscuro se recortaban con nitidez las siluetas inmóviles de los tanquistas, ondulando como bajo el agua.'},
+{s:'jam',p:'161 – 162',k:['u','span'],src:'IMG_20250216_171432 / 171521',
+ zh:'他手中的火箭筒与那辆「艾布拉姆斯」的一二〇毫米炮同时响了，坦克的炮手情急之中发射的是一发不会爆炸的贫铀穿甲弹，初速每秒八百米的炮弹击中了那个士兵，把他上半身打成了一团飞溅的血花！',
+ en:'The rocket launcher in his hands and the 120-millimetre gun of that Abrams went off at the same moment. In his haste the tank gunner had fired a depleted-uranium armour-piercing round, which does not explode; travelling at eight hundred metres a second, it struck the soldier and turned his upper body into a burst of flying blood!',
+ fr:'Le lance-roquettes qu’il tenait et le canon de 120 millimètres de l’Abrams partirent au même instant. Dans la précipitation, le tireur du char avait chargé un obus-flèche à uranium appauvri, qui n’explose pas ; lancé à huit cents mètres par seconde, il frappa le soldat et transforma le haut de son corps en une gerbe de sang !',
+ es:'El lanzacohetes que llevaba y el cañón de 120 milímetros de aquel Abrams sonaron a la vez. Con las prisas, el artillero del tanque había disparado un proyectil perforante de uranio empobrecido, que no estalla; a ochocientos metros por segundo, alcanzó al soldado y le convirtió el torso en un estallido de sangre.'},
+{s:'jam',p:'164',k:['u'],st:2,src:'IMG_20250216_171906',
+ zh:'「我见过你和列夫森科元帅的儿子在一起。」……「现在，他的儿子可是世界上离战争最远的人了。」',
+ en:'“I have seen you together with Marshal Levchenko’s son.” … “Right now his son must be the man furthest from this war in the whole world.”',
+ fr:'« Je t’ai vue avec le fils du maréchal Levtchenko. » … « À l’heure qu’il est, son fils doit être l’homme le plus éloigné de cette guerre au monde. »',
+ es:'«Te he visto con el hijo del mariscal Levchenko.» … «Ahora mismo su hijo debe de ser el hombre más alejado de esta guerra en todo el mundo.»'},
+{s:'jam',p:'165',a:1,k:['c'],src:'IMG_20250216_171909',
+ zh:'他们都在想着还抱有的那一线希望。但愿整个战线只有这一处被突破。',
+ en:'They were all thinking of the one thread of hope they still held on to: let this be the only place on the whole front that has been broken through.',
+ fr:'Tous songeaient au mince fil d’espoir auquel ils se raccrochaient encore : pourvu que ce soit le seul point de tout le front à avoir été percé.',
+ es:'Todos pensaban en el único hilo de esperanza al que aún se aferraban: ojalá este sea el único punto de todo el frente que ha sido roto.'},
+{s:'jam',p:'169',a:1,k:['u'],src:'IMG_20250216_185515',
+ zh:'战争爆发后，「万年风雪号」只能进行躲避飞行。向外太空是不行的，在木星轨道之内，有大量的北约无人航行器，它们的体积不大，武装或非武装，每一个对「万年风雪号」都是致命的威胁。于是，它只有航向近日空间，「万年风雪号」引以为傲的主动制冷式热屏蔽系统，使它可以比目前人类的任何太空航行器都更接近太阳。',
+ en:'After the war broke out, the Eternal Blizzard could only fly evasively. Outward was impossible: inside the orbit of Jupiter there were great numbers of NATO unmanned craft, small things, armed or unarmed, and every one of them a lethal threat to her. So her only course was towards the near-solar region. The active-cooling heat-shield system that was the Eternal Blizzard’s pride allowed her to approach the sun more closely than any other spacecraft humanity then possessed.',
+ fr:'Une fois la guerre déclenchée, le « Blizzard éternel » ne put que voler en esquivant. Vers l’extérieur, impossible : en deçà de l’orbite de Jupiter se trouvaient quantité d’engins sans équipage de l’OTAN, de petite taille, armés ou non, et chacun d’eux représentait pour lui une menace mortelle. Il ne lui restait donc que la route du voisinage solaire. Le système de bouclier thermique à refroidissement actif, fierté du « Blizzard éternel », lui permettait d’approcher le Soleil de plus près qu’aucun autre vaisseau dont l’humanité disposait alors.',
+ es:'Estallada la guerra, el «Ventisca Eterna» solo podía volar esquivando. Hacia fuera era imposible: dentro de la órbita de Júpiter había gran cantidad de naves no tripuladas de la OTAN, pequeñas, armadas o no, y cada una de ellas era una amenaza mortal para él. Así que su única ruta era el espacio cercano al Sol. El sistema de blindaje térmico por refrigeración activa, orgullo del «Ventisca Eterna», le permitía acercarse al Sol más que cualquier otra nave que la humanidad poseyera entonces.'},
+{s:'jam',p:'171',k:['u'],src:'IMG_20250216_191425',
+ zh:'爷爷默默地看着我，终于下了决心，拿出了他珍藏的勋章，带着我走了出去，来到这里，那时这儿是自由市场，从伏特加到欧洲观点，人们什么都卖。一个美国人看上了爷爷的勋章，但只肯出四十美元……',
+ en:'Grandfather looked at me in silence, and at last made up his mind: he took out the medals he had treasured, brought me out with him, and we came here. In those days this was a free market, where people sold everything from vodka to European opinions. An American took a fancy to Grandfather’s medals, but would only offer forty dollars…',
+ fr:'Grand-père me regarda en silence, puis se décida enfin : il sortit les médailles qu’il gardait précieusement, m’emmena dehors, et nous vînmes ici. À l’époque, c’était un marché libre, où l’on vendait de tout, de la vodka aux opinions européennes. Un Américain s’intéressa aux médailles de grand-père, mais n’offrit que quarante dollars…',
+ es:'El abuelo me miró en silencio y por fin se decidió: sacó las medallas que guardaba como un tesoro, me llevó con él y vinimos aquí. Entonces esto era un mercado libre, donde se vendía de todo, desde vodka hasta opiniones europeas. A un estadounidense le gustaron las medallas del abuelo, pero solo ofrecía cuarenta dólares…'},
+{s:'jam',p:'173',a:1,k:['u'],src:'IMG_20250216_192137',
+ zh:'米沙的性格，加上他那白皙清秀的外表，使人很容易觉得他像个女孩子。但列夫森科元帅心里清楚，儿子从本质上一点不像女孩子，女孩儿都怕孤独，但米沙喜欢孤独，孤独是他的营养，他的空气。',
+ en:'Misha’s temperament, together with his pale, delicate looks, made it easy to think of him as girlish. But Marshal Levchenko knew perfectly well that in essence his son was nothing like a girl: girls are afraid of solitude, whereas Misha loved it. Solitude was his nourishment, his air.',
+ fr:'Le tempérament de Micha, joint à son visage pâle et fin, le faisait aisément passer pour une fille. Mais le maréchal Levtchenko savait bien qu’au fond son fils n’avait rien d’une fille : les filles craignent la solitude, tandis que Micha l’aimait. La solitude était sa nourriture, son air.',
+ es:'El carácter de Misha, unido a su aspecto pálido y delicado, hacía fácil tomarlo por una muchacha. Pero el mariscal Levchenko sabía muy bien que en el fondo su hijo no se parecía en nada a una muchacha: las muchachas temen la soledad, mientras que a Misha le gustaba. La soledad era su alimento, su aire.'},
+{s:'jam',p:'174',a:1,k:['u'],st:1,src:'IMG_20250216_192357',
+ zh:'回国后日子也很难，同从欧洲撤回的四十万军人和十二万文职人员一样，他没有住房，同米沙住在一间冬冷夏热的临时铁皮屋里。他昔日的同志为了生活什么都干，有的向黑社会出售武器，有的甚至到夜总会跳脱衣舞。但他一直像军人一样正直地生活着，米沙也在艰辛中默默地长大，同别的孩子不同，他似乎天生就会忍受，因为他有自己的世界。',
+ en:'Life was hard after the return home too. Like the four hundred thousand soldiers and hundred and twenty thousand civilian staff pulled back from Europe, he had no housing, and lived with Misha in a temporary tin shack, cold in winter and hot in summer. His old comrades did anything to get by: some sold weapons to the underworld, some even stripped in nightclubs. But he went on living with a soldier’s uprightness, and Misha grew up quietly through the hardship. Unlike other children, he seemed born knowing how to endure — because he had a world of his own.',
+ fr:'Le retour au pays fut dur, lui aussi. Comme les quatre cent mille militaires et les cent vingt mille employés civils rapatriés d’Europe, il n’avait pas de logement et vivait avec Micha dans une baraque de tôle provisoire, glacée l’hiver, brûlante l’été. Ses anciens camarades faisaient n’importe quoi pour survivre : certains vendaient des armes à la pègre, d’autres allaient jusqu’à se déshabiller dans des boîtes de nuit. Mais lui continua de vivre avec la droiture d’un soldat, et Micha grandit en silence dans cette misère. À la différence des autres enfants, il semblait né avec le don d’endurer — parce qu’il avait un monde à lui.',
+ es:'La vida también fue dura al volver. Como los cuatrocientos mil militares y ciento veinte mil empleados civiles retirados de Europa, no tenía vivienda y vivía con Misha en un cobertizo provisional de chapa, frío en invierno y caluroso en verano. Sus antiguos camaradas hacían de todo para salir adelante: unos vendían armas al hampa, otros incluso se desnudaban en clubes nocturnos. Pero él siguió viviendo con la rectitud de un soldado, y Misha creció en silencio entre aquellas penurias. A diferencia de otros niños, parecía haber nacido sabiendo aguantar, porque tenía un mundo propio.',
+ n:{zh:'页边另有一条手写批注，草书无法辨认，待本人确认。',
+    en:'There is another handwritten note in the margin here; the cursive defeats me — to be confirmed by me.',
+    fr:'Il y a ici une autre note manuscrite en marge ; la cursive m’échappe — à confirmer par moi-même.',
+    es:'Aquí hay otra nota manuscrita al margen; la letra cursiva se me resiste: queda pendiente de confirmar.'}},
+{s:'jam',p:'175',a:1,k:['u'],src:'IMG_20250216_192620',
+ zh:'这时太阳已在松林后面完全落下去，地上的雪由白色变成浅蓝色。',
+ en:'By now the sun had gone fully down behind the pine wood, and the snow on the ground turned from white to pale blue.',
+ fr:'Le soleil était alors tout à fait descendu derrière la pinède, et la neige au sol passa du blanc au bleu pâle.',
+ es:'Para entonces el sol se había ocultado del todo tras el pinar, y la nieve del suelo pasó del blanco al azul pálido.'},
+{s:'jam',p:'175',a:1,k:['u'],src:'IMG_20250216_192620',
+ zh:'绝世珍稀的植物，他敬畏地看着这植物一天天成长，小心地呵护着它，等着它开出花朵。他的期望没有落空，儿子现在已成为世界上最出色的天体物理学家。',
+ en:'…a plant of the rarest kind in the world. In awe he watched it grow day by day, tended it carefully, and waited for it to flower. His hopes were not disappointed: his son is now the finest astrophysicist in the world.',
+ fr:'… une plante de la plus rare espèce au monde. Avec respect il la regarda croître jour après jour, en prit grand soin, et attendit qu’elle fleurisse. Son attente ne fut pas déçue : son fils est aujourd’hui le meilleur astrophysicien du monde.',
+ es:'…una planta de las más raras del mundo. Con reverencia la vio crecer día tras día, la cuidó con esmero y esperó a que floreciera. Su esperanza no quedó defraudada: su hijo es hoy el mejor astrofísico del mundo.'},
+{s:'jam',p:'180',a:1,k:['u'],src:'IMG_20250216_194254',
+ zh:'「爱因斯坦在他的后期研究中没什么建树，很大程度上是由于他过多地介入了政治。我不会走他的老路的。但，爸爸，到了需要的时候，我也会尽自己的责任的。」',
+ en:'“Einstein achieved little in his later research, largely because he involved himself too much in politics. I shall not go down that road. But, father, when the time comes, I too will do my duty.”',
+ fr:'« Einstein n’a pas accompli grand-chose dans ses recherches tardives, en grande partie parce qu’il s’est trop mêlé de politique. Je ne suivrai pas ce chemin-là. Mais, père, le moment venu, je ferai moi aussi mon devoir. »',
+ es:'«Einstein logró poco en sus investigaciones tardías, en gran medida porque se metió demasiado en política. Yo no seguiré ese camino. Pero, padre, cuando llegue el momento, también cumpliré con mi deber.»'},
+{s:'jam',p:'183',a:1,k:['u'],src:'IMG_20250216_195126',
+ zh:'他看着战友像一块石头一样渐渐消失在大地的白色背景中。他克制了这样做的冲动，同僚机会合后，双机编队以最快的速度脱离这个空域。他们仍觉得这可能是个圈套。',
+ en:'He had watched his comrade fall like a stone and slowly vanish into the white background of the land. He suppressed the urge to do the same; once he had rejoined his wingman, the pair left the area at maximum speed. They still felt this might be a trap.',
+ fr:'Il avait vu son camarade tomber comme une pierre et disparaître peu à peu dans le fond blanc de la terre. Il réprima l’envie d’en faire autant ; ayant rejoint son ailier, la patrouille quitta la zone à pleine vitesse. Ils continuaient de penser que c’était peut-être un piège.',
+ es:'Había visto a su compañero caer como una piedra y desvanecerse poco a poco en el fondo blanco de la tierra. Reprimió el impulso de hacer lo mismo; tras reunirse con su gregario, la pareja abandonó la zona a la máxima velocidad. Seguían pensando que aquello podía ser una trampa.'},
+{s:'jam',p:'189',a:1,k:['u'],src:'IMG_20250216_195726',
+ zh:'他可能被揍个半死，但不会全死，他看到了那些士兵衣领上波兰军队的鹰形领章标志。',
+ en:'He might be beaten half to death, but not all the way — he had seen the eagle collar-flashes of the Polish army on those soldiers’ uniforms.',
+ fr:'On le rouerait peut-être de coups à demi-mort, mais pas tout à fait : il avait aperçu, aux cols de ces soldats, les insignes à l’aigle de l’armée polonaise.',
+ es:'Quizá lo molieran a golpes hasta dejarlo medio muerto, pero no del todo: había visto en los cuellos de aquellos soldados las insignias con el águila del ejército polaco.'},
+{s:'jam',p:'192',a:1,k:['u'],st:1,src:'IMG_20250216_200001',
+ zh:'你是和母亲在马尼拉的贫民窟中度日吗？……某种程度上是为你而战，战后当俄罗斯的民主政府上台后，北约的舰将抵达中国边境，苏比克和克拉克将重新成为美国在太平洋上的海空军基地，那里将比上个世纪更繁荣，你会在那儿找到工作的！如果你是个女孩，说不定像你妈妈（她叫什么来着，哦，阿莲娜）一样能认识个美国军官……',
+ en:'Are you scraping by with your mother in a Manila slum? … In a sense we are fighting for you. After the war, once a democratic government takes power in Russia, NATO ships will reach the Chinese border, and Subic and Clark will become American naval and air bases in the Pacific once again — more prosperous than last century. You will find work there! And if you were a girl, you might even meet an American officer, like your mother (what was her name again — ah, Alena)…',
+ fr:'Tu tires le diable par la queue avec ta mère dans un bidonville de Manille ? … D’une certaine manière, c’est pour toi que nous nous battons. Après la guerre, quand un gouvernement démocratique arrivera au pouvoir en Russie, les navires de l’OTAN atteindront la frontière chinoise, et Subic et Clark redeviendront des bases navales et aériennes américaines dans le Pacifique — plus prospères qu’au siècle dernier. Tu y trouveras du travail ! Et si tu étais une fille, tu ferais peut-être la connaissance d’un officier américain, comme ta mère (comment s’appelait-elle déjà — ah oui, Aliona)…',
+ es:'¿Andas malviviendo con tu madre en un barrio pobre de Manila? … En cierto modo luchamos por ti. Después de la guerra, cuando un gobierno democrático llegue al poder en Rusia, los barcos de la OTAN alcanzarán la frontera china, y Subic y Clark volverán a ser bases navales y aéreas de Estados Unidos en el Pacífico, más prósperas que el siglo pasado. ¡Allí encontrarás trabajo! Y si fueras chica, hasta podrías conocer a un oficial estadounidense, como tu madre (¿cómo se llamaba?, ah, sí, Aliona)…',
+ n:{zh:'米国……（后两字草书，辨认不清，待确认）',
+    en:'“Beikoku” / the United States… (the last two characters are cursive and illegible — to be confirmed.)',
+    fr:'« Beikoku » / les États-Unis… (les deux derniers caractères, en cursive, sont illisibles — à confirmer.)',
+    es:'«Beikoku» / Estados Unidos… (los dos últimos caracteres, en cursiva, son ilegibles: por confirmar.)'}},
+{s:'jam',p:'196',a:1,k:['u'],src:'IMG_20250216_200315',
+ zh:'听到传言，说他儿子是那所大学中唯一的一名反战分子，结果被学生们打了。',
+ en:'He had heard the rumour that his son was the only anti-war element in that university, and had been beaten up by the students for it.',
+ fr:'Il avait entendu la rumeur selon laquelle son fils était le seul élément antiguerre de cette université, et que les étudiants l’avaient pour cela roué de coups.',
+ es:'Había oído el rumor de que su hijo era el único elemento antibelicista de aquella universidad y que, por ello, los estudiantes le habían dado una paliza.'},
+{s:'jam',p:'196',a:1,k:['u'],src:'IMG_20250216_200315',
+ zh:'元帅用他从未有过的严厉对儿子说：「你知道自己的位置，你可以不说话，但以后绝不许出现类似的言行。」米沙点点头。',
+ en:'With a sternness he had never used before, the marshal told his son: “You know your position. You may keep silent, but nothing of that kind is ever to be said or done again.” Misha nodded.',
+ fr:'Avec une sévérité dont il n’avait jamais usé, le maréchal dit à son fils : « Tu connais ta position. Tu peux te taire, mais plus jamais de propos ni d’actes de ce genre. » Micha hocha la tête.',
+ es:'Con una severidad que nunca había empleado, el mariscal le dijo a su hijo: «Conoces cuál es tu lugar. Puedes callarte, pero nunca más se repetirán palabras ni actos de ese tipo.» Misha asintió.'},
+{s:'jam',p:'196',a:1,k:['u'],src:'IMG_20250216_200315',
+ zh:'这是一场由空前强大的敌人从预料不到的方向发起的旨在彻底肢解俄罗斯的世界大战。',
+ en:'This was a world war launched by an enemy of unprecedented strength, from a direction no one had foreseen, and aimed at dismembering Russia completely.',
+ fr:'C’était une guerre mondiale déclenchée par un ennemi d’une puissance sans précédent, dans une direction que nul n’avait prévue, et visant à démembrer entièrement la Russie.',
+ es:'Era una guerra mundial lanzada por un enemigo de una fuerza sin precedentes, desde una dirección que nadie había previsto, y dirigida a desmembrar Rusia por completo.'},
+{s:'jam',p:'199',k:['c'],st:1,src:'IMG_20250216_200606',
+ zh:'米沙想象着在水星那漫长的白天，在那一八〇〇℃的酷热下，站在水银湖岸边的情形。即使在狂风中，水银湖也会很平静，而水星没有大气，没有风，湖的表面如广阔的镜子平原，太阳和银河毫不失真地投射在上面。',
+ en:'Misha imagined standing on the shore of a mercury lake in the long Mercurian day, under that 1800 °C heat. Even in a gale a mercury lake would be calm — and Mercury has no atmosphere and no wind, so the surface of the lake would be a wide plain of mirror, with the sun and the Milky Way cast onto it without the slightest distortion.',
+ fr:'Micha imaginait se tenir au bord d’un lac de mercure, pendant le long jour de Mercure, sous cette chaleur de 1 800 °C. Même dans la tempête, un lac de mercure resterait calme — et Mercure n’a ni atmosphère ni vent : la surface du lac serait une vaste plaine de miroir, où le Soleil et la Voie lactée se refléteraient sans la moindre déformation.',
+ es:'Misha imaginaba estar de pie a la orilla de un lago de mercurio durante el largo día de Mercurio, bajo aquel calor de 1800 °C. Incluso en un vendaval, un lago de mercurio estaría en calma; y Mercurio no tiene atmósfera ni viento, así que la superficie del lago sería una ancha llanura de espejo, con el Sol y la Vía Láctea proyectados en ella sin la menor distorsión.',
+ n:{zh:'它始终存在！',
+    en:'It is there the whole time!',
+    fr:'Il est là depuis toujours !',
+    es:'¡Está ahí todo el tiempo!'}},
+{s:'jam',p:'200',a:1,k:['u'],src:'IMG_20250216_200849',
+ zh:'每当卡琳娜射击时，对面的敌人就卧倒，子弹在他们前面溅起一团团雪花，而半圆形包围圈另一个方向的敌人则跃起快步推进一段距离。',
+ en:'Every time Karina fired, the enemy in front of her went flat and the bullets threw up puffs of snow before them — while on the other side of the semicircular cordon the enemy sprang up and pressed forward a stretch at a run.',
+ fr:'Chaque fois que Karina tirait, les ennemis en face se plaquaient au sol et les balles soulevaient devant eux des gerbes de neige — tandis qu’à l’autre extrémité du demi-cercle d’encerclement, les ennemis bondissaient et gagnaient du terrain au pas de course.',
+ es:'Cada vez que Karina disparaba, los enemigos de enfrente se echaban al suelo y las balas levantaban ante ellos ráfagas de nieve, mientras que en el otro extremo del cerco semicircular los enemigos se incorporaban y avanzaban un trecho a la carrera.'},
+{s:'jam',p:'200',a:1,k:['u'],src:'IMG_20250216_200849',
+ zh:'她感到右肋被什么猛推了一下，没有疼痛，只有一阵很快扩散的麻木感，她感到温热的血顺着右侧身体流下去。她坚持着，几乎是漫无目标地打完了这个弹夹。',
+ en:'She felt something shove hard at her right ribs — no pain, only a numbness spreading fast — and felt warm blood running down her right side. She held on, and emptied the magazine almost without aiming at anything.',
+ fr:'Elle sentit une violente poussée contre ses côtes droites — aucune douleur, seulement un engourdissement qui se répandait vite — et sentit le sang tiède couler le long de son flanc droit. Elle tint bon et vida le chargeur presque sans viser.',
+ es:'Sintió un empujón violento en las costillas derechas —ningún dolor, solo un entumecimiento que se extendía deprisa— y notó la sangre tibia bajándole por el costado derecho. Aguantó y vació el cargador casi sin apuntar a nada.'},
+{s:'jam',p:'200',a:1,k:['u'],src:'IMG_20250216_200849',
+ zh:'卡琳娜站起身，回头向库房门走去，她身后的雪地上留下了一条细细的血迹。当她拉开门时，又一颗子弹穿透了她的左肩。',
+ en:'Karina got to her feet and turned back towards the storehouse door, leaving a thin trail of blood on the snow behind her. As she pulled the door open, another bullet went through her left shoulder.',
+ fr:'Karina se releva et repartit vers la porte du magasin, laissant derrière elle, sur la neige, une fine traînée de sang. Au moment où elle tirait la porte, une autre balle lui traversa l’épaule gauche.',
+ es:'Karina se puso en pie y volvió hacia la puerta del almacén, dejando tras de sí un fino reguero de sangre en la nieve. Cuando abrió la puerta, otra bala le atravesó el hombro izquierdo.'},
+{s:'jam',p:'202',a:1,k:['u'],src:'IMG_20250216_201148',
+ zh:'他指着窗外半空中悬停着的直升机说：「是那些飞行员，还有那些在很远的航空母舰上操作电脑指引巡航导弹的先生们，但他们也都是体面的先生，他们所面对的目标都是屏幕上漂亮的彩色标记，他们按一下按钮或动一下鼠标，耐心地等一会儿，那些标志就消失了，他们都是文明的先生，他们没有恶意，真的没有恶意……您在听我说吗？」',
+ en:'He pointed out of the window at the helicopter hovering in mid-air: “It is those pilots, and those gentlemen on some distant aircraft carrier working a computer to guide cruise missiles. But they too are perfectly respectable gentlemen. The targets they face are pretty coloured marks on a screen; they press a button or move a mouse, wait patiently a while, and the marks disappear. They are civilised gentlemen. They bear no ill will — truly, no ill will at all… Are you listening to me?”',
+ fr:'Il montra par la fenêtre l’hélicoptère en vol stationnaire : « Ce sont ces pilotes-là, et ces messieurs qui, sur un porte-avions très lointain, manient un ordinateur pour guider des missiles de croisière. Mais eux aussi sont de très convenables messieurs. Les cibles qu’ils affrontent sont de jolis repères colorés sur un écran ; ils appuient sur un bouton ou déplacent une souris, patientent un moment, et les repères disparaissent. Ce sont des messieurs civilisés. Ils n’ont aucune malveillance — vraiment aucune… Vous m’écoutez ? »',
+ es:'Señaló por la ventana el helicóptero suspendido en el aire: «Son esos pilotos, y esos señores que en un portaaviones lejanísimo manejan un ordenador para guiar misiles de crucero. Pero también ellos son señores muy decentes. Los blancos que enfrentan son bonitas marcas de colores en una pantalla; pulsan un botón o mueven un ratón, esperan con paciencia un rato y las marcas desaparecen. Son señores civilizados. No tienen mala intención; de verdad, ninguna mala intención… ¿Me está escuchando?»'},
+{s:'jam',p:'202',a:1,k:['u'],src:'IMG_20250216_201148',
+ zh:'少校笑着点点头，谁说死神是丑恶恐怖的，死神真美。',
+ en:'The major smiled and nodded. Who says Death is hideous and terrible? Death is truly beautiful.',
+ fr:'Le commandant sourit et hocha la tête. Qui prétend que la Mort est hideuse et terrible ? La Mort est vraiment belle.',
+ es:'El comandante sonrió y asintió. ¿Quién dice que la Muerte es horrenda y terrible? La Muerte es de verdad hermosa.'},
+{s:'jam',p:'205',k:['c'],src:'IMG_20250216_201452',
+ zh:'「混蛋！谁让你们用士兵的尸体筑掩体的？！」「是我命令这样干的。」参谋长的声音从师长身后平静地响起，「昨天晚上进入新阵地太快，这里又是一片农田，实在没有什么别的材料了。」',
+ en:'“You bastards! Who told you to build a parapet out of soldiers’ bodies?!” “I gave the order,” came the chief of staff’s voice, calmly, from behind the division commander. “We moved into the new position too fast last night, and this is farmland — there really was nothing else to build with.”',
+ fr:'« Salauds ! Qui vous a dit de faire un parapet avec les corps des soldats ?! » « C’est moi qui en ai donné l’ordre », dit calmement la voix du chef d’état-major derrière le commandant de division. « Nous avons gagné la nouvelle position trop vite cette nuit, et ici c’est un champ : il n’y avait vraiment rien d’autre comme matériau. »',
+ es:'«¡Canallas! ¿Quién os mandó levantar un parapeto con los cuerpos de los soldados?» «Yo di la orden», sonó serena la voz del jefe de estado mayor a espaldas del comandante de división. «Anoche entramos en la nueva posición demasiado deprisa, y esto es campo de labor: no había de verdad ningún otro material.»'},
+{s:'jam',p:'208',a:1,k:['u'],src:'IMG_20250216_201808',
+ zh:'「爸爸，以前我们两个人一直生活在相距遥远的两个世界中，我们互相交流很少。但现在，我们这两个世界融为一体，我们在为一个共同的目标而战，我为此自豪。爸爸，像您的每一个士兵一样，我在等着您的命令。」',
+ en:'“Father, the two of us have always lived in two worlds far apart, and we have talked to each other very little. But now those two worlds have become one; we are fighting for a common goal, and I am proud of it. Father, like every one of your soldiers, I am waiting for your order.”',
+ fr:'« Père, nous avons toujours vécu, toi et moi, dans deux mondes très éloignés, et nous nous sommes bien peu parlé. Mais maintenant ces deux mondes n’en font plus qu’un ; nous combattons pour un même but, et j’en suis fier. Père, comme chacun de tes soldats, j’attends ton ordre. »',
+ es:'«Padre, los dos hemos vivido siempre en dos mundos muy alejados, y hemos hablado muy poco el uno con el otro. Pero ahora esos dos mundos se han fundido en uno; luchamos por un objetivo común, y estoy orgulloso de ello. Padre, como cada uno de tus soldados, espero tu orden.»'},
+{s:'jam',p:'210',a:1,k:['u'],src:'IMG_20250216_202308',
+ zh:'火之海在抖动变形，那是半米厚的绝热玻璃在熔化，很快那上百米高的玻璃壁化作一片透明的液体滚落下来。像一个初见海洋的人陶醉地面对海风，米沙伸开双臂迎接那向他呼啸而来的六千度的飓风。',
+ en:'The sea of fire shivered and warped: the half-metre-thick heat-insulating glass was melting, and soon that hundred-metre wall of glass ran down as a sheet of transparent liquid. Like someone seeing the ocean for the first time and standing rapt before the sea wind, Misha opened his arms to the six-thousand-degree hurricane howling towards him.',
+ fr:'La mer de feu se mit à trembler et à se déformer : le verre calorifuge d’un demi-mètre d’épaisseur fondait, et bientôt cette paroi de verre de cent mètres de haut ruissela en une nappe de liquide transparent. Comme quelqu’un qui découvre l’océan et se tient, ravi, face au vent du large, Micha ouvrit les bras à l’ouragan de six mille degrés qui hurlait vers lui.',
+ es:'El mar de fuego temblaba y se deformaba: el vidrio aislante de medio metro de grosor se estaba fundiendo, y pronto aquella pared de cien metros de alto se escurrió convertida en una lámina de líquido transparente. Como quien ve el océano por primera vez y se planta extasiado ante el viento marino, Misha abrió los brazos al huracán de seis mil grados que aullaba hacia él.'},
+{s:'jam',p:'210',a:1,k:['u','cend'],src:'IMG_20250216_202308',
+ zh:'在摄像机和发射设备被烧熔之前发回的最后几秒钟图像中，可以看到米沙的身体燃烧起来，最后他的整个身体都变成了一根跳动的火焰，<b>和太阳的火海融为一体……</b>',
+ en:'In the last few seconds of images sent back before the camera and the transmitter melted, Misha’s body can be seen catching fire, until at last his whole body had become a single leaping flame, <b>merging into the sun’s sea of fire…</b>',
+ fr:'Dans les dernières secondes d’images renvoyées avant que la caméra et l’émetteur ne fondent, on voit le corps de Micha s’embraser, jusqu’à ce que tout son corps ne soit plus qu’une flamme dansante, <b>fondue dans la mer de feu du Soleil…</b>',
+ es:'En los últimos segundos de imágenes enviadas antes de que la cámara y el transmisor se fundieran, se ve arder el cuerpo de Misha, hasta que todo él quedó convertido en una sola llama que danzaba, <b>fundiéndose con el mar de fuego del Sol…</b>'},
+{s:'jam',p:'210',a:1,k:['u'],src:'IMG_20250216_202308',
+ zh:'太阳大气的作用开始显示，液球的周围出现了一圈淡蓝色的火焰，这火焰向后拖了几百千米长，颜色向后由淡蓝渐变为黄色，在尾部变成美丽的橘红色。',
+ en:'The solar atmosphere began to take effect: a ring of pale blue flame appeared around the liquid sphere, trailing several hundred kilometres behind it and shading from pale blue through yellow into a beautiful orange-red at the tail.',
+ fr:'L’atmosphère solaire commença d’agir : un anneau de flamme bleu pâle apparut autour de la sphère liquide, traînant sur plusieurs centaines de kilomètres derrière elle, passant du bleu pâle au jaune, puis à un magnifique rouge orangé à l’extrémité.',
+ es:'La atmósfera solar empezó a actuar: alrededor de la esfera líquida apareció un anillo de llama azul pálido que se alargaba varios cientos de kilómetros por detrás, pasando del azul pálido al amarillo y, en la cola, a un hermoso rojo anaranjado.'},
+{s:'jam',p:'212 – 213',k:['u','span'],src:'IMG_20250216_202753 / 202756',
+ zh:'一小时前，这个阵地上唯一的一支装甲力量，德军的一个坦克营，以令人钦佩的勇气发起反冲锋，并取得了优秀的战果：在距此八千米处击毁了相当于他们坦克数目一倍半的俄罗斯坦克。但由于数量上的绝对劣势，他们在俄罗斯人的钢铁洪流面前如正午太阳下的露珠一样消失了。',
+ en:'An hour earlier, the only armoured force on this position — a German tank battalion — had counter-attacked with admirable courage and achieved an excellent result: eight kilometres from here they destroyed one and a half times their own number of Russian tanks. But being absolutely outnumbered, they vanished before the Russians’ torrent of steel like dew under the noonday sun.',
+ fr:'Une heure plus tôt, la seule force blindée de cette position — un bataillon de chars allemand — avait contre-attaqué avec un courage admirable et obtenu un résultat remarquable : à huit kilomètres d’ici, il avait détruit une fois et demie son propre nombre de chars russes. Mais, en infériorité numérique absolue, il s’évanouit devant le torrent d’acier russe comme la rosée sous le soleil de midi.',
+ es:'Una hora antes, la única fuerza acorazada de esta posición —un batallón de carros alemán— había contraatacado con un coraje admirable y logrado un resultado excelente: a ocho kilómetros de aquí destruyó una vez y media su propio número de tanques rusos. Pero en inferioridad numérica absoluta, se desvaneció ante el torrente de acero ruso como el rocío bajo el sol del mediodía.'},
+{s:'jam',p:'214',k:['c','fn'],src:'IMG_20250216_203040',
+ zh:'「你们这些戴高乐的杂种，这几十年来你们一直没变！」<sup>①</sup>帕克终于失去控制。<br><em>① 1966 年戴高乐将军使法国退出北约军事一体化组织，这对当时冷战中的北约是一严重打击。</em>',
+ en:'“You de Gaulle bastards — you haven’t changed in decades!”<sup>①</sup> Parker had finally lost control.<br><em>① In 1966 General de Gaulle withdrew France from NATO’s integrated military command, a severe blow to NATO in the Cold War of the time.</em>',
+ fr:'« Bâtards de gaullistes, vous n’avez pas changé depuis des décennies ! »<sup>①</sup> Parker avait fini par perdre son sang-froid.<br><em>① En 1966, le général de Gaulle retira la France du commandement militaire intégré de l’OTAN, un coup sévère pour l’Alliance en pleine guerre froide.</em>',
+ es:'«¡Malditos gaullistas, no habéis cambiado en décadas!»<sup>①</sup> Parker había perdido por fin el control.<br><em>① En 1966 el general De Gaulle sacó a Francia del mando militar integrado de la OTAN, un golpe severo para la Alianza en plena Guerra Fría.</em>'},
+{s:'jam',p:'215',k:['u'],src:'IMG_20250216_203043',
+ zh:'请你们向坚守阵地的美军部队传达我下面的话：我们并非生来就是一支只靠电脑才能打仗的军队。几十年前，在瓜达卡纳尔岛，我们是来自一支同样的军队，同日本人争夺一个个地洞；在溪山，我们用圆锹挖开北越士兵的手榴弹；更远一些的时候，在那个寒冷的冬夜，伟大的华盛顿领着那些没有鞋穿的士兵渡过冰封的特拉顿河，创造了历史……',
+ en:'Please pass these words of mine to the American units holding the line: we were not born an army that can only fight with computers. Decades ago, on Guadalcanal, we came from the same army, fighting the Japanese for one hole in the ground after another; at Khe Sanh we dug out North Vietnamese grenades with entrenching spades; and further back still, on that cold winter night, the great Washington led men with no shoes on their feet across the frozen Delaware and made history…',
+ fr:'Transmettez, je vous prie, ces mots aux unités américaines qui tiennent la ligne : nous ne sommes pas nés une armée capable de se battre seulement avec des ordinateurs. Il y a des décennies, à Guadalcanal, nous venions de cette même armée, disputant aux Japonais un trou de terre après l’autre ; à Khe Sanh, nous dégagions à la pelle les grenades des soldats nord-vietnamiens ; et plus loin encore, par cette nuit d’hiver glacée, le grand Washington menait des hommes sans souliers à travers la Delaware gelée, et écrivait l’Histoire…',
+ es:'Transmitan, por favor, estas palabras mías a las unidades estadounidenses que sostienen la línea: no nacimos siendo un ejército capaz de combatir solo con ordenadores. Hace décadas, en Guadalcanal, veníamos de ese mismo ejército, disputándoles a los japoneses un agujero en la tierra tras otro; en Khe Sanh desenterrábamos a paladas las granadas de los soldados norvietnamitas; y más atrás todavía, en aquella noche fría de invierno, el gran Washington condujo a hombres descalzos a través del Delaware helado e hizo historia…'},
+
+/* ========== 诗云 ========== */
+{s:'cloud',p:'220',k:['c'],src:'IMG_20250217_092537',
+ zh:'这令站在船头的吟诗者很烦。吟诗者是一个干瘦老头儿，同样雪白的长发和胡须混在一起飘动，他身着唐朝的宽大古装，仙风道骨，仿佛是在海天之间挥洒写就的一个狂草字。这就是新世界的创造者，伟大的——李白。',
+ en:'This annoyed the poet standing at the bow. The poet was a thin, dried-up old man whose snow-white hair and beard blew about together; he wore the loose robes of the Tang dynasty and had the air of an immortal, like a character in wild cursive script dashed off between sea and sky. This was the creator of the new world, the great — Li Bai.',
+ fr:'Cela agaçait le poète debout à la proue. Le poète était un vieillard sec et maigre dont les cheveux et la barbe, d’un blanc de neige, flottaient mêlés ; il portait l’ample robe des Tang et avait l’allure d’un immortel, comme un caractère de cursive folle jeté entre la mer et le ciel. C’était le créateur du monde nouveau, le grand — Li Bai.',
+ es:'Aquello fastidiaba al poeta que iba en la proa. El poeta era un viejo enjuto y reseco cuyos cabellos y barba, blancos como la nieve, ondeaban entremezclados; vestía la amplia túnica de los Tang y tenía aire de inmortal, como un carácter de escritura cursiva salvaje trazado entre el mar y el cielo. Este era el creador del mundo nuevo, el gran… Li Bai.'},
+{s:'cloud',p:'222',a:1,k:['u'],src:'IMG_20250217_092908',
+ zh:'但就在接近土星轨道时，环形世界突然开始减速，最后竟沿原轨道返回，重新驶向太阳系内层空间。',
+ en:'But just as it neared the orbit of Saturn, the ring world suddenly began to decelerate, and in the end turned back along its own course, heading once more for the inner solar system.',
+ fr:'Mais au moment même où il approchait de l’orbite de Saturne, le monde annulaire se mit brusquement à ralentir, puis fit demi-tour sur sa propre trajectoire et repartit vers l’intérieur du système solaire.',
+ es:'Pero justo al acercarse a la órbita de Saturno, el mundo anular empezó de pronto a frenar y acabó regresando por su propia trayectoria, rumbo otra vez al interior del sistema solar.'},
+{s:'cloud',p:'225',a:1,k:['cu'],src:'IMG_20250217_093541',
+ zh:'「我只喜欢完美的小生物，你把这么肮脏的虫子拿来干什么？」神说。……「只是听这个旋臂的一些航行者提到过，不是太了解。在这种虫子不算长的进化史中，这些航行者曾频繁地光顾地球，这种生物的思想之猥琐、行为之低劣、其历史之混乱和肮脏，都很让他们恶心，以至于直到地球世界毁灭之前，也没有一个航行者屑于同它们建立联系……快把它扔掉。」',
+ en:'“I only like perfect small creatures. What do you mean by bringing me such a filthy insect?” said the God. … “I have only heard some navigators of this spiral arm mention them; I do not know much. In the not very long evolutionary history of this insect, those navigators called at the Earth often. The pettiness of the creature’s thought, the baseness of its behaviour, the chaos and squalor of its history all disgusted them so much that right up to the destruction of the Earth world, not one navigator ever condescended to make contact with them… Throw it away, quickly.”',
+ fr:'« Je n’aime que les petites créatures parfaites. Que viens-tu faire avec un insecte aussi immonde ? » dit le Dieu. … « Je n’en ai entendu parler que par quelques navigateurs de ce bras spiral ; je n’en sais pas grand-chose. Au cours de l’histoire évolutive assez brève de cet insecte, ces navigateurs ont souvent fait escale sur la Terre. La mesquinerie de sa pensée, la bassesse de sa conduite, le désordre et la saleté de son histoire les écœuraient tant que, jusqu’à la destruction du monde terrestre, pas un navigateur n’a daigné entrer en contact avec eux… Jette-le, vite. »',
+ es:'«Solo me gustan las criaturas pequeñas perfectas. ¿A qué vienes con un insecto tan inmundo?», dijo el Dios. … «Solo se lo he oído mencionar a algunos navegantes de este brazo espiral; no sé mucho. En la no muy larga historia evolutiva de este insecto, esos navegantes recalaron en la Tierra con frecuencia. La mezquindad de su pensamiento, la bajeza de su conducta, el caos y la suciedad de su historia les daban tal asco que, hasta la destrucción del mundo terrestre, ni un solo navegante se dignó establecer contacto con ellos… Tíralo, deprisa.»'},
+{s:'cloud',p:'227',a:1,k:['u'],src:'IMG_20250217_094045',
+ zh:'……而且这种表达还要在严酷得有些变态的诗律和音韵的约束下进行，这，我确实是第一次见到……使者，现在可以把这虫子扔了。',
+ en:'…and moreover this expression had to be carried out under metrical and phonic constraints so severe as to be almost perverse. That, I really am seeing for the first time… Envoy, you may throw the insect away now.',
+ fr:'… et de surcroît cette expression devait se plier à des contraintes métriques et sonores d’une sévérité presque perverse. Cela, je le vois vraiment pour la première fois… Émissaire, tu peux jeter l’insecte maintenant.',
+ es:'…y además esa expresión debía someterse a unas restricciones métricas y fónicas de una severidad casi perversa. Eso sí que lo veo por primera vez… Emisario, ya puedes tirar el insecto.'},
+{s:'cloud',p:'229',a:1,k:['u'],src:'IMG_20250217_094340',
+ zh:'痛苦，精致的、完美的痛苦，我在星际间苦苦寻觅的感觉，尖锐如洞穿时空的十维弦，晶莹如类星体中心的纯能钻石，啊——',
+ en:'Pain — exquisite, perfect pain, the sensation I have sought so long between the stars; sharp as a ten-dimensional string piercing space-time, clear as a diamond of pure energy at the heart of a quasar. Ah—',
+ fr:'La douleur — une douleur exquise, parfaite, la sensation que je cherchais si durement entre les étoiles ; aiguë comme une corde à dix dimensions transperçant l’espace-temps, limpide comme un diamant d’énergie pure au cœur d’un quasar. Ah —',
+ es:'Dolor: un dolor exquisito, perfecto, la sensación que tanto he buscado entre las estrellas; agudo como una cuerda de diez dimensiones que atraviesa el espacio-tiempo, límpido como un diamante de energía pura en el centro de un cuásar. Ah…'},
+{s:'cloud',p:'229',a:1,k:['u'],src:'IMG_20250217_094340',
+ zh:'总是将自己的记忆借宿于该文明的一个个体中，这样才能保证对该艺术的完全理解。',
+ en:'I always lodge my memory inside one individual of that civilisation; only so can a complete understanding of its art be guaranteed.',
+ fr:'Je loge toujours ma mémoire dans un individu de cette civilisation ; c’est le seul moyen de garantir une compréhension complète de son art.',
+ es:'Siempre alojo mi memoria en un individuo de esa civilización; solo así puede garantizarse una comprensión completa de su arte.'},
+{s:'cloud',p:'229',a:1,k:['u'],src:'IMG_20250217_094340',
+ zh:'就是用纯能制造物品，上帝的活计！',
+ en:'It means making objects out of pure energy — God’s own line of work!',
+ fr:'C’est fabriquer des objets à partir d’énergie pure — le métier de Dieu !',
+ es:'Consiste en fabricar objetos con energía pura: ¡el oficio de Dios!'},
+{s:'cloud',p:'240',k:['u'],src:'IMG_20250217_142159',
+ zh:'我还花了大量的时间亲身体验，你知道，吞食帝国很多地区的风景与李白所在的地球极为相似，还在月光下饮酒山巅吟诗，遍布各地的人类饲养场中有过几次艳遇……那么，现在总能让我看看你的诗作了吧。',
+ en:'I also spent a great deal of time experiencing it in person. You know, the scenery in many parts of the Devourer Empire is extremely like the Earth Li Bai lived on: drinking under the moon, chanting poems on mountain tops, and a few romantic encounters in the human farms scattered everywhere… Well then, surely you can let me see your poems now.',
+ fr:'J’ai aussi passé beaucoup de temps à en faire l’expérience moi-même. Vous savez, le paysage de bien des régions de l’Empire dévoreur ressemble énormément à la Terre où vivait Li Bai : boire au clair de lune, déclamer des vers au sommet des monts, et quelques aventures dans les élevages humains disséminés un peu partout… Eh bien, maintenant, vous pouvez sûrement me montrer vos poèmes.',
+ es:'También dediqué muchísimo tiempo a vivirlo en persona. Ya sabes, el paisaje de muchas zonas del Imperio Devorador se parece enormemente a la Tierra en la que vivió Li Bai: beber a la luz de la luna, recitar versos en la cima de los montes, y algún que otro lance amoroso en los criaderos humanos repartidos por todas partes… En fin, ahora ya podrás enseñarme tus poemas.'},
+{s:'cloud',p:'242',a:1,k:['u'],src:'IMG_20250217_142746',
+ zh:'是原子级别的存贮吗？就是说一个针尖大小的地方，就能存下人类所有的书！不是你们现在那点儿书，是地球被吃掉前上面所有的书！',
+ en:'Is it storage at the atomic level? You mean a space the size of a pinpoint could hold every book humanity ever had! Not the few books you have now — every book on Earth before the Earth was eaten!',
+ fr:'Est-ce un stockage à l’échelle atomique ? Autrement dit, un espace grand comme une pointe d’aiguille contiendrait tous les livres de l’humanité ! Pas les quelques livres que vous avez maintenant — tous les livres qui se trouvaient sur Terre avant qu’elle ne soit dévorée !',
+ es:'¿Es almacenamiento a escala atómica? ¡Entonces un espacio del tamaño de la punta de un alfiler podría contener todos los libros de la humanidad! No los pocos libros que tenéis ahora: ¡todos los libros que había en la Tierra antes de que se la comieran!'},
+{s:'cloud',p:'244',a:1,k:['c'],src:'IMG_20250217_142944',
+ zh:'「大约为 10 的 57 次方个原子，微不足道，微不足道。」「这……这正好是整个太阳系的物质量！」「是的，包括所有的太阳行星，当然也包括吞食帝国。」',
+ en:'“About 10⁵⁷ atoms. A trifle, a mere trifle.” “That… that is exactly the mass of the entire solar system!” “Yes — including all the planets of the sun, and the Devourer Empire too, of course.”',
+ fr:'« Environ 10⁵⁷ atomes. Une bagatelle, une simple bagatelle. » « Mais… c’est exactement la masse de tout le système solaire ! » « Oui — y compris toutes les planètes du Soleil, et l’Empire dévoreur, naturellement. »',
+ es:'«Unos 10⁵⁷ átomos. Una nadería, una simple nadería.» «Eso… ¡eso es exactamente la masa de todo el sistema solar!» «Sí, incluidos todos los planetas del Sol y, por supuesto, el Imperio Devorador.»'},
+{s:'cloud',p:'246',a:1,k:['u'],src:'IMG_20250217_143241',
+ zh:'诗的意义并不取决于你的认可，也不取决于我或其他任何人，它取决于时间。许多在当时无意义的诗后来成了旷世杰作，而现今和以后的许多杰作在遥远的过去肯定也曾是无意义的。我要作出所有的诗，亿万年之后，谁知道伟大的时间把其中的哪首选为巅峰之作呢？',
+ en:'The meaning of a poem does not depend on your approval, nor on mine, nor on anyone else’s: it depends on time. Many poems that meant nothing at the time later became masterpieces for the ages, and many of today’s and tomorrow’s masterpieces would certainly have meant nothing in the distant past. I mean to compose every poem there is. Hundreds of millions of years from now, who knows which of them great Time will choose as the summit?',
+ fr:'Le sens d’un poème ne dépend pas de votre approbation, ni de la mienne, ni de celle de qui que ce soit : il dépend du temps. Bien des poèmes qui ne signifiaient rien à leur époque sont devenus plus tard des chefs-d’œuvre impérissables, et bien des chefs-d’œuvre d’aujourd’hui et de demain n’auraient certainement rien signifié dans un passé lointain. Je veux composer tous les poèmes possibles. Dans des centaines de millions d’années, qui sait lequel le grand Temps désignera comme sommet ?',
+ es:'El sentido de un poema no depende de tu aprobación, ni de la mía, ni de la de nadie: depende del tiempo. Muchos poemas que en su momento no significaban nada se volvieron después obras maestras imperecederas, y muchas obras maestras de hoy y de mañana seguramente no habrían significado nada en un pasado remoto. Pretendo componer todos los poemas que existen. Dentro de cientos de millones de años, ¿quién sabe cuál elegirá el gran Tiempo como cumbre?'},
+{s:'cloud',p:'246',a:1,k:['u'],src:'IMG_20250217_143241',
+ zh:'最后一个字是诗眼，它是诗人在领略了宇宙之浩渺后，对生命在无限时空中的渺小发出的一声无奈的叹息。',
+ en:'The last character is the eye of the poem: it is the helpless sigh a poet gives, having taken in the immensity of the universe, at the smallness of life in infinite space and time.',
+ fr:'Le dernier caractère est l’œil du poème : c’est le soupir résigné que pousse le poète, après avoir embrassé l’immensité de l’univers, devant la petitesse de la vie dans l’espace et le temps infinis.',
+ es:'El último carácter es el ojo del poema: es el suspiro resignado que exhala el poeta, tras haber abarcado la inmensidad del universo, ante la pequeñez de la vida en el espacio y el tiempo infinitos.'},
+{s:'cloud',p:'249',k:['c'],src:'IMG_20250217_143422',
+ zh:'「好好，真是很好，往后的日子会很有趣的，但这一切发生之前，还是让我们喝完这一壶吧。」李白快乐地点点头说，同时拿起了酒葫芦，倒完酒，他看着已笼罩在夜幕中的大河，意犹未尽地回味着，「真是一首好诗，第一首，呵呵，第一首就是好诗。」',
+ en:'“Good, good, very good indeed. The days ahead will be interesting. But before any of that happens, let us finish this flask.” Li Bai nodded happily and picked up the gourd; having poured out the last of the wine, he looked at the great river now wrapped in night and savoured the moment, reluctant to let it go: “A fine poem, truly. The first one — ha! The very first one, and already a fine poem.”',
+ fr:'« Bien, bien, vraiment très bien. Les jours à venir seront amusants. Mais avant que tout cela n’arrive, finissons donc cette gourde. » Li Bai hocha joyeusement la tête et saisit la calebasse ; ayant versé le reste du vin, il contempla le grand fleuve déjà enveloppé de nuit et savoura l’instant, à regret : « Un beau poème, vraiment. Le premier — ha ! Le tout premier, et déjà un beau poème. »',
+ es:'«Bien, bien, muy bien de veras. Los días que vienen serán divertidos. Pero antes de que todo eso ocurra, acabemos esta calabaza.» Li Bai asintió alegremente y tomó la calabaza de vino; tras servir lo que quedaba, contempló el gran río ya envuelto en la noche y saboreó el momento, sin querer soltarlo: «Un buen poema, de verdad. El primero… ¡ja! El primerito, y ya un buen poema.»'},
+{s:'cloud',p:'251',a:1,k:['c'],src:'IMG_20250217_143634',
+ zh:'对吞食帝国的拆解是在吟诗开始后第五个星期进行的，这之前，李白曾向帝国提出了一个建议：由神族将所有恐龙迁到银河系另一端的一个世界，那里有一个文明，比神族落后许多，仍未纯能化，但比吞食文明要先进得多，恐龙们到那里后，将作为一种小家禽被饲养，过着衣食无忧的快乐生活。但恐龙们宁为玉碎，不为瓦全，愤怒地拒绝了这个提议。',
+ en:'The dismantling of the Devourer Empire took place in the fifth week after the poem-chanting began. Before that, Li Bai had put a proposal to the Empire: the God race would move all the dinosaurs to a world at the other end of the galaxy, where a civilisation far behind the Gods — not yet converted to pure energy, but far ahead of the Devourers — would keep them as a kind of small domestic fowl, so that they might live happily with no worries about food or clothing. But the dinosaurs would rather be shattered jade than whole tile, and furiously refused.',
+ fr:'Le démantèlement de l’Empire dévoreur eut lieu la cinquième semaine après le début de la récitation. Auparavant, Li Bai avait soumis une proposition à l’Empire : la race des Dieux transférerait tous les dinosaures vers un monde situé à l’autre extrémité de la Galaxie, où une civilisation très en retard sur les Dieux — pas encore passée à l’énergie pure, mais bien plus avancée que les Dévoreurs — les élèverait comme une sorte de petite volaille domestique, de sorte qu’ils vivraient heureux, sans souci du vivre et du couvert. Mais les dinosaures préférèrent le jade brisé à la tuile intacte, et refusèrent avec fureur.',
+ es:'El desmantelamiento del Imperio Devorador se llevó a cabo la quinta semana después de iniciada la recitación. Antes de eso, Li Bai había propuesto al Imperio lo siguiente: la raza de los Dioses trasladaría a todos los dinosaurios a un mundo situado en el otro extremo de la galaxia, donde una civilización muy por detrás de los Dioses —aún no convertida en energía pura, pero mucho más avanzada que los Devoradores— los criaría como una especie de ave doméstica menor, de modo que vivirían felices, sin preocuparse por el sustento. Pero los dinosaurios prefirieron ser jade hecho añicos antes que teja entera, y lo rechazaron con furia.'},
+{s:'cloud',p:'253',a:1,k:['u'],src:'IMG_20250217_144012',
+ zh:'回到地球后是要开荒种地才有饭吃……这对于已在长期被饲养的生活中变得四体不勤、五谷不分的人们来说，确实像一场噩梦。',
+ en:'Back on Earth they would have to break new ground and farm it before they could eat… To people who, after a long life of being farmed, had grown idle of limb and could not tell one grain from another, that really was like a nightmare.',
+ fr:'De retour sur Terre, il leur faudrait défricher et cultiver pour avoir de quoi manger… Pour des gens qu’une longue vie d’élevage avait rendus paresseux de leurs membres et incapables de distinguer une céréale d’une autre, c’était vraiment un cauchemar.',
+ es:'De vuelta en la Tierra tendrían que roturar y cultivar la tierra para poder comer… Para gente a la que una larga vida de cautiverio ganadero había vuelto perezosa de miembros e incapaz de distinguir un cereal de otro, aquello era en verdad una pesadilla.'},
+{s:'cloud',p:'253',a:1,k:['u'],src:'IMG_20250217_144012',
+ zh:'但伊依对地球世界的前途充满信心，不管前面有多少磨难，人将重新成为人。',
+ en:'But Yi Yi was full of confidence in the future of the Earth world: however many trials lay ahead, human beings would become human beings again.',
+ fr:'Mais Yi Yi avait pleine confiance dans l’avenir du monde terrestre : quelles que soient les épreuves à venir, les hommes redeviendraient des hommes.',
+ es:'Pero Yi Yi tenía plena confianza en el futuro del mundo terrestre: por muchas penalidades que quedaran por delante, los seres humanos volverían a ser seres humanos.'},
+{s:'cloud',p:'255',a:1,k:['u'],src:'IMG_20250217_144527',
+ zh:'在空心地球，进入太空也是一件很容易的事，只需要跳进赤道上的五口深井（名叫地门）中的一口，向下坠落一百千米穿过地壳，就被空心地球自转的离心力抛进太空了。',
+ en:'On the hollow Earth, getting into space is easy too: you need only jump into one of the five deep shafts on the equator (called Earth Gates), fall a hundred kilometres down through the crust, and the centrifugal force of the hollow Earth’s rotation flings you out into space.',
+ fr:'Sur la Terre creuse, gagner l’espace est aussi chose facile : il suffit de sauter dans l’un des cinq puits profonds de l’équateur (appelés Portes de la Terre), de tomber cent kilomètres à travers la croûte, et la force centrifuge de la rotation de la Terre creuse vous projette dans l’espace.',
+ es:'En la Tierra hueca, salir al espacio también es fácil: basta con saltar a uno de los cinco pozos profundos del ecuador (llamados Puertas de la Tierra), caer cien kilómetros a través de la corteza, y la fuerza centrífuga de la rotación de la Tierra hueca te lanza al espacio.'},
+{s:'cloud',p:'256',a:1,k:['u'],src:'IMG_20250217_144850',
+ zh:'这就使得从地球上可以看到诗云的一面，而不是像银河系那样只能看到截面。但地球离开诗云平面的距离还远不足以使这里的人们观察到诗云的完整形状。',
+ en:'This means that from the Earth one sees the face of the Poetry Cloud, rather than only its cross-section as with the Milky Way. But the Earth is nowhere near far enough from the plane of the Poetry Cloud for people here to make out its complete shape.',
+ fr:'Cela fait qu’on voit depuis la Terre la face du Nuage de poésie, et non sa seule coupe, comme c’est le cas pour la Voie lactée. Mais la Terre est loin d’être assez éloignée du plan du Nuage pour que ses habitants en distinguent la forme complète.',
+ es:'Esto hace que desde la Tierra se vea la cara de la Nube de poesía, y no solo su sección, como ocurre con la Vía Láctea. Pero la Tierra está lejos de hallarse lo bastante alejada del plano de la Nube para que sus habitantes distingan su forma completa.'},
+{s:'cloud',p:'256',a:1,k:['c'],src:'IMG_20250217_144850',
+ zh:'事实上，南半球的整个天空都被诗云所覆盖。',
+ en:'In fact the entire sky of the southern hemisphere is covered by the Poetry Cloud.',
+ fr:'De fait, tout le ciel de l’hémisphère sud est recouvert par le Nuage de poésie.',
+ es:'De hecho, todo el cielo del hemisferio sur está cubierto por la Nube de poesía.'},
+{s:'cloud',p:'257',k:['c'],st:2,src:'IMG_20250217_145043',
+ zh:'人类历史上产生的全部文字信息，也只能占它们每一片存贮量的几亿分之一。诗云就是由 10 的 40 次方片这样的存储器组成的，它们存贮了终极吟诗的全部结果。这片诗云，是用原来构成太阳和它的九大行星的全部物质所制造，当然还包括吞食帝国。',
+ en:'All the written information ever produced in human history would take up only a few hundred-millionths of the capacity of one of these wafers. The Poetry Cloud is made of 10⁴⁰ such storage wafers, holding the entire output of the ultimate act of poetry. This cloud was manufactured out of all the matter that once made up the sun and its nine planets — and the Devourer Empire as well, of course.',
+ fr:'Toute l’information écrite produite dans l’histoire humaine n’occuperait que quelques cent-millionièmes de la capacité d’une seule de ces plaquettes. Le Nuage de poésie est constitué de 10⁴⁰ plaquettes de ce type, qui contiennent la totalité du résultat de la récitation ultime. Ce nuage a été fabriqué avec toute la matière qui composait autrefois le Soleil et ses neuf planètes — et l’Empire dévoreur aussi, bien entendu.',
+ es:'Toda la información escrita producida en la historia humana ocuparía apenas unas cienmillonésimas de la capacidad de una sola de esas obleas. La Nube de poesía está formada por 10⁴⁰ obleas de almacenamiento como esas, que contienen el resultado completo de la recitación última. Esa nube se fabricó con toda la materia que antes componía el Sol y sus nueve planetas, y también, por supuesto, el Imperio Devorador.'}
+];
+
+UI.frag = {
+  en:'Photographed upside down; only this fragment could be read with confidence.',
+  zh:'该页倒置拍摄，仅此片段可确认。',
+  fr:'Page photographiée à l’envers ; seul ce fragment a pu être lu avec certitude.',
+  es:'Página fotografiada al revés; solo este fragmento pudo leerse con certeza.'
+};
+
+let lang = 'en';
+try {
+  const saved = localStorage.getItem('jg-lang');
+  if (saved === 'zh' || saved === 'fr' || saved === 'es' || saved === 'en') lang = saved;
+} catch (_) {}
+
+const $ = (id) => document.getElementById(id);
+const el = (tag, cls) => { const n = document.createElement(tag); if (cls) n.className = cls; return n; };
+
+function pageChip(e){
+  const n = el('span', 'page' + (e.a ? ' approx' : ''));
+  n.textContent = (e.a ? '≈ p.' : 'p.') + e.p;
+  return n;
+}
+
+function renderEntry(e){
+  const card = el('article','entry');
+  const top = el('div','entry-top');
+  top.append(pageChip(e));
+  (e.k || []).forEach(code => {
+    const c = el('span','kind' + (code === 'c' || code === 'cend' || code === 'cu' ? ' circle' : ''));
+    c.textContent = UI.kinds[code][lang];
+    top.append(c);
+  });
+  if (e.st) { const s = el('span','star'); s.textContent = (e.st === 2 ? UI.starOnly : UI.star)[lang]; top.append(s); }
+  card.append(top);
+
+  const q = el('blockquote', lang === 'zh' ? '' : 'latin');
+  q.innerHTML = e[lang];
+  if (e.nt) { const c = el('em'); c.textContent = ' — ' + UI.frag[lang]; q.append(c); }
+  card.append(q);
+
+  if (lang !== 'zh') {
+    const o = el('div','orig');
+    const lab = el('p','orig-label'); lab.textContent = UI.orig[lang];
+    const t = el('p'); t.innerHTML = e.zh;
+    o.append(lab, t); card.append(o);
+  }
+
+  if (e.n) {
+    const m = el('p','mynote');
+    const b = el('b'); b.textContent = UI.myNote[lang];
+    m.append(b, document.createTextNode(e.n[lang]));
+    if (lang !== 'zh') { const oz = el('span','note-orig'); oz.textContent = e.n.zh; m.append(oz); }
+    card.append(m);
+  }
+
+  const s = el('p','src'); s.textContent = e.src; card.append(s);
+  return card;
+}
+
+let filter = 'all';
+
+function renderMain(){
+  const main = $('main'); main.replaceChildren();
+  STORIES.forEach(st => {
+    if (filter !== 'all' && filter !== st.id) return;
+    const sec = el('section','story'); sec.dataset.s = st.id;
+    const head = el('div','story-head');
+    const h2 = el('h2','story-title'); h2.textContent = st.t[lang];
+    head.append(h2);
+    if (lang !== 'zh') { const z = el('span','story-zh'); z.textContent = '《' + st.zh + '》'; head.append(z); }
+    const r = el('span','range'); r.textContent = st.range; head.append(r);
+    const sub = el('p','story-sub'); sub.textContent = st.s[lang];
+    sec.append(head, sub);
+    ENTRIES.filter(e => e.s === st.id).forEach(e => sec.append(renderEntry(e)));
+    main.append(sec);
+  });
+}
+
+function renderChrome(){
+  document.documentElement.lang = (lang === 'zh' ? 'zh-Hans' : lang);
+  $('backlink').textContent = UI.back[lang];
+  $('eyebrow').textContent = UI.eyebrow[lang];
+  $('booktitle').textContent = '《朝闻道》';
+  $('byline').textContent = UI.byline[lang];
+  $('heronote').textContent = UI.hero[lang];
+
+  const f = $('facts'); f.replaceChildren();
+  UI.facts[lang].forEach(([b, t]) => {
+    const li = el('li'); const strong = el('b'); strong.textContent = b;
+    li.append(strong, document.createTextNode(' ' + t)); f.append(li);
+  });
+
+  $('prov-heading').textContent = UI.provHead[lang];
+  $('prov-body').textContent = UI.provBody[lang];
+  for (let i = 0; i < 4; i++){
+    $('prov-k' + (i+1)).textContent = UI.provKeys[lang][i];
+    $('prov-v' + (i+1)).innerHTML = UI.provVals[lang][i];
+  }
+
+  const fl = $('filters'); fl.replaceChildren();
+  const mk = (id, label) => {
+    const b = el('button'); b.type = 'button'; b.textContent = label;
+    b.setAttribute('aria-pressed', String(filter === id));
+    b.addEventListener('click', () => { filter = id; renderChrome(); renderMain(); window.scrollTo({top:0, behavior:'smooth'}); });
+    fl.append(b);
+  };
+  mk('all', UI.all[lang]);
+  STORIES.forEach(st => mk(st.id, st.t[lang]));
+
+  const lg = $('legend'); lg.replaceChildren();
+  ['rgba(124,197,255,.55)','#63758f','#ffc46b','#ff8a6b'].forEach((c, i) => {
+    const li = el('li'); const sw = el('span','swatch'); sw.style.background = c;
+    li.append(sw, document.createTextNode(UI.legend[lang][i])); lg.append(li);
+  });
+
+  const fn = $('footnotes'); fn.replaceChildren();
+  UI.foot[lang].forEach(t => { const p = el('p'); p.textContent = t; fn.append(p); });
+  $('signature').textContent = UI.sig[lang];
+
+  document.querySelectorAll('.langbar button').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.l === lang)));
+}
+
+document.querySelectorAll('.langbar button').forEach(b => {
+  b.addEventListener('click', () => {
+    lang = b.dataset.l;
+    try { localStorage.setItem('jg-lang', lang); } catch (_) {}
+    renderChrome(); renderMain();
+  });
+});
+
+renderChrome();
+renderMain();
+</script>
+</body>
+</html>
