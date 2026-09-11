@@ -5,6 +5,7 @@
   const status = document.getElementById('visitor-map-status');
   if (!frame || !content || !status) return;
 
+  const t = (s) => (window.jgT ? window.jgT(s) : s);
   const identifier = 'HsiE8aqOup9YTkYnoz300AdW_yLrMN8JEbOD9BHf-X4';
   const statisticsUrl = 'https://mapmyvisitors.com/web/1c84z';
   let settled = false;
@@ -39,7 +40,7 @@
     notify('');
     const widget = content.querySelector('#mapmyvisitors-widget');
     widget.href = statisticsUrl;
-    widget.setAttribute('aria-label', 'Open visitor statistics');
+    widget.setAttribute('aria-label', t('Open visitor statistics'));
     resizeMap();
     if ('ResizeObserver' in window) {
       resizeObserver = new ResizeObserver(resizeMap);
@@ -54,14 +55,14 @@
     observer.disconnect();
     content.hidden = true;
     frame.dataset.state = 'recovering';
-    notify('The interactive map could not load. Loading the image version…');
+    notify(t('The interactive map could not load. Loading the image version…'));
 
     const link = document.createElement('a');
     link.className = 'visitor-fallback';
     link.href = statisticsUrl;
     link.hidden = true;
     const image = new Image();
-    image.alt = 'Visitor locations on a world map. Open visitor statistics.';
+    image.alt = t('Visitor locations on a world map. Open visitor statistics.');
     image.decoding = 'async';
     let imageSettled = false;
     const unavailable = () => {
@@ -70,7 +71,7 @@
       clearTimeout(imageTimeout);
       frame.dataset.state = 'unavailable';
       link.remove();
-      notify('The visitor map is unavailable on this connection. You can try the visitor statistics link below.');
+      notify(t('The visitor map is unavailable on this connection. You can try the visitor statistics link below.'));
     };
     const imageTimeout = setTimeout(unavailable, 10000);
     image.onload = () => {
@@ -79,7 +80,7 @@
       clearTimeout(imageTimeout);
       link.hidden = false;
       frame.dataset.state = 'fallback';
-      notify('Showing the image version. Open visitor statistics for details.');
+      notify(t('Showing the image version. Open visitor statistics for details.'));
     };
     image.onerror = unavailable;
     link.appendChild(image);
@@ -90,7 +91,7 @@
   const observer = new MutationObserver(ready);
   observer.observe(content, { childList: true, subtree: true });
   frame.dataset.state = 'loading';
-  notify('Loading visitor map…');
+  notify(t('Loading visitor map…'));
   const script = document.createElement('script');
   script.id = 'mapmyvisitors';
   script.async = true;

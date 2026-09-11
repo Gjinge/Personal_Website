@@ -21,10 +21,13 @@
       const theme = localStorage.getItem('jg-theme');
       if (theme === 'light' || theme === 'dark') document.documentElement.dataset.theme = theme;
       if (localStorage.getItem('jg-motion') === 'paused' || matchMedia('(prefers-reduced-motion: reduce)').matches) document.documentElement.dataset.motion = 'paused';
+      const lang = localStorage.getItem('jg-lang');
+      if (lang === 'zh' || lang === 'fr' || lang === 'es') { document.documentElement.dataset.lang = lang; document.documentElement.setAttribute('data-i18n-pending', ''); }
     } catch (_) {}
   </script>
   <link rel="stylesheet" href="../assets/css/styles.css">
   <script defer src="../assets/js/main.js"></script>
+  <script defer src="../assets/js/i18n.js"></script>
 </head>
 <body>
   <a class="skip-link" href="#main">Skip to content</a>

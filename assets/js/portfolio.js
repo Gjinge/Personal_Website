@@ -1,5 +1,6 @@
 (() => {
   'use strict';
+  const t = (s) => (window.jgT ? window.jgT(s) : s);
   const grid = document.getElementById('portfolio-grid');
   if (!grid) return;
   const kind = document.body.dataset.portfolio;
@@ -32,7 +33,7 @@
       info.append(node('p', 'eyebrow', item.platform || url.hostname), node('h2', '', item.name || item.platform || url.hostname));
       if (item.handle) info.append(node('p', 'social-handle', item.handle));
       if (item.description) info.append(node('p', '', item.description));
-      info.append(node('span', 'text-link', 'Visit profile ↗'));
+      info.append(node('span', 'text-link', t('Visit profile ↗')));
       card.append(avatar, info); grid.append(card);
     });
     if (!grid.children.length) document.getElementById('portfolio-empty').hidden = false;
@@ -71,7 +72,7 @@
   if (collections.length) {
     filters.hidden = false;
     [null, ...collections].forEach(collection => {
-      const button = node('button', 'filter-button', collection || 'All photographs');
+      const button = node('button', 'filter-button', collection || t('All photographs'));
       button.type = 'button'; button.setAttribute('aria-pressed', String(collection === null));
       button.addEventListener('click', () => {
         filters.querySelectorAll('button').forEach(other => other.setAttribute('aria-pressed', String(other === button)));

@@ -1,5 +1,6 @@
 (() => {
   'use strict';
+  const t = (s) => (window.jgT ? window.jgT(s) : s);
   const list = document.getElementById('reading-list');
   if (!list) return;
   const notes = (window.readingNotes || []).filter(note => {
@@ -30,7 +31,7 @@
     const shown = notes.filter(note => (!filter.value || tags(note).includes(filter.value)) &&
       [note.title, note.author, note.summary, ...tags(note)].join(' ').toLocaleLowerCase().includes(query));
     list.replaceChildren();
-    result.textContent = shown.length ? `${shown.length} ${shown.length === 1 ? 'note' : 'notes'}` : 'No notes match. Try another search or topic.';
+    result.textContent = shown.length ? t(shown.length === 1 ? '{n} note' : '{n} notes').replace('{n}', shown.length) : t('No notes match. Try another search or topic.');
     shown.forEach(note => {
       const card = element('article', '', 'reading-card');
       const meta = element('p', '', 'reading-meta');

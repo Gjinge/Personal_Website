@@ -4,16 +4,17 @@
   const themeButton = document.getElementById('theme-toggle');
   const motionButton = document.getElementById('motion-toggle');
   const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
+  const t = (s) => (window.jgT ? window.jgT(s) : s);
   const save = (key, value) => { try { localStorage.setItem(key, value); } catch (_) {} };
 
   function updateControls() {
     const light = root.dataset.theme === 'light';
-    const themeLabel = `Switch to ${light ? 'dark' : 'light'} theme`;
+    const themeLabel = t(light ? 'Switch to dark theme' : 'Switch to light theme');
     themeButton.setAttribute('aria-label', themeLabel);
     themeButton.title = themeLabel;
     document.querySelector('meta[name="theme-color"]').content = light ? '#f3f6fc' : '#080d17';
     motionButton.hidden = reducedMotion.matches;
-    const motionLabel = root.dataset.motion === 'paused' ? 'Resume decorative motion' : 'Pause decorative motion';
+    const motionLabel = t(root.dataset.motion === 'paused' ? 'Resume decorative motion' : 'Pause decorative motion');
     motionButton.setAttribute('aria-label', motionLabel);
     motionButton.title = motionLabel;
   }
@@ -37,7 +38,7 @@
   const progress = document.querySelector('.reading-progress');
   const ghosts = [['var(--ghost-a)', '20px'], ['var(--ghost-b)', '34px'], ['var(--ghost-c)', '48px']]
     .map(([color, gap]) => `<span class="progress-ghost" style="--ghost:${color};--gap:${gap}"></span>`).join('');
-  progress.innerHTML = `<span class="progress-track" aria-hidden="true"><span class="progress-eaten"></span><span class="progress-dots"></span><span class="progress-marks"></span>${ghosts}<span class="progress-pacman"><span class="progress-eye"></span></span></span><span class="progress-label" aria-hidden="true" hidden></span><input class="progress-seek" type="range" min="0" max="100" step="any" value="0" aria-label="Reading progress" title="Click a pellet or drag to jump through the page">`;
+  progress.innerHTML = `<span class="progress-track" aria-hidden="true"><span class="progress-eaten"></span><span class="progress-dots"></span><span class="progress-marks"></span>${ghosts}<span class="progress-pacman"><span class="progress-eye"></span></span></span><span class="progress-label" aria-hidden="true" hidden></span><input class="progress-seek" type="range" min="0" max="100" step="any" value="0" aria-label="${t('Reading progress')}" title="${t('Click a pellet or drag to jump through the page')}">`;
   progress.removeAttribute('aria-hidden');
   progress.classList.add('is-ready');
   root.classList.add('has-reading-progress');
@@ -86,7 +87,7 @@
     progress.classList.toggle('is-cleared', fraction > 0.995);
     marks.forEach(mark => mark.dot.classList.toggle('is-eaten', mark.fraction <= fraction + 0.002));
     progressSeek.value = fraction * 100;
-    progressSeek.setAttribute('aria-valuetext', `${Math.round(fraction * 100)}% through the page`);
+    progressSeek.setAttribute('aria-valuetext', t('{n}% through the page').replace('{n}', Math.round(fraction * 100)));
     progressSeek.disabled = distance <= 0;
     scheduled = false;
   };
