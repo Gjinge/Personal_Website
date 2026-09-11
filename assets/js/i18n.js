@@ -76,7 +76,7 @@
     return new Promise(resolve => {
       const depth = (document.querySelector('link[rel="stylesheet"]').getAttribute('href') || '').replace(/assets\/css\/styles\.css$/, '');
       const script = document.createElement('script');
-      script.src = `${depth}assets/js/i18n/${lang}.js`;
+      script.src = `${depth}assets/js/i18n/${lang}.js?v=2`;
       script.onload = () => { table = window.JG_I18N_DATA || {}; resolve(); };
       script.onerror = () => { table = {}; resolve(); };
       document.head.append(script);
@@ -108,10 +108,10 @@
     select.addEventListener('change', () => {
       const lang = select.value;
       store('jg-lang', lang);
-      root.dataset.lang = lang;
-      root.lang = HTML_LANG[lang] || 'en';
-      if (lang === 'en') { location.reload(); return; }
-      load(lang).then(applyAll);
+      // Always reload. Translations are keyed by the hash of the English text, so a
+      // second swap on an already-translated page would find nothing to match.
+      if (lang !== 'en') { root.dataset.lang = lang; root.setAttribute('data-i18n-pending', ''); }
+      location.reload();
     });
   }
 

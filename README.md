@@ -52,6 +52,8 @@ From this directory, run `python -m http.server 8000 --bind 127.0.0.1`, then ope
 
   Translations live in `assets/js/i18n/{zh,fr,es}.js` and are keyed by a 10-hex FNV-1a hash of the *English* text with whitespace collapsed, so the page markup carries no translation attributes at all. `assets/js/i18n.js` walks the DOM for outermost elements whose children are all inline, hashes their text, and swaps `innerHTML` when a key matches; it then translates `aria-label`, `title`, `alt` and `placeholder` attributes, the `<title>` and the SEO meta descriptions. The reading-progress rail and `.source-code` blocks are skipped so the Pac-Man markup and the code excerpts stay intact.
 
+  Changing language always reloads the page. Because keys are hashes of the *English* text, a second swap on an already-translated page would match nothing, so the selector stores the choice and reloads; the fresh English DOM is then translated on load.
+
   A missed key falls back to English, so editing English copy never produces a half-translated page — it just reverts that string until the translation is updated. To retranslate a changed string, rehash its new English text and update the three language files. Strings created at runtime by `main.js`, `visitors.js`, `reading.js` and `portfolio.js` go through `window.jgT()` and are translated the same way. Counts use a `{n}` placeholder.
 
   Non-English visitors briefly get `data-i18n-pending` on `<html>`, which hides the body until the swap completes, with a 2.5s failsafe. Without JavaScript the site stays in English and remains fully readable.
