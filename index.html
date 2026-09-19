@@ -30,10 +30,12 @@
   <script defer src="assets/js/visitors.js"></script>
   <script type="application/ld+json">{"@context":"https://schema.org","@type":"Person","name":"Jinge Guo","alternateName":"Jinge (Kenneth) Guo","url":"https://gjinge.github.io/Personal_Website/","affiliation":[{"@type":"CollegeOrUniversity","name":"Southern University of Science and Technology"},{"@type":"CollegeOrUniversity","name":"University of Wisconsin–Madison"}]}</script>
   <script defer src="assets/js/i18n.js"></script>
+  <script defer src="assets/js/hero.js"></script>
 </head>
-<body>
+<body class="has-cover">
   <a class="skip-link" href="#main">Skip to content</a>
   <div class="reading-progress" aria-hidden="true"></div>
+  <div class="header-backdrop" aria-hidden="true"></div>
   <header class="site-header">
     <a class="wordmark" href="#about" aria-label="Jinge Guo, home"><span class="small-monogram" aria-hidden="true">JG</span><span>Jinge Guo</span></a>
     <nav aria-label="Main navigation">
@@ -45,6 +47,17 @@
       <button class="icon-button" id="theme-toggle" type="button" aria-label="Switch to light theme" title="Switch to light theme"><svg class="sun-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/></svg><svg class="moon-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14A8 8 0 0 1 10 4a8.5 8.5 0 1 0 10 10Z"/></svg></button>
     </div>
   </header>
+  <section class="cover" id="home" aria-label="Introduction">
+    <div class="cover-inner">
+      <div class="cover-copy">
+        <p class="cover-title">Hi! I&#8217;m Jinge Guo.</p>
+        <p class="cover-sub-fixed">Researching AI for wireless communication.</p>
+        <p class="cover-sub-typed"><span class="cover-typed"></span><span class="cover-caret" aria-hidden="true"></span></p>
+      </div>
+    </div>
+    <a class="cover-arrow" href="#about" aria-label="Scroll to content"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 4.5v14M5.5 12.5 12 19l6.5-6.5"/></svg></a>
+    <p class="cover-credit">Samuel F. B. Morse, Gallery of the Louvre, 1831–33 · Terra Foundation for American Art</p>
+  </section>
   <main id="main">
     <section class="hero" id="about" aria-labelledby="name">
       <div class="hero-copy">

@@ -357,3 +357,116 @@ nav a[aria-current="page"] { color: var(--accent); border-bottom: 2px solid var(
   .content-section { padding: 20px 0; grid-template-columns: 150px 1fr; gap: 20px; break-inside: avoid; }.section-heading { position: static; }.section-heading h2 { font-size: 18pt; }
   #research .entry { padding: 15px; }.interests { grid-template-columns: 150px 1fr; }.contact-section { padding: 20px 0; }a { color: inherit; }
 }
+
+/* ===================================================================
+   Full-screen cover (index only) — Gallery of the Louvre backdrop.
+   Scoped to body.has-cover so every other page keeps its sticky header.
+   =================================================================== */
+body.has-cover .site-header {
+  position: fixed; left: 0; right: 0;
+  background: transparent; backdrop-filter: none; border-bottom-color: transparent;
+  transition: background-color .35s ease, border-color .35s ease, backdrop-filter .35s ease;
+}
+body.has-cover .site-header nav a, body.has-cover .wordmark, body.has-cover .icon-button, body.has-cover .lang-switch {
+  text-shadow: 0 1px 10px rgba(0, 0, 0, .55);
+}
+body.has-cover.is-past-cover .site-header { border-bottom-color: transparent; }
+.header-backdrop {
+  display: none; position: fixed; z-index: 19; left: 0; right: 0; top: 0;
+  height: var(--header-bottom, 112px); pointer-events: none;
+  background: transparent; border-bottom: 1px solid transparent;
+  transition: background-color .35s ease, border-color .35s ease;
+}
+body.has-cover .header-backdrop { display: block; }
+body.has-cover.is-past-cover .header-backdrop { background: var(--bg); border-bottom-color: var(--rule); }
+body.has-cover.is-past-cover .site-header nav a, body.has-cover.is-past-cover .wordmark,
+body.has-cover.is-past-cover .icon-button, body.has-cover.is-past-cover .lang-switch { text-shadow: none; }
+
+.cover {
+  position: relative; display: grid; align-items: center;
+  width: 100%; margin: 0; overflow: hidden;
+  min-height: 100vh; min-height: 100svh;
+  background-color: #060a12; color: #fff;
+  border-bottom: 1px solid var(--rule);
+}
+.cover::before {
+  content: ""; position: absolute; inset: 0; z-index: 0;
+  background-image: url("../img/hero-louvre-1920.webp");
+  background-repeat: no-repeat; background-size: cover; background-position: 50% 45%;
+}
+.cover::after {
+  content: ""; position: absolute; inset: 0; z-index: 1;
+  background:
+    linear-gradient(90deg, rgba(8, 13, 23, .4) 0%, rgba(8, 13, 23, .26) 26%, rgba(8, 13, 23, .1) 46%, rgba(8, 13, 23, 0) 62%),
+    linear-gradient(180deg, rgba(8, 13, 23, .42) 0%, rgba(8, 13, 23, 0) 15%, rgba(8, 13, 23, 0) 84%, rgba(8, 13, 23, .42) 100%);
+}
+.cover-inner {
+  position: relative; z-index: 2;
+  width: min(1200px, calc(100% - 96px)); margin-inline: auto;
+  padding: 120px 0 160px;
+}
+.cover-copy { max-width: 700px; }
+.cover-title {
+  margin: 0 0 24px; color: #fff;
+  font-family: "Segoe UI", Arial, sans-serif; font-weight: 700;
+  font-size: clamp(34px, 4.7vw, 68px); line-height: 1.07; letter-spacing: -.035em;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, .9), 0 2px 14px rgba(0, 0, 0, .85), 0 10px 46px rgba(0, 0, 0, .7);
+}
+.cover-sub-fixed, .cover-sub-typed {
+  margin: 0; color: #f2f6fd; font-weight: 400;
+  font-size: clamp(15px, 1.55vw, 21px); line-height: 1.65;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, .95), 0 2px 10px rgba(0, 0, 0, .9), 0 6px 30px rgba(0, 0, 0, .75);
+}
+.cover-sub-typed { margin-top: 6px; min-height: 1.65em; color: var(--accent); }
+.cover-caret {
+  display: inline-block; width: 2px; height: 1.05em; margin-left: 4px;
+  vertical-align: -.16em; background: var(--accent); box-shadow: 0 0 10px rgba(107, 231, 232, .8);
+  animation: cover-blink 1.05s steps(1, end) infinite;
+}
+@keyframes cover-blink { 0%, 49% { opacity: 1; } 50%, 100% { opacity: 0; } }
+
+.cover-arrow {
+  position: absolute; z-index: 3; left: 50%; bottom: 40px; translate: -50% 0;
+  display: grid; place-items: center; width: 46px; height: 46px;
+  border: 1px solid rgba(233, 240, 250, .3); border-radius: 50%;
+  background: rgba(8, 13, 23, .3); backdrop-filter: blur(4px);
+  color: #e9f0fa; text-decoration: none;
+}
+.cover-arrow:hover { border-color: var(--accent); color: var(--accent); text-decoration: none; }
+.cover-arrow svg {
+  width: 20px; height: 20px; fill: none; stroke: currentColor; stroke-width: 1.6;
+  stroke-linecap: round; stroke-linejoin: round;
+  animation: cover-bob 2.1s ease-in-out infinite;
+}
+@keyframes cover-bob { 0%, 100% { transform: translateY(-3px); } 50% { transform: translateY(4px); } }
+
+.cover-credit {
+  position: absolute; z-index: 3; right: 26px; bottom: 16px; margin: 0; max-width: min(700px, 76vw);
+  font-family: var(--mono); font-size: 10.5px; line-height: 1.6; text-align: right;
+  color: rgba(233, 240, 250, .4); text-shadow: 0 1px 6px rgba(0, 0, 0, .85);
+  transition: color .25s ease;
+}
+.cover-credit:hover { color: rgba(233, 240, 250, .92); }
+
+@media (max-width: 1050px) {
+  .cover-inner { width: calc(100% - 64px); padding: 110px 0 150px; }
+}
+@media (max-width: 760px) {
+  .cover::before { background-image: url("../img/hero-louvre-1000.webp"); }
+  .cover-inner { width: calc(100% - 40px); padding: 130px 0 170px; }
+  .cover-copy { max-width: none; }
+  .cover-title { letter-spacing: -.028em; }
+  .cover-arrow { bottom: 78px; width: 42px; height: 42px; }
+  .cover-credit { right: 20px; left: 20px; bottom: 14px; max-width: none; font-size: 9.5px; text-align: center; }
+}
+/* Portrait phones: keep the figures in the lower half of the painting in frame,
+   and darken from the top instead of from the left so the copy stays readable. */
+@media (max-width: 760px) and (orientation: portrait) {
+  .cover::before { background-position: 50% 56%; }
+  .cover::after {
+    background:
+      linear-gradient(180deg, rgba(8, 13, 23, .6) 0%, rgba(8, 13, 23, .42) 22%, rgba(8, 13, 23, .12) 44%, rgba(8, 13, 23, 0) 62%, rgba(8, 13, 23, .38) 100%);
+  }
+}
+[data-motion="paused"] .cover-caret { display: none; }
+@media (prefers-reduced-motion: reduce) { .cover-caret { display: none; } }
