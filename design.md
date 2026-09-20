@@ -3,7 +3,7 @@
 Approved 2026-09-20. A restrained academic site: existing identity first.
 
 ## Genre and structure
-Main site: atmospheric, inherited Midnight/cyan. Homepage: Marquee Hero with the existing Louvre painting. Project index: image-and-description rows; research: article columns. Nav N9, footer Ft2. Reading pages: editorial Long Document, cream variant; shelf retains Gallery/Table. All routes and content ownership stay intact.
+Main site: atmospheric, inherited Midnight/cyan. Homepage: Marquee Hero with the existing Louvre painting. Project index: image-and-description rows; research: article columns. Nav N9, footer Ft2. On the Louvre cover, the header is transparent over a subtle full-width scrim; after the cover, a full-width solid background supports reading. Expanded mobile menus use a solid background. Reading pages: editorial Long Document, cream variant; shelf retains Gallery/Table. All routes and content ownership stay intact.
 
 ## Tokens and typography
 `tokens.css` defines the active system. Local Segoe UI display/body, existing serif for reading, Consolas for code. Roman headings. No external font or UI framework. New palette values are OKLCH; existing illustration and Pac-Man colours remain intentional legacy assets.

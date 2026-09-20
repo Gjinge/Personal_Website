@@ -23,6 +23,7 @@
   const queueHeader = () => { if (!ticking) { ticking = true; requestAnimationFrame(syncHeader); } };
   addEventListener('scroll', queueHeader, { passive: true });
   addEventListener('resize', queueHeader, { passive: true });
+  if (header && 'ResizeObserver' in window) new ResizeObserver(queueHeader).observe(header);
   syncHeader();
 
   /* ---- typewriter ---- */
