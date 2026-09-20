@@ -101,6 +101,53 @@ footer{display:flex;gap:18px 30px;flex-wrap:wrap;justify-content:space-between;p
   .year-label{font-size:26px}
   .book-grid{grid-template-columns:repeat(auto-fill,minmax(136px,1fr));gap:28px 18px}
 }
+
+/* Hallmark · genre: editorial · macrostructure: Long Document · design-system: design.md · designed-as-app */
+:root { --space-sm:1rem; --space-md:1.5rem; --space-lg:2rem; --space-xl:3rem; --space-2xl:4rem;
+ --color-reading-paper:oklch(98% .008 85); --color-reading-ink:oklch(25% .015 75); --color-reading-muted:oklch(47% .025 75); --color-reading-rule:oklch(86% .02 85); --color-reading-accent:oklch(46% .085 75); --color-reading-panel:oklch(96% .014 85);
+ --bg:var(--color-reading-paper); --paper:var(--color-reading-paper); --ink:var(--color-reading-ink); --muted:var(--color-reading-muted); --dim:var(--color-reading-muted); --line:var(--color-reading-rule); --link:var(--color-reading-accent); --accent:var(--color-reading-accent); --panel:var(--color-reading-panel); --prov-bg:var(--color-reading-panel); --prov-ink:var(--ink); --prov-border:var(--line); --warn:var(--color-reading-accent);
+ --ease-out:cubic-bezier(.16,1,.3,1); --dur-short:150ms; }
+html,body { overflow-x:clip; }
+h1,h2,h3 { font-style:normal; overflow-wrap:anywhere; min-width:0; }
+button,.back,.home,footer a { white-space:nowrap; }
+button,.back,.home { min-height:44px; }
+button { transition:none; }
+:is(a,button,input,textarea,summary):focus-visible { outline:2px solid var(--link); outline-offset:4px; }
+.wrap { width:min(960px,calc(100% - 40px)); }
+.langbar { gap:8px; }
+.langbar button { border-radius:4px; min-width:44px; }
+.back { display:inline-flex; align-items:center; }
+header.hero { padding-block:var(--space-xl); }
+header.hero h1 { font-size:clamp(2.5rem,6vw,4rem); line-height:1.15; }
+.by { letter-spacing:.04em!important; line-height:1.7; }
+.facts { gap:8px 16px; }
+.facts li { border:0; background:none; padding:0; border-radius:0; }
+.provenance { padding:var(--space-md); border-radius:4px; box-shadow:none; }
+.provenance h2 { letter-spacing:.06em; }
+nav.toc { padding-block:12px; }
+.toc-row { gap:8px; }
+.toc button { min-height:44px; border-radius:4px; white-space:nowrap; }
+.story { padding-block:var(--space-xl); }
+.story-title { font-size:clamp(1.5rem,3vw,2rem); }
+.entry { padding:var(--space-md); border-radius:4px; box-shadow:none; margin-block:var(--space-md); }
+blockquote { max-width:68ch; font-size:1.0625rem; line-height:2; }
+blockquote.latin { line-height:1.85; }
+.orig { margin-top:var(--space-md); padding-top:var(--space-sm); }
+.orig p { line-height:1.9; }
+.social button { min-height:44px; }
+input,textarea { max-width:100%; }
+header.masthead { padding-block:var(--space-xl); }
+.book-grid { grid-template-columns:repeat(2,minmax(0,1fr)); gap:var(--space-lg); }
+.book-cover { box-shadow:none; border-radius:4px; background:var(--paper); }
+.book-cover img { object-fit:contain; }
+a.cover-link:hover .book-cover { transform:none; box-shadow:none; border-color:var(--link); }
+.year-block { grid-template-columns:minmax(0,1fr); gap:var(--space-lg); }
+.view-switch,.view-switch button { border-radius:4px; }
+.table-wrap { max-width:100%; }
+footer { color:var(--muted); }
+@media(min-width:48rem) { .wrap { width:min(960px,calc(100% - 80px)); } .entry { padding:var(--space-lg); } .book-grid { grid-template-columns:repeat(3,minmax(0,1fr)); } .year-block { grid-template-columns:100px minmax(0,1fr); } }
+@media(prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } *,*::before,*::after { transition:none!important; animation:none!important; } }
+
 </style>
 </head>
 <body>
@@ -130,7 +177,7 @@ footer{display:flex;gap:18px 30px;flex-wrap:wrap;justify-content:space-between;p
     </div>
   </div>
 
-  <main id="shelf"></main>
+  <main id="shelf"><noscript><h1>Books I’ve Read</h1><div class="book-grid"><article class="book-card"><a class="cover-link" href="notes/xianshiyizhong.html"><div class="book-cover"><img src="assets/img/covers/xianshiyizhong.jpg" alt="现实一种 — Yu Hua" width="657" height="1000"></div><h2>现实一种</h2></a><p>余华 Yu Hua</p></article><article class="book-card"><a class="cover-link" href="notes/chaowendao.html"><div class="book-cover"><img src="assets/img/covers/chaowendao.jpg" alt="朝闻道 — Liu Cixin" width="600" height="799"></div><h2>朝闻道</h2></a><p>刘慈欣 Liu Cixin</p></article></div></noscript></main>
 
   <section class="empty" id="empty" hidden>
     <h2 id="empty-title">One book at a time.</h2>

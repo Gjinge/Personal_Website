@@ -157,3 +157,12 @@ The `Visitors` section near the footer loads the MapMyVisitors interactive map. 
 7. Confirm the page, navigation, images, and `cv.pdf` load over HTTPS.
 
 Deployment status is shown in the repository's Actions and Pages settings. The expected URL is not proof that deployment has completed.
+
+## Hallmark design layer (September 2026)
+
+The approved visual system is documented in `design.md`; shared tokens are in `tokens.css`.
+All eight main content routes load `assets/css/hallmark.css` after the original stylesheet.
+The mobile navigation is a keyboard-accessible disclosure, with shared translated Menu/Close labels.
+The cream bookshelf and both note pages keep their self-contained CSS and embed the reading token subset.
+The note pages and bookshelf include English noscript fallbacks; regenerate these from the existing data when notes change.
+Keep the Louvre cover, dark homepage entry, typewriter speed, Pac-Man controls, language keys and note IDs stable.

@@ -1,0 +1,18 @@
+{
+  "date": "2026-09-20",
+  "base": "67e6c05",
+  "framework": "vanilla HTML/CSS/JS",
+  "palette": "inherited midnight/cyan with cream reading variant",
+  "font": "local Segoe UI and reading serif",
+  "motion": "preserve Pac-Man and typewriter; reduce decorative motion",
+  "pages": [
+    "index.html",
+    "photography.html",
+    "social.html",
+    "projects\\index.html",
+    "projects\\apple-picker\\index.html",
+    "projects\\fpga-gomoku\\index.html",
+    "projects\\mission-demolition\\index.html",
+    "projects\\unity\\index.html"
+  ]
+}
