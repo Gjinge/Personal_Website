@@ -1,10 +1,10 @@
 <!doctype html>
-<html lang="en" data-theme="dark">
+<html lang="en">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="color-scheme" content="dark light">
-  <meta name="theme-color" content="#080d17">
+  <meta name="color-scheme" content="light">
+  <meta name="theme-color" content="#f3f6fc">
   <title>Apple Picker | Jinge Guo</title>
   <meta name="description" content="A mouse-controlled catching game with scoring, lives, and increasing difficulty.">
   <link rel="canonical" href="https://gjinge.github.io/Personal_Website/projects/apple-picker/">
@@ -18,8 +18,6 @@
   <link rel="icon" href="../../assets/img/favicon.svg" type="image/svg+xml">
   <script>
     try {
-      const theme = localStorage.getItem('jg-theme');
-      if (theme === 'light' || theme === 'dark') document.documentElement.dataset.theme = theme;
       if (localStorage.getItem('jg-motion') === 'paused' || matchMedia('(prefers-reduced-motion: reduce)').matches) document.documentElement.dataset.motion = 'paused';
       const lang = localStorage.getItem('jg-lang');
       if (lang === 'zh' || lang === 'fr' || lang === 'es') { document.documentElement.dataset.lang = lang; document.documentElement.setAttribute('data-i18n-pending', ''); }
@@ -40,7 +38,6 @@
     </nav>
     <div class="display-controls" hidden>
       <button class="icon-button" id="motion-toggle" type="button" aria-label="Pause decorative motion" title="Pause decorative motion"><svg class="pause-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14M16 5v14"/></svg><svg class="play-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m8 5 11 7-11 7Z"/></svg></button>
-      <button class="icon-button" id="theme-toggle" type="button" aria-label="Switch to light theme" title="Switch to light theme"><svg class="sun-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/></svg><svg class="moon-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14A8 8 0 0 1 10 4a8.5 8.5 0 1 0 10 10Z"/></svg></button>
     </div>
   </header>
   <main id="main" class="project-detail">

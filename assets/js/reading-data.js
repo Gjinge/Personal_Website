@@ -1,12 +1,27 @@
-// Add published notes here. URLs may be site-relative (notes/book.pdf) or HTTPS.
-// {title, author, date: 'YYYY-MM-DD', tags: [], summary, url}
+// Books I've read. Newest first; `finished` decides the year grouping.
+// {title, author, finished:'YYYY-MM-DD', read, pages, highlights, cover, url}
+//   read       — how the reading period is shown (free text, e.g. '15–17 Feb 2025')
+//   pages      — printed pages of the edition read (omit if unknown)
+//   highlights — number of passages kept in the notes page
+//   cover      — site-relative image path; omit and a typographic cover is drawn
 window.readingNotes = [
   {
-    title: '《朝闻道》— marks, circles and margin notes',
+    title: '现实一种',
+    author: '余华 Yu Hua',
+    finished: '2025-03-04',
+    read: '3–4 Mar 2025',
+    highlights: 103,
+    cover: 'assets/img/covers/xianshiyizhong.jpg',
+    url: 'notes/xianshiyizhong.html'
+  },
+  {
+    title: '朝闻道',
     author: '刘慈欣 Liu Cixin',
-    date: '2025-02-17',
-    tags: ['Science Fiction', '中文', 'Physics', 'Notes'],
-    summary: 'Six stories, 113 passages marked in the paper book, 7 handwritten margin notes. Chinese original throughout, with AI translations into English, French and Spanish.',
+    finished: '2025-02-17',
+    read: '15–17 Feb 2025',
+    pages: 258,
+    highlights: 113,
+    cover: 'assets/img/covers/chaowendao.jpg',
     url: 'notes/chaowendao.html'
   }
 ];

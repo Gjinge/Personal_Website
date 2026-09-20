@@ -1,69 +1,336 @@
 <!doctype html>
-<html lang="en" data-theme="dark">
+<html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="color-scheme" content="dark light">
-  <meta name="theme-color" content="#080d17">
-  <title>Reading Notes | Jinge Guo</title>
-  <meta name="description" content="Reading notes, book reflections, and ideas collected by Jinge Guo.">
-  <link rel="canonical" href="https://gjinge.github.io/Personal_Website/reading.html">
-  <meta property="og:type" content="website">
-  <meta property="og:title" content="Reading Notes | Jinge Guo">
-  <meta property="og:description" content="Reading notes, book reflections, and ideas collected by Jinge Guo.">
-  <meta property="og:url" content="https://gjinge.github.io/Personal_Website/reading.html">
-  <meta property="og:image" content="https://gjinge.github.io/Personal_Website/assets/img/og-image.png">
-  <meta property="og:image:alt" content="Jinge Guo — undergraduate researcher at SUSTech and visiting student at UW–Madison">
-  <meta name="twitter:card" content="summary_large_image">
-  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
-  <script>
-    try {
-      const theme = localStorage.getItem('jg-theme');
-      if (theme === 'light' || theme === 'dark') document.documentElement.dataset.theme = theme;
-      if (localStorage.getItem('jg-motion') === 'paused' || matchMedia('(prefers-reduced-motion: reduce)').matches) document.documentElement.dataset.motion = 'paused';
-      const lang = localStorage.getItem('jg-lang');
-      if (lang === 'zh' || lang === 'fr' || lang === 'es') { document.documentElement.dataset.lang = lang; document.documentElement.setAttribute('data-i18n-pending', ''); }
-    } catch (_) {}
-  </script>
-  <link rel="stylesheet" href="assets/css/styles.css">
-  <script defer src="assets/js/main.js"></script>
-  <script defer src="assets/js/reading-data.js"></script>
-  <script defer src="assets/js/reading.js"></script>
-  <script defer src="assets/js/i18n.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<meta name="theme-color" content="#faf8f3">
+<title>Books I've Read | Jinge Guo</title>
+<meta name="description" content="Every book Jinge Guo has finished, with the passages kept from each one.">
+<link rel="canonical" href="https://gjinge.github.io/Personal_Website/reading.html">
+<meta property="og:type" content="website">
+<meta property="og:title" content="Books I've Read | Jinge Guo">
+<meta property="og:description" content="Every book Jinge Guo has finished, with the passages kept from each one.">
+<meta property="og:url" content="https://gjinge.github.io/Personal_Website/reading.html">
+<meta property="og:image" content="https://gjinge.github.io/Personal_Website/assets/img/og-image.png">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+<style>
+:root{
+  --paper:#faf8f3; --card:#fffdf9; --ink:#1b1a17; --muted:#6f6a60; --dim:#8d8880;
+  --line:#e4ded2; --line-soft:#efe9dd; --mark:#f6d66b; --mark-soft:#fcf2d2; --link:#8a6a12;
+  --serif:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,"Times New Roman","Noto Serif CJK SC","Source Han Serif SC","Songti SC",serif;
+  --sans:"Segoe UI",system-ui,-apple-system,"Noto Sans CJK SC","PingFang SC","Hiragino Sans GB","Microsoft YaHei",Arial,sans-serif;
+  --mono:Consolas,"SFMono-Regular","Liberation Mono",monospace;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);font-size:16px;line-height:1.75;-webkit-font-smoothing:antialiased}
+.wrap{width:min(1180px,calc(100% - 48px));margin-inline:auto}
+a{color:var(--link);text-underline-offset:4px}
+button{font:inherit;cursor:pointer}
+[hidden]{display:none !important}
+.skip-link{position:fixed;left:16px;top:-100px;padding:10px 18px;background:var(--mark);color:var(--ink);z-index:100;border-radius:0 0 6px 6px}
+.skip-link:focus{top:0}
+
+/* ---------- top bar ---------- */
+.topbar{display:flex;align-items:center;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-block:22px}
+.home{display:inline-flex;align-items:center;gap:9px;color:var(--muted);font-size:13px;text-decoration:none}
+.home:hover{color:var(--ink)}
+.home .mono{font-family:var(--mono);font-size:11px;letter-spacing:.14em;text-transform:uppercase}
+.langbar{display:flex;gap:5px;flex-wrap:wrap}
+.langbar button{background:transparent;border:1px solid var(--line);color:var(--muted);border-radius:999px;padding:5px 13px;font-size:12px;letter-spacing:.03em;transition:.15s}
+.langbar button:hover{color:var(--ink);border-color:var(--dim)}
+.langbar button[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:var(--paper);font-weight:600}
+
+/* ---------- masthead ---------- */
+header.masthead{padding:34px 0 30px}
+h1{font-family:var(--serif);font-size:clamp(42px,6.4vw,68px);line-height:1.08;letter-spacing:-.02em;font-weight:600;margin:0 0 20px}
+.lede{max-width:56ch;color:var(--muted);margin:0;font-size:17px}
+
+/* ---------- toolbar ---------- */
+.toolbar{display:flex;align-items:center;justify-content:space-between;gap:18px;flex-wrap:wrap;padding:26px 0 16px;border-bottom:2px solid var(--mark)}
+.count{margin:0;color:var(--dim);font:11px/1.8 var(--mono);letter-spacing:.12em;text-transform:uppercase}
+.view-switch{display:inline-flex;padding:3px;border:1px solid var(--line);border-radius:999px;background:var(--card)}
+.view-switch button{border:0;border-radius:999px;background:transparent;color:var(--muted);padding:7px 22px;font-size:13px;line-height:1.4}
+.view-switch button:hover{color:var(--ink)}
+.view-switch button[aria-pressed="true"]{background:var(--mark);color:var(--ink);font-weight:600}
+:is(.view-switch button,.langbar button,.home):focus-visible{outline:2px solid var(--link);outline-offset:3px}
+
+/* ---------- gallery ---------- */
+.year-block{display:grid;grid-template-columns:130px minmax(0,1fr);gap:10px 34px;padding:44px 0;border-bottom:1px solid var(--line)}
+.year-block:last-child{border-bottom:0}
+.year-label{margin:0;font-family:var(--serif);font-size:34px;font-weight:600;line-height:1.1;letter-spacing:-.01em}
+.book-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(172px,1fr));gap:36px 26px}
+.book-card{min-width:0}
+a.cover-link{display:block;text-decoration:none}
+.book-cover{position:relative;display:grid;place-items:center;aspect-ratio:2/3;overflow:hidden;border:1px solid var(--line);border-radius:3px;background:var(--card);box-shadow:0 8px 20px rgba(27,26,23,.10);transition:transform .18s ease,box-shadow .18s ease}
+a.cover-link:hover .book-cover{transform:translateY(-3px);box-shadow:0 14px 28px rgba(27,26,23,.16)}
+.book-cover img{display:block;width:100%;height:100%;object-fit:cover}
+.cover-fallback{display:grid;align-content:space-between;width:100%;height:100%;padding:20px 17px;background:linear-gradient(165deg,var(--mark-soft),var(--card) 70%);text-align:left}
+.cf-title{font-family:var(--serif);font-size:21px;font-weight:600;line-height:1.3;overflow-wrap:anywhere}
+.cf-author{font:10px/1.6 var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--muted)}
+.book-title{margin:15px 0 3px;font-family:var(--serif);font-size:18px;font-weight:600;line-height:1.35}
+.book-title a{color:var(--ink);text-decoration:none}
+.book-title a:hover{text-decoration:underline;text-decoration-color:var(--mark);text-decoration-thickness:2px}
+.book-author{margin:0 0 10px;color:var(--muted);font-size:13px}
+.chips{display:flex;flex-wrap:wrap;gap:6px;margin:0;padding:0;list-style:none}
+.chips li{padding:3px 10px;border-radius:999px;background:var(--line-soft);color:var(--muted);font:11px/1.7 var(--mono)}
+.chips li.is-highlights{background:var(--mark-soft);color:#7a5c07}
+.book-read{margin:10px 0 0;color:var(--dim);font:11px/1.7 var(--mono)}
+
+/* ---------- table ---------- */
+.table-wrap{overflow-x:auto;padding-top:14px}
+table{width:100%;border-collapse:collapse;font-size:15px}
+th,td{padding:13px 18px 13px 0;text-align:left;vertical-align:baseline;border-bottom:1px solid var(--line)}
+thead th{color:var(--dim);font:11px/1.8 var(--mono);letter-spacing:.1em;text-transform:uppercase;font-weight:400}
+td a{color:var(--ink);text-decoration:none;font-weight:600}
+td a:hover{text-decoration:underline;text-decoration-color:var(--mark);text-decoration-thickness:2px}
+td.num{white-space:nowrap;color:var(--muted);font-family:var(--mono);font-size:12px}
+th.year-row{font-family:var(--serif);font-size:22px;font-weight:600;letter-spacing:0;text-transform:none;color:var(--ink);padding-top:30px}
+
+/* ---------- empty + footer ---------- */
+.empty{padding:70px 0;color:var(--muted)}
+.empty h2{font-family:var(--serif);font-size:28px;margin:0 0 8px;color:var(--ink)}
+footer{display:flex;gap:18px 30px;flex-wrap:wrap;justify-content:space-between;padding:46px 0 60px;margin-top:30px;border-top:1px solid var(--line);color:var(--dim);font-size:13px}
+
+@media (max-width:760px){
+  .wrap{width:calc(100% - 32px)}
+  .year-block{grid-template-columns:1fr;gap:4px;padding:32px 0}
+  .year-label{font-size:26px}
+  .book-grid{grid-template-columns:repeat(auto-fill,minmax(136px,1fr));gap:28px 18px}
+}
+</style>
 </head>
 <body>
-  <a class="skip-link" href="#main">Skip to content</a>
-  <div class="reading-progress" aria-hidden="true"></div>
-  <header class="site-header">
-    <a class="wordmark" href="index.html#about" aria-label="Jinge Guo, home"><span class="small-monogram" aria-hidden="true">JG</span><span>Jinge Guo</span></a>
-    <nav aria-label="Main navigation">
-      <a href="index.html#about">About</a><a href="index.html#publications">Publications</a><a href="projects/">Projects</a><a class="nav-cv" href="cv.pdf">CV <span aria-hidden="true">↗</span></a><a href="photography.html">Photography</a><a href="social.html">Social</a>
-      <a href="reading.html" aria-current="page">Reading Notes</a>
-    </nav>
-    <div class="display-controls" hidden>
-      <button class="icon-button" id="motion-toggle" type="button" aria-label="Pause decorative motion" title="Pause decorative motion"><svg class="pause-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M8 5v14M16 5v14"/></svg><svg class="play-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="m8 5 11 7-11 7Z"/></svg></button>
-      <button class="icon-button" id="theme-toggle" type="button" aria-label="Switch to light theme" title="Switch to light theme"><svg class="sun-icon" viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M2 12h2m16 0h2M5 5l1.5 1.5m11 11L19 19M5 19l1.5-1.5m11-11L19 5"/></svg><svg class="moon-icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M20 14A8 8 0 0 1 10 4a8.5 8.5 0 1 0 10 10Z"/></svg></button>
+<a class="skip-link" href="#shelf">Skip to the books</a>
+<div class="wrap">
+
+  <div class="topbar">
+    <a class="home" href="index.html"><span aria-hidden="true">←</span><span class="mono" id="home-label">Jinge Guo</span></a>
+    <div class="langbar">
+      <button type="button" data-l="en" aria-pressed="true">English</button>
+      <button type="button" data-l="zh" aria-pressed="false">简体中文</button>
+      <button type="button" data-l="fr" aria-pressed="false">Français</button>
+      <button type="button" data-l="es" aria-pressed="false">Español</button>
     </div>
+  </div>
+
+  <header class="masthead">
+    <h1 id="page-title">Books I've Read</h1>
+    <p class="lede" id="page-lede"></p>
   </header>
-  <main id="main" class="portfolio-page">
-    <section class="portfolio-intro" aria-labelledby="reading-title">
-      <p class="eyebrow">Beyond research / 03 — Read</p>
-      <h1 id="reading-title">Reading Notes<span class="name-period" aria-hidden="true">.</span></h1>
-      <p class="portfolio-subtitle">Ideas worth keeping. Questions worth returning to.</p>
-      <p class="reading-intro">Notes, reflections, and connections from the books I read.</p>
-    </section>
-    <div id="reading-tools" class="reading-tools" hidden>
-      <label for="reading-search">Search notes<input id="reading-search" type="search" placeholder="Book, author, or idea…"></label>
-      <label for="reading-tag">Topic<select id="reading-tag"><option value="">All topics</option></select></label>
-      <p id="reading-result" role="status"></p>
+
+  <div class="toolbar" id="toolbar" hidden>
+    <p class="count" id="count"></p>
+    <div class="view-switch" role="group" aria-label="View">
+      <button type="button" data-view="gallery" aria-pressed="true" id="btn-gallery">Gallery</button>
+      <button type="button" data-view="table" aria-pressed="false" id="btn-table">Table</button>
     </div>
-    <section id="reading-empty" class="portfolio-empty" aria-labelledby="empty-title">
-      <div class="empty-viewfinder" aria-hidden="true"><span> READ / 03 </span></div>
-      <div><p class="eyebrow">A growing notebook</p><h2 id="empty-title">One book at a time.</h2><p>My first reading notes will appear here soon.</p><a class="text-link" href="index.html#about">Back to about ↗</a></div>
-    </section>
-    <div id="reading-list" class="reading-list"></div>
-    <noscript><p>Enable JavaScript to browse and search reading notes.</p></noscript>
-  </main>
-  <footer><span>© 2026 Jinge Guo</span><span>Beyond research</span><a href="index.html#contact">Get in touch ↗</a></footer>
+  </div>
+
+  <main id="shelf"></main>
+
+  <section class="empty" id="empty" hidden>
+    <h2 id="empty-title">One book at a time.</h2>
+    <p id="empty-body">The first notes will show up here soon.</p>
+  </section>
+
+  <footer>
+    <span id="foot-name">© 2026 Jinge Guo</span>
+    <a href="index.html" id="foot-link">Back to the site ↗</a>
+  </footer>
+
+</div>
+
+<script src="assets/js/reading-data.js"></script>
+<script>
+(() => {
+  'use strict';
+
+  const UI = {
+    home:   {en:'Jinge Guo', zh:'郭晋阁', fr:'Jinge Guo', es:'Jinge Guo'},
+    title:  {en:'Books I’ve Read', zh:'我读过的书', fr:'Les livres que j’ai lus', es:'Libros que he leído'},
+    lede:   {
+      en:'I read for the pleasure of it, and to understand the world a little better. These notes are how I keep more of what I read — you may find something in them too.',
+      zh:'读书是消遣，也是为了把这个世界看得清楚一点。做笔记是为了让读过的东西留得久一些 —— 说不定你也能从中找到点什么。',
+      fr:'Je lis pour le plaisir, et pour comprendre un peu mieux le monde. Ces notes me servent à retenir davantage de mes lectures — peut-être y trouverez-vous quelque chose aussi.',
+      es:'Leo por placer y para entender un poco mejor el mundo. Estas notas me sirven para retener más de lo que leo; quizá tú también encuentres algo en ellas.'
+    },
+    gallery:{en:'Gallery', zh:'书架', fr:'Galerie', es:'Galería'},
+    table:  {en:'Table', zh:'表格', fr:'Tableau', es:'Tabla'},
+    books:  {en:'{n} books', zh:'{n} 本书', fr:'{n} livres', es:'{n} libros'},
+    book:   {en:'{n} book', zh:'{n} 本书', fr:'{n} livre', es:'{n} libro'},
+    pages:  {en:'{n} pages', zh:'{n} 页', fr:'{n} pages', es:'{n} págs.'},
+    hl:     {en:'{n} highlights', zh:'{n} 条摘录', fr:'{n} passages', es:'{n} pasajes'},
+    cover:  {en:'Cover of {title}', zh:'《{title}》封面', fr:'Couverture de {title}', es:'Portada de {title}'},
+    cTitle: {en:'Title', zh:'书名', fr:'Titre', es:'Título'},
+    cAuthor:{en:'Author', zh:'作者', fr:'Auteur', es:'Autor'},
+    cRead:  {en:'Read', zh:'阅读期间', fr:'Lecture', es:'Lectura'},
+    cPages: {en:'Pages', zh:'页数', fr:'Pages', es:'Págs.'},
+    cHl:    {en:'Highlights', zh:'摘录', fr:'Passages', es:'Pasajes'},
+    undated:{en:'Undated', zh:'未标日期', fr:'Sans date', es:'Sin fecha'},
+    emptyT: {en:'One book at a time.', zh:'一本一本来。', fr:'Un livre à la fois.', es:'Un libro cada vez.'},
+    emptyB: {en:'The first notes will show up here soon.', zh:'第一批笔记很快就会出现在这里。', fr:'Les premières notes arriveront bientôt.', es:'Las primeras notas aparecerán pronto.'},
+    foot:   {en:'Back to the site ↗', zh:'回到主站 ↗', fr:'Retour au site ↗', es:'Volver al sitio ↗'},
+    readFmt:{
+      en:(r)=>r, zh:(r)=>r, fr:(r)=>r, es:(r)=>r
+    }
+  };
+
+  let lang = 'en';
+  try {
+    const saved = localStorage.getItem('jg-lang');
+    if (saved === 'zh' || saved === 'fr' || saved === 'es' || saved === 'en') lang = saved;
+  } catch (_) {}
+
+  const T = (key, n) => {
+    const s = UI[key][lang];
+    return n === undefined ? s : s.replace('{n}', n);
+  };
+  const $ = (id) => document.getElementById(id);
+  const el = (tag, text, className) => {
+    const node = document.createElement(tag);
+    if (text !== undefined && text !== null && text !== '') node.textContent = text;
+    if (className) node.className = className;
+    return node;
+  };
+
+  const books = (window.readingNotes || []).filter(b => {
+    if (!b.title || !b.url) return false;
+    try {
+      const url = new URL(b.url, location.href);
+      return url.protocol === 'https:' || url.origin === location.origin;
+    } catch (_) { return false; }
+  }).sort((a, b) => (b.finished || '').localeCompare(a.finished || ''));
+
+  const shelf = $('shelf');
+  const link = (b, text, className) => {
+    const a = el('a', text, className);
+    a.href = b.url;
+    if (new URL(b.url, location.href).origin !== location.origin) { a.target = '_blank'; a.rel = 'noopener noreferrer'; }
+    return a;
+  };
+  const groups = () => {
+    const map = new Map();
+    books.forEach(b => {
+      const y = (b.finished || '').slice(0, 4) || T('undated');
+      if (!map.has(y)) map.set(y, []);
+      map.get(y).push(b);
+    });
+    return [...map.entries()];
+  };
+
+  function cover(b) {
+    const box = el('div', '', 'book-cover');
+    const fallback = () => {
+      const f = el('div', '', 'cover-fallback');
+      f.append(el('span', b.title, 'cf-title'), el('span', b.author || '', 'cf-author'));
+      box.replaceChildren(f);
+    };
+    if (b.cover) {
+      const img = document.createElement('img');
+      img.src = b.cover;
+      img.alt = UI.cover[lang].replace('{title}', b.title);
+      img.loading = 'lazy'; img.decoding = 'async';
+      img.addEventListener('error', fallback, { once: true });
+      box.append(img);
+    } else fallback();
+    return box;
+  }
+
+  function gallery() {
+    const frag = document.createDocumentFragment();
+    groups().forEach(([year, group]) => {
+      const block = el('section', '', 'year-block');
+      block.append(el('h2', year, 'year-label'));
+      const grid = el('div', '', 'book-grid');
+      group.forEach(b => {
+        const card = el('article', '', 'book-card');
+        const c = link(b, '', 'cover-link');
+        c.tabIndex = -1; c.setAttribute('aria-hidden', 'true');
+        c.append(cover(b));
+        const title = el('h3', '', 'book-title'); title.append(link(b, b.title));
+        card.append(c, title);
+        if (b.author) card.append(el('p', b.author, 'book-author'));
+        const chips = el('ul', '', 'chips');
+        if (b.pages) chips.append(el('li', T('pages', b.pages)));
+        if (b.highlights) chips.append(el('li', T('hl', b.highlights), 'is-highlights'));
+        if (chips.childElementCount) card.append(chips);
+        if (b.read) card.append(el('p', b.read, 'book-read'));
+        grid.append(card);
+      });
+      block.append(grid);
+      frag.append(block);
+    });
+    return frag;
+  }
+
+  function table() {
+    const wrap = el('div', '', 'table-wrap');
+    const tbl = document.createElement('table');
+    const thead = document.createElement('thead');
+    const hrow = el('tr');
+    ['cTitle','cAuthor','cRead','cPages','cHl'].forEach(k => {
+      const th = el('th', UI[k][lang]); th.scope = 'col'; hrow.append(th);
+    });
+    thead.append(hrow);
+    const tbody = document.createElement('tbody');
+    groups().forEach(([year, group]) => {
+      const yr = el('tr');
+      const cell = el('th', year, 'year-row'); cell.scope = 'rowgroup'; cell.colSpan = 5;
+      yr.append(cell); tbody.append(yr);
+      group.forEach(b => {
+        const row = el('tr');
+        const title = el('td'); title.append(link(b, b.title));
+        row.append(title,
+          el('td', b.author || '—'),
+          el('td', b.read || '—', 'num'),
+          el('td', b.pages ? String(b.pages) : '—', 'num'),
+          el('td', b.highlights ? String(b.highlights) : '—', 'num'));
+        tbody.append(row);
+      });
+    });
+    tbl.append(thead, tbody); wrap.append(tbl);
+    return wrap;
+  }
+
+  let view = 'gallery';
+  try { const v = localStorage.getItem('jg-reading-view'); if (v === 'table' || v === 'gallery') view = v; } catch (_) {}
+
+  function render() {
+    document.documentElement.lang = (lang === 'zh' ? 'zh-Hans' : lang);
+    $('home-label').textContent = UI.home[lang];
+    $('page-title').textContent = UI.title[lang];
+    $('page-lede').textContent = UI.lede[lang];
+    $('btn-gallery').textContent = UI.gallery[lang];
+    $('btn-table').textContent = UI.table[lang];
+    $('empty-title').textContent = UI.emptyT[lang];
+    $('empty-body').textContent = UI.emptyB[lang];
+    $('foot-link').textContent = UI.foot[lang];
+    document.querySelectorAll('.langbar button').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.l === lang)));
+
+    if (!books.length) { $('empty').hidden = false; $('toolbar').hidden = true; shelf.replaceChildren(); return; }
+    $('empty').hidden = true;
+    $('toolbar').hidden = false;
+    $('count').textContent = T(books.length === 1 ? 'book' : 'books', books.length);
+    document.querySelectorAll('.view-switch button').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.view === view)));
+    shelf.replaceChildren(view === 'table' ? table() : gallery());
+  }
+
+  document.querySelectorAll('.view-switch button').forEach(b => b.addEventListener('click', () => {
+    view = b.dataset.view;
+    try { localStorage.setItem('jg-reading-view', view); } catch (_) {}
+    render();
+  }));
+  document.querySelectorAll('.langbar button').forEach(b => b.addEventListener('click', () => {
+    lang = b.dataset.l;
+    try { localStorage.setItem('jg-lang', lang); } catch (_) {}
+    render();
+  }));
+
+  render();
+})();
+</script>
 </body>
 </html>

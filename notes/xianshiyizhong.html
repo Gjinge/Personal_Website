@@ -1,0 +1,1152 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<title>现实一种 · Reading Notes — Yu Hua</title>
+<meta name="description" content="Reading notes on Yu Hua's novella 现实一种: passages copied from the paper book with page numbers. Chinese original with AI translations into English, French and Spanish.">
+<style>
+:root{
+  --bg:#faf8f3; --panel:#fffdf9; --panel-2:#fffdf9; --line:#e4ded2;
+  --ink:#1b1a17; --muted:#6f6a60; --dim:#8d8880;
+  --accent:#8a6a12; --accent-2:#b07d18; --mark:#a1541c; --warn:#6f5aa0;
+  --like:#c03a63; --ok:#2f7d55;
+  --serif:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,"Times New Roman","Noto Serif CJK SC","Source Han Serif SC","Songti SC",serif;
+  --sans:"Segoe UI",system-ui,-apple-system,"Noto Sans CJK SC","PingFang SC","Hiragino Sans GB","Microsoft YaHei",Arial,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+  background-image:radial-gradient(1200px 600px at 15% -10%,rgba(246,214,107,.16),transparent 60%),
+                   radial-gradient(900px 500px at 95% 8%,rgba(200,170,120,.10),transparent 60%);
+  background-attachment:fixed;}
+.wrap{max-width:900px;margin:0 auto;padding:16px}
+a{color:var(--accent)}
+
+/* ---------- language bar ---------- */
+.langbar{display:flex;justify-content:flex-end;gap:6px;padding-block:14px 0;flex-wrap:wrap}
+.langbar a.back{margin-right:auto;font-size:.8rem;color:var(--muted);text-decoration:none;align-self:center}
+.langbar a.back:hover{color:var(--ink)}
+.langbar button{background:transparent;border:1px solid var(--line);color:var(--muted);border-radius:999px;
+  padding:5px 12px;font-size:.76rem;letter-spacing:.05em;cursor:pointer;font-family:inherit;transition:.15s}
+.langbar button:hover{color:var(--ink);border-color:var(--accent)}
+.langbar button[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:#faf8f3;font-weight:600}
+
+/* ---------- header ---------- */
+header.hero{padding-block:34px 28px;border-bottom:1px solid var(--line)}
+.eyebrow{font-size:.74rem;letter-spacing:.22em;text-transform:uppercase;color:var(--dim);margin:0 0 14px}
+h1{font-family:var(--serif);font-size:clamp(1.9rem,6vw,3rem);line-height:1.25;margin:0 0 6px;font-weight:600}
+h1 .by{display:block;font-family:var(--sans);font-size:.9rem;font-weight:400;letter-spacing:.16em;color:var(--muted);margin-top:12px}
+.hero-note{color:var(--muted);max-width:62ch;margin:18px 0 0;font-size:.95rem}
+.facts{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px;padding:0;list-style:none}
+.facts li{background:var(--panel);border:1px solid var(--line);border-radius:999px;
+  padding:7px 14px;font-size:.8rem;color:var(--muted)}
+.facts b{color:var(--ink);font-weight:600}
+
+/* ---------- provenance banner ---------- */
+.provenance{margin-top:26px;border:1px solid rgba(111,90,160,.30);background:rgba(111,90,160,.07);
+  border-radius:14px;padding:18px 20px}
+.provenance h2{font-family:var(--sans);font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--warn);margin:0 0 10px;font-weight:700;display:flex;align-items:center;gap:8px}
+.provenance h2 svg{width:15px;height:15px;flex:0 0 auto;stroke:currentColor;fill:none;stroke-width:1.8}
+.provenance p{margin:0 0 8px;font-size:.88rem;color:#4a4459}
+.provenance p:last-child{margin-bottom:0}
+.provenance dl{margin:12px 0 0;display:grid;grid-template-columns:auto 1fr;gap:5px 14px;font-size:.82rem}
+.provenance dt{color:var(--warn);white-space:nowrap}
+.provenance dd{margin:0;color:#4a4459}
+.provenance code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.94em;
+  background:rgba(111,90,160,.10);padding:1px 6px;border-radius:5px;color:#4a4459}
+
+/* ---------- toc / filter ---------- */
+nav.toc{position:sticky;top:0;z-index:5;background:rgba(250,248,243,.93);backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line);margin-inline:-16px;padding:10px 16px}
+.toc-row{max-width:900px;margin:0 auto;display:flex;gap:8px;overflow-x:auto;scrollbar-width:thin;padding-bottom:2px}
+.toc-row button{flex:0 0 auto;background:transparent;border:1px solid var(--line);color:var(--muted);
+  border-radius:999px;padding:6px 13px;font-size:.8rem;cursor:pointer;font-family:inherit;white-space:nowrap;transition:.15s}
+.toc-row button:hover{color:var(--ink);border-color:var(--accent)}
+.toc-row button[aria-pressed="true"]{background:#f6d66b;border-color:#e8c85a;color:var(--ink);font-weight:600}
+
+/* ---------- story ---------- */
+section.story{padding-block:44px 8px;border-bottom:1px solid var(--line)}
+section.story:last-of-type{border-bottom:0}
+.story-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:12px;margin-bottom:4px}
+h2.story-title{font-family:var(--serif);font-size:clamp(1.35rem,4vw,1.8rem);margin:0;font-weight:600}
+.story-zh{font-family:var(--serif);color:var(--muted);font-size:1rem}
+.range{font-size:.78rem;color:var(--dim);letter-spacing:.06em}
+.story-sub{color:var(--muted);font-size:.88rem;margin:8px 0 26px;max-width:62ch}
+
+/* ---------- entry ---------- */
+.entry{background:var(--panel-2);border:1px solid var(--line);border-radius:14px;padding:20px 22px;margin-bottom:16px}
+.entry:hover{border-color:#d8cfbc}
+.entry-top{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-bottom:12px}
+.page{font-family:var(--serif);font-size:.82rem;color:var(--accent);border:1px solid rgba(246,214,107,.65);
+  background:#fcf2d2;border-radius:6px;padding:2px 9px;letter-spacing:.04em}
+.page.approx{color:var(--muted);border-color:var(--line);background:transparent}
+blockquote{margin:0;font-family:var(--serif);font-size:1.02rem;line-height:2;color:var(--ink);
+  border-left:2px solid #e2d7b8;padding-left:16px}
+blockquote.latin{line-height:1.85}
+blockquote em{font-style:italic;color:var(--dim)}
+.cutnote{margin:12px 0 0;font-size:.78rem;color:var(--dim);font-style:italic}
+blockquote b{color:#000;font-weight:600}
+.orig{margin:14px 0 0;border-left:2px solid #e4ded2;padding-left:16px}
+.orig-label{font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:var(--dim);margin:0 0 6px;
+  display:flex;align-items:center;gap:6px}
+.orig-label::before{content:"";width:14px;height:1px;background:var(--dim);display:inline-block}
+.orig p{margin:0;font-family:var(--serif);font-size:.94rem;line-height:1.95;color:var(--muted)}
+
+/* ---------- footer ---------- */
+footer{padding-block:40px 60px;color:var(--dim);font-size:.82rem;border-top:1px solid var(--line);margin-top:40px}
+footer p{margin:0 0 8px;max-width:72ch}
+
+/* ---------- likes + comments ---------- */
+.modnote{margin:14px 0 0;font-size:.82rem;color:var(--muted);display:flex;gap:8px;align-items:flex-start}
+.modnote[hidden]{display:none}
+.modnote svg{width:14px;height:14px;flex:0 0 auto;margin-top:5px;stroke:var(--ok);fill:none;stroke-width:1.8}
+.social{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-top:14px;
+  padding-top:13px;border-top:1px solid #efe9dd}
+.social button{background:transparent;border:1px solid var(--line);color:var(--muted);border-radius:999px;
+  padding:5px 13px;font-size:.78rem;font-family:inherit;cursor:pointer;display:inline-flex;align-items:center;
+  gap:6px;transition:.15s}
+.social button:hover{color:var(--ink);border-color:var(--accent)}
+.social button:disabled{opacity:.5;cursor:default}
+.social .heart{width:13px;height:13px;stroke:currentColor;fill:none;stroke-width:1.9}
+.social .likebtn.on{color:var(--like);border-color:rgba(192,58,99,.35);background:rgba(192,58,99,.07)}
+.social .likebtn.on .heart{fill:currentColor;stroke:currentColor}
+.social .n{font-variant-numeric:tabular-nums;opacity:.85}
+.social .spacer{flex:1}
+.cpanel{margin-top:14px;border-top:1px dashed #e4ded2;padding-top:14px}
+.cpanel[hidden]{display:none}
+.clist{margin:0 0 14px;padding:0;list-style:none;display:flex;flex-direction:column;gap:10px}
+.citem{background:#fffdf9;border:1px solid #efe9dd;border-radius:10px;padding:11px 13px}
+.citem .who{font-size:.78rem;color:var(--accent);font-weight:600}
+.citem .at{font-size:.72rem;color:var(--dim);margin-left:8px}
+.citem p{margin:5px 0 0;font-size:.9rem;white-space:pre-wrap;color:var(--ink)}
+.cnone{color:var(--dim);font-size:.84rem;margin:0 0 14px}
+.cform{display:flex;flex-direction:column;gap:8px}
+.cform .two{display:flex;gap:8px;flex-wrap:wrap}
+.cform .two>*{flex:1 1 180px;min-width:0}
+.cform input,.cform textarea{background:#ffffff;border:1px solid var(--line);color:var(--ink);
+  border-radius:8px;padding:9px 11px;font-family:inherit;font-size:.86rem;width:100%}
+.cform textarea{min-height:84px;resize:vertical;line-height:1.65}
+.cform input:focus,.cform textarea:focus{outline:none;border-color:var(--accent)}
+.cform .hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
+.cform .send{align-self:flex-start;background:#f6d66b;border:1px solid #e8c85a;color:var(--ink);
+  font-weight:600;border-radius:999px;padding:7px 18px;font-size:.82rem;font-family:inherit;cursor:pointer}
+.cform .send:disabled{opacity:.55;cursor:default}
+.cmsg{font-size:.82rem;min-height:1.3em;margin:0}
+.cmsg.ok{color:var(--ok)}
+.cmsg.bad{color:var(--mark)}
+.cmoderation{font-size:.74rem;color:var(--dim);margin:0}
+
+@media (max-width:560px){
+  .entry{padding:16px 15px;border-radius:12px}
+  blockquote{font-size:.98rem;line-height:1.95;padding-left:13px}
+  .provenance{padding:15px 16px}
+}
+@media print{
+  body{background:#fff;color:#000}
+  nav.toc,.langbar{display:none}
+  .entry{break-inside:avoid;border-color:#ccc;background:#fff}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="langbar">
+    <a class="back" href="../reading.html" id="backlink">← Reading Notes</a>
+    <button type="button" data-l="en" aria-pressed="true">English</button>
+    <button type="button" data-l="zh" aria-pressed="false">简体中文</button>
+    <button type="button" data-l="fr" aria-pressed="false">Français</button>
+    <button type="button" data-l="es" aria-pressed="false">Español</button>
+  </div>
+
+  <header class="hero">
+    <p class="eyebrow" id="eyebrow"></p>
+    <h1><span id="booktitle"></span><span class="by" id="byline"></span></h1>
+    <ul class="facts" id="facts"></ul>
+
+    <section class="provenance" aria-labelledby="prov-title">
+      <h2 id="prov-title">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v18M3 7h6M15 7h6M6 12l-3 5h6ZM18 12l-3 5h6Z"/></svg>
+        <span id="prov-heading"></span>
+      </h2>
+      <p id="prov-body"></p>
+      <dl>
+        <dt id="prov-k1"></dt><dd id="prov-v1"></dd>
+        <dt id="prov-k2"></dt><dd id="prov-v2"></dd>
+        <dt id="prov-k3"></dt><dd id="prov-v3"></dd>
+        <dt id="prov-k4"></dt><dd id="prov-v4"></dd>
+      </dl>
+      <p class="modnote" id="modnote" hidden>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+        <span></span>
+      </p>
+    </section>
+  </header>
+
+  <nav class="toc" aria-label="Sections"><div class="toc-row" id="filters"></div></nav>
+
+  <main id="main"></main>
+
+  <footer>
+    <p style="margin-top:18px" id="signature"></p>
+  </footer>
+
+</div>
+
+<script>
+const LANGS = ['en','zh','fr','es'];
+
+const UI = {
+  back:   {en:'← Reading Notes', zh:'← 读书笔记', fr:'← Notes de lecture', es:'← Notas de lectura'},
+  eyebrow:{en:'Reading notes · Yu Hua', zh:'读书笔记 · 余华', fr:'Notes de lecture · Yu Hua', es:'Notas de lectura · Yu Hua'},
+  byline: {
+    en:'YU HUA · novella, 1987 · lit. “one kind of reality”',
+    zh:'余华 · 中篇小说，一九八七年',
+    fr:'YU HUA · court roman, 1987 · litt. « une sorte de réalité »',
+    es:'YU HUA · novela corta, 1987 · lit. «una clase de realidad»'
+  },
+  facts: {
+    en:[['3–4 Mar 2025','read'],['pp. 1–54','print edition']],
+    zh:[['2025.03.03–04','阅读期间'],['p.1–54','纸质底本']],
+    fr:[['3–4 mars 2025','lecture'],['p. 1–54','édition papier']],
+    es:[['3–4 mar. 2025','lectura'],['pp. 1–54','edición impresa']]
+  },
+  provHead:{en:'Translation notice', zh:'翻译说明', fr:'Avis de traduction', es:'Aviso de traducción'},
+  provBody:{
+    en:'Everything quoted on this page was written in Chinese. The English, French and Spanish wordings are machine translations produced by an AI model and have not been reviewed by a professional translator. The Chinese original is printed under every passage and is the only authoritative text — where the two disagree, trust the Chinese.',
+    zh:'本页引用的全部文字原文为中文。页面上的英文、法文、西班牙文均由 AI 模型机器翻译生成，未经专业译者校订。每条引文下方均附中文原文，原文为唯一准据 —— 若译文与原文有出入，以中文为准。',
+    fr:'Tout ce qui est cité sur cette page a été écrit en chinois. Les versions anglaise, française et espagnole sont des traductions automatiques produites par un modèle d’IA et n’ont pas été revues par un traducteur professionnel. Le texte chinois original figure sous chaque passage et fait seul foi : en cas de divergence, c’est le chinois qui prime.',
+    es:'Todo lo citado en esta página se escribió originalmente en chino. Las versiones en inglés, francés y español son traducciones automáticas generadas por un modelo de IA y no han sido revisadas por un traductor profesional. El original chino aparece bajo cada pasaje y es el único texto con valor de referencia: si ambos discrepan, vale el chino.'
+  },
+  provKeys:{
+    en:['Original language','Source text','Translated by','Translated on'],
+    zh:['原文语言','底本','翻译','翻译日期'],
+    fr:['Langue d’origine','Texte source','Traduit par','Date de traduction'],
+    es:['Lengua original','Texto fuente','Traducido por','Fecha de traducción']
+  },
+  provVals:{
+    en:['Chinese (Simplified) — 简体中文',
+        'Yu Hua, 《现实一种》, print edition (余华作品), author’s preface and the novella 现实一种, pp. 1–54.',
+        'Anthropic Claude — <code>claude-opus-5</code> (machine translation, not post-edited)',
+        '19 September 2026'],
+    zh:['简体中文',
+        '余华《现实一种》纸质版（余华作品），自序与《现实一种》正文，p.1–54。',
+        'Anthropic Claude — <code>claude-opus-5</code>（机器翻译，未经人工润色）',
+        '2026 年 9 月 19 日'],
+    fr:['chinois simplifié — 简体中文',
+        'Yu Hua, 《现实一种》, édition papier (余华作品), préface de l’auteur et la nouvelle 现实一种, p. 1–54.',
+        'Anthropic Claude — <code>claude-opus-5</code> (traduction automatique, sans post-édition)',
+        '19 septembre 2026'],
+    es:['chino simplificado — 简体中文',
+        'Yu Hua, 《现实一种》, edición impresa (余华作品), prefacio del autor y la novela corta 现实一种, pp. 1–54.',
+        'Anthropic Claude — <code>claude-opus-5</code> (traducción automática, sin posedición)',
+        '19 de septiembre de 2026']
+  },
+  all:{en:'All sections', zh:'全部', fr:'Tout', es:'Todo'},
+  orig:    {en:'Chinese original', zh:'原文', fr:'Original chinois', es:'Original en chino'},
+  cut:{
+    en:'The right-hand margin falls outside the photograph; the final characters of two lines could not be read.',
+    zh:'该页右侧超出照片范围，两行末尾数字无法辨认。',
+    fr:'La marge droite dépasse le cadre de la photo ; les derniers caractères de deux lignes n’ont pu être lus.',
+    es:'El margen derecho queda fuera de la fotografía; no se pudieron leer los últimos caracteres de dos líneas.'
+  },
+  sig:{en:'Compiled September 2026 · Jinge Guo', zh:'整理于 2026 年 9 月 · 郭晋阁', fr:'Compilé en septembre 2026 · Jinge Guo', es:'Recopilado en septiembre de 2026 · Jinge Guo'}
+};
+
+const STORIES = [
+  {id:'pref', zh:'自序', range:'',
+   t:{en:'Author’s preface', zh:'自序', fr:'Préface de l’auteur', es:'Prefacio del autor'},
+   s:{en:'Writing gave him a second life, and the two lives stand to each other as health does to illness.',
+      zh:'写作给了他第二个人生，两个人生的关系就像健康和疾病。',
+      fr:'L’écriture lui a donné une seconde vie ; les deux vies sont entre elles comme la santé et la maladie.',
+      es:'La escritura le dio una segunda vida; ambas vidas se relacionan como la salud y la enfermedad.'}},
+  {id:'p1', zh:'一', range:'p.1 – p.7',
+   t:{en:'Part one', zh:'一', fr:'Première partie', es:'Parte uno'},
+   s:{en:'One courtyard, three generations. A four-year-old picks up his baby cousin, and puts him down on the concrete.',
+      zh:'一个院子，三代人。四岁的皮皮抱起堂弟，然后松了手。',
+      fr:'Une cour, trois générations. Un garçon de quatre ans soulève son cousin nourrisson, puis le lâche sur le ciment.',
+      es:'Un patio, tres generaciones. Un niño de cuatro años levanta a su primo bebé y lo suelta sobre el cemento.'}},
+  {id:'p2', zh:'二', range:'≈ p.8 – p.18',
+   t:{en:'Part two', zh:'二', fr:'Deuxième partie', es:'Parte dos'},
+   s:{en:'The mother comes home early. Shan Feng kicks the child who killed his son, and the brothers begin.',
+      zh:'母亲提前下班回家。山峰一脚踢死了皮皮，兄弟之间就此开始。',
+      fr:'La mère rentre plus tôt. Shan Feng tue l’enfant d’un coup de pied, et tout commence entre les frères.',
+      es:'La madre vuelve antes de tiempo. Shan Feng mata al niño de una patada y empieza lo que hay entre los hermanos.'}},
+  {id:'p3', zh:'三', range:'≈ p.19 – p.26',
+   t:{en:'Part three', zh:'三', fr:'Troisième partie', es:'Parte tres'},
+   s:{en:'The old woman listens to her own intestines rotting. Downstairs, a cleaver is passed from hand to hand.',
+      zh:'老太太听着自己的肠子腐烂。楼下，一把菜刀在几个人手里传来传去。',
+      fr:'La vieille femme écoute ses intestins pourrir. En bas, un couperet passe de main en main.',
+      es:'La anciana escucha cómo se le pudren los intestinos. Abajo, un cuchillo pasa de mano en mano.'}},
+  {id:'p4', zh:'四', range:'≈ p.27 – p.39',
+   t:{en:'Part four', zh:'四', fr:'Quatrième partie', es:'Parte cuatro'},
+   s:{en:'A rope, a tree, cooked bones smeared on the soles of the feet, and a puppy that keeps licking.',
+      zh:'一根麻绳，一棵树，涂在脚心上的烧烂的肉骨头，和一条舔个不停的小狗。',
+      fr:'Une corde, un arbre, des os cuits étalés sous la plante des pieds, et un chiot qui lèche sans fin.',
+      es:'Una soga, un árbol, huesos cocidos untados en las plantas de los pies y un cachorro que no deja de lamer.'}},
+  {id:'p5', zh:'五', range:'≈ p.40 – p.45',
+   t:{en:'Part five', zh:'五', fr:'Cinquième partie', es:'Parte cinco'},
+   s:{en:'A month later, on a truck, in the front row where he himself used to stand and watch.',
+      zh:'一个月后，他被押上卡车，去到他自己从前常站着观看的那个位置。',
+      fr:'Un mois plus tard, sur un camion, au premier rang où lui-même se tenait autrefois pour regarder.',
+      es:'Un mes después, en un camión, en la primera fila donde él mismo solía ponerse a mirar.'}},
+  {id:'p6', zh:'六', range:'≈ p.46 – p.48',
+   t:{en:'Part six', zh:'六', fr:'Sixième partie', es:'Parte seis'},
+   s:{en:'Death arrives in the old woman like a tide. The widow walks to the detention house with a plan.',
+      zh:'死亡像潮水一样淹过老太太。弟媳则带着一个打算走向拘留所。',
+      fr:'La mort monte dans la vieille femme comme une marée. La veuve marche vers le dépôt avec une idée en tête.',
+      es:'La muerte sube en la anciana como una marea. La viuda camina hacia el calabozo con un plan.'}},
+  {id:'p7', zh:'七', range:'≈ p.49 – p.54',
+   t:{en:'Part seven', zh:'七', fr:'Septième partie', es:'Parte siete'},
+   s:{en:'The body is divided on a ping-pong table, and each part goes on living somewhere else.',
+      zh:'尸体在乒乓桌上被瓜分，每一件都到别处继续活着。',
+      fr:'Le corps est partagé sur une table de ping-pong, et chaque pièce continue de vivre ailleurs.',
+      es:'El cuerpo se reparte sobre una mesa de ping-pong, y cada pieza sigue viviendo en otra parte.'}}
+];
+
+const ENTRIES = [
+/* ========== 自序 ========== */
+{id:'pref-01',s:'pref',np:1,
+ zh:'写作使我拥有了两个人生，现实的和虚构的，它们的关系就像是健康和疾病，当一个强大起来时，另一个必然会衰落下去。于是，当我现实的人生越来越平乏之时，我虚构的人生已经异常丰富了。',
+ en:'Writing has given me two lives, the real one and the invented one, and they stand to each other as health does to illness: when one grows strong, the other must decline. And so, as my real life has grown flatter and thinner, my invented life has already become extraordinarily rich.',
+ fr:'L’écriture m’a donné deux vies, la réelle et la fictive, et leur rapport est celui de la santé à la maladie : quand l’une se fortifie, l’autre décline nécessairement. Ainsi, à mesure que ma vie réelle s’appauvrissait, ma vie fictive est devenue extraordinairement riche.',
+ es:'La escritura me ha dado dos vidas, la real y la inventada, y su relación es la de la salud con la enfermedad: cuando una se fortalece, la otra decae por fuerza. Así, a medida que mi vida real se volvía más pobre, mi vida inventada se ha hecho extraordinariamente rica.'},
+{id:'pref-02',s:'pref',np:1,
+ zh:'这些中短篇小说所记录下来的，就是我的另一条人生之路。与现实的人生之路不同的是，它有着还原的可能，而且准确无误。虽然岁月的流逝会使它纸张泛黄字迹不清，然而每一次的重新出版都让它焕然一新，重获鲜明的形象。这就是我为什么如此热爱写作的理由。',
+ en:'What these novellas and stories record is that other road of my life. Unlike the road of the real one, it can be restored, and restored exactly. The passing years may yellow its paper and blur its type, but every new printing makes it new again and gives it back a vivid shape. That is why I love writing so much.',
+ fr:'Ce que consignent ces nouvelles et ces courts romans, c’est cet autre chemin de ma vie. À la différence du chemin réel, il peut être restitué, et restitué sans la moindre erreur. Le temps aura beau jaunir le papier et brouiller les caractères, chaque réédition le renouvelle et lui rend une image nette. Voilà pourquoi j’aime tant écrire.',
+ es:'Lo que registran estas novelas cortas y estos relatos es ese otro camino de mi vida. A diferencia del camino real, puede restituirse, y restituirse con exactitud. El paso de los años amarilleará el papel y desdibujará la letra, pero cada reedición lo renueva y le devuelve una imagen nítida. Por eso amo tanto escribir.'},
+
+/* ========== 一 ========== */
+{id:'r1-01',s:'p1',p:'2',
+ zh:'他反复叫着，声音越来越响亮，可大人们没有理睬他，于是他就决定哭一下。',
+ en:'He shouted it over and over, louder and louder, but the grown-ups paid him no attention, so he decided to cry a little.',
+ fr:'Il le répétait de plus en plus fort, mais les adultes ne faisaient pas attention à lui ; il décida donc de pleurer un peu.',
+ es:'Lo repetía cada vez más alto, pero los mayores no le hacían caso, así que decidió llorar un poco.'},
+{id:'r1-02',s:'p1',p:'2',
+ zh:'堂弟哭得很激动，随着身体的扭动，那叫小便的玩意儿一颤一颤的。他很得意地对婶婶说：“他是男的。”',
+ en:'His little cousin was crying hard, and as the body twisted, the thing you pee with quivered. Very pleased with himself, he announced to his aunt: “He’s a boy.”',
+ fr:'Son petit cousin pleurait avec violence et, au gré des contorsions, le machin qui sert à faire pipi tremblotait. Très fier, il annonça à sa tante : « C’est un garçon. »',
+ es:'Su primito lloraba con fuerza y, con las contorsiones del cuerpo, la cosa con que se hace pis temblaba. Muy ufano, le dijo a su tía: «Es varón».'},
+{id:'r1-03',s:'p1',p:'3',a:1,
+ zh:'他望着窗玻璃上纵横交叉的水珠对山岗说：“这雨好像下了一百年了。”山岗说：“好像是有这么久了。”',
+ en:'Looking at the crisscrossing beads of water on the windowpane, he said to Shan Gang: “This rain seems to have been falling a hundred years.” Shan Gang said: “It does seem about that long.”',
+ fr:'Regardant les gouttes entrecroisées sur la vitre, il dit à Shan Gang : « On dirait que cette pluie tombe depuis cent ans. » Shan Gang répondit : « Oui, à peu près aussi longtemps. »',
+ es:'Mirando las gotas entrecruzadas en el cristal, le dijo a Shan Gang: «Parece que esta lluvia lleva cien años cayendo». Shan Gang contestó: «Sí, más o menos ese tiempo».'},
+{id:'r1-04',s:'p1',p:'3',a:1,
+ zh:'他们知道她是将痰吐在手心里，她现在开始观察痰里是否有血迹了。他们可以想象这时的情景。',
+ en:'They knew she spat the phlegm into her palm, and that she was now inspecting it for traces of blood. They could picture the scene exactly.',
+ fr:'Ils savaient qu’elle crachait dans le creux de sa main et qu’elle examinait maintenant si le crachat contenait du sang. Ils pouvaient imaginer la scène.',
+ es:'Sabían que escupía la flema en la palma de la mano y que ahora la examinaba en busca de sangre. Podían imaginarse la escena.'},
+{id:'r1-05',s:'p1',p:'3',a:1,
+ zh:'孩子说：“现在正下着四场雨。”祖母听后打了一个响亮的嗝。孩子便嗅到一股臭味，近来祖母打出来的嗝越来越臭了。',
+ en:'The child said: “Right now there are four rains falling.” His grandmother let out a loud belch. The child caught a foul smell — lately her belches had been getting fouler and fouler.',
+ fr:'L’enfant dit : « En ce moment il tombe quatre pluies. » La grand-mère lâcha un rot sonore. L’enfant sentit une odeur fétide : depuis quelque temps, ses rots puaient de plus en plus.',
+ es:'El niño dijo: «Ahora mismo están cayendo cuatro lluvias». La abuela soltó un eructo sonoro. El niño percibió un olor fétido: últimamente sus eructos apestaban cada vez más.'},
+{id:'r1-06',s:'p1',p:'3',a:1,
+ zh:'他就用手去摸摸堂弟的脸，那脸像棉花一样松软。他禁不住使劲拧了一下，于是堂弟“哇”的一声灿烂地哭了起来。',
+ en:'He put out a hand and felt his cousin’s face; it was as soft as cotton. He could not help giving it a hard pinch, and his cousin burst into a splendid wail.',
+ fr:'Il tendit la main et toucha la joue de son cousin : elle était molle comme du coton. Il ne put s’empêcher de la pincer très fort, et son cousin éclata en un pleur splendide.',
+ es:'Alargó la mano y le tocó la cara al primito: era blanda como el algodón. No pudo evitar pellizcarla con fuerza, y el primito rompió en un llanto espléndido.'},
+{id:'r1-07',s:'p1',p:'4',a:1,
+ zh:'这哭声使他感到莫名的喜悦，他朝堂弟惊喜地看了一会，随后对准堂弟的脸打去一个耳光。他看到父亲经常这样揍母亲。',
+ en:'The crying filled him with an unaccountable delight. He looked at his cousin a moment in happy surprise, then slapped him across the face. He had often seen his father hit his mother that way.',
+ fr:'Ces pleurs l’emplirent d’une joie inexplicable. Il regarda un instant son cousin avec un heureux étonnement, puis lui assena une gifle en pleine figure. Il avait souvent vu son père frapper sa mère ainsi.',
+ es:'Aquel llanto le produjo una alegría inexplicable. Miró un momento a su primo con grata sorpresa y luego le dio una bofetada en la cara. Había visto muchas veces a su padre pegarle así a su madre.'},
+{id:'r1-08',s:'p1',p:'4',a:1,
+ zh:'他就这样不断去卡堂弟的喉管又不断松开，他一次次地享受着那爆破似的哭声。后来当他再松开手时，堂弟已经没有那种充满激情的哭声了，只不过是张着嘴一颤一颤地吐气，于是他开始感到索然无味，便走开了。',
+ en:'So he went on gripping his cousin’s windpipe and letting go, gripping and letting go, enjoying again and again that explosive cry. Later, when he released his hand, the passionate crying was gone — the baby only lay there with his mouth open, breathing out in little shudders. He began to find it dull, and walked away.',
+ fr:'Il continua donc à serrer la gorge de son cousin puis à la relâcher, encore et encore, savourant chaque fois ce cri semblable à une explosion. Plus tard, quand il lâcha prise, le cri passionné n’y était plus : le bébé restait là, bouche ouverte, soufflant par petites secousses. Cela l’ennuya, et il s’éloigna.',
+ es:'Así siguió apretando y soltando la garganta de su primo, una y otra vez, disfrutando cada vez de aquel llanto como una explosión. Más tarde, al soltarlo, ya no quedaba llanto apasionado: el bebé estaba allí con la boca abierta, exhalando a pequeñas sacudidas. Empezó a aburrirse y se marchó.'},
+{id:'r1-09',s:'p1',p:'6',
+ zh:'在抱起塑料小凳时他蓦然想起他的堂弟，他记得自己刚才抱着他走到屋外，现在却只有他一人了。他觉得奇怪，但他没往下细想。',
+ en:'As he picked up the little plastic stool he suddenly remembered his cousin: he had carried him outside a moment ago, and now he was alone. It struck him as odd, but he did not think about it any further.',
+ fr:'En soulevant le petit tabouret de plastique, il se souvint tout à coup de son cousin : il l’avait porté dehors un moment plus tôt, et maintenant il était seul. Cela lui parut étrange, mais il n’y réfléchit pas davantage.',
+ es:'Al levantar el pequeño taburete de plástico se acordó de golpe de su primo: hacía un momento lo había llevado afuera y ahora estaba solo. Le pareció extraño, pero no siguió pensando en ello.'},
+{id:'r1-10',s:'p1',p:'7',a:1,
+ zh:'他俯下身去察看，发现血是从脑袋里流出来的，流在地上像一朵花似的在慢吞吞开放着。而后他看到有几只蚂蚁从四周快速爬了过来，爬到血上就不再动弹。只有一只蚂蚁绕过血而爬到了他的头发上。',
+ en:'He bent down to look and saw that the blood was coming out of the head, spreading on the ground and opening slowly like a flower. Then he saw several ants hurry in from all sides; once they reached the blood they stopped moving. Only one ant went around it and climbed into the hair.',
+ fr:'Il se pencha pour regarder : le sang sortait de la tête et s’étalait sur le sol, s’ouvrant lentement comme une fleur. Puis il vit plusieurs fourmis accourir de tous côtés ; arrivées au sang, elles cessaient de bouger. Une seule le contourna et grimpa dans les cheveux.',
+ es:'Se agachó a mirar y vio que la sangre salía de la cabeza y se extendía por el suelo, abriéndose despacio como una flor. Luego vio varias hormigas acudir deprisa de todas partes; al llegar a la sangre dejaban de moverse. Solo una la rodeó y trepó hasta el pelo.'},
+{id:'r1-11',s:'p1',p:'7',a:1,
+ zh:'他看祖母的门依旧半掩着，就走过去，祖母还是坐在床上。他就告诉她：“弟弟睡着了。”',
+ en:'He saw his grandmother’s door still half open and went over; she was still sitting on the bed. So he told her: “Little brother has fallen asleep.”',
+ fr:'Voyant la porte de sa grand-mère toujours entrouverte, il s’y rendit ; elle était encore assise sur le lit. Il lui annonça : « Le petit frère s’est endormi. »',
+ es:'Vio que la puerta de su abuela seguía entornada y se acercó; ella seguía sentada en la cama. Le dijo: «El hermanito se ha dormido».'},
+{id:'r1-12',s:'p1',p:'7',a:1,
+ zh:'那时候她脚上的骨头也许会从腹部顶出来，而手臂上的骨头可能会插进长满青苔的胃。',
+ en:'By then the bones of her feet might well push up out of her belly, and the bones of her arms might run into her moss-grown stomach.',
+ fr:'Alors les os de ses pieds sortiraient peut-être par son ventre, et ceux de ses bras s’enfonceraient dans son estomac couvert de mousse.',
+ es:'Para entonces los huesos de sus pies quizá le asomaran por el vientre, y los de sus brazos se le clavaran en el estómago cubierto de musgo.'},
+{id:'r1-13',s:'p1',p:'7',a:1,
+ zh:'她还没认出这一团东西就是她孙儿时，她已经看到了那一摊血，她吓了一跳，赶紧走回自己的卧室。',
+ en:'Before she had recognised the little heap as her grandson she had already seen the pool of blood; it gave her a fright, and she hurried back into her own room.',
+ fr:'Avant même d’avoir reconnu ce petit tas comme son petit-fils, elle avait vu la flaque de sang ; prise de peur, elle regagna vite sa chambre.',
+ es:'Antes de reconocer que aquel bulto era su nieto ya había visto el charco de sangre; se asustó y volvió deprisa a su cuarto.'},
+/* ========== 二 ========== */
+{id:'r2-01',s:'p2',p:'8',
+ zh:'快要下班的前一刻，她无端地担心起孩子会出事。因此她坐不住了，她向同事说一声要回去看儿子。这种担心在路上越发强烈。当她打开院子的门时，这种担心得到了证实。',
+ en:'Just before the end of her shift she was seized, for no reason, by the fear that something had happened to her child. She could not sit still; she told a colleague she was going home to look at her son. On the way the fear grew stronger. When she opened the courtyard gate, it was confirmed.',
+ fr:'Juste avant la fin de son service, elle fut saisie sans raison par la crainte qu’il soit arrivé quelque chose à son enfant. Elle ne tenait plus en place ; elle dit à une collègue qu’elle rentrait voir son fils. En chemin, la crainte grandit. Quand elle ouvrit la porte de la cour, elle fut confirmée.',
+ es:'Poco antes de terminar su turno la asaltó, sin motivo, el temor de que algo le hubiera pasado a su hijo. No pudo quedarse quieta; le dijo a una compañera que iba a casa a ver al niño. Por el camino el temor creció. Al abrir la puerta del patio, quedó confirmado.'},
+{id:'r2-02',s:'p2',p:'8',
+ zh:'她看到儿子躺在阳光下，和他的影子躺在一起。',
+ en:'She saw her son lying in the sunlight, lying together with his shadow.',
+ fr:'Elle vit son fils étendu au soleil, étendu avec son ombre.',
+ es:'Vio a su hijo tendido al sol, tendido junto a su sombra.'},
+{id:'r2-03',s:'p2',p:'8',
+ zh:'血迹在阳光下显得不太真实，于是那躺着的儿子也仿佛是假的。',
+ en:'In the sunlight the blood did not look quite real, and so the son lying there seemed false too.',
+ fr:'Sous le soleil, le sang n’avait pas l’air tout à fait réel, et le fils étendu là semblait faux lui aussi.',
+ es:'Bajo el sol la sangre no parecía del todo real, y por eso el hijo tendido allí también parecía falso.'},
+{id:'r2-04',s:'p2',p:'8',a:1,
+ zh:'走到近旁她试探性地叫了几声儿子的名字，儿子没有反应。这时她似乎略有些放心，仿佛躺着的并不是她的儿子。',
+ en:'Coming closer, she called her son’s name a few times, tentatively; he did not respond. At that she seemed almost relieved, as though the one lying there were not her son after all.',
+ fr:'S’approchant, elle appela son fils par son nom, avec hésitation ; il ne réagit pas. Elle parut alors presque rassurée, comme si celui qui gisait là n’était pas son fils.',
+ es:'Al acercarse llamó varias veces a su hijo por su nombre, con cautela; no reaccionó. Entonces pareció casi aliviada, como si el que yacía allí no fuera su hijo.'},
+{id:'r2-05',s:'p2',p:'9',a:1,
+ zh:'摇篮里空空荡荡，没有她的儿子。于是她蓦然想起躺在屋外的孩子，她疯一般地冲到屋外，可是来到儿子身旁她又不知所措了。',
+ en:'The cradle was empty; her son was not in it. Then she remembered with a jolt the child lying out in the yard. She rushed outside like a madwoman, and yet, once beside her son, she had no idea what to do.',
+ fr:'Le berceau était vide ; son fils n’y était pas. Elle se rappela brusquement l’enfant couché dehors et se précipita comme une folle ; mais, arrivée près de lui, elle ne sut plus que faire.',
+ es:'La cuna estaba vacía; su hijo no estaba. Entonces se acordó de golpe del niño tendido fuera y salió corriendo como una loca; pero, al llegar junto a él, ya no supo qué hacer.'},
+{id:'r2-06',s:'p2',p:'9',a:1,
+ zh:'一条大街横在眼前，她不知该朝哪个方向走，她急得直喘气。',
+ en:'A wide street lay across her path; she did not know which way to go, and her panic left her gasping.',
+ fr:'Une grande rue lui barrait le chemin ; ne sachant de quel côté aller, elle en haletait d’angoisse.',
+ es:'Una calle ancha se le cruzaba delante; no sabía hacia dónde ir, y la angustia la dejaba jadeando.'},
+{id:'r2-07',s:'p2',p:'9',
+ zh:'“是不是孩子出事了？”丈夫此刻开始咆哮了。这时她才费力地点了点头。山峰便扔开她往家里跑去。',
+ en:'“Has something happened to the child?” Her husband was roaring now. Only then did she manage, with effort, to nod. Shan Feng flung her aside and ran for home.',
+ fr:'« Il est arrivé quelque chose à l’enfant ? » Son mari rugissait à présent. Ce n’est qu’alors qu’elle parvint, péniblement, à hocher la tête. Shan Feng la repoussa et courut vers la maison.',
+ es:'«¿Le ha pasado algo al niño?». El marido rugía ya. Solo entonces logró ella asentir con esfuerzo. Shan Feng la apartó de un empujón y echó a correr hacia casa.'},
+{id:'r2-08',s:'p2',p:'10',a:1,
+ zh:'山峰走到她眼前，咬牙切齿地说：“回家去哭。”她不敢再哭，她抓住山峰的衣服，跟着他往回走去。',
+ en:'Shan Feng came up to her and said through his teeth: “Go home to cry.” She did not dare cry any more; she took hold of his clothes and followed him back.',
+ fr:'Shan Feng s’approcha d’elle et dit entre ses dents : « Rentre pleurer à la maison. » Elle n’osa plus pleurer ; elle s’agrippa à ses vêtements et le suivit.',
+ es:'Shan Feng se le acercó y dijo con los dientes apretados: «Vete a llorar a casa». Ella no se atrevió a llorar más; se agarró a su ropa y lo siguió de vuelta.'},
+{id:'r2-09',s:'p2',p:'10',a:1,
+ zh:'他走进自己的卧室，在沙发里坐了下来。他感到无所事事，他在等着吃午饭。',
+ en:'He went into his own room and sat down in the armchair. He felt he had nothing to do; he was waiting for lunch.',
+ fr:'Il entra dans sa chambre et s’assit dans le fauteuil. Il n’avait rien à faire : il attendait le déjeuner.',
+ es:'Entró en su cuarto y se sentó en el sillón. No tenía nada que hacer: esperaba el almuerzo.'},
+{id:'r2-10',s:'p2',p:'11',a:1,
+ zh:'山岗听着他们迟缓的脚步跨入屋中，然后一声响亮的关门声。这一声使山岗坚定了刚才的想法。皮皮此刻又说了：“我冷。”',
+ en:'Shan Gang listened to their slow footsteps come into the house, and then to a loud slam of the door. That sound settled the thought he had just had. Pipi said again: “I’m cold.”',
+ fr:'Shan Gang écouta leurs pas lents entrer dans la maison, puis une porte claquer bruyamment. Ce bruit affermit l’idée qu’il venait d’avoir. Pipi répéta : « J’ai froid. »',
+ es:'Shan Gang oyó sus pasos lentos entrar en la casa y luego un portazo sonoro. Aquel ruido afirmó la idea que acababa de tener. Pipi volvió a decir: «Tengo frío».'},
+{id:'r2-11',s:'p2',p:'11',a:1,
+ zh:'她问山岗：“要不要去叫他们一声？”山岗回答：“不用。”',
+ en:'She asked Shan Gang: “Should we call them in?” Shan Gang answered: “No need.”',
+ fr:'Elle demanda à Shan Gang : « Faut-il les appeler ? » Shan Gang répondit : « Inutile. »',
+ es:'Ella le preguntó a Shan Gang: «¿Los llamamos?». Shan Gang respondió: «No hace falta».'},
+{id:'r2-12',s:'p2',p:'14',a:1,
+ zh:'皮皮依旧坐在小凳上，他感到山峰那双血红的眼睛很有趣。',
+ en:'Pipi was still sitting on the little stool; he found Shan Feng’s blood-red eyes very interesting.',
+ fr:'Pipi, toujours assis sur le petit tabouret, trouvait très amusants les yeux rouges de sang de Shan Feng.',
+ es:'Pipi seguía sentado en el taburete; le parecían muy divertidos los ojos enrojecidos de Shan Feng.'},
+{id:'r2-13',s:'p2',p:'14',a:1,
+ zh:'山岗十分平静地说：“他还是孩子。”“我不管。”“但是我要管。”山岗回答，声音仍然很平静。',
+ en:'Shan Gang said, perfectly calm: “He’s still a child.” “I don’t care.” “But I do care,” Shan Gang answered, his voice still calm.',
+ fr:'Shan Gang dit, très calme : « Ce n’est qu’un enfant. » « Je m’en moque. » « Moi, non », répondit Shan Gang, d’une voix toujours calme.',
+ es:'Shan Gang dijo con toda calma: «No es más que un niño». «Me da igual». «A mí no», respondió Shan Gang, con la voz aún serena.'},
+{id:'r2-14',s:'p2',p:'15',a:1,
+ zh:'山峰朝那扇门狠命地踢了起来，同时吼着：“把他交出来。”山岗看着山峰疯狂地踢门，同时听着妻子在里面叫他的名字，还有孩子的哭声。他坐着没有动。',
+ en:'Shan Feng began kicking the door with all his strength, roaring: “Hand him over.” Shan Gang watched his brother kick like a madman, and listened to his wife calling his name inside, and the child crying. He sat where he was and did not move.',
+ fr:'Shan Feng se mit à frapper la porte à coups de pied, de toutes ses forces, en hurlant : « Livre-le-moi. » Shan Gang le regardait frapper comme un fou et entendait sa femme l’appeler à l’intérieur, et l’enfant pleurer. Il resta assis, sans bouger.',
+ es:'Shan Feng empezó a patear la puerta con todas sus fuerzas, rugiendo: «Entrégamelo». Shan Gang lo miraba patear como un loco y oía a su mujer llamarlo por su nombre dentro, y al niño llorar. Siguió sentado, sin moverse.'},
+{id:'r2-15',s:'p2',p:'15',a:1,
+ zh:'他感到身旁的母亲正站起来离开，母亲嘟嘟哝哝像是嘴里塞着棉花。',
+ en:'He felt his mother get up beside him and leave, muttering as though her mouth were stuffed with cotton.',
+ fr:'Il sentit sa mère se lever à côté de lui et s’en aller, marmonnant comme si elle avait la bouche pleine de coton.',
+ es:'Sintió a su madre levantarse a su lado y marcharse, mascullando como si tuviera la boca llena de algodón.'},
+{id:'r2-16',s:'p2',p:'18',
+ zh:'山岗看到妻子一走近那摊血迹就俯下身去舔了，妻子的模样十分贪婪。',
+ en:'Shan Gang saw his wife bend down the moment she reached the pool of blood and begin to lick it; she looked utterly greedy.',
+ fr:'Shan Gang vit sa femme se pencher dès qu’elle atteignit la flaque de sang et se mettre à la lécher ; elle avait un air de pure avidité.',
+ es:'Shan Gang vio que su mujer, en cuanto llegó al charco de sangre, se agachaba y se ponía a lamerlo; tenía un aire de pura avidez.'},
+{id:'r2-17',s:'p2',p:'18',
+ zh:'他听到山峰用一种近似妻子呕吐的声音说：“舔。”',
+ en:'He heard Shan Feng say, in a voice close to the sound of his wife vomiting: “Lick.”',
+ fr:'Il entendit Shan Feng dire, d’une voix proche du bruit que faisait sa femme en vomissant : « Lèche. »',
+ es:'Oyó a Shan Feng decir, con una voz parecida al sonido de su mujer vomitando: «Lame».'},
+{id:'r2-18',s:'p2',p:'18',
+ zh:'皮皮趴在那里，望着这摊在阳光下亮晶晶的血，使他想起某一种鲜艳的果浆。他伸出舌头试探地舔了一下，于是一种崭新的滋味油然而生。接下去他就放心去舔了，他感到水泥上的血很粗糙，不一会舌头发麻了，随后舌尖上出现了几丝流动的血，这血使他觉得更可口，但他不知道那是自己的血。',
+ en:'Pipi lay there looking at the blood glittering in the sunlight, which made him think of some bright fruit pulp. He put out his tongue and licked, tentatively, and a wholly new taste rose in him. After that he licked without hesitation. The blood on the concrete felt rough; before long his tongue went numb, and then a few threads of running blood appeared on its tip. That blood tasted better to him — he did not know it was his own.',
+ fr:'Pipi, couché là, regardait ce sang qui scintillait au soleil et qui lui faisait penser à une pulpe de fruit très vive. Il tira la langue et lécha, pour essayer, et une saveur toute neuve monta en lui. Ensuite il lécha sans plus d’hésitation. Le sang sur le ciment était rugueux ; bientôt sa langue s’engourdit, puis quelques filets de sang frais parurent à son bout. Ce sang-là lui sembla meilleur — il ignorait que c’était le sien.',
+ es:'Pipi, tumbado allí, miraba aquella sangre que brillaba al sol y que le recordaba a cierta pulpa de fruta muy viva. Sacó la lengua y lamió, a modo de prueba, y le nació un sabor enteramente nuevo. Después lamió ya sin reparos. La sangre sobre el cemento resultaba áspera; al poco se le entumeció la lengua y luego aparecieron en la punta unos hilos de sangre fresca. Esa sangre le supo mejor: no sabía que era la suya.'},
+{id:'r2-19',s:'p2',p:'19',a:1,
+ zh:'山岗这时看到弟媳伤痕累累地出现了，她嘴里叫着“咬死你”扑向了皮皮。与此同时山峰飞起一脚踢进了皮皮的胯里。皮皮的身体腾空而起，随即脑袋朝下撞在了水泥地上，发出一声沉重的声音。他看到儿子挣扎了几下后就舒展四肢瘫痪似的不再动了。',
+ en:'Just then Shan Gang saw his sister-in-law appear, covered in bruises, shrieking “I’ll bite you to death” as she threw herself at Pipi. At the same moment Shan Feng swung a kick into the boy’s groin. Pipi’s body flew into the air and came down head first on the concrete with a heavy sound. He watched his son struggle a few times, then stretch out his limbs and lie still, as though paralysed.',
+ fr:'À cet instant Shan Gang vit sa belle-sœur apparaître, couverte de plaies, criant « je vais te mordre à mort » en se jetant sur Pipi. Au même moment Shan Feng lança un coup de pied dans l’entrejambe de l’enfant. Le corps de Pipi s’éleva puis retomba, la tête la première, sur le ciment, avec un bruit lourd. Il vit son fils se débattre quelques instants, puis étendre ses membres et ne plus bouger, comme paralysé.',
+ es:'En ese momento Shan Gang vio aparecer a su cuñada, llena de golpes, gritando «te voy a matar a mordiscos» mientras se lanzaba sobre Pipi. A la vez Shan Feng le metió una patada en la entrepierna. El cuerpo de Pipi salió por el aire y cayó de cabeza sobre el cemento con un ruido pesado. Vio a su hijo debatirse unas cuantas veces y luego estirar los miembros y quedarse quieto, como paralítico.'},
+/* ========== 三 ========== */
+{id:'r3-01',s:'p3',p:'19',a:1,
+ zh:'那时候老太太听到“咕咚”一声，这声音使她大吃一惊。声音是从腹部钻出来的。仿佛已经憋了很久总算散发出来，声音里充满了怨气。她马上断定那是肠子在腐烂，而且这种腐烂似乎已经由来已久。',
+ en:'Just then the old woman heard a gurgling thud, and it gave her a shock. The sound had bored its way out of her belly. It was as though it had been held in a long time and had finally got out, and it was full of resentment. She concluded at once that her intestines were rotting, and that the rot had evidently been going on for some time.',
+ fr:'À ce moment la vieille femme entendit un glouglou sourd qui la fit sursauter. Le bruit était sorti de son ventre. On aurait dit qu’il y était retenu depuis longtemps et s’échappait enfin, plein de rancune. Elle conclut aussitôt que ses intestins pourrissaient, et que cette pourriture durait depuis un bon moment.',
+ es:'En ese momento la anciana oyó un borboteo sordo que la sobresaltó. El sonido había salido perforando su vientre. Parecía llevar mucho tiempo contenido y escaparse al fin, cargado de rencor. Dedujo en el acto que se le estaban pudriendo los intestinos, y que esa podredumbre venía de largo.'},
+{id:'r3-02',s:'p3',p:'19',a:1,
+ zh:'接下去她甚至嗅到了腐烂的那种气息，这种气息正是从她口中溢出。不久之后她感到整个房间已经充满了这种腐烂气息，仿佛连房屋也在腐烂了。所以她才知道为什么不想吃东西。',
+ en:'After that she even smelled the smell of rot, and the smell was seeping out of her own mouth. Before long the whole room seemed full of it, as if the house itself were rotting too. So now she knew why she had no appetite.',
+ fr:'Ensuite elle sentit même l’odeur de la pourriture, et cette odeur sortait de sa propre bouche. Bientôt toute la pièce en fut pleine, comme si la maison elle aussi pourrissait. Elle comprit alors pourquoi elle n’avait plus envie de manger.',
+ es:'Después percibió incluso el olor de la podredumbre, y ese olor le salía de la propia boca. Al poco la habitación entera estaba llena de él, como si también la casa se pudriera. Así supo por qué no tenía ganas de comer.'},
+{id:'r3-03',s:'p3',p:'20',
+ zh:'她望着儿子发怔。儿子的血这时候慢慢流出来了，那血看去像红墨水。',
+ en:'She stared blankly at her son. His blood was seeping out now, and it looked like red ink.',
+ fr:'Elle contemplait son fils, hébétée. Le sang sortait lentement à présent, et il avait l’air d’encre rouge.',
+ es:'Miraba a su hijo, aturdida. La sangre le salía ya despacio, y parecía tinta roja.'},
+{id:'r3-04',s:'p3',p:'20',
+ zh:'于是她重新转回身，对站在那里也一动不动的山峰说：“我丈夫吓傻了。”然后她又对儿子说：“你父亲吓傻了。”接着她自言自语：“我该怎么办呢？”',
+ en:'So she turned back again and said to Shan Feng, who was standing there just as motionless: “My husband has been frightened out of his wits.” Then she said to her son: “Your father has been frightened out of his wits.” Then she said to herself: “What am I supposed to do?”',
+ fr:'Elle se retourna donc et dit à Shan Feng, debout lui aussi sans bouger : « Mon mari est fou de peur. » Puis elle dit à son fils : « Ton père est fou de peur. » Puis elle se dit à elle-même : « Que dois-je faire ? »',
+ es:'Entonces se volvió de nuevo y le dijo a Shan Feng, que seguía allí igual de inmóvil: «A mi marido lo ha dejado idiota el susto». Luego le dijo a su hijo: «A tu padre lo ha dejado idiota el susto». Después se dijo a sí misma: «¿Y ahora qué hago?».'},
+{id:'r3-05',s:'p3',p:'22',a:1,
+ zh:'“你是胆小鬼。”妻子说。“我不是。”“那你就拿住菜刀。”“我不需要。”',
+ en:'“You’re a coward,” his wife said. “I’m not.” “Then take the cleaver.” “I don’t need it.”',
+ fr:'« Tu es un lâche », dit sa femme. « Non. » « Alors prends le couperet. » « Je n’en ai pas besoin. »',
+ es:'«Eres un cobarde», dijo su mujer. «No lo soy». «Entonces coge el cuchillo». «No lo necesito».'},
+{id:'r3-06',s:'p3',p:'22',a:1,
+ zh:'她将菜刀送回山峰手中。“你听着。”她对他说，“我宁愿你死去，也不愿看你这样活着。”',
+ en:'She put the cleaver back into Shan Feng’s hand. “Listen to me,” she said to him. “I would rather you died than watch you go on living like this.”',
+ fr:'Elle remit le couperet dans la main de Shan Feng. « Écoute-moi bien, lui dit-elle, je préférerais te voir mort que te voir vivre ainsi. »',
+ es:'Le devolvió el cuchillo a Shan Feng. «Escúchame bien —le dijo—: prefiero verte muerto a verte vivir así».'},
+{id:'r3-07',s:'p3',p:'23',
+ zh:'他将饭菜送入嘴中咀嚼时感到如同咀嚼泥土，而坐在身旁的妻子还在微微颤抖。所以他非常恼火，他说：“抖什么。”',
+ en:'Chewing the food in his mouth felt like chewing earth, and his wife, sitting beside him, was still trembling faintly. It made him furious, and he said: “What are you shaking for.”',
+ fr:'Mâcher sa nourriture lui faisait l’effet de mâcher de la terre, et sa femme, assise à côté de lui, tremblait encore légèrement. Cela le mit hors de lui : « Qu’est-ce que tu as à trembler. »',
+ es:'Masticar la comida le sabía a masticar tierra, y su mujer, sentada a su lado, seguía temblando levemente. Aquello lo enfureció: «¿Por qué tiemblas?».'},
+{id:'r3-08',s:'p3',p:'24',a:1,
+ zh:'待这一阵杂响过去后，她轻轻说：“你为何不一脚踢死我？”这使他暴跳如雷了。',
+ en:'When the clatter had died away, she said softly: “Why don’t you kick me to death too?” It sent him into a rage.',
+ fr:'Quand le fracas fut retombé, elle dit doucement : « Pourquoi ne me tues-tu pas d’un coup de pied, moi aussi ? » Cela le mit en fureur.',
+ es:'Cuando cesó el estrépito, ella dijo en voz baja: «¿Por qué no me matas a mí también de una patada?». Aquello lo puso hecho una furia.'},
+{id:'r3-09',s:'p3',p:'24',a:1,
+ zh:'山岗这时候回来了。他带了一大包东西回来，后面还跟着一条黄色的小狗。',
+ en:'Shan Gang came back just then. He had brought a large parcel with him, and a little yellow dog was following behind.',
+ fr:'Shan Gang rentra à ce moment-là. Il rapportait un gros paquet, suivi d’un petit chien jaune.',
+ es:'En eso volvió Shan Gang. Traía un paquete grande y, detrás, lo seguía un perrito amarillo.'},
+{id:'r3-10',s:'p3',p:'25',a:1,
+ zh:'她开始朝卧室走去，走到门口她又站住了脚，回头对山岗说：“你起码也得揍他一拳。”',
+ en:'She started towards the bedroom, stopped in the doorway, and turned back to Shan Gang: “The least you can do is hit him once.”',
+ fr:'Elle se dirigea vers la chambre, s’arrêta sur le seuil et se retourna vers Shan Gang : « Tu pourrais au moins lui donner un coup de poing. »',
+ es:'Se encaminó al dormitorio, se detuvo en la puerta y se volvió hacia Shan Gang: «Por lo menos podrías darle un puñetazo».'},
+{id:'r3-11',s:'p3',p:'25',a:1,
+ zh:'山岗点点头，说：“等一下吧。”“我要你马上就收拾。”山峰怒气冲冲地说。',
+ en:'Shan Gang nodded and said: “In a while.” “I want you to clear it up now,” Shan Feng said furiously.',
+ fr:'Shan Gang hocha la tête : « Tout à l’heure. » « Je veux que tu ramasses tout de suite », dit Shan Feng, furieux.',
+ es:'Shan Gang asintió: «Luego». «Quiero que lo recojas ahora mismo», dijo Shan Feng, furioso.'},
+{id:'r3-12',s:'p3',p:'26',a:1,
+ zh:'她不敢去看摇篮，她怕目光会跳跃一下进入床里。可是随即她又听到了那个怒气冲冲的声音：“别看着我。”',
+ en:'She did not dare look at the cradle; she was afraid her eyes would jump and land inside it. But right away she heard that furious voice again: “Don’t look at me.”',
+ fr:'Elle n’osait pas regarder le berceau ; elle craignait que son regard n’y saute d’un bond. Mais aussitôt elle entendit de nouveau cette voix furieuse : « Ne me regarde pas. »',
+ es:'No se atrevía a mirar la cuna; temía que la mirada le saltara dentro. Pero enseguida volvió a oír aquella voz furiosa: «No me mires».'},
+{id:'r3-13',s:'p3',p:'26',a:1,
+ zh:'然后看起了那两摊血迹。她发现血迹在阳光下显得特别鲜艳，而且仿佛还在流动。',
+ en:'Then she began to look at the two patches of blood. She found that in the sunlight they looked especially bright, and seemed to be flowing still.',
+ fr:'Puis elle se mit à regarder les deux flaques de sang. Elle trouva qu’au soleil elles paraissaient particulièrement vives, et semblaient couler encore.',
+ es:'Luego se puso a mirar las dos manchas de sangre. Al sol le parecieron especialmente vivas, y como si aún corrieran.'},
+{id:'r3-14',s:'p3',p:'26',a:1,
+ zh:'山岗没有洗那些肉骨头，他将它们放入了锅子以后，也不放作料就拿进厨房，往里面加了一点水后便放在煤气灶上烧起来。',
+ en:'Shan Gang did not wash the meat bones. He put them in a pot without any seasoning, carried it into the kitchen, added a little water and set it on the gas ring to cook.',
+ fr:'Shan Gang ne lava pas les os. Il les mit dans une marmite sans aucun assaisonnement, la porta à la cuisine, y ajouta un peu d’eau et la posa sur le gaz.',
+ es:'Shan Gang no lavó los huesos. Los echó en una olla sin condimento alguno, la llevó a la cocina, le añadió un poco de agua y la puso al fuego.'},
+/* ========== 四 ========== */
+{id:'r4-01',s:'p4',p:'27',a:1,
+ zh:'“我只要你揍他一拳。”她又说。',
+ en:'“All I want is for you to hit him once,” she said again.',
+ fr:'« Je veux seulement que tu lui donnes un coup de poing », répéta-t-elle.',
+ es:'«Solo quiero que le des un puñetazo», repitió ella.'},
+{id:'r4-02',s:'p4',p:'27',a:1,
+ zh:'她决定不再吃东西了，因为这样做实在太危险。她很明白自己体内已经没有多少空隙了。为了不使那腐烂的肠子像水一样在她体内涌来涌去，她躺下以后就不再动弹。',
+ en:'She decided not to eat any more, since eating was far too dangerous. She understood perfectly that there was not much space left inside her. So that the rotten intestines would not slosh about in her like water, she lay down and did not stir again.',
+ fr:'Elle décida de ne plus manger, car c’était bien trop dangereux. Elle savait parfaitement qu’il ne restait plus beaucoup de place en elle. Pour que ses intestins pourris ne clapotent pas en elle comme de l’eau, elle s’allongea et ne bougea plus.',
+ es:'Decidió no comer más, porque era demasiado peligroso. Sabía muy bien que ya no le quedaba mucho espacio dentro. Para que los intestinos podridos no le fueran y vinieran como agua, se tumbó y no volvió a moverse.'},
+{id:'r4-03',s:'p4',p:'27',a:1,
+ zh:'她一直看着屋顶上的光线，从上午到傍晚，她看着光线如何扩张和如何收缩。现在对她来说只有光线还活着，别的全都死了。',
+ en:'She watched the light on the ceiling all day, from morning to dusk, watching how it spread and how it drew in. By now, for her, only the light was still alive; everything else was dead.',
+ fr:'Elle regarda toute la journée la lumière au plafond, du matin au soir, comment elle s’étendait et comment elle se rétractait. Désormais, pour elle, seule la lumière était encore vivante ; tout le reste était mort.',
+ es:'Se pasó el día mirando la luz en el techo, de la mañana al anochecer, cómo se extendía y cómo se encogía. Para ella, ya solo la luz seguía viva; todo lo demás estaba muerto.'},
+{id:'r4-04',s:'p4',p:'28',a:1,
+ zh:'他记得自己一路骂骂咧咧，但骂的都是阳光，那阳光都快使他站不住了。',
+ en:'He remembered cursing all the way, but everything he cursed was the sunlight; the sunlight was almost more than he could stand up under.',
+ fr:'Il se souvenait d’avoir juré tout le long du chemin, mais il n’injuriait que le soleil ; ce soleil lui faisait presque perdre l’équilibre.',
+ es:'Recordaba haber ido maldiciendo todo el camino, pero todo lo que maldecía era el sol; aquel sol casi no lo dejaba tenerse en pie.'},
+{id:'r4-05',s:'p4',p:'28',a:1,
+ zh:'他们回来时已是傍晚了。那时候那两个孩子已经放进两只骨灰盒里了。',
+ en:'It was already evening when they came back. By then the two children had been put into two boxes of ashes.',
+ fr:'Il faisait déjà soir quand ils rentrèrent. À ce moment-là, les deux enfants avaient été mis dans deux urnes.',
+ es:'Ya era de noche cuando volvieron. Para entonces los dos niños estaban ya metidos en dos cajas de cenizas.'},
+{id:'r4-06',s:'p4',p:'29',a:1,
+ zh:'然后他站在一个大厅里了，大厅里只有他们四个人。因为只有四个人，所以那厅特别大，大得有点像广场。',
+ en:'Then he was standing in a great hall, and there were only the four of them in it. Because there were only four, the hall was especially large — large enough to be something like a public square.',
+ fr:'Puis il se tint dans une grande salle où ils n’étaient que quatre. Parce qu’ils n’étaient que quatre, la salle paraissait immense, presque une place publique.',
+ es:'Después estuvo de pie en un salón enorme, y allí solo estaban ellos cuatro. Como eran solo cuatro, el salón resultaba enorme, casi una plaza.'},
+{id:'r4-07',s:'p4',p:'31',a:1,
+ zh:'他对山岗说：“我觉得自己快要死了。”山岗回过头来说：“你说得很有道理。”',
+ en:'He said to Shan Gang: “I think I’m about to die.” Shan Gang turned his head and said: “There’s a lot in what you say.”',
+ fr:'Il dit à Shan Gang : « Je crois que je vais mourir. » Shan Gang tourna la tête : « Ce que tu dis est très juste. »',
+ es:'Le dijo a Shan Gang: «Creo que me estoy muriendo». Shan Gang se volvió y contestó: «Tienes toda la razón».'},
+{id:'r4-08',s:'p4',p:'31',a:1,
+ zh:'山峰接过来后觉得麻绳很重，他就说：“好像太重了。”“绑在你身上就不会重了。”山岗说。',
+ en:'Taking the ropes, Shan Feng found them heavy, and said: “They seem too heavy.” “Once they’re tied round you they won’t be heavy,” said Shan Gang.',
+ fr:'En prenant les cordes, Shan Feng les trouva lourdes : « Elles ont l’air trop lourdes. » « Une fois nouées autour de toi, elles ne le seront plus », dit Shan Gang.',
+ es:'Al coger las sogas, Shan Feng las notó pesadas: «Parecen demasiado pesadas». «Atadas a tu cuerpo ya no pesarán», dijo Shan Gang.'},
+{id:'r4-09',s:'p4',p:'32',
+ zh:'“现在舒服多了。”他说。“等一下你会更舒服。”“是吗？”山峰吃力地仰起脑袋看着山岗。“等一下你会哈哈乱笑。”山岗说。',
+ en:'“That’s much more comfortable,” he said. “In a while you’ll be more comfortable still.” “Really?” Shan Feng lifted his head with effort to look at his brother. “In a while you’ll be laughing your head off,” said Shan Gang.',
+ fr:'« C’est beaucoup mieux », dit-il. « Tout à l’heure ce sera encore mieux. » « Vraiment ? » Shan Feng leva péniblement la tête vers son frère. « Tout à l’heure tu riras aux éclats », dit Shan Gang.',
+ es:'«Así estoy mucho mejor», dijo. «Dentro de un rato estarás aún mejor». «¿Sí?». Shan Feng alzó con esfuerzo la cabeza para mirarlo. «Dentro de un rato te vas a reír a carcajadas», dijo Shan Gang.'},
+{id:'r4-10',s:'p4',p:'33',a:1,
+ zh:'“不。”山峰摇摇头，“我很害怕，最害怕的时候是递给你菜刀。”',
+ en:'“No.” Shan Feng shook his head. “I was very frightened. The most frightened I was, was when I handed you the cleaver.”',
+ fr:'« Non. » Shan Feng secoua la tête. « J’avais très peur. Le plus peur, c’était en te tendant le couperet. »',
+ es:'«No». Shan Feng negó con la cabeza. «Tenía mucho miedo. El mayor miedo fue cuando te pasé el cuchillo».'},
+{id:'r4-11',s:'p4',p:'33',a:1,
+ zh:'他将山峰的袜子脱掉后，就揭开锅盖，往山峰脚心上涂烧烂了的肉骨头。那条小狗此刻闻到香味马上跑了过来。“你在涂些什么？”山峰又问。“清凉油。”山岗说。',
+ en:'Having pulled off Shan Feng’s socks, he lifted the lid of the pot and smeared the boiled-soft meat bones onto the soles of his feet. The little dog smelled it at once and came running. “What is it you’re putting on?” Shan Feng asked again. “Cooling balm,” said Shan Gang.',
+ fr:'Après avoir retiré les chaussettes de Shan Feng, il souleva le couvercle de la marmite et enduisit la plante de ses pieds des os bouillis. Le petit chien sentit l’odeur et accourut aussitôt. « Qu’est-ce que tu m’étales ? » demanda encore Shan Feng. « Du baume rafraîchissant », dit Shan Gang.',
+ es:'Tras quitarle los calcetines a Shan Feng, levantó la tapa de la olla y le untó en las plantas de los pies los huesos cocidos hasta deshacerse. El perrito olió el aroma y llegó corriendo. «¿Qué me estás untando?», volvió a preguntar Shan Feng. «Bálsamo refrescante», dijo Shan Gang.'},
+{id:'r4-12',s:'p4',p:'35',
+ zh:'然后山岗朝妻子看去，妻子仍然站在那里，他就朝她笑了笑，于是他看到妻子也朝自己笑了笑。',
+ en:'Then Shan Gang looked over at his wife, who was still standing where she was. He smiled at her, and saw her smile back at him.',
+ fr:'Puis Shan Gang regarda sa femme, toujours debout au même endroit. Il lui sourit, et il la vit lui sourire à son tour.',
+ es:'Luego Shan Gang miró a su mujer, que seguía de pie en el mismo sitio. Le sonrió, y vio que ella también le sonreía.'},
+{id:'r4-13',s:'p4',p:'35',
+ zh:'山峰看到妻子从屋内扑了出来，他看到她身上像是装满电灯似的闪闪发亮，同时又像一条船似的摇摇晃晃。',
+ en:'Shan Feng saw his wife come lunging out of the house; she seemed to him to be glittering as though she were full of electric lights, and at the same time rocking like a boat.',
+ fr:'Shan Feng vit sa femme se ruer hors de la maison ; elle lui parut scintiller comme si elle était remplie d’ampoules, et tanguer en même temps comme une barque.',
+ es:'Shan Feng vio a su mujer salir precipitadamente de la casa; le pareció que resplandecía como si estuviera llena de bombillas y, a la vez, se balanceaba como una barca.'},
+{id:'r4-14',s:'p4',p:'36',a:1,
+ zh:'他第三次喊叫还没出来，他就由不得自己将脑袋一缩，然后拼命地笑了起来。……山峰的笑声像是两张铝片刮出来一样。',
+ en:'His third shout had not yet come out when, without meaning to, he pulled his head in and began to laugh helplessly. … Shan Feng’s laughter sounded like two sheets of aluminium scraping together.',
+ fr:'Son troisième cri n’était pas encore sorti qu’il rentra la tête malgré lui et se mit à rire éperdument. … Le rire de Shan Feng ressemblait au raclement de deux plaques d’aluminium.',
+ es:'Aún no le había salido el tercer grito cuando, sin poder evitarlo, encogió la cabeza y se echó a reír desesperadamente. … La risa de Shan Feng sonaba como dos láminas de aluminio raspándose.'},
+{id:'r4-15',s:'p4',p:'36',a:1,
+ zh:'山岗这时的神色令人愉快，他对山峰说：“你可真高兴啊。”随后他回头对妻子说：“高兴得都有点让我妒忌了。”',
+ en:'Shan Gang’s expression just then was a pleasant one. He said to Shan Feng: “You really are happy.” Then he turned to his wife and said: “So happy it makes me a little jealous.”',
+ fr:'L’air de Shan Gang était alors tout à fait agréable. Il dit à Shan Feng : « Comme tu es joyeux. » Puis il se tourna vers sa femme : « Si joyeux que cela me rend un peu jaloux. »',
+ es:'El semblante de Shan Gang resultaba entonces agradable. Le dijo a Shan Feng: «Qué contento estás». Luego se volvió hacia su mujer: «Tan contento que hasta me da algo de envidia».'},
+{id:'r4-16',s:'p4',p:'36',a:1,
+ zh:'她的眼睛正望着那条狗，小狗贪婪地用舌头舔着山峰赤裸的脚底。他发现妻子的神色和狗一样贪婪。',
+ en:'Her eyes were on the dog, which was greedily licking the bare soles of Shan Feng’s feet. He noticed that his wife’s expression was as greedy as the dog’s.',
+ fr:'Ses yeux étaient fixés sur le chien, qui léchait avidement la plante nue des pieds de Shan Feng. Il remarqua que le visage de sa femme avait la même avidité que la bête.',
+ es:'Ella tenía los ojos puestos en el perro, que lamía con avidez las plantas desnudas de Shan Feng. Él notó que el gesto de su mujer era tan ávido como el del animal.'},
+{id:'r4-17',s:'p4',p:'37',a:1,
+ zh:'他继续说：“你高兴得连呼吸都不需要了。”然后他俯下身去问山峰：“什么事这么高兴？”此刻的笑声不再节奏鲜明，开始杂乱无章了。',
+ en:'He went on: “You’re so happy you don’t even need to breathe.” Then he bent down and asked Shan Feng: “What is it that’s making you so happy?” By now the laughter had lost its clear rhythm and had begun to come out in disorder.',
+ fr:'Il poursuivit : « Tu es si joyeux que tu n’as même plus besoin de respirer. » Puis il se pencha vers Shan Feng : « Qu’est-ce qui te rend si joyeux ? » Le rire n’avait plus de rythme net ; il devenait désordonné.',
+ es:'Continuó: «Estás tan contento que ya ni necesitas respirar». Luego se agachó y le preguntó a Shan Feng: «¿Qué es lo que te hace tan feliz?». La risa había perdido ya el ritmo claro y empezaba a salir desordenada.'},
+{id:'r4-18',s:'p4',p:'37',a:1,
+ zh:'山峰的妻子仍坐在地上，她脸上的神色让人感到她在远处。',
+ en:'Shan Feng’s wife was still sitting on the ground; the look on her face made you feel she was somewhere far away.',
+ fr:'La femme de Shan Feng était toujours assise par terre ; l’expression de son visage donnait le sentiment qu’elle était ailleurs, très loin.',
+ es:'La mujer de Shan Feng seguía sentada en el suelo; la expresión de su cara daba la sensación de que estaba muy lejos.'},
+{id:'r4-19',s:'p4',p:'38',a:1,
+ zh:'他在屋门口站住了脚，他听到妻子这样问他：“死了吗？”“死了。”他答。',
+ en:'He stopped in the doorway of the house and heard his wife ask: “Is he dead?” “He’s dead,” he answered.',
+ fr:'Il s’arrêta sur le seuil et entendit sa femme demander : « Il est mort ? » « Il est mort », répondit-il.',
+ es:'Se detuvo en el umbral y oyó a su mujer preguntar: «¿Está muerto?». «Está muerto», respondió él.'},
+{id:'r4-20',s:'p4',p:'38',a:1,
+ zh:'进屋后他在餐桌旁坐了下来，早餐像仪仗队似的在桌上迎候他，依旧由米粥油条组成。……她脸上的神色让人觉得什么都没有发生。',
+ en:'Indoors he sat down at the table, where breakfast waited for him drawn up like a guard of honour, still made of rice porridge and fried dough sticks. … The look on her face made you feel that nothing at all had happened.',
+ fr:'Rentré, il s’assit à table ; le petit-déjeuner l’attendait, aligné comme une garde d’honneur, toujours composé de bouillie de riz et de beignets. … L’expression de son visage donnait le sentiment qu’il ne s’était rien passé.',
+ es:'Dentro se sentó a la mesa; el desayuno lo esperaba formado como una guardia de honor, hecho como siempre de gachas de arroz y palos de masa frita. … La expresión de su cara daba la sensación de que no había pasado nada.'},
+{id:'r4-21',s:'p4',p:'39',a:1,
+ zh:'“你那是诬告。”山岗说，“而且诬告有罪。”说完他轻轻一笑。',
+ en:'“That would be a false accusation,” Shan Gang said, “and a false accusation is a crime.” Then he gave a small laugh.',
+ fr:'« Ce serait une fausse accusation, dit Shan Gang, et la fausse accusation est un délit. » Puis il eut un petit rire.',
+ es:'«Eso sería una denuncia falsa —dijo Shan Gang—, y la denuncia falsa es delito». Después soltó una risita.'},
+{id:'r4-22',s:'p4',p:'39',a:1,
+ zh:'因此她又说：“你该逃走了。”山岗这才点点头。接着他又看了看手表，八点半还差一分钟。于是他就说：“再坐一分钟吧。”',
+ en:'So she said again: “It’s time you ran away.” Only then did Shan Gang nod. He looked at his watch: one minute to half past eight. So he said: “Let me sit here one more minute.”',
+ fr:'Elle répéta donc : « Il est temps que tu t’enfuies. » Shan Gang hocha enfin la tête. Il regarda sa montre : il manquait une minute pour huit heures et demie. Il dit alors : « Laisse-moi rester assis encore une minute. »',
+ es:'Por eso ella repitió: «Ya deberías huir». Solo entonces asintió Shan Gang. Miró el reloj: faltaba un minuto para las ocho y media. Y dijo: «Déjame estar sentado un minuto más».'},
+/* ========== 五 ========== */
+{id:'r5-01',s:'p5',p:'41',a:1,
+ zh:'他那么站了很久，可他听到的都是别人小便的声音，他不知为何居然尿不出来。……随后他才发现了什么，他对自己说：“原来我不是来撒尿的。”',
+ en:'He stood there a long time, but all he heard was other men urinating; for some reason nothing would come. … Then he realised something, and said to himself: “So I didn’t come in here to piss after all.”',
+ fr:'Il resta là longtemps, mais n’entendait que les autres uriner ; pour une raison qu’il ignorait, rien ne venait. … Puis il comprit quelque chose et se dit : « Ce n’est donc pas pour pisser que je suis venu. »',
+ es:'Estuvo allí mucho rato, pero solo oía orinar a los demás; por alguna razón no le salía nada. … Entonces cayó en la cuenta de algo y se dijo: «Así que no he venido a mear».'},
+{id:'r5-02',s:'p5',p:'41',a:1,
+ zh:'但他忘了将那玩意儿放进去，所以那玩意儿露在外面，随着他走路的节奏正一颤一颤，十分得意。他一直那么走着。起先居然没人发现。',
+ en:'But he had forgotten to put the thing away, so it hung out in the open, bobbing along in time with his steps, thoroughly pleased with itself. He went on walking like that. At first, remarkably, nobody noticed.',
+ fr:'Mais il avait oublié de le ranger, si bien que la chose pendait au-dehors et tressautait au rythme de ses pas, fort satisfaite d’elle-même. Il continua ainsi. Au début, chose étonnante, personne ne remarqua rien.',
+ es:'Pero se había olvidado de guardársela, de modo que la cosa le colgaba fuera y se bamboleaba al ritmo de sus pasos, muy ufana. Siguió caminando así. Al principio, curiosamente, nadie se dio cuenta.'},
+{id:'r5-03',s:'p5',p:'41',a:1,
+ zh:'然而他随即发现所有的人都在顷刻之间变了模样，都前仰后合或者东倒西歪了。一些女人像是遇上强盗一样避得远远的。他心里觉得很滑稽，于是就笑了起来。',
+ en:'Then he noticed that in an instant everyone had changed shape, doubling over or reeling from side to side. Some women kept their distance as though they had run into a bandit. He found it very comical, and began to laugh.',
+ fr:'Puis il s’aperçut qu’en un instant tout le monde avait changé d’allure : les gens se pliaient en deux ou titubaient. Des femmes s’écartaient au loin comme devant un brigand. Il trouva cela très drôle et se mit à rire.',
+ es:'Luego advirtió que en un instante todos habían cambiado de forma: se doblaban o se tambaleaban. Algunas mujeres se apartaban como ante un bandido. Le pareció comiquísimo y se echó a reír.'},
+{id:'r5-04',s:'p5',p:'42',a:1,
+ zh:'三小时以后他被人推醒，他看到几个武警站在他面前，其中一个人对他说：“请你把那东西放进去。”',
+ en:'Three hours later someone shook him awake. He saw several armed police standing in front of him, and one of them said: “Please put that thing away.”',
+ fr:'Trois heures plus tard on le réveilla en le secouant. Il vit plusieurs policiers armés devant lui, et l’un d’eux lui dit : « Veuillez ranger cette chose. »',
+ es:'Tres horas después lo despertaron sacudiéndolo. Vio a varios policías armados delante de él, y uno le dijo: «Haga el favor de guardarse eso».'},
+{id:'r5-05',s:'p5',p:'42',a:1,
+ zh:'他看到四周的人像麻雀一样汇集过来，他们仰起脑袋看着他。而他则低下头去看他们，他感到他们的脸是画出来似的。',
+ en:'He saw people gathering round like sparrows, lifting their heads to look at him. He lowered his head to look at them, and their faces seemed to him to have been painted on.',
+ fr:'Il vit les gens s’assembler comme des moineaux, la tête levée vers lui. Lui baissait la tête vers eux, et leurs visages lui semblaient peints.',
+ es:'Vio a la gente congregarse como gorriones, alzando la cabeza para mirarlo. Él bajaba la suya para mirarlos, y sus caras le parecían pintadas.'},
+{id:'r5-06',s:'p5',p:'42',a:1,
+ zh:'于是他就转过脸去对一个武警说：“班长，请手脚干净点。”',
+ en:'So he turned his face to one of the armed police and said: “Squad leader, please make it clean.”',
+ fr:'Il tourna alors la tête vers l’un des policiers : « Chef, faites ça proprement, s’il vous plaît. »',
+ es:'Entonces volvió la cara hacia uno de los policías: «Jefe, hágalo limpio, por favor».'},
+{id:'r5-07',s:'p5',p:'43',
+ zh:'于是他如梦初醒般重又知道了自己的处境。他知道不一会就要脑袋开花了。',
+ en:'Then, as if waking from a dream, he knew again where he was. He knew that in a little while his head would burst into flower.',
+ fr:'Alors, comme au sortir d’un rêve, il sut de nouveau où il en était. Il savait que sous peu sa tête allait éclore comme une fleur.',
+ es:'Entonces, como despertando de un sueño, volvió a saber en qué situación estaba. Sabía que dentro de poco su cabeza se abriría como una flor.'},
+{id:'r5-08',s:'p5',p:'43',
+ zh:'现在他想起来了，想起先前他常来这里。几乎每一次枪毙犯人他都挤在前排观瞧。可是站在这个位置上倒是第一次，所以现在的处境使他感到十分新奇。',
+ en:'Now he remembered: he used to come here often. Almost every time a criminal was shot he had squeezed into the front row to watch. But standing in this position was a first, so his present situation struck him as most novel.',
+ fr:'Il se souvint alors qu’il venait souvent ici. Presque chaque fois qu’on fusillait un condamné, il se faufilait au premier rang pour regarder. Mais se tenir à cette place-ci était une première, et sa situation lui parut des plus curieuses.',
+ es:'Ahora se acordó: antes venía aquí a menudo. Casi cada vez que fusilaban a un reo se colaba en la primera fila para mirar. Pero estar en este sitio era la primera vez, y su situación le resultó de lo más novedosa.'},
+{id:'r5-09',s:'p5',p:'43',
+ zh:'而这时候他又突然想小便，他就对身旁的武警说：“班长，我要尿尿了。”',
+ en:'Just then he suddenly needed to urinate, and said to the armed policeman beside him: “Squad leader, I need to pee.”',
+ fr:'À cet instant il eut de nouveau envie d’uriner et dit au policier à côté de lui : « Chef, j’ai besoin de faire pipi. »',
+ es:'En ese momento le entraron otra vez ganas de orinar y le dijo al policía que tenía al lado: «Jefe, tengo que mear».'},
+{id:'r5-10',s:'p5',p:'44',
+ zh:'山岗的身体随着这一枪竟然翻了个筋斗，然后他惊恐万分地站起来，他朝四周的人问：“我死了没有？”',
+ en:'The shot sent Shan Gang’s body into a somersault; then he stood up in utter terror and asked the people around him: “Am I dead?”',
+ fr:'Le coup de feu fit faire une culbute au corps de Shan Gang ; puis il se releva, terrifié, et demanda aux gens autour de lui : « Est-ce que je suis mort ? »',
+ es:'El disparo hizo dar una voltereta al cuerpo de Shan Gang; luego se puso en pie, aterrado, y preguntó a la gente que lo rodeaba: «¿Estoy muerto?».'},
+{id:'r5-11',s:'p5',p:'44',
+ zh:'没有人回答他，所有的人都在哈哈大笑，那笑声像雷阵雨一样向他倾泻而来。于是他就惊慌失措哇哇大哭起来，因为他不知道自己是死是活。',
+ en:'Nobody answered him; they were all roaring with laughter, and the laughter came pouring down on him like a thunderstorm. So he burst into panicked, bawling tears, because he did not know whether he was alive or dead.',
+ fr:'Personne ne lui répondit ; tous riaient aux éclats, et ce rire se déversait sur lui comme une averse d’orage. Alors, affolé, il éclata en sanglots bruyants, car il ne savait pas s’il était mort ou vivant.',
+ es:'Nadie le contestó; todos reían a carcajadas, y aquella risa se le venía encima como una tormenta. Entonces, despavorido, rompió a llorar a gritos, porque no sabía si estaba vivo o muerto.'},
+{id:'r5-12',s:'p5',p:'44',
+ zh:'这次有人回答他了，说：“你还没死。”山岗又惊又喜，他拼命地叫道：“快送我去医院。”',
+ en:'This time someone did answer: “You’re not dead yet.” Shocked and delighted at once, Shan Gang shouted with all his strength: “Get me to a hospital, quickly.”',
+ fr:'Cette fois quelqu’un répondit : « Tu n’es pas encore mort. » À la fois effrayé et ravi, Shan Gang cria de toutes ses forces : « Vite, emmenez-moi à l’hôpital. »',
+ es:'Esta vez alguien sí le contestó: «Todavía no estás muerto». Asustado y encantado a la vez, Shan Gang gritó con todas sus fuerzas: «¡Llévenme al hospital, rápido!».'},
+{id:'r5-13',s:'p5',p:'45',a:1,cut:1,
+ zh:'第二枪打进了山岗的后脑勺，这次山岗没翻筋斗，而是脑袋沉重地撞在了地上，脑袋将他的屁股高高支起。他仍然没有死，他的屁股像是受寒似的抖个不停。',
+ en:'The second shot went into the back of Shan Gang’s head. This time he did not somersault; his head struck the ground heavily and propped his backside high in the air. He still was not dead: his backside shivered on and on, as though with cold.',
+ fr:'La deuxième balle entra dans l’arrière du crâne de Shan Gang. Cette fois il ne fit pas de culbute : sa tête heurta lourdement le sol et souleva bien haut son derrière. Il n’était toujours pas mort : son derrière tremblait sans arrêt, comme de froid.',
+ es:'El segundo disparo le entró a Shan Gang por la nuca. Esta vez no dio la voltereta: la cabeza golpeó pesadamente el suelo y le dejó el trasero levantado en alto. Seguía sin estar muerto: el trasero le temblaba sin parar, como de frío.'},
+/* ========== 六 ========== */
+{id:'r6-01',s:'p6',p:'46',a:1,
+ zh:'她开始穿衣服，脚步声是她穿好衣服时消失的。于是她走到窗前，拉开窗帘后阳光便涌进来，阳光这时候还是鲜红的。不久以后就会变成肝炎那种黄色。',
+ en:'She began to dress, and the footsteps faded just as she finished. Then she went to the window, and when she drew the curtain the sunlight came pouring in — still bright red at that hour. Before long it would turn the yellow of hepatitis.',
+ fr:'Elle commença à s’habiller ; les pas s’éteignirent au moment où elle finissait. Elle alla à la fenêtre et, en tirant le rideau, le soleil entra à flots — encore rouge vif à cette heure. Bientôt il prendrait le jaune de l’hépatite.',
+ es:'Empezó a vestirse, y los pasos se apagaron justo cuando terminaba. Fue a la ventana y, al correr la cortina, entró a raudales la luz del sol, todavía de un rojo vivo a esa hora. Al poco se volvería del amarillo de la hepatitis.'},
+{id:'r6-02',s:'p6',p:'46',a:1,
+ zh:'她看看镜中自己的脸，她感到索然无味。',
+ en:'She looked at her own face in the mirror and found it utterly dull.',
+ fr:'Elle regarda son visage dans le miroir et le trouva parfaitement insipide.',
+ es:'Se miró la cara en el espejo y le pareció del todo insulsa.'},
+{id:'r6-03',s:'p6',p:'47',a:1,
+ zh:'在山峰死去的第六天早晨，老太太也溘然长逝。那天早晨她醒来时感到一阵异样的兴奋。……而同时她又感到自己的身体正在局部地死去。',
+ en:'On the morning of the sixth day after Shan Feng’s death, the old woman too quietly departed. That morning she woke feeling a strange excitement. … At the same time she felt her body dying part by part.',
+ fr:'Au matin du sixième jour après la mort de Shan Feng, la vieille femme s’éteignit à son tour. Ce matin-là, en s’éveillant, elle ressentit une étrange exaltation. … En même temps, elle sentait son corps mourir par morceaux.',
+ es:'En la mañana del sexto día tras la muerte de Shan Feng, también la anciana se apagó. Aquella mañana despertó con una excitación extraña. … Al mismo tiempo sentía que su cuerpo iba muriéndose por partes.'},
+{id:'r6-04',s:'p6',p:'47',a:1,
+ zh:'她感到脚的死去像冰雪一样无声无息。死亡在她腹部逗留了片刻，以后就像潮水一样涌过了腰际，涌过腰际后死亡就肆无忌惮地蔓延开来。',
+ en:'The dying of her feet, she felt, was as soundless as snow and ice. Death lingered a moment in her belly, then swept past her waist like a tide, and once past the waist it spread without any restraint at all.',
+ fr:'La mort de ses pieds, sentit-elle, fut aussi silencieuse que la neige et la glace. La mort s’attarda un instant dans son ventre, puis franchit sa taille comme une marée, et, la taille passée, s’étendit sans plus aucune retenue.',
+ es:'La muerte de sus pies, sintió, fue tan silenciosa como la nieve y el hielo. La muerte se demoró un instante en su vientre y luego le pasó la cintura como una marea; pasada la cintura, se extendió ya sin ningún miramiento.'},
+{id:'r6-05',s:'p6',p:'47',a:1,
+ zh:'最后只剩下心脏了，可死亡已经包围了心脏，像是无数蚂蚁似的从四周爬向心脏。她觉得心脏有些痒滋滋的。',
+ en:'In the end only the heart was left, but death had already surrounded it, crawling in from every side like countless ants. She found that her heart felt slightly itchy.',
+ fr:'À la fin il ne resta que le cœur, mais la mort l’avait déjà encerclé, rampant de toutes parts comme d’innombrables fourmis. Elle trouva que son cœur la démangeait un peu.',
+ es:'Al final solo quedó el corazón, pero la muerte ya lo tenía rodeado, avanzando desde todos lados como incontables hormigas. Notó que el corazón le picaba un poco.'},
+{id:'r6-06',s:'p6',p:'47',a:1,
+ zh:'这时她睁开的眼睛看到有无数光芒透过窗帘向她奔涌过来，她不禁微微一笑，于是这笑容像是相片一样固定了下来。',
+ en:'Then her open eyes saw countless rays of light come rushing at her through the curtain. She could not help smiling faintly, and the smile set like a photograph.',
+ fr:'Alors ses yeux ouverts virent d’innombrables rais de lumière se précipiter vers elle à travers le rideau. Elle ne put s’empêcher de sourire légèrement, et ce sourire se fixa comme sur une photographie.',
+ es:'Entonces sus ojos abiertos vieron innumerables rayos de luz venir hacia ella a través de la cortina. No pudo evitar sonreír levemente, y la sonrisa quedó fija como en una fotografía.'},
+{id:'r6-07',s:'p6',p:'47',a:1,
+ zh:'她很明白自己该去什么地方。她朝天宁寺走去，因为在天宁寺的旁边就是拘留所。这天早晨山岗被人从里面押出来。',
+ en:'She knew perfectly well where she ought to go. She set off towards Tianning Temple, because next to the temple stood the detention house. That morning Shan Gang was brought out of it under escort.',
+ fr:'Elle savait parfaitement où elle devait aller. Elle se dirigea vers le temple de Tianning, car à côté du temple se trouvait le dépôt. Ce matin-là, on en fit sortir Shan Gang sous escorte.',
+ es:'Sabía muy bien adónde debía ir. Se encaminó al templo de Tianning, porque junto al templo estaba el calabozo. Esa mañana sacaron de allí a Shan Gang bajo custodia.'},
+{id:'r6-08',s:'p6',p:'48',a:1,
+ zh:'她很满意，她告诉他们，她愿将山岗的尸体献给国家。法院的人听了这话并不兴高采烈，但他们表示接受。她知道医生们会兴高采烈的。',
+ en:'She was well satisfied. She told them she was willing to donate Shan Gang’s body to the state. The court officials were not elated to hear it, but they said they accepted. She knew the doctors would be elated.',
+ fr:'Elle était très satisfaite. Elle leur dit qu’elle acceptait de faire don du corps de Shan Gang à l’État. Les gens du tribunal n’en furent pas enchantés, mais déclarèrent accepter. Elle savait que les médecins, eux, seraient enchantés.',
+ es:'Quedó muy satisfecha. Les dijo que estaba dispuesta a donar el cuerpo de Shan Gang al Estado. Los del tribunal no se entusiasmaron al oírlo, pero dijeron que lo aceptaban. Ella sabía que los médicos sí se entusiasmarían.'},
+{id:'r6-09',s:'p6',p:'48',a:1,
+ zh:'她在街上走着的时候，脑子里已经开始想象着医生们如何瓜分山岗，因此她的嘴角始终挂着微笑。',
+ en:'As she walked along the street she had already begun imagining how the doctors would divide Shan Gang up between them, and so a smile hung at the corner of her mouth the whole way.',
+ fr:'Tout en marchant dans la rue, elle imaginait déjà comment les médecins se partageraient Shan Gang, et un sourire ne quittait pas le coin de ses lèvres.',
+ es:'Mientras caminaba por la calle ya iba imaginando cómo se repartirían los médicos a Shan Gang, y por eso una sonrisa no se le apartó de la comisura de los labios.'},
+/* ========== 七 ========== */
+{id:'r7-01',s:'p7',p:'50',
+ zh:'女医生抱着山岗的皮肤走到乒乓桌的一角，将皮一张一张摊开刮了起来，她用尸体解剖刀像是刷衣服似的刮着皮肤上的脂肪组织，发出的声音如同车轮陷在沙子里无可奈何地叫唤。',
+ en:'The woman doctor carried Shan Gang’s skin to a corner of the ping-pong table, spread the pieces out one by one and began scraping. With a dissecting knife she scraped the fatty tissue off the skin as though brushing a coat, and the sound it made was like a wheel stuck in sand, crying out helplessly.',
+ fr:'La doctoresse porta la peau de Shan Gang à un coin de la table de ping-pong, en étala les morceaux un à un et se mit à les gratter. Avec un couteau d’autopsie elle raclait le tissu graisseux comme on brosse un vêtement, et le bruit ressemblait à celui d’une roue enlisée dans le sable, gémissant sans recours.',
+ es:'La doctora llevó la piel de Shan Gang a una esquina de la mesa de ping-pong, extendió los trozos uno a uno y empezó a rasparlos. Con un cuchillo de autopsia raspaba el tejido graso como quien cepilla una prenda, y el sonido era el de una rueda atascada en la arena, quejándose sin remedio.'},
+{id:'r7-02',s:'p7',p:'50',
+ zh:'几天以后山岗的皮肤便覆盖在一个大面积烧伤了的患者身上，可是才过三天就液化坏死，于是山岗的皮肤就被扔进了污物桶，后又被倒入那家医院的厕所。',
+ en:'A few days later Shan Gang’s skin was laid over a patient with extensive burns; but after only three days it liquefied and died, so the skin was thrown into a waste bucket, and later tipped into that hospital’s lavatory.',
+ fr:'Quelques jours plus tard, la peau de Shan Gang recouvrit un grand brûlé ; mais au bout de trois jours seulement elle se liquéfia et se nécrosa, si bien qu’on la jeta dans un seau à déchets, puis on la vida dans les toilettes de cet hôpital.',
+ es:'Unos días después la piel de Shan Gang cubrió a un paciente con quemaduras extensas; pero a los tres días se licuó y se necrosó, así que la tiraron a un cubo de desechos y luego la vaciaron en los retretes de aquel hospital.'},
+{id:'r7-03',s:'p7',p:'51',a:1,
+ zh:'于是这两人就爬到乒乓桌上去，蹲在桌上瓜分山岗。',
+ en:'So the two of them climbed onto the ping-pong table and squatted there dividing Shan Gang up.',
+ fr:'Les deux hommes grimpèrent donc sur la table de ping-pong et s’y accroupirent pour se partager Shan Gang.',
+ es:'Así que los dos se subieron a la mesa de ping-pong y allí, en cuclillas, se repartieron a Shan Gang.'},
+{id:'r7-04',s:'p7',p:'51',a:1,
+ zh:'但是他发现上颌骨被一颗子弹打坏了。这使他沮丧不已，他便嘟哝了一句：“为什么不把眼睛打坏。”',
+ en:'But he found that the upper jawbone had been ruined by a bullet. It left him thoroughly dejected, and he muttered: “Why couldn’t they have ruined the eyes instead.”',
+ fr:'Mais il découvrit que le maxillaire supérieur avait été abîmé par une balle. Cela le désola, et il marmonna : « Pourquoi n’ont-ils pas abîmé les yeux ? »',
+ es:'Pero descubrió que el maxilar superior lo había estropeado una bala. Aquello lo desanimó por completo y masculló: «¿Por qué no le estropearon los ojos?».'},
+{id:'r7-05',s:'p7',p:'51',a:1,
+ zh:'当他取出第二只眼球离开时，看到口腔科医生正用手术锯子卖力地锯着下颌骨，于是他就对他说：“木匠，再见了。”',
+ en:'As he left with the second eyeball, he saw the dental surgeon sawing away energetically at the lower jaw with a surgical saw, so he said to him: “Goodbye, carpenter.”',
+ fr:'En s’en allant avec le second globe oculaire, il vit le chirurgien-dentiste scier avec ardeur la mâchoire inférieure, et il lui lança : « Au revoir, menuisier. »',
+ es:'Al irse con el segundo globo ocular, vio al odontólogo serrando con afán la mandíbula inferior con una sierra quirúrgica, y le dijo: «Adiós, carpintero».'},
+{id:'r7-06',s:'p7',p:'51',
+ zh:'他切着的时候感到十分痛快。因为给活人动手术时他得小心翼翼地避开它们，给活人动手术他感到压抑。现在他大手大脚地干，干得兴高采烈。他对身旁的医生说：“我觉得自己是在挥霍。”',
+ en:'He felt wonderful as he cut. Operating on the living, he had to avoid these things with the greatest care; operating on the living oppressed him. Now he worked with a free hand, and worked in high spirits. He said to the doctor beside him: “I feel as if I’m squandering.”',
+ fr:'Il éprouvait un plaisir intense à couper. Sur un vivant, il devait les éviter avec mille précautions ; opérer un vivant l’oppressait. Ici il y allait largement, et avec entrain. Il dit au médecin à côté de lui : « J’ai l’impression de dilapider. »',
+ es:'Cortar le producía un gran placer. Operando a vivos tenía que esquivarlos con mil cuidados; operar a vivos lo oprimía. Ahora trabajaba a manos llenas y de muy buen humor. Le dijo al médico que tenía al lado: «Me siento como si estuviera derrochando».'},
+{id:'r7-07',s:'p7',p:'52',a:1,
+ zh:'他一遍一遍地告诫在山岗腹部折腾的医生，他说：“你们可别把我的睾丸搞坏了。”',
+ en:'Again and again he warned the doctors busy in Shan Gang’s abdomen: “Mind you don’t ruin my testicles.”',
+ fr:'Il ne cessait d’avertir les médecins qui s’affairaient dans l’abdomen de Shan Gang : « Surtout, n’abîmez pas mes testicules. »',
+ es:'Una y otra vez advertía a los médicos que trajinaban en el abdomen de Shan Gang: «Cuidado, no me estropeen los testículos».'},
+{id:'r7-08',s:'p7',p:'52',a:1,
+ zh:'一年之后在某地某一个人体知识展览上，山岗的胃和肝以及肺分别浸在福尔马林中供人观赏。他的心脏和肾脏都被作了移植。心脏移植没有成功，那患者死在手术台上。',
+ en:'A year later, at some exhibition of human anatomy in some town, Shan Gang’s stomach, liver and lungs were each steeping in formalin for the public to admire. His heart and kidneys had both been transplanted. The heart transplant failed; that patient died on the operating table.',
+ fr:'Un an plus tard, dans une exposition d’anatomie humaine quelque part, l’estomac, le foie et les poumons de Shan Gang baignaient chacun dans le formol, offerts à l’admiration du public. Son cœur et ses reins avaient été greffés. La greffe du cœur échoua ; le patient mourut sur la table.',
+ es:'Un año después, en alguna exposición de anatomía humana en algún lugar, el estómago, el hígado y los pulmones de Shan Gang se exhibían al público, cada uno en formol. Su corazón y sus riñones fueron trasplantados. El trasplante de corazón fracasó; aquel paciente murió en la mesa de operaciones.'},
+{id:'r7-09',s:'p7',p:'52',a:1,
+ zh:'但是患者却牢骚满腹，他抱怨移植肾脏太贵，因为他已经花了三万元钱了。',
+ en:'The patient, though, was full of complaints: he grumbled that a kidney transplant was too expensive, since it had already cost him thirty thousand yuan.',
+ fr:'Le patient, lui, était plein de récriminations : il se plaignait qu’une greffe de rein coûte trop cher, puisqu’il y avait déjà dépensé trente mille yuans.',
+ es:'El paciente, en cambio, estaba lleno de quejas: protestaba de que un trasplante de riñón saliera tan caro, pues ya le había costado treinta mil yuanes.'},
+{id:'r7-10',s:'p7',p:'53',a:1,
+ zh:'尿医生将他的睾丸移植在一个因车祸而睾丸被碾碎的年轻人身上。不久之后年轻人居然结婚了，而且他妻子立刻就怀孕，十个月后生下一个十分壮实的儿子。这一点山峰的妻子万万没有想到，因为是她成全了山岗，山岗后继有人了。',
+ en:'The urine doctor transplanted the testicles into a young man whose own had been crushed in a traffic accident. Not long after, the young man actually married, his wife conceived at once, and ten months later she bore a very sturdy son. This was the one thing Shan Feng’s wife had never imagined: it was she who had done Shan Gang the favour — Shan Gang had descendants after all.',
+ fr:'Le médecin des urines greffa les testicules à un jeune homme dont les siens avaient été écrasés dans un accident de la route. Peu après, le jeune homme se maria, sa femme fut aussitôt enceinte et mit au monde, dix mois plus tard, un fils très robuste. C’est la seule chose que la femme de Shan Feng n’avait pas prévue : c’est elle qui avait rendu service à Shan Gang — Shan Gang avait une descendance.',
+ es:'El médico de la orina trasplantó los testículos a un joven al que un accidente de tráfico le había destrozado los suyos. Al poco, el joven se casó, su mujer quedó embarazada enseguida y diez meses después dio a luz un hijo muy robusto. Eso fue lo único que la mujer de Shan Feng jamás imaginó: fue ella quien le hizo el favor a Shan Gang — Shan Gang tuvo descendencia.'},
+{id:'r7-11',s:'p7',p:'54',a:1,
+ zh:'当他的工作发展到大腿时，他捏捏山岗腿上粗鲁的肌肉对山岗说：“尽管你很结实，但我把你的骨骼放在我们教研室时，你就会显得弱不禁风。”',
+ en:'When his work had reached the thighs, he squeezed the coarse muscle of Shan Gang’s leg and said to him: “Strong as you are, once I have your skeleton standing in our teaching office you will look too frail to stand a breeze.”',
+ fr:'Quand son travail parvint aux cuisses, il palpa le muscle grossier de la jambe de Shan Gang et lui dit : « Tu as beau être solide, une fois ton squelette installé dans notre salle d’enseignement, tu auras l’air à ne pas supporter un souffle de vent. »',
+ es:'Cuando su trabajo llegó a los muslos, palpó el músculo tosco de la pierna de Shan Gang y le dijo: «Por fuerte que seas, cuando ponga tu esqueleto en nuestro departamento parecerás tan débil que no aguantarías ni una brisa».'},
+];
+
+/* ============================================================
+   Likes + moderated comments — same Worker as the other notes.
+   Leaving the placeholder (or '') renders the page without any
+   interactive parts; the notes themselves still work offline.
+   ============================================================ */
+const API = 'https://reading-notes-api.YOUR-SUBDOMAIN.workers.dev';
+const PAGE_ID = 'xianshiyizhong';
+const API_ON = /^https?:\/\//.test(API) && !API.includes('YOUR-SUBDOMAIN');
+
+UI.pref = {en:'preface', zh:'自序', fr:'préface', es:'prefacio'};
+UI.modNote = {
+  en:'Anyone may like a passage or leave a comment on it. Likes appear at once; comments are read and approved by me before they are shown.',
+  zh:'任何人都可以给某一条点讚或留言。点讚即时生效；留言经我阅读并审核通过后才会显示。',
+  fr:'Chacun peut aimer un passage ou y laisser un commentaire. Les « j’aime » apparaissent aussitôt ; les commentaires sont lus et validés par moi avant d’être affichés.',
+  es:'Cualquiera puede dar «me gusta» a un pasaje o dejar un comentario. Los «me gusta» aparecen al instante; los comentarios los leo y apruebo yo antes de mostrarse.'
+};
+UI.like     = {en:'Like', zh:'点讚', fr:'J’aime', es:'Me gusta'};
+UI.liked    = {en:'Liked', zh:'已讚', fr:'Aimé', es:'Te gusta'};
+UI.cmt      = {en:'Comments', zh:'留言', fr:'Commentaires', es:'Comentarios'};
+UI.cmtNone  = {en:'No comments on this passage yet.', zh:'这一条还没有留言。', fr:'Aucun commentaire sur ce passage.', es:'Aún no hay comentarios en este pasaje.'};
+UI.fName    = {en:'Name or nickname', zh:'昵称', fr:'Nom ou pseudonyme', es:'Nombre o apodo'};
+UI.fEmail   = {en:'Email — optional, never shown', zh:'邮箱 — 选填，不会公开', fr:'E-mail — facultatif, jamais affiché', es:'Correo — opcional, nunca se muestra'};
+UI.fBody    = {en:'What this passage made you think…', zh:'这段让你想到了什么……', fr:'Ce que ce passage vous a inspiré…', es:'Qué te hizo pensar este pasaje…'};
+UI.fSend    = {en:'Send for review', zh:'提交审核', fr:'Envoyer pour validation', es:'Enviar para revisión'};
+UI.fSending = {en:'Sending…', zh:'提交中……', fr:'Envoi…', es:'Enviando…'};
+UI.fQueued  = {en:'Thank you. Your comment is in the review queue and will appear here once approved.', zh:'谢谢。留言已进入审核队列，通过后会显示在这里。', fr:'Merci. Votre commentaire est en attente de validation et apparaîtra ici une fois approuvé.', es:'Gracias. Tu comentario está en la cola de revisión y aparecerá aquí una vez aprobado.'};
+UI.fModNote = {en:'Moderated before publication. Your email is only visible to the site owner.', zh:'发布前需审核。邮箱仅站主可见。', fr:'Modéré avant publication. Votre e-mail n’est visible que par le propriétaire du site.', es:'Moderado antes de publicarse. Tu correo solo lo ve el propietario del sitio.'};
+UI.errName  = {en:'Please enter a name.', zh:'请填昵称。', fr:'Veuillez indiquer un nom.', es:'Indica un nombre.'};
+UI.errBody  = {en:'Please write something first.', zh:'请先写点什么。', fr:'Veuillez d’abord écrire quelque chose.', es:'Escribe algo primero.'};
+UI.errRate  = {en:'That is a lot of comments for one hour — please come back later.', zh:'一小时内留言太多了，请稍后再来。', fr:'Cela fait beaucoup de commentaires en une heure — revenez plus tard.', es:'Son muchos comentarios en una hora; vuelve más tarde.'};
+UI.errNet   = {en:'Could not send — please try again.', zh:'提交失败，请再试一次。', fr:'Envoi impossible — veuillez réessayer.', es:'No se pudo enviar; inténtalo de nuevo.'};
+
+let lang = 'en';
+try {
+  const saved = localStorage.getItem('jg-lang');
+  if (saved === 'zh' || saved === 'fr' || saved === 'es' || saved === 'en') lang = saved;
+} catch (_) {}
+
+let visitor = '';
+try {
+  visitor = localStorage.getItem('jg-visitor') || '';
+  if (!/^[a-z0-9]{8,40}$/.test(visitor)) {
+    visitor = Math.random().toString(36).slice(2, 12) + Date.now().toString(36);
+    localStorage.setItem('jg-visitor', visitor);
+  }
+} catch (_) { visitor = 'anon' + Math.random().toString(36).slice(2, 10); }
+
+let SOCIAL = null;          // {likes:{}, mine:[], comments:{}}
+const OPEN = new Set();     // entry ids whose comment panel is expanded
+
+const $ = (id) => document.getElementById(id);
+const el = (tag, cls) => { const n = document.createElement(tag); if (cls) n.className = cls; return n; };
+const LOCALE = {en:'en-GB', zh:'zh-CN', fr:'fr-FR', es:'es-ES'};
+
+function pageChip(e){
+  const n = el('span', 'page' + (e.a || e.np ? ' approx' : ''));
+  n.textContent = e.np ? UI.pref[lang] : (e.a ? '≈ p.' : 'p.') + e.p;
+  return n;
+}
+
+function heartSvg(){
+  const s = document.createElementNS('http://www.w3.org/2000/svg','svg');
+  s.setAttribute('viewBox','0 0 24 24'); s.setAttribute('class','heart'); s.setAttribute('aria-hidden','true');
+  const path = document.createElementNS('http://www.w3.org/2000/svg','path');
+  path.setAttribute('d','M12 20s-7-4.4-7-9.3A4.2 4.2 0 0 1 12 7.6a4.2 4.2 0 0 1 7 3.1C19 15.6 12 20 12 20Z');
+  s.append(path); return s;
+}
+
+/* ---------------------------------------------------------------- comments */
+
+function commentList(eid){
+  const items = (SOCIAL && SOCIAL.comments[eid]) || [];
+  if (!items.length){ const p = el('p','cnone'); p.textContent = UI.cmtNone[lang]; return p; }
+  const ul = el('ul','clist');
+  items.forEach(c => {
+    const li = el('li','citem');
+    const who = el('span','who'); who.textContent = c.name;
+    const at = el('span','at');
+    at.textContent = new Date(c.ts).toLocaleDateString(LOCALE[lang], {year:'numeric', month:'short', day:'numeric'});
+    const body = el('p'); body.textContent = c.body;
+    li.append(who, at, body); ul.append(li);
+  });
+  return ul;
+}
+
+function commentForm(eid){
+  const form = el('form','cform');
+  form.noValidate = true;
+  const opened = Date.now();
+
+  const two = el('div','two');
+  const name = el('input'); name.type = 'text'; name.maxLength = 40;
+  name.placeholder = UI.fName[lang]; name.autocomplete = 'nickname';
+  const mail = el('input'); mail.type = 'email'; mail.maxLength = 120;
+  mail.placeholder = UI.fEmail[lang]; mail.autocomplete = 'email';
+  two.append(name, mail);
+
+  const hp = el('input','hp'); hp.type = 'text'; hp.tabIndex = -1;
+  hp.setAttribute('aria-hidden','true'); hp.autocomplete = 'off'; hp.name = 'website';
+
+  const body = el('textarea'); body.maxLength = 1500; body.placeholder = UI.fBody[lang];
+  const send = el('button','send'); send.type = 'submit'; send.textContent = UI.fSend[lang];
+  const msg = el('p','cmsg');
+  const note = el('p','cmoderation'); note.textContent = UI.fModNote[lang];
+
+  form.append(two, hp, body, send, msg, note);
+
+  form.addEventListener('submit', async (ev) => {
+    ev.preventDefault();
+    msg.className = 'cmsg';
+    if (!name.value.trim()){ msg.classList.add('bad'); msg.textContent = UI.errName[lang]; name.focus(); return; }
+    if (body.value.trim().length < 2){ msg.classList.add('bad'); msg.textContent = UI.errBody[lang]; body.focus(); return; }
+    send.disabled = true; send.textContent = UI.fSending[lang];
+    try {
+      const r = await fetch(API + '/v1/comment', {
+        method:'POST', headers:{'content-type':'application/json'},
+        body: JSON.stringify({
+          page: PAGE_ID, entry: eid, visitor, lang,
+          name: name.value, email: mail.value, body: body.value,
+          website: hp.value, dwell: Date.now() - opened
+        })
+      });
+      if (r.status === 429){ msg.classList.add('bad'); msg.textContent = UI.errRate[lang]; }
+      else if (!r.ok){ msg.classList.add('bad'); msg.textContent = UI.errNet[lang]; }
+      else {
+        msg.classList.add('ok'); msg.textContent = UI.fQueued[lang];
+        name.value = ''; mail.value = ''; body.value = '';
+      }
+    } catch (_) { msg.classList.add('bad'); msg.textContent = UI.errNet[lang]; }
+    send.disabled = false; send.textContent = UI.fSend[lang];
+  });
+
+  return form;
+}
+
+function buildSocial(card, e){
+  const eid = e.id;
+  const row = el('div','social');
+
+  const likeN = (SOCIAL && SOCIAL.likes[eid]) || 0;
+  const mine = !!(SOCIAL && SOCIAL.mine.includes(eid));
+
+  const likeBtn = el('button','likebtn' + (mine ? ' on' : ''));
+  likeBtn.type = 'button';
+  likeBtn.setAttribute('aria-pressed', String(mine));
+  const likeLabel = el('span'); likeLabel.textContent = (mine ? UI.liked : UI.like)[lang];
+  const likeCount = el('span','n'); likeCount.textContent = likeN ? ' ' + likeN : '';
+  likeBtn.append(heartSvg(), likeLabel, likeCount);
+
+  likeBtn.addEventListener('click', async () => {
+    likeBtn.disabled = true;
+    try {
+      const r = await fetch(API + '/v1/like', {
+        method:'POST', headers:{'content-type':'application/json'},
+        body: JSON.stringify({page: PAGE_ID, entry: eid, visitor})
+      });
+      if (r.ok){
+        const d = await r.json();
+        SOCIAL.likes[eid] = d.count;
+        if (d.liked){ if (!SOCIAL.mine.includes(eid)) SOCIAL.mine.push(eid); }
+        else SOCIAL.mine = SOCIAL.mine.filter(x => x !== eid);
+        likeBtn.classList.toggle('on', d.liked);
+        likeBtn.setAttribute('aria-pressed', String(d.liked));
+        likeLabel.textContent = (d.liked ? UI.liked : UI.like)[lang];
+        likeCount.textContent = d.count ? ' ' + d.count : '';
+      }
+    } catch (_) {}
+    likeBtn.disabled = false;
+  });
+
+  const nCmt = ((SOCIAL && SOCIAL.comments[eid]) || []).length;
+  const cmtBtn = el('button','cmtbtn'); cmtBtn.type = 'button';
+  cmtBtn.textContent = UI.cmt[lang] + (nCmt ? ' ' + nCmt : '');
+  cmtBtn.setAttribute('aria-expanded', String(OPEN.has(eid)));
+
+  row.append(likeBtn, cmtBtn);
+
+  const panel = el('div','cpanel');
+  panel.hidden = !OPEN.has(eid);
+  if (OPEN.has(eid)) panel.append(commentList(eid), commentForm(eid));
+
+  cmtBtn.addEventListener('click', () => {
+    const open = panel.hidden;
+    panel.hidden = !open;
+    cmtBtn.setAttribute('aria-expanded', String(open));
+    if (open){
+      OPEN.add(eid);
+      if (!panel.childElementCount) panel.append(commentList(eid), commentForm(eid));
+    } else OPEN.delete(eid);
+  });
+
+  card.append(row, panel);
+}
+
+function mountSocial(){
+  if (!API_ON || !SOCIAL) return;
+  document.querySelectorAll('.entry').forEach(card => {
+    if (card.querySelector('.social')) return;
+    const e = ENTRIES.find(x => x.id === card.dataset.eid);
+    if (e) buildSocial(card, e);
+  });
+}
+
+async function loadSocial(){
+  if (!API_ON) return;
+  try {
+    const r = await fetch(API + '/v1/state?page=' + encodeURIComponent(PAGE_ID) + '&visitor=' + encodeURIComponent(visitor));
+    if (!r.ok) return;
+    const d = await r.json();
+    SOCIAL = {likes: d.likes || {}, mine: d.mine || [], comments: d.comments || {}};
+    const n = $('modnote');
+    if (n){ n.hidden = false; n.querySelector('span').textContent = UI.modNote[lang]; }
+    mountSocial();
+  } catch (_) { /* offline or not deployed yet — page stays static */ }
+}
+
+/* ------------------------------------------------------------------ render */
+
+function renderEntry(e){
+  const card = el('article','entry');
+  card.dataset.eid = e.id;
+  const top = el('div','entry-top');
+  top.append(pageChip(e));
+  card.append(top);
+
+  const q = el('blockquote', lang === 'zh' ? '' : 'latin');
+  q.textContent = e[lang];
+  card.append(q);
+
+  if (lang !== 'zh') {
+    const o = el('div','orig');
+    const lab = el('p','orig-label'); lab.textContent = UI.orig[lang];
+    const t = el('p'); t.textContent = e.zh;
+    o.append(lab, t); card.append(o);
+  }
+
+  if (e.cut) {
+    const c = el('p','cutnote'); c.textContent = UI.cut[lang];
+    card.append(c);
+  }
+
+  return card;
+}
+
+let filter = 'all';
+
+function renderMain(){
+  const main = $('main'); main.replaceChildren();
+  STORIES.forEach(st => {
+    if (filter !== 'all' && filter !== st.id) return;
+    const sec = el('section','story'); sec.dataset.s = st.id;
+    const head = el('div','story-head');
+    const h2 = el('h2','story-title'); h2.textContent = st.t[lang];
+    head.append(h2);
+    if (lang !== 'zh' && st.zh !== st.t[lang]) { const z = el('span','story-zh'); z.textContent = st.zh; head.append(z); }
+    if (st.range) { const r = el('span','range'); r.textContent = st.range; head.append(r); }
+    const sub = el('p','story-sub'); sub.textContent = st.s[lang];
+    sec.append(head, sub);
+    ENTRIES.filter(e => e.s === st.id).forEach(e => sec.append(renderEntry(e)));
+    main.append(sec);
+  });
+  mountSocial();
+}
+
+function renderChrome(){
+  document.documentElement.lang = (lang === 'zh' ? 'zh-Hans' : lang);
+  $('backlink').textContent = UI.back[lang];
+  $('eyebrow').textContent = UI.eyebrow[lang];
+  $('booktitle').textContent = '《现实一种》';
+  $('byline').textContent = UI.byline[lang];
+
+  const f = $('facts'); f.replaceChildren();
+  UI.facts[lang].forEach(([b, t]) => {
+    const li = el('li'); const strong = el('b'); strong.textContent = b;
+    li.append(strong, document.createTextNode(' ' + t)); f.append(li);
+  });
+
+  $('prov-heading').textContent = UI.provHead[lang];
+  $('prov-body').textContent = UI.provBody[lang];
+  for (let i = 0; i < 4; i++){
+    $('prov-k' + (i+1)).textContent = UI.provKeys[lang][i];
+    $('prov-v' + (i+1)).innerHTML = UI.provVals[lang][i];
+  }
+  const mn = $('modnote');
+  if (mn && SOCIAL) { mn.hidden = false; mn.querySelector('span').textContent = UI.modNote[lang]; }
+
+  const fl = $('filters'); fl.replaceChildren();
+  const mk = (id, label) => {
+    const b = el('button'); b.type = 'button'; b.textContent = label;
+    b.setAttribute('aria-pressed', String(filter === id));
+    b.addEventListener('click', () => { filter = id; renderChrome(); renderMain(); window.scrollTo({top:0, behavior:'smooth'}); });
+    fl.append(b);
+  };
+  mk('all', UI.all[lang]);
+  STORIES.forEach(st => mk(st.id, st.t[lang]));
+
+  $('signature').textContent = UI.sig[lang];
+
+  document.querySelectorAll('.langbar button').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.l === lang)));
+}
+
+document.querySelectorAll('.langbar button').forEach(b => {
+  b.addEventListener('click', () => {
+    lang = b.dataset.l;
+    try { localStorage.setItem('jg-lang', lang); } catch (_) {}
+    renderChrome(); renderMain();
+  });
+});
+
+renderChrome();
+renderMain();
+loadSocial();
+</script>
+</body>
+</html>
