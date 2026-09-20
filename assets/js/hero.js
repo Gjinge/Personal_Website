@@ -11,12 +11,13 @@
   const caret = cover.querySelector('.cover-caret');
   const header = document.querySelector('.site-header');
 
-  /* ---- header: transparent over the painting, solid once the cover is behind us ---- */
+  /* ---- navigation follows the painting and gains a full-width backdrop when sticky ---- */
   let ticking = false;
   const syncHeader = () => {
     const bottom = header ? header.getBoundingClientRect().bottom : 112;
     document.body.style.setProperty('--header-bottom', `${Math.round(bottom)}px`);
-    const limit = cover.offsetHeight - bottom;
+    const stickyTop = header ? parseFloat(getComputedStyle(header).top) || 0 : 0;
+    const limit = cover.offsetTop + cover.offsetHeight - stickyTop;
     document.body.classList.toggle('is-past-cover', scrollY > Math.max(0, limit));
     ticking = false;
   };
