@@ -1,17 +1,28 @@
 (() => {
   'use strict';
   const root = document.documentElement;
+  const themeButton = document.getElementById('theme-toggle');
   const motionButton = document.getElementById('motion-toggle');
   const reducedMotion = matchMedia('(prefers-reduced-motion: reduce)');
   const t = (s) => (window.jgT ? window.jgT(s) : s);
   const save = (key, value) => { try { localStorage.setItem(key, value); } catch (_) {} };
 
   function updateControls() {
+    const light = root.dataset.theme === 'light';
+    const themeLabel = t(light ? 'Switch to dark theme' : 'Switch to light theme');
+    themeButton.setAttribute('aria-label', themeLabel);
+    themeButton.title = themeLabel;
+    document.querySelector('meta[name="theme-color"]').content = light ? '#f3f6fc' : '#080d17';
     motionButton.hidden = reducedMotion.matches;
     const motionLabel = t(root.dataset.motion === 'paused' ? 'Resume decorative motion' : 'Pause decorative motion');
     motionButton.setAttribute('aria-label', motionLabel);
     motionButton.title = motionLabel;
   }
+  themeButton.addEventListener('click', () => {
+    root.dataset.theme = root.dataset.theme === 'light' ? 'dark' : 'light';
+    save('jg-theme', root.dataset.theme);
+    updateControls();
+  });
   motionButton.addEventListener('click', () => {
     root.dataset.motion = root.dataset.motion === 'paused' ? 'running' : 'paused';
     save('jg-motion', root.dataset.motion);

@@ -18,7 +18,8 @@
 <style>
 :root{
   --paper:#faf8f3; --card:#fffdf9; --ink:#1b1a17; --muted:#6f6a60; --dim:#8d8880;
-  --line:#e4ded2; --line-soft:#efe9dd; --mark:#f6d66b; --mark-soft:#fcf2d2; --link:#8a6a12;
+  --line:#e4ded2; --line-soft:#efe9dd; --mark:#f6d66b; --mark-soft:#fcf2d2; --mark-ink:#7a5c07;
+  --link:#8a6a12; --shadow:rgba(27,26,23,.10); --shadow-hi:rgba(27,26,23,.16);
   --serif:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,"Times New Roman","Noto Serif CJK SC","Source Han Serif SC","Songti SC",serif;
   --sans:"Segoe UI",system-ui,-apple-system,"Noto Sans CJK SC","PingFang SC","Hiragino Sans GB","Microsoft YaHei",Arial,sans-serif;
   --mono:Consolas,"SFMono-Regular","Liberation Mono",monospace;
@@ -64,8 +65,8 @@ h1{font-family:var(--serif);font-size:clamp(42px,6.4vw,68px);line-height:1.08;le
 .book-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(172px,1fr));gap:36px 26px}
 .book-card{min-width:0}
 a.cover-link{display:block;text-decoration:none}
-.book-cover{position:relative;display:grid;place-items:center;aspect-ratio:2/3;overflow:hidden;border:1px solid var(--line);border-radius:3px;background:var(--card);box-shadow:0 8px 20px rgba(27,26,23,.10);transition:transform .18s ease,box-shadow .18s ease}
-a.cover-link:hover .book-cover{transform:translateY(-3px);box-shadow:0 14px 28px rgba(27,26,23,.16)}
+.book-cover{position:relative;display:grid;place-items:center;aspect-ratio:2/3;overflow:hidden;border:1px solid var(--line);border-radius:3px;background:var(--card);box-shadow:0 8px 20px var(--shadow);transition:transform .18s ease,box-shadow .18s ease}
+a.cover-link:hover .book-cover{transform:translateY(-3px);box-shadow:0 14px 28px var(--shadow-hi)}
 .book-cover img{display:block;width:100%;height:100%;object-fit:cover}
 .cover-fallback{display:grid;align-content:space-between;width:100%;height:100%;padding:20px 17px;background:linear-gradient(165deg,var(--mark-soft),var(--card) 70%);text-align:left}
 .cf-title{font-family:var(--serif);font-size:21px;font-weight:600;line-height:1.3;overflow-wrap:anywhere}
@@ -76,7 +77,7 @@ a.cover-link:hover .book-cover{transform:translateY(-3px);box-shadow:0 14px 28px
 .book-author{margin:0 0 10px;color:var(--muted);font-size:13px}
 .chips{display:flex;flex-wrap:wrap;gap:6px;margin:0;padding:0;list-style:none}
 .chips li{padding:3px 10px;border-radius:999px;background:var(--line-soft);color:var(--muted);font:11px/1.7 var(--mono)}
-.chips li.is-highlights{background:var(--mark-soft);color:#7a5c07}
+.chips li.is-highlights{background:var(--mark-soft);color:var(--mark-ink)}
 .book-read{margin:10px 0 0;color:var(--dim);font:11px/1.7 var(--mono)}
 
 /* ---------- table ---------- */
@@ -308,7 +309,8 @@ footer{display:flex;gap:18px 30px;flex-wrap:wrap;justify-content:space-between;p
     $('empty-title').textContent = UI.emptyT[lang];
     $('empty-body').textContent = UI.emptyB[lang];
     $('foot-link').textContent = UI.foot[lang];
-    document.querySelectorAll('.langbar button').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.l === lang)));
+
+    document.querySelectorAll('.langbar button[data-l]').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.l === lang)));
 
     if (!books.length) { $('empty').hidden = false; $('toolbar').hidden = true; shelf.replaceChildren(); return; }
     $('empty').hidden = true;
@@ -323,7 +325,7 @@ footer{display:flex;gap:18px 30px;flex-wrap:wrap;justify-content:space-between;p
     try { localStorage.setItem('jg-reading-view', view); } catch (_) {}
     render();
   }));
-  document.querySelectorAll('.langbar button').forEach(b => b.addEventListener('click', () => {
+  document.querySelectorAll('.langbar button[data-l]').forEach(b => b.addEventListener('click', () => {
     lang = b.dataset.l;
     try { localStorage.setItem('jg-lang', lang); } catch (_) {}
     render();
