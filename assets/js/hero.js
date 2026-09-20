@@ -32,7 +32,7 @@
     'Visiting undergraduate at UW–Madison (Fall 2026).',
     'Information engineering undergraduate at SUSTech.'
   ];
-  const TYPE = 62, ERASE = 32, HOLD = 2000, GAP = 420;
+  const TYPE = 35, ERASE = 20, HOLD = 2000, GAP = 300;
 
   const translate = s => (window.jgT ? window.jgT(s) : s);
   const still = () => matchMedia('(prefers-reduced-motion: reduce)').matches || root.dataset.motion === 'paused';
@@ -55,7 +55,7 @@
       chars += 1;
       show(line.slice(0, chars));
       if (chars >= line.length) { erasing = true; timer = setTimeout(tick, HOLD); return; }
-      timer = setTimeout(tick, TYPE + Math.random() * 45);
+      timer = setTimeout(tick, TYPE + Math.random() * 25);
       return;
     }
     chars -= 1;
