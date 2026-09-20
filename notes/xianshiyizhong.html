@@ -180,12 +180,6 @@ footer p{margin:0 0 8px;max-width:72ch}
         <span id="prov-heading"></span>
       </h2>
       <p id="prov-body"></p>
-      <dl>
-        <dt id="prov-k1"></dt><dd id="prov-v1"></dd>
-        <dt id="prov-k2"></dt><dd id="prov-v2"></dd>
-        <dt id="prov-k3"></dt><dd id="prov-v3"></dd>
-        <dt id="prov-k4"></dt><dd id="prov-v4"></dd>
-      </dl>
       <p class="modnote" id="modnote" hidden>
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
         <span></span>
@@ -228,30 +222,6 @@ const UI = {
     fr:'Tout ce qui est cité sur cette page a été écrit en chinois. Les versions anglaise, française et espagnole sont des traductions automatiques produites par un modèle d’IA et n’ont pas été revues par un traducteur professionnel. Le texte chinois original figure sous chaque passage et fait seul foi : en cas de divergence, c’est le chinois qui prime.',
     es:'Todo lo citado en esta página se escribió originalmente en chino. Las versiones en inglés, francés y español son traducciones automáticas generadas por un modelo de IA y no han sido revisadas por un traductor profesional. El original chino aparece bajo cada pasaje y es el único texto con valor de referencia: si ambos discrepan, vale el chino.'
   },
-  provKeys:{
-    en:['Original language','Source text','Translated by','Translated on'],
-    zh:['原文语言','底本','翻译','翻译日期'],
-    fr:['Langue d’origine','Texte source','Traduit par','Date de traduction'],
-    es:['Lengua original','Texto fuente','Traducido por','Fecha de traducción']
-  },
-  provVals:{
-    en:['Chinese (Simplified) — 简体中文',
-        'Yu Hua, 《现实一种》, print edition (余华作品), author’s preface and the novella 现实一种, pp. 1–54.',
-        'Anthropic Claude — <code>claude-opus-5</code> (machine translation, not post-edited)',
-        '19 September 2026'],
-    zh:['简体中文',
-        '余华《现实一种》纸质版（余华作品），自序与《现实一种》正文，p.1–54。',
-        'Anthropic Claude — <code>claude-opus-5</code>（机器翻译，未经人工润色）',
-        '2026 年 9 月 19 日'],
-    fr:['chinois simplifié — 简体中文',
-        'Yu Hua, 《现实一种》, édition papier (余华作品), préface de l’auteur et la nouvelle 现实一种, p. 1–54.',
-        'Anthropic Claude — <code>claude-opus-5</code> (traduction automatique, sans post-édition)',
-        '19 septembre 2026'],
-    es:['chino simplificado — 简体中文',
-        'Yu Hua, 《现实一种》, edición impresa (余华作品), prefacio del autor y la novela corta 现实一种, pp. 1–54.',
-        'Anthropic Claude — <code>claude-opus-5</code> (traducción automática, sin posedición)',
-        '19 de septiembre de 2026']
-  },
   all:{en:'All sections', zh:'全部', fr:'Tout', es:'Todo'},
   orig:    {en:'Chinese original', zh:'原文', fr:'Original chinois', es:'Original en chino'},
   cut:{
@@ -270,43 +240,43 @@ const STORIES = [
       zh:'写作给了他第二个人生，两个人生的关系就像健康和疾病。',
       fr:'L’écriture lui a donné une seconde vie ; les deux vies sont entre elles comme la santé et la maladie.',
       es:'La escritura le dio una segunda vida; ambas vidas se relacionan como la salud y la enfermedad.'}},
-  {id:'p1', zh:'一', range:'p.1 – p.7',
+  {id:'p1', zh:'一', range:'',
    t:{en:'Part one', zh:'一', fr:'Première partie', es:'Parte uno'},
    s:{en:'One courtyard, three generations. A four-year-old picks up his baby cousin, and puts him down on the concrete.',
       zh:'一个院子，三代人。四岁的皮皮抱起堂弟，然后松了手。',
       fr:'Une cour, trois générations. Un garçon de quatre ans soulève son cousin nourrisson, puis le lâche sur le ciment.',
       es:'Un patio, tres generaciones. Un niño de cuatro años levanta a su primo bebé y lo suelta sobre el cemento.'}},
-  {id:'p2', zh:'二', range:'≈ p.8 – p.18',
+  {id:'p2', zh:'二', range:'',
    t:{en:'Part two', zh:'二', fr:'Deuxième partie', es:'Parte dos'},
    s:{en:'The mother comes home early. Shan Feng kicks the child who killed his son, and the brothers begin.',
       zh:'母亲提前下班回家。山峰一脚踢死了皮皮，兄弟之间就此开始。',
       fr:'La mère rentre plus tôt. Shan Feng tue l’enfant d’un coup de pied, et tout commence entre les frères.',
       es:'La madre vuelve antes de tiempo. Shan Feng mata al niño de una patada y empieza lo que hay entre los hermanos.'}},
-  {id:'p3', zh:'三', range:'≈ p.19 – p.26',
+  {id:'p3', zh:'三', range:'',
    t:{en:'Part three', zh:'三', fr:'Troisième partie', es:'Parte tres'},
    s:{en:'The old woman listens to her own intestines rotting. Downstairs, a cleaver is passed from hand to hand.',
       zh:'老太太听着自己的肠子腐烂。楼下，一把菜刀在几个人手里传来传去。',
       fr:'La vieille femme écoute ses intestins pourrir. En bas, un couperet passe de main en main.',
       es:'La anciana escucha cómo se le pudren los intestinos. Abajo, un cuchillo pasa de mano en mano.'}},
-  {id:'p4', zh:'四', range:'≈ p.27 – p.39',
+  {id:'p4', zh:'四', range:'',
    t:{en:'Part four', zh:'四', fr:'Quatrième partie', es:'Parte cuatro'},
    s:{en:'A rope, a tree, cooked bones smeared on the soles of the feet, and a puppy that keeps licking.',
       zh:'一根麻绳，一棵树，涂在脚心上的烧烂的肉骨头，和一条舔个不停的小狗。',
       fr:'Une corde, un arbre, des os cuits étalés sous la plante des pieds, et un chiot qui lèche sans fin.',
       es:'Una soga, un árbol, huesos cocidos untados en las plantas de los pies y un cachorro que no deja de lamer.'}},
-  {id:'p5', zh:'五', range:'≈ p.40 – p.45',
+  {id:'p5', zh:'五', range:'',
    t:{en:'Part five', zh:'五', fr:'Cinquième partie', es:'Parte cinco'},
    s:{en:'A month later, on a truck, in the front row where he himself used to stand and watch.',
       zh:'一个月后，他被押上卡车，去到他自己从前常站着观看的那个位置。',
       fr:'Un mois plus tard, sur un camion, au premier rang où lui-même se tenait autrefois pour regarder.',
       es:'Un mes después, en un camión, en la primera fila donde él mismo solía ponerse a mirar.'}},
-  {id:'p6', zh:'六', range:'≈ p.46 – p.48',
+  {id:'p6', zh:'六', range:'',
    t:{en:'Part six', zh:'六', fr:'Sixième partie', es:'Parte seis'},
    s:{en:'Death arrives in the old woman like a tide. The widow walks to the detention house with a plan.',
       zh:'死亡像潮水一样淹过老太太。弟媳则带着一个打算走向拘留所。',
       fr:'La mort monte dans la vieille femme comme une marée. La veuve marche vers le dépôt avec une idée en tête.',
       es:'La muerte sube en la anciana como una marea. La viuda camina hacia el calabozo con un plan.'}},
-  {id:'p7', zh:'七', range:'≈ p.49 – p.54',
+  {id:'p7', zh:'七', range:'',
    t:{en:'Part seven', zh:'七', fr:'Septième partie', es:'Parte siete'},
    s:{en:'The body is divided on a ping-pong table, and each part goes on living somewhere else.',
       zh:'尸体在乒乓桌上被瓜分，每一件都到别处继续活着。',
@@ -491,7 +461,7 @@ const ENTRIES = [
  es:'En ese momento Shan Gang vio aparecer a su cuñada, llena de golpes, gritando «te voy a matar a mordiscos» mientras se lanzaba sobre Pipi. A la vez Shan Feng le metió una patada en la entrepierna. El cuerpo de Pipi salió por el aire y cayó de cabeza sobre el cemento con un ruido pesado. Vio a su hijo debatirse unas cuantas veces y luego estirar los miembros y quedarse quieto, como paralítico.'},
 /* ========== 三 ========== */
 {id:'r3-01',s:'p3',p:'19',a:1,
- zh:'那时候老太太听到“咕咚”一声，这声音使她大吃一惊。声音是从腹部钻出来的。仿佛已经憋了很久总算散发出来，声音里充满了怨气。她马上断定那是肠子在腐烂，而且这种腐烂似乎已经由来已久。',
+ zh:'那时候老太太听到“咕咚”一声，这声音使她大吃一惊。声音是从腹部钻出来的，仿佛已经憋了很久总算散发出来，声音里充满了怨气。她马上断定那是肠子在腐烂，而且这种腐烂似乎已经由来已久。',
  en:'Just then the old woman heard a gurgling thud, and it gave her a shock. The sound had bored its way out of her belly. It was as though it had been held in a long time and had finally got out, and it was full of resentment. She concluded at once that her intestines were rotting, and that the rot had evidently been going on for some time.',
  fr:'À ce moment la vieille femme entendit un glouglou sourd qui la fit sursauter. Le bruit était sorti de son ventre. On aurait dit qu’il y était retenu depuis longtemps et s’échappait enfin, plein de rancune. Elle conclut aussitôt que ses intestins pourrissaient, et que cette pourriture durait depuis un bon moment.',
  es:'En ese momento la anciana oyó un borboteo sordo que la sobresaltó. El sonido había salido perforando su vientre. Parecía llevar mucho tiempo contenido y escaparse al fin, cargado de rencor. Dedujo en el acto que se le estaban pudriendo los intestinos, y que esa podredumbre venía de largo.'},
@@ -501,10 +471,10 @@ const ENTRIES = [
  fr:'Ensuite elle sentit même l’odeur de la pourriture, et cette odeur sortait de sa propre bouche. Bientôt toute la pièce en fut pleine, comme si la maison elle aussi pourrissait. Elle comprit alors pourquoi elle n’avait plus envie de manger.',
  es:'Después percibió incluso el olor de la podredumbre, y ese olor le salía de la propia boca. Al poco la habitación entera estaba llena de él, como si también la casa se pudriera. Así supo por qué no tenía ganas de comer.'},
 {id:'r3-03',s:'p3',p:'20',
- zh:'她望着儿子发怔。儿子的血这时候慢慢流出来了，那血看去像红墨水。',
- en:'She stared blankly at her son. His blood was seeping out now, and it looked like red ink.',
- fr:'Elle contemplait son fils, hébétée. Le sang sortait lentement à présent, et il avait l’air d’encre rouge.',
- es:'Miraba a su hijo, aturdida. La sangre le salía ya despacio, y parecía tinta roja.'},
+ zh:'她望着儿子发怔。儿子头部的血这时候慢慢流出来了，那血看去像红墨水。',
+ en:'She stared blankly at her son. Blood was seeping from his head now, and it looked like red ink.',
+ fr:'Elle contemplait son fils, hébétée. Le sang coulait lentement de sa tête à présent, et il avait l’air d’encre rouge.',
+ es:'Miraba a su hijo, aturdida. La sangre le salía ya despacio de la cabeza, y parecía tinta roja.'},
 {id:'r3-04',s:'p3',p:'20',
  zh:'于是她重新转回身，对站在那里也一动不动的山峰说：“我丈夫吓傻了。”然后她又对儿子说：“你父亲吓傻了。”接着她自言自语：“我该怎么办呢？”',
  en:'So she turned back again and said to Shan Feng, who was standing there just as motionless: “My husband has been frightened out of his wits.” Then she said to her son: “Your father has been frightened out of his wits.” Then she said to herself: “What am I supposed to do?”',
@@ -561,7 +531,7 @@ const ENTRIES = [
  fr:'Shan Gang ne lava pas les os. Il les mit dans une marmite sans aucun assaisonnement, la porta à la cuisine, y ajouta un peu d’eau et la posa sur le gaz.',
  es:'Shan Gang no lavó los huesos. Los echó en una olla sin condimento alguno, la llevó a la cocina, le añadió un poco de agua y la puso al fuego.'},
 /* ========== 四 ========== */
-{id:'r4-01',s:'p4',p:'27',a:1,
+{id:'r4-01',s:'p3',p:'27',a:1,
  zh:'“我只要你揍他一拳。”她又说。',
  en:'“All I want is for you to hit him once,” she said again.',
  fr:'« Je veux seulement que tu lui donnes un coup de poing », répéta-t-elle.',
@@ -672,22 +642,22 @@ const ENTRIES = [
  fr:'Elle répéta donc : « Il est temps que tu t’enfuies. » Shan Gang hocha enfin la tête. Il regarda sa montre : il manquait une minute pour huit heures et demie. Il dit alors : « Laisse-moi rester assis encore une minute. »',
  es:'Por eso ella repitió: «Ya deberías huir». Solo entonces asintió Shan Gang. Miró el reloj: faltaba un minuto para las ocho y media. Y dijo: «Déjame estar sentado un minuto más».'},
 /* ========== 五 ========== */
-{id:'r5-01',s:'p5',p:'41',a:1,
+{id:'r5-01',s:'p4',p:'41',a:1,
  zh:'他那么站了很久，可他听到的都是别人小便的声音，他不知为何居然尿不出来。……随后他才发现了什么，他对自己说：“原来我不是来撒尿的。”',
  en:'He stood there a long time, but all he heard was other men urinating; for some reason nothing would come. … Then he realised something, and said to himself: “So I didn’t come in here to piss after all.”',
  fr:'Il resta là longtemps, mais n’entendait que les autres uriner ; pour une raison qu’il ignorait, rien ne venait. … Puis il comprit quelque chose et se dit : « Ce n’est donc pas pour pisser que je suis venu. »',
  es:'Estuvo allí mucho rato, pero solo oía orinar a los demás; por alguna razón no le salía nada. … Entonces cayó en la cuenta de algo y se dijo: «Así que no he venido a mear».'},
-{id:'r5-02',s:'p5',p:'41',a:1,
+{id:'r5-02',s:'p4',p:'41',a:1,
  zh:'但他忘了将那玩意儿放进去，所以那玩意儿露在外面，随着他走路的节奏正一颤一颤，十分得意。他一直那么走着。起先居然没人发现。',
  en:'But he had forgotten to put the thing away, so it hung out in the open, bobbing along in time with his steps, thoroughly pleased with itself. He went on walking like that. At first, remarkably, nobody noticed.',
  fr:'Mais il avait oublié de le ranger, si bien que la chose pendait au-dehors et tressautait au rythme de ses pas, fort satisfaite d’elle-même. Il continua ainsi. Au début, chose étonnante, personne ne remarqua rien.',
  es:'Pero se había olvidado de guardársela, de modo que la cosa le colgaba fuera y se bamboleaba al ritmo de sus pasos, muy ufana. Siguió caminando así. Al principio, curiosamente, nadie se dio cuenta.'},
-{id:'r5-03',s:'p5',p:'41',a:1,
+{id:'r5-03',s:'p4',p:'41',a:1,
  zh:'然而他随即发现所有的人都在顷刻之间变了模样，都前仰后合或者东倒西歪了。一些女人像是遇上强盗一样避得远远的。他心里觉得很滑稽，于是就笑了起来。',
  en:'Then he noticed that in an instant everyone had changed shape, doubling over or reeling from side to side. Some women kept their distance as though they had run into a bandit. He found it very comical, and began to laugh.',
  fr:'Puis il s’aperçut qu’en un instant tout le monde avait changé d’allure : les gens se pliaient en deux ou titubaient. Des femmes s’écartaient au loin comme devant un brigand. Il trouva cela très drôle et se mit à rire.',
  es:'Luego advirtió que en un instante todos habían cambiado de forma: se doblaban o se tambaleaban. Algunas mujeres se apartaban como ante un bandido. Le pareció comiquísimo y se echó a reír.'},
-{id:'r5-04',s:'p5',p:'42',a:1,
+{id:'r5-04',s:'p4',p:'42',a:1,
  zh:'三小时以后他被人推醒，他看到几个武警站在他面前，其中一个人对他说：“请你把那东西放进去。”',
  en:'Three hours later someone shook him awake. He saw several armed police standing in front of him, and one of them said: “Please put that thing away.”',
  fr:'Trois heures plus tard on le réveilla en le secouant. Il vit plusieurs policiers armés devant lui, et l’un d’eux lui dit : « Veuillez ranger cette chose. »',
@@ -732,7 +702,7 @@ const ENTRIES = [
  en:'This time someone did answer: “You’re not dead yet.” Shocked and delighted at once, Shan Gang shouted with all his strength: “Get me to a hospital, quickly.”',
  fr:'Cette fois quelqu’un répondit : « Tu n’es pas encore mort. » À la fois effrayé et ravi, Shan Gang cria de toutes ses forces : « Vite, emmenez-moi à l’hôpital. »',
  es:'Esta vez alguien sí le contestó: «Todavía no estás muerto». Asustado y encantado a la vez, Shan Gang gritó con todas sus fuerzas: «¡Llévenme al hospital, rápido!».'},
-{id:'r5-13',s:'p5',p:'45',a:1,cut:1,
+{id:'r5-13',s:'p5',p:'45',a:1,
  zh:'第二枪打进了山岗的后脑勺，这次山岗没翻筋斗，而是脑袋沉重地撞在了地上，脑袋将他的屁股高高支起。他仍然没有死，他的屁股像是受寒似的抖个不停。',
  en:'The second shot went into the back of Shan Gang’s head. This time he did not somersault; his head struck the ground heavily and propped his backside high in the air. He still was not dead: his backside shivered on and on, as though with cold.',
  fr:'La deuxième balle entra dans l’arrière du crâne de Shan Gang. Cette fois il ne fit pas de culbute : sa tête heurta lourdement le sol et souleva bien haut son derrière. Il n’était toujours pas mort : son derrière tremblait sans arrêt, comme de froid.',
@@ -897,6 +867,7 @@ const LOCALE = {en:'en-GB', zh:'zh-CN', fr:'fr-FR', es:'es-ES'};
 
 function pageChip(e){
   const n = el('span', 'page' + (e.a || e.np ? ' approx' : ''));
+  n.title = ({en:'Original paper-page reference; not verified against the EPUB.',zh:'原纸本页码记录；未能通过 EPUB 核实。',fr:'Repère de page papier d’origine ; non vérifié dans l’EPUB.',es:'Referencia original de página impresa; no verificada con el EPUB.'})[lang];
   n.textContent = e.np ? UI.pref[lang] : (e.a ? '≈ p.' : 'p.') + e.p;
   return n;
 }
@@ -1120,10 +1091,6 @@ function renderChrome(){
 
   $('prov-heading').textContent = UI.provHead[lang];
   $('prov-body').textContent = UI.provBody[lang];
-  for (let i = 0; i < 4; i++){
-    $('prov-k' + (i+1)).textContent = UI.provKeys[lang][i];
-    $('prov-v' + (i+1)).innerHTML = UI.provVals[lang][i];
-  }
   const mn = $('modnote');
   if (mn && SOCIAL) { mn.hidden = false; mn.querySelector('span').textContent = UI.modNote[lang]; }
 

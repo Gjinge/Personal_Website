@@ -73,9 +73,9 @@ switcher, translation provenance box, section filter, entry cards with page numb
 tags, signature footer.
 
 **Translation provenance.** Every translated note page carries a `.provenance` block naming the
-source language, the print edition and page range, the translator
-(`Anthropic Claude — claude-opus-5`, machine translation, not human-edited), and the date —
-plus the statement that the Chinese original governs where the translation differs.
+AI-translation notice and the statement that the Chinese original governs where the translation differs.
+Do not display the original-language, source-text, translator/model, or translation-date detail rows
+(owner request, 2026-09-20).
 In non-Chinese modes every quotation shows the Chinese original beneath it (`.orig`).
 
 **Adding a book.** New self-contained page under `notes/` → one entry appended to

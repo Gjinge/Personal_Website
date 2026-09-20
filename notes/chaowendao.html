@@ -185,12 +185,6 @@ footer p{margin:0 0 8px;max-width:72ch}
         <span id="prov-heading"></span>
       </h2>
       <p id="prov-body"></p>
-      <dl>
-        <dt id="prov-k1"></dt><dd id="prov-v1"></dd>
-        <dt id="prov-k2"></dt><dd id="prov-v2"></dd>
-        <dt id="prov-k3"></dt><dd id="prov-v3"></dd>
-        <dt id="prov-k4"></dt><dd id="prov-v4"></dd>
-      </dl>
       <p class="modnote" id="modnote" hidden>
         <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
         <span></span>
@@ -232,30 +226,6 @@ const UI = {
     zh:'本页引用的全部文字原文为中文。页面上的英文、法文、西班牙文均由 AI 模型机器翻译生成，未经专业译者校订。每条引文下方均附中文原文，原文为唯一准据 —— 若译文与原文有出入，以中文为准。',
     fr:'Tout ce qui est cité sur cette page a été écrit en chinois. Les versions anglaise, française et espagnole sont des traductions automatiques produites par un modèle d’IA et n’ont pas été revues par un traducteur professionnel. Le texte chinois original figure sous chaque passage et fait seul foi : en cas de divergence, c’est le chinois qui prime.',
     es:'Todo lo citado en esta página se escribió originalmente en chino. Las versiones en inglés, francés y español son traducciones automáticas generadas por un modelo de IA y no han sido revisadas por un traductor profesional. El original chino aparece bajo cada pasaje y es el único texto con valor de referencia: si ambos discrepan, vale el chino.'
-  },
-  provKeys:{
-    en:['Original language','Source text','Translated by','Translated on'],
-    zh:['原文语言','底本','翻译','翻译日期'],
-    fr:['Langue d’origine','Texte source','Traduit par','Date de traduction'],
-    es:['Lengua original','Texto fuente','Traducido por','Fecha de traducción']
-  },
-  provVals:{
-    en:['Chinese (Simplified) — 简体中文',
-        'Liu Cixin, 《朝闻道》, print edition, pp. 1–258. The story 朝闻道 was additionally checked line by line against an EPUB of the text.',
-        'Anthropic Claude — <code>claude-opus-5</code> (machine translation, not post-edited)',
-        '11 September 2026'],
-    zh:['简体中文',
-        '刘慈欣《朝闻道》纸质版，p.1–258。其中《朝闻道》一篇另与 EPUB 正文逐句校对。',
-        'Anthropic Claude — <code>claude-opus-5</code>（机器翻译，未经人工润色）',
-        '2026 年 9 月 11 日'],
-    fr:['chinois simplifié — 简体中文',
-        'Liu Cixin, 《朝闻道》, édition papier, p. 1–258. La nouvelle 朝闻道 a en outre été collationnée phrase par phrase avec un EPUB.',
-        'Anthropic Claude — <code>claude-opus-5</code> (traduction automatique, sans post-édition)',
-        '11 septembre 2026'],
-    es:['chino simplificado — 简体中文',
-        'Liu Cixin, 《朝闻道》, edición impresa, pp. 1–258. El relato 朝闻道 se cotejó además frase por frase con un EPUB.',
-        'Anthropic Claude — <code>claude-opus-5</code> (traducción automática, sin posedición)',
-        '11 de septiembre de 2026']
   },
   all:{en:'All stories', zh:'全部篇目', fr:'Toutes les nouvelles', es:'Todos los relatos'},
   kinds:{
@@ -1225,10 +1195,6 @@ function renderChrome(){
 
   $('prov-heading').textContent = UI.provHead[lang];
   $('prov-body').textContent = UI.provBody[lang];
-  for (let i = 0; i < 4; i++){
-    $('prov-k' + (i+1)).textContent = UI.provKeys[lang][i];
-    $('prov-v' + (i+1)).innerHTML = UI.provVals[lang][i];
-  }
   const mn = $('modnote');
   if (mn && SOCIAL) { mn.hidden = false; mn.querySelector('span').textContent = UI.modNote[lang]; }
 
