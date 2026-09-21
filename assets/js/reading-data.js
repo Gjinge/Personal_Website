@@ -6,6 +6,15 @@
 //   cover      — site-relative image path; omit and a typographic cover is drawn
 window.readingNotes = [
   {
+    title: '镜子',
+    author: '刘慈欣 Liu Cixin',
+    finished: '2025-03-07',
+    read: '5–7 Mar 2025',
+    highlights: 25,
+    cover: 'assets/img/covers/jingzi.jpg',
+    url: 'notes/jingzi.html'
+  },
+  {
     title: '现实一种',
     author: '余华 Yu Hua',
     finished: '2025-03-04',

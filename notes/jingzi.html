@@ -1,0 +1,853 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<title>镜子 · Reading Notes — Liu Cixin</title>
+<meta name="description" content="Reading notes on Liu Cixin's collection 镜子: 25 passages copied from the paper book with their context and page numbers. Chinese original with AI translations into English, French and Spanish.">
+<style>
+:root{
+  --bg:#faf8f3; --panel:#fffdf9; --panel-2:#fffdf9; --line:#e4ded2; --line-soft:#efe9dd; --line-hi:#d8cfbc;
+  --ink:#1b1a17; --muted:#6f6a60; --dim:#8d8880;
+  --accent:#8a6a12; --accent-2:#b07d18; --mark:#a1541c; --warn:#6f5aa0;
+  --like:#c03a63; --ok:#2f7d55;
+  --chip-bg:#fcf2d2; --chip-border:rgba(246,214,107,.65); --chip-ink:#7a5c07;
+  --quote-rule:#e2d7b8; --toc-bg:rgba(250,248,243,.93);
+  --prov-bg:rgba(111,90,160,.07); --prov-border:rgba(111,90,160,.30); --prov-ink:#4a4459; --code-bg:rgba(111,90,160,.10);
+  --input-bg:#ffffff; --btn-bg:#f6d66b; --btn-border:#e8c85a; --on-btn:#1b1a17;
+  --glow-a:rgba(246,214,107,.16); --glow-b:rgba(200,170,120,.10);
+  --note-bg:rgba(161,84,28,.07); --note-border:rgba(161,84,28,.28); --note-ink:#5a3418; --note-orig:#7a5a45;
+  --serif:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,"Times New Roman","Noto Serif CJK SC","Source Han Serif SC","Songti SC",serif;
+  --sans:"Segoe UI",system-ui,-apple-system,"Noto Sans CJK SC","PingFang SC","Hiragino Sans GB","Microsoft YaHei",Arial,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+  background-image:radial-gradient(1200px 600px at 15% -10%,var(--glow-a),transparent 60%),
+                   radial-gradient(900px 500px at 95% 8%,var(--glow-b),transparent 60%);
+  background-attachment:fixed;}
+.wrap{max-width:900px;margin:0 auto;padding:16px}
+a{color:var(--accent)}
+
+/* ---------- language bar ---------- */
+.langbar{display:flex;justify-content:flex-end;gap:6px;padding-block:14px 0;flex-wrap:wrap}
+.langbar a.back{margin-right:auto;font-size:.8rem;color:var(--muted);text-decoration:none;align-self:center}
+.langbar a.back:hover{color:var(--ink)}
+.langbar button{background:transparent;border:1px solid var(--line);color:var(--muted);border-radius:999px;
+  padding:5px 12px;font-size:.76rem;letter-spacing:.05em;cursor:pointer;font-family:inherit;transition:.15s}
+.langbar button:hover{color:var(--ink);border-color:var(--accent)}
+.langbar button[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:var(--bg);font-weight:600}
+
+/* ---------- header ---------- */
+header.hero{padding-block:34px 28px;border-bottom:1px solid var(--line)}
+.eyebrow{font-size:.74rem;letter-spacing:.22em;text-transform:uppercase;color:var(--dim);margin:0 0 14px}
+h1{font-family:var(--serif);font-size:clamp(1.9rem,6vw,3rem);line-height:1.25;margin:0 0 6px;font-weight:600}
+h1 .by{display:block;font-family:var(--sans);font-size:.9rem;font-weight:400;letter-spacing:.16em;color:var(--muted);margin-top:12px}
+.hero-note{color:var(--muted);max-width:62ch;margin:18px 0 0;font-size:.95rem}
+.facts{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px;padding:0;list-style:none}
+.facts li{background:var(--panel);border:1px solid var(--line);border-radius:999px;
+  padding:7px 14px;font-size:.8rem;color:var(--muted)}
+.facts b{color:var(--ink);font-weight:600}
+
+/* ---------- provenance banner ---------- */
+.provenance{margin-top:26px;border:1px solid var(--prov-border);background:var(--prov-bg);
+  border-radius:14px;padding:18px 20px}
+.provenance h2{font-family:var(--sans);font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--warn);margin:0 0 10px;font-weight:700;display:flex;align-items:center;gap:8px}
+.provenance h2 svg{width:15px;height:15px;flex:0 0 auto;stroke:currentColor;fill:none;stroke-width:1.8}
+.provenance p{margin:0 0 8px;font-size:.88rem;color:var(--prov-ink)}
+.provenance p:last-child{margin-bottom:0}
+.provenance dl{margin:12px 0 0;display:grid;grid-template-columns:auto 1fr;gap:5px 14px;font-size:.82rem}
+.provenance dt{color:var(--warn);white-space:nowrap}
+.provenance dd{margin:0;color:var(--prov-ink)}
+.provenance code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.94em;
+  background:var(--code-bg);padding:1px 6px;border-radius:5px;color:var(--prov-ink)}
+
+/* ---------- toc / filter ---------- */
+nav.toc{position:sticky;top:0;z-index:5;background:var(--toc-bg);backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line);margin-inline:-16px;padding:10px 16px}
+.toc-row{max-width:900px;margin:0 auto;display:flex;gap:8px;overflow-x:auto;scrollbar-width:thin;padding-bottom:2px}
+.toc-row button{flex:0 0 auto;background:transparent;border:1px solid var(--line);color:var(--muted);
+  border-radius:999px;padding:6px 13px;font-size:.8rem;cursor:pointer;font-family:inherit;white-space:nowrap;transition:.15s}
+.toc-row button:hover{color:var(--ink);border-color:var(--accent)}
+.toc-row button[aria-pressed="true"]{background:var(--btn-bg);border-color:var(--btn-border);color:var(--on-btn);font-weight:600}
+
+/* ---------- story ---------- */
+section.story{padding-block:44px 8px;border-bottom:1px solid var(--line)}
+section.story:last-of-type{border-bottom:0}
+.story-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:12px;margin-bottom:4px}
+h2.story-title{font-family:var(--serif);font-size:clamp(1.35rem,4vw,1.8rem);margin:0;font-weight:600}
+.story-zh{font-family:var(--serif);color:var(--muted);font-size:1rem}
+.range{font-size:.78rem;color:var(--dim);letter-spacing:.06em}
+.story-sub{color:var(--muted);font-size:.88rem;margin:8px 0 26px;max-width:62ch}
+
+/* ---------- entry ---------- */
+.entry{background:var(--panel-2);border:1px solid var(--line);border-radius:14px;padding:20px 22px;margin-bottom:16px}
+.entry:hover{border-color:var(--line-hi)}
+.entry-top{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-bottom:12px}
+.page{font-family:var(--serif);font-size:.82rem;color:var(--chip-ink);border:1px solid var(--chip-border);
+  background:var(--chip-bg);border-radius:6px;padding:2px 9px;letter-spacing:.04em}
+.page.approx{color:var(--muted);border-color:var(--line);background:transparent}
+blockquote{margin:0;font-family:var(--serif);font-size:1.02rem;line-height:2;color:var(--ink);
+  border-left:2px solid var(--quote-rule);padding-left:16px}
+blockquote.latin{line-height:1.85}
+blockquote em{font-style:italic;color:var(--dim)}
+.cutnote{margin:12px 0 0;font-size:.78rem;color:var(--dim);font-style:italic}
+blockquote b{color:var(--ink);font-weight:600}
+.orig{margin:14px 0 0;border-left:2px solid var(--line);padding-left:16px}
+.orig-label{font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:var(--dim);margin:0 0 6px;
+  display:flex;align-items:center;gap:6px}
+.orig-label::before{content:"";width:14px;height:1px;background:var(--dim);display:inline-block}
+.orig p{margin:0;font-family:var(--serif);font-size:.94rem;line-height:1.95;color:var(--muted)}
+
+/* ---------- footer ---------- */
+footer{padding-block:40px 60px;color:var(--dim);font-size:.82rem;border-top:1px solid var(--line);margin-top:40px}
+footer p{margin:0 0 8px;max-width:72ch}
+
+/* ---------- likes + comments ---------- */
+.modnote{margin:14px 0 0;font-size:.82rem;color:var(--muted);display:flex;gap:8px;align-items:flex-start}
+.modnote[hidden]{display:none}
+.modnote svg{width:14px;height:14px;flex:0 0 auto;margin-top:5px;stroke:var(--ok);fill:none;stroke-width:1.8}
+.social{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-top:14px;
+  padding-top:13px;border-top:1px solid var(--line-soft)}
+.social button{background:transparent;border:1px solid var(--line);color:var(--muted);border-radius:999px;
+  padding:5px 13px;font-size:.78rem;font-family:inherit;cursor:pointer;display:inline-flex;align-items:center;
+  gap:6px;transition:.15s}
+.social button:hover{color:var(--ink);border-color:var(--accent)}
+.social button:disabled{opacity:.5;cursor:default}
+.social .heart{width:13px;height:13px;stroke:currentColor;fill:none;stroke-width:1.9}
+.social .likebtn.on{color:var(--like);border-color:rgba(192,58,99,.35);background:rgba(192,58,99,.07)}
+.social .likebtn.on .heart{fill:currentColor;stroke:currentColor}
+.social .n{font-variant-numeric:tabular-nums;opacity:.85}
+.social .spacer{flex:1}
+.cpanel{margin-top:14px;border-top:1px dashed var(--line);padding-top:14px}
+.cpanel[hidden]{display:none}
+.clist{margin:0 0 14px;padding:0;list-style:none;display:flex;flex-direction:column;gap:10px}
+.citem{background:var(--panel-2);border:1px solid var(--line-soft);border-radius:10px;padding:11px 13px}
+.citem .who{font-size:.78rem;color:var(--accent);font-weight:600}
+.citem .at{font-size:.72rem;color:var(--dim);margin-left:8px}
+.citem p{margin:5px 0 0;font-size:.9rem;white-space:pre-wrap;color:var(--ink)}
+.cnone{color:var(--dim);font-size:.84rem;margin:0 0 14px}
+.cform{display:flex;flex-direction:column;gap:8px}
+.cform .two{display:flex;gap:8px;flex-wrap:wrap}
+.cform .two>*{flex:1 1 180px;min-width:0}
+.cform input,.cform textarea{background:var(--input-bg);border:1px solid var(--line);color:var(--ink);
+  border-radius:8px;padding:9px 11px;font-family:inherit;font-size:.86rem;width:100%}
+.cform textarea{min-height:84px;resize:vertical;line-height:1.65}
+.cform input:focus,.cform textarea:focus{outline:none;border-color:var(--accent)}
+.cform .hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
+.cform .send{align-self:flex-start;background:var(--btn-bg);border:1px solid var(--btn-border);color:var(--on-btn);
+  font-weight:600;border-radius:999px;padding:7px 18px;font-size:.82rem;font-family:inherit;cursor:pointer}
+.cform .send:disabled{opacity:.55;cursor:default}
+.cmsg{font-size:.82rem;min-height:1.3em;margin:0}
+.cmsg.ok{color:var(--ok)}
+.cmsg.bad{color:var(--mark)}
+.cmoderation{font-size:.74rem;color:var(--dim);margin:0}
+
+.ctx{margin:16px 0 0;padding:14px 16px;border-radius:10px;background:var(--panel-2);border:1px solid var(--line-soft)}
+.ctx-label{font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:var(--dim);margin:0 0 7px;display:flex;align-items:center;gap:6px}
+.ctx-label::before{content:"";width:14px;height:1px;background:var(--dim);display:inline-block}
+.ctx p{margin:0;font-size:.88rem;line-height:1.85;color:var(--muted)}
+.ctx p.zh{margin-top:9px;font-family:var(--serif);font-size:.9rem;line-height:1.9;color:var(--dim)}
+@media (max-width:560px){
+  .entry{padding:16px 15px;border-radius:12px}
+  blockquote{font-size:.98rem;line-height:1.95;padding-left:13px}
+  .provenance{padding:15px 16px}
+}
+@media print{
+  body{background:#fff;color:#000}
+  nav.toc,.langbar{display:none}
+  .entry{break-inside:avoid;border-color:#ccc;background:#fff}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="langbar">
+    <a class="back" href="../reading.html" id="backlink">← Reading Notes</a>
+    <button type="button" data-l="en" aria-pressed="true">English</button>
+    <button type="button" data-l="zh" aria-pressed="false">简体中文</button>
+    <button type="button" data-l="fr" aria-pressed="false">Français</button>
+    <button type="button" data-l="es" aria-pressed="false">Español</button>
+  </div>
+
+  <header class="hero">
+    <p class="eyebrow" id="eyebrow"></p>
+    <h1><span id="booktitle"></span><span class="by" id="byline"></span></h1>
+    <ul class="facts" id="facts"></ul>
+
+    <section class="provenance" aria-labelledby="prov-title">
+      <h2 id="prov-title">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v18M3 7h6M15 7h6M6 12l-3 5h6ZM18 12l-3 5h6Z"/></svg>
+        <span id="prov-heading"></span>
+      </h2>
+      <p id="prov-body"></p>
+      <dl>
+        <dt id="prov-k1"></dt><dd id="prov-v1"></dd>
+        <dt id="prov-k2"></dt><dd id="prov-v2"></dd>
+        <dt id="prov-k3"></dt><dd id="prov-v3"></dd>
+        <dt id="prov-k4"></dt><dd id="prov-v4"></dd>
+      </dl>
+      <p class="modnote" id="modnote" hidden>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+        <span></span>
+      </p>
+    </section>
+  </header>
+
+  <nav class="toc" aria-label="Stories"><div class="toc-row" id="filters"></div></nav>
+
+  <main id="main"></main>
+
+  <footer>
+    <p style="margin-top:18px" id="signature"></p>
+  </footer>
+
+</div>
+
+<script>
+const LANGS = ['en','zh','fr','es'];
+
+const UI = {
+  back:   {en:'← Reading Notes', zh:'← 读书笔记', fr:'← Notes de lecture', es:'← Notas de lectura'},
+  eyebrow:{en:'Reading notes · Liu Cixin', zh:'读书笔记 · 刘慈欣', fr:'Notes de lecture · Liu Cixin', es:'Notas de lectura · Liu Cixin'},
+  byline: {
+    en:'LIU CIXIN · science-fiction collection · five stories read',
+    zh:'刘慈欣 · 科幻小说集 · 读了其中五篇',
+    fr:'LIU CIXIN · recueil de science-fiction · cinq nouvelles lues',
+    es:'LIU CIXIN · colección de ciencia ficción · cinco relatos leídos'
+  },
+  facts: {
+    en:[['5–7 Mar 2025','read'],['pp. 34–245','print edition']],
+    zh:[['2025.03.05–07','阅读期间'],['p.34–245','纸质底本']],
+    fr:[['5–7 mars 2025','lecture'],['p. 34–245','édition papier']],
+    es:[['5–7 mar. 2025','lectura'],['pp. 34–245','edición impresa']]
+  },
+  provHead:{en:'Translation notice', zh:'翻译说明', fr:'Avis de traduction', es:'Aviso de traducción'},
+  provBody:{
+    en:'Everything quoted on this page was written in Chinese. The English, French and Spanish wordings are machine translations produced by an AI model and have not been reviewed by a professional translator. The Chinese original is printed under every passage and is the only authoritative text — where the two disagree, trust the Chinese.',
+    zh:'本页引用的全部文字原文为中文。页面上的英文、法文、西班牙文均由 AI 模型机器翻译生成，未经专业译者校订。每条引文下方均附中文原文，原文为唯一准据 —— 若译文与原文有出入，以中文为准。',
+    fr:'Tout ce qui est cité sur cette page a été écrit en chinois. Les versions anglaise, française et espagnole sont des traductions automatiques produites par un modèle d’IA et n’ont pas été revues par un traducteur professionnel. Le texte chinois original figure sous chaque passage et fait seul foi : en cas de divergence, c’est le chinois qui prime.',
+    es:'Todo lo citado en esta página se escribió originalmente en chino. Las versiones en inglés, francés y español son traducciones automáticas generadas por un modelo de IA y no han sido revisadas por un traductor profesional. El original chino aparece bajo cada pasaje y es el único texto con valor de referencia: si ambos discrepan, vale el chino.'
+  },
+  provKeys:{
+    en:['Original language','Source text','Translated by','Translated on'],
+    zh:['原文语言','底本','翻译','翻译日期'],
+    fr:['Langue d’origine','Texte source','Traduit par','Date de traduction'],
+    es:['Lengua original','Texto fuente','Traducido por','Fecha de traducción']
+  },
+  provVals:{
+    en:['Chinese (Simplified) — 简体中文',
+        'Liu Cixin, 《镜子》, print edition, pp. 34–245. Every passage and its surrounding context were transcribed from photographs of the printed pages.',
+        'Anthropic Claude — <code>claude-opus-5</code> (machine translation, not post-edited)',
+        '20 September 2026'],
+    zh:['简体中文',
+        '刘慈欣《镜子》纸质版，p.34–245。每条引文及其上下文均依书页照片逐字录入。',
+        'Anthropic Claude — <code>claude-opus-5</code>（机器翻译，未经人工润色）',
+        '2026 年 9 月 20 日'],
+    fr:['chinois simplifié — 简体中文',
+        'Liu Cixin, 《镜子》, édition papier, p. 34–245. Chaque passage et son contexte ont été transcrits d’après des photographies des pages imprimées.',
+        'Anthropic Claude — <code>claude-opus-5</code> (traduction automatique, sans post-édition)',
+        '20 septembre 2026'],
+    es:['chino simplificado — 简体中文',
+        'Liu Cixin, 《镜子》, edición impresa, pp. 34–245. Cada pasaje y su contexto se transcribieron a partir de fotografías de las páginas impresas.',
+        'Anthropic Claude — <code>claude-opus-5</code> (traducción automática, sin posedición)',
+        '20 de septiembre de 2026']
+  },
+  all:{en:'All stories', zh:'全部篇目', fr:'Toutes les nouvelles', es:'Todos los relatos'},
+  orig:    {en:'Chinese original', zh:'原文', fr:'Original chinois', es:'Original en chino'},
+  ctx:     {en:'In context', zh:'上下文', fr:'Dans le contexte', es:'En contexto'},
+  approx:  {en:'page estimated from the neighbouring pages', zh:'页码依相邻页序推定', fr:'page estimée d’après les pages voisines', es:'página estimada a partir de las páginas vecinas'},
+  sig:{en:'Compiled September 2026 · Jinge Guo', zh:'整理于 2026 年 9 月 · 郭晋阁', fr:'Compilé en septembre 2026 · Jinge Guo', es:'Recopilado en septiembre de 2026 · Jinge Guo'}
+};
+
+const STORIES = [
+  {id:'mirror', zh:'镜子', range:'p.34 – p.78',
+   t:{en:'The Mirror', zh:'镜子', fr:'Le Miroir', es:'El Espejo'},
+   s:{en:'A superstring computer can replay every second of the past. What happens to a society when nothing can be hidden any more?',
+      zh:'超弦计算机能把过去的每一秒重演出来。当什么都藏不住了，社会会变成什么样？',
+      fr:'Un ordinateur à supercordes peut rejouer chaque seconde du passé. Que devient une société où plus rien ne peut être caché ?',
+      es:'Un ordenador de supercuerdas puede reproducir cada segundo del pasado. ¿Qué le ocurre a una sociedad en la que ya nada puede ocultarse?'}},
+  {id:'fate', zh:'命运', range:'p.109 – p.116',
+   t:{en:'Fate', zh:'命运', fr:'Destin', es:'Destino'},
+   s:{en:'A honeymoon spaceship nudges an asteroid aside, sixty-five million years ago. They come home to a world where the dinosaurs never died.',
+      zh:'一艘度蜜月的小飞船在六千五百万年前推开了一颗小行星。回到家时，恐龙还活着。',
+      fr:'Un petit vaisseau en voyage de noces écarte un astéroïde, il y a soixante-cinq millions d’années. Ils rentrent dans un monde où les dinosaures n’ont jamais disparu.',
+      es:'Una navecilla de luna de miel aparta un asteroide hace sesenta y cinco millones de años. Vuelven a un mundo donde los dinosaurios nunca murieron.'}},
+  {id:'mountain', zh:'山', range:'p.119 – p.150',
+   t:{en:'Mountain', zh:'山', fr:'La Montagne', es:'La Montaña'},
+   s:{en:'A climber who swore off mountains meets one made of seawater — and, inside it, a civilisation that climbs by digging.',
+      zh:'一个发誓不再登山的人，遇上了一座海水堆成的山，以及山里那个靠挖洞登山的文明。',
+      fr:'Un alpiniste qui avait juré de ne plus grimper rencontre une montagne faite d’eau de mer — et, à l’intérieur, une civilisation qui grimpe en creusant.',
+      es:'Un escalador que juró no volver a las montañas se topa con una hecha de agua de mar y, dentro, con una civilización que escala excavando.'}},
+  {id:'timemig', zh:'时间移民', range:'≈ p.159 – p.168',
+   t:{en:'The Time Migration', zh:'时间移民', fr:'L’Émigration temporelle', es:'La Emigración temporal'},
+   s:{en:'Eighty thousand frozen emigrants keep waking into futures that will not have them, until the calendar has run eleven thousand years.',
+      zh:'八万名冷冻移民一次次醒在不肯接纳他们的未来里，直到走完一万一千年。',
+      fr:'Quatre-vingt mille émigrants congelés se réveillent dans des futurs qui ne veulent pas d’eux, jusqu’à ce que onze mille ans se soient écoulés.',
+      es:'Ochenta mil emigrantes congelados despiertan una y otra vez en futuros que no los quieren, hasta que han pasado once mil años.'}},
+  {id:'micro', zh:'微纪元', range:'p.233 – p.245',
+   t:{en:'Micro-Age', zh:'微纪元', fr:'La Micro-Ère', es:'La Microera'},
+   s:{en:'The last full-sized human comes home to an Earth where humanity survived by shrinking to the size of a cell.',
+      zh:'最后一个「宏人」回到地球，人类靠把自己缩到细胞大小活了下来。',
+      fr:'Le dernier humain de taille normale revient sur une Terre où l’humanité a survécu en se réduisant à la taille d’une cellule.',
+      es:'El último humano de tamaño normal regresa a una Tierra donde la humanidad sobrevivió encogiéndose al tamaño de una célula.'}}
+];
+
+const ENTRIES = [
+/* ========== 镜子 ========== */
+{id:'m01',s:'mirror',p:'34',
+ zh:'他不是手把手，而是手把脚地教他走路，每一步踏在哪儿都细心指点。',
+ en:'He did not take him by the hand so much as by the feet, teaching him how to walk and pointing out carefully where every single step should land.',
+ fr:'Il ne le prenait pas par la main mais bien par les pieds, lui apprenant à marcher et lui indiquant avec soin où poser chacun de ses pas.',
+ es:'No lo llevaba de la mano, sino de los pies: le enseñaba a andar y le señalaba con cuidado dónde debía pisar en cada paso.',
+ czh:'是他力劝宋诚弃学从政的，这位单纯的学者刚来时，他不是手把手，而是手把脚地教他走路，每一步踏在哪儿都细心指点，终于使宋诚绕过只凭自己绝对看不出来的处处雷区，一路向上地走到今天。',
+ cen:'It was he who talked Song Cheng into leaving scholarship for politics. When this guileless academic first arrived, he did not take him by the hand so much as by the feet, teaching him how to walk and pointing out carefully where every single step should land — until Song Cheng had skirted all the minefields he could never have spotted on his own, and had climbed, steadily, to where he stands today.',
+ cfr:'C’est lui qui persuada Song Cheng d’abandonner l’étude pour la politique. À l’arrivée de ce naïf universitaire, il ne le prit pas par la main mais bien par les pieds, lui apprenant à marcher et lui indiquant avec soin où poser chacun de ses pas — jusqu’à ce que Song Cheng eût contourné tous les champs de mines qu’il n’aurait jamais su repérer seul, et fût monté, régulièrement, jusqu’où il est aujourd’hui.',
+ ces:'Fue él quien convenció a Song Cheng de dejar los estudios por la política. Cuando aquel ingenuo académico llegó, no lo llevaba de la mano, sino de los pies: le enseñaba a andar y le señalaba con cuidado dónde pisar en cada paso, hasta que Song Cheng esquivó todos los campos de minas que jamás habría visto por su cuenta y fue subiendo, sin pausa, hasta donde está hoy.'},
+{id:'m02',s:'mirror',p:'36',
+ zh:'随着调查的深入，一张全省范围的腐败网络气势磅礴地展现在你的面前。',
+ en:'As the investigation went deeper, a province-wide web of corruption unfurled before you in all its grandeur.',
+ fr:'À mesure que l’enquête avançait, un réseau de corruption à l’échelle de toute la province se déployait devant vous dans toute son ampleur.',
+ es:'A medida que la investigación avanzaba, una red de corrupción que abarcaba toda la provincia se desplegaba ante ti en toda su magnitud.',
+ czh:'我记得你童年的时候，曾与两个小伙伴一起到一个溶洞探险，当地人把它叫老君洞，那洞口只有半米高，弯着腰才能进去，但里面却是一个宏伟的黑暗大厅，手电光照不到高高的穹顶，只有纷飞的蝙蝠不断掠过光柱……这就是这次调查的生动写照：你沿着那条看似平常的线索向前走，它把你引到的地方令你越来越不敢相信自己的眼睛，随着调查的深入，一张全省范围的腐败网络气势磅礴地展现在你的面前，这张网上的每一根经络都通向一个地方，一个人。',
+ cen:'I remember that as a boy you and two friends went exploring a limestone cave the locals called Laojun Cave. Its mouth was half a metre high and you had to stoop to get in, yet inside was a vast dark hall whose vault the torch beam could not reach, with only bats flitting across the light … That is exactly what this investigation was like: you followed an ordinary-looking thread, and the places it led you to grew harder and harder to believe. As the investigation went deeper, a province-wide web of corruption unfurled before you in all its grandeur, and every strand of that web ran to one place, one man.',
+ cfr:'Je me souviens qu’enfant, avec deux camarades, tu es allé explorer une grotte que les gens du pays appelaient la grotte de Laojun. L’entrée faisait un demi-mètre de haut, il fallait se courber pour y passer, et pourtant on débouchait dans une immense salle obscure dont la lampe n’atteignait pas la voûte, où seules des chauves-souris traversaient le faisceau… Voilà l’image même de cette enquête : tu suivais un fil d’apparence banale, et les lieux où il te menait devenaient de plus en plus incroyables. À mesure que l’enquête avançait, un réseau de corruption à l’échelle de toute la province se déployait devant toi dans toute son ampleur, et chacun de ses fils conduisait à un même endroit, à un même homme.',
+ ces:'Recuerdo que de niño fuiste con dos amigos a explorar una cueva que los lugareños llamaban la cueva de Laojun. La boca tenía medio metro de alto y había que agacharse para entrar, pero dentro se abría una enorme sala oscura cuya bóveda no alcanzaba la linterna, y solo los murciélagos cruzaban el haz… Así fue exactamente esta investigación: seguiste un hilo de apariencia corriente y los lugares a los que te llevaba costaban cada vez más de creer. A medida que avanzaba, una red de corrupción que abarcaba toda la provincia se desplegaba ante ti en toda su magnitud, y cada hebra de esa red conducía a un mismo lugar, a un mismo hombre.'},
+{id:'m03',s:'mirror',p:'38',
+ zh:'历史都是在各种因素间建立的某种平衡中发展到今天的，不顾平衡一味走极端，在政治上是极其幼稚的表现。',
+ en:'History has come this far by holding some kind of balance among all its forces. To ignore that balance and push an extreme is, politically, the mark of a child.',
+ fr:'L’histoire n’est arrivée jusqu’ici qu’en maintenant un certain équilibre entre toutes ses forces. Négliger cet équilibre pour aller jusqu’à l’extrême est, politiquement, une marque d’enfantillage.',
+ es:'La historia ha llegado hasta aquí manteniendo cierto equilibrio entre todas sus fuerzas. Despreciar ese equilibrio y llevar las cosas al extremo es, políticamente, cosa de niños.',
+ czh:'盖子一旦揭开，这就意味着全省政治经济的全面瘫痪！而涉及如此之广的巨大动作，会产生什么其他更可怕的后果还不得而知，也无法预测，省里好不容易得到的政治稳定和经济良性增长的局面将荡然无存，这难道对党和国家就有利？年轻人，你现在不能延续法学家的思维，只要法律正义得到伸张，哪管它洪水滔天！这是不负责任的。平衡，历史都是在各种因素间建立的某种平衡中发展到今天的，不顾平衡一味走极端，在政治上是极其幼稚的表现。',
+ cen:'Lift that lid and it means the total paralysis of the province, politically and economically. What worse consequences an operation on such a scale might bring, no one knows and no one can predict; the political stability and healthy growth the province has achieved with such difficulty would be wiped out. Is that good for the Party and the country? Young man, you can no longer think like a jurist — let justice be done though the heavens fall. That is irresponsible. Balance: history has come this far by holding some kind of balance among all its forces. To ignore that balance and push an extreme is, politically, the mark of a child.',
+ cfr:'Soulevez le couvercle et c’est la paralysie totale de la province, sur le plan politique comme économique. Quelles conséquences plus terribles encore une opération d’une telle ampleur entraînerait, nul ne le sait ni ne peut le prévoir ; la stabilité politique et la croissance saine si durement acquises seraient anéanties. Est-ce là l’intérêt du Parti et de l’État ? Jeune homme, vous ne pouvez plus raisonner en juriste : que justice soit faite, dût le ciel s’écrouler ! C’est irresponsable. L’équilibre : l’histoire n’est arrivée jusqu’ici qu’en maintenant un certain équilibre entre toutes ses forces. Négliger cet équilibre pour aller jusqu’à l’extrême est, politiquement, une marque d’enfantillage.',
+ ces:'Levanta esa tapa y significa la parálisis total de la provincia, política y económica. Qué consecuencias aún peores traería una operación de tal alcance, nadie lo sabe ni puede preverlo; la estabilidad política y el crecimiento sano que tanto ha costado lograr quedarían borrados. ¿Le conviene eso al Partido y al Estado? Joven, ya no puedes razonar como un jurista: hágase justicia aunque se hunda el cielo. Eso es irresponsable. Equilibrio: la historia ha llegado hasta aquí manteniendo cierto equilibrio entre todas sus fuerzas. Despreciar ese equilibrio y llevar las cosas al extremo es, políticamente, cosa de niños.'},
+{id:'m04',s:'mirror',p:'44',
+ zh:'他想当然地把死作为一条底线，现在才发现，牺牲的残酷远在这条底线之下。',
+ en:'He had taken it for granted that death was the floor. Only now did he discover that the cruelty of sacrifice lies far below that floor.',
+ fr:'Il tenait pour acquis que la mort était la limite ultime. Il découvrait seulement maintenant que la cruauté du sacrifice se situe bien en dessous de cette limite.',
+ es:'Daba por sentado que la muerte era el límite. Solo ahora descubría que la crueldad del sacrificio queda muy por debajo de ese límite.',
+ czh:'现在宋诚知道，他以前之所以做好了为信念和使命牺牲的准备，是因为根本就不明白牺牲意味着什么。他想当然地把死作为一条底线，现在才发现，牺牲的残酷远在这条底线之下。在进行搜查时他被带回家一次，当时妻子和女儿都在家，他向女儿伸出手去，孩子厌恶地惊叫一声，扑在妈妈的怀里缩到墙角。',
+ cen:'Song Cheng understood now that if he had once been ready to sacrifice himself for his convictions and his mission, it was only because he had had no idea what sacrifice meant. He had taken it for granted that death was the floor. Only now did he discover that the cruelty of sacrifice lies far below that floor. During the search he was brought home once; his wife and daughter were there. He reached out a hand to his daughter and the child gave a cry of disgust, threw herself into her mother’s arms and shrank into the corner.',
+ cfr:'Song Cheng comprenait à présent que s’il s’était autrefois tenu prêt à se sacrifier pour ses convictions et sa mission, c’est qu’il ignorait tout de ce que sacrifice veut dire. Il tenait pour acquis que la mort était la limite ultime ; il découvrait seulement maintenant que la cruauté du sacrifice se situe bien en dessous. Pendant la perquisition, on le ramena une fois chez lui ; sa femme et sa fille étaient là. Il tendit la main vers l’enfant, qui poussa un cri de dégoût, se jeta dans les bras de sa mère et se recroquevilla dans un coin.',
+ ces:'Song Cheng comprendía ahora que si alguna vez estuvo dispuesto a sacrificarse por sus convicciones y su misión, era porque no tenía ni idea de lo que significaba el sacrificio. Daba por sentado que la muerte era el límite; solo ahora descubría que la crueldad del sacrificio queda muy por debajo. Durante el registro lo llevaron una vez a casa; su mujer y su hija estaban allí. Le tendió la mano a la niña y esta soltó un grito de asco, se echó en brazos de su madre y se acurrucó en un rincón.'},
+{id:'m05',s:'mirror',p:'47',
+ zh:'谁看到都不会怀疑他的悲哀是真诚的。',
+ en:'No one who saw him would have doubted that his grief was sincere.',
+ fr:'Nul, en le voyant, n’aurait douté de la sincérité de son chagrin.',
+ es:'Nadie que lo viera habría dudado de que su pena era sincera.',
+ czh:'吕文明表情复杂地看了宋诚一眼，欲言又止。首长则缓缓地摇摇头，语气沉重地沉吟道：“宋诚啊，你，怎么堕落到这一步呢……”他双手撑着桌沿长久地默立着，眼睛有些湿润，谁看到都不会怀疑他的悲哀是真诚的。“首长，在这儿就不必演戏了吧。”白冰冷眼看着这一切说。',
+ cen:'Lü Wenming shot Song Cheng a complicated look and swallowed what he had been about to say. The Chief shook his head slowly and murmured in a heavy voice: “Song Cheng, how could you sink to this…” He stood a long while in silence, both hands braced on the edge of the table, his eyes a little moist; no one who saw him would have doubted that his grief was sincere. “Chief, there’s no need to act in here,” said Bai Bing, watching it all coldly.',
+ cfr:'Lü Wenming jeta à Song Cheng un regard indéchiffrable et ravala ce qu’il allait dire. Le Chef secoua lentement la tête et murmura d’une voix lourde : « Song Cheng, comment as-tu pu tomber si bas… » Il resta longtemps debout en silence, les deux mains appuyées au bord de la table, les yeux un peu humides ; nul, en le voyant, n’aurait douté de la sincérité de son chagrin. « Chef, inutile de jouer la comédie ici », dit Bai Bing en regardant la scène d’un œil froid.',
+ ces:'Lü Wenming lanzó a Song Cheng una mirada complicada y se tragó lo que iba a decir. El Jefe negó despacio con la cabeza y murmuró con voz grave: «Song Cheng, ¿cómo has podido caer tan bajo…?». Permaneció largo rato en silencio, con ambas manos apoyadas en el borde de la mesa y los ojos algo húmedos; nadie que lo viera habría dudado de que su pena era sincera. «Jefe, aquí no hace falta actuar», dijo Bai Bing, observándolo todo con frialdad.'},
+{id:'m06',s:'mirror',p:'58',
+ zh:'直觉告诉我，这些才像真实的历史。',
+ en:'My instinct tells me that this is what real history looks like.',
+ fr:'Mon intuition me dit que c’est cela, la véritable histoire.',
+ es:'La intuición me dice que esto es lo que parece la historia de verdad.',
+ czh:'“他是谁？邓世昌？”陈继峰问。白冰摇摇头：“方伯谦。”“什么？就是那个在黄海大海战中临阵脱逃的怕死鬼？”“就是他。”“直觉告诉我，这些才像真实的历史。”首长沉思着说。',
+ cen:'“Who was he? Deng Shichang?” Chen Jifeng asked. Bai Bing shook his head: “Fang Boqian.” “What? That coward who fled the line in the Battle of the Yellow Sea?” “The very man.” “My instinct tells me that this is what real history looks like,” the Chief said thoughtfully.',
+ cfr:'« Qui était-ce ? Deng Shichang ? » demanda Chen Jifeng. Bai Bing secoua la tête : « Fang Boqian. » « Quoi ? Ce lâche qui a fui pendant la bataille de la mer Jaune ? » « Lui-même. » « Mon intuition me dit que c’est cela, la véritable histoire », dit le Chef, songeur.',
+ ces:'«¿Quién era? ¿Deng Shichang?», preguntó Chen Jifeng. Bai Bing negó con la cabeza: «Fang Boqian». «¿Cómo? ¿Ese cobarde que huyó en la batalla del mar Amarillo?». «El mismo». «La intuición me dice que esto es lo que parece la historia de verdad», dijo el Jefe, pensativo.'},
+{id:'m07',s:'mirror',p:'65',
+ zh:'虽然这个宇宙中的一切过程早在大爆炸发生时就已经决定，但未来对我们来说仍是未知的。',
+ en:'Although every process in this universe was settled at the moment of the Big Bang, the future is still unknown to us.',
+ fr:'Bien que tous les processus de cet univers aient été fixés dès le big bang, l’avenir nous demeure inconnu.',
+ es:'Aunque todos los procesos de este universo quedaron decididos en el Big Bang, el futuro sigue siendo desconocido para nosotros.',
+ czh:'“这是递归，一种程序自己调用自己的算法……而我们现在看到的是无限调用自己、永远得不到答案的单程递归，由于每次调用时都须将上层的现场资料存入堆栈，就造成了刚才看到的堆栈内存溢出，由于是无限递归调用，即使超弦计算机的终极容量也会被耗尽的。”“哦。”首长点点头。“所以，虽然这个宇宙中的一切过程早在大爆炸发生时就已经决定，但未来对我们来说仍是未知的，对讨厌由因果链而产生的决定论的人来说，这也是一个安慰吧。”',
+ cen:'“This is recursion, an algorithm in which a program calls itself … What we are seeing now is a one-way recursion that calls itself endlessly and never reaches an answer. Because each call has to push the state of the level above onto the stack, we get the stack overflow you just saw; and since the recursion is infinite, even the ultimate capacity of a superstring computer would be exhausted.” “Ah,” the Chief nodded. “So although every process in this universe was settled at the moment of the Big Bang, the future is still unknown to us — which may be some consolation to those who dislike a determinism built out of causal chains.”',
+ cfr:'« C’est une récursion, un algorithme où un programme s’appelle lui-même… Ce que nous voyons ici est une récursion à sens unique qui s’appelle indéfiniment sans jamais aboutir. Comme chaque appel doit empiler l’état du niveau supérieur, on obtient le débordement de pile que vous venez de voir ; et la récursion étant infinie, même la capacité ultime d’un ordinateur à supercordes finirait par être épuisée. » « Ah », fit le Chef en hochant la tête. « Ainsi, bien que tous les processus de cet univers aient été fixés dès le big bang, l’avenir nous demeure inconnu — ce qui est peut-être une consolation pour qui déteste le déterminisme des chaînes causales. »',
+ ces:'«Esto es recursión, un algoritmo en el que un programa se llama a sí mismo… Lo que vemos ahora es una recursión de ida que se llama sin fin y nunca llega a una respuesta. Como cada llamada debe apilar el estado del nivel superior, se produce el desbordamiento de pila que acaban de ver; y al ser infinita, agotaría incluso la capacidad última de un ordenador de supercuerdas». «Ah», asintió el Jefe. «Así que, aunque todos los procesos de este universo quedaron decididos en el Big Bang, el futuro sigue siendo desconocido para nosotros; lo cual quizá sea un consuelo para quien detesta el determinismo de las cadenas causales».'},
+{id:'m08',s:'mirror',p:'68',
+ zh:'如果半夜窗外有探照灯照你的卧室，那样的光明叫光污染。',
+ en:'If a searchlight shines into your bedroom in the middle of the night, that kind of brightness is called light pollution.',
+ fr:'Si en pleine nuit un projecteur éclaire votre chambre, cette lumière-là s’appelle de la pollution lumineuse.',
+ es:'Si a medianoche un reflector te ilumina el dormitorio, esa clase de luz se llama contaminación lumínica.',
+ czh:'“你像他们一样害怕光明吗？”宋诚质问道。“我是个普通人，没什么阴暗的罪行，但说到光明，那要也看什么样的光明，如果半夜窗外有探照灯照你的卧室，那样的光明叫光污染……举个例子吧：我结婚才两年，已经产生了那种……审美疲劳，于是与单位新来的一个女大学生有了……那种关系，老婆当然不知道，大家过得都很好。如果镜像时代到来，我就不可能这样生活了。”',
+ cen:'“Are you afraid of the light, like them?” Song Cheng demanded. “I’m an ordinary man, I’ve committed no dark crimes. But as for light, it depends what kind of light. If a searchlight shines into your bedroom in the middle of the night, that kind of brightness is called light pollution … Take an example: I’ve been married only two years and I already have a certain … aesthetic fatigue, so I started a certain … relationship with a young woman who joined my office. My wife doesn’t know, of course, and everyone is getting along fine. If the age of the mirror arrives, I won’t be able to live like that.”',
+ cfr:'« As-tu peur de la lumière, comme eux ? » demanda Song Cheng. « Je suis un homme ordinaire, je n’ai commis aucun crime obscur. Mais pour ce qui est de la lumière, tout dépend de laquelle. Si en pleine nuit un projecteur éclaire votre chambre, cette lumière-là s’appelle de la pollution lumineuse… Un exemple : marié depuis deux ans à peine, j’éprouve déjà une certaine… lassitude esthétique ; j’ai donc noué une certaine… relation avec une jeune diplômée arrivée au bureau. Ma femme l’ignore, bien sûr, et tout le monde va très bien. Si l’ère du miroir advient, je ne pourrai plus vivre ainsi. »',
+ ces:'«¿Le tienes miedo a la luz, como ellos?», preguntó Song Cheng. «Soy un hombre corriente, no he cometido crímenes oscuros. Pero en cuanto a la luz, depende de qué luz. Si a medianoche un reflector te ilumina el dormitorio, esa clase de luz se llama contaminación lumínica… Un ejemplo: llevo apenas dos años casado y ya siento cierta… fatiga estética, así que empecé cierta… relación con una recién licenciada que entró en la oficina. Mi mujer no lo sabe, claro, y todos vivimos tan tranquilos. Si llega la era del espejo, no podré vivir así».'},
+{id:'m09',s:'mirror',p:'70',
+ zh:'镜像时代还没有到来，黑暗已经在崩溃了。',
+ en:'The age of the mirror had not yet arrived, and the darkness was already collapsing.',
+ fr:'L’ère du miroir n’était pas encore venue que déjà les ténèbres s’effondraient.',
+ es:'La era del espejo aún no había llegado y la oscuridad ya se derrumbaba.',
+ czh:'这时，镜像时代的第一个征兆出现了，首长得知陈继峰在自己的办公室里开枪自杀，吕文明则变得精神恍惚，不断地系领口的扣子，整理自己的衣服，好像随时都有人给他拍照似的。对这两件事，首长一笑置之。镜像时代还没有到来，黑暗已经在崩溃了。',
+ cen:'Then came the first sign of the age of the mirror. The Chief learned that Chen Jifeng had shot himself in his own office, and that Lü Wenming had turned distracted, forever doing up his collar button and straightening his clothes as though someone might photograph him at any moment. The Chief dismissed both pieces of news with a smile. The age of the mirror had not yet arrived, and the darkness was already collapsing.',
+ cfr:'Alors parut le premier signe de l’ère du miroir. Le Chef apprit que Chen Jifeng s’était tiré une balle dans son propre bureau, et que Lü Wenming était devenu hagard, reboutonnant sans cesse son col et rajustant ses vêtements comme si l’on pouvait le photographier à tout instant. Le Chef accueillit les deux nouvelles d’un sourire. L’ère du miroir n’était pas encore venue que déjà les ténèbres s’effondraient.',
+ ces:'Entonces apareció la primera señal de la era del espejo. El Jefe supo que Chen Jifeng se había pegado un tiro en su propio despacho y que Lü Wenming andaba aturdido, abrochándose una y otra vez el botón del cuello y arreglándose la ropa como si en cualquier momento fueran a fotografiarlo. El Jefe despachó ambas noticias con una sonrisa. La era del espejo aún no había llegado y la oscuridad ya se derrumbaba.'},
+{id:'m10',s:'mirror',p:'76 – 78',
+ zh:'这种进步停滞的状态持续了 30000 年，这段漫长的岁月，史称「光明的中世纪」。',
+ en:'This standstill of progress lasted thirty thousand years; history calls that long stretch “the Luminous Middle Ages”.',
+ fr:'Cet arrêt du progrès dura trente mille ans ; l’histoire appelle cette longue période « le Moyen Âge lumineux ».',
+ es:'Ese estancamiento del progreso duró treinta mil años; la historia llama a ese largo periodo «la Edad Media luminosa».',
+ czh:'在新纪元的头 5 个世纪，人类社会还是在缓慢发展之中。完全停滞的迹象最初出现在镜像 6 世纪中叶，首先停滞的是文化，由于人性已经像一汪清水般纯洁，没有什么可描写和表现的，文学首先消失了，接着是整个人类艺术都停滞和消失。接下来，科学和技术也陷入了彻底的停滞。这种进步停滞的状态持续了 30000 年，这段漫长的岁月，史称「光明的中世纪」。',
+ cen:'For the first five centuries of the new era human society still developed, slowly. The first signs of a complete standstill appeared in the middle of the sixth mirror century, and what stopped first was culture: since human nature had become as pure as clear water, there was nothing left to depict or portray, and literature disappeared first, followed by the stagnation and disappearance of all human art. After that, science and technology fell into a total halt as well. This standstill of progress lasted thirty thousand years; history calls that long stretch “the Luminous Middle Ages”.',
+ cfr:'Pendant les cinq premiers siècles de la nouvelle ère, la société humaine continua de se développer, lentement. Les premiers signes d’un arrêt complet apparurent au milieu du sixième siècle du miroir, et ce fut la culture qui s’arrêta d’abord : la nature humaine étant devenue pure comme une eau claire, il n’y avait plus rien à décrire ni à représenter ; la littérature disparut la première, puis tout l’art humain se figea et s’éteignit. Ensuite, la science et la technique s’immobilisèrent totalement à leur tour. Cet arrêt du progrès dura trente mille ans ; l’histoire appelle cette longue période « le Moyen Âge lumineux ».',
+ ces:'Durante los primeros cinco siglos de la nueva era la sociedad humana siguió desarrollándose, despacio. Los primeros indicios de una detención completa aparecieron a mediados del siglo sexto del espejo, y lo primero que se detuvo fue la cultura: como la naturaleza humana se había vuelto pura como agua clara, ya no quedaba nada que describir ni representar; primero desapareció la literatura y después se estancó y se extinguió todo el arte humano. Luego, la ciencia y la técnica cayeron también en una parálisis total. Ese estancamiento del progreso duró treinta mil años; la historia llama a ese largo periodo «la Edad Media luminosa».'},
+
+/* ========== 命运 ========== */
+{id:'d01',s:'fate',p:'109',
+ zh:'那颗小行星就在我们前方五十公里处，凸现在太空漆黑的背景上，像放在黑天鹅绒上的展品那样现实。',
+ en:'The asteroid lay fifty kilometres ahead of us, standing out against the black of space as solidly as an exhibit laid on black velvet.',
+ fr:'L’astéroïde se trouvait à cinquante kilomètres devant nous, se détachant sur le noir de l’espace, aussi réel qu’une pièce exposée sur du velours noir.',
+ es:'El asteroide estaba cincuenta kilómetros por delante de nosotros, recortado contra el negro del espacio, tan real como una pieza expuesta sobre terciopelo negro.',
+ czh:'20 天前，我和爱玛租了这艘小飞船在太空中度蜜月，这是一艘老式的传统动力飞船，在宇宙航行的时空跃迁时代，这个蜗牛一般慢的老古董显得很浪漫很有情调。……但就在我们即将返回时，一切突然变得如此诡异。但那颗小行星就在我们前方 50 公里处，凸现在太空漆黑的背景上，像放在黑天鹅绒上的展品那样现实，我确信自己不是在噩梦中。',
+ cen:'Twenty days ago Emma and I rented this little ship for a honeymoon in space. It is an old-fashioned craft with conventional propulsion, and in an age of jump drives this snail-slow antique seemed very romantic … But just as we were about to head home, everything turned uncanny. The asteroid lay fifty kilometres ahead of us, standing out against the black of space as solidly as an exhibit laid on black velvet; I was certain I was not dreaming.',
+ cfr:'Il y a vingt jours, Emma et moi avons loué ce petit vaisseau pour un voyage de noces dans l’espace : un engin à propulsion classique, et à l’ère des sauts spatio-temporels cette antiquité lente comme un escargot paraissait très romantique… Mais au moment de rentrer, tout est devenu étrange. L’astéroïde se trouvait à cinquante kilomètres devant nous, se détachant sur le noir de l’espace, aussi réel qu’une pièce exposée sur du velours noir ; j’étais certain de ne pas rêver.',
+ ces:'Hace veinte días Emma y yo alquilamos esta navecilla para una luna de miel en el espacio: una nave anticuada, de propulsión convencional, que en la era de los saltos espaciotemporales parecía, con su lentitud de caracol, muy romántica… Pero justo cuando íbamos a regresar, todo se volvió extraño. El asteroide estaba cincuenta kilómetros por delante de nosotros, recortado contra el negro del espacio, tan real como una pieza expuesta sobre terciopelo negro; estaba seguro de no estar soñando.'},
+{id:'d02',s:'fate',p:'114',
+ zh:'恐龙一直活到现在。',
+ en:'The dinosaurs have been alive all along.',
+ fr:'Les dinosaures ont vécu jusqu’à aujourd’hui.',
+ es:'Los dinosaurios han seguido vivos hasta hoy.',
+ czh:'这时我看到，刚才还十分平静的海面上涌现出一个个大浪包，浪包很快破裂，一头体形巨大的怪兽跃出海面，接着又钻出一头，随着哗哗的水声，海面上很快出现了一大群怪兽。现在，我和爱玛都明白了我们在 6500 万年前干的那件事的后果。恐龙一直活到现在。',
+ cen:'Then I saw swellings rise one after another on the sea, which a moment before had been perfectly calm. They burst, and a huge beast leapt out of the water, then another, and with a great splashing a whole herd of them appeared on the surface. Now Emma and I both understood the consequence of what we had done sixty-five million years ago. The dinosaurs have been alive all along.',
+ cfr:'Je vis alors se former, sur une mer un instant plus tôt parfaitement calme, de grosses bosses d’eau qui crevèrent l’une après l’autre : une bête énorme jaillit des flots, puis une autre, et dans un grand bruit d’éclaboussures tout un troupeau parut à la surface. Emma et moi comprîmes alors la conséquence de ce que nous avions fait soixante-cinq millions d’années plus tôt. Les dinosaures ont vécu jusqu’à aujourd’hui.',
+ ces:'Vi entonces cómo en el mar, un instante antes en calma, se levantaban una tras otra grandes protuberancias de agua que reventaban: una bestia enorme saltó fuera, luego otra, y con gran estrépito de agua apareció en la superficie toda una manada. Emma y yo comprendimos entonces la consecuencia de lo que habíamos hecho sesenta y cinco millones de años atrás. Los dinosaurios han seguido vivos hasta hoy.'},
+{id:'d03',s:'fate',p:'116',
+ zh:'只有在动物园中做观赏人，才不会被吃掉，这是所有人追求的目标。',
+ en:'Only by becoming a show-human in the zoo can you avoid being eaten; that is what everyone here aspires to.',
+ fr:'Seul un homme d’agrément, au zoo, échappe à la marmite ; c’est à cela que tout le monde ici aspire.',
+ es:'Solo siendo humano de exhibición en el zoo se libra uno de que lo coman; eso es a lo que todos aquí aspiran.',
+ czh:'宇宙并没有选择人类，在我们的时间里人类文明在地球上达到巅峰，不过是一次偶然的机遇，而我们以人类的自负把偶然当成了必然。现在，大自然掷出的进化硬币翻到了另一面。我们确实处于地球文明的动物园里，但恐龙是游客。……“你疯了？！上岸后你们会成为菜人的！”“菜人？”“就是作为食品的人，那座城市每天要供应几千名菜人呢！只有在动物园中做观赏人，才不会被吃掉，这是所有人追求的目标。”',
+ cen:'The universe had not chosen humankind. That our civilisation reached its peak on Earth in our own time was mere chance, and in our human conceit we mistook chance for necessity. Now the evolutionary coin that nature tossed has landed the other way up. We are indeed in the zoo of Earth’s civilisation — but the dinosaurs are the visitors. … “Are you mad? Once ashore you’ll become food-humans!” “Food-humans?” “People raised as food. That city gets through several thousand of them a day. Only by becoming a show-human in the zoo can you avoid being eaten; that is what everyone here aspires to.”',
+ cfr:'L’univers n’avait pas choisi l’humanité. Que notre civilisation ait atteint son sommet sur Terre à notre époque n’était qu’un hasard, et notre orgueil d’hommes a pris ce hasard pour une nécessité. Voici que la pièce de l’évolution, lancée par la nature, est retombée sur l’autre face. Nous sommes bien dans le zoo de la civilisation terrestre — mais ce sont les dinosaures qui sont les visiteurs. … « Tu es folle ? À terre, vous deviendrez des hommes de bouche ! » « Des hommes de bouche ? » « Des hommes élevés pour être mangés. Cette ville en consomme plusieurs milliers par jour. Seul un homme d’agrément, au zoo, échappe à la marmite ; c’est à cela que tout le monde ici aspire. »',
+ ces:'El universo no había elegido a la humanidad. Que nuestra civilización alcanzara su cumbre en la Tierra en nuestro tiempo fue puro azar, y nuestra soberbia humana tomó el azar por necesidad. Ahora la moneda de la evolución que lanzó la naturaleza ha caído del otro lado. Estamos, sí, en el zoo de la civilización terrestre, pero los visitantes son los dinosaurios. … «¿Estás loca? En tierra os convertiréis en humanos de mesa». «¿Humanos de mesa?». «Personas criadas como alimento. Esa ciudad consume varios miles al día. Solo siendo humano de exhibición en el zoo se libra uno de que lo coman; eso es a lo que todos aquí aspiran».'},
+
+/* ========== 山 ========== */
+{id:'s01',s:'mountain',p:'119',
+ zh:'「相反，陆地上有东西让我向往。」「什么？」「山。」',
+ en:'“On the contrary, there is something on land that draws me.” “What?” “Mountains.”',
+ fr:'« Au contraire, il y a sur la terre ferme quelque chose qui m’attire. » « Quoi donc ? » « Les montagnes. »',
+ es:'«Al contrario, en tierra firme hay algo que me atrae». «¿El qué?». «Las montañas».',
+ czh:'「如果蓝水号退役了，你是不是也打算像电影的主人公那样随它沉下去？」「我会换条船，海洋考察船总是欢迎我这种不上岸的地质工程师的。」「这很自然地让人想到，陆地上有什么东西让你害怕？」「相反，陆地上有东西让我向往。」「什么？」「山。」',
+ cen:'“If the Blue Water is decommissioned, do you plan to go down with her like the hero of that film?” “I’ll change ships. Survey vessels always welcome a geological engineer who never goes ashore.” “Which makes one wonder: is there something on land that frightens you?” “On the contrary, there is something on land that draws me.” “What?” “Mountains.”',
+ cfr:'« Si le Blue Water est désarmé, comptes-tu couler avec lui comme le héros du film ? » « Je changerai de navire. Les bateaux océanographiques accueillent toujours un ingénieur géologue qui ne descend jamais à terre. » « On se demande donc : y a-t-il à terre quelque chose qui te fait peur ? » « Au contraire, il y a sur la terre ferme quelque chose qui m’attire. » « Quoi donc ? » « Les montagnes. »',
+ ces:'«Si retiran el Blue Water, ¿piensas hundirte con él como el protagonista de la película?». «Cambiaré de barco. Los buques oceanográficos siempre reciben bien a un ingeniero geólogo que nunca baja a tierra». «Lo que hace pensar: ¿hay algo en tierra que te dé miedo?». «Al contrario, en tierra firme hay algo que me atrae». «¿El qué?». «Las montañas».'},
+{id:'s02',s:'mountain',p:'126',
+ zh:'当我割断登山索时，脑子里闪过的念头是这样的：我不能死，还有别的山呢。',
+ en:'When I cut the rope, the thought that flashed through my head was this: I cannot die, there are other mountains.',
+ fr:'Quand j’ai coupé la corde, la pensée qui m’a traversé l’esprit fut celle-ci : je ne peux pas mourir, il y a d’autres montagnes.',
+ es:'Cuando corté la cuerda, el pensamiento que me cruzó la mente fue este: no puedo morir, hay otras montañas.',
+ czh:'「其实你挺幸运的。」船长拍拍冯帆的肩说。「我也这么想。」冯帆说，「船长，还有一件事我没告诉你，在珠峰遇难的那 4 名大学登山队员中，有我的恋人。当我割断登山索时，脑子里闪过的念头是这样的：我不能死，还有别的山呢。」船长点点头：「去吧。」',
+ cen:'“You’re a lucky man, really,” the captain said, clapping Feng Fan on the shoulder. “I think so too,” said Feng Fan. “Captain, there’s one thing I never told you. Among the four student climbers who died on Everest was the woman I loved. When I cut the rope, the thought that flashed through my head was this: I cannot die, there are other mountains.” The captain nodded: “Go.”',
+ cfr:'« Au fond, tu as de la chance », dit le capitaine en lui tapant sur l’épaule. « Je le pense aussi, dit Feng Fan. Capitaine, il y a une chose que je ne vous ai jamais dite : parmi les quatre étudiants morts sur l’Everest, il y avait celle que j’aimais. Quand j’ai coupé la corde, la pensée qui m’a traversé l’esprit fut celle-ci : je ne peux pas mourir, il y a d’autres montagnes. » Le capitaine hocha la tête : « Vas-y. »',
+ ces:'«En el fondo eres afortunado», dijo el capitán dándole una palmada en el hombro. «Yo también lo creo —dijo Feng Fan—. Capitán, hay algo que nunca le conté: entre los cuatro estudiantes que murieron en el Everest estaba la mujer a la que amaba. Cuando corté la cuerda, el pensamiento que me cruzó la mente fue este: no puedo morir, hay otras montañas». El capitán asintió: «Ve».'},
+{id:'s03',s:'mountain',p:'133',
+ zh:'在无限的岩层中还有其他的空泡，离我们或近或远，这就成了以后探索的动力。',
+ en:'In the infinite rock there may be other bubbles, nearer or farther from us — and that became the motive for all our later exploration.',
+ fr:'Dans la roche infinie, il peut exister d’autres bulles, plus proches ou plus lointaines — et ce fut là le moteur de toutes nos explorations ultérieures.',
+ es:'En la roca infinita puede haber otras burbujas, más cerca o más lejos de nosotros, y eso se convirtió en el motor de nuestras exploraciones posteriores.',
+ czh:'我们的世界十分简单，是一个球形空间，按照你们的长度单位计量，半径约为 3000 公里。这个空间被岩层所围绕，向任何一个方向走，都会遇到一堵致密的岩壁。……所以，我们的世界就是这固体宇宙中的一个空泡，我们称它为泡世界。这个宇宙理论被称为密实宇宙论。当然，这个理论不排除这样的可能：在无限的岩层中还有其他的空泡，离我们或近或远，这就成了以后探索的动力。',
+ cen:'Our world is very simple: a spherical space with a radius of about three thousand kilometres in your units. It is enclosed by rock, and walk in any direction and you meet a dense wall of stone … So our world is a bubble in this solid universe, and we call it the Bubble World; the theory is known as the dense-universe theory. Of course the theory does not rule out this possibility: in the infinite rock there may be other bubbles, nearer or farther from us — and that became the motive for all our later exploration.',
+ cfr:'Notre monde est très simple : un espace sphérique d’un rayon d’environ trois mille kilomètres, dans vos unités. Il est enclos par la roche : marchez dans n’importe quelle direction et vous rencontrez une paroi compacte… Notre monde est donc une bulle dans cet univers solide, et nous l’appelons le Monde-Bulle ; cette théorie porte le nom de théorie de l’univers dense. Bien entendu, elle n’exclut pas ceci : dans la roche infinie, il peut exister d’autres bulles, plus proches ou plus lointaines — et ce fut là le moteur de toutes nos explorations ultérieures.',
+ ces:'Nuestro mundo es muy simple: un espacio esférico de unos tres mil kilómetros de radio, en vuestras unidades. Lo rodea la roca: camines en la dirección que camines, topas con una pared compacta… Así que nuestro mundo es una burbuja en este universo sólido, y lo llamamos el Mundo Burbuja; la teoría se conoce como teoría del universo denso. Por supuesto, no excluye esta posibilidad: en la roca infinita puede haber otras burbujas, más cerca o más lejos de nosotros, y eso se convirtió en el motor de nuestras exploraciones posteriores.'},
+{id:'s04',s:'mountain',p:'147',
+ zh:'他是生活在固体世界中的生命，现在第一次进入了无形岩的空间。',
+ en:'He was a creature of the solid world, and now, for the first time, he had entered the space of the formless rock.',
+ fr:'Il était une créature du monde solide et, pour la première fois, il pénétrait dans l’espace de la roche sans forme.',
+ es:'Era una criatura del mundo sólido y ahora entraba por primera vez en el espacio de la roca sin forma.',
+ czh:'水箭在一片寂静中上升着，透过舷窗看出去，只有深不见底的黑暗。偶尔有几粒悬浮在无形岩中的尘埃在舷窗透出的光亮中飞速掠过，标示着水箭上升的速度。加加林很快感到一阵恐慌，他是生活在固体世界中的生命，现在第一次进入了无形岩的空间，一种无依无靠的虚无感攫住了他的全部……',
+ cen:'The water rocket rose in silence; through the porthole there was nothing but bottomless darkness. Now and then a few specks of dust suspended in the formless rock flashed past in the light of the window, marking the speed of the climb. Gagarin soon felt a wave of panic: he was a creature of the solid world, and now, for the first time, he had entered the space of the formless rock; a sense of utter emptiness, with nothing to lean on, seized the whole of him…',
+ cfr:'La fusée d’eau montait en silence ; par le hublot, on ne voyait qu’une obscurité sans fond. De loin en loin, quelques grains de poussière en suspension dans la roche sans forme filaient dans la lumière du hublot, marquant la vitesse de l’ascension. Gagarine fut vite saisi de panique : il était une créature du monde solide et, pour la première fois, il pénétrait dans l’espace de la roche sans forme ; un sentiment de vide, sans rien où s’appuyer, s’empara de lui tout entier…',
+ ces:'El cohete de agua ascendía en silencio; por la escotilla solo se veía una oscuridad sin fondo. De vez en cuando unas motas de polvo suspendidas en la roca sin forma pasaban veloces por la luz de la ventanilla, marcando la velocidad del ascenso. Gagarin sintió pronto una oleada de pánico: era una criatura del mundo sólido y ahora entraba por primera vez en el espacio de la roca sin forma; una sensación de vacío, sin nada en que apoyarse, se apoderó de él por completo…'},
+{id:'s05',s:'mountain',p:'148',a:1,
+ zh:'山在那儿，总会有人去登的。',
+ en:'The mountain is there; sooner or later someone will climb it.',
+ fr:'La montagne est là ; tôt ou tard quelqu’un ira la gravir.',
+ es:'La montaña está ahí; tarde o temprano alguien irá a subirla.',
+ czh:'「你们到这里来干什么？」他问。「我们只是路过，看到这里有智慧文明，就想找人聊聊，谁先登上这座山顶我们就和谁聊。」「山在那儿，总会有人去登的。」',
+ cen:'“What did you come here for?” he asked. “We were only passing. We saw there was an intelligent civilisation here and wanted to talk to someone — whoever climbed to the top of this mountain first.” “The mountain is there; sooner or later someone will climb it.”',
+ cfr:'« Que venez-vous faire ici ? » demanda-t-il. « Nous ne faisions que passer. Voyant qu’il y avait ici une civilisation intelligente, nous avons voulu parler à quelqu’un — à celui qui gravirait le premier le sommet de cette montagne. » « La montagne est là ; tôt ou tard quelqu’un ira la gravir. »',
+ ces:'«¿A qué han venido aquí?», preguntó. «Solo estábamos de paso. Al ver que había aquí una civilización inteligente quisimos hablar con alguien: con quien primero llegara a la cima de esta montaña». «La montaña está ahí; tarde o temprano alguien irá a subirla».'},
+/* ========== 时间移民 ========== */
+{id:'t01',s:'timemig',p:'159',a:1,
+ zh:'「战争已经像经济一样正规和有序了。」「战争就是经济。」',
+ en:'“War has become as regulated and orderly as the economy.” “War is the economy.”',
+ fr:'« La guerre est devenue aussi réglée et ordonnée que l’économie. » « La guerre est l’économie. »',
+ es:'«La guerra se ha vuelto tan regulada y ordenada como la economía». «La guerra es la economía».',
+ czh:'现在两个国家这样交战：首先公布自己各类战术和战略武器的数量和型号，根据双方各种武器的对毁率，计算机可以给出战争的结果。武器是纯威慑性质的，从来不会动用。战争就是计算机中数学模型的演算，以结果决定战争的胜负。……「战争已经像经济一样正规和有序了。」「战争就是经济。」',
+ cen:'This is how two countries now go to war: each first publishes the numbers and models of all its tactical and strategic weapons, and from the mutual destruction rates of those weapons a computer can give the outcome of the war. The weapons are purely a deterrent and are never used. War is the working-out of a mathematical model inside a computer, and the result decides who has won … “War has become as regulated and orderly as the economy.” “War is the economy.”',
+ cfr:'Voici comment deux pays se font désormais la guerre : chacun publie d’abord le nombre et le modèle de toutes ses armes tactiques et stratégiques, et à partir des taux de destruction mutuelle un ordinateur donne l’issue de la guerre. Les armes sont purement dissuasives et ne servent jamais. La guerre est le calcul d’un modèle mathématique dans un ordinateur, et le résultat décide du vainqueur… « La guerre est devenue aussi réglée et ordonnée que l’économie. » « La guerre est l’économie. »',
+ ces:'Así hacen ahora la guerra dos países: cada uno publica primero el número y el modelo de todas sus armas tácticas y estratégicas y, a partir de las tasas de destrucción mutua, un ordenador da el resultado de la guerra. Las armas son puramente disuasorias y nunca se emplean. La guerra es el cálculo de un modelo matemático dentro de un ordenador, y el resultado decide quién vence… «La guerra se ha vuelto tan regulada y ordenada como la economía». «La guerra es la economía».'},
+{id:'t02',s:'timemig',p:'163',a:1,
+ zh:'正因为他们能得到一切，同时也就失去了一切。',
+ en:'Precisely because they can have everything, they have lost everything at the same time.',
+ fr:'C’est justement parce qu’ils peuvent tout obtenir qu’ils ont, du même coup, tout perdu.',
+ es:'Precisamente porque pueden conseguirlo todo, lo han perdido todo a la vez.',
+ czh:'「我们所梦想的东西：博学、美貌、长生，在这个时代都是轻而易举能得到的东西。」「那么这是理想社会了？他们还有想要而得不到的东西吗？」「没有，但正因为他们能得到一切，同时也就失去了一切。对我们来说这很难理解，对他们来说却是真实的感受。现在远不是理想社会。」',
+ cen:'“Everything we used to dream of — learning, beauty, long life — is easily had in this age.” “So this is the ideal society? Is there anything left that they want and cannot get?” “No. But precisely because they can have everything, they have lost everything at the same time. It is hard for us to understand, yet for them it is a real feeling. This is far from an ideal society.”',
+ cfr:'« Tout ce dont nous rêvions — le savoir, la beauté, la longévité — s’obtient sans peine à cette époque. » « C’est donc la société idéale ? Reste-t-il quelque chose qu’ils désirent sans pouvoir l’avoir ? » « Non. Mais c’est justement parce qu’ils peuvent tout obtenir qu’ils ont, du même coup, tout perdu. Cela nous est difficile à comprendre, mais pour eux c’est un sentiment réel. On est loin de la société idéale. »',
+ ces:'«Todo lo que soñábamos —saber, belleza, larga vida— se consigue sin esfuerzo en esta época». «¿Entonces es la sociedad ideal? ¿Queda algo que deseen y no puedan tener?». «No. Pero precisamente porque pueden conseguirlo todo, lo han perdido todo a la vez. A nosotros nos cuesta entenderlo, pero para ellos es un sentimiento real. Esto dista mucho de ser la sociedad ideal».'},
+{id:'t03',s:'timemig',p:'167 – 168',
+ zh:'只要我们的根不离开我们的大地母亲，我们就不会像他们那样消失。',
+ en:'So long as our roots do not leave our mother earth, we will not vanish as they did.',
+ fr:'Tant que nos racines ne quitteront pas notre terre nourricière, nous ne disparaîtrons pas comme eux.',
+ es:'Mientras nuestras raíces no abandonen a nuestra madre tierra, no desapareceremos como ellos.',
+ czh:'「公民们，本来计划走 120 年的我们，走了 11000 年，最后到达这里。现在的一切你们都看到了，他们消失了，我们是仅存的人类。他们什么都没有留下，但又留下了一切。……看这蓝天，这草地，这山脉，这森林，这整个重新创造的大自然，就是他们要说的话！……以后人类还会犯错误，还会在苦难和失望的荒漠中跋涉，但只要我们的根不离开我们的大地母亲，我们就不会像他们那样消失。不管多么艰难，人类和生活将永远延续！」',
+ cen:'“Citizens: we who had planned to travel one hundred and twenty years travelled eleven thousand, and arrived here at last. You have seen what there is now: they are gone, and we are the only humans left. They left nothing behind, and yet they left everything … Look at this blue sky, this grass, these mountains, these forests, this whole re-created nature — that is what they wanted to say! … Humanity will make mistakes again, and will trudge again through deserts of suffering and disappointment; but so long as our roots do not leave our mother earth, we will not vanish as they did. However hard it becomes, humankind and life will go on for ever!”',
+ cfr:'« Citoyens, nous qui devions voyager cent vingt ans en avons voyagé onze mille, et nous voici enfin arrivés. Vous voyez ce qu’il en est : ils ont disparu, et nous sommes les seuls humains qui restent. Ils n’ont rien laissé, et pourtant ils ont tout laissé… Regardez ce ciel bleu, cette herbe, ces montagnes, ces forêts, toute cette nature recréée : voilà ce qu’ils voulaient dire ! … L’humanité commettra encore des erreurs, elle traversera encore des déserts de souffrance et de déception ; mais tant que nos racines ne quitteront pas notre terre nourricière, nous ne disparaîtrons pas comme eux. Si dur que ce soit, l’humanité et la vie continueront toujours ! »',
+ ces:'«Ciudadanos: nosotros, que íbamos a viajar ciento veinte años, hemos viajado once mil y por fin hemos llegado. Ya veis lo que hay: ellos han desaparecido y somos los únicos humanos que quedan. No dejaron nada y, sin embargo, lo dejaron todo… Mirad este cielo azul, esta hierba, estas montañas, estos bosques, toda esta naturaleza recreada: ¡eso es lo que querían decir! … La humanidad volverá a equivocarse y volverá a atravesar desiertos de sufrimiento y desengaño; pero mientras nuestras raíces no abandonen a nuestra madre tierra, no desapareceremos como ellos. Por difícil que sea, ¡la humanidad y la vida continuarán para siempre!».'},
+
+/* ========== 微纪元 ========== */
+{id:'v01',s:'micro',p:'233',
+ zh:'在修改人类基因后，人类将缩小至 10 微米左右，只相当于一个细胞大小，但其身体的结构完全不变。',
+ en:'With the human genome modified, a human being would shrink to about ten micrometres — the size of a single cell — while the structure of the body stayed exactly the same.',
+ fr:'Le génome humain une fois modifié, l’être humain se réduirait à une dizaine de micromètres — la taille d’une cellule — sans que la structure du corps change en rien.',
+ es:'Modificado el genoma humano, la persona se reduciría a unos diez micrómetros —el tamaño de una célula— sin que la estructura del cuerpo cambiara en nada.',
+ czh:'但某位基因工程师的脑海中闪现了一个这样火花：如果把人类的体积缩小十亿倍会怎么样？这样人类社会的尺度也缩小了十亿倍，只要有很微小的生态系统，消耗很微小的资源就可生存下来。很快全人类都意识到这是拯救人类文明唯一可行的办法。这个设想是以两项技术为基础的，其一是基因工程，在修改人类基因后，人类将缩小至 10 微米左右，只相当于一个细胞大小，但其身体的结构完全不变。',
+ cen:'Then a spark flashed in the mind of a certain genetic engineer: what if the volume of a human being were reduced a billionfold? The scale of human society would shrink a billionfold with it, and a tiny ecosystem consuming tiny resources would be enough to live on. Very quickly all of humanity realised this was the only workable way to save its civilisation. The idea rested on two technologies. The first was genetic engineering: with the human genome modified, a human being would shrink to about ten micrometres — the size of a single cell — while the structure of the body stayed exactly the same.',
+ cfr:'Une étincelle jaillit alors dans l’esprit d’un ingénieur en génétique : et si l’on réduisait d’un milliard de fois le volume de l’être humain ? L’échelle de la société humaine se réduirait d’autant, et un écosystème minuscule, consommant des ressources minuscules, suffirait à vivre. Très vite, l’humanité entière comprit que c’était le seul moyen praticable de sauver sa civilisation. Le projet reposait sur deux technologies. La première, le génie génétique : le génome humain une fois modifié, l’être humain se réduirait à une dizaine de micromètres — la taille d’une cellule — sans que la structure du corps change en rien.',
+ ces:'Entonces brotó una chispa en la mente de cierto ingeniero genético: ¿y si se redujera mil millones de veces el volumen del ser humano? La escala de la sociedad humana se reduciría otro tanto, y bastaría un ecosistema minúsculo, con un consumo minúsculo de recursos, para vivir. Muy pronto toda la humanidad comprendió que era el único modo viable de salvar su civilización. La idea se apoyaba en dos tecnologías. La primera, la ingeniería genética: modificado el genoma humano, la persona se reduciría a unos diez micrómetros —el tamaño de una célula— sin que la estructura del cuerpo cambiara en nada.'},
+{id:'v02',s:'micro',p:'238',
+ zh:'大不等于强大。',
+ en:'Big does not mean strong.',
+ fr:'Grand ne veut pas dire fort.',
+ es:'Grande no significa fuerte.',
+ czh:'「不幸的是宏人，他们很快就被击败了。」「这怎么可能呢？他们一个人用一把大锤就可以捣毁你们一座上百万人的城市。」「可微人不会在城市里同他们作战的。宏人的那些武器对付不了微人这样看不见的敌人，他们能使用的唯一武器就是消毒剂，而他们在整个文明史上一直用这东西同细菌作战，最后也并没有取得胜利。……大不等于强大。」',
+ cen:'“Unfortunately for the macro-humans, they were quickly defeated.” “How is that possible? One of them with a sledgehammer could smash a city of a million of you.” “But the micro-humans would not fight them in the cities. Macro weapons are no use against an enemy you cannot see; the only weapon they could use was disinfectant, and they had been fighting bacteria with that through their whole history without ever winning … Big does not mean strong.”',
+ cfr:'« Malheureusement pour les macro-humains, ils furent vite battus. » « Comment est-ce possible ? L’un d’eux, avec une masse, pourrait détruire une de vos villes d’un million d’habitants. » « Mais les micro-humains ne les combattaient pas dans les villes. Leurs armes ne valent rien contre un ennemi invisible ; la seule arme dont ils disposaient était le désinfectant, et ils s’en servaient depuis toujours contre les bactéries sans jamais l’emporter… Grand ne veut pas dire fort. »',
+ ces:'«Por desgracia para los macrohumanos, fueron derrotados enseguida». «¿Cómo es posible? Uno solo de ellos, con un mazo, podría destruir una ciudad vuestra de un millón de habitantes». «Pero los microhumanos no iban a combatirlos en las ciudades. Sus armas no sirven contra un enemigo invisible; la única que podían usar era el desinfectante, y llevaban toda su historia combatiendo con él a las bacterias sin vencer nunca… Grande no significa fuerte».'},
+{id:'v03',s:'micro',p:'243',
+ zh:'其实用文明的延续来形容微纪元是不够的，这是人类文明的升华！',
+ en:'To call the Micro-Age a continuation of civilisation is not enough: it is the sublimation of human civilisation.',
+ fr:'Parler de continuation de la civilisation ne suffit pas pour la Micro-Ère : c’est la sublimation de la civilisation humaine.',
+ es:'Llamar a la Microera continuación de la civilización no basta: es la sublimación de la civilización humana.',
+ czh:'沉默了许久，先行者对着他面前占据硬币般大小面积的微人人海庄严地说：「当我再次看到地球时，当我认为自己是宇宙中最后一个人时，我是全人类最悲哀的人，哀莫大于心死，没有人曾面对过那样让人心死的境地。但现在，我是全人类最幸福的人，至少是宏人中最幸福的人，我看到了人类文明的延续，其实用文明的延续来形容微纪元是不够的，这是人类文明的升华！我们都是一脉相传的人类，现在，我请求微纪元接纳我作为你们社会中一名普通的公民。」',
+ cen:'After a long silence the Forerunner spoke solemnly to the sea of micro-humans that filled a coin-sized patch of ground before him: “When I saw the Earth again, when I believed myself the last man in the universe, I was the saddest human being alive — no grief is greater than a dead heart, and no one has ever faced a place so deadening to the heart. But now I am the happiest of all humans, or at least the happiest of the macro-humans, because I have seen human civilisation continue. To call the Micro-Age a continuation of civilisation is not enough: it is the sublimation of human civilisation. We are all one unbroken line of humanity, and now I ask the Micro-Age to accept me as an ordinary citizen of your society.”',
+ cfr:'Après un long silence, le Précurseur s’adressa solennellement à la marée de micro-humains qui occupait devant lui une surface grande comme une pièce de monnaie : « Quand j’ai revu la Terre, quand je me suis cru le dernier homme de l’univers, j’étais l’être le plus triste de toute l’humanité — il n’est pas de pire chagrin qu’un cœur mort, et nul n’a jamais affronté un lieu aussi mortel pour le cœur. Mais aujourd’hui je suis le plus heureux des hommes, ou du moins le plus heureux des macro-humains, car j’ai vu la civilisation humaine se poursuivre. Parler de continuation ne suffit pas pour la Micro-Ère : c’est la sublimation de la civilisation humaine. Nous sommes tous une même lignée d’humains, et je demande maintenant à la Micro-Ère de m’accueillir comme un citoyen ordinaire de votre société. »',
+ ces:'Tras un largo silencio, el Precursor habló solemnemente al mar de microhumanos que ocupaba ante él una superficie del tamaño de una moneda: «Cuando volví a ver la Tierra, cuando me creí el último hombre del universo, era el ser más triste de toda la humanidad: no hay pena mayor que un corazón muerto, y nadie ha afrontado jamás un lugar tan mortal para el corazón. Pero ahora soy el más feliz de los humanos, o al menos el más feliz de los macrohumanos, porque he visto continuar la civilización humana. Llamar a la Microera continuación no basta: es la sublimación de la civilización humana. Todos somos una misma estirpe humana, y ahora pido a la Microera que me acepte como un ciudadano corriente de vuestra sociedad».'},
+{id:'v04',s:'micro',p:'244 – 245',
+ zh:'毫不动感情地，他按动了按钮。',
+ en:'Without a flicker of feeling, he pressed the button.',
+ fr:'Sans la moindre émotion, il appuya sur le bouton.',
+ es:'Sin un asomo de emoción, pulsó el botón.',
+ czh:'微纪元是无忧无虑的纪元。没有什么能威胁到微纪元，除非……先行者打了一个寒战，他想起了自己要来干的事，这事一秒钟也不能耽搁了。他走到一排支架前，从中取出了一百支密封管。这是他同时代人的胚胎细胞，宏人的胚胎细胞。先行者把这些密封管放进激光废物焚化炉，然后又回到冷藏库仔细看了好几遍，他在确认没有漏掉这类密封管后，回到焚化炉边，毫不动感情地，他按动了按钮。在激光束几十万摄氏度的高温下，装有胚胎的密封管瞬间汽化了。',
+ cen:'The Micro-Age is an age without care. Nothing can threaten the Micro-Age, unless… The Forerunner shivered: he remembered what he had come to do, and it could not wait another second. He went to a rack and took out a hundred sealed tubes. They held the embryonic cells of the people of his own time — the embryos of the macro-humans. He put the tubes into the laser waste incinerator, went back to the cold store and looked it over several times more, and once he was sure he had missed none of them, he returned to the incinerator and, without a flicker of feeling, pressed the button. In the several-hundred-thousand-degree heat of the laser beam, the tubes with their embryos vaporised in an instant.',
+ cfr:'La Micro-Ère est une ère sans souci. Rien ne peut menacer la Micro-Ère, à moins que… Le Précurseur frissonna : il se rappela ce qu’il était venu faire, et cela ne pouvait plus attendre une seconde. Il s’approcha d’un portoir et en retira cent tubes scellés. Ils contenaient les cellules embryonnaires des hommes de son temps — les embryons des macro-humains. Il plaça les tubes dans l’incinérateur laser, retourna dans la chambre froide qu’il inspecta encore plusieurs fois et, certain de n’en avoir oublié aucun, revint à l’incinérateur et, sans la moindre émotion, appuya sur le bouton. Sous les quelques centaines de milliers de degrés du faisceau laser, les tubes et leurs embryons se vaporisèrent en un instant.',
+ ces:'La Microera es una era sin inquietudes. Nada puede amenazar a la Microera, salvo… El Precursor se estremeció: recordó a qué había venido, y aquello no podía esperar un segundo más. Fue hasta un soporte y sacó cien tubos sellados. Contenían las células embrionarias de los hombres de su tiempo: los embriones de los macrohumanos. Metió los tubos en el incinerador láser de residuos, volvió a la cámara frigorífica y la revisó varias veces más y, seguro de no haber dejado ninguno, regresó al incinerador y, sin un asomo de emoción, pulsó el botón. Bajo los cientos de miles de grados del haz láser, los tubos con los embriones se vaporizaron al instante.'}
+];
+
+/* ============================================================
+   Likes + moderated comments — same Worker as the other notes.
+   Leaving the placeholder (or '') renders the page without any
+   interactive parts; the notes themselves still work offline.
+   ============================================================ */
+const API = 'https://reading-notes-api.YOUR-SUBDOMAIN.workers.dev';
+const PAGE_ID = 'jingzi';
+const API_ON = /^https?:\/\//.test(API) && !API.includes('YOUR-SUBDOMAIN');
+
+UI.pref = {en:'preface', zh:'自序', fr:'préface', es:'prefacio'};
+UI.modNote = {
+  en:'Anyone may like a passage or leave a comment on it. Likes appear at once; comments are read and approved by me before they are shown.',
+  zh:'任何人都可以给某一条点讚或留言。点讚即时生效；留言经我阅读并审核通过后才会显示。',
+  fr:'Chacun peut aimer un passage ou y laisser un commentaire. Les « j’aime » apparaissent aussitôt ; les commentaires sont lus et validés par moi avant d’être affichés.',
+  es:'Cualquiera puede dar «me gusta» a un pasaje o dejar un comentario. Los «me gusta» aparecen al instante; los comentarios los leo y apruebo yo antes de mostrarse.'
+};
+UI.like     = {en:'Like', zh:'点讚', fr:'J’aime', es:'Me gusta'};
+UI.liked    = {en:'Liked', zh:'已讚', fr:'Aimé', es:'Te gusta'};
+UI.cmt      = {en:'Comments', zh:'留言', fr:'Commentaires', es:'Comentarios'};
+UI.cmtNone  = {en:'No comments on this passage yet.', zh:'这一条还没有留言。', fr:'Aucun commentaire sur ce passage.', es:'Aún no hay comentarios en este pasaje.'};
+UI.fName    = {en:'Name or nickname', zh:'昵称', fr:'Nom ou pseudonyme', es:'Nombre o apodo'};
+UI.fEmail   = {en:'Email — optional, never shown', zh:'邮箱 — 选填，不会公开', fr:'E-mail — facultatif, jamais affiché', es:'Correo — opcional, nunca se muestra'};
+UI.fBody    = {en:'What this passage made you think…', zh:'这段让你想到了什么……', fr:'Ce que ce passage vous a inspiré…', es:'Qué te hizo pensar este pasaje…'};
+UI.fSend    = {en:'Send for review', zh:'提交审核', fr:'Envoyer pour validation', es:'Enviar para revisión'};
+UI.fSending = {en:'Sending…', zh:'提交中……', fr:'Envoi…', es:'Enviando…'};
+UI.fQueued  = {en:'Thank you. Your comment is in the review queue and will appear here once approved.', zh:'谢谢。留言已进入审核队列，通过后会显示在这里。', fr:'Merci. Votre commentaire est en attente de validation et apparaîtra ici une fois approuvé.', es:'Gracias. Tu comentario está en la cola de revisión y aparecerá aquí una vez aprobado.'};
+UI.fModNote = {en:'Moderated before publication. Your email is only visible to the site owner.', zh:'发布前需审核。邮箱仅站主可见。', fr:'Modéré avant publication. Votre e-mail n’est visible que par le propriétaire du site.', es:'Moderado antes de publicarse. Tu correo solo lo ve el propietario del sitio.'};
+UI.errName  = {en:'Please enter a name.', zh:'请填昵称。', fr:'Veuillez indiquer un nom.', es:'Indica un nombre.'};
+UI.errBody  = {en:'Please write something first.', zh:'请先写点什么。', fr:'Veuillez d’abord écrire quelque chose.', es:'Escribe algo primero.'};
+UI.errRate  = {en:'That is a lot of comments for one hour — please come back later.', zh:'一小时内留言太多了，请稍后再来。', fr:'Cela fait beaucoup de commentaires en une heure — revenez plus tard.', es:'Son muchos comentarios en una hora; vuelve más tarde.'};
+UI.errNet   = {en:'Could not send — please try again.', zh:'提交失败，请再试一次。', fr:'Envoi impossible — veuillez réessayer.', es:'No se pudo enviar; inténtalo de nuevo.'};
+
+let lang = 'en';
+try {
+  const saved = localStorage.getItem('jg-lang');
+  if (saved === 'zh' || saved === 'fr' || saved === 'es' || saved === 'en') lang = saved;
+} catch (_) {}
+
+let visitor = '';
+try {
+  visitor = localStorage.getItem('jg-visitor') || '';
+  if (!/^[a-z0-9]{8,40}$/.test(visitor)) {
+    visitor = Math.random().toString(36).slice(2, 12) + Date.now().toString(36);
+    localStorage.setItem('jg-visitor', visitor);
+  }
+} catch (_) { visitor = 'anon' + Math.random().toString(36).slice(2, 10); }
+
+let SOCIAL = null;          // {likes:{}, mine:[], comments:{}}
+const OPEN = new Set();     // entry ids whose comment panel is expanded
+
+const $ = (id) => document.getElementById(id);
+const el = (tag, cls) => { const n = document.createElement(tag); if (cls) n.className = cls; return n; };
+const LOCALE = {en:'en-GB', zh:'zh-CN', fr:'fr-FR', es:'es-ES'};
+
+function pageChip(e){
+  const n = el('span', 'page' + (e.a || e.np ? ' approx' : ''));
+  n.textContent = e.np ? UI.pref[lang] : (e.a ? '≈ p.' : 'p.') + e.p;
+  return n;
+}
+
+function heartSvg(){
+  const s = document.createElementNS('http://www.w3.org/2000/svg','svg');
+  s.setAttribute('viewBox','0 0 24 24'); s.setAttribute('class','heart'); s.setAttribute('aria-hidden','true');
+  const path = document.createElementNS('http://www.w3.org/2000/svg','path');
+  path.setAttribute('d','M12 20s-7-4.4-7-9.3A4.2 4.2 0 0 1 12 7.6a4.2 4.2 0 0 1 7 3.1C19 15.6 12 20 12 20Z');
+  s.append(path); return s;
+}
+
+/* ---------------------------------------------------------------- comments */
+
+function commentList(eid){
+  const items = (SOCIAL && SOCIAL.comments[eid]) || [];
+  if (!items.length){ const p = el('p','cnone'); p.textContent = UI.cmtNone[lang]; return p; }
+  const ul = el('ul','clist');
+  items.forEach(c => {
+    const li = el('li','citem');
+    const who = el('span','who'); who.textContent = c.name;
+    const at = el('span','at');
+    at.textContent = new Date(c.ts).toLocaleDateString(LOCALE[lang], {year:'numeric', month:'short', day:'numeric'});
+    const body = el('p'); body.textContent = c.body;
+    li.append(who, at, body); ul.append(li);
+  });
+  return ul;
+}
+
+function commentForm(eid){
+  const form = el('form','cform');
+  form.noValidate = true;
+  const opened = Date.now();
+
+  const two = el('div','two');
+  const name = el('input'); name.type = 'text'; name.maxLength = 40;
+  name.placeholder = UI.fName[lang]; name.autocomplete = 'nickname';
+  const mail = el('input'); mail.type = 'email'; mail.maxLength = 120;
+  mail.placeholder = UI.fEmail[lang]; mail.autocomplete = 'email';
+  two.append(name, mail);
+
+  const hp = el('input','hp'); hp.type = 'text'; hp.tabIndex = -1;
+  hp.setAttribute('aria-hidden','true'); hp.autocomplete = 'off'; hp.name = 'website';
+
+  const body = el('textarea'); body.maxLength = 1500; body.placeholder = UI.fBody[lang];
+  const send = el('button','send'); send.type = 'submit'; send.textContent = UI.fSend[lang];
+  const msg = el('p','cmsg');
+  const note = el('p','cmoderation'); note.textContent = UI.fModNote[lang];
+
+  form.append(two, hp, body, send, msg, note);
+
+  form.addEventListener('submit', async (ev) => {
+    ev.preventDefault();
+    msg.className = 'cmsg';
+    if (!name.value.trim()){ msg.classList.add('bad'); msg.textContent = UI.errName[lang]; name.focus(); return; }
+    if (body.value.trim().length < 2){ msg.classList.add('bad'); msg.textContent = UI.errBody[lang]; body.focus(); return; }
+    send.disabled = true; send.textContent = UI.fSending[lang];
+    try {
+      const r = await fetch(API + '/v1/comment', {
+        method:'POST', headers:{'content-type':'application/json'},
+        body: JSON.stringify({
+          page: PAGE_ID, entry: eid, visitor, lang,
+          name: name.value, email: mail.value, body: body.value,
+          website: hp.value, dwell: Date.now() - opened
+        })
+      });
+      if (r.status === 429){ msg.classList.add('bad'); msg.textContent = UI.errRate[lang]; }
+      else if (!r.ok){ msg.classList.add('bad'); msg.textContent = UI.errNet[lang]; }
+      else {
+        msg.classList.add('ok'); msg.textContent = UI.fQueued[lang];
+        name.value = ''; mail.value = ''; body.value = '';
+      }
+    } catch (_) { msg.classList.add('bad'); msg.textContent = UI.errNet[lang]; }
+    send.disabled = false; send.textContent = UI.fSend[lang];
+  });
+
+  return form;
+}
+
+function buildSocial(card, e){
+  const eid = e.id;
+  const row = el('div','social');
+
+  const likeN = (SOCIAL && SOCIAL.likes[eid]) || 0;
+  const mine = !!(SOCIAL && SOCIAL.mine.includes(eid));
+
+  const likeBtn = el('button','likebtn' + (mine ? ' on' : ''));
+  likeBtn.type = 'button';
+  likeBtn.setAttribute('aria-pressed', String(mine));
+  const likeLabel = el('span'); likeLabel.textContent = (mine ? UI.liked : UI.like)[lang];
+  const likeCount = el('span','n'); likeCount.textContent = likeN ? ' ' + likeN : '';
+  likeBtn.append(heartSvg(), likeLabel, likeCount);
+
+  likeBtn.addEventListener('click', async () => {
+    likeBtn.disabled = true;
+    try {
+      const r = await fetch(API + '/v1/like', {
+        method:'POST', headers:{'content-type':'application/json'},
+        body: JSON.stringify({page: PAGE_ID, entry: eid, visitor})
+      });
+      if (r.ok){
+        const d = await r.json();
+        SOCIAL.likes[eid] = d.count;
+        if (d.liked){ if (!SOCIAL.mine.includes(eid)) SOCIAL.mine.push(eid); }
+        else SOCIAL.mine = SOCIAL.mine.filter(x => x !== eid);
+        likeBtn.classList.toggle('on', d.liked);
+        likeBtn.setAttribute('aria-pressed', String(d.liked));
+        likeLabel.textContent = (d.liked ? UI.liked : UI.like)[lang];
+        likeCount.textContent = d.count ? ' ' + d.count : '';
+      }
+    } catch (_) {}
+    likeBtn.disabled = false;
+  });
+
+  const nCmt = ((SOCIAL && SOCIAL.comments[eid]) || []).length;
+  const cmtBtn = el('button','cmtbtn'); cmtBtn.type = 'button';
+  cmtBtn.textContent = UI.cmt[lang] + (nCmt ? ' ' + nCmt : '');
+  cmtBtn.setAttribute('aria-expanded', String(OPEN.has(eid)));
+
+  row.append(likeBtn, cmtBtn);
+
+  const panel = el('div','cpanel');
+  panel.hidden = !OPEN.has(eid);
+  if (OPEN.has(eid)) panel.append(commentList(eid), commentForm(eid));
+
+  cmtBtn.addEventListener('click', () => {
+    const open = panel.hidden;
+    panel.hidden = !open;
+    cmtBtn.setAttribute('aria-expanded', String(open));
+    if (open){
+      OPEN.add(eid);
+      if (!panel.childElementCount) panel.append(commentList(eid), commentForm(eid));
+    } else OPEN.delete(eid);
+  });
+
+  card.append(row, panel);
+}
+
+function mountSocial(){
+  if (!API_ON || !SOCIAL) return;
+  document.querySelectorAll('.entry').forEach(card => {
+    if (card.querySelector('.social')) return;
+    const e = ENTRIES.find(x => x.id === card.dataset.eid);
+    if (e) buildSocial(card, e);
+  });
+}
+
+async function loadSocial(){
+  if (!API_ON) return;
+  try {
+    const r = await fetch(API + '/v1/state?page=' + encodeURIComponent(PAGE_ID) + '&visitor=' + encodeURIComponent(visitor));
+    if (!r.ok) return;
+    const d = await r.json();
+    SOCIAL = {likes: d.likes || {}, mine: d.mine || [], comments: d.comments || {}};
+    const n = $('modnote');
+    if (n){ n.hidden = false; n.querySelector('span').textContent = UI.modNote[lang]; }
+    mountSocial();
+  } catch (_) { /* offline or not deployed yet — page stays static */ }
+}
+
+/* ------------------------------------------------------------------ render */
+
+function renderEntry(e){
+  const card = el('article','entry');
+  card.dataset.eid = e.id;
+  const top = el('div','entry-top');
+  top.append(pageChip(e));
+  if (e.a) { const n = el('span','kind'); n.textContent = UI.approx[lang]; top.append(n); }
+  card.append(top);
+
+  const q = el('blockquote', lang === 'zh' ? '' : 'latin');
+  q.textContent = e[lang];
+  card.append(q);
+
+  if (lang !== 'zh') {
+    const o = el('div','orig');
+    const lab = el('p','orig-label'); lab.textContent = UI.orig[lang];
+    const t = el('p'); t.textContent = e.zh;
+    o.append(lab, t); card.append(o);
+  }
+
+  const ctx = el('div','ctx');
+  const clab = el('p','ctx-label'); clab.textContent = UI.ctx[lang];
+  const cbody = el('p'); cbody.textContent = lang === 'zh' ? e.czh : e['c' + lang];
+  ctx.append(clab, cbody);
+  if (lang !== 'zh') { const cz = el('p','zh'); cz.textContent = e.czh; ctx.append(cz); }
+  card.append(ctx);
+
+  return card;
+}
+
+let filter = 'all';
+
+function renderMain(){
+  const main = $('main'); main.replaceChildren();
+  STORIES.forEach(st => {
+    if (filter !== 'all' && filter !== st.id) return;
+    const sec = el('section','story'); sec.dataset.s = st.id;
+    const head = el('div','story-head');
+    const h2 = el('h2','story-title'); h2.textContent = st.t[lang];
+    head.append(h2);
+    if (lang !== 'zh' && st.zh !== st.t[lang]) { const z = el('span','story-zh'); z.textContent = st.zh; head.append(z); }
+    if (st.range) { const r = el('span','range'); r.textContent = st.range; head.append(r); }
+    const sub = el('p','story-sub'); sub.textContent = st.s[lang];
+    sec.append(head, sub);
+    ENTRIES.filter(e => e.s === st.id).forEach(e => sec.append(renderEntry(e)));
+    main.append(sec);
+  });
+  mountSocial();
+}
+
+function renderChrome(){
+  document.documentElement.lang = (lang === 'zh' ? 'zh-Hans' : lang);
+  $('backlink').textContent = UI.back[lang];
+  $('eyebrow').textContent = UI.eyebrow[lang];
+  $('booktitle').textContent = '《镜子》';
+  $('byline').textContent = UI.byline[lang];
+
+  const f = $('facts'); f.replaceChildren();
+  UI.facts[lang].forEach(([b, t]) => {
+    const li = el('li'); const strong = el('b'); strong.textContent = b;
+    li.append(strong, document.createTextNode(' ' + t)); f.append(li);
+  });
+
+  $('prov-heading').textContent = UI.provHead[lang];
+  $('prov-body').textContent = UI.provBody[lang];
+  for (let i = 0; i < 4; i++){
+    $('prov-k' + (i+1)).textContent = UI.provKeys[lang][i];
+    $('prov-v' + (i+1)).innerHTML = UI.provVals[lang][i];
+  }
+  const mn = $('modnote');
+  if (mn && SOCIAL) { mn.hidden = false; mn.querySelector('span').textContent = UI.modNote[lang]; }
+
+  const fl = $('filters'); fl.replaceChildren();
+  const mk = (id, label) => {
+    const b = el('button'); b.type = 'button'; b.textContent = label;
+    b.setAttribute('aria-pressed', String(filter === id));
+    b.addEventListener('click', () => { filter = id; renderChrome(); renderMain(); window.scrollTo({top:0, behavior:'smooth'}); });
+    fl.append(b);
+  };
+  mk('all', UI.all[lang]);
+  STORIES.forEach(st => mk(st.id, st.t[lang]));
+
+  $('signature').textContent = UI.sig[lang];
+
+  document.querySelectorAll('.langbar button[data-l]').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.l === lang)));
+}
+
+document.querySelectorAll('.langbar button[data-l]').forEach(b => {
+  b.addEventListener('click', () => {
+    lang = b.dataset.l;
+    try { localStorage.setItem('jg-lang', lang); } catch (_) {}
+    renderChrome(); renderMain();
+  });
+});
+
+renderChrome();
+renderMain();
+loadSocial();
+</script>
+</body>
+</html>
