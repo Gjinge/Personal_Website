@@ -35,32 +35,36 @@
   document.querySelector('.display-controls').hidden = false;
   updateControls();
 
-  const header = document.querySelector('.site-header');
-  const navigation = header.querySelector('nav');
-  const menu = document.createElement('button');
-  menu.type = 'button'; menu.className = 'menu-toggle';
-  navigation.id = 'site-navigation';
-  menu.setAttribute('aria-controls', navigation.id);
-  menu.setAttribute('aria-expanded', 'false');
-  header.append(menu); header.classList.add('has-menu');
-  const menuLabel = () => { menu.textContent = t(header.classList.contains('is-menu-open') ? 'Close menu' : 'Menu'); };
-  const setMenu = open => {
-    header.classList.toggle('is-menu-open', open);
-    menu.setAttribute('aria-expanded', String(open)); menuLabel();
-  };
-  menuLabel();
-  menu.addEventListener('click', () => setMenu(menu.getAttribute('aria-expanded') !== 'true'));
-  header.addEventListener('keydown', event => {
-    if (event.key === 'Escape' && menu.getAttribute('aria-expanded') === 'true') { setMenu(false); menu.focus(); }
-  });
-  navigation.addEventListener('click', event => { if (event.target.closest('a')) setMenu(false); });
-  document.addEventListener('click', event => { if (!header.contains(event.target)) setMenu(false); });
-  document.addEventListener('jg:languagechange', menuLabel);
-  const wideNav = matchMedia('(min-width: 80rem)');
-  wideNav.addEventListener('change', () => setMenu(false));
-  const measureHeader = () => root.style.setProperty('--nav-height', `${header.offsetHeight}px`);
-  if ('ResizeObserver' in window) new ResizeObserver(measureHeader).observe(header);
-  measureHeader();
+  /* Mobile menu belongs to the Hallmark layer; pages that do not load hallmark.css
+     keep the original inline navigation. */
+  if (document.querySelector('link[rel="stylesheet"][href*="hallmark.css"]')) {
+    const header = document.querySelector('.site-header');
+    const navigation = header.querySelector('nav');
+    const menu = document.createElement('button');
+    menu.type = 'button'; menu.className = 'menu-toggle';
+    navigation.id = 'site-navigation';
+    menu.setAttribute('aria-controls', navigation.id);
+    menu.setAttribute('aria-expanded', 'false');
+    header.append(menu); header.classList.add('has-menu');
+    const menuLabel = () => { menu.textContent = t(header.classList.contains('is-menu-open') ? 'Close menu' : 'Menu'); };
+    const setMenu = open => {
+      header.classList.toggle('is-menu-open', open);
+      menu.setAttribute('aria-expanded', String(open)); menuLabel();
+    };
+    menuLabel();
+    menu.addEventListener('click', () => setMenu(menu.getAttribute('aria-expanded') !== 'true'));
+    header.addEventListener('keydown', event => {
+      if (event.key === 'Escape' && menu.getAttribute('aria-expanded') === 'true') { setMenu(false); menu.focus(); }
+    });
+    navigation.addEventListener('click', event => { if (event.target.closest('a')) setMenu(false); });
+    document.addEventListener('click', event => { if (!header.contains(event.target)) setMenu(false); });
+    document.addEventListener('jg:languagechange', menuLabel);
+    const wideNav = matchMedia('(min-width: 80rem)');
+    wideNav.addEventListener('change', () => setMenu(false));
+    const measureHeader = () => root.style.setProperty('--nav-height', `${header.offsetHeight}px`);
+    if ('ResizeObserver' in window) new ResizeObserver(measureHeader).observe(header);
+    measureHeader();
+  }
 
   const progress = document.querySelector('.reading-progress');
   const ghosts = [['var(--ghost-a)', '20px'], ['var(--ghost-b)', '34px'], ['var(--ghost-c)', '48px']]

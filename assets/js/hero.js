@@ -11,20 +11,18 @@
   const caret = cover.querySelector('.cover-caret');
   const header = document.querySelector('.site-header');
 
-  /* ---- navigation follows the painting and gains a full-width backdrop when sticky ---- */
+  /* ---- header: transparent over the painting, solid once the cover is behind us ---- */
   let ticking = false;
   const syncHeader = () => {
     const bottom = header ? header.getBoundingClientRect().bottom : 112;
     document.body.style.setProperty('--header-bottom', `${Math.round(bottom)}px`);
-    const stickyTop = header ? parseFloat(getComputedStyle(header).top) || 0 : 0;
-    const limit = cover.offsetTop + cover.offsetHeight - stickyTop;
+    const limit = cover.offsetHeight - bottom;
     document.body.classList.toggle('is-past-cover', scrollY > Math.max(0, limit));
     ticking = false;
   };
   const queueHeader = () => { if (!ticking) { ticking = true; requestAnimationFrame(syncHeader); } };
   addEventListener('scroll', queueHeader, { passive: true });
   addEventListener('resize', queueHeader, { passive: true });
-  if (header && 'ResizeObserver' in window) new ResizeObserver(queueHeader).observe(header);
   syncHeader();
 
   /* ---- typewriter ---- */
