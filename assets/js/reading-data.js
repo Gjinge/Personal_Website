@@ -24,6 +24,16 @@ window.readingNotes = [
     url: 'notes/xianshiyizhong.html'
   },
   {
+    title: '林肯传',
+    author: '戴尔·卡耐基 Dale Carnegie',
+    finished: '2025-02-02',
+    read: '20 Jan – 2 Feb 2025',
+    pages: 280,
+    highlights: 59,
+    cover: 'assets/img/covers/linkenzhuan.jpg',
+    url: 'notes/linkenzhuan.html'
+  },
+  {
     title: '朝闻道',
     author: '刘慈欣 Liu Cixin',
     finished: '2025-02-17',

@@ -1,0 +1,957 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<title>林肯传 · Reading Notes — Dale Carnegie</title>
+<meta name="description" content="Reading notes on Dale Carnegie's 林肯传 (Lincoln the Unknown): passages underlined in the paper book, with my margin notes and page numbers. Chinese original with AI translations into English, French and Spanish.">
+<style>
+:root{
+  --bg:#faf8f3; --panel:#fffdf9; --panel-2:#fffdf9; --line:#e4ded2; --line-soft:#efe9dd; --line-hi:#d8cfbc;
+  --ink:#1b1a17; --muted:#6f6a60; --dim:#8d8880;
+  --accent:#8a6a12; --accent-2:#b07d18; --mark:#a1541c; --warn:#6f5aa0;
+  --like:#c03a63; --ok:#2f7d55;
+  --chip-bg:#fcf2d2; --chip-border:rgba(246,214,107,.65); --chip-ink:#7a5c07;
+  --quote-rule:#e2d7b8; --toc-bg:rgba(250,248,243,.93);
+  --prov-bg:rgba(111,90,160,.07); --prov-border:rgba(111,90,160,.30); --prov-ink:#4a4459; --code-bg:rgba(111,90,160,.10);
+  --input-bg:#ffffff; --btn-bg:#f6d66b; --btn-border:#e8c85a; --on-btn:#1b1a17;
+  --glow-a:rgba(246,214,107,.16); --glow-b:rgba(200,170,120,.10);
+  --note-bg:rgba(161,84,28,.07); --note-border:rgba(161,84,28,.28); --note-ink:#5a3418; --note-orig:#7a5a45;
+  --serif:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,"Times New Roman","Noto Serif CJK SC","Source Han Serif SC","Songti SC",serif;
+  --sans:"Segoe UI",system-ui,-apple-system,"Noto Sans CJK SC","PingFang SC","Hiragino Sans GB","Microsoft YaHei",Arial,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+  background-image:radial-gradient(1200px 600px at 15% -10%,var(--glow-a),transparent 60%),
+                   radial-gradient(900px 500px at 95% 8%,var(--glow-b),transparent 60%);
+  background-attachment:fixed;}
+.wrap{max-width:900px;margin:0 auto;padding:16px}
+a{color:var(--accent)}
+
+/* ---------- language bar ---------- */
+.langbar{display:flex;justify-content:flex-end;gap:6px;padding-block:14px 0;flex-wrap:wrap}
+.langbar a.back{margin-right:auto;font-size:.8rem;color:var(--muted);text-decoration:none;align-self:center}
+.langbar a.back:hover{color:var(--ink)}
+.langbar button{background:transparent;border:1px solid var(--line);color:var(--muted);border-radius:999px;
+  padding:5px 12px;font-size:.76rem;letter-spacing:.05em;cursor:pointer;font-family:inherit;transition:.15s}
+.langbar button:hover{color:var(--ink);border-color:var(--accent)}
+.langbar button[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:var(--bg);font-weight:600}
+
+/* ---------- header ---------- */
+header.hero{padding-block:34px 28px;border-bottom:1px solid var(--line)}
+.eyebrow{font-size:.74rem;letter-spacing:.22em;text-transform:uppercase;color:var(--dim);margin:0 0 14px}
+h1{font-family:var(--serif);font-size:clamp(1.9rem,6vw,3rem);line-height:1.25;margin:0 0 6px;font-weight:600}
+h1 .by{display:block;font-family:var(--sans);font-size:.9rem;font-weight:400;letter-spacing:.16em;color:var(--muted);margin-top:12px}
+.hero-note{color:var(--muted);max-width:62ch;margin:18px 0 0;font-size:.95rem}
+.facts{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px;padding:0;list-style:none}
+.facts li{background:var(--panel);border:1px solid var(--line);border-radius:999px;
+  padding:7px 14px;font-size:.8rem;color:var(--muted)}
+.facts b{color:var(--ink);font-weight:600}
+
+/* ---------- provenance banner ---------- */
+.provenance{margin-top:26px;border:1px solid var(--prov-border);background:var(--prov-bg);
+  border-radius:14px;padding:18px 20px}
+.provenance h2{font-family:var(--sans);font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--warn);margin:0 0 10px;font-weight:700;display:flex;align-items:center;gap:8px}
+.provenance h2 svg{width:15px;height:15px;flex:0 0 auto;stroke:currentColor;fill:none;stroke-width:1.8}
+.provenance p{margin:0 0 8px;font-size:.88rem;color:var(--prov-ink)}
+.provenance p:last-child{margin-bottom:0}
+.provenance dl{margin:12px 0 0;display:grid;grid-template-columns:auto 1fr;gap:5px 14px;font-size:.82rem}
+.provenance dt{color:var(--warn);white-space:nowrap}
+.provenance dd{margin:0;color:var(--prov-ink)}
+.provenance code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.94em;
+  background:var(--code-bg);padding:1px 6px;border-radius:5px;color:var(--prov-ink)}
+
+/* ---------- toc / filter ---------- */
+nav.toc{position:sticky;top:0;z-index:5;background:var(--toc-bg);backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line);margin-inline:-16px;padding:10px 16px}
+.toc-row{max-width:900px;margin:0 auto;display:flex;gap:8px;overflow-x:auto;scrollbar-width:thin;padding-bottom:2px}
+.toc-row button{flex:0 0 auto;background:transparent;border:1px solid var(--line);color:var(--muted);
+  border-radius:999px;padding:6px 13px;font-size:.8rem;cursor:pointer;font-family:inherit;white-space:nowrap;transition:.15s}
+.toc-row button:hover{color:var(--ink);border-color:var(--accent)}
+.toc-row button[aria-pressed="true"]{background:var(--btn-bg);border-color:var(--btn-border);color:var(--on-btn);font-weight:600}
+
+/* ---------- story ---------- */
+section.story{padding-block:44px 8px;border-bottom:1px solid var(--line)}
+section.story:last-of-type{border-bottom:0}
+.story-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:12px;margin-bottom:4px}
+h2.story-title{font-family:var(--serif);font-size:clamp(1.35rem,4vw,1.8rem);margin:0;font-weight:600}
+.story-zh{font-family:var(--serif);color:var(--muted);font-size:1rem}
+.range{font-size:.78rem;color:var(--dim);letter-spacing:.06em}
+.story-sub{color:var(--muted);font-size:.88rem;margin:8px 0 26px;max-width:62ch}
+
+/* ---------- entry ---------- */
+.entry{background:var(--panel-2);border:1px solid var(--line);border-radius:14px;padding:20px 22px;margin-bottom:16px}
+.entry:hover{border-color:var(--line-hi)}
+.entry-top{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-bottom:12px}
+.page{font-family:var(--serif);font-size:.82rem;color:var(--chip-ink);border:1px solid var(--chip-border);
+  background:var(--chip-bg);border-radius:6px;padding:2px 9px;letter-spacing:.04em}
+.page.approx{color:var(--muted);border-color:var(--line);background:transparent}
+blockquote{margin:0;font-family:var(--serif);font-size:1.02rem;line-height:2;color:var(--ink);
+  border-left:2px solid var(--quote-rule);padding-left:16px}
+blockquote.latin{line-height:1.85}
+blockquote em{font-style:italic;color:var(--dim)}
+.cutnote{margin:12px 0 0;font-size:.78rem;color:var(--dim);font-style:italic}
+blockquote b{color:var(--ink);font-weight:600}
+.orig{margin:14px 0 0;border-left:2px solid var(--line);padding-left:16px}
+.orig-label{font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:var(--dim);margin:0 0 6px;
+  display:flex;align-items:center;gap:6px}
+.orig-label::before{content:"";width:14px;height:1px;background:var(--dim);display:inline-block}
+.orig p{margin:0;font-family:var(--serif);font-size:.94rem;line-height:1.95;color:var(--muted)}
+
+/* ---------- footer ---------- */
+footer{padding-block:40px 60px;color:var(--dim);font-size:.82rem;border-top:1px solid var(--line);margin-top:40px}
+footer p{margin:0 0 8px;max-width:72ch}
+
+/* ---------- likes + comments ---------- */
+.modnote{margin:14px 0 0;font-size:.82rem;color:var(--muted);display:flex;gap:8px;align-items:flex-start}
+.modnote[hidden]{display:none}
+.modnote svg{width:14px;height:14px;flex:0 0 auto;margin-top:5px;stroke:var(--ok);fill:none;stroke-width:1.8}
+.social{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-top:14px;
+  padding-top:13px;border-top:1px solid var(--line-soft)}
+.social button{background:transparent;border:1px solid var(--line);color:var(--muted);border-radius:999px;
+  padding:5px 13px;font-size:.78rem;font-family:inherit;cursor:pointer;display:inline-flex;align-items:center;
+  gap:6px;transition:.15s}
+.social button:hover{color:var(--ink);border-color:var(--accent)}
+.social button:disabled{opacity:.5;cursor:default}
+.social .heart{width:13px;height:13px;stroke:currentColor;fill:none;stroke-width:1.9}
+.social .likebtn.on{color:var(--like);border-color:rgba(192,58,99,.35);background:rgba(192,58,99,.07)}
+.social .likebtn.on .heart{fill:currentColor;stroke:currentColor}
+.social .n{font-variant-numeric:tabular-nums;opacity:.85}
+.social .spacer{flex:1}
+.cpanel{margin-top:14px;border-top:1px dashed var(--line);padding-top:14px}
+.cpanel[hidden]{display:none}
+.clist{margin:0 0 14px;padding:0;list-style:none;display:flex;flex-direction:column;gap:10px}
+.citem{background:var(--panel-2);border:1px solid var(--line-soft);border-radius:10px;padding:11px 13px}
+.citem .who{font-size:.78rem;color:var(--accent);font-weight:600}
+.citem .at{font-size:.72rem;color:var(--dim);margin-left:8px}
+.citem p{margin:5px 0 0;font-size:.9rem;white-space:pre-wrap;color:var(--ink)}
+.cnone{color:var(--dim);font-size:.84rem;margin:0 0 14px}
+.cform{display:flex;flex-direction:column;gap:8px}
+.cform .two{display:flex;gap:8px;flex-wrap:wrap}
+.cform .two>*{flex:1 1 180px;min-width:0}
+.cform input,.cform textarea{background:var(--input-bg);border:1px solid var(--line);color:var(--ink);
+  border-radius:8px;padding:9px 11px;font-family:inherit;font-size:.86rem;width:100%}
+.cform textarea{min-height:84px;resize:vertical;line-height:1.65}
+.cform input:focus,.cform textarea:focus{outline:none;border-color:var(--accent)}
+.cform .hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
+.cform .send{align-self:flex-start;background:var(--btn-bg);border:1px solid var(--btn-border);color:var(--on-btn);
+  font-weight:600;border-radius:999px;padding:7px 18px;font-size:.82rem;font-family:inherit;cursor:pointer}
+.cform .send:disabled{opacity:.55;cursor:default}
+.cmsg{font-size:.82rem;min-height:1.3em;margin:0}
+.cmsg.ok{color:var(--ok)}
+.cmsg.bad{color:var(--mark)}
+.cmoderation{font-size:.74rem;color:var(--dim);margin:0}
+
+.mynote{margin:14px 0 0;padding:11px 14px;border-radius:10px;background:rgba(161,84,28,.07);
+  border:1px solid rgba(161,84,28,.28);font-size:.9rem;color:#5a3418}
+.mynote b{color:var(--mark);font-weight:600;letter-spacing:.06em;font-size:.72rem;display:block;margin-bottom:3px;text-transform:uppercase}
+.mynote .note-orig{display:block;margin-top:5px;font-family:var(--serif);color:#7a5a45;font-size:.88rem}
+.ctx{margin:16px 0 0;padding:14px 16px;border-radius:10px;background:var(--panel-2);border:1px solid var(--line-soft)}
+.ctx-label{font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:var(--dim);margin:0 0 7px;display:flex;align-items:center;gap:6px}
+.ctx-label::before{content:"";width:14px;height:1px;background:var(--dim);display:inline-block}
+.ctx p{margin:0;font-size:.88rem;line-height:1.85;color:var(--muted)}
+.ctx p.zh{margin-top:9px;font-family:var(--serif);font-size:.9rem;line-height:1.9;color:var(--dim)}
+@media (max-width:560px){
+  .entry{padding:16px 15px;border-radius:12px}
+  blockquote{font-size:.98rem;line-height:1.95;padding-left:13px}
+  .provenance{padding:15px 16px}
+}
+@media print{
+  body{background:#fff;color:#000}
+  nav.toc,.langbar{display:none}
+  .entry{break-inside:avoid;border-color:#ccc;background:#fff}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="langbar">
+    <a class="back" href="../reading.html" id="backlink">← Reading Notes</a>
+    <button type="button" data-l="en" aria-pressed="true">English</button>
+    <button type="button" data-l="zh" aria-pressed="false">简体中文</button>
+    <button type="button" data-l="fr" aria-pressed="false">Français</button>
+    <button type="button" data-l="es" aria-pressed="false">Español</button>
+  </div>
+
+  <header class="hero">
+    <p class="eyebrow" id="eyebrow"></p>
+    <h1><span id="booktitle"></span><span class="by" id="byline"></span></h1>
+    <ul class="facts" id="facts"></ul>
+
+    <section class="provenance" aria-labelledby="prov-title">
+      <h2 id="prov-title">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v18M3 7h6M15 7h6M6 12l-3 5h6ZM18 12l-3 5h6Z"/></svg>
+        <span id="prov-heading"></span>
+      </h2>
+      <p id="prov-body"></p>
+      <dl>
+        <dt id="prov-k1"></dt><dd id="prov-v1"></dd>
+        <dt id="prov-k2"></dt><dd id="prov-v2"></dd>
+        <dt id="prov-k3"></dt><dd id="prov-v3"></dd>
+        <dt id="prov-k4"></dt><dd id="prov-v4"></dd>
+      </dl>
+      <p class="modnote" id="modnote" hidden>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+        <span></span>
+      </p>
+    </section>
+  </header>
+
+  <nav class="toc" aria-label="Sections"><div class="toc-row" id="filters"></div></nav>
+
+  <main id="main"></main>
+
+  <footer>
+    <p style="margin-top:18px" id="signature"></p>
+  </footer>
+
+</div>
+
+<script>
+const LANGS = ['en','zh','fr','es'];
+
+const UI = {
+  back:   {en:'← Reading Notes', zh:'← 读书笔记', fr:'← Notes de lecture', es:'← Notas de lectura'},
+  eyebrow:{en:'Reading notes · Dale Carnegie', zh:'读书笔记 · 戴尔·卡耐基', fr:'Notes de lecture · Dale Carnegie', es:'Notas de lectura · Dale Carnegie'},
+  byline: {
+    en:'DALE CARNEGIE · Lincoln the Unknown · trans. Zhu Fanxi & Wang Lin',
+    zh:'［美］戴尔·卡耐基 · Lincoln the Unknown · 朱凡希、王林 译',
+    fr:'DALE CARNEGIE · Lincoln the Unknown · trad. chinoise de Zhu Fanxi et Wang Lin',
+    es:'DALE CARNEGIE · Lincoln the Unknown · trad. china de Zhu Fanxi y Wang Lin'
+  },
+  facts: {
+    en:[['Jan–Feb 2025','read'],['Yilin, 2010','print edition']],
+    zh:[['2025 年 1–2 月','阅读期间'],['译林出版社 2010','纸质底本']],
+    fr:[['janv.–févr. 2025','lecture'],['Yilin, 2010','édition papier']],
+    es:[['ene.–feb. 2025','lectura'],['Yilin, 2010','edición impresa']]
+  },
+  provHead:{en:'Translation notice', zh:'翻译说明', fr:'Avis de traduction', es:'Aviso de traducción'},
+  provBody:{
+    en:'This book was written in English and is quoted here from its Chinese translation; the English, French and Spanish wordings on this page are machine translations of that Chinese text, not Carnegie’s original English. They have not been reviewed by a professional translator. The Chinese is printed under every passage and is the authoritative text here — where the two disagree, trust the Chinese.',
+    zh:'本书原著为英文，此处引用的是中译本；页面上的英文、法文、西班牙文均由 AI 模型据中译文机器翻译生成，并非卡耐基的英文原文，也未经专业译者校订。每条引文下方均附中文原文，以中文为准。',
+    fr:'Ce livre a été écrit en anglais et n’est cité ici que d’après sa traduction chinoise ; les versions anglaise, française et espagnole de cette page sont des traductions automatiques de ce texte chinois, et non l’anglais original de Carnegie. Elles n’ont pas été revues par un traducteur professionnel. Le texte chinois figure sous chaque passage et fait foi.',
+    es:'Este libro se escribió en inglés y aquí se cita por su traducción china; las versiones en inglés, francés y español de esta página son traducciones automáticas de ese texto chino, no el inglés original de Carnegie, y no han sido revisadas por un traductor profesional. El chino aparece bajo cada pasaje y es el texto de referencia.'
+  },
+  provKeys:{
+    en:['Language quoted','Source text','Translated by','Translated on'],
+    zh:['引用语言','底本','翻译','翻译日期'],
+    fr:['Langue citée','Texte source','Traduit par','Date de traduction'],
+    es:['Lengua citada','Texto fuente','Traducido por','Fecha de traducción']
+  },
+  provVals:{
+    en:['Chinese (Simplified) — 简体中文, from the English <i>Lincoln the Unknown</i>',
+        'Dale Carnegie, 《林肯传》, Yilin Press 2010 (12th printing, 2013), trans. Zhu Fanxi and Wang Lin. Passages transcribed from photographs of the marked pages and checked line by line against an EPUB of the same translation.',
+        'Anthropic Claude — <code>claude-opus-5</code> (machine translation, not post-edited)',
+        '21 September 2026'],
+    zh:['简体中文（译自英文 <i>Lincoln the Unknown</i>）',
+        '戴尔·卡耐基《林肯传》，译林出版社 2010 年版（2013 年第 12 次印刷），朱凡希、王林译。条目依书页照片录入，并与同一译本的 EPUB 正文逐句校对。',
+        'Anthropic Claude — <code>claude-opus-5</code>（机器翻译，未经人工润色）',
+        '2026 年 9 月 21 日'],
+    fr:['chinois simplifié — 简体中文 (d’après l’anglais <i>Lincoln the Unknown</i>)',
+        'Dale Carnegie, 《林肯传》, Yilin Press 2010 (12e tirage, 2013), trad. Zhu Fanxi et Wang Lin. Passages transcrits d’après des photographies des pages annotées et collationnés phrase par phrase avec un EPUB de la même traduction.',
+        'Anthropic Claude — <code>claude-opus-5</code> (traduction automatique, sans post-édition)',
+        '21 septembre 2026'],
+    es:['chino simplificado — 简体中文 (del inglés <i>Lincoln the Unknown</i>)',
+        'Dale Carnegie, 《林肯传》, Yilin Press 2010 (12.ª reimpresión, 2013), trad. de Zhu Fanxi y Wang Lin. Pasajes transcritos de fotografías de las páginas marcadas y cotejados frase por frase con un EPUB de la misma traducción.',
+        'Anthropic Claude — <code>claude-opus-5</code> (traducción automática, sin posedición)',
+        '21 de septiembre de 2026']
+  },
+  all:{en:'All sections', zh:'全部', fr:'Tout', es:'Todo'},
+  orig:    {en:'Chinese original', zh:'原文', fr:'Original chinois', es:'Original en chino'},
+  myNote:  {en:'My margin note', zh:'我的批注', fr:'Ma note en marge', es:'Mi nota al margen'},
+  approx:  {en:'page estimated', zh:'页码为推定', fr:'page estimée', es:'página estimada'},
+  kinds:{
+    u: {en:'underline', zh:'划线', fr:'souligné', es:'subrayado'},
+    b: {en:'boxed', zh:'方框', fr:'encadré', es:'recuadrado'},
+    c: {en:'circled', zh:'圈注', fr:'entouré', es:'rodeado'}
+  },
+  sig:{en:'Compiled September 2026 · Jinge Guo', zh:'整理于 2026 年 9 月 · 郭晋阁', fr:'Compilé en septembre 2026 · Jinge Guo', es:'Recopilado en septiembre de 2026 · Jinge Guo'}
+};
+
+const STORIES = [
+  {id:'road', zh:'从政之路与白宫', range:'',
+   t:{en:'The road to the White House', zh:'从政之路与白宫', fr:'Le chemin vers la Maison-Blanche', es:'El camino a la Casa Blanca'},
+   s:{en:'A country lawyer argues for the right of any people to govern themselves, says goodbye to Springfield, and reaches Washington unharmed — to the disappointment of some.',
+      zh:'一个乡下律师主张任何地方的人民都有权决定自己的事，告别斯普林菲尔德，毫发无损地到了华盛顿——有些人为此失望。',
+      fr:'Un avocat de province défend le droit de tout peuple à se gouverner, fait ses adieux à Springfield et arrive sain et sauf à Washington — à la déception de certains.',
+      es:'Un abogado rural defiende el derecho de cualquier pueblo a gobernarse, se despide de Springfield y llega ileso a Washington, para decepción de algunos.'}},
+  {id:'war', zh:'战争与统帅', range:'≈ p.139 – p.160',
+   t:{en:'The war and its generals', zh:'战争与统帅', fr:'La guerre et ses généraux', es:'La guerra y sus generales'},
+   s:{en:'Circus clowns for soldiers, a vain “young Napoleon”, and a president who learns that half a million volunteers are easier to find than one commander.',
+      zh:'像马戏团小丑的士兵，一个虚荣的「青年拿破仑」，和一个终于明白「募兵易、求帅难」的总统。',
+      fr:'Des soldats en clowns de cirque, un vaniteux « jeune Napoléon », et un président qui apprend qu’un demi-million de volontaires se trouve plus aisément qu’un seul chef.',
+      es:'Soldados que parecen payasos de circo, un vanidoso «joven Napoleón» y un presidente que aprende que es más fácil hallar medio millón de voluntarios que un solo jefe.'}},
+  {id:'men', zh:'身边的人', range:'≈ p.160 – p.180',
+   t:{en:'The men around him', zh:'身边的人', fr:'Les hommes autour de lui', es:'Los hombres a su alrededor'},
+   s:{en:'Stanton, Seward and the lawyers who once refused to shake his hand — and the signature that freed three and a half million people.',
+      zh:'斯坦顿、苏厄德，还有当年不肯跟他握手的同行——以及那个让三百五十万人获得自由的签名。',
+      fr:'Stanton, Seward et les avocats qui refusaient jadis de lui serrer la main — et la signature qui libéra trois millions et demi d’êtres humains.',
+      es:'Stanton, Seward y los abogados que en su día se negaron a darle la mano, y la firma que liberó a tres millones y medio de personas.'}},
+  {id:'end', zh:'遇刺', range:'p.231 – p.259',
+   t:{en:'The assassination', zh:'遇刺', fr:'L’assassinat', es:'El asesinato'},
+   s:{en:'The happiest afternoon of his life, a hole bored through a door, and a city that turns into a mob before morning.',
+      zh:'他一生中最快活的一个下午，门上钻出的一个小孔，和一座天亮之前变成暴民的城市。',
+      fr:'L’après-midi le plus heureux de sa vie, un trou percé dans une porte, et une ville devenue foule avant le matin.',
+      es:'La tarde más feliz de su vida, un agujero perforado en una puerta y una ciudad convertida en turba antes del amanecer.'}},
+  {id:'after', zh:'身后', range:'p.266 – p.280',
+   t:{en:'Afterwards', zh:'身后', fr:'Après', es:'Después'},
+   s:{en:'A widow who cannot forgive, a coffin moved seventeen times, and a face still recognisable thirty-six years later.',
+      zh:'一个无法释怀的寡妇，一口被搬动十七次的棺材，和三十六年后依然认得出的一张脸。',
+      fr:'Une veuve qui ne pardonne pas, un cercueil déplacé dix-sept fois, et un visage encore reconnaissable trente-six ans plus tard.',
+      es:'Una viuda que no perdona, un ataúd trasladado diecisiete veces y un rostro aún reconocible treinta y seis años después.'}}
+];
+
+const ENTRIES = [
+/* ========== 从政之路与白宫 ========== */
+{id:'r01',s:'road',k:['u'],
+ zh:'这一权利并非仅仅局限于现存政府的人民手中。任何地区的人民，只要他们有这个能力和意愿，都可以兴起，推翻现存政府，建立更适合他们自己的新政府。',
+ en:'This right does not belong only to the people living under an existing government. The people of any territory who have the power and the will may rise, overturn the government they have, and set up a new one better suited to themselves.',
+ fr:'Ce droit n’appartient pas seulement au peuple vivant sous un gouvernement établi. Les habitants de n’importe quel territoire, s’ils en ont la capacité et la volonté, peuvent se lever, renverser le gouvernement existant et en établir un autre qui leur convienne mieux.',
+ es:'Este derecho no pertenece solo al pueblo que vive bajo un gobierno existente. Los habitantes de cualquier territorio que tengan la capacidad y la voluntad pueden levantarse, derribar el gobierno que tienen y fundar otro que les convenga mejor.'},
+{id:'r02',s:'road',k:['u'],
+ zh:'我的孩子们生于此，其中一位已经长眠于此。',
+ en:'My children were born here, and one of them lies buried here.',
+ fr:'Mes enfants sont nés ici, et l’un d’eux y repose.',
+ es:'Mis hijos nacieron aquí, y uno de ellos yace enterrado aquí.',
+ n:{zh:'告别斯普林菲尔德。', en:'From the farewell at Springfield.', fr:'Adieux à Springfield.', es:'De la despedida en Springfield.'}},
+{id:'r03',s:'road',k:['c'],
+ zh:'林肯终于来到了白宫，毫发未损。许多人都惊讶不已。然而，另外一些人则失望万分。',
+ en:'Lincoln reached the White House at last, without a scratch. Many were astonished. Others were bitterly disappointed.',
+ fr:'Lincoln parvint enfin à la Maison-Blanche, sans une égratignure. Beaucoup en furent stupéfaits. D’autres en furent amèrement déçus.',
+ es:'Lincoln llegó por fin a la Casa Blanca, sin un rasguño. Muchos se asombraron. Otros quedaron amargamente decepcionados.'},
+{id:'r04',s:'road',k:['u'],
+ zh:'他意识到，自己必须率领民众进行一场内战，一场痛苦而血腥的内战。',
+ en:'He understood that he would have to lead his people into a civil war — a painful and bloody civil war.',
+ fr:'Il comprit qu’il lui faudrait mener son peuple dans une guerre civile — une guerre civile douloureuse et sanglante.',
+ es:'Comprendió que tendría que conducir a su pueblo a una guerra civil, una guerra civil dolorosa y sangrienta.'},
+{id:'r05',s:'road',k:['c'],
+ zh:'他辗转反侧，彻夜难眠。为此，他的体重足足轻了四十磅。',
+ en:'He tossed and turned and could not sleep the night through. He lost a full forty pounds over it.',
+ fr:'Il se retournait sans trouver le sommeil de la nuit. Il en perdit quarante bonnes livres.',
+ es:'Daba vueltas sin poder dormir en toda la noche. Perdió por ello cuarenta libras enteras.'},
+{id:'r06',s:'road',k:['u'],st:1,
+ zh:'但那惨白的脸色同时也预示着，他的生命在第二届总统任期内就会结束。',
+ en:'But that ashen face also foretold that his life would end within his second term as president.',
+ fr:'Mais ce visage livide annonçait aussi que sa vie s’achèverait au cours de son second mandat.',
+ es:'Pero aquel rostro lívido anunciaba también que su vida terminaría durante su segundo mandato.',
+ n:{zh:'预言家', en:'A prophet.', fr:'Un prophète.', es:'Un profeta.'}},
+{id:'r07',s:'road',k:['b'],st:1,
+ zh:'告诉那帮人赶紧到这里来，这会儿，我可以让他们每一个人都有活干。',
+ en:'Tell that crowd to hurry over here — just now I can find work for every last one of them.',
+ fr:'Dites à cette bande d’accourir : en ce moment, je peux trouver du travail pour chacun d’eux.',
+ es:'Dígales a esos que vengan corriendo: ahora mismo puedo darles trabajo a todos y cada uno.',
+ n:{zh:'常人难受之苦', en:'The kind of thing an ordinary person could not bear.', fr:'Ce qu’un homme ordinaire ne supporterait pas.', es:'Lo que una persona corriente no podría soportar.'}},
+
+/* ========== 战争与统帅 ========== */
+{id:'w01',s:'war',p:'139',k:['u'],
+ zh:'与其说这是一群前去送死的将士，还不如说是马戏班子里的一群小丑。',
+ en:'They looked less like soldiers marching off to die than like a troupe of circus clowns.',
+ fr:'Ils ressemblaient moins à des soldats partant mourir qu’à une troupe de clowns de cirque.',
+ es:'Parecían menos soldados que marchaban a morir que una tropa de payasos de circo.'},
+{id:'w02',s:'war',p:'140',a:1,k:['b'],st:1,
+ zh:'我不知道战场上有多少人，也不知道他们的具体方位，更不知道他们是如何武装起来的，以及他们能干些什么。没有人来告诉我，我完全一无所知。',
+ en:'I do not know how many men are in the field, nor where they are, nor how they are armed, nor what they can do. Nobody tells me. I know nothing at all.',
+ fr:'J’ignore combien d’hommes sont sur le terrain, où ils se trouvent, comment ils sont armés et ce qu’ils peuvent faire. Personne ne me le dit. Je ne sais rien.',
+ es:'No sé cuántos hombres hay en campaña, ni dónde están, ni cómo están armados, ni qué pueden hacer. Nadie me lo dice. No sé absolutamente nada.',
+ n:{zh:'多么艰难！', en:'How hard this was.', fr:'Quelle épreuve.', es:'Qué duro.'}},
+{id:'w03',s:'war',p:'140',a:1,k:['c'],
+ zh:'老将军揉搓着双眼，哈欠连天，终于醒来了。',
+ en:'The old general rubbed his eyes, yawned and yawned, and at last woke up.',
+ fr:'Le vieux général se frotta les yeux, bâilla longuement et finit par s’éveiller.',
+ es:'El viejo general se frotó los ojos, bostezó una y otra vez y al fin despertó.'},
+{id:'w04',s:'war',p:'144',a:1,k:['u'],
+ zh:'这位被宠坏了的「青年拿破仑」让虚荣冲昏了头脑。他自大、狂妄，称林肯及其内阁成员为「猎狗」「小人」「葡萄牙兵」。',
+ en:'Vanity had gone to the head of this spoilt “young Napoleon”. Arrogant and overbearing, he called Lincoln and his cabinet “hounds”, “scoundrels”, “Portuguese soldiers”.',
+ fr:'La vanité avait tourné la tête de ce « jeune Napoléon » trop gâté. Arrogant et présomptueux, il traitait Lincoln et son cabinet de « chiens courants », de « gredins », de « soldats portugais ».',
+ es:'La vanidad se le había subido a la cabeza a aquel mimado «joven Napoleón». Arrogante y presuntuoso, llamaba a Lincoln y a su gabinete «sabuesos», «canallas», «soldados portugueses».'},
+{id:'w05',s:'war',p:'145',a:1,k:['b'],
+ zh:'军中有一句「伟大的弗雷德里克」的格言：要彻底了解和你对抗的敌人。李和斯通沃尔·杰克逊非常了解他们将要对付的这位「蹩脚拿破仑」——胆小如鼠，牢骚满腹，从未亲历战场，一见血就倒。',
+ en:'There is a maxim of Frederick the Great in the army: know thoroughly the enemy you face. Lee and Stonewall Jackson knew their “sorry Napoleon” very well indeed — timid as a mouse, full of complaints, never once in the field himself, and apt to faint at the sight of blood.',
+ fr:'L’armée connaît une maxime de Frédéric le Grand : connais à fond l’ennemi que tu affrontes. Lee et Stonewall Jackson connaissaient fort bien leur « Napoléon de pacotille » : timide comme une souris, plein de récriminations, jamais sur le terrain, et prêt à défaillir à la vue du sang.',
+ es:'Hay en el ejército una máxima de Federico el Grande: conoce a fondo al enemigo que enfrentas. Lee y Stonewall Jackson conocían muy bien a su «Napoleón de pacotilla»: tímido como un ratón, lleno de quejas, jamás en el campo de batalla y capaz de desmayarse al ver sangre.'},
+{id:'w06',s:'war',p:'147',k:['u'],st:1,
+ zh:'一次伟大的壮举，却以一场最为血腥的失败而告终。',
+ en:'A magnificent undertaking that ended in the bloodiest of defeats.',
+ fr:'Une entreprise magnifique qui s’acheva par la plus sanglante des défaites.',
+ es:'Una empresa magnífica que terminó en la más sangrienta de las derrotas.',
+ n:{zh:'因为重重困难，才显出林肯的伟大。', en:'It is the sheer weight of the difficulties that shows how great Lincoln was.', fr:'C’est le poids même des difficultés qui révèle la grandeur de Lincoln.', es:'Es el peso mismo de las dificultades lo que revela la grandeza de Lincoln.'}},
+{id:'w07',s:'war',p:'150',a:1,k:['b'],st:1,
+ zh:'遭遇经年的失利和血腥洗礼之后，林肯终于明白了：招募五十万乐意去送死的士兵并不难，花去十亿美元也并非难事，难就难在苦寻不到引领将士迈向胜利的统帅人物。',
+ en:'After years of failure and bloodshed Lincoln understood at last: raising half a million men willing to die was not hard, and spending a billion dollars was not hard either. What was hard was finding the one commander who could lead them to victory.',
+ fr:'Après des années d’échecs et de sang, Lincoln finit par comprendre : lever un demi-million d’hommes prêts à mourir n’était pas difficile, dépenser un milliard de dollars non plus. Le difficile était de trouver le chef capable de les mener à la victoire.',
+ es:'Tras años de fracasos y sangre, Lincoln comprendió al fin: reclutar medio millón de hombres dispuestos a morir no era difícil, ni gastar mil millones de dólares. Lo difícil era encontrar al jefe capaz de llevarlos a la victoria.',
+ n:{zh:'（三字，字迹潦草，待确认）', en:'(three characters, too hurried to read — to be confirmed)', fr:'(trois caractères illisibles — à confirmer)', es:'(tres caracteres ilegibles: por confirmar)'}},
+{id:'w08',s:'war',p:'151',a:1,k:['c'],
+ zh:'我将怎么办？……我该怎么办？……盆子已经穿底了，盆子已经穿底了。',
+ en:'What am I to do? … What should I do? … The bottom has fallen out of the tub, the bottom has fallen out of the tub.',
+ fr:'Que vais-je faire ?… Que dois-je faire ?… Le fond de la cuve est parti, le fond de la cuve est parti.',
+ es:'¿Qué voy a hacer?… ¿Qué debo hacer?… Se le ha salido el fondo a la tina, se le ha salido el fondo a la tina.'},
+{id:'w09',s:'war',p:'152',a:1,k:['b'],st:1,
+ zh:'林肯呢，以其善解人意的天性和基督般的胸怀，他没有指责任何人。确实波普是失败了，可难道他没有尽力吗？林肯自身所经历的挫败太多了，至于他无法再去责备他人的失败。',
+ en:'As for Lincoln, with his understanding nature and his Christ-like breadth of heart, he blamed nobody. Pope had failed, true — but had he not done his best? Lincoln had known too many defeats of his own to reproach another man for his.',
+ fr:'Quant à Lincoln, avec sa nature compréhensive et sa largeur de cœur toute christique, il n’accusa personne. Pope avait échoué, certes — mais n’avait-il pas fait de son mieux ? Lincoln avait connu trop d’échecs lui-même pour reprocher les leurs aux autres.',
+ es:'En cuanto a Lincoln, con su natural comprensivo y su anchura de corazón casi crística, no culpó a nadie. Pope había fracasado, cierto, pero ¿no había hecho cuanto pudo? Lincoln había sufrido demasiadas derrotas propias para reprochar a otro las suyas.',
+ n:{zh:'真就动心忍性', en:'Truly “steeled in heart and tempered in patience”.', fr:'Vraiment « le cœur éprouvé, la patience trempée ».', es:'De verdad «templado de corazón y de paciencia».'}},
+{id:'w10',s:'war',p:'156',a:1,k:['u'],st:1,
+ zh:'林肯一边不停地在房间里踱来踱去，一边大喊「完了！完了！全完了！」。可是，在最后时刻，林肯却赶到弗雷德里克堡，给乔·胡克和士兵们鼓舞士气。',
+ en:'Lincoln paced the room without stopping, crying out: “It is over! It is over! All is over!” And yet, at the last moment, he went down to Fredericksburg to put heart into Joe Hooker and his men.',
+ fr:'Lincoln arpentait la pièce sans arrêt en criant : « C’est fini ! C’est fini ! Tout est fini ! » Et pourtant, au dernier moment, il se rendit à Fredericksburg pour redonner courage à Joe Hooker et à ses hommes.',
+ es:'Lincoln iba y venía por la habitación sin parar, gritando: «¡Se acabó! ¡Se acabó! ¡Todo se acabó!». Y sin embargo, en el último momento, fue a Fredericksburg a levantar el ánimo de Joe Hooker y sus hombres.',
+ n:{zh:'使命', en:'Duty.', fr:'La mission.', es:'La misión.'}},
+/* ========== 身边的人 ========== */
+{id:'m01',s:'men',p:'160',a:1,k:['u'],st:1,
+ zh:'看着孩子苍白的脸，林肯夫人悲痛欲绝。因为伤心过度，夫人没有参加葬礼。',
+ en:'Looking at the child’s pale face, Mrs Lincoln was beside herself with grief. She was too stricken to attend the funeral.',
+ fr:'En regardant le visage pâle de l’enfant, Mme Lincoln fut accablée de douleur. Trop effondrée, elle n’assista pas aux obsèques.',
+ es:'Al ver el rostro pálido del niño, la señora Lincoln quedó deshecha de dolor. Demasiado abatida, no asistió al funeral.',
+ n:{zh:'太多的挫折了', en:'Too many blows, one after another.', fr:'Trop d’épreuves, coup sur coup.', es:'Demasiados golpes, uno tras otro.'}},
+{id:'m02',s:'men',p:'161',a:1,k:['u'],
+ zh:'她没有再迈进客房一步——威利下葬前在那里灌浸香气。',
+ en:'She never set foot in the guest room again — it was there that Willie had been embalmed before his burial.',
+ fr:'Elle ne remit jamais les pieds dans la chambre d’amis : c’est là qu’on avait embaumé Willie avant de l’enterrer.',
+ es:'Nunca volvió a poner un pie en el cuarto de invitados: allí habían embalsamado a Willie antes de enterrarlo.'},
+{id:'m03',s:'men',p:'163',a:1,k:['b'],
+ zh:'格兰特认为，斯坦顿根本不顾及他人的感受，他从来不会主动去让别人高兴一点，反而喜欢在拒绝中寻找一丝快感。',
+ en:'Grant thought Stanton had no regard at all for other men’s feelings: he never went out of his way to please anyone, and seemed rather to take a small pleasure in refusing.',
+ fr:'Grant estimait que Stanton n’avait aucun égard pour les sentiments d’autrui : il ne faisait jamais rien pour faire plaisir et semblait plutôt trouver un petit plaisir à refuser.',
+ es:'Grant opinaba que a Stanton no le importaban nada los sentimientos ajenos: jamás hacía nada por complacer y más bien parecía hallar cierto placer en negarse.'},
+{id:'m04',s:'men',p:'164',a:1,k:['u'],
+ zh:'我向斯坦顿走去，他向我伸出手来，可我当众拒绝和他握手；在场的人将这情景全看在了眼里。',
+ en:'I walked up to Stanton; he held out his hand, and in front of everyone I refused to shake it. Every man there saw it.',
+ fr:'Je m’avançai vers Stanton ; il me tendit la main et, devant tout le monde, je refusai de la serrer. Tous les assistants l’ont vu.',
+ es:'Me acerqué a Stanton; me tendió la mano y, delante de todos, me negué a estrechársela. Todos los presentes lo vieron.'},
+{id:'m05',s:'men',p:'165',a:1,k:['u'],
+ zh:'我不可以支配我自己。唯一能统治我的，是我的良知和我的上帝。人们终究会理解这一点的。',
+ en:'I am not free to do as I please with myself. The only things that rule me are my conscience and my God. People will understand that in the end.',
+ fr:'Je ne dispose pas de moi-même. Les seules choses qui me gouvernent sont ma conscience et mon Dieu. Les gens finiront par le comprendre.',
+ es:'No dispongo de mí mismo. Lo único que me gobierna son mi conciencia y mi Dios. La gente acabará por entenderlo.'},
+{id:'m06',s:'men',p:'167',k:['b'],st:1,
+ zh:'他们从不愿意和林肯一道前往法院，对待他的方式，和对待被社会淘汰的流浪者的方式一模一样。',
+ en:'They never wanted to walk to court beside Lincoln, and they treated him exactly as they would have treated a vagrant cast off by society.',
+ fr:'Ils ne voulaient jamais se rendre au tribunal en sa compagnie et le traitaient exactement comme on traite un vagabond rejeté par la société.',
+ es:'Nunca querían ir al juzgado a su lado y lo trataban exactamente como se trata a un vagabundo desechado por la sociedad.',
+ n:{zh:'（两字，字迹潦草，待确认）', en:'(two characters, too hurried to read — to be confirmed)', fr:'(deux caractères illisibles — à confirmer)', es:'(dos caracteres ilegibles: por confirmar)'}},
+{id:'m07',s:'men',p:'167',k:['u'],
+ zh:'我不会和这样一个该死的笨拙长臂猿交往。',
+ en:'I will have nothing to do with that damned long-armed ape.',
+ fr:'Je ne veux rien avoir à faire avec ce maudit singe aux longs bras.',
+ es:'No pienso tratar con ese maldito simio de brazos largos.'},
+{id:'m08',s:'men',p:'168',a:1,k:['u'],
+ zh:'由于屡屡蒙受屈辱，他只有选择回家，从此心境一直郁闷难堪。',
+ en:'Humiliated again and again, he had no choice but to go home, and his spirits stayed low and sore long afterwards.',
+ fr:'Humilié encore et encore, il ne put que rentrer chez lui, et son humeur en resta longtemps sombre et blessée.',
+ es:'Humillado una y otra vez, no le quedó más que volver a casa, y su ánimo quedó abatido y dolido mucho tiempo.'},
+{id:'m09',s:'men',p:'169',a:1,k:['b'],st:1,
+ zh:'那些当初瞧不起林肯的人，包括斯坦顿和苏厄德在内，终于明白林肯是多么地令人敬畏。当林肯弥留之际，斯坦顿说：「这里躺着一位世上最优秀的人类领袖。」',
+ en:'Those who had once looked down on Lincoln — Stanton and Seward among them — came at last to see how formidable a man he was. As Lincoln lay dying, Stanton said: “There lies the most perfect ruler of men the world has ever seen.”',
+ fr:'Ceux qui avaient d’abord méprisé Lincoln — Stanton et Seward en tête — finirent par mesurer sa grandeur. Tandis qu’il agonisait, Stanton dit : « Là repose le meilleur conducteur d’hommes que le monde ait connu. »',
+ es:'Quienes al principio despreciaron a Lincoln —Stanton y Seward entre ellos— acabaron por ver qué hombre tan formidable era. Mientras agonizaba, Stanton dijo: «Ahí yace el mejor conductor de hombres que ha conocido el mundo».',
+ n:{zh:'大胸怀', en:'What largeness of heart.', fr:'Quelle grandeur d’âme.', es:'Qué grandeza de alma.'}},
+{id:'m10',s:'men',p:'172',a:1,k:['u'],
+ zh:'美国正变得太富裕、太强大了，惹得他们眼红难耐。他们就是想看着这个国家分裂，看着联邦解体；再者，他们也需要南方的棉花。',
+ en:'America was growing too rich and too strong for their liking. They wanted to see the country split and the Union fall apart — and besides, they needed the cotton of the South.',
+ fr:'L’Amérique devenait trop riche et trop puissante à leur goût. Ils voulaient voir le pays se scinder et l’Union se défaire — et puis, il leur fallait le coton du Sud.',
+ es:'Norteamérica se estaba volviendo demasiado rica y poderosa para su gusto. Querían ver el país partido y la Unión deshecha y, además, necesitaban el algodón del Sur.'},
+{id:'m11',s:'men',p:'177',k:['u'],st:1,
+ zh:'他让自己的右臂稍事休息之后，轻缓地在文件上签上了自己的姓名——让三百五十万奴隶获得自由。',
+ en:'He rested his right arm a moment, then slowly signed his name to the document — and three and a half million slaves were free.',
+ fr:'Il laissa reposer un instant son bras droit, puis signa lentement le document — et trois millions et demi d’esclaves furent libres.',
+ es:'Dejó descansar un momento el brazo derecho y luego firmó despacio el documento: tres millones y medio de esclavos quedaron libres.',
+ n:{zh:'顶级松弛感', en:'Unbelievable composure.', fr:'Un calme souverain.', es:'Una calma absoluta.'}},
+{id:'m12',s:'men',p:'177',k:['u'],
+ zh:'成千上万的士兵逃跑，在任何地方征兵都成了一个特大问题。',
+ en:'Soldiers deserted by the thousand, and raising troops anywhere became an enormous problem.',
+ fr:'Les soldats désertaient par milliers, et recruter devenait partout un problème énorme.',
+ es:'Los soldados desertaban por millares y reclutar se volvió en todas partes un problema enorme.'},
+{id:'m13',s:'men',p:'178',a:1,k:['u'],
+ zh:'那些林肯曾经赖以信任的平民百姓也让他彻底失望。在秋季的选举中，他一溃千里，甚至在他的家乡伊利诺伊州，人们也将共和党遗弃。',
+ en:'Even the ordinary people he had counted on failed him utterly. In the autumn elections he was routed; even in his own Illinois, the voters abandoned the Republicans.',
+ fr:'Même le petit peuple sur lequel il comptait le laissa tomber. Aux élections d’automne, il fut écrasé ; jusque dans son Illinois natal, les électeurs abandonnèrent les républicains.',
+ es:'Hasta la gente común en la que confiaba lo defraudó por completo. En las elecciones de otoño fue derrotado sin paliativos; incluso en su Illinois natal los votantes abandonaron a los republicanos.'},
+/* ========== 遇刺 ========== */
+{id:'a01',s:'end',p:'231',k:['u'],st:1,
+ zh:'当天下午，林肯和妻子已经有过一次长时间的散步。之后，夫人说这是这么些年来她所见到的林肯最快乐的一天。为何？那是因为有了和平，因为有了胜利，因为有了团结，因为有了自由。',
+ en:'That afternoon Lincoln and his wife had taken a long walk together. Afterwards she said it was the happiest day she had seen him in all those years. Why? Because there was peace; because there was victory; because there was union; because there was freedom.',
+ fr:'Cet après-midi-là, Lincoln et sa femme avaient fait une longue promenade. Elle dit ensuite que c’était le jour le plus heureux qu’elle lui eût vu depuis des années. Pourquoi ? Parce qu’il y avait la paix ; parce qu’il y avait la victoire ; parce qu’il y avait l’union ; parce qu’il y avait la liberté.',
+ es:'Aquella tarde Lincoln y su mujer habían dado un largo paseo. Después ella dijo que era el día más feliz que le había visto en todos aquellos años. ¿Por qué? Porque había paz; porque había victoria; porque había unión; porque había libertad.',
+ n:{zh:'朴素、博爱', en:'Plain living, and love for everyone.', fr:'Simplicité et amour du prochain.', es:'Sencillez y amor a todos.'}},
+{id:'a02',s:'end',p:'231',k:['u'],
+ zh:'林肯继续在大草原里巡回办案以度余生，这是他最乐意而为之事。',
+ en:'Lincoln would go on riding the prairie circuit and trying cases for the rest of his life — the thing he most liked to do.',
+ fr:'Lincoln continuerait à parcourir la prairie pour plaider jusqu’à la fin de ses jours — ce qu’il aimait faire par-dessus tout.',
+ es:'Lincoln seguiría recorriendo la pradera litigando el resto de su vida: lo que más le gustaba hacer.'},
+{id:'a03',s:'end',p:'232',a:1,k:['u'],
+ zh:'布思用手在门上钻出一个小孔，从中窥视、计算射程，然后悄悄地将门推开。一刹那间，他猛地将手中那把大口径短筒手枪对准总统的头颅扣动了扳机，旋即朝着下面的舞台跳了过去。',
+ en:'Booth bored a small hole in the door with his hand, peered through it, judged the range, then eased the door open. In an instant he levelled the short, large-bore pistol at the president’s head, pulled the trigger, and leapt down to the stage below.',
+ fr:'Booth perça de la main un petit trou dans la porte, y regarda, évalua la distance, puis poussa doucement le battant. En un instant il braqua le pistolet court de gros calibre sur la tête du président, pressa la détente et sauta sur la scène en contrebas.',
+ es:'Booth abrió con la mano un pequeño agujero en la puerta, miró por él, calculó la distancia y empujó la puerta con suavidad. En un instante apuntó la pistola corta de gran calibre a la cabeza del presidente, apretó el gatillo y saltó al escenario de abajo.'},
+{id:'a04',s:'end',p:'233',a:1,k:['u'],
+ zh:'所到之处都是他伤口处涌出的鲜血，人行道被染得血红一片。男人们跪下，用手绢擦拭地板上的血迹——这手绢将是他们毕生的珍藏，在他们不久于人世之际，才会作为无价之宝遗赠给自己的下一代。',
+ en:'Everywhere they carried him the blood came from his wound, and the pavement was stained red. Men knelt and wiped the blood from the boards with their handkerchiefs — handkerchiefs they would treasure all their lives, and only near their own deaths hand down as priceless things to their children.',
+ fr:'Partout où on le portait, le sang coulait de sa blessure et le trottoir en fut rougi. Des hommes s’agenouillèrent pour essuyer le sang des planches avec leur mouchoir — mouchoirs qu’ils garderaient toute leur vie et ne légueraient à leurs enfants, comme un trésor, qu’à l’approche de leur propre mort.',
+ es:'Por dondequiera que lo llevaban manaba la sangre de su herida y la acera quedó teñida de rojo. Hubo hombres que se arrodillaron a limpiar la sangre del suelo con sus pañuelos: pañuelos que guardarían toda la vida y que solo cerca de su propia muerte legarían a sus hijos como un tesoro.'},
+{id:'a05',s:'end',p:'233',a:1,k:['b'],
+ zh:'这会儿，人们感到李的投降只不过是个计谋。他们认为奸诈的南部邦联已经悄悄地潜入华盛顿，正准备将华府一扫而光；他们还认为南方军团已经再次武装就绪，而战争——更为血腥的战争——马上就要开始。',
+ en:'People now felt that Lee’s surrender had been nothing but a ruse. They believed the treacherous Confederacy had slipped into Washington and was about to sweep the capital away; they believed the southern armies were armed and ready again, and that war — a bloodier war — was about to begin.',
+ fr:'On se persuada alors que la reddition de Lee n’avait été qu’une ruse. On croyait la perfide Confédération infiltrée dans Washington, prête à balayer la capitale ; on croyait les armées du Sud de nouveau sous les armes, et la guerre — plus sanglante encore — sur le point de recommencer.',
+ es:'La gente sintió entonces que la rendición de Lee no había sido más que una treta. Creían que la pérfida Confederación se había infiltrado en Washington y estaba a punto de arrasar la capital; creían que los ejércitos del Sur volvían a estar armados y que la guerra —una guerra más sangrienta— iba a empezar.'},
+{id:'a06',s:'end',p:'234',k:['u'],st:1,
+ zh:'马里兰州的一位编辑被枪杀，因为他曾经在出版物里用尽庸俗下流的语言攻击林肯。',
+ en:'An editor in Maryland was shot dead because he had once attacked Lincoln in print in the coarsest, filthiest language.',
+ fr:'Un rédacteur du Maryland fut abattu parce qu’il avait jadis attaqué Lincoln dans son journal dans les termes les plus grossiers.',
+ es:'A un editor de Maryland lo mataron a tiros porque había atacado a Lincoln en su periódico con el lenguaje más grosero.',
+ n:{zh:'《乌合之众》', en:'Straight out of The Crowd (Le Bon).', fr:'Du pur Gustave Le Bon, Psychologie des foules.', es:'Puro Le Bon, Psicología de las masas.'}},
+{id:'a07',s:'end',p:'236',a:1,k:['b'],
+ zh:'在那最后的祥和时刻，幸福美好的回忆陆陆续续地从林肯的记忆深处豁然浮现：印第安纳州巴克霍恩山谷的夜晚，草棚门前那堆熠熠发光的柴火，桑加蒙河咆哮的河水汹涌奔腾直冲新塞勒姆的拦河大坝，安·拉特利奇在纺机旁的欢歌，老马嘶鸣着找寻填肚子的玉米，斯普林菲尔德的法律事务所，墨迹斑斑的墙壁，书架上已经抽枝发芽的花籽……',
+ en:'In those last peaceful hours the happy memories rose one after another out of the depths of him: nights in Buckhorn Valley in Indiana, the glowing woodpile before the door of the shed, the Sangamon roaring down against the New Salem dam, Ann Rutledge singing at the spinning wheel, the old horse whinnying for its corn, the Springfield law office, the ink-spattered walls, the flower seeds on the bookshelf already sprouting…',
+ fr:'Dans ces dernières heures paisibles, les souvenirs heureux remontèrent l’un après l’autre du fond de lui : les nuits de la vallée de Buckhorn, dans l’Indiana, le tas de bois rougeoyant devant la cabane, la Sangamon grondant contre le barrage de New Salem, Ann Rutledge chantant au rouet, le vieux cheval hennissant après son maïs, l’étude de Springfield, les murs tachés d’encre, les graines de fleurs germant déjà sur l’étagère…',
+ es:'En aquellas últimas horas serenas los recuerdos felices fueron surgiendo del fondo de él: las noches del valle de Buckhorn, en Indiana, la pila de leña encendida ante la cabaña, el Sangamon bramando contra la presa de New Salem, Ann Rutledge cantando junto a la rueca, el viejo caballo relinchando por su maíz, el bufete de Springfield, las paredes manchadas de tinta, las semillas de flores brotando ya en el estante…'},
+{id:'a08',s:'end',p:'238',a:1,k:['u'],
+ zh:'人们干脆将窗框都拆了下来，为的是能够让尽可能多的人头、尽可能多的双眼伸出窗外。',
+ en:'People simply took the window frames out, so that as many heads and as many eyes as possible could lean out of them.',
+ fr:'On alla jusqu’à démonter les châssis des fenêtres, pour que le plus de têtes et le plus d’yeux possible puissent se pencher au-dehors.',
+ es:'La gente llegó a desmontar los marcos de las ventanas para que se asomaran por ellas cuantas cabezas y cuantos ojos fuera posible.'},
+{id:'a09',s:'end',p:'241',a:1,k:['b'],
+ zh:'这个女人的丈夫信仰「与人无怨」、「博爱天下」；而这个女人和自己的丈夫在同一屋檐之下生活了二十五年，可她什么也没有学到，心中的仇恨一点儿也没有减少。',
+ en:'This woman’s husband believed in “malice toward none” and in charity for all; she had lived under the same roof with him for twenty-five years and had learned nothing of it — not a particle of the hatred in her had gone.',
+ fr:'Le mari de cette femme croyait à « la malveillance envers personne » et à la charité pour tous ; elle avait vécu vingt-cinq ans sous le même toit que lui sans rien en apprendre : pas une once de sa haine n’avait diminué.',
+ es:'El marido de esta mujer creía en «malicia hacia nadie» y en la caridad para todos; ella había vivido veinticinco años bajo el mismo techo y no había aprendido nada: ni un ápice de su odio había disminuido.'},
+{id:'a10',s:'end',p:'244',k:['u'],st:1,
+ zh:'他明白，此刻他正在演绎着其事业生涯中最至高无上的角色，这是注定会让他永垂不朽的一幕。',
+ en:'He knew that he was playing at that moment the supreme role of his career, the scene that was bound to make him immortal.',
+ fr:'Il savait qu’il jouait en cet instant le rôle suprême de sa carrière, la scène qui devait le rendre immortel.',
+ es:'Sabía que estaba interpretando en ese instante el papel supremo de su carrera, la escena que lo haría inmortal.',
+ n:{zh:'也算人物', en:'A figure in his own right, in a way.', fr:'Un personnage, à sa façon.', es:'Un personaje, a su manera.'}},
+{id:'a11',s:'end',p:'248',a:1,k:['u'],st:1,
+ zh:'他认为自己的所作所为对于南方来说是个伟大的贡献。',
+ en:'He believed that what he had done was a great service to the South.',
+ fr:'Il tenait son acte pour un grand service rendu au Sud.',
+ es:'Creía que lo que había hecho era un gran servicio al Sur.',
+ n:{zh:'确实', en:'Indeed.', fr:'En effet.', es:'Ya.'}},
+{id:'a12',s:'end',p:'249',a:1,k:['c'],
+ zh:'要是这个世界理解我就好了。虽然我并不奢望成为伟人，但是只要有一次疾风暴雨，我就可以一举成名……我胸怀远大抱负，不会像一名罪犯那样死去。',
+ en:'If only the world understood me. I do not aspire to greatness, but one storm would be enough to make my name … I have a great ambition in me, and I shall not die like a criminal.',
+ fr:'Si seulement le monde me comprenait. Je n’aspire pas à la grandeur, mais une seule tempête suffirait à me faire un nom… J’ai en moi une haute ambition, et je ne mourrai pas comme un criminel.',
+ es:'Ojalá el mundo me entendiera. No aspiro a la grandeza, pero bastaría una tormenta para hacerme un nombre… Llevo dentro una gran ambición y no moriré como un criminal.'},
+{id:'a13',s:'end',p:'250',k:['u'],
+ zh:'感谢上帝！我终于安全抵达了光荣而古老的弗吉尼亚。',
+ en:'Thank God! I have got safe to old Virginia at last, glorious old Virginia.',
+ fr:'Dieu merci ! J’ai enfin gagné sans encombre la vieille et glorieuse Virginie.',
+ es:'¡Gracias a Dios! Por fin he llegado sano y salvo a la vieja y gloriosa Virginia.'},
+{id:'a14',s:'end',p:'250',a:1,k:['u'],
+ zh:'可是，黑奴也不愿留宿这两个逃亡之人，让他俩进屋时黑奴还骂骂咧咧，使用了好些威胁的话语。',
+ en:'But the black man too was unwilling to take the two fugitives in; he let them into the house cursing, and with a good many threats.',
+ fr:'Mais l’homme noir lui non plus ne voulait pas héberger les deux fugitifs ; il les laissa entrer en jurant et en proférant force menaces.',
+ es:'Pero tampoco el hombre negro quería alojar a los dos fugitivos; los dejó entrar refunfuñando y con no pocas amenazas.'},
+{id:'a15',s:'end',p:'255',a:1,k:['c'],
+ zh:'他们得到一个意料之外的结果。',
+ en:'What they got was a result nobody had expected.',
+ fr:'Ce qu’ils obtinrent fut un résultat que personne n’attendait.',
+ es:'Lo que obtuvieron fue un resultado que nadie esperaba.'},
+{id:'a16',s:'end',p:'256',k:['b'],st:1,
+ zh:'他请求给自己母亲捎去最后一句话：「告诉她……我是为我的国家而死的，我所做的……是世上最棒的一件事。」',
+ en:'He asked that a last word be taken to his mother: “Tell her … I died for my country, and that what I did was the best thing in the world.”',
+ fr:'Il demanda qu’on portât un dernier mot à sa mère : « Dites-lui… que je meurs pour mon pays, et que ce que j’ai fait est la plus belle chose du monde. »',
+ es:'Pidió que le llevaran una última palabra a su madre: «Dile… que muero por mi país y que lo que hice fue lo mejor del mundo».',
+ n:{zh:'是个人物', en:'He was somebody, after all.', fr:'C’était tout de même un personnage.', es:'Alguien era, después de todo.'}},
+{id:'a17',s:'end',p:'257',a:1,k:['u'],st:1,
+ zh:'斯坦顿下令从速、秘密掩埋布思的尸体，他的衣服和头发，总之，布思的一丝一毫都不能留下。',
+ en:'Stanton ordered the body buried quickly and in secret — his clothes, his hair, every last trace of Booth was to be left behind nowhere.',
+ fr:'Stanton ordonna d’enterrer le corps au plus vite et en secret : ses vêtements, ses cheveux, la moindre trace de Booth ne devait subsister nulle part.',
+ es:'Stanton ordenó enterrar el cuerpo deprisa y en secreto: su ropa, su pelo, el menor rastro de Booth no debía quedar en ninguna parte.',
+ n:{zh:'这级别的', en:'That level of caution.', fr:'À ce niveau-là.', es:'A ese nivel.'}},
+{id:'a18',s:'end',p:'259',k:['u'],
+ zh:'半小时之后，棺材被埋进一间大房子西南角的一个浅墓穴里，那间房子是政府的弹药储藏室。',
+ en:'Half an hour later the coffin was buried in a shallow grave in the south-west corner of a large room — the government’s ammunition store.',
+ fr:'Une demi-heure plus tard, le cercueil fut enfoui dans une fosse peu profonde, à l’angle sud-ouest d’une grande salle qui servait de dépôt de munitions au gouvernement.',
+ es:'Media hora después el ataúd fue enterrado en una fosa poco profunda en el ángulo suroeste de una sala grande: el depósito de municiones del gobierno.'},
+{id:'a19',s:'end',p:'261',a:1,k:['u'],st:1,
+ zh:'哪怕是在他玩命抵抗的时候，也从没有否认自己就是约翰·威尔克斯·布思。布思死了，可世人还要作出诸多揣测，这太荒唐，太不可思议了。',
+ en:'Even while he was fighting for his life he never once denied that he was John Wilkes Booth. Booth was dead; that the world should go on spinning theories about it was absurd past believing.',
+ fr:'Même en se défendant à mort, il n’a jamais nié être John Wilkes Booth. Booth était mort ; que le monde continue d’échafauder des hypothèses était d’une absurdité inouïe.',
+ es:'Incluso mientras luchaba por su vida jamás negó ser John Wilkes Booth. Booth estaba muerto; que el mundo siguiera haciendo conjeturas resultaba absurdo hasta lo increíble.',
+ n:{zh:'是个人物！', en:'He was somebody!', fr:'C’était un personnage !', es:'¡Vaya personaje!'}},
+/* ========== 身后 ========== */
+{id:'f01',s:'after',p:'266',a:1,k:['c'],
+ zh:'有一次，林肯不得不提醒夫人，我们必须考虑节俭以外的一些事情。但是，一旦涉及那些虚荣的东西，比如衣物和珠宝，夫人不仅可以忘记节俭这码事儿，还会失去一切理智而放纵自己，疯狂花费金钱。',
+ en:'Once Lincoln had to remind his wife that there were things to consider besides economy. Yet where vanity was concerned — clothes, jewels — she could forget economy altogether, lose every shred of reason and spend money wildly.',
+ fr:'Un jour, Lincoln dut rappeler à sa femme qu’il fallait songer à autre chose qu’à l’économie. Mais dès qu’il s’agissait de vanités — toilettes, bijoux — elle oubliait toute économie, perdait toute raison et dépensait sans frein.',
+ es:'Una vez Lincoln tuvo que recordarle a su mujer que había que pensar en algo más que en el ahorro. Pero en cuanto entraba en juego la vanidad —ropa, joyas—, ella olvidaba el ahorro por completo, perdía toda cordura y gastaba sin freno.'},
+{id:'f02',s:'after',p:'267',a:1,k:['c'],st:1,
+ zh:'他实在是太老实了，不敢收取工资以外的任何报酬，因而我别无他法，只有借债置装。',
+ en:'He is too honest by far — he dares not take a penny beyond his salary. So I have no choice but to go into debt for my clothes.',
+ fr:'Il est bien trop honnête : il n’ose accepter un sou de plus que son traitement. Je n’ai donc d’autre choix que de m’endetter pour m’habiller.',
+ es:'Es demasiado honrado: no se atreve a aceptar un céntimo más que su sueldo. Así que no me queda más remedio que endeudarme para vestirme.',
+ n:{zh:'任何方式均可成功', en:'Any road can get you there.', fr:'Tous les chemins peuvent mener au but.', es:'Cualquier camino puede llevarte allí.'}},
+{id:'f03',s:'after',p:'267',a:1,k:['u'],
+ zh:'夫人债务缠身，高达 7 万美元之多！林肯任职总统的年薪为 2.5 万美元。多么可怕！总统单单为夫人添置华丽服饰就得用尽其两年零九个月的薪金，一分不剩！',
+ en:'Her debts ran to seventy thousand dollars! The president’s salary was twenty-five thousand a year. Frightful — dressing his wife alone would have taken two years and nine months of it, down to the last cent.',
+ fr:'Ses dettes atteignaient soixante-dix mille dollars ! Le traitement du président était de vingt-cinq mille par an. Effrayant : habiller sa femme aurait englouti deux ans et neuf mois de ce traitement, jusqu’au dernier cent.',
+ es:'¡Sus deudas ascendían a setenta mil dólares! El sueldo del presidente era de veinticinco mil al año. Espantoso: vestir a su mujer se habría llevado dos años y nueve meses de ese sueldo, hasta el último centavo.'},
+{id:'f04',s:'after',p:'269',a:1,
+ zh:'凯克雷回忆说，林肯夫人离开白宫的早晨，「没有人和她道别，那种寂静是令人痛苦的」。',
+ en:'Keckley remembered that on the morning Mrs Lincoln left the White House “no one came to say goodbye to her; the silence was painful”.',
+ fr:'Keckley se souvenait que le matin où Mme Lincoln quitta la Maison-Blanche, « personne ne vint lui dire adieu ; ce silence était douloureux ».',
+ es:'Keckley recordaba que la mañana en que la señora Lincoln dejó la Casa Blanca «nadie fue a despedirse de ella; aquel silencio era doloroso».'},
+{id:'f05',s:'after',p:'270',k:['b'],
+ zh:'夫人的经济来源几乎没有。如其所言：1876 年 9 月，她已经压抑难耐，仅可卑贱地生存。',
+ en:'She had almost nothing to live on. By September 1876, as she put it herself, she could hardly bear it any longer and was merely existing, in humiliation.',
+ fr:'Elle n’avait presque rien pour vivre. En septembre 1876, disait-elle elle-même, elle n’en pouvait plus et ne faisait que subsister, dans l’humiliation.',
+ es:'Apenas tenía de qué vivir. En septiembre de 1876, según ella misma decía, ya no lo soportaba y solo subsistía, humillada.'},
+{id:'f06',s:'after',p:'271',a:1,k:['u'],st:1,
+ zh:'1871 年夏季，泰德死于伤寒。林肯夫人仅剩的一个儿子罗伯特也在当年完婚。',
+ en:'In the summer of 1871 Tad died of typhoid. Robert, the only son she had left, married that same year.',
+ fr:'À l’été 1871, Tad mourut du typhus. Robert, le seul fils qui lui restât, se maria la même année.',
+ es:'En el verano de 1871 Tad murió de tifus. Robert, el único hijo que le quedaba, se casó ese mismo año.',
+ n:{zh:'林肯确实牛逼', en:'Lincoln really was something.', fr:'Lincoln était vraiment quelqu’un.', es:'Lincoln era de verdad alguien.'}},
+{id:'f07',s:'after',p:'276',a:1,k:['u'],st:1,
+ zh:'没错，他只不过是个穷得叮当响、睡在斯皮德店铺里、为生计而苦苦挣扎的律师，但是她坚信，如果她努力地激励他，他有可能成为一名总统。',
+ en:'True, he was only a penniless lawyer sleeping in Speed’s store and scraping for a living; but she was convinced that if she pushed him hard enough he might yet be president.',
+ fr:'Certes, il n’était qu’un avocat sans le sou, couchant dans la boutique de Speed et tirant le diable par la queue ; mais elle était convaincue qu’à force de l’aiguillonner il pourrait devenir président.',
+ es:'Cierto, no era más que un abogado sin blanca que dormía en la tienda de Speed y se ganaba la vida a duras penas; pero ella estaba convencida de que, si lo empujaba lo suficiente, podría llegar a presidente.',
+ n:{zh:'龙蛇之变', en:'From snake to dragon.', fr:'Du serpent au dragon.', es:'De serpiente a dragón.'}},
+{id:'f08',s:'after',p:'277',k:['u'],st:1,
+ zh:'然而，他们的行动未遂，尸体并没有被搬移坟墓。所以，这位来自芝加哥的最棒的同时也是收费最昂贵的律师只能指控盗贼阴谋盗棺，从而要求处以 75 美元的罚款。',
+ en:'But the attempt failed, and the body was never moved from the grave. So the best and dearest lawyer in Chicago could charge the thieves only with conspiring to steal a coffin, and ask a fine of seventy-five dollars.',
+ fr:'Mais la tentative échoua et le corps ne fut jamais déplacé. Le meilleur — et le plus cher — avocat de Chicago ne put donc accuser les voleurs que d’avoir conspiré pour dérober un cercueil, et réclamer une amende de soixante-quinze dollars.',
+ es:'Pero el intento fracasó y el cuerpo nunca salió de la tumba. Así que el mejor y más caro abogado de Chicago solo pudo acusar a los ladrones de conspirar para robar un ataúd y pedir una multa de setenta y cinco dólares.',
+ n:{zh:'死了也不安生', en:'Not even death let him rest.', fr:'Même mort, pas de repos.', es:'Ni muerto lo dejaron en paz.'}},
+{id:'f09',s:'after',p:'278',k:['u'],
+ zh:'然而，这桩诉讼刚刚持续了八个月，公众的愤慨就几近散去，因为当时的政治斗争如火如荼。',
+ en:'The suit had run only eight months when the public anger had all but drained away — the politics of the day were boiling too fiercely.',
+ fr:'Le procès durait depuis huit mois à peine que l’indignation publique s’était presque dissipée : les luttes politiques du moment faisaient rage.',
+ es:'El pleito llevaba apenas ocho meses cuando la indignación pública casi se había disipado: las luchas políticas del momento ardían demasiado.'},
+{id:'f10',s:'after',p:'280',a:1,
+ zh:'那天，棺木被打开，人们最后一眼看到了林肯的面貌。当时在场目睹一切的人都说林肯神态自若。林肯已经去世三十六年，由于防腐措施得当，他当时看起来和在世时的模样没有二致，只是他的脸色有点黑，他那条黑色领带上长了个霉点。',
+ en:'That day the coffin was opened and people looked on Lincoln’s face for the last time. Everyone who was there said he looked perfectly composed. Thirty-six years after his death, the embalming had held so well that he looked no different from the living man — only his face was a little dark, and a spot of mould had grown on his black necktie.',
+ fr:'Ce jour-là, on ouvrit le cercueil et l’on regarda le visage de Lincoln pour la dernière fois. Tous les témoins dirent qu’il paraissait parfaitement serein. Trente-six ans après sa mort, l’embaumement avait si bien tenu qu’il ne différait en rien du vivant — seul son teint était un peu sombre, et une tache de moisissure avait poussé sur sa cravate noire.',
+ es:'Aquel día se abrió el ataúd y se vio por última vez el rostro de Lincoln. Cuantos estaban presentes dijeron que parecía perfectamente sereno. Treinta y seis años después de su muerte, el embalsamamiento había aguantado tan bien que no se diferenciaba del hombre vivo: solo tenía la cara algo oscura y en su corbata negra había brotado una mancha de moho.'}
+];
+
+/* ============================================================
+   Likes + moderated comments — same Worker as the other notes.
+   Leaving the placeholder (or '') renders the page without any
+   interactive parts; the notes themselves still work offline.
+   ============================================================ */
+const API = 'https://reading-notes-api.YOUR-SUBDOMAIN.workers.dev';
+const PAGE_ID = 'linkenzhuan';
+const API_ON = /^https?:\/\//.test(API) && !API.includes('YOUR-SUBDOMAIN');
+
+UI.pref = {en:'preface', zh:'自序', fr:'préface', es:'prefacio'};
+UI.modNote = {
+  en:'Anyone may like a passage or leave a comment on it. Likes appear at once; comments are read and approved by me before they are shown.',
+  zh:'任何人都可以给某一条点讚或留言。点讚即时生效；留言经我阅读并审核通过后才会显示。',
+  fr:'Chacun peut aimer un passage ou y laisser un commentaire. Les « j’aime » apparaissent aussitôt ; les commentaires sont lus et validés par moi avant d’être affichés.',
+  es:'Cualquiera puede dar «me gusta» a un pasaje o dejar un comentario. Los «me gusta» aparecen al instante; los comentarios los leo y apruebo yo antes de mostrarse.'
+};
+UI.like     = {en:'Like', zh:'点讚', fr:'J’aime', es:'Me gusta'};
+UI.liked    = {en:'Liked', zh:'已讚', fr:'Aimé', es:'Te gusta'};
+UI.cmt      = {en:'Comments', zh:'留言', fr:'Commentaires', es:'Comentarios'};
+UI.cmtNone  = {en:'No comments on this passage yet.', zh:'这一条还没有留言。', fr:'Aucun commentaire sur ce passage.', es:'Aún no hay comentarios en este pasaje.'};
+UI.fName    = {en:'Name or nickname', zh:'昵称', fr:'Nom ou pseudonyme', es:'Nombre o apodo'};
+UI.fEmail   = {en:'Email — optional, never shown', zh:'邮箱 — 选填，不会公开', fr:'E-mail — facultatif, jamais affiché', es:'Correo — opcional, nunca se muestra'};
+UI.fBody    = {en:'What this passage made you think…', zh:'这段让你想到了什么……', fr:'Ce que ce passage vous a inspiré…', es:'Qué te hizo pensar este pasaje…'};
+UI.fSend    = {en:'Send for review', zh:'提交审核', fr:'Envoyer pour validation', es:'Enviar para revisión'};
+UI.fSending = {en:'Sending…', zh:'提交中……', fr:'Envoi…', es:'Enviando…'};
+UI.fQueued  = {en:'Thank you. Your comment is in the review queue and will appear here once approved.', zh:'谢谢。留言已进入审核队列，通过后会显示在这里。', fr:'Merci. Votre commentaire est en attente de validation et apparaîtra ici une fois approuvé.', es:'Gracias. Tu comentario está en la cola de revisión y aparecerá aquí una vez aprobado.'};
+UI.fModNote = {en:'Moderated before publication. Your email is only visible to the site owner.', zh:'发布前需审核。邮箱仅站主可见。', fr:'Modéré avant publication. Votre e-mail n’est visible que par le propriétaire du site.', es:'Moderado antes de publicarse. Tu correo solo lo ve el propietario del sitio.'};
+UI.errName  = {en:'Please enter a name.', zh:'请填昵称。', fr:'Veuillez indiquer un nom.', es:'Indica un nombre.'};
+UI.errBody  = {en:'Please write something first.', zh:'请先写点什么。', fr:'Veuillez d’abord écrire quelque chose.', es:'Escribe algo primero.'};
+UI.errRate  = {en:'That is a lot of comments for one hour — please come back later.', zh:'一小时内留言太多了，请稍后再来。', fr:'Cela fait beaucoup de commentaires en une heure — revenez plus tard.', es:'Son muchos comentarios en una hora; vuelve más tarde.'};
+UI.errNet   = {en:'Could not send — please try again.', zh:'提交失败，请再试一次。', fr:'Envoi impossible — veuillez réessayer.', es:'No se pudo enviar; inténtalo de nuevo.'};
+
+let lang = 'en';
+try {
+  const saved = localStorage.getItem('jg-lang');
+  if (saved === 'zh' || saved === 'fr' || saved === 'es' || saved === 'en') lang = saved;
+} catch (_) {}
+
+let visitor = '';
+try {
+  visitor = localStorage.getItem('jg-visitor') || '';
+  if (!/^[a-z0-9]{8,40}$/.test(visitor)) {
+    visitor = Math.random().toString(36).slice(2, 12) + Date.now().toString(36);
+    localStorage.setItem('jg-visitor', visitor);
+  }
+} catch (_) { visitor = 'anon' + Math.random().toString(36).slice(2, 10); }
+
+let SOCIAL = null;          // {likes:{}, mine:[], comments:{}}
+const OPEN = new Set();     // entry ids whose comment panel is expanded
+
+const $ = (id) => document.getElementById(id);
+const el = (tag, cls) => { const n = document.createElement(tag); if (cls) n.className = cls; return n; };
+const LOCALE = {en:'en-GB', zh:'zh-CN', fr:'fr-FR', es:'es-ES'};
+
+function pageChip(e){
+  const n = el('span', 'page' + (e.a || e.np ? ' approx' : ''));
+  n.textContent = e.np ? UI.pref[lang] : (e.a ? '≈ p.' : 'p.') + e.p;
+  return n;
+}
+
+function heartSvg(){
+  const s = document.createElementNS('http://www.w3.org/2000/svg','svg');
+  s.setAttribute('viewBox','0 0 24 24'); s.setAttribute('class','heart'); s.setAttribute('aria-hidden','true');
+  const path = document.createElementNS('http://www.w3.org/2000/svg','path');
+  path.setAttribute('d','M12 20s-7-4.4-7-9.3A4.2 4.2 0 0 1 12 7.6a4.2 4.2 0 0 1 7 3.1C19 15.6 12 20 12 20Z');
+  s.append(path); return s;
+}
+
+/* ---------------------------------------------------------------- comments */
+
+function commentList(eid){
+  const items = (SOCIAL && SOCIAL.comments[eid]) || [];
+  if (!items.length){ const p = el('p','cnone'); p.textContent = UI.cmtNone[lang]; return p; }
+  const ul = el('ul','clist');
+  items.forEach(c => {
+    const li = el('li','citem');
+    const who = el('span','who'); who.textContent = c.name;
+    const at = el('span','at');
+    at.textContent = new Date(c.ts).toLocaleDateString(LOCALE[lang], {year:'numeric', month:'short', day:'numeric'});
+    const body = el('p'); body.textContent = c.body;
+    li.append(who, at, body); ul.append(li);
+  });
+  return ul;
+}
+
+function commentForm(eid){
+  const form = el('form','cform');
+  form.noValidate = true;
+  const opened = Date.now();
+
+  const two = el('div','two');
+  const name = el('input'); name.type = 'text'; name.maxLength = 40;
+  name.placeholder = UI.fName[lang]; name.autocomplete = 'nickname';
+  const mail = el('input'); mail.type = 'email'; mail.maxLength = 120;
+  mail.placeholder = UI.fEmail[lang]; mail.autocomplete = 'email';
+  two.append(name, mail);
+
+  const hp = el('input','hp'); hp.type = 'text'; hp.tabIndex = -1;
+  hp.setAttribute('aria-hidden','true'); hp.autocomplete = 'off'; hp.name = 'website';
+
+  const body = el('textarea'); body.maxLength = 1500; body.placeholder = UI.fBody[lang];
+  const send = el('button','send'); send.type = 'submit'; send.textContent = UI.fSend[lang];
+  const msg = el('p','cmsg');
+  const note = el('p','cmoderation'); note.textContent = UI.fModNote[lang];
+
+  form.append(two, hp, body, send, msg, note);
+
+  form.addEventListener('submit', async (ev) => {
+    ev.preventDefault();
+    msg.className = 'cmsg';
+    if (!name.value.trim()){ msg.classList.add('bad'); msg.textContent = UI.errName[lang]; name.focus(); return; }
+    if (body.value.trim().length < 2){ msg.classList.add('bad'); msg.textContent = UI.errBody[lang]; body.focus(); return; }
+    send.disabled = true; send.textContent = UI.fSending[lang];
+    try {
+      const r = await fetch(API + '/v1/comment', {
+        method:'POST', headers:{'content-type':'application/json'},
+        body: JSON.stringify({
+          page: PAGE_ID, entry: eid, visitor, lang,
+          name: name.value, email: mail.value, body: body.value,
+          website: hp.value, dwell: Date.now() - opened
+        })
+      });
+      if (r.status === 429){ msg.classList.add('bad'); msg.textContent = UI.errRate[lang]; }
+      else if (!r.ok){ msg.classList.add('bad'); msg.textContent = UI.errNet[lang]; }
+      else {
+        msg.classList.add('ok'); msg.textContent = UI.fQueued[lang];
+        name.value = ''; mail.value = ''; body.value = '';
+      }
+    } catch (_) { msg.classList.add('bad'); msg.textContent = UI.errNet[lang]; }
+    send.disabled = false; send.textContent = UI.fSend[lang];
+  });
+
+  return form;
+}
+
+function buildSocial(card, e){
+  const eid = e.id;
+  const row = el('div','social');
+
+  const likeN = (SOCIAL && SOCIAL.likes[eid]) || 0;
+  const mine = !!(SOCIAL && SOCIAL.mine.includes(eid));
+
+  const likeBtn = el('button','likebtn' + (mine ? ' on' : ''));
+  likeBtn.type = 'button';
+  likeBtn.setAttribute('aria-pressed', String(mine));
+  const likeLabel = el('span'); likeLabel.textContent = (mine ? UI.liked : UI.like)[lang];
+  const likeCount = el('span','n'); likeCount.textContent = likeN ? ' ' + likeN : '';
+  likeBtn.append(heartSvg(), likeLabel, likeCount);
+
+  likeBtn.addEventListener('click', async () => {
+    likeBtn.disabled = true;
+    try {
+      const r = await fetch(API + '/v1/like', {
+        method:'POST', headers:{'content-type':'application/json'},
+        body: JSON.stringify({page: PAGE_ID, entry: eid, visitor})
+      });
+      if (r.ok){
+        const d = await r.json();
+        SOCIAL.likes[eid] = d.count;
+        if (d.liked){ if (!SOCIAL.mine.includes(eid)) SOCIAL.mine.push(eid); }
+        else SOCIAL.mine = SOCIAL.mine.filter(x => x !== eid);
+        likeBtn.classList.toggle('on', d.liked);
+        likeBtn.setAttribute('aria-pressed', String(d.liked));
+        likeLabel.textContent = (d.liked ? UI.liked : UI.like)[lang];
+        likeCount.textContent = d.count ? ' ' + d.count : '';
+      }
+    } catch (_) {}
+    likeBtn.disabled = false;
+  });
+
+  const nCmt = ((SOCIAL && SOCIAL.comments[eid]) || []).length;
+  const cmtBtn = el('button','cmtbtn'); cmtBtn.type = 'button';
+  cmtBtn.textContent = UI.cmt[lang] + (nCmt ? ' ' + nCmt : '');
+  cmtBtn.setAttribute('aria-expanded', String(OPEN.has(eid)));
+
+  row.append(likeBtn, cmtBtn);
+
+  const panel = el('div','cpanel');
+  panel.hidden = !OPEN.has(eid);
+  if (OPEN.has(eid)) panel.append(commentList(eid), commentForm(eid));
+
+  cmtBtn.addEventListener('click', () => {
+    const open = panel.hidden;
+    panel.hidden = !open;
+    cmtBtn.setAttribute('aria-expanded', String(open));
+    if (open){
+      OPEN.add(eid);
+      if (!panel.childElementCount) panel.append(commentList(eid), commentForm(eid));
+    } else OPEN.delete(eid);
+  });
+
+  card.append(row, panel);
+}
+
+function mountSocial(){
+  if (!API_ON || !SOCIAL) return;
+  document.querySelectorAll('.entry').forEach(card => {
+    if (card.querySelector('.social')) return;
+    const e = ENTRIES.find(x => x.id === card.dataset.eid);
+    if (e) buildSocial(card, e);
+  });
+}
+
+async function loadSocial(){
+  if (!API_ON) return;
+  try {
+    const r = await fetch(API + '/v1/state?page=' + encodeURIComponent(PAGE_ID) + '&visitor=' + encodeURIComponent(visitor));
+    if (!r.ok) return;
+    const d = await r.json();
+    SOCIAL = {likes: d.likes || {}, mine: d.mine || [], comments: d.comments || {}};
+    const n = $('modnote');
+    if (n){ n.hidden = false; n.querySelector('span').textContent = UI.modNote[lang]; }
+    mountSocial();
+  } catch (_) { /* offline or not deployed yet — page stays static */ }
+}
+
+/* ------------------------------------------------------------------ render */
+
+function renderEntry(e){
+  const card = el('article','entry');
+  card.dataset.eid = e.id;
+  const top = el('div','entry-top');
+  if (e.p) top.append(pageChip(e));
+  (e.k || []).forEach(code => {
+    const c = el('span','kind'); c.textContent = UI.kinds[code][lang];
+    top.append(c);
+  });
+  card.append(top);
+
+  const q = el('blockquote', lang === 'zh' ? '' : 'latin');
+  q.textContent = e[lang];
+  card.append(q);
+
+  if (lang !== 'zh') {
+    const o = el('div','orig');
+    const lab = el('p','orig-label'); lab.textContent = UI.orig[lang];
+    const t = el('p'); t.textContent = e.zh;
+    o.append(lab, t); card.append(o);
+  }
+
+  if (e.n) {
+    const m = el('p','mynote');
+    const bl = el('b'); bl.textContent = UI.myNote[lang];
+    m.append(bl, document.createTextNode(e.n[lang]));
+    if (lang !== 'zh') { const oz = el('span','note-orig'); oz.textContent = e.n.zh; m.append(oz); }
+    card.append(m);
+  }
+
+  return card;
+}
+
+let filter = 'all';
+
+function renderMain(){
+  const main = $('main'); main.replaceChildren();
+  STORIES.forEach(st => {
+    if (filter !== 'all' && filter !== st.id) return;
+    const sec = el('section','story'); sec.dataset.s = st.id;
+    const head = el('div','story-head');
+    const h2 = el('h2','story-title'); h2.textContent = st.t[lang];
+    head.append(h2);
+    if (lang !== 'zh' && st.zh !== st.t[lang]) { const z = el('span','story-zh'); z.textContent = st.zh; head.append(z); }
+    if (st.range) { const r = el('span','range'); r.textContent = st.range; head.append(r); }
+    const sub = el('p','story-sub'); sub.textContent = st.s[lang];
+    sec.append(head, sub);
+    ENTRIES.filter(e => e.s === st.id).forEach(e => sec.append(renderEntry(e)));
+    main.append(sec);
+  });
+  mountSocial();
+}
+
+function renderChrome(){
+  document.documentElement.lang = (lang === 'zh' ? 'zh-Hans' : lang);
+  $('backlink').textContent = UI.back[lang];
+  $('eyebrow').textContent = UI.eyebrow[lang];
+  $('booktitle').textContent = '《林肯传》';
+  $('byline').textContent = UI.byline[lang];
+
+  const f = $('facts'); f.replaceChildren();
+  UI.facts[lang].forEach(([b, t]) => {
+    const li = el('li'); const strong = el('b'); strong.textContent = b;
+    li.append(strong, document.createTextNode(' ' + t)); f.append(li);
+  });
+
+  $('prov-heading').textContent = UI.provHead[lang];
+  $('prov-body').textContent = UI.provBody[lang];
+  for (let i = 0; i < 4; i++){
+    $('prov-k' + (i+1)).textContent = UI.provKeys[lang][i];
+    $('prov-v' + (i+1)).innerHTML = UI.provVals[lang][i];
+  }
+  const mn = $('modnote');
+  if (mn && SOCIAL) { mn.hidden = false; mn.querySelector('span').textContent = UI.modNote[lang]; }
+
+  const fl = $('filters'); fl.replaceChildren();
+  const mk = (id, label) => {
+    const b = el('button'); b.type = 'button'; b.textContent = label;
+    b.setAttribute('aria-pressed', String(filter === id));
+    b.addEventListener('click', () => { filter = id; renderChrome(); renderMain(); window.scrollTo({top:0, behavior:'smooth'}); });
+    fl.append(b);
+  };
+  mk('all', UI.all[lang]);
+  STORIES.forEach(st => mk(st.id, st.t[lang]));
+
+  $('signature').textContent = UI.sig[lang];
+
+  document.querySelectorAll('.langbar button[data-l]').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.l === lang)));
+}
+
+document.querySelectorAll('.langbar button[data-l]').forEach(b => {
+  b.addEventListener('click', () => {
+    lang = b.dataset.l;
+    try { localStorage.setItem('jg-lang', lang); } catch (_) {}
+    renderChrome(); renderMain();
+  });
+});
+
+renderChrome();
+renderMain();
+loadSocial();
+</script>
+</body>
+</html>
