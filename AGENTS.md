@@ -94,8 +94,6 @@ content page — update them together. `assets/js/i18n.js` deliberately skips th
   URL, `og:url`, `og:image` and the Schema.org `url` in `index.html` *and* this README together.
 - Homepage hero: the owner wants a full-bleed photographic hero (Samuel F. B. Morse's
   *Gallery of the Louvre*) replacing the decorative `.research-visual` SVG.
-- `notes/chaowendao.html`: three handwritten annotations are still marked "待確認" pending the
-  owner's reading of the originals. When resolved, update all four languages at once.
 - Photography, Social and Reading-Notes-beyond-the-first-book are still awaiting real material.
 
 ## Before you finish
