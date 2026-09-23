@@ -6,6 +6,15 @@
 //   cover      — site-relative image path; omit and a typographic cover is drawn
 window.readingNotes = [
   {
+    title: '乌合之众',
+    author: '古斯塔夫·勒庞 Gustave Le Bon',
+    finished: '2025-02-20',
+    read: '17–20 Feb 2025',
+    highlights: 77,
+    cover: 'assets/img/covers/wuhezhizhong.jpg',
+    url: 'notes/wuhezhizhong.html'
+  },
+  {
     title: '镜子',
     author: '刘慈欣 Liu Cixin',
     finished: '2025-03-07',
