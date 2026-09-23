@@ -1,0 +1,530 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<title>一往无前 · Reading Notes — Fan Haitao</title>
+<meta name="description" content="Four-language reading notes on 一往无前: 62 passages from photographed pages.">
+<style>
+:root{
+  --bg:#faf8f3; --panel:#fffdf9; --panel-2:#fffdf9; --line:#e4ded2; --line-soft:#efe9dd; --line-hi:#d8cfbc;
+  --ink:#1b1a17; --muted:#6f6a60; --dim:#8d8880;
+  --accent:#8a6a12; --accent-2:#b07d18; --mark:#a1541c; --warn:#6f5aa0;
+  --like:#c03a63; --ok:#2f7d55;
+  --chip-bg:#fcf2d2; --chip-border:rgba(246,214,107,.65); --chip-ink:#7a5c07;
+  --quote-rule:#e2d7b8; --toc-bg:rgba(250,248,243,.93);
+  --prov-bg:rgba(111,90,160,.07); --prov-border:rgba(111,90,160,.30); --prov-ink:#4a4459; --code-bg:rgba(111,90,160,.10);
+  --input-bg:#ffffff; --btn-bg:#f6d66b; --btn-border:#e8c85a; --on-btn:#1b1a17;
+  --glow-a:rgba(246,214,107,.16); --glow-b:rgba(200,170,120,.10);
+  --note-bg:rgba(161,84,28,.07); --note-border:rgba(161,84,28,.28); --note-ink:#5a3418; --note-orig:#7a5a45;
+  --serif:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,"Times New Roman","Noto Serif CJK SC","Source Han Serif SC","Songti SC",serif;
+  --sans:"Segoe UI",system-ui,-apple-system,"Noto Sans CJK SC","PingFang SC","Hiragino Sans GB","Microsoft YaHei",Arial,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+  background-image:radial-gradient(1200px 600px at 15% -10%,var(--glow-a),transparent 60%),
+                   radial-gradient(900px 500px at 95% 8%,var(--glow-b),transparent 60%);
+  background-attachment:fixed;}
+.wrap{max-width:900px;margin:0 auto;padding:16px}
+a{color:var(--accent)}
+
+/* ---------- language bar ---------- */
+.langbar{display:flex;justify-content:flex-end;gap:6px;padding-block:14px 0;flex-wrap:wrap}
+.langbar a.back{margin-right:auto;font-size:.8rem;color:var(--muted);text-decoration:none;align-self:center}
+.langbar a.back:hover{color:var(--ink)}
+.langbar button{background:transparent;border:1px solid var(--line);color:var(--muted);border-radius:999px;
+  padding:5px 12px;font-size:.76rem;letter-spacing:.05em;cursor:pointer;font-family:inherit;transition:.15s}
+.langbar button:hover{color:var(--ink);border-color:var(--accent)}
+.langbar button[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:var(--bg);font-weight:600}
+
+/* ---------- header ---------- */
+header.hero{padding-block:34px 28px;border-bottom:1px solid var(--line)}
+.eyebrow{font-size:.74rem;letter-spacing:.22em;text-transform:uppercase;color:var(--dim);margin:0 0 14px}
+h1{font-family:var(--serif);font-size:clamp(1.9rem,6vw,3rem);line-height:1.25;margin:0 0 6px;font-weight:600}
+h1 .by{display:block;font-family:var(--sans);font-size:.9rem;font-weight:400;letter-spacing:.16em;color:var(--muted);margin-top:12px}
+.hero-note{color:var(--muted);max-width:62ch;margin:18px 0 0;font-size:.95rem}
+.facts{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px;padding:0;list-style:none}
+.facts li{background:var(--panel);border:1px solid var(--line);border-radius:999px;
+  padding:7px 14px;font-size:.8rem;color:var(--muted)}
+.facts b{color:var(--ink);font-weight:600}
+
+/* ---------- provenance banner ---------- */
+.provenance{margin-top:26px;border:1px solid var(--prov-border);background:var(--prov-bg);
+  border-radius:14px;padding:18px 20px}
+.provenance h2{font-family:var(--sans);font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--warn);margin:0 0 10px;font-weight:700;display:flex;align-items:center;gap:8px}
+.provenance h2 svg{width:15px;height:15px;flex:0 0 auto;stroke:currentColor;fill:none;stroke-width:1.8}
+.provenance p{margin:0 0 8px;font-size:.88rem;color:var(--prov-ink)}
+.provenance p:last-child{margin-bottom:0}
+
+/* ---------- toc / filter ---------- */
+nav.toc{position:sticky;top:0;z-index:5;background:var(--toc-bg);backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line);margin-inline:-16px;padding:10px 16px}
+.toc-row{max-width:900px;margin:0 auto;display:flex;gap:8px;overflow-x:auto;scrollbar-width:thin;padding-bottom:2px}
+.toc-row button{flex:0 0 auto;background:transparent;border:1px solid var(--line);color:var(--muted);
+  border-radius:999px;padding:6px 13px;font-size:.8rem;cursor:pointer;font-family:inherit;white-space:nowrap;transition:.15s}
+.toc-row button:hover{color:var(--ink);border-color:var(--accent)}
+.toc-row button[aria-pressed="true"]{background:var(--btn-bg);border-color:var(--btn-border);color:var(--on-btn);font-weight:600}
+
+/* ---------- story ---------- */
+section.story{padding-block:44px 8px;border-bottom:1px solid var(--line)}
+section.story:last-of-type{border-bottom:0}
+.story-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:12px;margin-bottom:4px}
+h2.story-title{font-family:var(--serif);font-size:clamp(1.35rem,4vw,1.8rem);margin:0;font-weight:600}
+.story-zh{font-family:var(--serif);color:var(--muted);font-size:1rem}
+.range{font-size:.78rem;color:var(--dim);letter-spacing:.06em}
+.story-sub{color:var(--muted);font-size:.88rem;margin:8px 0 26px;max-width:62ch}
+
+/* ---------- entry ---------- */
+.entry{background:var(--panel-2);border:1px solid var(--line);border-radius:14px;padding:20px 22px;margin-bottom:16px}
+.entry:hover{border-color:var(--line-hi)}
+.entry-top{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-bottom:12px}
+.page{font-family:var(--serif);font-size:.82rem;color:var(--chip-ink);border:1px solid var(--chip-border);
+  background:var(--chip-bg);border-radius:6px;padding:2px 9px;letter-spacing:.04em}
+.page.approx{color:var(--muted);border-color:var(--line);background:transparent}
+blockquote{margin:0;font-family:var(--serif);font-size:1.02rem;line-height:2;color:var(--ink);
+  border-left:2px solid var(--quote-rule);padding-left:16px}
+blockquote.latin{line-height:1.85}
+blockquote em{font-style:italic;color:var(--dim)}
+.cutnote{margin:12px 0 0;font-size:.78rem;color:var(--dim);font-style:italic}
+blockquote b{color:var(--ink);font-weight:600}
+.orig{margin:14px 0 0;border-left:2px solid var(--line);padding-left:16px}
+.orig-label{font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:var(--dim);margin:0 0 6px;
+  display:flex;align-items:center;gap:6px}
+.orig-label::before{content:"";width:14px;height:1px;background:var(--dim);display:inline-block}
+.orig p{margin:0;font-family:var(--serif);font-size:.94rem;line-height:1.95;color:var(--muted)}
+
+/* ---------- footer ---------- */
+footer{padding-block:40px 60px;color:var(--dim);font-size:.82rem;border-top:1px solid var(--line);margin-top:40px}
+footer p{margin:0 0 8px;max-width:72ch}
+
+/* ---------- likes + comments ---------- */
+.modnote{margin:14px 0 0;font-size:.82rem;color:var(--muted);display:flex;gap:8px;align-items:flex-start}
+.modnote[hidden]{display:none}
+.modnote svg{width:14px;height:14px;flex:0 0 auto;margin-top:5px;stroke:var(--ok);fill:none;stroke-width:1.8}
+.social{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-top:14px;
+  padding-top:13px;border-top:1px solid var(--line-soft)}
+.social button{background:transparent;border:1px solid var(--line);color:var(--muted);border-radius:999px;
+  padding:5px 13px;font-size:.78rem;font-family:inherit;cursor:pointer;display:inline-flex;align-items:center;
+  gap:6px;transition:.15s}
+.social button:hover{color:var(--ink);border-color:var(--accent)}
+.social button:disabled{opacity:.5;cursor:default}
+.social .heart{width:13px;height:13px;stroke:currentColor;fill:none;stroke-width:1.9}
+.social .likebtn.on{color:var(--like);border-color:rgba(192,58,99,.35);background:rgba(192,58,99,.07)}
+.social .likebtn.on .heart{fill:currentColor;stroke:currentColor}
+.social .n{font-variant-numeric:tabular-nums;opacity:.85}
+.social .spacer{flex:1}
+.cpanel{margin-top:14px;border-top:1px dashed var(--line);padding-top:14px}
+.cpanel[hidden]{display:none}
+.clist{margin:0 0 14px;padding:0;list-style:none;display:flex;flex-direction:column;gap:10px}
+.citem{background:var(--panel-2);border:1px solid var(--line-soft);border-radius:10px;padding:11px 13px}
+.citem .who{font-size:.78rem;color:var(--accent);font-weight:600}
+.citem .at{font-size:.72rem;color:var(--dim);margin-left:8px}
+.citem p{margin:5px 0 0;font-size:.9rem;white-space:pre-wrap;color:var(--ink)}
+.cnone{color:var(--dim);font-size:.84rem;margin:0 0 14px}
+.cform{display:flex;flex-direction:column;gap:8px}
+.cform .two{display:flex;gap:8px;flex-wrap:wrap}
+.cform .two>*{flex:1 1 180px;min-width:0}
+.cform input,.cform textarea{background:var(--input-bg);border:1px solid var(--line);color:var(--ink);
+  border-radius:8px;padding:9px 11px;font-family:inherit;font-size:.86rem;width:100%}
+.cform textarea{min-height:84px;resize:vertical;line-height:1.65}
+.cform input:focus,.cform textarea:focus{outline:none;border-color:var(--accent)}
+.cform .hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
+.cform .send{align-self:flex-start;background:var(--btn-bg);border:1px solid var(--btn-border);color:var(--on-btn);
+  font-weight:600;border-radius:999px;padding:7px 18px;font-size:.82rem;font-family:inherit;cursor:pointer}
+.cform .send:disabled{opacity:.55;cursor:default}
+.cmsg{font-size:.82rem;min-height:1.3em;margin:0}
+.cmsg.ok{color:var(--ok)}
+.cmsg.bad{color:var(--mark)}
+.cmoderation{font-size:.74rem;color:var(--dim);margin:0}
+
+.mynote{margin:14px 0 0;padding:11px 14px;border-radius:10px;background:rgba(161,84,28,.07);
+  border:1px solid rgba(161,84,28,.28);font-size:.9rem;color:#5a3418}
+.mynote b{color:var(--mark);font-weight:600;letter-spacing:.06em;font-size:.72rem;display:block;margin-bottom:3px;text-transform:uppercase}
+.mynote .note-orig{display:block;margin-top:5px;font-family:var(--serif);color:#7a5a45;font-size:.88rem}
+.ctx{margin:16px 0 0;padding:14px 16px;border-radius:10px;background:var(--panel-2);border:1px solid var(--line-soft)}
+.ctx-label{font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:var(--dim);margin:0 0 7px;display:flex;align-items:center;gap:6px}
+.ctx-label::before{content:"";width:14px;height:1px;background:var(--dim);display:inline-block}
+.ctx p{margin:0;font-size:.88rem;line-height:1.85;color:var(--muted)}
+.ctx p.zh{margin-top:9px;font-family:var(--serif);font-size:.9rem;line-height:1.9;color:var(--dim)}
+@media (max-width:560px){
+  .entry{padding:16px 15px;border-radius:12px}
+  blockquote{font-size:.98rem;line-height:1.95;padding-left:13px}
+  .provenance{padding:15px 16px}
+}
+@media print{
+  body{background:#fff;color:#000}
+  nav.toc,.langbar{display:none}
+  .entry{break-inside:avoid;border-color:#ccc;background:#fff}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="langbar">
+    <a class="back" href="../reading.html" id="backlink">← Reading Notes</a>
+    <button type="button" data-l="en" aria-pressed="true">English</button>
+    <button type="button" data-l="zh" aria-pressed="false">简体中文</button>
+    <button type="button" data-l="fr" aria-pressed="false">Français</button>
+    <button type="button" data-l="es" aria-pressed="false">Español</button>
+  </div>
+
+  <header class="hero">
+    <p class="eyebrow" id="eyebrow"></p>
+    <h1><span id="booktitle"></span><span class="by" id="byline"></span></h1>
+    <ul class="facts" id="facts"></ul>
+
+    <section class="provenance" aria-labelledby="prov-title">
+      <h2 id="prov-title">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v18M3 7h6M15 7h6M6 12l-3 5h6ZM18 12l-3 5h6Z"/></svg>
+        <span id="prov-heading"></span>
+      </h2>
+      <p id="prov-body"></p>
+      <p class="modnote" id="modnote" hidden>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+        <span></span>
+      </p>
+    </section>
+  </header>
+
+  <nav class="toc" aria-label="Sections"><div class="toc-row" id="filters"></div></nav>
+
+  <main id="main"><noscript><p>《一往无前》 · Reading Notes. Please enable JavaScript to view the 62 passages.</p></noscript></main>
+
+  <footer>
+    <p style="margin-top:18px" id="signature"></p>
+  </footer>
+
+</div>
+
+<script>
+const LANGS = ['en','zh','fr','es'];
+
+const UI = {"back":{"en":"← Reading Notes","zh":"← 读书笔记","fr":"← Notes de lecture","es":"← Notas de lectura"},"eyebrow":{"en":"Reading notes · Fan Haitao","zh":"读书笔记 · 一往无前","fr":"Notes de lecture · Fan Haitao","es":"Notas de lectura · Fan Haitao"},"byline":{"en":"Fan Haitao · Xiaomi: A Decade of Growth","zh":"范海涛 · 小米创业十年","fr":"Fan Haitao · Dix ans de Xiaomi","es":"Fan Haitao · Diez años de Xiaomi"},"facts":{"en":[["20 Feb – 1 Mar 2025","read"],["Fan Haitao · CITIC Press (2020)","reading edition"]],"zh":[["2025 年 2 月 20 日 – 3 月 1 日","阅读期间"],["范海涛 · 中信出版集团（2020）","纸质底本"]],"fr":[["20 fév. – 1 mars 2025","lecture"],["Fan Haitao · CITIC (2020)","édition lue"]],"es":[["20 feb. – 1 mar. 2025","lectura"],["Fan Haitao · CITIC (2020)","edición leída"]]},"provHead":{"en":"Translation notice","zh":"翻译说明","fr":"Avis de traduction","es":"Aviso de traducción"},"provBody":{"en":"Original language: Chinese. Source: Fan Haitao, 《一往无前》, CITIC Press (2020); Chinese passages transcribed from the printed pages and checked against the supplied EPUB. The English translation was edited with OpenAI Codex (GPT-6); the French and Spanish translations were generated from it with Argos Translate 1.11.0 (en–fr 1.9, en–es 1.0) on 23 September 2026. These translations have not been professionally edited. The Chinese text accompanies each translation and takes precedence.","zh":"原文语言：中文。底本：范海涛《一往无前》（中信出版集团，2020）；中文引文据纸本照片抄录，并与附带 EPUB 核对。英文由 OpenAI Codex（GPT-6）修订；法文、西班牙文据英文用 Argos Translate 1.11.0（en–fr 1.9、en–es 1.0）于 2026 年 9 月 23 日机器翻译，未经专业译者润色。每条译文附中文，以中文为准。","fr":"Langue originale : chinois. Source : Fan Haitao, 《一往无前》, CITIC (2020) ; citations transcrites des pages photographiées et comparées à l’EPUB fourni. L’anglais a été révisé avec OpenAI Codex (GPT-6) ; le français et l’espagnol ont été générés depuis l’anglais avec Argos Translate 1.11.0 (en–fr 1.9, en–es 1.0) le 23 septembre 2026, sans révision professionnelle. Le chinois accompagne chaque citation et fait foi.","es":"Idioma original: chino. Fuente: Fan Haitao, 《一往无前》, CITIC (2020); pasajes transcritos de las páginas fotografiadas y cotejados con el EPUB proporcionado. El inglés se revisó con OpenAI Codex (GPT-6); el francés y el español se generaron a partir del inglés con Argos Translate 1.11.0 (en–fr 1.9, en–es 1.0) el 23 de septiembre de 2026, sin revisión profesional. Se incluye el chino con cada cita y este prevalece."},"all":{"en":"All sections","zh":"全部","fr":"Tout","es":"Todo"},"orig":{"en":"Chinese source text","zh":"中文原文","fr":"Texte chinois","es":"Texto chino"},"myNote":{"en":"My margin note","zh":"我的批注","fr":"Ma note en marge","es":"Mi nota al margen"},"approx":{"en":"location estimated","zh":"位置推定","fr":"emplacement estimé","es":"ubicación estimada"},"kinds":{"u":{"en":"underline","zh":"划线","fr":"souligné","es":"subrayado"},"b":{"en":"boxed","zh":"方框","fr":"encadré","es":"recuadrado"},"c":{"en":"circled","zh":"圈注","fr":"entouré","es":"rodeado"}},"sig":{"en":"Compiled September 2026 · Jinge Guo","zh":"整理于 2026 年 9 月 · 郭晋阁","fr":"Compilé en septembre 2026 · Jinge Guo","es":"Recopilado en septiembre de 2026 · Jinge Guo"}};
+
+const STORIES = [{"id":"pref","zh":"自序","range":"","t":{"en":"Author’s preface","zh":"自序","fr":"Préface de l’autrice","es":"Prefacio de la autora"},"s":{"en":"","zh":"","fr":"","es":""}},{"id":"fore","zh":"一往无前","range":"","t":{"en":"Foreword","zh":"一往无前","fr":"Avant-propos","es":"Prólogo"},"s":{"en":"","zh":"","fr":"","es":""}},{"id":"first","zh":"第一章","range":"","t":{"en":"Chapter 1 · The idea","zh":"第一章 · 创业构想","fr":"Chapitre 1 · Le projet","es":"Capítulo 1 · La idea"},"s":{"en":"","zh":"","fr":"","es":""}},{"id":"team","zh":"第二章","range":"","t":{"en":"Chapter 2 · Building the team","zh":"第二章 · 组建团队","fr":"Chapitre 2 · Former l’équipe","es":"Capítulo 2 · Formar el equipo"},"s":{"en":"","zh":"","fr":"","es":""}},{"id":"launch","zh":"第三章","range":"","t":{"en":"Chapter 3 · The first phone","zh":"第三章 · 第一款手机","fr":"Chapitre 3 · Le premier téléphone","es":"Capítulo 3 · El primer teléfono"},"s":{"en":"","zh":"","fr":"","es":""}},{"id":"iot","zh":"第六章","range":"","t":{"en":"Chapter 6 · Connected devices","zh":"第六章 · 智能硬件","fr":"Chapitre 6 · Objets connectés","es":"Capítulo 6 · Dispositivos conectados"},"s":{"en":"","zh":"","fr":"","es":""}}];
+
+const ENTRIES = [{"id":"y001","s":"pref","k":["b"],"zh":"小米就是工程师的梦想，靠技术和产品亲手改变世界，让世上每一份的认真投入，都能有公道的回报。","en":"Xiaomi is the engineers’ dream: to change the world with technology and products they build themselves, and to give every earnest effort a fair return.","fr":"Xiaomi est le rêve des ingénieurs: changer le monde avec la technologie et les produits qu'ils construisent eux-mêmes, et donner tout effort sérieux un retour équitable.","es":"Xiaomi es el sueño de los ingenieros: cambiar el mundo con tecnología y productos que construyen ellos mismos, y dar cada esfuerzo serio un retorno justo.","ch":"Preface"},{"id":"y002","s":"pref","k":["b"],"zh":"小米就是工程师追求的信任。证明最好的产品能有最好的价格，让用户可以“闭着眼睛买”。","en":"Xiaomi is the trust engineers seek: to prove that the best products can have the best prices, so users can buy with their eyes closed.","fr":"Xiaomi est la confiance que les ingénieurs cherchent: pour prouver que les meilleurs produits peuvent avoir les meilleurs prix, afin que les utilisateurs peuvent acheter avec leurs yeux fermés.","es":"Xiaomi es los ingenieros de confianza buscan: probar que los mejores productos pueden tener los mejores precios, por lo que los usuarios pueden comprar con sus ojos cerrados.","ch":"Preface"},{"id":"y003","s":"pref","k":["b"],"zh":"追求最简单坦诚的信任。","en":"To pursue the simplest, most honest trust.","fr":"Pour poursuivre la confiance la plus simple et la plus honnête.","es":"Para buscar la confianza más simple y honesta.","ch":"Preface"},{"id":"y004","s":"fore","k":["u"],"zh":"“硬件+软件+互联网”，让人们享受科技带来的美好生活。","en":"‘Hardware + software + the internet’: letting people enjoy the good life that technology can bring.","fr":"«Hardware + logiciel + Internet»: laisser les gens profiter de la bonne vie que la technologie peut apporter.","es":"‘Hardware + software + internet’: dejar que la gente disfrute de la buena vida que la tecnología puede traer.","ch":"p. XII"},{"id":"y005","s":"fore","k":["c"],"zh":"在近现代历史中，东方与西方的交流多是单向的，但是中国不会永远做追随者、复制者，随着中国的再次崛起，东西方“双向交流”的时代已经到来。","en":"In modern history, exchange between East and West has mostly flowed one way. But China will not always be a follower or imitator; with its renewed rise, an era of two-way exchange has arrived.","fr":"Dans l'histoire moderne, l'échange entre l'Est et l'Ouest s'est surtout déroulé d'une seule façon. Mais la Chine ne sera pas toujours un suiveur ou un imitateur; avec sa montée renouvelée, une ère d'échange bidirectionnel est arrivée.","es":"En la historia moderna, el intercambio entre Oriente y Occidente ha fluido principalmente de una manera. Pero China no siempre será un seguidor o imitador; con su ascenso renovado, ha llegado una era de intercambio bidireccional.","ch":"Foreword"},{"id":"y006","s":"fore","k":["c"],"zh":"中国的数据优势不可小视。","en":"China’s advantage in data must not be underestimated.","fr":"L'avantage de la Chine dans les données ne doit pas être sous-estimé.","es":"La ventaja de China en los datos no debe subestimarse.","ch":"Foreword"},{"id":"y007","s":"fore","k":["u"],"zh":"东欧的市场机会比小米想象的要大。","en":"The market opportunity in Eastern Europe was greater than Xiaomi had imagined.","fr":"L'opportunité du marché en Europe de l'Est était plus grande que l'avait imaginé Xiaomi.","es":"La oportunidad de mercado en Europa del Este fue mayor de lo que Xiaomi había imaginado.","ch":"Foreword"},{"id":"y008","s":"fore","k":["u"],"zh":"小米未来的路没有捷径，小米通往未来唯一的道路就是——技术立业，苦练内功。","en":"There is no shortcut to Xiaomi’s future. Its only path forward is to build on technology and strengthen its foundations.","fr":"Il n'y a pas de raccourci vers le futur de Xiaomi. Sa seule voie à suivre est de bâtir sur la technologie et de renforcer ses fondations.","es":"No hay atajo al futuro de Xiaomi. Su único camino hacia delante es construir sobre la tecnología y fortalecer sus fundamentos.","ch":"Foreword"},{"id":"y009","s":"first","k":["c"],"zh":"金山和微软豪赌、卖掉卓越网、开发网络游戏，这些经历让雷军不再是那个在武汉大学演讲时高喊“我要用未来10年和微软来一场豪赌”的年轻人了。","en":"The gamble with Microsoft, the sale of Joyo, and the development of online games had changed Lei Jun. He was no longer the young man who had vowed at Wuhan University to spend ten years competing with Microsoft.","fr":"Le pari avec Microsoft, la vente de Joyo, et le développement de jeux en ligne avaient changé Lei Jun. Il n'était plus le jeune homme qui avait juré à l'Université Wuhan de passer dix ans en compétition avec Microsoft.","es":"La apuesta con Microsoft, la venta de Joyo, y el desarrollo de juegos en línea había cambiado Lei Jun. Ya no era el joven que había prometido en la Universidad Wuhan pasar diez años compitiendo con Microsoft.","ch":"Ch. 1"},{"id":"y010","s":"first","k":["c"],"zh":"决定一个企业是否能决胜千里的最重要的一条，不是天道酬勤，而是顺势而为。","en":"The most important factor in whether a company can win is not simply that diligence pays, but the ability to move with the trend.","fr":"Le facteur le plus important pour savoir si une entreprise peut gagner n'est pas simplement que la diligence paie, mais la capacité de se déplacer avec la tendance.","es":"El factor más importante en si una empresa puede ganar no es simplemente que la diligencia paga, sino la capacidad de moverse con la tendencia.","ch":"Ch. 1"},{"id":"y011","s":"first","k":["c"],"zh":"一定要找到趋势。","en":"You have to find the trend.","fr":"Vous devez trouver la tendance.","es":"Tienes que encontrar la tendencia.","ch":"Ch. 1"},{"id":"y012","s":"first","k":["c"],"zh":"在创业的路上，首先要做的是爬到山顶，再随便踢块石头下去。","en":"When starting a business, first climb to the mountaintop; then even a stone you kick will roll downhill.","fr":"Quand vous démarrez une entreprise, d'abord montez au sommet de la montagne; puis même une pierre que vous lancera roulera en descente.","es":"Al comenzar un negocio, primero sube a la cima de la montaña; entonces incluso una piedra que patadas rodará cuesta abajo.","ch":"Ch. 1"},{"id":"y013","s":"first","k":["c"],"zh":"雷军还是选择了离开，转身去拥抱“大势”。","en":"Lei Jun chose to leave and embrace the prevailing trend.","fr":"Lei Jun a choisi de partir et d'adopter la tendance dominante.","es":"Lei Jun eligió salir y aceptar la tendencia predominante.","ch":"Ch. 1"},{"id":"y014","s":"first","k":["c"],"zh":"乔布斯坚持认为系统必须封闭，才能够和硬件有更匹配的体验。","en":"Jobs insisted that the system had to be closed to work more closely with the hardware.","fr":"Les emplois ont insisté sur le fait que le système devait être fermé pour travailler plus étroitement avec le matériel.","es":"Jobs insistió en que el sistema debía cerrarse para trabajar más estrechamente con el hardware.","ch":"Ch. 1"},{"id":"y015","s":"first","k":["c"],"zh":"也会给开发公司带来具体利润。","en":"It would also bring tangible profits to software developers.","fr":"Il apporterait également des profits tangibles aux développeurs de logiciels.","es":"También aportaría beneficios tangibles a los desarrolladores de software.","ch":"Ch. 1"},{"id":"y016","s":"first","k":["u"],"zh":"不只是一家公司的道路选择问题。","en":"It was more than a question of one company’s chosen path.","fr":"C'était plus qu'une question de chemin choisi par une entreprise.","es":"Era más que una cuestión del camino elegido de una empresa.","ch":"p. 14"},{"id":"y017","s":"first","k":["u"],"zh":"这完全是一个手机发烧友的状态。","en":"This was the attitude of a true smartphone enthusiast.","fr":"C'était l'attitude d'un vrai passionné de smartphone.","es":"Esta fue la actitud de un verdadero entusiasta del smartphone.","ch":"p. 14"},{"id":"y018","s":"first","k":["u"],"zh":"以它的开源精神来看，很可能会给产业带来不同凡响的改变。","en":"Given its open-source spirit, it could bring extraordinary change to the industry.","fr":"Étant donné son esprit d'open-source, il pourrait apporter des changements extraordinaires à l'industrie.","es":"Dada su espíritu de código abierto, podría traer un cambio extraordinario a la industria.","ch":"p. 14"},{"id":"y019","s":"first","k":["b"],"zh":"雷军是班里编程水平最高的学生，他在大学三年级时就知道的底层汇编、DOS内核、加解密、病毒自传染等技术，他的大学同学多是上了研究生以后才接触到的。","en":"Lei Jun was the strongest programmer in his class. By his third year at university he already knew low-level assembly, the DOS kernel, encryption and decryption, and self-replicating viruses—subjects many classmates encountered only in graduate school.","fr":"Lei Jun était le programmeur le plus fort de sa classe. À sa troisième année à l'université, il connaissait déjà l'assemblage de bas niveau, le noyau DOS, le chiffrement et le déchiffrement, et les virus auto-réplicateurs – sujets de nombreux camarades de classe rencontrés seulement dans les études supérieures.","es":"Lei Jun fue el programador más fuerte de su clase. En su tercer año en la universidad ya conocía el montaje de bajo nivel, el núcleo DOS, cifrado y descifrado, y virus autoreplicantes, subjeta a muchos compañeros de clase encontrados sólo en la escuela de posgrado.","ch":"Ch. 1"},{"id":"y020","s":"first","k":["u"],"zh":"他总是在宿舍的桌子上铺开一张蓝色的塑料布棋盘，然后宣布开战。","en":"He would spread a blue plastic chessboard over the dormitory table and announce the start of a match.","fr":"Il étendait un échiquier en plastique bleu sur la table du dortoir et annonçait le début d'un match.","es":"Difundía un tablero de ajedrez de plástico azul sobre la mesa del dormitorio y anunciaría el comienzo de un partido.","ch":"Ch. 1"},{"id":"y021","s":"first","k":["u"],"zh":"那时的雷军两眼放光，绝不服输。","en":"Lei Jun’s eyes would light up; he refused to lose.","fr":"Les yeux de Lei Jun s'illuminent, il refuse de perdre.","es":"Los ojos de Lei Jun se iluminaban; se negó a perder.","ch":"Ch. 1"},{"id":"y022","s":"first","k":["u"],"zh":"《定位》的作者之一杰克·特劳特（Jack Trout）曾调查过China（中国）对于品牌意味着什么，调查的结果是“Made in China”就是质劣价廉的代名词。","en":"Jack Trout, one of the authors of Positioning, investigated what ‘China’ meant as a brand. He found that ‘Made in China’ had become synonymous with poor quality and low prices.","fr":"Jack Trout, l'un des auteurs de Positioning, a étudié ce que la Chine signifiait comme une marque. Il a constaté que «Fabriqué en Chine» était devenu synonyme de mauvaise qualité et de bas prix.","es":"Jack Trout, uno de los autores de Posicionamiento, investigó lo que “China” significaba como marca. Encontró que ‘Made in China’ se había convertido en sinónimo de mala calidad y precios bajos.","ch":"Ch. 1"},{"id":"y023","s":"first","k":["u"],"zh":"雷军想到，中国到今天还没有真正的世界级品牌，还依然是世界工厂。","en":"Lei Jun thought: China still has no truly world-class brand; it remains the world’s factory.","fr":"Lei Jun pensé: La Chine n'a toujours pas de marque vraiment de classe mondiale; il reste l'usine mondiale.","es":"Lei Jun pensó: China todavía no tiene una marca verdaderamente mundial; sigue siendo la fábrica del mundo.","ch":"Ch. 1"},{"id":"y024","s":"first","k":["c"],"zh":"制造中国最好的手机硬件和手机操作系统。","en":"To make China’s best smartphone hardware and operating system.","fr":"Pour faire de la Chine le meilleur smartphone matériel et système d'exploitation.","es":"Para hacer el mejor hardware y sistema operativo del smartphone de China.","ch":"Ch. 1"},{"id":"y025","s":"first","k":["c"],"zh":"改善整个社会运作效率低下的现象，用一种更好的方式，比如电子商务，让产品直接面对消费者，从而让商品具有极致的性价比。","en":"To improve society’s inefficient ways of operating, and use a better approach, such as e-commerce, to bring products directly to consumers and offer exceptional value for money.","fr":"Améliorer les modes de fonctionnement inefficaces de la société et utiliser une meilleure approche, comme le commerce électronique, pour apporter des produits directement aux consommateurs et offrir un rapport qualité-prix exceptionnel.","es":"Mejorar las formas ineficientes de funcionamiento de la sociedad y utilizar un mejor enfoque, como el comercio electrónico, para llevar productos directamente a los consumidores y ofrecer un valor excepcional para el dinero.","ch":"Ch. 1"},{"id":"y026","s":"first","k":["c"],"zh":"充满幻想的人们发现他们获得了他们曾经梦寐以求的力量，并且可以利用这个力量来改造我们的世界。","en":"People with bold imaginations find that they have gained the power they once dreamed of—and can use it to change the world.","fr":"Les gens avec une imagination audacieuse trouvent qu'ils ont gagné le pouvoir dont ils rêvaient autrefois – et peuvent l'utiliser pour changer le monde.","es":"Las personas con imaginación audaz encuentran que han ganado el poder que una vez soñaban, y pueden usarlo para cambiar el mundo.","ch":"Ch. 1"},{"id":"y027","s":"first","k":["u"],"zh":"成功者都是历史与环境的产物，是机遇与积累的结晶。","en":"Successful people are products of history and circumstance, the result of opportunity and accumulated effort.","fr":"Les gens qui réussissent sont des produits de l'histoire et des circonstances, le résultat des possibilités et des efforts accumulés.","es":"Las personas exitosas son productos de historia y circunstancia, el resultado de la oportunidad y el esfuerzo acumulado.","ch":"Ch. 1"},{"id":"y028","s":"first","k":["u"],"zh":"雷军、丁磊、李彦宏、马化腾都是在20世纪60年代末70年代初出生的，而互联网在国内兴起之时，正是这群人大学毕业两年左右。","en":"Lei Jun, Ding Lei, Robin Li, and Pony Ma were all born in the late 1960s or early 1970s. When the internet emerged in China, they had been out of university for about two years.","fr":"Lei Jun, Ding Lei, Robin Li et Pony Ma sont tous nés à la fin des années 1960 ou au début des années 1970. Lorsque l'Internet est apparu en Chine, ils étaient sortis de l'université depuis environ deux ans.","es":"Lei Jun, Ding Lei, Robin Li y Pony Ma nacieron todos a finales de los años sesenta o principios de los setenta. Cuando surgió el Internet en China, habían estado fuera de la universidad durante unos dos años.","ch":"Ch. 1"},{"id":"y029","s":"first","k":["u"],"zh":"两个人越谈思路越清晰，越谈越豪情万丈，越谈越觉得要做的很多事情是史无前例的。","en":"As the two talked, their thinking grew clearer and their ambitions bolder. They increasingly felt that much of what they wanted to do had never been done before.","fr":"Au moment où les deux ont parlé, leur pensée est devenue plus claire et leurs ambitions plus audacieuses. Ils ont de plus en plus le sentiment qu'une grande partie de ce qu'ils voulaient faire n'avait jamais été fait auparavant.","es":"Mientras los dos hablaban, su pensamiento se volvió más claro y sus ambiciones más audaces. Cada vez sentían que gran parte de lo querían hacer nunca se había hecho antes.","ch":"Ch. 1"},{"id":"y030","s":"first","k":["u"],"zh":"在这个商业模式里，硬件、软件、互联网，三大要素将互相支撑，形成一个循环，这就是后来人们看到的“铁人三项”模式。","en":"Hardware, software, and the internet would support one another in a cycle. This became the ‘triathlon’ business model people later saw.","fr":"Le matériel, les logiciels et l'Internet se soutiennent mutuellement dans un cycle. Cela est devenu le «triathlon» modèle d'affaires que les gens ont vu plus tard.","es":"Hardware, software y Internet se apoyarían entre sí en un ciclo. Esto se convirtió en el modelo de negocio \"triatlón\" que la gente vio más tarde.","ch":"Ch. 1"},{"id":"y031","s":"first","k":["u"],"zh":"机遇和风险永远是一对孪生兄弟。","en":"Opportunity and risk are always twins.","fr":"Les possibilités et les risques sont toujours des jumeaux.","es":"La oportunidad y el riesgo son siempre gemelos.","ch":"Ch. 1"},{"id":"y032","s":"first","k":["u"],"zh":"但是成功没有一劳永逸，雷军再明白不过创业维艰这四个字的意义，也太懂得每一次创业都是死去活来的痛苦体验。","en":"Success is never permanent. Lei Jun knew how hard it was to start a business and how painful each new venture could be.","fr":"Le succès n'est jamais permanent. Lei Jun savait combien il était difficile de démarrer une entreprise et combien chaque nouvelle entreprise pouvait être douloureuse.","es":"El éxito nunca es permanente. Lei Jun sabía lo difícil que era comenzar un negocio y lo doloroso que podía ser cada nueva empresa.","ch":"Ch. 1"},{"id":"y033","s":"first","k":["u"],"zh":"创业需要的是钢铁般的意志力和对那种反复落入深渊的濒死感的忍耐力。","en":"Entrepreneurship demands an iron will and the endurance to withstand the feeling of repeatedly falling into an abyss, close to death.","fr":"L'entrepreneuriat exige une volonté de fer et l'endurance pour résister au sentiment de tomber à plusieurs reprises dans un abîme, proche de la mort.","es":"El emprendimiento exige una voluntad de hierro y la resistencia para soportar el sentimiento de caer repetidamente en un abismo, cerca de la muerte.","ch":"Ch. 1"},{"id":"y034","s":"first","k":["u"],"zh":"一旦选择走出这一步，他面临的每一个竞争对手都是庞然大物，包括国外的苹果、三星、摩托罗拉，还有国内的华为、酷派、中兴和联想。","en":"Every competitor he would face was a giant: Apple, Samsung, and Motorola abroad, and Huawei, Coolpad, ZTE, and Lenovo at home.","fr":"Chaque concurrent qu'il ferait face était un géant: Apple, Samsung, et Motorola à l'étranger, et Huawei, Coolpad, ZTE, et Lenovo à la maison.","es":"Cada competidor que enfrentaba era un gigante: Apple, Samsung y Motorola en el extranjero, y Huawei, Coolpad, ZTE y Lenovo en casa.","ch":"Ch. 1"},{"id":"y035","s":"first","k":["u"],"zh":"每一场创业都是前途未卜的豪赌。","en":"Every startup is a gamble with an uncertain future.","fr":"Chaque startup est un pari avec un avenir incertain.","es":"Cada startup es una apuesta con un futuro incierto.","ch":"Ch. 1"},{"id":"y036","s":"team","k":["c"],"zh":"洪锋是一个极其沉默寡言的编程高手，他不喜欢说话，但是只要说话，总是直击要点，具有总结陈词一般的效果。","en":"Hong Feng was a remarkably quiet programming expert. He rarely spoke, but when he did, he went straight to the point, as though delivering a closing statement.","fr":"Hong Feng était un expert en programmation remarquablement silencieux. Il a rarement parlé, mais quand il l'a fait, il est allé droit au but, comme s'il avait prononcé une déclaration finale.","es":"Hong Feng era un experto en programación muy tranquilo. Rara vez habló, pero cuando lo hizo, fue directo al grano, como si estuviera dando una declaración de clausura.","ch":"Ch. 2"},{"id":"y037","s":"team","k":["b"],"zh":"可以说，这件事情足够好玩，梦想足够大，从逻辑上讲，足够靠谱，因此可以挑战一下。","en":"It was fun enough, the dream was big enough, and logically it seemed plausible enough to be worth a try.","fr":"C'était assez amusant, le rêve était assez grand, et logiquement il semblait assez plausible pour être utile d'essayer.","es":"Fue bastante divertido, el sueño era lo suficientemente grande, y lógicamente parecía lo suficientemente plausible como para valer la pena intentarlo.","ch":"Ch. 2"},{"id":"y038","s":"team","k":["u"],"zh":"很多第一次接触这个投资项目的年轻人，觉得它野心巨大，风险巨大。","en":"Many young people encountering this investment for the first time thought its ambition and risks were enormous.","fr":"Beaucoup de jeunes qui rencontrent cet investissement pour la première fois pensent que son ambition et ses risques sont énormes.","es":"Muchos jóvenes que se encuentran con esta inversión por primera vez pensaron que su ambición y riesgos eran enormes.","ch":"Ch. 2"},{"id":"y039","s":"team","k":["u"],"zh":"而童士豪非常坚持，他以个人投资者的身份对小米进行了25万美元的投资。","en":"Tung Shih-hau insisted on investing $250,000 in Xiaomi as an individual investor.","fr":"Tung Shih-hau a insisté pour investir 250 000 $ dans Xiaomi en tant qu'investisseur individuel.","es":"Tung Shih-hau insistió en invertir 250.000 dólares en Xiaomi como inversor individual.","ch":"Ch. 2"},{"id":"y040","s":"team","k":["u"],"zh":"他第一次知道，原来设计是可以量化的，所有的配色不是靠凭空感受，而是有理论依据和具体逻辑的。","en":"For the first time, he learned that design could be measured: color choices were grounded in theory and logic, not intuition alone.","fr":"Pour la première fois, il a appris que le design pouvait être mesuré : les choix de couleurs étaient fondés sur la théorie et la logique, et non sur l'intuition seule.","es":"Por primera vez, aprendió que el diseño podía medirse: las opciones de color se basaban en teoría y lógica, no en la intuición sola.","ch":"Ch. 2"},{"id":"y041","s":"team","k":["b"],"zh":"他需要一个能够全情投入的创业者。","en":"He needed an entrepreneur willing to devote himself completely to the venture.","fr":"Il lui fallait un entrepreneur prêt à se consacrer entièrement à l'aventure.","es":"Necesitaba un empresario dispuesto a dedicarse completamente a la empresa.","ch":"Ch. 2"},{"id":"y042","s":"team","k":["u"],"zh":"最让人惊喜的是，他带来了一支由十几名顶尖工程师组成的硬件团队，他们将成为打造小米第一款手机产品的黄金团队。","en":"To everyone’s surprise, he brought a hardware team of more than a dozen top engineers—the core team that would build Xiaomi’s first phone.","fr":"À la surprise de tout le monde, il a apporté une équipe matérielle de plus d'une douzaine d'ingénieurs de haut niveau – l'équipe centrale qui construirait Xiaomi.","es":"Para sorpresa de todos, trajo un equipo de hardware de más de una docena de ingenieros principales, el equipo central que construiría el primer teléfono de Xiaomi.","ch":"Ch. 2"},{"id":"y043","s":"team","k":["u"],"zh":"智能手机已经不仅仅是我们口袋里的一个设备，它还是更接近于我们自身的数字延伸。","en":"A smartphone is no longer just a device in our pocket; it is something closer to a digital extension of ourselves.","fr":"Un smartphone n'est plus seulement un appareil dans notre poche ; il est quelque chose de plus proche d'une extension numérique de nous-mêmes.","es":"Un teléfono inteligente ya no es sólo un dispositivo en nuestro bolsillo; es algo más cercano a una extensión digital de nosotros mismos.","ch":"Ch. 2"},{"id":"y044","s":"team","k":["b"],"zh":"第一，资金门槛；第二，供应商关系。","en":"First, the funding threshold; second, relationships with suppliers.","fr":"Premièrement, le seuil de financement; deuxièmement, les relations avec les fournisseurs.","es":"Primero, el umbral de financiación; segundo, relaciones con los proveedores.","ch":"Ch. 2"},{"id":"y045","s":"launch","k":["u"],"zh":"2005——2006年，仅凭小灵通的订单，英华达的净利润就达到5亿元以上，这让张峰沉浸在叱咤风云的感受当中。","en":"In 2005–2006, Inventa’s net profit from Little Smart orders alone exceeded 500 million yuan, leaving Zhang Feng feeling on top of the world.","fr":"En 2005-2006, le bénéfice net d'Inventa sur les commandes de Little Smart a dépassé 500 millions de yuans, laissant Zhang Feng au sommet du monde.","es":"En 2005–2006, el beneficio neto de Inventa de las órdenes Little Smart superó solamente 500 millones de yuan, dejando la sensación de Zhang Feng en la parte superior del mundo.","ch":"Ch. 3"},{"id":"y046","s":"launch","k":["u"],"zh":"政策的变化对英华达造成了重大打击，订单剧烈缩减，昔日穿梭不息的货车不见了，生产线的产能和工人大量空闲。","en":"The policy change dealt Inventa a severe blow: orders shrank sharply, the once-busy trucks vanished, and production lines and workers sat idle.","fr":"Le changement de politique a porté un coup sévère à Inventa: les commandes ont fortement diminué, les camions autrefois occupés ont disparu, et les lignes de production et les travailleurs sont restés inactifs.","es":"El cambio de política resolvió a Inventa un duro golpe: las órdenes brillaban fuertemente, los camiones una vez agotados, y las líneas de producción y los trabajadores se sentaban ociosos.","ch":"Ch. 3"},{"id":"y047","s":"launch","k":["u"],"zh":"夏普和三井商社是长期的合作伙伴，双方的信任度一直很高，因此夏普愿意和三井介绍的品牌接触。","en":"Sharp and Mitsui had long been partners and trusted one another, so Sharp was willing to meet the brand Mitsui introduced.","fr":"Sharp et Mitsui étaient depuis longtemps partenaires et se faisaient confiance, donc Sharp était prêt à rencontrer la marque Mitsui introduite.","es":"Sharp y Mitsui habían sido socios y confiados unos a otros, así que Sharp estaba dispuesto a conocer la marca Mitsui introducida.","ch":"Ch. 3"},{"id":"y048","s":"launch","k":["u"],"zh":"另外一个原因是小米的创始人们在大地震之后不久冒险按期来访，让他们有些出乎意料，而所有交易的达成都必须依靠面谈。","en":"Another reason was that Xiaomi’s founders had taken the risk of arriving on schedule soon after the great earthquake, which surprised them. Deals, in their view, had to be made face to face.","fr":"Une autre raison était que les fondateurs de Xiaomis avaient pris le risque d'arriver à temps peu après le grand tremblement de terre, qui les a surpris. Selon eux, il fallait faire face à face.","es":"Otra razón fue que los fundadores de Xiaomi habían tomado el riesgo de llegar a tiempo poco después del gran terremoto, que los sorprendió. Los tratos, en su opinión, tenían que hacerse cara a cara.","ch":"Ch. 3"},{"id":"y049","s":"launch","k":["u"],"zh":"那就是热爱冒险。","en":"That is what it means to love adventure.","fr":"C'est ce que signifie aimer l'aventure.","es":"Eso es lo que significa amar la aventura.","ch":"Ch. 3"},{"id":"y050","s":"launch","k":["u"],"zh":"这里燃烧着小米人的青春。","en":"This is where the youth of Xiaomi’s people burns bright.","fr":"C'est là que la jeunesse de Xiaomi , les gens brûlent.","es":"Aquí es donde la juventud de la gente de Xiaomi quema brillante.","ch":"Ch. 3"},{"id":"y051","s":"launch","k":["c"],"zh":"路上看见谁都像亲人，整个世界都特别美好。","en":"Everyone on the road looks like family; the whole world seems beautiful.","fr":"Tout le monde sur la route ressemble à une famille; le monde entier semble beau.","es":"Todo el mundo en el camino parece una familia; todo el mundo parece hermoso.","ch":"Ch. 3"},{"id":"y052","s":"launch","k":["u"],"zh":"扁平化是基于小米相信优秀的人本身就有很强的自驱力和自我管理的能力。","en":"Xiaomi’s flat structure rests on its belief that talented people are strongly self-motivated and capable of managing themselves.","fr":"La structure plate de Xiaomi s'appuie sur sa croyance que les personnes talentueuses sont fortement automotivées et capables de se gérer.","es":"La estructura plana de Xiaomi descansa en su creencia de que las personas talentosas son fuertemente auto-motivadas y capaces de manejarse.","ch":"Ch. 3"},{"id":"y053","s":"launch","k":["u"],"zh":"憋了两个月的硬件团队此时如同开闸泄水一样酣畅淋漓。","en":"After two months of holding back, the hardware team surged ahead like water released through a floodgate.","fr":"Après deux mois de retenue, l'équipe du matériel s'est avancée comme de l'eau libérée par une porte d'inondation.","es":"Después de dos meses de retenimiento, el equipo de hardware se adelantó como agua liberada a través de una compuerta.","ch":"Ch. 3"},{"id":"y054","s":"launch","k":["u"],"zh":"负责手机系统软件的刘安昱还清晰地记得大家拿到高通授权合同时，整个团队那种如获至宝的样子。","en":"Liu Anyu, who was responsible for the phone’s system software, still remembers how elated the whole team looked when Qualcomm’s license arrived.","fr":"Liu Anyu, qui était responsable du logiciel du système phone, se souvient encore de l'exaltation de toute l'équipe à l'arrivée de la licence Qualcomm.","es":"Liu Anyu, responsable del software del sistema del teléfono, aún recuerda lo elogiado que todo el equipo miró cuando llegó la licencia de Qualcomm.","ch":"Ch. 3"},{"id":"y055","s":"launch","k":["c"],"zh":"两位创始人每周都来恳请雷军重新出山，担任金山的董事长。","en":"The two founders came every week to plead with Lei Jun to return and become chairman of Kingsoft.","fr":"Les deux fondateurs venaient chaque semaine plaider auprès de Lei Jun pour revenir et devenir président de Kingsoft.","es":"Los dos fundadores vinieron cada semana para pedir a Lei Jun que regresara y se hiciera presidente de Kingsoft.","ch":"Ch. 3"},{"id":"y056","s":"launch","k":["u"],"zh":"那种影像呈现的美轮美奂和信息提炼的简明扼要，打动过她很多次。","en":"The beauty of its imagery and the clarity and brevity of its message had moved her many times.","fr":"La beauté de son image et la clarté et la brièveté de son message l'avaient souvent émue.","es":"La belleza de sus imágenes y la claridad y brevedad de su mensaje la habían movido muchas veces.","ch":"Ch. 3"},{"id":"y057","s":"launch","k":["u"],"zh":"雷军发现自己进不了自己的会场，只好打了一个电话叫了四个同事出来帮他挤出了一条路。","en":"Lei Jun could not get into his own launch event. He had to call four colleagues and ask them to push a path through the crowd.","fr":"Lei Jun n'a pas pu participer à son propre lancement. Il a dû appeler quatre collègues et leur demander de parcourir la foule.","es":"Lei Jun no pudo entrar en su propio evento de lanzamiento. Tenía que llamar a cuatro colegas y pedirles que empujen un camino a través de la multitud.","ch":"p. 81"},{"id":"y058","s":"iot","k":["u"],"zh":"当他想突破自己的舒适区，涉足硬件产品的研发时，就选择了小米这家公司。","en":"When he wanted to step outside his comfort zone and begin developing hardware, he chose Xiaomi.","fr":"Quand il a voulu sortir de sa zone de confort et commencer à développer du matériel, il a choisi Xiaomi.","es":"Cuando quería salir de su zona de confort y comenzar a desarrollar hardware, eligió a Xiaomi.","ch":"Ch. 6"},{"id":"y059","s":"iot","k":["u"],"zh":"刚来小米时，高自光对小米浓烈的创业文化感到惊奇，小米的员工经常是三个人挤在一个工位上，肩并着肩办公，这在腾讯几乎是不可想象的事情。","en":"When he first joined, Gao Ziguang was startled by Xiaomi’s intense startup culture: three employees often shared a single workstation, shoulder to shoulder—almost unimaginable at Tencent.","fr":"Lors de sa première adhésion, Gao Ziguang a été surpris par l'intense culture des startups de Xiaomi.","es":"Cuando se unió por primera vez, Gao Ziguang fue sorprendido por la intensa cultura de startups de Xiaomi: tres empleados a menudo compartían una sola estación de trabajo, hombro a hombro, casi inimaginable en Tencent.","ch":"Ch. 6"},{"id":"y060","s":"iot","k":["b"],"zh":"如果你选择慢慢做，你永远不会是张小龙，你只是一个守护者。","en":"If you choose to move slowly, you will never become Zhang Xiaolong; you will only be a caretaker.","fr":"Si vous choisissez de vous déplacer lentement, vous ne deviendrez jamais Zhang Xiaolong ; vous ne serez qu'un gardien.","es":"Si eliges moverte lentamente, nunca te convertirás en Zhang Xiaolong; sólo serás un cuidador.","ch":"Ch. 6"},{"id":"y061","s":"iot","k":["u"],"zh":"这家公司能把一套代码量很小的实时操作系统，写到一个价值一二十元的芯片上。","en":"The company could put a compact real-time operating system onto a chip costing only ten or twenty yuan.","fr":"L'entreprise pourrait mettre un système d'exploitation compact en temps réel sur une puce coûtant seulement dix ou vingt yuans.","es":"La compañía podría poner un sistema operativo compacto en tiempo real en un chip que cuesta sólo diez o veinte yuan.","ch":"p. 151"},{"id":"y062","s":"iot","k":["u"],"zh":"灯泡等IoT设备与云端的通信协议和链接方式，很大程度上来自他在腾讯开发QQ后台时的经验。","en":"The communication protocol and connection between IoT devices such as light bulbs and the cloud drew heavily on his experience building QQ’s backend at Tencent.","fr":"Le protocole de communication et la connexion entre les dispositifs IoT tels que les ampoules et le nuage ont fortement tiré parti de son expérience de construction QQ , moteur à Tencent.","es":"El protocolo de comunicación y la conexión entre dispositivos IoT como bombillas y la nube se basaron fuertemente en su experiencia construyendo el backend de QQ en Tencent.","ch":"p. 151"}];
+
+/* ============================================================
+   Likes + moderated comments — same Worker as the other notes.
+   Leaving the placeholder (or '') renders the page without any
+   interactive parts; the notes themselves still work offline.
+   ============================================================ */
+const API = 'https://reading-notes-api.YOUR-SUBDOMAIN.workers.dev';
+const PAGE_ID = 'yiwangwuqian';
+const API_ON = /^https?:\/\//.test(API) && !API.includes('YOUR-SUBDOMAIN');
+
+UI.pref = {en:'preface', zh:'自序', fr:'préface', es:'prefacio'};
+UI.modNote = {
+  en:'Anyone may like a passage or leave a comment on it. Likes appear at once; comments are read and approved by me before they are shown.',
+  zh:'任何人都可以给某一条点讚或留言。点讚即时生效；留言经我阅读并审核通过后才会显示。',
+  fr:'Chacun peut aimer un passage ou y laisser un commentaire. Les « j’aime » apparaissent aussitôt ; les commentaires sont lus et validés par moi avant d’être affichés.',
+  es:'Cualquiera puede dar «me gusta» a un pasaje o dejar un comentario. Los «me gusta» aparecen al instante; los comentarios los leo y apruebo yo antes de mostrarse.'
+};
+UI.like     = {en:'Like', zh:'点讚', fr:'J’aime', es:'Me gusta'};
+UI.liked    = {en:'Liked', zh:'已讚', fr:'Aimé', es:'Te gusta'};
+UI.cmt      = {en:'Comments', zh:'留言', fr:'Commentaires', es:'Comentarios'};
+UI.cmtNone  = {en:'No comments on this passage yet.', zh:'这一条还没有留言。', fr:'Aucun commentaire sur ce passage.', es:'Aún no hay comentarios en este pasaje.'};
+UI.fName    = {en:'Name or nickname', zh:'昵称', fr:'Nom ou pseudonyme', es:'Nombre o apodo'};
+UI.fEmail   = {en:'Email — optional, never shown', zh:'邮箱 — 选填，不会公开', fr:'E-mail — facultatif, jamais affiché', es:'Correo — opcional, nunca se muestra'};
+UI.fBody    = {en:'What this passage made you think…', zh:'这段让你想到了什么……', fr:'Ce que ce passage vous a inspiré…', es:'Qué te hizo pensar este pasaje…'};
+UI.fSend    = {en:'Send for review', zh:'提交审核', fr:'Envoyer pour validation', es:'Enviar para revisión'};
+UI.fSending = {en:'Sending…', zh:'提交中……', fr:'Envoi…', es:'Enviando…'};
+UI.fQueued  = {en:'Thank you. Your comment is in the review queue and will appear here once approved.', zh:'谢谢。留言已进入审核队列，通过后会显示在这里。', fr:'Merci. Votre commentaire est en attente de validation et apparaîtra ici une fois approuvé.', es:'Gracias. Tu comentario está en la cola de revisión y aparecerá aquí una vez aprobado.'};
+UI.fModNote = {en:'Moderated before publication. Your email is only visible to the site owner.', zh:'发布前需审核。邮箱仅站主可见。', fr:'Modéré avant publication. Votre e-mail n’est visible que par le propriétaire du site.', es:'Moderado antes de publicarse. Tu correo solo lo ve el propietario del sitio.'};
+UI.errName  = {en:'Please enter a name.', zh:'请填昵称。', fr:'Veuillez indiquer un nom.', es:'Indica un nombre.'};
+UI.errBody  = {en:'Please write something first.', zh:'请先写点什么。', fr:'Veuillez d’abord écrire quelque chose.', es:'Escribe algo primero.'};
+UI.errRate  = {en:'That is a lot of comments for one hour — please come back later.', zh:'一小时内留言太多了，请稍后再来。', fr:'Cela fait beaucoup de commentaires en une heure — revenez plus tard.', es:'Son muchos comentarios en una hora; vuelve más tarde.'};
+UI.errNet   = {en:'Could not send — please try again.', zh:'提交失败，请再试一次。', fr:'Envoi impossible — veuillez réessayer.', es:'No se pudo enviar; inténtalo de nuevo.'};
+
+let lang = 'en';
+try {
+  const saved = localStorage.getItem('jg-lang');
+  if (saved === 'zh' || saved === 'fr' || saved === 'es' || saved === 'en') lang = saved;
+} catch (_) {}
+
+let visitor = '';
+try {
+  visitor = localStorage.getItem('jg-visitor') || '';
+  if (!/^[a-z0-9]{8,40}$/.test(visitor)) {
+    visitor = Math.random().toString(36).slice(2, 12) + Date.now().toString(36);
+    localStorage.setItem('jg-visitor', visitor);
+  }
+} catch (_) { visitor = 'anon' + Math.random().toString(36).slice(2, 10); }
+
+let SOCIAL = null;          // {likes:{}, mine:[], comments:{}}
+const OPEN = new Set();     // entry ids whose comment panel is expanded
+
+const $ = (id) => document.getElementById(id);
+const el = (tag, cls) => { const n = document.createElement(tag); if (cls) n.className = cls; return n; };
+const LOCALE = {en:'en-GB', zh:'zh-CN', fr:'fr-FR', es:'es-ES'};
+
+function pageChip(e){
+  const n = el('span', 'page' + (e.a || e.np ? ' approx' : ''));
+  n.textContent = e.np ? UI.pref[lang] : (e.a ? '≈ p.' : 'p.') + e.p;
+  return n;
+}
+
+function heartSvg(){
+  const s = document.createElementNS('http://www.w3.org/2000/svg','svg');
+  s.setAttribute('viewBox','0 0 24 24'); s.setAttribute('class','heart'); s.setAttribute('aria-hidden','true');
+  const path = document.createElementNS('http://www.w3.org/2000/svg','path');
+  path.setAttribute('d','M12 20s-7-4.4-7-9.3A4.2 4.2 0 0 1 12 7.6a4.2 4.2 0 0 1 7 3.1C19 15.6 12 20 12 20Z');
+  s.append(path); return s;
+}
+
+/* ---------------------------------------------------------------- comments */
+
+function commentList(eid){
+  const items = (SOCIAL && SOCIAL.comments[eid]) || [];
+  if (!items.length){ const p = el('p','cnone'); p.textContent = UI.cmtNone[lang]; return p; }
+  const ul = el('ul','clist');
+  items.forEach(c => {
+    const li = el('li','citem');
+    const who = el('span','who'); who.textContent = c.name;
+    const at = el('span','at');
+    at.textContent = new Date(c.ts).toLocaleDateString(LOCALE[lang], {year:'numeric', month:'short', day:'numeric'});
+    const body = el('p'); body.textContent = c.body;
+    li.append(who, at, body); ul.append(li);
+  });
+  return ul;
+}
+
+function commentForm(eid){
+  const form = el('form','cform');
+  form.noValidate = true;
+  const opened = Date.now();
+
+  const two = el('div','two');
+  const name = el('input'); name.type = 'text'; name.maxLength = 40;
+  name.placeholder = UI.fName[lang]; name.autocomplete = 'nickname';
+  const mail = el('input'); mail.type = 'email'; mail.maxLength = 120;
+  mail.placeholder = UI.fEmail[lang]; mail.autocomplete = 'email';
+  two.append(name, mail);
+
+  const hp = el('input','hp'); hp.type = 'text'; hp.tabIndex = -1;
+  hp.setAttribute('aria-hidden','true'); hp.autocomplete = 'off'; hp.name = 'website';
+
+  const body = el('textarea'); body.maxLength = 1500; body.placeholder = UI.fBody[lang];
+  const send = el('button','send'); send.type = 'submit'; send.textContent = UI.fSend[lang];
+  const msg = el('p','cmsg');
+  const note = el('p','cmoderation'); note.textContent = UI.fModNote[lang];
+
+  form.append(two, hp, body, send, msg, note);
+
+  form.addEventListener('submit', async (ev) => {
+    ev.preventDefault();
+    msg.className = 'cmsg';
+    if (!name.value.trim()){ msg.classList.add('bad'); msg.textContent = UI.errName[lang]; name.focus(); return; }
+    if (body.value.trim().length < 2){ msg.classList.add('bad'); msg.textContent = UI.errBody[lang]; body.focus(); return; }
+    send.disabled = true; send.textContent = UI.fSending[lang];
+    try {
+      const r = await fetch(API + '/v1/comment', {
+        method:'POST', headers:{'content-type':'application/json'},
+        body: JSON.stringify({
+          page: PAGE_ID, entry: eid, visitor, lang,
+          name: name.value, email: mail.value, body: body.value,
+          website: hp.value, dwell: Date.now() - opened
+        })
+      });
+      if (r.status === 429){ msg.classList.add('bad'); msg.textContent = UI.errRate[lang]; }
+      else if (!r.ok){ msg.classList.add('bad'); msg.textContent = UI.errNet[lang]; }
+      else {
+        msg.classList.add('ok'); msg.textContent = UI.fQueued[lang];
+        name.value = ''; mail.value = ''; body.value = '';
+      }
+    } catch (_) { msg.classList.add('bad'); msg.textContent = UI.errNet[lang]; }
+    send.disabled = false; send.textContent = UI.fSend[lang];
+  });
+
+  return form;
+}
+
+function buildSocial(card, e){
+  const eid = e.id;
+  const row = el('div','social');
+
+  const likeN = (SOCIAL && SOCIAL.likes[eid]) || 0;
+  const mine = !!(SOCIAL && SOCIAL.mine.includes(eid));
+
+  const likeBtn = el('button','likebtn' + (mine ? ' on' : ''));
+  likeBtn.type = 'button';
+  likeBtn.setAttribute('aria-pressed', String(mine));
+  const likeLabel = el('span'); likeLabel.textContent = (mine ? UI.liked : UI.like)[lang];
+  const likeCount = el('span','n'); likeCount.textContent = likeN ? ' ' + likeN : '';
+  likeBtn.append(heartSvg(), likeLabel, likeCount);
+
+  likeBtn.addEventListener('click', async () => {
+    likeBtn.disabled = true;
+    try {
+      const r = await fetch(API + '/v1/like', {
+        method:'POST', headers:{'content-type':'application/json'},
+        body: JSON.stringify({page: PAGE_ID, entry: eid, visitor})
+      });
+      if (r.ok){
+        const d = await r.json();
+        SOCIAL.likes[eid] = d.count;
+        if (d.liked){ if (!SOCIAL.mine.includes(eid)) SOCIAL.mine.push(eid); }
+        else SOCIAL.mine = SOCIAL.mine.filter(x => x !== eid);
+        likeBtn.classList.toggle('on', d.liked);
+        likeBtn.setAttribute('aria-pressed', String(d.liked));
+        likeLabel.textContent = (d.liked ? UI.liked : UI.like)[lang];
+        likeCount.textContent = d.count ? ' ' + d.count : '';
+      }
+    } catch (_) {}
+    likeBtn.disabled = false;
+  });
+
+  const nCmt = ((SOCIAL && SOCIAL.comments[eid]) || []).length;
+  const cmtBtn = el('button','cmtbtn'); cmtBtn.type = 'button';
+  cmtBtn.textContent = UI.cmt[lang] + (nCmt ? ' ' + nCmt : '');
+  cmtBtn.setAttribute('aria-expanded', String(OPEN.has(eid)));
+
+  row.append(likeBtn, cmtBtn);
+
+  const panel = el('div','cpanel');
+  panel.hidden = !OPEN.has(eid);
+  if (OPEN.has(eid)) panel.append(commentList(eid), commentForm(eid));
+
+  cmtBtn.addEventListener('click', () => {
+    const open = panel.hidden;
+    panel.hidden = !open;
+    cmtBtn.setAttribute('aria-expanded', String(open));
+    if (open){
+      OPEN.add(eid);
+      if (!panel.childElementCount) panel.append(commentList(eid), commentForm(eid));
+    } else OPEN.delete(eid);
+  });
+
+  card.append(row, panel);
+}
+
+function mountSocial(){
+  if (!API_ON || !SOCIAL) return;
+  document.querySelectorAll('.entry').forEach(card => {
+    if (card.querySelector('.social')) return;
+    const e = ENTRIES.find(x => x.id === card.dataset.eid);
+    if (e) buildSocial(card, e);
+  });
+}
+
+async function loadSocial(){
+  if (!API_ON) return;
+  try {
+    const r = await fetch(API + '/v1/state?page=' + encodeURIComponent(PAGE_ID) + '&visitor=' + encodeURIComponent(visitor));
+    if (!r.ok) return;
+    const d = await r.json();
+    SOCIAL = {likes: d.likes || {}, mine: d.mine || [], comments: d.comments || {}};
+    const n = $('modnote');
+    if (n){ n.hidden = false; n.querySelector('span').textContent = UI.modNote[lang]; }
+    mountSocial();
+  } catch (_) { /* offline or not deployed yet — page stays static */ }
+}
+
+/* ------------------------------------------------------------------ render */
+
+function renderEntry(e){
+  const card = el('article','entry');
+  card.dataset.eid = e.id;
+  const top = el('div','entry-top');
+  if (e.ch) { const chapter = el('span','page'); chapter.textContent = e.ch; top.append(chapter); }
+  (e.k || []).forEach(code => {
+    const c = el('span','kind'); c.textContent = UI.kinds[code][lang];
+    top.append(c);
+  });
+  card.append(top);
+
+  const q = el('blockquote', lang === 'zh' ? '' : 'latin');
+  q.textContent = e[lang];
+  card.append(q);
+
+  if (lang !== 'zh') {
+    const o = el('div','orig');
+    const lab = el('p','orig-label'); lab.textContent = UI.orig[lang];
+    const t = el('p'); t.textContent = e.zh;
+    o.append(lab, t); card.append(o);
+  }
+
+  if (e.n) {
+    const m = el('p','mynote');
+    const bl = el('b'); bl.textContent = UI.myNote[lang];
+    m.append(bl, document.createTextNode(e.n[lang]));
+    if (lang !== 'zh') { const oz = el('span','note-orig'); oz.textContent = e.n.zh; m.append(oz); }
+    card.append(m);
+  }
+
+  return card;
+}
+
+let filter = 'all';
+
+function renderMain(){
+  const main = $('main'); main.replaceChildren();
+  STORIES.forEach(st => {
+    if (filter !== 'all' && filter !== st.id) return;
+    const sec = el('section','story'); sec.dataset.s = st.id;
+    const head = el('div','story-head');
+    const h2 = el('h2','story-title'); h2.textContent = st.t[lang];
+    head.append(h2);
+    if (lang !== 'zh' && st.zh !== st.t[lang]) { const z = el('span','story-zh'); z.textContent = st.zh; head.append(z); }
+    if (st.range) { const r = el('span','range'); r.textContent = st.range; head.append(r); }
+    const sub = el('p','story-sub'); sub.textContent = st.s[lang];
+    sec.append(head, sub);
+    ENTRIES.filter(e => e.s === st.id).forEach(e => sec.append(renderEntry(e)));
+    main.append(sec);
+  });
+  mountSocial();
+}
+
+function renderChrome(){
+  document.documentElement.lang = (lang === 'zh' ? 'zh-Hans' : lang);
+  $('backlink').textContent = UI.back[lang];
+  $('eyebrow').textContent = UI.eyebrow[lang];
+  $('booktitle').textContent = '《一往无前》';
+  $('byline').textContent = UI.byline[lang];
+
+  const f = $('facts'); f.replaceChildren();
+  UI.facts[lang].forEach(([b, t]) => {
+    const li = el('li'); const strong = el('b'); strong.textContent = b;
+    li.append(strong, document.createTextNode(' ' + t)); f.append(li);
+  });
+
+  $('prov-heading').textContent = UI.provHead[lang];
+  $('prov-body').textContent = UI.provBody[lang];
+  const mn = $('modnote');
+  if (mn && SOCIAL) { mn.hidden = false; mn.querySelector('span').textContent = UI.modNote[lang]; }
+
+  const fl = $('filters'); fl.replaceChildren();
+  const mk = (id, label) => {
+    const b = el('button'); b.type = 'button'; b.textContent = label;
+    b.setAttribute('aria-pressed', String(filter === id));
+    b.addEventListener('click', () => { filter = id; renderChrome(); renderMain(); window.scrollTo({top:0, behavior:'smooth'}); });
+    fl.append(b);
+  };
+  mk('all', UI.all[lang]);
+  STORIES.forEach(st => mk(st.id, st.t[lang]));
+
+  $('signature').textContent = UI.sig[lang];
+
+  document.querySelectorAll('.langbar button[data-l]').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.l === lang)));
+}
+
+document.querySelectorAll('.langbar button[data-l]').forEach(b => {
+  b.addEventListener('click', () => {
+    lang = b.dataset.l;
+    try { localStorage.setItem('jg-lang', lang); } catch (_) {}
+    renderChrome(); renderMain();
+  });
+});
+
+renderChrome();
+renderMain();
+loadSocial();
+</script>
+</body>
+</html>

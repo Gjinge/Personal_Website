@@ -16,3 +16,22 @@ After a notes page is published, keep both values stable. Add new entries with n
 - Ten notes are legible and transcribed: `都要去实践。`, `FAKE`, `中国二者都无。`, `自己要无比相信。`, `章北海`, `失去理性，全是混乱`, `人民代表大会`, `你这本书不也是吗？`, `坚定信念是关键`, `盲从。`.
 - The three non-Chinese languages are machine translations of the Chinese reading edition, not translations from the original French. The Chinese quote remains visible under each translation and is authoritative.
 - The site cover comes from the supplied EPUB. The private source audit and photos remain outside the website repository.
+
+## 《一往无前》
+
+- Page: `notes/yiwangwuqian.html`; `PAGE_ID = 'yiwangwuqian'`.
+- Source: 36 photographed pages of 范海涛《一往无前》, cross-checked word for word against the supplied Chinese EPUB. Two unrelated screenshots were excluded. The cover image comes from the EPUB.
+- 62 excerpts, IDs `y001`–`y062`: preface 3, foreword 5, chapter 1 27, chapter 2 9, chapter 3 13, chapter 6 5. These IDs are permanent once published.
+- Printed page labels were visible for four selected source pages (XII, 14, 81, 151). Other entries use a section label, without inferred page numbers.
+- No legible handwritten notes were included. English was edited with OpenAI Codex (GPT-6); French and Spanish were generated from that English with Argos Translate 1.11.0 on 23 September 2026. The photographed Chinese text is authoritative.
+- Album dates indicate 20 February–1 March 2025; the displayed reading period is based on those dates.
+
+## 《埃隆·马斯克传》
+
+- Page: `notes/elonmusk.html`; `PAGE_ID = 'elonmusk'`.
+- Source: 337 photographed pages of the printed Chinese translation by 孙思远、刘家琦; the supplied English EPUB was consulted for context, not substituted for the printed Chinese wording. Thirteen unrelated images/screenshots and unclear or duplicate passages were excluded. The cover was cropped from a photographed book cover.
+- 127 excerpts, IDs `m001`–`m127`: founding/rockets 21, growth/relationships 28, engineering/exploration 33, Twitter 33, AI/future 12. These IDs are permanent once published.
+- Twenty-four selected excerpts have directly visible printed page numbers. All others omit a page number; none is inferred.
+- One clearly legible handwritten note is attached to `m003`: `快速失败，迅速迭代`. Unclear handwriting was omitted from the public page, with no placeholder. Its source should be checked before any later addition.
+- English was translated from the printed Chinese selection with OpenAI Codex (GPT-6); French and Spanish were generated from that English with Argos Translate 1.11.0 on 23 September 2026. None of those texts is presented as a quotation from Isaacson's English original. Chinese is authoritative.
+- Album dates indicate 16 December 2024–4 January 2025; the displayed reading period is based on those dates.

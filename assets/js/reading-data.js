@@ -6,6 +6,24 @@
 //   cover      — site-relative image path; omit and a typographic cover is drawn
 window.readingNotes = [
   {
+    title: '一往无前',
+    author: '范海涛 Fan Haitao',
+    finished: '2025-03-01',
+    read: '20 Feb – 1 Mar 2025',
+    highlights: 62,
+    cover: 'assets/img/covers/yiwangwuqian.jpg',
+    url: 'notes/yiwangwuqian.html'
+  },
+  {
+    title: '埃隆·马斯克传',
+    author: '沃尔特·艾萨克森 Walter Isaacson',
+    finished: '2025-01-04',
+    read: '16 Dec 2024 – 4 Jan 2025',
+    highlights: 127,
+    cover: 'assets/img/covers/elonmusk.jpg',
+    url: 'notes/elonmusk.html'
+  },
+  {
     title: '乌合之众',
     author: '古斯塔夫·勒庞 Gustave Le Bon',
     finished: '2025-02-20',

@@ -1,0 +1,530 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<title>埃隆·马斯克传 · Reading Notes — Walter Isaacson</title>
+<meta name="description" content="Four-language reading notes on 埃隆·马斯克传: 127 passages from photographed pages.">
+<style>
+:root{
+  --bg:#faf8f3; --panel:#fffdf9; --panel-2:#fffdf9; --line:#e4ded2; --line-soft:#efe9dd; --line-hi:#d8cfbc;
+  --ink:#1b1a17; --muted:#6f6a60; --dim:#8d8880;
+  --accent:#8a6a12; --accent-2:#b07d18; --mark:#a1541c; --warn:#6f5aa0;
+  --like:#c03a63; --ok:#2f7d55;
+  --chip-bg:#fcf2d2; --chip-border:rgba(246,214,107,.65); --chip-ink:#7a5c07;
+  --quote-rule:#e2d7b8; --toc-bg:rgba(250,248,243,.93);
+  --prov-bg:rgba(111,90,160,.07); --prov-border:rgba(111,90,160,.30); --prov-ink:#4a4459; --code-bg:rgba(111,90,160,.10);
+  --input-bg:#ffffff; --btn-bg:#f6d66b; --btn-border:#e8c85a; --on-btn:#1b1a17;
+  --glow-a:rgba(246,214,107,.16); --glow-b:rgba(200,170,120,.10);
+  --note-bg:rgba(161,84,28,.07); --note-border:rgba(161,84,28,.28); --note-ink:#5a3418; --note-orig:#7a5a45;
+  --serif:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,"Times New Roman","Noto Serif CJK SC","Source Han Serif SC","Songti SC",serif;
+  --sans:"Segoe UI",system-ui,-apple-system,"Noto Sans CJK SC","PingFang SC","Hiragino Sans GB","Microsoft YaHei",Arial,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+  background-image:radial-gradient(1200px 600px at 15% -10%,var(--glow-a),transparent 60%),
+                   radial-gradient(900px 500px at 95% 8%,var(--glow-b),transparent 60%);
+  background-attachment:fixed;}
+.wrap{max-width:900px;margin:0 auto;padding:16px}
+a{color:var(--accent)}
+
+/* ---------- language bar ---------- */
+.langbar{display:flex;justify-content:flex-end;gap:6px;padding-block:14px 0;flex-wrap:wrap}
+.langbar a.back{margin-right:auto;font-size:.8rem;color:var(--muted);text-decoration:none;align-self:center}
+.langbar a.back:hover{color:var(--ink)}
+.langbar button{background:transparent;border:1px solid var(--line);color:var(--muted);border-radius:999px;
+  padding:5px 12px;font-size:.76rem;letter-spacing:.05em;cursor:pointer;font-family:inherit;transition:.15s}
+.langbar button:hover{color:var(--ink);border-color:var(--accent)}
+.langbar button[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:var(--bg);font-weight:600}
+
+/* ---------- header ---------- */
+header.hero{padding-block:34px 28px;border-bottom:1px solid var(--line)}
+.eyebrow{font-size:.74rem;letter-spacing:.22em;text-transform:uppercase;color:var(--dim);margin:0 0 14px}
+h1{font-family:var(--serif);font-size:clamp(1.9rem,6vw,3rem);line-height:1.25;margin:0 0 6px;font-weight:600}
+h1 .by{display:block;font-family:var(--sans);font-size:.9rem;font-weight:400;letter-spacing:.16em;color:var(--muted);margin-top:12px}
+.hero-note{color:var(--muted);max-width:62ch;margin:18px 0 0;font-size:.95rem}
+.facts{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px;padding:0;list-style:none}
+.facts li{background:var(--panel);border:1px solid var(--line);border-radius:999px;
+  padding:7px 14px;font-size:.8rem;color:var(--muted)}
+.facts b{color:var(--ink);font-weight:600}
+
+/* ---------- provenance banner ---------- */
+.provenance{margin-top:26px;border:1px solid var(--prov-border);background:var(--prov-bg);
+  border-radius:14px;padding:18px 20px}
+.provenance h2{font-family:var(--sans);font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--warn);margin:0 0 10px;font-weight:700;display:flex;align-items:center;gap:8px}
+.provenance h2 svg{width:15px;height:15px;flex:0 0 auto;stroke:currentColor;fill:none;stroke-width:1.8}
+.provenance p{margin:0 0 8px;font-size:.88rem;color:var(--prov-ink)}
+.provenance p:last-child{margin-bottom:0}
+
+/* ---------- toc / filter ---------- */
+nav.toc{position:sticky;top:0;z-index:5;background:var(--toc-bg);backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line);margin-inline:-16px;padding:10px 16px}
+.toc-row{max-width:900px;margin:0 auto;display:flex;gap:8px;overflow-x:auto;scrollbar-width:thin;padding-bottom:2px}
+.toc-row button{flex:0 0 auto;background:transparent;border:1px solid var(--line);color:var(--muted);
+  border-radius:999px;padding:6px 13px;font-size:.8rem;cursor:pointer;font-family:inherit;white-space:nowrap;transition:.15s}
+.toc-row button:hover{color:var(--ink);border-color:var(--accent)}
+.toc-row button[aria-pressed="true"]{background:var(--btn-bg);border-color:var(--btn-border);color:var(--on-btn);font-weight:600}
+
+/* ---------- story ---------- */
+section.story{padding-block:44px 8px;border-bottom:1px solid var(--line)}
+section.story:last-of-type{border-bottom:0}
+.story-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:12px;margin-bottom:4px}
+h2.story-title{font-family:var(--serif);font-size:clamp(1.35rem,4vw,1.8rem);margin:0;font-weight:600}
+.story-zh{font-family:var(--serif);color:var(--muted);font-size:1rem}
+.range{font-size:.78rem;color:var(--dim);letter-spacing:.06em}
+.story-sub{color:var(--muted);font-size:.88rem;margin:8px 0 26px;max-width:62ch}
+
+/* ---------- entry ---------- */
+.entry{background:var(--panel-2);border:1px solid var(--line);border-radius:14px;padding:20px 22px;margin-bottom:16px}
+.entry:hover{border-color:var(--line-hi)}
+.entry-top{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-bottom:12px}
+.page{font-family:var(--serif);font-size:.82rem;color:var(--chip-ink);border:1px solid var(--chip-border);
+  background:var(--chip-bg);border-radius:6px;padding:2px 9px;letter-spacing:.04em}
+.page.approx{color:var(--muted);border-color:var(--line);background:transparent}
+blockquote{margin:0;font-family:var(--serif);font-size:1.02rem;line-height:2;color:var(--ink);
+  border-left:2px solid var(--quote-rule);padding-left:16px}
+blockquote.latin{line-height:1.85}
+blockquote em{font-style:italic;color:var(--dim)}
+.cutnote{margin:12px 0 0;font-size:.78rem;color:var(--dim);font-style:italic}
+blockquote b{color:var(--ink);font-weight:600}
+.orig{margin:14px 0 0;border-left:2px solid var(--line);padding-left:16px}
+.orig-label{font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:var(--dim);margin:0 0 6px;
+  display:flex;align-items:center;gap:6px}
+.orig-label::before{content:"";width:14px;height:1px;background:var(--dim);display:inline-block}
+.orig p{margin:0;font-family:var(--serif);font-size:.94rem;line-height:1.95;color:var(--muted)}
+
+/* ---------- footer ---------- */
+footer{padding-block:40px 60px;color:var(--dim);font-size:.82rem;border-top:1px solid var(--line);margin-top:40px}
+footer p{margin:0 0 8px;max-width:72ch}
+
+/* ---------- likes + comments ---------- */
+.modnote{margin:14px 0 0;font-size:.82rem;color:var(--muted);display:flex;gap:8px;align-items:flex-start}
+.modnote[hidden]{display:none}
+.modnote svg{width:14px;height:14px;flex:0 0 auto;margin-top:5px;stroke:var(--ok);fill:none;stroke-width:1.8}
+.social{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-top:14px;
+  padding-top:13px;border-top:1px solid var(--line-soft)}
+.social button{background:transparent;border:1px solid var(--line);color:var(--muted);border-radius:999px;
+  padding:5px 13px;font-size:.78rem;font-family:inherit;cursor:pointer;display:inline-flex;align-items:center;
+  gap:6px;transition:.15s}
+.social button:hover{color:var(--ink);border-color:var(--accent)}
+.social button:disabled{opacity:.5;cursor:default}
+.social .heart{width:13px;height:13px;stroke:currentColor;fill:none;stroke-width:1.9}
+.social .likebtn.on{color:var(--like);border-color:rgba(192,58,99,.35);background:rgba(192,58,99,.07)}
+.social .likebtn.on .heart{fill:currentColor;stroke:currentColor}
+.social .n{font-variant-numeric:tabular-nums;opacity:.85}
+.social .spacer{flex:1}
+.cpanel{margin-top:14px;border-top:1px dashed var(--line);padding-top:14px}
+.cpanel[hidden]{display:none}
+.clist{margin:0 0 14px;padding:0;list-style:none;display:flex;flex-direction:column;gap:10px}
+.citem{background:var(--panel-2);border:1px solid var(--line-soft);border-radius:10px;padding:11px 13px}
+.citem .who{font-size:.78rem;color:var(--accent);font-weight:600}
+.citem .at{font-size:.72rem;color:var(--dim);margin-left:8px}
+.citem p{margin:5px 0 0;font-size:.9rem;white-space:pre-wrap;color:var(--ink)}
+.cnone{color:var(--dim);font-size:.84rem;margin:0 0 14px}
+.cform{display:flex;flex-direction:column;gap:8px}
+.cform .two{display:flex;gap:8px;flex-wrap:wrap}
+.cform .two>*{flex:1 1 180px;min-width:0}
+.cform input,.cform textarea{background:var(--input-bg);border:1px solid var(--line);color:var(--ink);
+  border-radius:8px;padding:9px 11px;font-family:inherit;font-size:.86rem;width:100%}
+.cform textarea{min-height:84px;resize:vertical;line-height:1.65}
+.cform input:focus,.cform textarea:focus{outline:none;border-color:var(--accent)}
+.cform .hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
+.cform .send{align-self:flex-start;background:var(--btn-bg);border:1px solid var(--btn-border);color:var(--on-btn);
+  font-weight:600;border-radius:999px;padding:7px 18px;font-size:.82rem;font-family:inherit;cursor:pointer}
+.cform .send:disabled{opacity:.55;cursor:default}
+.cmsg{font-size:.82rem;min-height:1.3em;margin:0}
+.cmsg.ok{color:var(--ok)}
+.cmsg.bad{color:var(--mark)}
+.cmoderation{font-size:.74rem;color:var(--dim);margin:0}
+
+.mynote{margin:14px 0 0;padding:11px 14px;border-radius:10px;background:rgba(161,84,28,.07);
+  border:1px solid rgba(161,84,28,.28);font-size:.9rem;color:#5a3418}
+.mynote b{color:var(--mark);font-weight:600;letter-spacing:.06em;font-size:.72rem;display:block;margin-bottom:3px;text-transform:uppercase}
+.mynote .note-orig{display:block;margin-top:5px;font-family:var(--serif);color:#7a5a45;font-size:.88rem}
+.ctx{margin:16px 0 0;padding:14px 16px;border-radius:10px;background:var(--panel-2);border:1px solid var(--line-soft)}
+.ctx-label{font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:var(--dim);margin:0 0 7px;display:flex;align-items:center;gap:6px}
+.ctx-label::before{content:"";width:14px;height:1px;background:var(--dim);display:inline-block}
+.ctx p{margin:0;font-size:.88rem;line-height:1.85;color:var(--muted)}
+.ctx p.zh{margin-top:9px;font-family:var(--serif);font-size:.9rem;line-height:1.9;color:var(--dim)}
+@media (max-width:560px){
+  .entry{padding:16px 15px;border-radius:12px}
+  blockquote{font-size:.98rem;line-height:1.95;padding-left:13px}
+  .provenance{padding:15px 16px}
+}
+@media print{
+  body{background:#fff;color:#000}
+  nav.toc,.langbar{display:none}
+  .entry{break-inside:avoid;border-color:#ccc;background:#fff}
+}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="langbar">
+    <a class="back" href="../reading.html" id="backlink">← Reading Notes</a>
+    <button type="button" data-l="en" aria-pressed="true">English</button>
+    <button type="button" data-l="zh" aria-pressed="false">简体中文</button>
+    <button type="button" data-l="fr" aria-pressed="false">Français</button>
+    <button type="button" data-l="es" aria-pressed="false">Español</button>
+  </div>
+
+  <header class="hero">
+    <p class="eyebrow" id="eyebrow"></p>
+    <h1><span id="booktitle"></span><span class="by" id="byline"></span></h1>
+    <ul class="facts" id="facts"></ul>
+
+    <section class="provenance" aria-labelledby="prov-title">
+      <h2 id="prov-title">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v18M3 7h6M15 7h6M6 12l-3 5h6ZM18 12l-3 5h6Z"/></svg>
+        <span id="prov-heading"></span>
+      </h2>
+      <p id="prov-body"></p>
+      <p class="modnote" id="modnote" hidden>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+        <span></span>
+      </p>
+    </section>
+  </header>
+
+  <nav class="toc" aria-label="Sections"><div class="toc-row" id="filters"></div></nav>
+
+  <main id="main"><noscript><p>《埃隆·马斯克传》 · Reading Notes. Please enable JavaScript to view the 127 passages.</p></noscript></main>
+
+  <footer>
+    <p style="margin-top:18px" id="signature"></p>
+  </footer>
+
+</div>
+
+<script>
+const LANGS = ['en','zh','fr','es'];
+
+const UI = {"back":{"en":"← Reading Notes","zh":"← 读书笔记","fr":"← Notes de lecture","es":"← Notas de lectura"},"eyebrow":{"en":"Reading notes · Walter Isaacson","zh":"读书笔记 · 埃隆·马斯克传","fr":"Notes de lecture · Walter Isaacson","es":"Notas de lectura · Walter Isaacson"},"byline":{"en":"Walter Isaacson · Chinese translation by Sun Siyuan and Liu Jiaqi","zh":"［美］沃尔特·艾萨克森 著 · 孙思远、刘家琦 译","fr":"Walter Isaacson · traduction chinoise de Sun Siyuan et Liu Jiaqi","es":"Walter Isaacson · traducción china de Sun Siyuan y Liu Jiaqi"},"facts":{"en":[["16 Dec 2024 – 4 Jan 2025","read"],["Sun Siyuan / Liu Jiaqi translation","reading edition"]],"zh":[["2024 年 12 月 16 日 – 2025 年 1 月 4 日","阅读期间"],["孙思远、刘家琦中译本","纸质底本"]],"fr":[["16 déc. 2024 – 4 janv. 2025","lecture"],["Traduction de Sun Siyuan et Liu Jiaqi","édition lue"]],"es":[["16 dic. 2024 – 4 ene. 2025","lectura"],["Traducción de Sun Siyuan y Liu Jiaqi","edición leída"]]},"provHead":{"en":"Translation notice","zh":"翻译说明","fr":"Avis de traduction","es":"Aviso de traducción"},"provBody":{"en":"Original language: English. Source: the printed Chinese translation of Walter Isaacson’s Elon Musk by Sun Siyuan and Liu Jiaqi (CITIC Press). Chinese quotations were transcribed from photographs; the supplied English EPUB was consulted for context only. The English passages were translated with OpenAI Codex (GPT-6); French and Spanish were generated from those English translations with Argos Translate 1.11.0 on 23 September 2026. These are retranslations of the Chinese edition, not Isaacson’s English original, and have not been professionally edited. Chinese appears beneath every translation and takes precedence.","zh":"原著语言：英文。底本：沃尔特·艾萨克森《埃隆·马斯克传》孙思远、刘家琦中译本（中信出版集团）。中文引文据纸本照片抄录；附带英文 EPUB 仅供参考语境。英文由 OpenAI Codex（GPT-6）据中译本翻译；法文、西班牙文据英文用 Argos Translate 1.11.0 生成，翻译日期为 2026 年 9 月 23 日。外文都是据中译本转译，并非艾萨克森英文原文；未经专业译者润色。每条译文附中文，以中文为准。","fr":"Langue originale : anglais. Source : traduction chinoise du livre Elon Musk de Walter Isaacson par Sun Siyuan et Liu Jiaqi (CITIC). Les citations chinoises viennent des pages photographiées ; l’EPUB anglais n’a servi qu’au contexte. L’anglais a été traduit avec OpenAI Codex (GPT-6) ; le français et l’espagnol ont été générés depuis cet anglais avec Argos Translate 1.11.0 le 23 septembre 2026. Ces textes sont retraduits du chinois, et non tirés de l’original anglais ; ils n’ont pas été révisés par un traducteur professionnel. Le chinois fait foi.","es":"Idioma original: inglés. Fuente: traducción china de Elon Musk, de Walter Isaacson, por Sun Siyuan y Liu Jiaqi (CITIC). Las citas chinas se transcribieron de las páginas fotografiadas; el EPUB inglés solo se consultó como contexto. El inglés se tradujo con OpenAI Codex (GPT-6); el francés y el español se generaron a partir de ese inglés con Argos Translate 1.11.0 el 23 de septiembre de 2026. Son retraducciones del chino, no el original inglés; no han sido revisadas por traductores profesionales. Prevalece el chino."},"all":{"en":"All sections","zh":"全部","fr":"Tout","es":"Todo"},"orig":{"en":"Chinese source text","zh":"中文原文","fr":"Texte chinois","es":"Texto chino"},"myNote":{"en":"My margin note","zh":"我的批注","fr":"Ma note en marge","es":"Mi nota al margen"},"approx":{"en":"location estimated","zh":"位置推定","fr":"emplacement estimé","es":"ubicación estimada"},"kinds":{"u":{"en":"underline","zh":"划线","fr":"souligné","es":"subrayado"},"b":{"en":"boxed","zh":"方框","fr":"encadré","es":"recuadrado"},"c":{"en":"circled","zh":"圈注","fr":"entouré","es":"rodeado"}},"sig":{"en":"Compiled September 2026 · Jinge Guo","zh":"整理于 2026 年 9 月 · 郭晋阁","fr":"Compilé en septembre 2026 · Jinge Guo","es":"Recopilado en septiembre de 2026 · Jinge Guo"}};
+
+const STORIES = [{"id":"found","zh":"创业与火箭","range":"","t":{"en":"Founding and rockets","zh":"创业与火箭","fr":"Entreprises et fusées","es":"Empresas y cohetes"},"s":{"en":"","zh":"","fr":"","es":""}},{"id":"growth","zh":"扩张与关系","range":"","t":{"en":"Growth and relationships","zh":"扩张与关系","fr":"Croissance et relations","es":"Crecimiento y relaciones"},"s":{"en":"","zh":"","fr":"","es":""}},{"id":"frontier","zh":"工程与探索","range":"","t":{"en":"Engineering and exploration","zh":"工程与探索","fr":"Ingénierie et exploration","es":"Ingeniería y exploración"},"s":{"en":"","zh":"","fr":"","es":""}},{"id":"twitter","zh":"推特风暴","range":"","t":{"en":"The Twitter storm","zh":"推特风暴","fr":"La tempête Twitter","es":"La tormenta de Twitter"},"s":{"en":"","zh":"","fr":"","es":""}},{"id":"future","zh":"人工智能与未来","range":"","t":{"en":"AI and the future","zh":"人工智能与未来","fr":"IA et avenir","es":"IA y futuro"},"s":{"en":"","zh":"","fr":"","es":""}}];
+
+const ENTRIES = [{"id":"m001","s":"found","k":["b"],"zh":"所有要求都应该被当成建议。","en":"All requirements should be treated as suggestions.","fr":"Toutes les exigences doivent être traitées comme des suggestions.","es":"Todos los requisitos deben tratarse como sugerencias.","ch":""},{"id":"m002","s":"found","k":["b"],"zh":"如果你设定了一个跳一跳就能够得着的目标，大家会认为有可能完成，就会付出额外的努力。","en":"If you set a goal that is just out of reach, people will think it is achievable and put in extra effort.","fr":"Si vous définissez un objectif qui est juste hors de portée, les gens penseront qu'il est réalisable et mettre en effort supplémentaire.","es":"Si estableces una meta que está fuera de alcance, la gente pensará que es alcanzable y poner en esfuerzo extra.","ch":""},{"id":"m003","s":"found","k":["u"],"zh":"马斯克采取了一种迭代式的设计方法：迅速制成火箭和发动机原型，进行测试、炸毁、修改，再次尝试，直到最后做出能用的东西。","n":{"zh":"快速失败，迅速迭代","en":"Fail fast; iterate quickly.","fr":"Échouer vite ; itérer rapidement.","es":"Fracasar rápido; iterar deprisa."},"en":"Musk adopted an iterative design approach: quickly build rocket and engine prototypes, test them, blow them up, make changes, and try again until something works.","fr":"Musk a adopté une approche de conception itérative : construire rapidement des prototypes de fusées et de moteurs, les tester, les faire sauter, faire des changements et essayer à nouveau jusqu'à ce que quelque chose fonctionne.","es":"Musk adoptó un enfoque de diseño iterativo: construir rápidamente prototipos de cohetes y motores, probarlos, volarlos, hacer cambios, e intentar de nuevo hasta que algo funcione.","ch":""},{"id":"m004","s":"found","k":["u"],"zh":"只要制造一个发动机，在试验台上点火，如果它能工作，就把它装在火箭上，送上天。","en":"Build an engine, fire it on a test stand, and if it works, put it on a rocket and launch it.","fr":"Construisez un moteur, tirez-le sur un banc d'essai, et si cela fonctionne, mettez-le sur une fusée et lancez-le.","es":"Construir un motor, disparar en un soporte de prueba, y si funciona, ponerlo en un cohete y lanzarlo.","ch":""},{"id":"m005","s":"found","k":["c"],"zh":"他常常会怒火中烧。","en":"He would often fly into a rage.","fr":"Il volait souvent dans une rage.","es":"A menudo volaría en una rabia.","ch":""},{"id":"m006","s":"found","k":["u"],"zh":"麦格雷戈的工程师们还支起了一个“奶牛摄像头”，这样就可以观看奶牛绕圈的整个过程。","en":"The engineers at McGregor also set up a “cow cam” so they could watch the cows walk around in circles.","fr":"Les ingénieurs de McGregor ont également mis en place une came de vache afin qu'ils puissent regarder les vaches marcher en rond.","es":"Los ingenieros de McGregor también crearon una “cama de vaca” para que pudieran ver a las vacas caminar en círculos.","ch":""},{"id":"m007","s":"found","k":["u"],"zh":"他一直用手捂着嘴，很尴尬，肖特韦尔觉得他的样子很好笑。","en":"He kept covering his mouth with his hand, looking embarrassed; Shotwell found it funny.","fr":"Il n'arrêtait pas de se couvrir la bouche de la main, il semblait gêné; Shotwell l'a trouvé drôle.","es":"Él siguió cubriendo su boca con su mano, mirando avergonzado; Shotwell lo encontró gracioso.","ch":""},{"id":"m008","s":"found","k":["b"],"zh":"在这种体制机制下，人类不可能飞到火星去。","en":"Under a system like this, humanity could never reach Mars.","fr":"Dans un système comme celui-ci, l'humanité n'a jamais pu atteindre Mars.","es":"Bajo un sistema como este, la humanidad nunca podría llegar a Marte.","ch":""},{"id":"m009","s":"found","k":["c"],"zh":"我们必须把这个东西做出来。","ch":"p. 116","en":"We have to build this thing.","fr":"Nous devons construire ce truc.","es":"Tenemos que construir esto."},{"id":"m010","s":"found","k":["u"],"zh":"让一家汽车公司正确起步的方法是先打造一辆高价值的车，然后再转向大众市场车型。","en":"The right way to start a car company is to build a high-value car first, then move on to a mass-market model.","fr":"La bonne façon de démarrer une entreprise automobile est de construire une voiture de grande valeur d'abord, puis passer à un modèle de marché de masse.","es":"La manera correcta de comenzar una compañía de automóviles es construir un coche de alto valor primero, luego pasar a un modelo de mercado de masas.","ch":""},{"id":"m011","s":"found","k":["u"],"zh":"他想到了以该设备的发明者尼古拉·特斯拉来命名公司。","en":"He thought of naming the company after the device’s inventor, Nikola Tesla.","fr":"Il a pensé à nommer la société après l'inventeur de l'appareil, Nikola Tesla.","es":"Pensó en nombrar a la empresa después del inventor del dispositivo, Nikola Tesla.","ch":""},{"id":"m012","s":"found","k":["u"],"zh":"拥有可持续的未来，我们必须做到汽车电气化。","en":"To have a sustainable future, we must electrify cars.","fr":"Pour avoir un avenir durable, nous devons électrifier les voitures.","es":"Para tener un futuro sostenible, debemos electrificar coches.","ch":""},{"id":"m013","s":"found","k":["u"],"zh":"她想办法用300美元给他买了10股。他至今仍然持有这些股票。","ch":"p. 146","en":"She found a way to buy him ten shares for $300. He still owns them today.","fr":"Elle a trouvé un moyen de lui acheter dix actions pour 300 $. Il les possède encore aujourd'hui.","es":"Ella encontró una manera de comprarle diez acciones por $300. Todavía los posee hoy."},{"id":"m014","s":"found","k":["b"],"zh":"成功的不是产品本身，而是高效地制造产品的能力。","en":"What succeeds is not the product itself, but the ability to manufacture it efficiently.","fr":"Ce qui réussit n'est pas le produit lui-même, mais la capacité de le fabriquer efficacement.","es":"Lo que sucede no es el producto mismo, sino la capacidad de fabricarlo eficientemente.","ch":""},{"id":"m015","s":"found","k":["b"],"zh":"你怎么制造那些制造机器的机器。换句话说，你是怎么设计工厂的。","en":"How do you make the machines that make the machines? In other words, how do you design the factory?","fr":"Comment fabriquez-vous les machines qui les fabriquent? En d'autres termes, comment concevez-vous l'usine ?","es":"¿Cómo haces las máquinas que hacen las máquinas? En otras palabras, ¿cómo diseñas la fábrica?","ch":""},{"id":"m016","s":"found","k":["u"],"zh":"这不是个无关痛痒的小问题，因为它会导致马斯克无法了解问题所在。","ch":"p. 154","en":"This was no minor issue, because it would prevent Musk from seeing where the problem lay.","fr":"Ce n'était pas une question mineure, car cela empêcherait Musk de voir où se trouvait le problème.","es":"Esto no era un problema menor, porque evitaría que Musk viera dónde estaba el problema."},{"id":"m017","s":"found","k":["b"],"zh":"他觉得自己这样的脑回路在掌管一家出色的公司时反而是一个优势。","en":"He thought this way of thinking was an advantage in running an outstanding company.","fr":"Il pensait que cette façon de penser était un avantage dans la gestion d'une entreprise exceptionnelle.","es":"Pensó que esta forma de pensar era una ventaja en dirigir una compañía excepcional.","ch":""},{"id":"m018","s":"found","k":["c"],"zh":"他还是去做了演讲。","en":"He went ahead and gave the speech anyway.","fr":"Il a donné le discours de toute façon.","es":"Él siguió adelante y dio el discurso de todos modos.","ch":""},{"id":"m019","s":"found","k":["c"],"zh":"我们可能永远不会成为跨行星物种。","ch":"p. 169","en":"We may never become an interplanetary species.","fr":"Nous ne deviendrons peut-être jamais une espèce interplanétaire.","es":"Puede que nunca seamos una especie interplanetaria."},{"id":"m020","s":"found","k":["c"],"zh":"不，你们把它弄到夸贾林岛去，在那里修复它。","en":"No. Take it to Kwajalein and repair it there.","fr":"C'est pas vrai. Emmenez-le à Kwajalein et réparez-le là-bas.","es":"No. Llévalo a Kwajalein y reparalo allí.","ch":""},{"id":"m021","s":"found","k":["b"],"zh":"而且资金也是私人提供的，主要来自马斯克本人。","en":"The funding was also private, mostly from Musk himself.","fr":"Le financement était également privé, principalement de Musk lui-même.","es":"La financiación también era privada, principalmente del propio Musk.","ch":""},{"id":"m022","s":"growth","k":["u"],"zh":"我喜欢同人打交道，而他喜欢与硬件和产品设计打交道。","en":"I like dealing with people, whereas he likes working with hardware and product design.","fr":"J'aime traiter avec les gens, alors qu'il aime travailler avec le matériel et la conception de produits.","es":"Me gusta tratar con la gente, mientras que le gusta trabajar con hardware y diseño de productos.","ch":""},{"id":"m023","s":"growth","k":["c"],"zh":"如果当时戴姆勒没有投资特斯拉，我们就倒闭了。","en":"If Daimler had not invested in Tesla at the time, we would have gone bankrupt.","fr":"Si Daimler n'avait pas investi dans Tesla à l'époque, nous aurions fait faillite.","es":"Si Daimler no hubiera invertido en Tesla en ese momento, habríamos entrado en bancarrota.","ch":""},{"id":"m024","s":"growth","k":["u"],"zh":"这些条例大多数都是过时的。","en":"Most of these regulations are outdated.","fr":"La plupart de ces règlements sont dépassés.","es":"La mayoría de estas regulaciones están anticuadas.","ch":""},{"id":"m025","s":"growth","k":["b"],"zh":"埃隆比他们年轻，比他们富有，拥有硅谷那种创新颠覆者的心态。","ch":"p. 194","en":"Elon was younger and richer than they were, and had the mindset of a Silicon Valley disruptor.","fr":"Elon était plus jeune et plus riche qu'eux, et avait l'esprit d'un perturbateur de la Silicon Valley.","es":"Elon era más joven y más rico de lo que eran, y tenía la mentalidad de un disruptor de Silicon Valley."},{"id":"m026","s":"growth","k":["c"],"zh":"我觉得他想了解我，到底是个靠谱的人，还是个疯疯癫癫的家伙。","en":"I thought he wanted to find out whether I was reliable or some kind of lunatic.","fr":"Je pensais qu'il voulait savoir si j'étais fiable ou une sorte de fou.","es":"Pensé que quería saber si era confiable o algún tipo de lunático.","ch":""},{"id":"m027","s":"growth","k":["u"],"zh":"成立不到八年，其中有两年深陷濒临破产的境地，而如今它成了世界上最成功的私营火箭公司。","en":"Less than eight years old, after spending two of those years on the brink of bankruptcy, it had become the world’s most successful private rocket company.","fr":"Moins de huit ans, après avoir passé deux de ces années au bord de la faillite, il était devenu le monde le plus prospère société de fusées privées.","es":"Menos de ocho años, después de pasar dos de esos años al borde de la quiebra, se había convertido en la compañía de cohetes privada más exitosa del mundo.","ch":""},{"id":"m028","s":"growth","k":["c"],"zh":"他对风险的高容忍度让他再次表现出一种近乎不计后果的偏执。","en":"His high tolerance for risk once again showed itself as an almost reckless obsession.","fr":"Sa grande tolérance au risque s'est montrée une fois de plus comme une obsession presque imprudente.","es":"Su alta tolerancia al riesgo se mostró una vez más como una obsesión casi imprudente.","ch":""},{"id":"m029","s":"growth","k":["u"],"zh":"不仅要发射货物，还要将人类送入轨道。","en":"The aim was not only to launch cargo, but also to put humans in orbit.","fr":"L'objectif n'était pas seulement de lancer des cargaisons, mais aussi de mettre les humains en orbite.","es":"El objetivo no era sólo lanzar carga, sino también poner a los humanos en órbita.","ch":""},{"id":"m030","s":"growth","k":["c"],"zh":"不达目的不罢休。","en":"He would not stop until he achieved his goal.","fr":"Il ne s'arrêtera pas avant d'avoir atteint son objectif.","es":"No se detendría hasta alcanzar su objetivo.","ch":""},{"id":"m031","s":"growth","k":["u"],"zh":"再见吧石油。","en":"Goodbye, oil.","fr":"Au revoir, huile.","es":"Adiós, aceite.","ch":""},{"id":"m032","s":"growth","k":["b"],"zh":"他在重塑推特温和、人性化的文化时也会提到这个词。","en":"He would also use the word when reshaping Twitter’s gentle, humane culture.","fr":"Il utiliserait également le mot pour remodeler la culture douce et humaine de Twitter.","es":"También utilizaría la palabra al remodelar la cultura humana y gentil de Twitter.","ch":""},{"id":"m033","s":"growth","k":["c"],"zh":"他会突然变成一个言简义丰、魅力十足、情商极高的商界领袖。","ch":"p. 208","en":"He could suddenly become a concise, charismatic business leader with remarkable emotional intelligence.","fr":"Il pourrait soudainement devenir un chef d'entreprise concis et charismatique avec une intelligence émotionnelle remarquable.","es":"De repente podría convertirse en un líder de negocios conciso y carismático con notable inteligencia emocional."},{"id":"m034","s":"growth","k":["c"],"zh":"他讲得绘声绘色、头头是道。","en":"He told the story vividly and persuasively.","fr":"Il a raconté l'histoire avec force et persuasion.","es":"Contó la historia viva y persuasivamente.","ch":""},{"id":"m035","s":"growth","k":["u"],"zh":"在实现梦想的道路上意气风发，做事情却又有条不紊，充满活力。","en":"He pursued his dream with confidence while working methodically and energetically.","fr":"Il a poursuivi son rêve avec confiance tout en travaillant méthodiquement et énergiquement.","es":"Persiguió su sueño con confianza mientras trabajaba metódica y enérgicamente.","ch":""},{"id":"m036","s":"growth","k":["u"],"zh":"他们将其视为使命而不是逐利工具。","en":"They saw it as a mission, not a way to make money.","fr":"Ils ont vu ça comme une mission, pas comme un moyen de gagner de l'argent.","es":"Lo vieron como una misión, no como hacer dinero.","ch":""},{"id":"m037","s":"growth","k":["u"],"zh":"太空探索事业的衣钵已经从政府部门传给了私人部门。","en":"The mantle of space exploration had passed from government agencies to the private sector.","fr":"Le manteau de l'exploration spatiale est passé d'organismes gouvernementaux au secteur privé.","es":"El manto de la exploración espacial había pasado de organismos gubernamentales al sector privado.","ch":""},{"id":"m038","s":"growth","k":["c"],"zh":"冒险是生活的燃料。","en":"Adventure is the fuel of life.","fr":"L'aventure est le carburant de la vie.","es":"La aventura es el combustible de la vida.","ch":""},{"id":"m039","s":"growth","k":["u"],"zh":"太阳能屋顶都是真正的屋顶，而不再是一堆摆放在屋顶上的太阳能板。","en":"Solar roofs would be real roofs, rather than a collection of solar panels placed on top of them.","fr":"Les toits solaires seraient de véritables toits, plutôt qu'une collection de panneaux solaires placés sur eux.","es":"Los techos solares serían techos reales, en lugar de una colección de paneles solares colocados encima de ellos.","ch":""},{"id":"m040","s":"growth","k":["c"],"zh":"过三个小时我再给你打电话。","en":"I will call you again in three hours.","fr":"Je te rappelle dans trois heures.","es":"Te volveré a llamar en tres horas.","ch":""},{"id":"m041","s":"growth","k":["b"],"zh":"今天就开始吧，我想在周日前挖出一个尽可能大的洞来。","en":"Start today. I want the biggest hole you can dig by Sunday.","fr":"Commence aujourd'hui. Je veux le plus grand trou que tu puisses creuser avant dimanche.","es":"Empieza hoy. Quiero el agujero más grande que puedas cavar para el domingo.","ch":""},{"id":"m042","s":"growth","k":["b"],"zh":"其中最令他痛苦的是与女演员艾梅柏·希尔德的关系，她把他拽进了一个黑暗的旋涡。","en":"The relationship that hurt him most was with the actress Amber Heard, who pulled him into a dark spiral.","fr":"La relation qui le blesse le plus, c'est avec l'actrice Amber Heard, qui l'a poussé dans une spirale sombre.","es":"La relación que más le hizo daño fue con la actriz Amber Heard, que lo tiró en una espiral oscura.","ch":""},{"id":"m043","s":"growth","k":["c"],"zh":"她们的确很美，这是毫无疑问的，但她们的内心有着非常阴暗的一面。","en":"They are certainly beautiful, but they have a very dark side within them.","fr":"Ils sont certainement beaux, mais ils ont un côté très sombre en eux.","es":"Ciertamente son hermosos, pero tienen un lado muy oscuro dentro de ellos.","ch":""},{"id":"m044","s":"growth","k":["u"],"zh":"这次拜访虽然短暂，但似乎预示着埃隆与父亲的关系即将缓和，但事实的走向并非如此。","ch":"p. 251","en":"Although the visit was brief, it seemed to signal that Elon’s relationship with his father was about to improve. It did not.","fr":"Bien que la visite ait été brève, il semblait indiquer que la relation d'Elon avec son père allait s'améliorer. Pas du tout.","es":"Aunque la visita era breve, parecía indicar que la relación de Elon con su padre estaba a punto de mejorar. No lo hizo."},{"id":"m045","s":"growth","k":["b"],"zh":"几乎所有你能想到的罪行，他都犯过；几乎所有你能想到的恶行，他都做过。","en":"Almost every crime you can imagine, he committed; almost every evil act you can imagine, he did.","fr":"Presque chaque crime que vous pouvez imaginer, il a commis; presque chaque acte maléfique que vous pouvez imaginer, il a fait.","es":"Casi todo crimen que puedas imaginar, él cometió; casi todo acto maligno que puedas imaginar, lo hizo.","ch":""},{"id":"m046","s":"growth","k":["b"],"zh":"默默忍受痛苦，确保自己真正关心着正在做的事情。","en":"Endure the pain quietly, and make sure you truly care about what you are doing.","fr":"Endurez la douleur tranquillement, et assurez-vous que vous vous souciez vraiment de ce que vous faites.","es":"Domine el dolor silenciosamente, y asegúrate de que realmente te importe lo que estás haciendo.","ch":""},{"id":"m047","s":"growth","k":["u"],"zh":"黑暗的能量似乎充满了他的胸膛。","en":"Dark energy seemed to fill his chest.","fr":"L'énergie noire semblait remplir sa poitrine.","es":"La energía oscura parecía llenar su pecho.","ch":""},{"id":"m048","s":"growth","k":["u"],"zh":"“不要命”的工作强度。","ch":"p. 256","en":"A punishing work schedule that bordered on self-destruction.","fr":"Un programme de travail punissant qui se limite à l'autodestruction.","es":"Un horario de trabajo que limitaba con la autodestrucción."},{"id":"m049","s":"growth","k":["u"],"zh":"我们当时每天只睡四五个小时，还经常打地铺。","en":"At the time, we slept only four or five hours a day and often slept on the floor.","fr":"À l'époque, nous n'avons dormi que quatre ou cinq heures par jour et nous avons souvent dormi par terre.","es":"En ese momento, dormimos sólo cuatro o cinco horas al día y a menudo dormimos en el suelo.","ch":""},{"id":"m050","s":"frontier","k":["u"],"zh":"目的是减少电池起火带来的风险。","en":"The aim was to reduce the risk of battery fires.","fr":"L'objectif était de réduire le risque d'incendie de batteries.","es":"El objetivo era reducir el riesgo de incendios de baterías.","ch":""},{"id":"m051","s":"frontier","k":["u"],"zh":"马斯克先生必须以某种方式将特斯拉的市值提升到6500亿美元，而许多专家都认为这个数字是不可能实现的。","en":"Mr. Musk had to raise Tesla’s market capitalization to $650 billion somehow, a figure many experts considered impossible.","fr":"M. Musk a dû porter la capitalisation boursière de Tesla à 650 milliards de dollars, chiffre que de nombreux experts ont jugé impossible.","es":"Mr. Musk had to raise Tesla’s market capitalization to $650 billion some, a figure many experts considered impossible.","ch":""},{"id":"m052","s":"frontier","k":["u"],"zh":"如果股价下跌，他们就能从中牟利。","en":"They could profit if the share price fell.","fr":"Ils pourraient profiter si le prix de l'action baisse.","es":"Podrían obtener beneficios si bajaba el precio de las acciones.","ch":""},{"id":"m053","s":"frontier","k":["u"],"zh":"特斯拉已成为史上空头最多的股票。","en":"Tesla had become the most shorted stock in history.","fr":"Tesla était devenue le stock le plus court de l'histoire.","es":"Tesla se había convertido en el stock más corto de la historia.","ch":""},{"id":"m054","s":"frontier","k":["u"],"zh":"于是这些补丁就被拿掉了。","en":"So the patches were removed.","fr":"Donc les patchs ont été enlevés.","es":"Así que los parches fueron eliminados.","ch":""},{"id":"m055","s":"frontier","k":["c"],"zh":"只是一个公关噱头。","ch":"p. 273","en":"It was just a publicity stunt.","fr":"C'était juste un coup de pub.","es":"Era sólo un truco publicitario."},{"id":"m056","s":"frontier","k":["u"],"zh":"马斯克突然拒绝了该协议，这让他们大吃一惊。","en":"Musk suddenly rejected the agreement, to their astonishment.","fr":"Musk a soudainement rejeté l'accord, à leur étonnement.","es":"Musk de repente rechazó el acuerdo, a su asombro.","ch":""},{"id":"m057","s":"frontier","k":["b"],"zh":"第二天早上，特斯拉股价暴跌9%。","en":"The next morning, Tesla shares fell 9%.","fr":"Le lendemain matin, Tesla a chuté de 9%.","es":"A la mañana siguiente, las acciones de Tesla cayeron un 9%.","ch":""},{"id":"m058","s":"frontier","k":["c"],"zh":"我决定不能就这么割袍断义，因为我不想失去他，我想哥哥了。","en":"I decided I could not simply sever ties with him, because I did not want to lose him. I missed my brother.","fr":"J'ai décidé que je ne pouvais pas simplement rompre des liens avec lui, parce que je ne voulais pas le perdre. Mon frère m'a manqué.","es":"Decidí que no podía estrechar lazos con él, porque no quería perderlo. Extrañé a mi hermano.","ch":""},{"id":"m059","s":"frontier","k":["u"],"zh":"埃隆不愿意让我走，我还挺惊讶的。","en":"I was rather surprised that Elon did not want me to leave.","fr":"J'étais plutôt surpris qu'Elon ne veuille pas que je parte.","es":"Me sorprendió que Elon no quisiera que me fuera.","ch":""},{"id":"m060","s":"frontier","k":["c"],"zh":"他不太清楚她是谁，只知道她是格莱姆斯的朋友。","ch":"p. 292","en":"He was not quite sure who she was; he only knew she was a friend of Grimes.","fr":"Il n'était pas sûr de qui elle était; il savait seulement qu'elle était une amie de Grimes.","es":"No estaba muy seguro de quién era; sólo sabía que era una amiga de Grimes."},{"id":"m061","s":"frontier","k":["c"],"zh":"你对他说了些什么，过后他就完全记不得你说过，因为他完全沉浸在脑中世界。","en":"You can say something to him, and afterward he will not remember it at all, because he is completely absorbed in his own world.","fr":"Vous pouvez lui dire quelque chose, et ensuite il ne se souviendra plus du tout, parce qu'il est complètement absorbé dans son propre monde.","es":"Puedes decirle algo, y después no lo recordará en absoluto, porque está completamente absorto en su propio mundo.","ch":""},{"id":"m062","s":"frontier","k":["b"],"zh":"在面对挑战时，他的一处精神避难所就是专注于打造一个面向未来的项目。","en":"When facing challenges, one refuge for his mind was to focus on building a project for the future.","fr":"Face aux défis, un refuge pour son esprit était de se concentrer sur la construction d'un projet pour l'avenir.","es":"Al enfrentarse a los desafíos, un refugio para su mente era enfocarse en construir un proyecto para el futuro.","ch":""},{"id":"m063","s":"frontier","k":["u"],"zh":"马斯克不切实际的最后通牒一般无法实现，但在某些情况下也能如他所愿。","en":"Musk’s unrealistic ultimatums were usually impossible to meet, though sometimes things did go his way.","fr":"Les ultimatums irréalistes de Musko étaient généralement impossibles à rencontrer, bien que parfois les choses allaient à son chemin.","es":"Los ultimátum no realistas de Musk eran generalmente imposibles de conocer, aunque a veces las cosas iban a su manera.","ch":""},{"id":"m064","s":"frontier","k":["u"],"zh":"但他看起来好聪明、好有干劲儿啊，我喜欢他的风格。","en":"But he seemed so smart and driven. I liked his style.","fr":"Mais il semblait si intelligent et entraîné. J'aimais son style.","es":"Pero parecía tan inteligente y conducido. Me gustó su estilo.","ch":""},{"id":"m065","s":"frontier","k":["u"],"zh":"核心目标是要打造一款易于安装的优质太阳能屋顶。","ch":"p. 351","en":"The central goal was to create a high-quality solar roof that was easy to install.","fr":"L'objectif central était de créer un toit solaire de haute qualité qui était facile à installer.","es":"El objetivo central era crear un techo solar de alta calidad que era fácil de instalar."},{"id":"m066","s":"frontier","k":["u"],"zh":"我不喜欢这样解决问题，但这样做确实很有效，从昨天到今天的改进很大。","en":"I do not like solving problems this way, but it really works. The improvement since yesterday is considerable.","fr":"Je n'aime pas résoudre les problèmes de cette façon, mais ça marche vraiment. L'amélioration depuis hier est considérable.","es":"No me gusta resolver problemas de esta manera, pero realmente funciona. La mejora desde ayer es considerable.","ch":""},{"id":"m067","s":"frontier","k":["u"],"zh":"并创造了在62小时内驾驶轻型喷气式飞机环游地球的世界纪录。","en":"And he set a world record by flying a light jet around the globe in 62 hours.","fr":"Et il a établi un record mondial en volant un jet léger autour du globe en 62 heures.","es":"Y puso un récord mundial volando un jet ligero alrededor del mundo en 62 horas.","ch":""},{"id":"m068","s":"frontier","k":["u"],"zh":"我们就得做点儿跨出舒适区的事。","en":"We have to do something outside our comfort zone.","fr":"Nous devons faire quelque chose en dehors de notre zone de confort.","es":"Tenemos que hacer algo fuera de nuestra zona de confort.","ch":""},{"id":"m069","s":"frontier","k":["c"],"zh":"技术不会自动进步。","en":"Technology does not advance automatically.","fr":"La technologie n'avance pas automatiquement.","es":"La tecnología no avanza automáticamente.","ch":""},{"id":"m070","s":"frontier","k":["c"],"zh":"任何进步都需要人类的推动。","en":"Every advance needs people to drive it forward.","fr":"Chaque avance a besoin de gens pour aller de l'avant.","es":"Cada avance necesita que la gente lo impulse.","ch":""},{"id":"m071","s":"frontier","k":["b"],"zh":"快速试制，就能快速验证出结果。","en":"Rapid prototyping lets you test the results quickly.","fr":"Le prototypage rapide vous permet de tester les résultats rapidement.","es":"El prototipado rápido le permite probar los resultados rápidamente.","ch":""},{"id":"m072","s":"frontier","k":["c"],"zh":"敢想敢干。","en":"Think boldly and act boldly.","fr":"Réfléchissez hardiment et agissez hardiment.","es":"Piensa con valentía y actúa con valentía.","ch":""},{"id":"m073","s":"frontier","k":["c"],"zh":"传递出一种专业能力很强的感觉。","en":"He gave the impression of being highly capable professionally.","fr":"Il a donné l'impression d'être très compétent professionnellement.","es":"Da la impresión de ser altamente capaz profesionalmente.","ch":""},{"id":"m074","s":"frontier","k":["u"],"zh":"主修工程专业，成绩优异。","en":"He majored in engineering and earned excellent grades.","fr":"Il a fait ses études d'ingénieur et a obtenu d'excellentes notes.","es":"Se especializó en ingeniería y obtuvo excelentes calificaciones.","ch":""},{"id":"m075","s":"frontier","k":["u"],"zh":"要剥掉一只猫的皮有很多方法。重要的是你得知道被剥皮后的猫是什么样子，你会看到肌肉和骨节。","en":"There is more than one way to skin a cat. What matters is knowing what the skinned cat looks like: you will see its muscles and joints.","fr":"Il y a plus d'une façon de peler un chat. Ce qui importe, c'est de savoir à quoi ressemble le chat écorché : vous verrez ses muscles et ses articulations.","es":"Hay más de una manera de despellejar a un gato. Lo que importa es saber cómo luce el gato depilado: verás sus músculos y articulaciones.","ch":""},{"id":"m076","s":"frontier","k":["b"],"zh":"也可能没事，我们试试看。","en":"Or maybe it will be fine. Let’s try it.","fr":"Ou peut-être que ça ira. Essayons.","es":"O tal vez estará bien. Probemos.","ch":""},{"id":"m077","s":"frontier","k":["u"],"zh":"生产猛禽发动机的过程几乎就像在装配线上生产汽车。","en":"Producing Raptor engines was almost like making cars on an assembly line.","fr":"Produire des moteurs Raptor était presque comme faire des voitures sur une ligne de montage.","es":"Producir motores Raptor era casi como hacer coches en una línea de montaje.","ch":""},{"id":"m078","s":"frontier","k":["u"],"zh":"我们终于可以给这场丑闻起个名字叫“埃隆门”事件了，太棒了。","en":"At last we can give this scandal a name: “Elongate.” Great.","fr":"Enfin, nous pouvons donner un nom à ce scandale: Génial.","es":"Por fin podemos dar a este escándalo un nombre: “Elongate”. Genial.","ch":""},{"id":"m079","s":"frontier","k":["u"],"zh":"但这是有史以来最好玩的游戏。","en":"But it is the most fun game ever.","fr":"Mais c'est le jeu le plus amusant jamais.","es":"Pero es el juego más divertido de la historia.","ch":""},{"id":"m080","s":"frontier","k":["b"],"zh":"因为你在玩游戏时肯定没有同理心，对吗？","ch":"p. 406","en":"Because when you play a game, you certainly do not have empathy, right?","fr":"Parce que quand vous jouez à un jeu, vous n'avez certainement pas d'empathie, non ?","es":"Porque cuando juegas un juego, no tienes empatía, ¿verdad?"},{"id":"m081","s":"frontier","k":["c"],"zh":"他俩都受不了愚蠢的人。","en":"Neither of them could stand stupid people.","fr":"Aucun d'eux ne pouvait supporter des gens stupides.","es":"Ninguno de ellos podría soportar gente estúpida.","ch":""},{"id":"m082","s":"frontier","k":["u"],"zh":"将推特打造成一个支付平台。","en":"Turn Twitter into a payments platform.","fr":"Transformez Twitter en plateforme de paiement.","es":"Convierta Twitter en una plataforma de pagos.","ch":""},{"id":"m083","s":"twitter","k":["u"],"zh":"他认为这是一家技术型公司，实际上它属于广告传媒行业。","en":"He thought it was a technology company, when in fact it was in advertising and media.","fr":"Il pensait que c'était une entreprise de technologie, alors qu'en fait c'était dans la publicité et les médias.","es":"Pensó que era una empresa tecnológica, cuando de hecho era en publicidad y medios.","ch":""},{"id":"m084","s":"twitter","k":["b"],"zh":"他也不知道该如何安然度过这样一场风暴。","en":"He did not know how to weather such a storm safely either.","fr":"Il ne savait pas non plus comment faire face à une telle tempête en toute sécurité.","es":"Tampoco sabía cómo hacer un clima tan seguro.","ch":""},{"id":"m085","s":"twitter","k":["c"],"zh":"有时候，危机会赋予他活力，让他感到兴奋和愉悦。","ch":"p. 520","en":"Sometimes a crisis energized him and made him feel excited and delighted.","fr":"Parfois, une crise l'énergisait et le rendait excité et ravi.","es":"A veces una crisis lo energizó y le hizo sentir emocionado y encantado."},{"id":"m086","s":"twitter","k":["c"],"zh":"当他展现出“邪恶埃隆”那一面，我就不能接受了。","en":"When he showed his “evil Elon” side, I could not accept it.","fr":"Quand il a montré son côté Evil Elon, je ne pouvais pas l'accepter.","es":"Cuando mostró su lado \"Elon malvado\", no pude aceptarlo.","ch":""},{"id":"m087","s":"twitter","k":["c"],"zh":"无论你认为推特的企业文化有多糟糕，实际上都比你以为的糟糕10倍。","en":"However bad you think Twitter’s culture is, it is actually ten times worse.","fr":"Aussi mauvais que soit la culture de Twitter, elle est dix fois pire.","es":"Sin embargo, usted piensa que la cultura de Twitter es, en realidad es diez veces peor.","ch":""},{"id":"m088","s":"twitter","k":["u"],"zh":"我坚信，少数冲劲十足的杰出人才胜过一大群积极性一般的员工。","en":"I firmly believe that a small number of exceptional, highly driven people outperform a large group of moderately motivated employees.","fr":"Je crois fermement qu'un petit nombre de personnes exceptionnelles et très motivées surpassent un grand groupe d'employés à motivation modérée.","es":"Creo firmemente que un pequeño número de personas excepcionales y altamente impulsadas superan a un gran grupo de empleados de motivación moderada.","ch":""},{"id":"m089","s":"twitter","k":["u"],"zh":"天生喜欢营造这种戏剧性、紧迫性的气氛，而且他就是一个为战争而生的将军。","en":"He naturally liked creating drama and urgency, and he was a general born for war.","fr":"Il aimait naturellement créer le drame et l'urgence, et il était un général né pour la guerre.","es":"Naturalmente le gustaba crear drama y urgencia, y era un general nacido para la guerra.","ch":""},{"id":"m090","s":"twitter","k":["u"],"zh":"他主要靠饼干充饥，已经瘦得皮包骨。","ch":"p. 526","en":"He subsisted mainly on cookies and had become skin and bones.","fr":"Il subsistait principalement sur des biscuits et était devenu peau et os.","es":"Subsistió principalmente en las cookies y se había convertido en piel y huesos."},{"id":"m091","s":"twitter","k":["u"],"zh":"马斯克一直以来始终保持着全力以赴、勇往直前的拼搏态度，这是他骄傲的勋章。","en":"Musk had always kept up a fighting spirit of total commitment and relentless drive, and he wore it as a badge of honor.","fr":"Musk avait toujours maintenu un esprit de combat d'engagement total et de conduite acharnée, et il le portait comme un insigne d'honneur.","es":"Musk siempre había mantenido un espíritu de lucha de compromiso total y impulso implacable, y lo usó como una placa de honor.","ch":""},{"id":"m092","s":"twitter","k":["c"],"zh":"他想看看推特这辆车到底能开多快，一脚踩下加速踏板到底会发生什么，到底能飞到离太阳多远的距离。","en":"He wanted to see how fast the Twitter car could go: what would happen if he floored the accelerator, and how close could it fly to the sun?","fr":"Il voulait voir à quelle vitesse la voiture de Twitter pouvait aller : que se passerait-il s'il avait descendu l'accélérateur, et à quelle distance pourrait-elle voler au soleil ?","es":"Quería ver qué tan rápido podía ir el coche de Twitter: ¿qué pasaría si bajaba el acelerador, y qué tan cerca podría volar al sol?","ch":""},{"id":"m093","s":"twitter","k":["b"],"zh":"而且我觉得他是想有问题索性就都暴露出来，不要粉饰，他不想再拖下去了。","en":"I think he wanted any problems to come into the open rather than be covered up. He did not want to drag things out.","fr":"Je pense qu'il voulait que tout problème soit découvert plutôt que couvert. Il ne voulait pas traîner les choses.","es":"Creo que quería que todos los problemas salieran a la luz, sin encubrirlos. No quería seguir aplazándolo.","ch":""},{"id":"m094","s":"twitter","k":["u"],"zh":"领导者一定是熟悉程序代码的人。","en":"A leader must be someone who understands the code.","fr":"Un leader doit être quelqu'un qui comprend le code.","es":"Un líder debe ser alguien que entienda el código.","ch":""},{"id":"m095","s":"twitter","k":["u"],"zh":"但他总是会避免那些不必要的冲突。","en":"But he would always avoid unnecessary conflict.","fr":"Mais il éviterait toujours les conflits inutiles.","es":"Pero siempre evitaría conflictos innecesarios.","ch":""},{"id":"m096","s":"twitter","k":["u"],"zh":"如果我们不加速推进，有生之年，我们将一事无成。","ch":"p. 541","en":"If we do not move faster, we will accomplish nothing in our lifetimes.","fr":"Si nous ne bougeons pas plus vite, nous n'accomplirons rien de notre vie.","es":"Si no nos movemos más rápido, no lograremos nada en nuestras vidas."},{"id":"m097","s":"twitter","k":["u"],"zh":"一个刚买下糖果店的孩子，此时仍然不敢相信自己已经拥有整个糖果店。","en":"He was like a child who had just bought a candy store and still could not believe the whole store was his.","fr":"Il était comme un enfant qui venait d'acheter un magasin de bonbons et ne pouvait toujours pas croire que tout le magasin était à lui.","es":"Era como un niño que acababa de comprar una tienda de dulces y todavía no podía creer que toda la tienda era suya.","ch":""},{"id":"m098","s":"twitter","k":["u"],"zh":"这些公司似乎没有太多选择的余地，因为它们是全球监控和信息控制机构的重要组成部分。","en":"These companies seemed to have little choice, because they were important parts of the global surveillance and information-control apparatus.","fr":"Ces entreprises semblaient avoir peu de choix, car elles étaient des éléments importants de l'appareil mondial de surveillance et de contrôle de l'information.","es":"Estas empresas parecían tener pocas opciones, porque eran partes importantes del aparato global de vigilancia y control de la información.","ch":""},{"id":"m099","s":"twitter","k":["u"],"zh":"我对言论自由的坚守到了什么程度？","ch":"p. 552","en":"How far does my commitment to free speech go?","fr":"Jusqu'où va mon engagement en faveur de la liberté d'expression ?","es":"¿Hasta dónde va mi compromiso con el libre discurso?"},{"id":"m100","s":"twitter","k":["u"],"zh":"他排挤的一些账号是推特上欺负我最狠的一批人，其中有些人我可以说是恨之入骨。","en":"Some of the accounts he pushed out belonged to the people who bullied me most viciously on Twitter; I hated some of them deeply.","fr":"Certains des récits qu'il a rejetés appartenaient aux gens qui m'ont le plus harcelé sur Twitter; je les haïssais profondément.","es":"Algunas de las cuentas que empujó pertenecían a la gente que me acosaba más ferozmente en Twitter; odiaba a algunos de ellos profundamente.","ch":""},{"id":"m101","s":"twitter","k":["u"],"zh":"为了让账号被暂停的用户无法加入对话，推特把所有空间关闭了一天。","ch":"p. 554","en":"Twitter shut down all Spaces for a day to prevent users with suspended accounts from joining the conversation.","fr":"Twitter a fermé tous les espaces pour une journée pour empêcher les utilisateurs avec des comptes suspendus de se joindre à la conversation.","es":"Twitter cerró todos los espacios durante un día para evitar que los usuarios con cuentas suspendidas se unan a la conversación."},{"id":"m102","s":"twitter","k":["u"],"zh":"试图安抚暴徒是没用的。你越是尝试，他们就越不害怕你，越轻视你。","en":"Trying to appease bullies is useless. The more you try, the less they fear you and the more they look down on you.","fr":"Essayer d'apaiser les brutes est inutile. Plus vous essayez, moins ils vous craignent et plus ils vous regardent.","es":"Intentar apaciguar a los matones es inútil. Cuanto más intentes, menos te te temen y más te miran.","ch":""},{"id":"m103","s":"twitter","k":["u"],"zh":"在我们的现实背后隐藏着一股邪恶的阴谋力量，就像电影《黑客帝国》中那样。","ch":"p. 555","en":"An evil conspiratorial force lurks behind our reality, as in the film The Matrix.","fr":"Une force conspiratoire maléfique se cache derrière notre réalité, comme dans le film La Matrix.","es":"Una fuerza conspiradora malvada se esconde detrás de nuestra realidad, como en la película La Matriz."},{"id":"m104","s":"twitter","k":["u"],"zh":"明眼人都看得出来，他就像个该死的白痴。","en":"Anyone could see that he looked like a damned idiot.","fr":"N'importe qui pouvait voir qu'il ressemblait à un idiot.","es":"Cualquiera podía ver que parecía un maldito idiota.","ch":""},{"id":"m105","s":"twitter","k":["u"],"zh":"马斯克现在这个样子他们以前见过很多次，所以知道他确实有可能是认真的。","en":"They had seen Musk like this many times before, so they knew he might actually be serious.","fr":"Ils avaient déjà vu Musk comme ça, alors ils savaient qu'il était sérieux.","es":"Habían visto a Musk así muchas veces antes, así que sabían que podría ser serio.","ch":""},{"id":"m106","s":"twitter","k":["c"],"zh":"嗯，看起来也没有很难嘛。","en":"Well, it does not look that hard.","fr":"Ça n'a pas l'air si dur.","es":"Bueno, no parece tan difícil.","ch":""},{"id":"m107","s":"twitter","k":["c"],"zh":"但里面的东西至关重要。","en":"But what was inside was vitally important.","fr":"Mais ce qui était à l'intérieur était vital.","es":"Pero lo que estaba dentro era vitalmente importante.","ch":""},{"id":"m108","s":"twitter","k":["u"],"zh":"他表示会在圣诞节过后第二天恢复搬运工作。","en":"He said the move would resume the day after Christmas.","fr":"Il a dit que le déménagement reprendrait le lendemain de Noël.","es":"Dijo que el movimiento reanudaría el día después de Navidad.","ch":""},{"id":"m109","s":"twitter","k":["u"],"zh":"这就像2018年的情况一样，是时候再给他发出一次“开环”警告了。","ch":"p. 563","en":"It was like 2018 again: time to give him another “open loop” warning.","fr":"C'était comme 2018 de nouveau : le temps de lui donner un autre avertissement -Open loop.","es":"Era como el 2018 otra vez: tiempo para darle otra advertencia “abierto”."},{"id":"m110","s":"twitter","k":["u"],"zh":"这就像高中时那样，你会接二连三地被人揍的。","en":"It was like high school, when you would be beaten up again and again.","fr":"C'était comme au lycée, quand on vous battait encore et encore.","es":"Era como la secundaria, cuando te golpearían una y otra vez.","ch":""},{"id":"m111","s":"twitter","k":["u"],"zh":"但他实在是聪慧过人，已经不适合念高中了。","ch":"p. 564","en":"But he was extraordinarily bright and had already outgrown high school.","fr":"Mais il était extraordinairement brillant et avait déjà dépassé le lycée.","es":"Pero era extraordinariamente brillante y ya había superado la secundaria."},{"id":"m112","s":"twitter","k":["c"],"zh":"他最喜欢的游戏是《艾尔登法环》。","en":"His favorite game was Elden Ring.","fr":"Son jeu préféré était Elden Ring.","es":"Su juego favorito era Elden Ring.","ch":""},{"id":"m113","s":"twitter","k":["u"],"zh":"我简直不敢相信这样做竟然能成，它们全都被安全运抵了波特兰。","en":"I can hardly believe that worked. Every one of them arrived safely in Portland.","fr":"Je n'arrive pas à croire que ça ait marché. Chacun d'eux est arrivé en toute sécurité à Portland.","es":"No puedo creer que haya funcionado. Cada uno de ellos llegó con seguridad a Portland.","ch":""},{"id":"m114","s":"twitter","k":["c"],"zh":"数据中心之前的纪录是一个月内最多搬走了30个。","en":"The data center’s previous record was moving no more than thirty units in a month.","fr":"L'enregistrement précédent du centre de données ne déplaçait pas plus de trente unités en un mois.","es":"El registro anterior del centro de datos se estaba moviendo no más de treinta unidades en un mes.","ch":""},{"id":"m115","s":"twitter","k":["u"],"zh":"这就是你将来要生活的地方。","en":"This is where you will live in the future.","fr":"C'est là que vous vivrez dans le futur.","es":"Aquí es donde vivirás en el futuro.","ch":""},{"id":"m116","s":"future","k":["u"],"zh":"这一轮人工智能革命却明显不同。","en":"This round of the AI revolution was clearly different.","fr":"Ce tour de la révolution de l'IA était clairement différent.","es":"Esta ronda de la revolución de la AI era claramente diferente.","ch":""},{"id":"m117","s":"future","k":["u"],"zh":"它们创造的产品能够以自然的方式与人类聊天。","en":"The products they created could chat naturally with people.","fr":"Les produits qu'ils ont créés pouvaient discuter naturellement avec les gens.","es":"Los productos que crearon podrían chatear naturalmente con la gente.","ch":""},{"id":"m118","s":"future","k":["u"],"zh":"我认为他真的很关心这件事，他对人类的未来处境感到焦虑不安。","en":"I think he really cares about this. He is anxious about humanity’s future.","fr":"Je pense qu'il s'en soucie vraiment. Il s'inquiète de l'avenir de l'humanité.","es":"Creo que realmente le importa esto. Está ansioso por el futuro de la humanidad.","ch":""},{"id":"m119","s":"future","k":["b"],"zh":"通用人工智能的王冠是打造出能够像人类一样在物理空间（比如工厂、办公室和火星表面）运行的机器。","en":"The ultimate prize in artificial general intelligence is building machines that can operate like humans in physical spaces, such as factories, offices, and the surface of Mars.","fr":"Le prix ultime de l'intelligence générale artificielle est la construction de machines qui peuvent fonctionner comme des humains dans des espaces physiques, comme les usines, les bureaux et la surface de Mars.","es":"El premio final en inteligencia artificial general es la construcción de máquinas que pueden operar como humanos en espacios físicos, como fábricas, oficinas y la superficie de Marte.","ch":""},{"id":"m120","s":"future","k":["c"],"zh":"生物脑力在数字算力面前相形见绌。","ch":"p. 579","en":"Biological brainpower pales beside digital computing power.","fr":"Les capacités du cerveau biologique font pâle figure face à la puissance de calcul numérique.","es":"La capacidad del cerebro biológico palidece ante la potencia de cálculo digital."},{"id":"m121","s":"future","k":["u"],"zh":"马斯克承认，在打造一款可以用自然语言回答问题的聊天机器人方面，他一开始远远落后于OpenAI。","en":"Musk admitted that he had initially lagged far behind OpenAI in building a chatbot that could answer questions in natural language.","fr":"Musk a admis qu'il avait d'abord passé loin derrière OpenAI dans la construction d'un chatbot qui pourrait répondre aux questions en langage naturel.","es":"Musk admitió que inicialmente había perdido mucho detrás de OpenAI en la construcción de un chatbot que podría responder preguntas en lenguaje natural.","ch":""},{"id":"m122","s":"future","k":["c"],"zh":"它想要保护人类，因为我们是宇宙中至关重要的组成部分。","ch":"p. 581","en":"It wants to protect humanity because we are a vital part of the universe.","fr":"Il veut protéger l'humanité parce que nous sommes une partie vitale de l'univers.","es":"Quiere proteger a la humanidad porque somos una parte vital del universo."},{"id":"m123","s":"future","k":["c"],"zh":"最有可能发生的其实是最具有讽刺意味的结果。","en":"The most likely outcome is actually the most ironic one.","fr":"Le résultat le plus probable est en fait le plus ironique.","es":"El resultado más probable es en realidad el más irónico.","ch":""},{"id":"m124","s":"future","k":["u"],"zh":"他就认定这次试验性发射是成功的。","ch":"p. 585","en":"He concluded that the test launch was a success.","fr":"Il a conclu que le lancement du test était un succès.","es":"Concluyó que el lanzamiento de pruebas era un éxito."},{"id":"m125","s":"future","k":["u"],"zh":"一代代的冒险家把这种精神气质传递给了下一代。","en":"Generation after generation of adventurers passed this spirit on to the next.","fr":"Des générations après des générations d'aventuriers ont transmis cet esprit à la suivante.","es":"Generación tras generación de aventureros pasó este espíritu a la siguiente.","ch":""},{"id":"m126","s":"future","k":["u"],"zh":"即便性格最为良善之人，他的人格也“由他的缺点所塑造”。","en":"Even the kindest person’s character is “shaped by his flaws.”","fr":"Même le personnage le plus gentil est en forme par ses défauts.","es":"Incluso el carácter más amable de la persona es “formado por sus defectos”.","ch":""},{"id":"m127","s":"future","k":["u"],"zh":"面对此情此景，他却能恣肆地放声狂笑。","ch":"p. 586","en":"Faced with the scene, he could nevertheless burst into uninhibited laughter.","fr":"Face à cette scène, il pouvait pourtant éclater d’un rire sans retenue.","es":"Ante la escena, podría irrumpir en risas desinhibidas."}];
+
+/* ============================================================
+   Likes + moderated comments — same Worker as the other notes.
+   Leaving the placeholder (or '') renders the page without any
+   interactive parts; the notes themselves still work offline.
+   ============================================================ */
+const API = 'https://reading-notes-api.YOUR-SUBDOMAIN.workers.dev';
+const PAGE_ID = 'elonmusk';
+const API_ON = /^https?:\/\//.test(API) && !API.includes('YOUR-SUBDOMAIN');
+
+UI.pref = {en:'preface', zh:'自序', fr:'préface', es:'prefacio'};
+UI.modNote = {
+  en:'Anyone may like a passage or leave a comment on it. Likes appear at once; comments are read and approved by me before they are shown.',
+  zh:'任何人都可以给某一条点讚或留言。点讚即时生效；留言经我阅读并审核通过后才会显示。',
+  fr:'Chacun peut aimer un passage ou y laisser un commentaire. Les « j’aime » apparaissent aussitôt ; les commentaires sont lus et validés par moi avant d’être affichés.',
+  es:'Cualquiera puede dar «me gusta» a un pasaje o dejar un comentario. Los «me gusta» aparecen al instante; los comentarios los leo y apruebo yo antes de mostrarse.'
+};
+UI.like     = {en:'Like', zh:'点讚', fr:'J’aime', es:'Me gusta'};
+UI.liked    = {en:'Liked', zh:'已讚', fr:'Aimé', es:'Te gusta'};
+UI.cmt      = {en:'Comments', zh:'留言', fr:'Commentaires', es:'Comentarios'};
+UI.cmtNone  = {en:'No comments on this passage yet.', zh:'这一条还没有留言。', fr:'Aucun commentaire sur ce passage.', es:'Aún no hay comentarios en este pasaje.'};
+UI.fName    = {en:'Name or nickname', zh:'昵称', fr:'Nom ou pseudonyme', es:'Nombre o apodo'};
+UI.fEmail   = {en:'Email — optional, never shown', zh:'邮箱 — 选填，不会公开', fr:'E-mail — facultatif, jamais affiché', es:'Correo — opcional, nunca se muestra'};
+UI.fBody    = {en:'What this passage made you think…', zh:'这段让你想到了什么……', fr:'Ce que ce passage vous a inspiré…', es:'Qué te hizo pensar este pasaje…'};
+UI.fSend    = {en:'Send for review', zh:'提交审核', fr:'Envoyer pour validation', es:'Enviar para revisión'};
+UI.fSending = {en:'Sending…', zh:'提交中……', fr:'Envoi…', es:'Enviando…'};
+UI.fQueued  = {en:'Thank you. Your comment is in the review queue and will appear here once approved.', zh:'谢谢。留言已进入审核队列，通过后会显示在这里。', fr:'Merci. Votre commentaire est en attente de validation et apparaîtra ici une fois approuvé.', es:'Gracias. Tu comentario está en la cola de revisión y aparecerá aquí una vez aprobado.'};
+UI.fModNote = {en:'Moderated before publication. Your email is only visible to the site owner.', zh:'发布前需审核。邮箱仅站主可见。', fr:'Modéré avant publication. Votre e-mail n’est visible que par le propriétaire du site.', es:'Moderado antes de publicarse. Tu correo solo lo ve el propietario del sitio.'};
+UI.errName  = {en:'Please enter a name.', zh:'请填昵称。', fr:'Veuillez indiquer un nom.', es:'Indica un nombre.'};
+UI.errBody  = {en:'Please write something first.', zh:'请先写点什么。', fr:'Veuillez d’abord écrire quelque chose.', es:'Escribe algo primero.'};
+UI.errRate  = {en:'That is a lot of comments for one hour — please come back later.', zh:'一小时内留言太多了，请稍后再来。', fr:'Cela fait beaucoup de commentaires en une heure — revenez plus tard.', es:'Son muchos comentarios en una hora; vuelve más tarde.'};
+UI.errNet   = {en:'Could not send — please try again.', zh:'提交失败，请再试一次。', fr:'Envoi impossible — veuillez réessayer.', es:'No se pudo enviar; inténtalo de nuevo.'};
+
+let lang = 'en';
+try {
+  const saved = localStorage.getItem('jg-lang');
+  if (saved === 'zh' || saved === 'fr' || saved === 'es' || saved === 'en') lang = saved;
+} catch (_) {}
+
+let visitor = '';
+try {
+  visitor = localStorage.getItem('jg-visitor') || '';
+  if (!/^[a-z0-9]{8,40}$/.test(visitor)) {
+    visitor = Math.random().toString(36).slice(2, 12) + Date.now().toString(36);
+    localStorage.setItem('jg-visitor', visitor);
+  }
+} catch (_) { visitor = 'anon' + Math.random().toString(36).slice(2, 10); }
+
+let SOCIAL = null;          // {likes:{}, mine:[], comments:{}}
+const OPEN = new Set();     // entry ids whose comment panel is expanded
+
+const $ = (id) => document.getElementById(id);
+const el = (tag, cls) => { const n = document.createElement(tag); if (cls) n.className = cls; return n; };
+const LOCALE = {en:'en-GB', zh:'zh-CN', fr:'fr-FR', es:'es-ES'};
+
+function pageChip(e){
+  const n = el('span', 'page' + (e.a || e.np ? ' approx' : ''));
+  n.textContent = e.np ? UI.pref[lang] : (e.a ? '≈ p.' : 'p.') + e.p;
+  return n;
+}
+
+function heartSvg(){
+  const s = document.createElementNS('http://www.w3.org/2000/svg','svg');
+  s.setAttribute('viewBox','0 0 24 24'); s.setAttribute('class','heart'); s.setAttribute('aria-hidden','true');
+  const path = document.createElementNS('http://www.w3.org/2000/svg','path');
+  path.setAttribute('d','M12 20s-7-4.4-7-9.3A4.2 4.2 0 0 1 12 7.6a4.2 4.2 0 0 1 7 3.1C19 15.6 12 20 12 20Z');
+  s.append(path); return s;
+}
+
+/* ---------------------------------------------------------------- comments */
+
+function commentList(eid){
+  const items = (SOCIAL && SOCIAL.comments[eid]) || [];
+  if (!items.length){ const p = el('p','cnone'); p.textContent = UI.cmtNone[lang]; return p; }
+  const ul = el('ul','clist');
+  items.forEach(c => {
+    const li = el('li','citem');
+    const who = el('span','who'); who.textContent = c.name;
+    const at = el('span','at');
+    at.textContent = new Date(c.ts).toLocaleDateString(LOCALE[lang], {year:'numeric', month:'short', day:'numeric'});
+    const body = el('p'); body.textContent = c.body;
+    li.append(who, at, body); ul.append(li);
+  });
+  return ul;
+}
+
+function commentForm(eid){
+  const form = el('form','cform');
+  form.noValidate = true;
+  const opened = Date.now();
+
+  const two = el('div','two');
+  const name = el('input'); name.type = 'text'; name.maxLength = 40;
+  name.placeholder = UI.fName[lang]; name.autocomplete = 'nickname';
+  const mail = el('input'); mail.type = 'email'; mail.maxLength = 120;
+  mail.placeholder = UI.fEmail[lang]; mail.autocomplete = 'email';
+  two.append(name, mail);
+
+  const hp = el('input','hp'); hp.type = 'text'; hp.tabIndex = -1;
+  hp.setAttribute('aria-hidden','true'); hp.autocomplete = 'off'; hp.name = 'website';
+
+  const body = el('textarea'); body.maxLength = 1500; body.placeholder = UI.fBody[lang];
+  const send = el('button','send'); send.type = 'submit'; send.textContent = UI.fSend[lang];
+  const msg = el('p','cmsg');
+  const note = el('p','cmoderation'); note.textContent = UI.fModNote[lang];
+
+  form.append(two, hp, body, send, msg, note);
+
+  form.addEventListener('submit', async (ev) => {
+    ev.preventDefault();
+    msg.className = 'cmsg';
+    if (!name.value.trim()){ msg.classList.add('bad'); msg.textContent = UI.errName[lang]; name.focus(); return; }
+    if (body.value.trim().length < 2){ msg.classList.add('bad'); msg.textContent = UI.errBody[lang]; body.focus(); return; }
+    send.disabled = true; send.textContent = UI.fSending[lang];
+    try {
+      const r = await fetch(API + '/v1/comment', {
+        method:'POST', headers:{'content-type':'application/json'},
+        body: JSON.stringify({
+          page: PAGE_ID, entry: eid, visitor, lang,
+          name: name.value, email: mail.value, body: body.value,
+          website: hp.value, dwell: Date.now() - opened
+        })
+      });
+      if (r.status === 429){ msg.classList.add('bad'); msg.textContent = UI.errRate[lang]; }
+      else if (!r.ok){ msg.classList.add('bad'); msg.textContent = UI.errNet[lang]; }
+      else {
+        msg.classList.add('ok'); msg.textContent = UI.fQueued[lang];
+        name.value = ''; mail.value = ''; body.value = '';
+      }
+    } catch (_) { msg.classList.add('bad'); msg.textContent = UI.errNet[lang]; }
+    send.disabled = false; send.textContent = UI.fSend[lang];
+  });
+
+  return form;
+}
+
+function buildSocial(card, e){
+  const eid = e.id;
+  const row = el('div','social');
+
+  const likeN = (SOCIAL && SOCIAL.likes[eid]) || 0;
+  const mine = !!(SOCIAL && SOCIAL.mine.includes(eid));
+
+  const likeBtn = el('button','likebtn' + (mine ? ' on' : ''));
+  likeBtn.type = 'button';
+  likeBtn.setAttribute('aria-pressed', String(mine));
+  const likeLabel = el('span'); likeLabel.textContent = (mine ? UI.liked : UI.like)[lang];
+  const likeCount = el('span','n'); likeCount.textContent = likeN ? ' ' + likeN : '';
+  likeBtn.append(heartSvg(), likeLabel, likeCount);
+
+  likeBtn.addEventListener('click', async () => {
+    likeBtn.disabled = true;
+    try {
+      const r = await fetch(API + '/v1/like', {
+        method:'POST', headers:{'content-type':'application/json'},
+        body: JSON.stringify({page: PAGE_ID, entry: eid, visitor})
+      });
+      if (r.ok){
+        const d = await r.json();
+        SOCIAL.likes[eid] = d.count;
+        if (d.liked){ if (!SOCIAL.mine.includes(eid)) SOCIAL.mine.push(eid); }
+        else SOCIAL.mine = SOCIAL.mine.filter(x => x !== eid);
+        likeBtn.classList.toggle('on', d.liked);
+        likeBtn.setAttribute('aria-pressed', String(d.liked));
+        likeLabel.textContent = (d.liked ? UI.liked : UI.like)[lang];
+        likeCount.textContent = d.count ? ' ' + d.count : '';
+      }
+    } catch (_) {}
+    likeBtn.disabled = false;
+  });
+
+  const nCmt = ((SOCIAL && SOCIAL.comments[eid]) || []).length;
+  const cmtBtn = el('button','cmtbtn'); cmtBtn.type = 'button';
+  cmtBtn.textContent = UI.cmt[lang] + (nCmt ? ' ' + nCmt : '');
+  cmtBtn.setAttribute('aria-expanded', String(OPEN.has(eid)));
+
+  row.append(likeBtn, cmtBtn);
+
+  const panel = el('div','cpanel');
+  panel.hidden = !OPEN.has(eid);
+  if (OPEN.has(eid)) panel.append(commentList(eid), commentForm(eid));
+
+  cmtBtn.addEventListener('click', () => {
+    const open = panel.hidden;
+    panel.hidden = !open;
+    cmtBtn.setAttribute('aria-expanded', String(open));
+    if (open){
+      OPEN.add(eid);
+      if (!panel.childElementCount) panel.append(commentList(eid), commentForm(eid));
+    } else OPEN.delete(eid);
+  });
+
+  card.append(row, panel);
+}
+
+function mountSocial(){
+  if (!API_ON || !SOCIAL) return;
+  document.querySelectorAll('.entry').forEach(card => {
+    if (card.querySelector('.social')) return;
+    const e = ENTRIES.find(x => x.id === card.dataset.eid);
+    if (e) buildSocial(card, e);
+  });
+}
+
+async function loadSocial(){
+  if (!API_ON) return;
+  try {
+    const r = await fetch(API + '/v1/state?page=' + encodeURIComponent(PAGE_ID) + '&visitor=' + encodeURIComponent(visitor));
+    if (!r.ok) return;
+    const d = await r.json();
+    SOCIAL = {likes: d.likes || {}, mine: d.mine || [], comments: d.comments || {}};
+    const n = $('modnote');
+    if (n){ n.hidden = false; n.querySelector('span').textContent = UI.modNote[lang]; }
+    mountSocial();
+  } catch (_) { /* offline or not deployed yet — page stays static */ }
+}
+
+/* ------------------------------------------------------------------ render */
+
+function renderEntry(e){
+  const card = el('article','entry');
+  card.dataset.eid = e.id;
+  const top = el('div','entry-top');
+  if (e.ch) { const chapter = el('span','page'); chapter.textContent = e.ch; top.append(chapter); }
+  (e.k || []).forEach(code => {
+    const c = el('span','kind'); c.textContent = UI.kinds[code][lang];
+    top.append(c);
+  });
+  card.append(top);
+
+  const q = el('blockquote', lang === 'zh' ? '' : 'latin');
+  q.textContent = e[lang];
+  card.append(q);
+
+  if (lang !== 'zh') {
+    const o = el('div','orig');
+    const lab = el('p','orig-label'); lab.textContent = UI.orig[lang];
+    const t = el('p'); t.textContent = e.zh;
+    o.append(lab, t); card.append(o);
+  }
+
+  if (e.n) {
+    const m = el('p','mynote');
+    const bl = el('b'); bl.textContent = UI.myNote[lang];
+    m.append(bl, document.createTextNode(e.n[lang]));
+    if (lang !== 'zh') { const oz = el('span','note-orig'); oz.textContent = e.n.zh; m.append(oz); }
+    card.append(m);
+  }
+
+  return card;
+}
+
+let filter = 'all';
+
+function renderMain(){
+  const main = $('main'); main.replaceChildren();
+  STORIES.forEach(st => {
+    if (filter !== 'all' && filter !== st.id) return;
+    const sec = el('section','story'); sec.dataset.s = st.id;
+    const head = el('div','story-head');
+    const h2 = el('h2','story-title'); h2.textContent = st.t[lang];
+    head.append(h2);
+    if (lang !== 'zh' && st.zh !== st.t[lang]) { const z = el('span','story-zh'); z.textContent = st.zh; head.append(z); }
+    if (st.range) { const r = el('span','range'); r.textContent = st.range; head.append(r); }
+    const sub = el('p','story-sub'); sub.textContent = st.s[lang];
+    sec.append(head, sub);
+    ENTRIES.filter(e => e.s === st.id).forEach(e => sec.append(renderEntry(e)));
+    main.append(sec);
+  });
+  mountSocial();
+}
+
+function renderChrome(){
+  document.documentElement.lang = (lang === 'zh' ? 'zh-Hans' : lang);
+  $('backlink').textContent = UI.back[lang];
+  $('eyebrow').textContent = UI.eyebrow[lang];
+  $('booktitle').textContent = '《埃隆·马斯克传》';
+  $('byline').textContent = UI.byline[lang];
+
+  const f = $('facts'); f.replaceChildren();
+  UI.facts[lang].forEach(([b, t]) => {
+    const li = el('li'); const strong = el('b'); strong.textContent = b;
+    li.append(strong, document.createTextNode(' ' + t)); f.append(li);
+  });
+
+  $('prov-heading').textContent = UI.provHead[lang];
+  $('prov-body').textContent = UI.provBody[lang];
+  const mn = $('modnote');
+  if (mn && SOCIAL) { mn.hidden = false; mn.querySelector('span').textContent = UI.modNote[lang]; }
+
+  const fl = $('filters'); fl.replaceChildren();
+  const mk = (id, label) => {
+    const b = el('button'); b.type = 'button'; b.textContent = label;
+    b.setAttribute('aria-pressed', String(filter === id));
+    b.addEventListener('click', () => { filter = id; renderChrome(); renderMain(); window.scrollTo({top:0, behavior:'smooth'}); });
+    fl.append(b);
+  };
+  mk('all', UI.all[lang]);
+  STORIES.forEach(st => mk(st.id, st.t[lang]));
+
+  $('signature').textContent = UI.sig[lang];
+
+  document.querySelectorAll('.langbar button[data-l]').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.l === lang)));
+}
+
+document.querySelectorAll('.langbar button[data-l]').forEach(b => {
+  b.addEventListener('click', () => {
+    lang = b.dataset.l;
+    try { localStorage.setItem('jg-lang', lang); } catch (_) {}
+    renderChrome(); renderMain();
+  });
+});
+
+renderChrome();
+renderMain();
+loadSocial();
+</script>
+</body>
+</html>
