@@ -6,6 +6,15 @@
 //   cover      — site-relative image path; omit and a typographic cover is drawn
 window.readingNotes = [
   {
+    title: '兄弟',
+    author: '余华 Yu Hua',
+    finished: '2024-09-03',
+    read: '24 Aug – 3 Sep 2024',
+    highlights: 104,
+    cover: 'assets/img/covers/xiongdi.jpg',
+    url: 'notes/xiongdi.html'
+  },
+  {
     title: '史蒂夫·乔布斯传',
     author: '沃尔特·艾萨克森 Walter Isaacson',
     finished: '2025-04-14',

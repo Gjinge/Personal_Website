@@ -1,0 +1,1930 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<title>兄弟 · Reading Notes — Yu Hua</title>
+<meta name="description" content="Four-language reading notes on Yu Hua’s Brothers, selected from photographed Chinese pages. Chinese source text with machine translations into English, French and Spanish.">
+<style>
+:root{
+  --bg:#faf8f3; --panel:#fffdf9; --panel-2:#fffdf9; --line:#e4ded2; --line-soft:#efe9dd; --line-hi:#d8cfbc;
+  --ink:#1b1a17; --muted:#6f6a60; --dim:#8d8880;
+  --accent:#8a6a12; --accent-2:#b07d18; --mark:#a1541c; --warn:#6f5aa0;
+  --like:#c03a63; --ok:#2f7d55;
+  --chip-bg:#fcf2d2; --chip-border:rgba(246,214,107,.65); --chip-ink:#7a5c07;
+  --quote-rule:#e2d7b8; --toc-bg:rgba(250,248,243,.93);
+  --prov-bg:rgba(111,90,160,.07); --prov-border:rgba(111,90,160,.30); --prov-ink:#4a4459; --code-bg:rgba(111,90,160,.10);
+  --input-bg:#ffffff; --btn-bg:#f6d66b; --btn-border:#e8c85a; --on-btn:#1b1a17;
+  --glow-a:rgba(246,214,107,.16); --glow-b:rgba(200,170,120,.10);
+  --note-bg:rgba(161,84,28,.07); --note-border:rgba(161,84,28,.28); --note-ink:#5a3418; --note-orig:#7a5a45;
+  --serif:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,"Times New Roman","Noto Serif CJK SC","Source Han Serif SC","Songti SC",serif;
+  --sans:"Segoe UI",system-ui,-apple-system,"Noto Sans CJK SC","PingFang SC","Hiragino Sans GB","Microsoft YaHei",Arial,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+  background-image:radial-gradient(1200px 600px at 15% -10%,var(--glow-a),transparent 60%),
+                   radial-gradient(900px 500px at 95% 8%,var(--glow-b),transparent 60%);
+  background-attachment:fixed;}
+.wrap{max-width:900px;margin:0 auto;padding:16px}
+a{color:var(--accent)}
+
+/* ---------- language bar ---------- */
+.langbar{display:flex;justify-content:flex-end;gap:6px;padding-block:14px 0;flex-wrap:wrap}
+.langbar a.back{margin-right:auto;font-size:.8rem;color:var(--muted);text-decoration:none;align-self:center}
+.langbar a.back:hover{color:var(--ink)}
+.langbar button{background:transparent;border:1px solid var(--line);color:var(--muted);border-radius:999px;
+  padding:5px 12px;font-size:.76rem;letter-spacing:.05em;cursor:pointer;font-family:inherit;transition:.15s}
+.langbar button:hover{color:var(--ink);border-color:var(--accent)}
+.langbar button[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:var(--bg);font-weight:600}
+
+/* ---------- header ---------- */
+header.hero{padding-block:34px 28px;border-bottom:1px solid var(--line)}
+.eyebrow{font-size:.74rem;letter-spacing:.22em;text-transform:uppercase;color:var(--dim);margin:0 0 14px}
+h1{font-family:var(--serif);font-size:clamp(1.9rem,6vw,3rem);line-height:1.25;margin:0 0 6px;font-weight:600}
+h1 .by{display:block;font-family:var(--sans);font-size:.9rem;font-weight:400;letter-spacing:.16em;color:var(--muted);margin-top:12px}
+.hero-note{color:var(--muted);max-width:62ch;margin:18px 0 0;font-size:.95rem}
+.facts{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px;padding:0;list-style:none}
+.facts li{background:var(--panel);border:1px solid var(--line);border-radius:999px;
+  padding:7px 14px;font-size:.8rem;color:var(--muted)}
+.facts b{color:var(--ink);font-weight:600}
+
+/* ---------- provenance banner ---------- */
+.provenance{margin-top:26px;border:1px solid var(--prov-border);background:var(--prov-bg);
+  border-radius:14px;padding:18px 20px}
+.provenance h2{font-family:var(--sans);font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--warn);margin:0 0 10px;font-weight:700;display:flex;align-items:center;gap:8px}
+.provenance h2 svg{width:15px;height:15px;flex:0 0 auto;stroke:currentColor;fill:none;stroke-width:1.8}
+.provenance p{margin:0 0 8px;font-size:.88rem;color:var(--prov-ink)}
+.provenance p:last-child{margin-bottom:0}
+.provenance dl{margin:12px 0 0;display:grid;grid-template-columns:auto 1fr;gap:5px 14px;font-size:.82rem}
+.provenance dt{color:var(--warn);white-space:nowrap}
+.provenance dd{margin:0;color:var(--prov-ink)}
+.provenance code{font-family:ui-monospace,SFMono-Regular,Menlo,monospace;font-size:.94em;
+  background:var(--code-bg);padding:1px 6px;border-radius:5px;color:var(--prov-ink)}
+
+/* ---------- toc / filter ---------- */
+nav.toc{position:sticky;top:0;z-index:5;background:var(--toc-bg);backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line);margin-inline:-16px;padding:10px 16px}
+.toc-row{max-width:900px;margin:0 auto;display:flex;gap:8px;overflow-x:auto;scrollbar-width:thin;padding-bottom:2px}
+.toc-row button{flex:0 0 auto;background:transparent;border:1px solid var(--line);color:var(--muted);
+  border-radius:999px;padding:6px 13px;font-size:.8rem;cursor:pointer;font-family:inherit;white-space:nowrap;transition:.15s}
+.toc-row button:hover{color:var(--ink);border-color:var(--accent)}
+.toc-row button[aria-pressed="true"]{background:var(--btn-bg);border-color:var(--btn-border);color:var(--on-btn);font-weight:600}
+
+/* ---------- story ---------- */
+section.story{padding-block:44px 8px;border-bottom:1px solid var(--line)}
+section.story:last-of-type{border-bottom:0}
+.story-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:12px;margin-bottom:4px}
+h2.story-title{font-family:var(--serif);font-size:clamp(1.35rem,4vw,1.8rem);margin:0;font-weight:600}
+.story-zh{font-family:var(--serif);color:var(--muted);font-size:1rem}
+.range{font-size:.78rem;color:var(--dim);letter-spacing:.06em}
+.story-sub{color:var(--muted);font-size:.88rem;margin:8px 0 26px;max-width:62ch}
+
+/* ---------- entry ---------- */
+.entry{background:var(--panel-2);border:1px solid var(--line);border-radius:14px;padding:20px 22px;margin-bottom:16px}
+.entry:hover{border-color:var(--line-hi)}
+.entry-top{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-bottom:12px}
+.page{font-family:var(--serif);font-size:.82rem;color:var(--chip-ink);border:1px solid var(--chip-border);
+  background:var(--chip-bg);border-radius:6px;padding:2px 9px;letter-spacing:.04em}
+.page.approx{color:var(--muted);border-color:var(--line);background:transparent}
+blockquote{margin:0;font-family:var(--serif);font-size:1.02rem;line-height:2;color:var(--ink);
+  border-left:2px solid var(--quote-rule);padding-left:16px}
+blockquote.latin{line-height:1.85}
+blockquote em{font-style:italic;color:var(--dim)}
+.cutnote{margin:12px 0 0;font-size:.78rem;color:var(--dim);font-style:italic}
+blockquote b{color:var(--ink);font-weight:600}
+.orig{margin:14px 0 0;border-left:2px solid var(--line);padding-left:16px}
+.orig-label{font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:var(--dim);margin:0 0 6px;
+  display:flex;align-items:center;gap:6px}
+.orig-label::before{content:"";width:14px;height:1px;background:var(--dim);display:inline-block}
+.orig p{margin:0;font-family:var(--serif);font-size:.94rem;line-height:1.95;color:var(--muted)}
+
+/* ---------- footer ---------- */
+footer{padding-block:40px 60px;color:var(--dim);font-size:.82rem;border-top:1px solid var(--line);margin-top:40px}
+footer p{margin:0 0 8px;max-width:72ch}
+
+/* ---------- likes + comments ---------- */
+.modnote{margin:14px 0 0;font-size:.82rem;color:var(--muted);display:flex;gap:8px;align-items:flex-start}
+.modnote[hidden]{display:none}
+.modnote svg{width:14px;height:14px;flex:0 0 auto;margin-top:5px;stroke:var(--ok);fill:none;stroke-width:1.8}
+.social{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-top:14px;
+  padding-top:13px;border-top:1px solid var(--line-soft)}
+.social button{background:transparent;border:1px solid var(--line);color:var(--muted);border-radius:999px;
+  padding:5px 13px;font-size:.78rem;font-family:inherit;cursor:pointer;display:inline-flex;align-items:center;
+  gap:6px;transition:.15s}
+.social button:hover{color:var(--ink);border-color:var(--accent)}
+.social button:disabled{opacity:.5;cursor:default}
+.social .heart{width:13px;height:13px;stroke:currentColor;fill:none;stroke-width:1.9}
+.social .likebtn.on{color:var(--like);border-color:rgba(192,58,99,.35);background:rgba(192,58,99,.07)}
+.social .likebtn.on .heart{fill:currentColor;stroke:currentColor}
+.social .n{font-variant-numeric:tabular-nums;opacity:.85}
+.social .spacer{flex:1}
+.cpanel{margin-top:14px;border-top:1px dashed var(--line);padding-top:14px}
+.cpanel[hidden]{display:none}
+.clist{margin:0 0 14px;padding:0;list-style:none;display:flex;flex-direction:column;gap:10px}
+.citem{background:var(--panel-2);border:1px solid var(--line-soft);border-radius:10px;padding:11px 13px}
+.citem .who{font-size:.78rem;color:var(--accent);font-weight:600}
+.citem .at{font-size:.72rem;color:var(--dim);margin-left:8px}
+.citem p{margin:5px 0 0;font-size:.9rem;white-space:pre-wrap;color:var(--ink)}
+.cnone{color:var(--dim);font-size:.84rem;margin:0 0 14px}
+.cform{display:flex;flex-direction:column;gap:8px}
+.cform .two{display:flex;gap:8px;flex-wrap:wrap}
+.cform .two>*{flex:1 1 180px;min-width:0}
+.cform input,.cform textarea{background:var(--input-bg);border:1px solid var(--line);color:var(--ink);
+  border-radius:8px;padding:9px 11px;font-family:inherit;font-size:.86rem;width:100%}
+.cform textarea{min-height:84px;resize:vertical;line-height:1.65}
+.cform input:focus,.cform textarea:focus{outline:none;border-color:var(--accent)}
+.cform .hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
+.cform .send{align-self:flex-start;background:var(--btn-bg);border:1px solid var(--btn-border);color:var(--on-btn);
+  font-weight:600;border-radius:999px;padding:7px 18px;font-size:.82rem;font-family:inherit;cursor:pointer}
+.cform .send:disabled{opacity:.55;cursor:default}
+.cmsg{font-size:.82rem;min-height:1.3em;margin:0}
+.cmsg.ok{color:var(--ok)}
+.cmsg.bad{color:var(--mark)}
+.cmoderation{font-size:.74rem;color:var(--dim);margin:0}
+
+@media (max-width:560px){
+  .entry{padding:16px 15px;border-radius:12px}
+  blockquote{font-size:.98rem;line-height:1.95;padding-left:13px}
+  .provenance{padding:15px 16px}
+}
+@media print{
+  body{background:#fff;color:#000}
+  nav.toc,.langbar{display:none}
+  .entry{break-inside:avoid;border-color:#ccc;background:#fff}
+}
+
+/* Hallmark · genre: editorial · macrostructure: Long Document · design-system: design.md · designed-as-app */
+:root { --space-sm:1rem; --space-md:1.5rem; --space-lg:2rem; --space-xl:3rem; --space-2xl:4rem;
+ --color-reading-paper:oklch(98% .008 85); --color-reading-ink:oklch(25% .015 75); --color-reading-muted:oklch(47% .025 75); --color-reading-rule:oklch(86% .02 85); --color-reading-accent:oklch(46% .085 75); --color-reading-panel:oklch(96% .014 85);
+ --bg:#faf8f3; --paper:var(--color-reading-paper); --ink:var(--color-reading-ink); --muted:var(--color-reading-muted); --dim:var(--color-reading-muted); --line:var(--color-reading-rule); --link:var(--color-reading-accent); --accent:var(--color-reading-accent); --panel:var(--color-reading-panel); --prov-bg:var(--color-reading-panel); --prov-ink:var(--ink); --prov-border:var(--line); --warn:var(--color-reading-accent);
+ --ease-out:cubic-bezier(.16,1,.3,1); --dur-short:150ms; }
+html,body { overflow-x:clip; }
+h1,h2,h3 { font-style:normal; overflow-wrap:anywhere; min-width:0; }
+button,.back,.home,footer a { white-space:nowrap; }
+button,.back,.home { min-height:44px; }
+button { transition:none; }
+:is(a,button,input,textarea,summary):focus-visible { outline:2px solid var(--link); outline-offset:4px; }
+.wrap { width:min(960px,calc(100% - 40px)); }
+.langbar { gap:8px; }
+.langbar button { border-radius:4px; min-width:44px; }
+.back { display:inline-flex; align-items:center; }
+header.hero { padding-block:var(--space-xl); }
+header.hero h1 { font-size:clamp(2.5rem,6vw,4rem); line-height:1.15; }
+.by { letter-spacing:.04em!important; line-height:1.7; }
+.facts { gap:8px 16px; }
+.facts li { border:0; background:none; padding:0; border-radius:0; }
+.provenance { padding:var(--space-md); border-radius:4px; box-shadow:none; }
+.provenance h2 { letter-spacing:.06em; }
+nav.toc { padding-block:12px; }
+.toc-row { gap:8px; }
+.toc button { min-height:44px; border-radius:4px; white-space:nowrap; }
+.story { padding-block:var(--space-xl); }
+.story-title { font-size:clamp(1.5rem,3vw,2rem); }
+.entry { padding:var(--space-md); border-radius:4px; box-shadow:none; margin-block:var(--space-md); }
+blockquote { max-width:68ch; font-size:1.0625rem; line-height:2; }
+blockquote.latin { line-height:1.85; }
+.orig { margin-top:var(--space-md); padding-top:var(--space-sm); }
+.orig p { line-height:1.9; }
+.social button { min-height:44px; }
+input,textarea { max-width:100%; }
+header.masthead { padding-block:var(--space-xl); }
+.book-grid { grid-template-columns:repeat(2,minmax(0,1fr)); gap:var(--space-lg); }
+.book-cover { box-shadow:none; border-radius:4px; background:var(--paper); }
+.book-cover img { object-fit:contain; }
+a.cover-link:hover .book-cover { transform:none; box-shadow:none; border-color:var(--link); }
+.year-block { grid-template-columns:minmax(0,1fr); gap:var(--space-lg); }
+.view-switch,.view-switch button { border-radius:4px; }
+.table-wrap { max-width:100%; }
+footer { color:var(--muted); }
+@media(min-width:48rem) { .wrap { width:min(960px,calc(100% - 80px)); } .entry { padding:var(--space-lg); } .book-grid { grid-template-columns:repeat(3,minmax(0,1fr)); } .year-block { grid-template-columns:100px minmax(0,1fr); } }
+@media(prefers-reduced-motion:reduce) { html { scroll-behavior:auto; } *,*::before,*::after { transition:none!important; animation:none!important; } }
+
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="langbar">
+    <a class="back" href="../reading.html" id="backlink">← Reading Notes</a>
+    <button type="button" data-l="en" aria-pressed="true">English</button>
+    <button type="button" data-l="zh" aria-pressed="false">简体中文</button>
+    <button type="button" data-l="fr" aria-pressed="false">Français</button>
+    <button type="button" data-l="es" aria-pressed="false">Español</button>
+  </div>
+
+  <header class="hero">
+    <p class="eyebrow" id="eyebrow"></p>
+    <h1><span id="booktitle"></span><span class="by" id="byline"></span></h1>
+    <ul class="facts" id="facts"></ul>
+
+    <section class="provenance" aria-labelledby="prov-title">
+      <h2 id="prov-title">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v18M3 7h6M15 7h6M6 12l-3 5h6ZM18 12l-3 5h6Z"/></svg>
+        <span id="prov-heading"></span>
+      </h2>
+      <p id="prov-body"></p>
+      <dl id="prov-meta"></dl>
+      <p class="modnote" id="modnote" hidden>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+        <span></span>
+      </p>
+    </section>
+  </header>
+
+  <nav class="toc" aria-label="Sections"><div class="toc-row" id="filters"></div></nav>
+
+  <main id="main"><noscript><h2>《兄弟》 · Reading Notes</h2><section class="story"><h3>Childhood and family</h3><article class="entry"><p class="page">p. 19</p><blockquote class="latin">Li Guangtou was still a poor boy. A bowl of three-delicacy noodles made him so happy he felt as if he had visited heaven. He enjoyed them fifty-six times in six months: fifty-six trips to heaven.</blockquote><div class="orig"><p>那时候的李光头还是个穷小子，有一碗三鲜面吃，他就美滋滋不知道天高地厚了，就像是到天堂里去逛了一次，他半年里美滋滋了五十六次，也就是去了天堂五十六次。</p></div></article><article class="entry"><p class="page">Upper part · ch. 2</p><blockquote class="latin">People who came asking about Lin Hong&#x27;s secret tried to fob Li Guangtou off with plain noodles. He would not accept that; he bargained patiently and always got three-delicacy noodles instead.</blockquote><div class="orig"><p>那些前来打探林红屁股秘密的人，都想拿一碗阳春面来糊弄他，李光头从不上当，他每次都是耐心细致地和人讨价还价，每次都吃到了三鲜面，而不是阳春面。</p></div></article><article class="entry"><p class="page">Upper part · ch. 2</p><blockquote class="latin">Zhao the Poet had spied on women in that toilet for a year without seeing Lin Hong. Li Guangtou passed through once and saw what Zhao had never managed to see.</blockquote><div class="orig"><p>赵诗人也经常在那个厕所里偷看女人屁股，那个厕所是赵诗人的地盘，可他偷看了一年都没看到林红的屁股；这个李光头也就是匆匆过客，在赵诗人的地盘上只偷看了一次，就看到了林红的屁股。</p></div></article><article class="entry"><p class="page">Upper part · ch. 3</p><blockquote class="latin">When Li Guangtou&#x27;s biological father fell headfirst into the cesspit, his future stepfather stood there in shock. He felt he had only blinked, and the two upturned legs had disappeared.</blockquote><div class="orig"><p>当李光头的亲生父亲一头栽进了粪池以后，他的继父站在那里惊魂未定，他觉得自己只是眨了一下眼睛，那两条跷起的腿一下子就没了。</p></div></article><article class="entry"><p class="page">Upper part · ch. 3</p><blockquote class="latin">Li Lan slowly slid down the doorframe. Pain crossed her blank face; she lay on the ground with her legs apart, fingers digging into the earth, sweat on her forehead, staring silently at the crowd.</blockquote><div class="orig"><p>这时候李兰的身体靠着门框慢慢滑了下去，她一直木然的脸上出现了痛苦的表情，她躺在了地上，她的两腿伸开了，她的十根手指像是要紧紧抓住大地似的插进了泥土之中，她的额上渗满了汗珠，她睁圆了眼睛无声无息地看着围观的人群。</p></div></article><article class="entry"><p class="page">Upper part · ch. 4</p><blockquote class="latin">By then nobody was pointing at them, or even looking at them. Yet Li Lan still felt every gaze nailed to her body.</blockquote><div class="orig"><p>其实那时候已经没有人对他们指指点点，甚至没有人来看他们一眼，李兰仍然觉得所有人的目光都像钉子似的钉在她的身上。</p></div></article><article class="entry"><p class="page">Upper part · ch. 4</p><blockquote class="latin">Li Lan stood a while, then took Li Guangtou&#x27;s hand again and went home without a sound.</blockquote><div class="orig"><p>李兰站了一会后，又拉起了李光头的手，悄无声息地走回家中。</p></div></article><article class="entry"><p class="page">p. 35</p><blockquote class="latin">In Li Guangtou&#x27;s memory, that was the first morning Li Lan raised her head in the street. She was looking for the funeral procession.</blockquote><div class="orig"><p>在李光头的记忆里，那天上午李兰第一次在大街上抬起头来了，她是在张望着出殡的队伍。</p></div></article><article class="entry"><p class="page">p. 37</p><blockquote class="latin">People stood shoulder to shoulder on the wall, packed so tightly there was scarcely a gap, while more kept trying to climb up.</blockquote><div class="orig"><p>他们站在围墙上已经人挨着人了，已经挤得连缝都快没有了，下面的人还要往上爬。</p></div></article><article class="entry"><p class="page">Upper part · ch. 5</p><blockquote class="latin">Before more than a thousand onlookers, he lifted Li Lan into the air. Laughter swept through the floodlit basketball court: loud, faint, shrill, leering, foolish, and every kind in between.</blockquote><div class="orig"><p>一千多个人看着呢，他竟然把李兰举了起来，灯光球场里的笑声哗啦哗啦地响起来，大笑、微笑、尖笑、细笑、淫笑、奸笑、傻笑、干笑、湿笑和皮笑肉不笑，林子大了什么鸟都有，人多了也是什么笑声都有。</p></div></article><article class="entry"><p class="page">Upper part · ch. 5</p><blockquote class="latin">They talked and pointed, remembering the man who had died after spying on women in the toilet. At last they thought they understood: this woman had got together with that man.</blockquote><div class="orig"><p>他们议论纷纷，他们重新想起了那个在厕所里偷看女人屁股丢掉了性命的男人，他们指指点点，他们恍然大悟地说原来这个女人跟这个男人搞上了。</p></div></article><article class="entry"><p class="page">Upper part · ch. 6</p><blockquote class="latin">Three schoolboys lived among the neighbors. One, Sun Wei, had long hair. The other two were Liu Chenggong and Zhao Shengli, later Liu Town&#x27;s two celebrated men of letters. Back then they were only schoolboys.</blockquote><div class="orig"><p>这些邻居里有三个中学生，有一个名叫孙伟的中学生留着一头长发，另外两个就是刘成功和赵胜利，我们刘镇后来的两大才子，当时他们还不是刘作家和赵诗人，还只是名叫刘成功和赵胜利的两个中学生。</p></div></article><article class="entry"><p class="page">Upper part · ch. 6</p><blockquote class="latin">They offered all kinds of descriptions of their missing chickens. Many people, they said, had seen the birds follow Li Guangtou and Song Gang through the streets.</blockquote><div class="orig"><p>他们五花八门地说着他们的鸡长了什么模样，他们说很多人都看见了，看见他们的公鸡母鸡跟着李光头和宋钢走上了大街。</p></div></article><article class="entry"><p class="page">p. 45</p><blockquote class="latin">They insisted that chickens were not fleas or lice: they could hardly be right in front of them and invisible. They said they would search the place.</blockquote><div class="orig"><p>他们声称公鸡母鸡们不是跳蚤虱子们，不会近在眼前都看不见，他们说去找一找，去搜一搜。</p></div></article><article class="entry"><p class="page">p. 50</p><blockquote class="latin">He frightened the two boys badly. They sat stunned on the outer-room bed, all four legs dangling over its edge trembling.</blockquote><div class="orig"><p>他让两个孩子非常害怕，他们惊魂未定地坐在外屋的床上，他们挂在床边的四条腿瑟瑟打抖。</p></div></article><article class="entry"><p class="page">Upper part · ch. 7</p><blockquote class="latin">Men and women in the street laughed at them. Everyone knew the couple had married before, that each had brought a son, and that the groom had fought six men on his wedding day.</blockquote><div class="orig"><p>大街上的男男女女看着他们嘻嘻哈哈地笑，他们知道这一对夫妻都是二婚，知道这两个儿子都是拖油瓶，知道这个新郎在新婚的那一天和六个人打架打得手忙脚乱。</p></div></article><article class="entry"><p class="page">p. 55</p><blockquote class="latin">Li Lan knew what their odd smiles and pointing fingers meant, so she lowered her head.</blockquote><div class="orig"><p>李兰知道他们脸上的怪笑是什么意思，知道他们指指点点时都说了些什么话，所以李兰低下了头。</p></div></article><article class="entry"><p class="page">Upper part · ch. 8</p><blockquote class="latin">Song Fanping smiled, unaware that this was the last time he would see his wife. His final image of Li Lan was her profile as she wiped away tears; the boys remembered the dust billowing behind the departing bus.</blockquote><div class="orig"><p>那时候宋凡平脸上挂着微笑，他不知道这是最后一眼看到自己的妻子，李兰留给他的最后印象就是抬起手擦着眼泪的侧影，李光头和宋钢当时的印象是长途客车远去时卷起了滚滚尘土。</p></div></article></section><section class="story"><h3>Upheaval and loss</h3><article class="entry"><p class="page">Upper part · ch. 9</p><blockquote class="latin">More and more people filled the streets, shouting slogans and singing revolutionary songs. Posters thickened the walls until the wind made them rustle like leaves.</blockquote><div class="orig"><p>越来越多的人走到大街上大狗小狗似的喊叫和唱歌，他们喊着革命的口号，唱着革命的歌曲；越来越多的大字报让墙壁越来越厚，风吹过去时墙壁发出了树叶的响声。</p></div></article><article class="entry"><p class="page">Upper part · ch. 9</p><blockquote class="latin">It was Song Fanping&#x27;s most glorious day. After the march, he walked through town holding both boys&#x27; hands while people called his name and came over to shake his hand.</blockquote><div class="orig"><p>这是宋凡平最辉煌的一天，游行结束以后人们各自回家，宋凡平拉着李光头和宋钢的手仍然走在大街上，很多人在街上叫着宋凡平的名字，宋凡平嘴里嗯嗯地回答他们，有些人还走上来和宋凡平握一下手。</p></div></article><article class="entry"><p class="page">Upper part · ch. 9</p><blockquote class="latin">His answer made their heads bob like woodpeckers and their mouths exclaim in endless astonishment.</blockquote><div class="orig"><p>他的回答让那些人的头像是啄木鸟一样点个没完没了，让那些人的嘴巴像是牙疼似的哎呀哎哟赞叹不已。</p></div></article><article class="entry"><p class="page">Upper part · ch. 9</p><blockquote class="latin">Li Guangtou and Song Gang cried out in excitement. Song Fanping clapped his hands over their mouths; the fear on his face frightened them too.</blockquote><div class="orig"><p>李光头和宋钢激动得尖声喊叫，宋凡平吓得伸手捂住了他们的嘴，他惊恐的脸色把他们也吓住了。</p></div></article><article class="entry"><p class="page">Upper part · ch. 12</p><blockquote class="latin">Only when someone bumped into him or spat on his foot did they look at him properly.</blockquote><div class="orig"><p>当走过去的人不小心撞了他一下，当吐痰的人不小心吐到了他的脚上，他们才会认真看他一眼。</p></div></article><article class="entry"><p class="page">Upper part · ch. 13</p><blockquote class="latin">The boys poured soy sauce into the steaming rice and stirred it until it shone dark red and black. Its fragrance rose with the steam and filled the room.</blockquote><div class="orig"><p>两个孩子把酱油倒进热气蒸腾的米饭里，搅拌均匀以后，米饭们像是涂上了油彩一样又黑又红又亮，酱油的香味在米饭的热气里扩散开来，飘满了整个屋子。</p></div></article><article class="entry"><p class="page">Upper part · ch. 13</p><blockquote class="latin">As soon as he finished speaking, tears streamed down Song Gang&#x27;s face. He set down his bowl and sobbed, still swallowing the rice in his mouth.</blockquote><div class="orig"><p>刚说完宋钢的脸上就流满了眼泪，他放下碗，低头抽泣起来，一边抽泣一边还将嘴里的米饭咽了下去。</p></div></article><article class="entry"><p class="page">Upper part · ch. 15</p><blockquote class="latin">At sunrise, Song Fanping, awake all night, told the boys to go to bed. They shook their heads and stayed on the doorstep. He stepped over them to catch the first bus to Shanghai and bring his wife home.</blockquote><div class="orig"><p>太阳开始升起的时候，一夜没睡的宋凡平打了几个哈欠，他让两个孩子上床去睡觉，李光头和宋钢摇摇头仍然坐在门槛上，于是他就抬脚从他们中间跨了出去，他要去坐早班汽车，去上海迎接他的妻子。</p></div></article><article class="entry"><p class="page">Upper part · ch. 16</p><blockquote class="latin">Several sticks swung at Song Fanping. He raised his right arm to block them; the blows felt as if they had broken the bone. Still fending them off, he made his way into the waiting room and toward the ticket window.</blockquote><div class="orig"><p>几根木棍迎面打来，宋凡平本能地举起右胳膊阻挡打来的木棍，木棍砸在了他的右胳膊上，让他觉得手臂的骨头仿佛断了似的疼痛，他仍然挥舞着右胳膊阻挡打来的木棍，宋凡平走进了候车室，走向了售票的窗口。</p></div></article><article class="entry"><p class="page">Upper part · ch. 16</p><blockquote class="latin">People peered into the waiting room from outside, afraid to enter. Only when boarding began did they creep in, watching the six men with red armbands under the ceiling fan with dread.</blockquote><div class="orig"><p>这些人站在候车室的门外偷偷往里面张望，没有一个人敢走进去，直到去上海的长途汽车开始检票了，这些人才小心翼翼地走了进来，胆战心惊地看着围坐在吊扇下休息的六个红袖章。</p></div></article><article class="entry"><p class="page">Upper part · ch. 16</p><blockquote class="latin">Song Fanping, who had never yielded, desperately wanted to live. He struggled to his knees, blood spilling from his mouth, clutched his bleeding stomach, and wept as he begged them to stop. Even his tears were bloody.</blockquote><div class="orig"><p>从不屈服的宋凡平这时候太想活下去了，他用尽了力气跪了起来，他吐着满嘴的鲜血，右手捧着呼呼流血的腹部，流着眼泪求他们别再打他了，他的眼泪里都是鲜血。</p></div></article><article class="entry"><p class="page">Upper part · ch. 16</p><blockquote class="latin">The six men with red armbands were as exhausted as dockworkers after a day&#x27;s labor. When they sat down in Su Ma&#x27;s snack shop, none had the energy to speak.</blockquote><div class="orig"><p>这六个红袖章像是干了一天力气活的码头工人那样疲惫不堪，他们走进苏妈的点心店坐下来时，累得谁都不想说话了。</p></div></article><article class="entry"><p class="page">Upper part · ch. 17</p><blockquote class="latin">The boys woke at noon in high spirits. Song Fanping had said he would be home at sunset, but they could not wait: they went to the station at midday to meet him and Li Lan.</blockquote><div class="orig"><p>他们睡醒的时候已经是中午了，他们兴高采烈，虽然宋凡平说要到太阳落山的时候才会到家，可是两个孩子等不及了，他们中午就走向了车站，他们要在那里等待宋凡平和李兰乘坐的汽车驶进车站。</p></div></article><article class="entry"><p class="page">Upper part · ch. 17</p><blockquote class="latin">Seeing the two boys crying at her door, Su Ma inspected their clothes and asked, &#x27;You aren&#x27;t here to beg, are you?&#x27;</blockquote><div class="orig"><p>苏妈看到两个哭泣的孩子站在门口，打量着李光头和宋钢身上的衣服说：“你们不是来要饭的吧？”</p></div></article><article class="entry"><p class="page">Upper part · ch. 17</p><blockquote class="latin">&#x27;Look at this! My trousers, my sandals, my stockings... What the hell is this supposed to be?&#x27;</blockquote><div class="orig"><p>“你们看看，你们看看，我的裤子，我的凉鞋，我的丝袜……他妈的这叫什么事？”</p></div></article><article class="entry"><p class="page">Upper part · ch. 17</p><blockquote class="latin">Li Guangtou and Song Gang watched the heads shifting at the doors and windows and listened to the murmur: what kind of man Song Fanping had been, how he had died. Whenever someone said the children were pitiful, they cried a little, then went on staring fearfully at the crowd.</blockquote><div class="orig"><p>李光头和宋钢看着那些在窗口和门前晃动的脑袋和身体，听着他们嗡嗡地说话，他们说着宋凡平是一个什么人，又说着宋凡平是怎样死去的；当有人说这两个孩子真可怜时，宋钢哇哇地哭了两声，李光头也跟着哇哇地哭了两声，然后继续害怕地看着他们。</p></div></article></section><section class="story"><h3>After the loss</h3><article class="entry"><p class="page">Upper part · ch. 18</p><blockquote class="latin">Li Lan stood outside the hospital before dawn. Although Song Fanping&#x27;s letter said he would arrive at noon, more than two months apart had made her longing surge like waves. She had woken before daylight to wait for morning.</blockquote><div class="orig"><p>李兰凌晨的时候就已经站在了医院的大门口，虽然宋凡平在信里说自己中午才能到上海，可是两个多月的分别让李兰的思念像浪涛一样汹涌澎湃，天没亮她就醒来了，坐在病床上等待着晨光的到来。</p></div></article><article class="entry"><p class="page">Upper part · ch. 18</p><blockquote class="latin">The hospital doorman recognized Li Lan. All morning he watched the woman who had frightened him before dawn, seeing her peer eagerly at every person passing in the procession.</blockquote><div class="orig"><p>那个医院的门房已经认出李兰了，他一个上午都在奇怪地看着这个天亮前把他吓得尿了裤子的女人，他看到她激动地看着游行队伍里的每一个人，应该说是每一个走过的人。</p></div></article><article class="entry"><p class="page">Upper part · ch. 18</p><blockquote class="latin">As time passed, Li Lan grew weak with hunger and thirst. She sat on the steps by the gatehouse, leaning against the doorframe, but kept her head raised and her eyes searching.</blockquote><div class="orig"><p>随着时间的流逝，李兰越来越疲惫，饥渴让她没有力气继续站着了，她在传达室的台阶上坐了下来，身体靠在门框上，她的头颅仍然挺立，眼睛仍然在张望。</p></div></article><article class="entry"><p class="page">Upper part · ch. 19</p><blockquote class="latin">Sitting on the bed in the inner room, Li Guangtou and Song Gang heard Li Lan say in a trembling voice, &#x27;Put the lid on.&#x27;</blockquote><div class="orig"><p>坐在里屋床上的李光头和宋钢听到李兰声音震动地说：“盖吧。”</p></div></article><article class="entry"><p class="page">Upper part · ch. 20</p><blockquote class="latin">Li Lan walked on, her hands shaking around the photograph. She fought the urge to pull the family portrait out of its paper bag.</blockquote><div class="orig"><p>李兰向前走去，她捧着照片的手抖个不停，她努力压制着自己，不让自己的手从纸袋里抽出他们的全家福。</p></div></article><article class="entry"><p class="page">Upper part · ch. 20</p><blockquote class="latin">As they walked beside Li Lan, the boys kept darting their heads in front of and behind her, looking across at each other and smiling.</blockquote><div class="orig"><p>李光头和宋钢拉着李兰向前走去时，一会把头伸到李兰的前面，一会又把头转到李兰的身后，他们不断地去看看对方，不断地向对方笑一笑。</p></div></article><article class="entry"><p class="page">Upper part · ch. 21</p><blockquote class="latin">In patched trousers and a worn undershirt, he stood outside the door without a word, tears streaming down his old face as he looked at the coffin.</blockquote><div class="orig"><p>他穿着满是补丁的裤子和汗衫站在门外，不说一句话，老泪纵横地看着屋里的棺材。</p></div></article><article class="entry"><p class="page">Upper part · ch. 21</p><blockquote class="latin">He turned and slapped Li Lan. Her head jerked, blood ran from the corner of her mouth, yet she smiled proudly and kept her head high.</blockquote><div class="orig"><p>他说完转回身来，挥手给了李兰一巴掌，李兰的头甩了一下，她的嘴角流出了鲜血，可她骄傲地笑了，继续昂首看着他。</p></div></article><article class="entry"><p class="page">Upper part · ch. 21</p><blockquote class="latin">The two boys covered their mouths. They stopped crying aloud, but could not stop their tears.</blockquote><div class="orig"><p>两个孩子用手捂住了嘴巴，他们止住了哭声，可是止不住眼泪。</p></div></article><article class="entry"><p class="page">p. 164</p><blockquote class="latin">Song Gang&#x27;s grandfather held his hand. He did not know why he had stayed.</blockquote><div class="orig"><p>宋钢的爷爷拉着宋钢的手，他也不知道自己为什么留下来了？</p></div></article><article class="entry"><p class="page">p. 169</p><blockquote class="latin">Sun Wei loved his long hair. At least twice a day he crouched by the river, used the water to smooth his fringe, then tossed his hair at his blurred reflection and whistled with delight.</blockquote><div class="orig"><p>孙伟喜欢自己的长头发，他每天起码两次走下街边的台阶，蹲在河边弄一些水上来，把额前的头发弄得服服帖帖，然后对着河水里模糊的影子甩一甩他的长头发，吹两声得意洋洋的口哨。</p></div></article><article class="entry"><p class="page">Upper part · ch. 22</p><blockquote class="latin">By the time she reached the south gate, her trousers were gone. She was menstruating; blood ran down her legs as she crossed the wooden bridge, leaving Zhao Shengli and Liu Chenggong speechless.</blockquote><div class="orig"><p>当她走出南门的时候，她的裤子没有了，她当时正是月经来潮，走过木桥时鲜血顺着双腿流了下来，让赵胜利和刘成功看得目瞪口呆。</p></div></article><article class="entry"><p class="page">Upper part · ch. 22</p><blockquote class="latin">The man&#x27;s body was battered from head to toe. Standing hurt, sitting hurt, lying down hurt; moving hurt, and so did keeping still.</blockquote><div class="orig"><p>这个男人浑身上下都破烂了，站着的时候疼痛，坐着的时候疼痛，躺着的时候疼痛，动的时候疼痛，不动的时候也疼痛。</p></div></article><article class="entry"><p class="page">p. 183</p><blockquote class="latin">Song Gang walked quietly out of the alley and into the street. He looked at the familiar houses and plane trees, at people fighting, crying, laughing. He smiled at some he knew, but they ignored him.</blockquote><div class="orig"><p>宋钢脚步轻轻地走出了小巷，走上了大街，他在大街上东张西望地走着，他看着熟悉的房屋、熟悉的梧桐树；看到有些人在打架，有些人在哭，有些人在笑；这里面有一些他熟悉的人，他对着他们微笑，他们却没有答理他。</p></div></article><article class="entry"><p class="page">Upper part · ch. 24</p><blockquote class="latin">Li Lan always wore a proud smile. Her marriage to Song Fanping had lasted only a year and two months, yet deep in her heart it felt longer than a lifetime.</blockquote><div class="orig"><p>李兰的嘴角始终挂着骄傲的微笑，虽然和宋凡平只有短短的一年零两个月的夫妻生活，可是在李兰的内心深处比一生还要漫长。</p></div></article><article class="entry"><p class="page">Upper part · ch. 24</p><blockquote class="latin">The two self-styled writers had stolen books confiscated during the Cultural Revolution. Li Guangtou had kept watch for them, and they had found many of the fine words used to describe Lin Hong in those books.</blockquote><div class="orig"><p>这两位文豪曾经几次深更半夜时去一间屋子偷书，这些书籍都是文革中搜罗来的，又被查封了起来，李光头几次都在外面替他们望风，描绘林红屁股的很多美妙词语都是从这些偷来的书中发现的。</p></div></article><article class="entry"><p class="page">Upper part · ch. 24</p><blockquote class="latin">Word of Li Guangtou&#x27;s misdeeds reached Li Lan little by little, and she bowed her head lower and lower. She had already borne the scandal of her first husband; now she had to bear her son&#x27;s.</blockquote><div class="orig"><p>李光头的种种劣迹点点滴滴地传到了李兰的耳中，让李兰的头垂得越来越低，她曾经承受了第一个丈夫的丑闻，现在又要来承受儿子的丑闻。</p></div></article><article class="entry"><p class="page">Upper part · ch. 24</p><blockquote class="latin">The bathhouse was only half a kilometer from home, but Li Lan took more than an hour to get there. Each time she rested against a tree, Li Guangtou waited patiently and talked of things that had happened in Liu Town, things she had never heard of.</blockquote><div class="orig"><p>从家里走到澡堂也就是一里路，李兰走了有一个多小时，每次她靠着树休息时，李光头都是耐心地站在一边，一脸成熟地讲述着很多发生在刘镇的事，这些事都是李兰从来没有听说过的。</p></div></article></section><section class="story"><h3>Love and separate paths</h3><article class="entry"><p class="page">Lower part · ch. 6</p><blockquote class="latin">Song Gang did not want to come at all, but after Li Guangtou flew into a rage he had to steel himself and show up.</blockquote><div class="orig"><p>宋钢是一百个不愿意，李光头大发雷霆之后，宋钢只好硬着头皮来了。</p></div></article><article class="entry"><p class="page">Lower part · ch. 6</p><blockquote class="latin">Song Gang understood the first half of what she said, but not the second. By the time Lin Hong turned around, he had left.</blockquote><div class="orig"><p>宋钢听明白了前半句话，没明白后半句话，林红转过身来时，宋钢已经走出去了。</p></div></article><article class="entry"><p class="page">Lower part · ch. 7</p><blockquote class="latin">Song Gang longed to see Lin Hong. Several times he reached the door and opened it, only to remember Li Guangtou. His legs would not carry him out. He gazed at the fine rain outside and closed the door again.</blockquote><div class="orig"><p>宋钢太想去和林红见面了，他几次走到了门口，打开屋门后他又想到了李光头，他的双腿就跨不出去了，他迷惘地看了看屋外的蒙蒙细雨，又把屋门关上。</p></div></article><article class="entry"><p class="page">Lower part · ch. 7</p><blockquote class="latin">He held Lin Hong&#x27;s handkerchief up before his eyes in the dark, looked at it as if saying farewell, and put it firmly in his pocket. Then he let out a long breath and felt much lighter.</blockquote><div class="orig"><p>他把林红的手帕举到黑暗的眼前，告别似的看了一眼，坚定地放进了口袋，然后他长长地出了一口气，他觉得自己轻松了很多。</p></div></article><article class="entry"><p class="page">p. 297</p><blockquote class="latin">Seeing Song Gang standing silent with his head down, Li Guangtou waved him away: &#x27;All right, you should go.&#x27;</blockquote><div class="orig"><p>看到宋钢低垂着头一言不发，李光头摆摆手说：“行啦，你该走啦。”</p></div></article><article class="entry"><p class="page">Lower part · ch. 10</p><blockquote class="latin">Dizzy with happiness, Song Gang bought a gleaming Forever-brand bicycle. It cost nearly all his savings.</blockquote><div class="orig"><p>在幸福里晕头转向的宋钢买了一辆亮闪闪的永久牌自行车，这差不多花去了他全部的积蓄。</p></div></article><article class="entry"><p class="page">Lower part · ch. 10</p><blockquote class="latin">Lin Hong&#x27;s uncle finally gave Song Gang the Forever-brand bicycle that had been intended for the county militia chief.</blockquote><div class="orig"><p>林红的叔叔万般无奈，咬咬牙将本来应该给县人武部部长的永久牌自行车，给了林红那个亲爱的宋钢。</p></div></article><article class="entry"><p class="page">Lower part · ch. 10</p><blockquote class="latin">Song Gang rode his shiny Forever bicycle with beautiful Lin Hong behind him and rang its bell at everyone he met. Only when he saw Li Guangtou did he leave it silent.</blockquote><div class="orig"><p>宋钢骑着亮闪闪的永久牌，带着美丽的林红，遇到谁都要打上一阵子铃声，就是见了李光头他不打铃了。</p></div></article><article class="entry"><p class="page">Lower part · ch. 10</p><blockquote class="latin">Then he cheered himself up, spraying spit as he spoke: &#x27;One day I&#x27;ll get an enormous Forever bicycle. Xishi will sit in front, Diaochan behind, Wang Zhaojun in my arms and Yang Guifei on my back. I&#x27;ll ride with those four beauties of antiquity for forty-nine damn days, from the present into the past and back again. If I feel like it, I&#x27;ll ride into the future too...&#x27;</blockquote><div class="orig"><p>接下去他开始鼓励自己了，满嘴唾沫地说：“老子以后弄一辆超大型永久牌，前面坐西施，后面载貂蝉，怀里抱个王昭君，背上驮个杨贵妃。老子带着这古代四大美女骑上他妈的七七四十九天，从当代骑到古代去，再从古代骑到当代来，老子高兴了还要骑到未来去……”</p></div></article><article class="entry"><p class="page">Lower part · ch. 11</p><blockquote class="latin">At first Li Guangtou swayed from side to side. Song Gang pushed the bicycle while reaching out to steady him so he would not fall.</blockquote><div class="orig"><p>刚开始李光头的身体不断左右摇晃，宋钢一边推着，一边还要伸手去扶住李光头，不让他掉下来。</p></div></article><article class="entry"><p class="page">Lower part · ch. 11</p><blockquote class="latin">Lin Hong and Song Gang hosted seven tables at the People&#x27;s Restaurant: six for her relatives and friends, one for his.</blockquote><div class="orig"><p>林红和宋钢在人民饭店摆了七桌酒席，林红的亲友占了六桌，宋钢的只有一桌。</p></div></article><article class="entry"><p class="page">Lower part · ch. 11</p><blockquote class="latin">The doctor knew the famous Li Guangtou. As soon as he entered, Li Guangtou demanded a vasectomy.</blockquote><div class="orig"><p>医生当然认识大名鼎鼎的李光头，李光头走进来劈头盖脸就要医生给他结扎。</p></div></article><article class="entry"><p class="page">Lower part · ch. 11</p><blockquote class="latin">As Li Guangtou receded into the distance, more people gathered around Young Guan. They eagerly discussed him, all saying the day had been thoroughly entertaining.</blockquote><div class="orig"><p>李光头越走越远的时候，小关剪刀身边的群众越聚越多，群众兴致勃勃地议论着远去的李光头，纷纷说自己度过了愉快的一天。</p></div></article><article class="entry"><p class="page">Lower part · ch. 12</p><blockquote class="latin">The three fools were already grinning. When they saw the four blind men grinning too, they refused to be outdone and burst into loud laughter.</blockquote><div class="orig"><p>三个傻子本来就乐呵呵，见到四个瞎子也乐呵呵，三个傻子不甘示弱，干脆放声大笑。</p></div></article><article class="entry"><p class="page">Lower part · ch. 12</p><blockquote class="latin">&#x27;With someone as lawless as Li Guangtou, you cannot say &quot;resign.&quot; You must say &quot;dismissed.&quot;&#x27;</blockquote><div class="orig"><p>“对李光头这种无法无天的人，不能用‘辞职’这两个字，一定要用‘开除’。”</p></div></article><article class="entry"><p class="page">Lower part · ch. 13</p><blockquote class="latin">With five thousand yuan in startup money, Li Guangtou pressed on and recruited Young Guan at the scissor-grinding shop and Yu the Tooth-Puller, who worked beneath an oilcloth umbrella.</blockquote><div class="orig"><p>拥有了五千元人民币创业资金的李光头，再接再厉地又拿下了磨剪刀铺的小关剪刀和撑着油布雨伞拔牙的余拔牙。</p></div></article></section><section class="story"><h3>Business and brotherhood</h3><article class="entry"><p class="page">Lower part · ch. 19</p><blockquote class="latin">Lin Hong stood silently in the middle of the room. Only now did she remember that Li Guangtou had become a beggar. Until then her world had held only Song Gang; now that bastard Li Guangtou had barged back in.</blockquote><div class="orig"><p>林红无声地站在屋子中央，这时候她才想起来李光头已经是个要饭的叫花子了，在此之前她完全忘记了李光头的存在，她的世界里只有宋钢，没有别人，现在李光头这个混蛋又闯进来了。</p></div></article><article class="entry"><p class="page">Lower part · ch. 19</p><blockquote class="latin">When Lin Hong said &#x27;stepmother,&#x27; Song Gang cried out in pain. She realized she might have said the wrong thing and fell silent. The room went quiet.</blockquote><div class="orig"><p>林红说出了“后妈”，宋钢突然伤心地叫了起来，林红吃惊之后，觉得自己可能是说错了，她不再说话，于是屋子陷入到沉默之中。</p></div></article><article class="entry"><p class="page">Lower part · ch. 19</p><blockquote class="latin">This time Lin Hong expected to find the money and grain coupons. When she was certain they were gone, she panicked and looked to Song Gang, hoping he would say he had spent them himself.</blockquote><div class="orig"><p>这一次林红期待着能够摸到它们，当她确信钱和粮票都没有以后，突然惊慌起来，她有些害怕地看着宋钢，希望宋钢告诉她，这一次是他自己花掉的。</p></div></article><article class="entry"><p class="page">Lower part · ch. 19</p><blockquote class="latin">Lin Hong bit her lip in anger. Long afterward, when the room had gone dark, Song Gang still sat motionless, as if waiting for her to wake up and eat with him.</blockquote><div class="orig"><p>林红气得咬住了嘴唇，过去了很长时间，屋子里变得漆黑一团，宋钢还是一动不动地坐在那里，好像是在等待着林红睡醒了起床一起吃饭。</p></div></article><article class="entry"><p class="page">Lower part · ch. 20</p><blockquote class="latin">When Lin Hong began wiping her tears, Song Gang brought out the foreign watch. Stammering, he explained that he had stopped seeing Li Guangtou, but his brother had called to him outside the county government building and given him the watch, reviving their old bond.</blockquote><div class="orig"><p>过了一会，看到林红擦起了眼泪，宋钢才转身找出了那块外国手表，结结巴巴地告诉林红，他本来已经不和李光头交往了，因为那天骑车从县政府大门口经过，李光头叫住他，给了他这块手表，让他重新想起了往日的兄弟情谊。</p></div></article><article class="entry"><p class="page">Lower part · ch. 20</p><blockquote class="latin">She said they had saved every penny since marrying so she could buy Song Gang a Diamond-brand watch. Yet Li Guangtou had won him over with a discarded foreign watch.</blockquote><div class="orig"><p>她说结婚以后省吃俭用，就是为了存钱给宋钢买一块钻石牌手表，没想到李光头用一块别人扔掉的破烂手表，就把宋钢收买了。</p></div></article><article class="entry"><p class="page">Lower part · ch. 20</p><blockquote class="latin">Lin Hong saw how troubled Song Gang was. He and Li Guangtou shared too much history for their bond to break cleanly. She did not blame him, thinking it would pass in time.</blockquote><div class="orig"><p>林红看到宋钢脸上凝重的表情，知道他心里的难受，毕竟他和李光头的兄弟往事太多了，藕断丝连在所难免，林红没有去责怪他，心想过些日子就会好了。</p></div></article><article class="entry"><p class="page">Lower part · ch. 21</p><blockquote class="latin">He sat cross-legged on the floor and spent two hours wrestling with the foreign watch. Sweating, he fitted three pieces of wire of different lengths, then wore it proudly on his wrist.</blockquote><div class="orig"><p>他盘腿坐在地上，专门花了两个小时对付了那块外国手表，满头大汗地安上去了三根长短不一的细铁丝，然后神气活现地戴在手腕上。</p></div></article><article class="entry"><p class="page">Lower part · ch. 22</p><blockquote class="latin">Tao Qing knew what Li Guangtou was like: without a ladder he would still try to climb, and if you gave him one he would expect you to carry him up.</blockquote><div class="orig"><p>陶青知道李光头是个什么货色，没有梯子他想着要往上爬，给了他梯子，他就要你背着他往上爬了。</p></div></article><article class="entry"><p class="page">Lower part · ch. 22</p><blockquote class="latin">The county office director smiled warmly and spoke warmly as he followed Li Guangtou around the mountain of scrap.</blockquote><div class="orig"><p>县办主任脸上挂着亲热的笑，嘴里说着亲热的话，跟在李光头屁股后面，在破烂山里走来走去。</p></div></article><article class="entry"><p class="page">p. 415</p><blockquote class="latin">The soy milk was meager compared with the full bowls in Liu Town. The Japanese cup was smaller than one of our tea bowls, and the fried dough sticks were as thin as chopsticks.</blockquote><div class="orig"><p>那豆浆还少得可怜，不像我们刘镇的豆浆是满满一大碗，日本喝豆浆的碗比我们刘镇喝茶的茶盅还要小，那油条更是细得跟筷子似的。</p></div></article><article class="entry"><p class="page">Lower part · ch. 25</p><blockquote class="latin">The discarded Japanese suits bore family surnames, printed inside their breast pockets.</blockquote><div class="orig"><p>那些日本垃圾西装上都标有家族的姓氏，标在胸前内侧口袋上。</p></div></article><article class="entry"><p class="page">Lower part · ch. 25</p><blockquote class="latin">Yu the Tooth-Puller said proudly, &#x27;Compared with Panasonic and Sanyo, Fukuda really is a nobody.&#x27;</blockquote><div class="orig"><p>余拔牙得意地说，“和‘松下’和‘三洋’两家比起来，‘福田’确实是无名小卒。”</p></div></article><article class="entry"><p class="page">Lower part · ch. 25</p><blockquote class="latin">Tao Qing watched as the suit labeled &#x27;Nakasone&#x27; went onto the county chief. He was furious inside, but kept smiling and praising how well it fit.</blockquote><div class="orig"><p>陶青眼睁睁看着“中曾根”套到县长身上去了，心里一百个不高兴，脸上还要赔着笑容，嘴里还要一声声夸奖县长穿上“中曾根”如何合体合身。</p></div></article><article class="entry"><p class="page">Lower part · ch. 26</p><blockquote class="latin">Li Guangtou was hurt. He called after Song Gang and Lin Hong as they cycled away: &#x27;Song Gang, you bastard! Have you forgotten our childhood?&#x27;</blockquote><div class="orig"><p>李光头伤心了，他冲着宋钢和林红离去的自行车最后喊道：“宋钢，你这个王八蛋，你把我们小时候的事忘光啦？”</p></div></article><article class="entry"><p class="page">Lower part · ch. 26</p><blockquote class="latin">Su Ma had regrets too: when Li Guangtou spread his wings and left Liu Town for a second time, he had asked whether she wanted to join him.</blockquote><div class="orig"><p>后悔的还有苏妈，李光头第二次鲲鹏展翅离开刘镇时，问过苏妈要不要加入。</p></div></article><article class="entry"><p class="page">Lower part · ch. 26</p><blockquote class="latin">&#x27;The ancients spoke of traveling merchants and settled traders. Only when your business lets you sit still have you become a real trader; if you must keep running around, your business is still small.&#x27;</blockquote><div class="orig"><p>“古人云‘行商坐贾’，生意做到坐下来的时候才是‘贾’，才真正做成大生意了，跑来跑去的只能做小生意，只是‘商’。”</p></div></article><article class="entry"><p class="page">Lower part · ch. 26</p><blockquote class="latin">The onlooker laughed and told everyone that Li Guangtou had hired a driver without owning a car: he and his driver took a long-distance bus to Shanghai.</blockquote><div class="orig"><p>那个群众笑了又笑，逢人就说李光头雇用了一个司机，可是没有汽车，李光头和他的司机坐着长途汽车去上海了。</p></div></article></section><section class="story"><h3>Wealth and hardship</h3><article class="entry"><p class="page">p. 443</p><blockquote class="latin">Lin Hong was forcing a smile. The knitting factory had struggled for years and had now begun laying off workers.</blockquote><div class="orig"><p>这时的林红是在强作欢笑，针织厂连续几年效益不好，现在开始裁员了。</p></div></article><article class="entry"><p class="page">Lower part · ch. 29</p><blockquote class="latin">Song Gang kept silent. He had cut Li Guangtou off so decisively that now, when his brother was rich and successful, he could not bring himself to beg for help.</blockquote><div class="orig"><p>宋钢低头不语，心想当初自己绝情绝义要和李光头一刀两断，现在李光头成功了有钱了，自己再上门去哀求他，这样的事做不出来。</p></div></article><article class="entry"><p class="page">Lower part · ch. 29</p><blockquote class="latin">When Song Gang woke the next morning, Lin Hong had already risen and was washing her face and rinsing her mouth in the bathroom.</blockquote><div class="orig"><p>宋钢第二天早晨醒来时，看到林红已经起床了，正在卫生间里漱口洗脸。</p></div></article><article class="entry"><p class="page">Lower part · ch. 29</p><blockquote class="latin">If Song Gang was offered even a single day&#x27;s work, he went out wearing a mask. He did not want to pass his lung disease to anyone else.</blockquote><div class="orig"><p>偶尔有一份工作需要宋钢去代理一天，宋钢也会戴着口罩出门，他不愿意把肺病传染给其他人。</p></div></article><article class="entry"><p class="page">Lower part · ch. 30</p><blockquote class="latin">Some men in the crowd defended Lin Hong: nobody could foresee the future, they said, and even a fortune-teller could predict others&#x27; fate but not his own.</blockquote><div class="orig"><p>群众里的有些男性为林红辩护，他们说谁也没有先见之明，就是算命先生，也只会算别人的命，算不了自己的命。</p></div></article><article class="entry"><p class="page">Lower part · ch. 31</p><blockquote class="latin">&#x27;That bastard Liu the Writer really is talented! With one key he overturned the worst miscarriage of justice Liu Town has ever seen!&#x27;</blockquote><div class="orig"><p>“这个王八蛋刘作家真有才华，一把钥匙就把刘镇有史以来最大的冤假错案平反啦！”</p></div></article><article class="entry"><p class="page">Lower part · ch. 31</p><blockquote class="latin">Liu the Writer smiled broadly and told Zhao the Poet not to be angry: &#x27;At your age, anger can easily bring on a stroke.&#x27;</blockquote><div class="orig"><p>刘作家满脸的微笑，请赵诗人不要生气，他说：“你这个年纪生气很容易中风。”</p></div></article><article class="entry"><p class="page">Lower part · ch. 31</p><blockquote class="latin">Whenever he spoke of childhood, Li Guangtou wept. He wiped his eyes, loudly thanked reform and opening up, the Party, the government and everyone in the county, then launched into the story of how he had built his business.</blockquote><div class="orig"><p>说到童年，李光头总是声泪俱下，然后抹一把眼泪，大声感谢改革开放，感谢党和政府，感谢全县人民，感谢说完了就开始讲述自己如何创业，如何成就今天这番伟大事业。</p></div></article><article class="entry"><p class="page">Lower part · ch. 31</p><blockquote class="latin">He half-closed his eyes when discussing business. People thought he was asleep, but he was more alert than any of them.</blockquote><div class="orig"><p>他眯着眼睛跟人谈生意，人家以为他睡着了，可他比谁都清醒。</p></div></article><article class="entry"><p class="page">p. 467</p><blockquote class="latin">Song Gang went out into the street toward Li Guangtou&#x27;s company. The poorest man in Liu Town walked toward its richest. They had once been brothers, and they were brothers still.</blockquote><div class="orig"><p>宋钢走上了大街，走向了李光头的公司，我们刘镇最贫穷的人走向了最富有的人，他们曾经是兄弟，现在仍然是兄弟。</p></div></article><article class="entry"><p class="page">Lower part · ch. 34</p><blockquote class="latin">Liu the Journalist reeled off the list: &#x27;Beautiful and dignified, healthy and graceful, cultured and talented, understanding, gentle, respectful to elders, loving to children, innocent, faithful, with no sexual experience...&#x27;</blockquote><div class="orig"><p>刘新闻绕口令似的说：“美丽端庄、健康婀娜、气质出众、才韵内敛、善解人意、温柔体贴、尊老爱幼、清纯忠贞、无性经历……”</p></div></article><article class="entry"><p class="page">Lower part · ch. 34</p><blockquote class="latin">The last reporter asked, &#x27;Will the winner of the Virgin Beauty Contest become Mr. Li&#x27;s bride?&#x27;</blockquote><div class="orig"><p>最后一个记者提问：“处美人大赛的冠军是否会成为你们李总的新娘？”</p></div></article><article class="entry"><p class="page">Lower part · ch. 35</p><blockquote class="latin">Zhou You shook his head again. &#x27;I don&#x27;t drink mineral water. It&#x27;s a fraud; there&#x27;s hardly any minerals in it. Tap water has the most.&#x27;</blockquote><div class="orig"><p>周游仍然摇着头说：“我不喝矿泉水，那是骗人的，里面没有什么矿物质了，矿物质含量最高的就是凉水。”</p></div></article><article class="entry"><p class="page">Lower part · ch. 35</p><blockquote class="latin">After spending his last five yuan, the swindler claimed he needed to sample the little buns with straws. He tricked them into feeding him for days to come.</blockquote><div class="orig"><p>这个江湖骗子花去了身上仅有的五元钱以后，声称要试吃带吸管的小包子，将今后几天吃的都提前骗到手了。</p></div></article><article class="entry"><p class="page">Lower part · ch. 35</p><blockquote class="latin">Zhou You had finally silenced Zhao the Poet. Afraid to sound clever again, Zhao asked, &#x27;What country was that language from?&#x27;</blockquote><div class="orig"><p>这次周游把赵诗人镇住了，赵诗人不敢再自作聪明，他不耻下问：“你刚才说的是哪国话？”</p></div></article><article class="entry"><p class="page">Lower part · ch. 35</p><blockquote class="latin">Zhao the Poet was about to agree, but Zhou You declined: &#x27;No thanks. This place is much more comfortable than the Arabian desert or the jungles of Latin America.&#x27;</blockquote><div class="orig"><p>赵诗人正要说好，周游却谢绝了，他说：“没关系，这里比阿拉伯的沙漠、拉丁美洲的丛林舒服多了。”</p></div></article><article class="entry"><p class="page">Lower part · ch. 36</p><blockquote class="latin">Zhao the Poet promptly corrected him: &#x27;First you break out in a cold sweat. One, two, three—three seconds later you&#x27;re so delighted you start sweating with heat!&#x27;</blockquote><div class="orig"><p>赵诗人马上纠正道：“先是一身冷汗，一二三，三秒钟后就快活得浑身冒热汗啦！”</p></div></article><article class="entry"><p class="page">Lower part · ch. 36</p><blockquote class="latin">Word of the three men&#x27;s street performance reached Lin Hong that day. Furious, she went home ready to explode. But the sight of Song Gang sitting miserably on the sofa softened her: he was only trying to earn more for the family. Outside, she saw Zhao the Poet swaggering toward her, and all her anger turned on him.</blockquote><div class="orig"><p>三个人在大街上的表演当天就传到林红耳朵里了，林红气得浑身发抖，回到家里本来是要大发脾气的，看到宋钢坐在沙发上忐忑不安的可怜模样，她心又软了，心想宋钢是为了给家里多挣钱，她摇摇头走到了屋外，看到赵诗人神气活现地走了过来，林红的怒火全冲着他去了。</p></div></article></section></noscript></main>
+
+  <footer>
+    <p style="margin-top:18px" id="signature"></p>
+  </footer>
+
+</div>
+
+<script>
+const LANGS = ['en','zh','fr','es'];
+
+const UI = {
+  "back": {
+    "en": "← Reading Notes",
+    "zh": "← 读书笔记",
+    "fr": "← Notes de lecture",
+    "es": "← Notas de lectura"
+  },
+  "eyebrow": {
+    "en": "Reading notes · Yu Hua",
+    "zh": "读书笔记 · 余华",
+    "fr": "Notes de lecture · Yu Hua",
+    "es": "Notas de lectura · Yu Hua"
+  },
+  "byline": {
+    "en": "YU HUA · a novel in two parts",
+    "zh": "余华 · 长篇小说，上、下两部",
+    "fr": "YU HUA · roman en deux parties",
+    "es": "YU HUA · novela en dos partes"
+  },
+  "facts": {
+    "en": [
+      [
+        "24 Aug – 3 Sep 2024",
+        "reading album"
+      ],
+      [
+        "Writers Publishing House · 2010",
+        "paper copy"
+      ]
+    ],
+    "zh": [
+      [
+        "2024.08.24–09.03",
+        "相簿阅读期间"
+      ],
+      [
+        "作家出版社 · 2010",
+        "纸质底本"
+      ]
+    ],
+    "fr": [
+      [
+        "24 août – 3 sept. 2024",
+        "album de lecture"
+      ],
+      [
+        "Éditions des écrivains · 2010",
+        "exemplaire papier"
+      ]
+    ],
+    "es": [
+      [
+        "24 ago. – 3 sept. 2024",
+        "álbum de lectura"
+      ],
+      [
+        "Editorial de los Escritores · 2010",
+        "ejemplar impreso"
+      ]
+    ]
+  },
+  "provHead": {
+    "en": "Translation notice",
+    "zh": "翻译说明",
+    "fr": "Avis de traduction",
+    "es": "Aviso de traducción"
+  },
+  "provBody": {
+    "en": "These passages were written in Chinese. English was translated from the photographed Chinese reading copy with OpenAI Codex; French and Spanish were then machine translated from that English with Argos Translate. No human literary editor has reviewed these versions. The Chinese text below each passage is authoritative.",
+    "zh": "本页引文原文为中文，以相簿中的纸本为准。英文由 OpenAI Codex 据中文照片翻译，法文和西班牙文再由 Argos Translate 据英文机器转译；均未经人工文学润色。每条下方的中文原文为准。",
+    "fr": "Ces passages ont été écrits en chinois. L’anglais a été traduit d’après les pages photographiées avec OpenAI Codex ; le français et l’espagnol ont ensuite été traduits de cet anglais avec Argos Translate. Aucune révision littéraire humaine n’a été faite. Le chinois sous chaque passage fait foi.",
+    "es": "Estos pasajes se escribieron en chino. El inglés se tradujo de las páginas fotografiadas con OpenAI Codex; el francés y el español se tradujeron después de ese inglés con Argos Translate. No han sido revisados por un editor humano. El chino que aparece bajo cada pasaje es el texto autorizado."
+  },
+  "provRows": {
+    "en": [
+      [
+        "Original language",
+        "Chinese"
+      ],
+      [
+        "Source copy",
+        "Yu Hua, Brothers, Writers Publishing House, 2nd ed. 2010 (photographed print)"
+      ],
+      [
+        "Translation",
+        "OpenAI Codex (GPT-6) for English; Argos Translate 1.11.0 for French and Spanish from English · no human editing"
+      ],
+      [
+        "Date",
+        "23 September 2026"
+      ]
+    ],
+    "zh": [
+      [
+        "原文语言",
+        "中文"
+      ],
+      [
+        "纸本底本",
+        "余华《兄弟》，作家出版社，2010 年第 2 版（相簿实拍）"
+      ],
+      [
+        "翻译者",
+        "英文：OpenAI Codex（GPT-6）；法文、西班牙文：Argos Translate 1.11.0 据英文转译；未经人工润色"
+      ],
+      [
+        "翻译日期",
+        "2026 年 9 月 23 日"
+      ]
+    ],
+    "fr": [
+      [
+        "Langue originale",
+        "Chinois"
+      ],
+      [
+        "Édition de base",
+        "Yu Hua, Brothers, Éditions des écrivains, 2e éd. 2010 (exemplaire photographié)"
+      ],
+      [
+        "Traduction",
+        "Anglais : OpenAI Codex (GPT-6) ; français et espagnol : Argos Translate 1.11.0 depuis l’anglais · sans révision humaine"
+      ],
+      [
+        "Date",
+        "23 septembre 2026"
+      ]
+    ],
+    "es": [
+      [
+        "Lengua original",
+        "Chino"
+      ],
+      [
+        "Edición de base",
+        "Yu Hua, Brothers, Editorial de los Escritores, 2.ª ed. 2010 (ejemplar fotografiado)"
+      ],
+      [
+        "Traducción",
+        "Inglés: OpenAI Codex (GPT-6); francés y español: Argos Translate 1.11.0 a partir del inglés · sin revisión humana"
+      ],
+      [
+        "Fecha",
+        "23 de septiembre de 2026"
+      ]
+    ]
+  },
+  "all": {
+    "en": "All sections",
+    "zh": "全部",
+    "fr": "Tout",
+    "es": "Todo"
+  },
+  "orig": {
+    "en": "Chinese original",
+    "zh": "中文原文",
+    "fr": "Original chinois",
+    "es": "Original en chino"
+  },
+  "cut": {
+    "en": "The photograph cuts off the passage.",
+    "zh": "照片未拍全该段。",
+    "fr": "La photographie coupe le passage.",
+    "es": "La fotografía corta el pasaje."
+  },
+  "sig": {
+    "en": "Compiled September 2026 · Jinge Guo",
+    "zh": "整理于 2026 年 9 月 · 郭晋阁",
+    "fr": "Recueil établi en septembre 2026 · Jinge Guo",
+    "es": "Recopilado en septiembre de 2026 · Jinge Guo"
+  },
+  "refPart": {
+    "en": [
+      "Upper part",
+      "Lower part"
+    ],
+    "zh": [
+      "上部",
+      "下部"
+    ],
+    "fr": [
+      "Première partie",
+      "Seconde partie"
+    ],
+    "es": [
+      "Parte superior",
+      "Parte inferior"
+    ]
+  },
+  "refCh": {
+    "en": "ch.",
+    "zh": "第",
+    "fr": "ch.",
+    "es": "cap."
+  }
+};
+
+const STORIES = [
+  {
+    "id": "u1",
+    "zh": "上部 · 童年与家庭",
+    "range": "",
+    "t": {
+      "en": "Childhood and family",
+      "zh": "上部 · 童年与家庭",
+      "fr": "Enfance et famille",
+      "es": "Infancia y familia"
+    },
+    "s": {
+      "en": "Li Guangtou, Song Gang, Li Lan and Song Fanping come together in Liu Town.",
+      "zh": "李光头、宋钢、李兰与宋凡平在刘镇组成一家。",
+      "fr": "Li Guangtou, Song Gang, Li Lan et Song Fanping forment une famille à Liu Town.",
+      "es": "Li Guangtou, Song Gang, Li Lan y Song Fanping forman una familia en Liu Town."
+    }
+  },
+  {
+    "id": "u2",
+    "zh": "上部 · 动荡与失去",
+    "range": "",
+    "t": {
+      "en": "Upheaval and loss",
+      "zh": "上部 · 动荡与失去",
+      "fr": "Troubles et pertes",
+      "es": "Agitación y pérdida"
+    },
+    "s": {
+      "en": "The Cultural Revolution reaches Liu Town and changes the family.",
+      "zh": "文化大革命来到刘镇，一家人的生活随之改变。",
+      "fr": "La Révolution culturelle atteint Liu Town et bouleverse la famille.",
+      "es": "La Revolución Cultural llega a Liu Town y altera la vida de la familia."
+    }
+  },
+  {
+    "id": "u3",
+    "zh": "上部 · 劫后余生",
+    "range": "",
+    "t": {
+      "en": "After the loss",
+      "zh": "上部 · 劫后余生",
+      "fr": "Après la perte",
+      "es": "Después de la pérdida"
+    },
+    "s": {
+      "en": "Li Lan and the two boys carry on through the aftermath.",
+      "zh": "李兰和两个孩子继续生活。",
+      "fr": "Li Lan et les deux garçons poursuivent leur vie.",
+      "es": "Li Lan y los dos muchachos siguen adelante."
+    }
+  },
+  {
+    "id": "l1",
+    "zh": "下部 · 爱情与分路",
+    "range": "",
+    "t": {
+      "en": "Love and separate paths",
+      "zh": "下部 · 爱情与分路",
+      "fr": "Amour et chemins divergents",
+      "es": "Amor y caminos separados"
+    },
+    "s": {
+      "en": "Song Gang and Lin Hong marry; Li Guangtou looks for his own way forward.",
+      "zh": "宋钢与林红结婚；李光头另寻出路。",
+      "fr": "Song Gang épouse Lin Hong ; Li Guangtou cherche sa voie.",
+      "es": "Song Gang se casa con Lin Hong; Li Guangtou busca su propio camino."
+    }
+  },
+  {
+    "id": "l2",
+    "zh": "下部 · 生意与兄弟",
+    "range": "",
+    "t": {
+      "en": "Business and brotherhood",
+      "zh": "下部 · 生意与兄弟",
+      "fr": "Affaires et fraternité",
+      "es": "Negocios y hermandad"
+    },
+    "s": {
+      "en": "Business grows as the brothers struggle with distance and loyalty.",
+      "zh": "生意逐渐做大，兄弟间也有距离与牵挂。",
+      "fr": "Les affaires grandissent tandis que la distance et la loyauté éprouvent les frères.",
+      "es": "El negocio crece mientras la distancia y la lealtad ponen a prueba a los hermanos."
+    }
+  },
+  {
+    "id": "l3",
+    "zh": "下部 · 富贵与困顿",
+    "range": "",
+    "t": {
+      "en": "Wealth and hardship",
+      "zh": "下部 · 富贵与困顿",
+      "fr": "Richesse et précarité",
+      "es": "Riqueza y dificultades"
+    },
+    "s": {
+      "en": "Li Guangtou becomes rich while Song Gang faces unemployment and illness.",
+      "zh": "李光头致富；宋钢面临失业与疾病。",
+      "fr": "Li Guangtou s’enrichit pendant que Song Gang affronte le chômage et la maladie.",
+      "es": "Li Guangtou se enriquece mientras Song Gang afronta el desempleo y la enfermedad."
+    }
+  }
+];
+
+const ENTRIES = [
+  {
+    "id": "xd001",
+    "s": "u1",
+    "zh": "那时候的李光头还是个穷小子，有一碗三鲜面吃，他就美滋滋不知道天高地厚了，就像是到天堂里去逛了一次，他半年里美滋滋了五十六次，也就是去了天堂五十六次。",
+    "en": "Li Guangtou was still a poor boy. A bowl of three-delicacy noodles made him so happy he felt as if he had visited heaven. He enjoyed them fifty-six times in six months: fifty-six trips to heaven.",
+    "fr": "Li Guangtou était encore un garçon pauvre. Un bol de nouilles aux trois délices le rendait si heureux qu'il avait l'impression d'être allé au paradis. En six mois, il en mangea cinquante-six fois : cinquante-six visites au paradis.",
+    "es": "Li Guangtou todavía era un niño pobre. Un tazón de fideos de tres manjares le hizo tan feliz que se sentía como si hubiera visitado el cielo. Los disfrutó cincuenta y seis veces en seis meses: cincuenta y seis viajes al cielo.",
+    "p": "19",
+    "part": "u",
+    "chapter": 2
+  },
+  {
+    "id": "xd002",
+    "s": "u1",
+    "zh": "那些前来打探林红屁股秘密的人，都想拿一碗阳春面来糊弄他，李光头从不上当，他每次都是耐心细致地和人讨价还价，每次都吃到了三鲜面，而不是阳春面。",
+    "en": "People who came asking about Lin Hong's secret tried to fob Li Guangtou off with plain noodles. He would not accept that; he bargained patiently and always got three-delicacy noodles instead.",
+    "fr": "Les gens qui sont venus demander au sujet du secret de Lin Hong ont essayé de fob Li Guangtou avec des nouilles simples. Il n'acceptait pas cela ; il négociait patiemment et avait toujours des nouilles à trois délicates à la place.",
+    "es": "La gente que vino preguntando por el secreto de Lin Hong intentó frustrar a Li Guangtou con fideos. Él no aceptaría eso; él negociaba pacientemente y siempre tenía fideos de tres-delicados en su lugar.",
+    "part": "u",
+    "chapter": 2
+  },
+  {
+    "id": "xd003",
+    "s": "u1",
+    "zh": "赵诗人也经常在那个厕所里偷看女人屁股，那个厕所是赵诗人的地盘，可他偷看了一年都没看到林红的屁股；这个李光头也就是匆匆过客，在赵诗人的地盘上只偷看了一次，就看到了林红的屁股。",
+    "en": "Zhao the Poet had spied on women in that toilet for a year without seeing Lin Hong. Li Guangtou passed through once and saw what Zhao had never managed to see.",
+    "fr": "Zhao le Poète a espionné les femmes dans ces toilettes pendant un an sans voir Lin Hong. Li Guangtou est passé une fois et a vu ce que Zhao n'avait jamais réussi à voir.",
+    "es": "Zhao el Poeta había espiado a mujeres en ese baño durante un año sin ver Lin Hong. Li Guangtou pasó una vez y vio lo que Zhao nunca había logrado ver.",
+    "part": "u",
+    "chapter": 2
+  },
+  {
+    "id": "xd004",
+    "s": "u1",
+    "zh": "当李光头的亲生父亲一头栽进了粪池以后，他的继父站在那里惊魂未定，他觉得自己只是眨了一下眼睛，那两条跷起的腿一下子就没了。",
+    "en": "When Li Guangtou's biological father fell headfirst into the cesspit, his future stepfather stood there in shock. He felt he had only blinked, and the two upturned legs had disappeared.",
+    "fr": "Lorsque le père biologique de Li Guangtou est tombé en premier dans la fosse, son futur beau-père y est resté en état de choc. Il sentait qu'il avait seulement clignoté, et les deux jambes retournées avaient disparu.",
+    "es": "Cuando el padre biológico de Li Guangtou cayó primero en el hospital, su futuro padrastro estuvo allí en shock. Sentía que sólo había parpadeado, y las dos patas volcadas habían desaparecido.",
+    "part": "u",
+    "chapter": 3
+  },
+  {
+    "id": "xd005",
+    "s": "u1",
+    "zh": "这时候李兰的身体靠着门框慢慢滑了下去，她一直木然的脸上出现了痛苦的表情，她躺在了地上，她的两腿伸开了，她的十根手指像是要紧紧抓住大地似的插进了泥土之中，她的额上渗满了汗珠，她睁圆了眼睛无声无息地看着围观的人群。",
+    "en": "Li Lan slowly slid down the doorframe. Pain crossed her blank face; she lay on the ground with her legs apart, fingers digging into the earth, sweat on her forehead, staring silently at the crowd.",
+    "fr": "Li Lan glisse lentement sur le cadre de la porte. La douleur traversa son visage vide; elle se coucha sur le sol, les jambes écartées, les doigts creusant sur la terre, transpirant sur son front, regardant silencieusement la foule.",
+    "es": "Li Lan lentamente bajó por la puerta. El dolor cruzó su cara en blanco; ella se puso en el suelo con sus piernas separadas, los dedos cavando en la tierra, sudando en su frente, mirando silenciosamente a la multitud.",
+    "part": "u",
+    "chapter": 3
+  },
+  {
+    "id": "xd006",
+    "s": "u1",
+    "zh": "其实那时候已经没有人对他们指指点点，甚至没有人来看他们一眼，李兰仍然觉得所有人的目光都像钉子似的钉在她的身上。",
+    "en": "By then nobody was pointing at them, or even looking at them. Yet Li Lan still felt every gaze nailed to her body.",
+    "fr": "À ce moment-là, personne ne les pointait, ni même ne les regardait. Pourtant, Li Lan sentait toujours chaque regard cloué à son corps.",
+    "es": "Para entonces nadie les estaba apuntando, ni siquiera mirándolos. Sin embargo Li Lan todavía sentía cada mirada clavada en su cuerpo.",
+    "part": "u",
+    "chapter": 4
+  },
+  {
+    "id": "xd007",
+    "s": "u1",
+    "zh": "李兰站了一会后，又拉起了李光头的手，悄无声息地走回家中。",
+    "en": "Li Lan stood a while, then took Li Guangtou's hand again and went home without a sound.",
+    "fr": "Li Lan est resté debout un moment, puis a pris la main de Li Guangtou à nouveau et est rentré à la maison sans son.",
+    "es": "Li Lan permaneció un tiempo, luego tomó la mano de Li Guangtou de nuevo y se fue a casa sin un sonido.",
+    "part": "u",
+    "chapter": 4
+  },
+  {
+    "id": "xd008",
+    "s": "u1",
+    "zh": "在李光头的记忆里，那天上午李兰第一次在大街上抬起头来了，她是在张望着出殡的队伍。",
+    "en": "In Li Guangtou's memory, that was the first morning Li Lan raised her head in the street. She was looking for the funeral procession.",
+    "fr": "Dans la mémoire de Li Guangtou, c'était le premier matin que Li Lan soulevait la tête dans la rue. Elle cherchait la procession funéraire.",
+    "es": "En la memoria de Li Guangtou, esa fue la primera mañana que Li Lan levantó la cabeza en la calle. Estaba buscando la procesión fúnebre.",
+    "p": "35",
+    "part": "u",
+    "chapter": 4
+  },
+  {
+    "id": "xd009",
+    "s": "u1",
+    "zh": "他们站在围墙上已经人挨着人了，已经挤得连缝都快没有了，下面的人还要往上爬。",
+    "en": "People stood shoulder to shoulder on the wall, packed so tightly there was scarcely a gap, while more kept trying to climb up.",
+    "fr": "Les gens se tenaient côte à côte sur le mur, emballés de manière si serrée, il n'y avait guère d'écart, tandis que davantage essayaient de grimper.",
+    "es": "La gente se puso de hombro a hombro en la pared, empacada tan fuerte que apenas había una brecha, mientras que más seguía tratando de subir.",
+    "p": "37",
+    "part": "u",
+    "chapter": 5
+  },
+  {
+    "id": "xd010",
+    "s": "u1",
+    "zh": "一千多个人看着呢，他竟然把李兰举了起来，灯光球场里的笑声哗啦哗啦地响起来，大笑、微笑、尖笑、细笑、淫笑、奸笑、傻笑、干笑、湿笑和皮笑肉不笑，林子大了什么鸟都有，人多了也是什么笑声都有。",
+    "en": "Before more than a thousand onlookers, he lifted Li Lan into the air. Laughter swept through the floodlit basketball court: loud, faint, shrill, leering, foolish, and every kind in between.",
+    "fr": "Avant plus de mille spectateurs, il souleva Li Lan dans les airs. Le rire a balayé le terrain de basket-ball inondé: fort, faible, shrill, lering, sot, et toutes sortes entre les deux.",
+    "es": "Antes de más de mil espectadores, levantó a Li Lan en el aire. La risa barrió a través de la cancha de baloncesto inundada: fuerte, débil, shrill, deslumbrante, tonto, y todo tipo en medio.",
+    "part": "u",
+    "chapter": 5
+  },
+  {
+    "id": "xd011",
+    "s": "u1",
+    "zh": "他们议论纷纷，他们重新想起了那个在厕所里偷看女人屁股丢掉了性命的男人，他们指指点点，他们恍然大悟地说原来这个女人跟这个男人搞上了。",
+    "en": "They talked and pointed, remembering the man who had died after spying on women in the toilet. At last they thought they understood: this woman had got together with that man.",
+    "fr": "Ils ont parlé et pointé, se souvenant de l'homme qui était mort après avoir espionné des femmes dans les toilettes. Enfin, ils pensaient comprendre: cette femme s'était mise avec cet homme.",
+    "es": "Hablaron y señalaron, recordando al hombre que había muerto después de espiar a las mujeres en el baño. Al fin pensaron que entendían: esta mujer se había juntado con ese hombre.",
+    "part": "u",
+    "chapter": 5
+  },
+  {
+    "id": "xd012",
+    "s": "u1",
+    "zh": "这些邻居里有三个中学生，有一个名叫孙伟的中学生留着一头长发，另外两个就是刘成功和赵胜利，我们刘镇后来的两大才子，当时他们还不是刘作家和赵诗人，还只是名叫刘成功和赵胜利的两个中学生。",
+    "en": "Three schoolboys lived among the neighbors. One, Sun Wei, had long hair. The other two were Liu Chenggong and Zhao Shengli, later Liu Town's two celebrated men of letters. Back then they were only schoolboys.",
+    "fr": "Trois écoliers vivaient parmi les voisins. Un, Sun Wei, avait des cheveux longs. Les deux autres étaient Liu Chenggong et Zhao Shengli, plus tard les deux hommes célèbres de Liu Town. À l'époque, ce n'étaient que des écoliers.",
+    "es": "Tres escolares vivían entre los vecinos. Uno, Sun Wei, tenía pelo largo. Los otros dos eran Liu Chenggong y Zhao Shengli, más tarde los dos famosos hombres de letras de Liu Town. En ese entonces sólo eran escolares.",
+    "part": "u",
+    "chapter": 6
+  },
+  {
+    "id": "xd013",
+    "s": "u1",
+    "zh": "他们五花八门地说着他们的鸡长了什么模样，他们说很多人都看见了，看见他们的公鸡母鸡跟着李光头和宋钢走上了大街。",
+    "en": "They offered all kinds of descriptions of their missing chickens. Many people, they said, had seen the birds follow Li Guangtou and Song Gang through the streets.",
+    "fr": "Ils ont offert toutes sortes de descriptions de leurs poulets disparus. Beaucoup de gens, disaient-ils, avaient vu les oiseaux suivre Li Guangtou et Song Gang à travers les rues.",
+    "es": "Ofrecieron todo tipo de descripciones de sus pollos desaparecidos. Muchas personas, dijeron, habían visto a los pájaros seguir Li Guangtou y Song Gang por las calles.",
+    "part": "u",
+    "chapter": 6
+  },
+  {
+    "id": "xd014",
+    "s": "u1",
+    "zh": "他们声称公鸡母鸡们不是跳蚤虱子们，不会近在眼前都看不见，他们说去找一找，去搜一搜。",
+    "en": "They insisted that chickens were not fleas or lice: they could hardly be right in front of them and invisible. They said they would search the place.",
+    "fr": "Ils ont insisté sur le fait que les poulets n'étaient ni puces ni poux : ils pouvaient difficilement être juste devant eux et invisibles. Ils ont dit qu'ils fouilleraient l'endroit.",
+    "es": "Insistieron en que los pollos no eran pulgas o piojos: apenas podían estar delante de ellos e invisibles. Dijeron que buscarían el lugar.",
+    "p": "45",
+    "part": "u",
+    "chapter": 6
+  },
+  {
+    "id": "xd015",
+    "s": "u1",
+    "zh": "他让两个孩子非常害怕，他们惊魂未定地坐在外屋的床上，他们挂在床边的四条腿瑟瑟打抖。",
+    "en": "He frightened the two boys badly. They sat stunned on the outer-room bed, all four legs dangling over its edge trembling.",
+    "fr": "Il a fait très peur aux deux garçons. Ils s'assirent étourdis sur le lit extérieur, les quatre jambes se penchant sur son bord tremblant.",
+    "es": "Asustó mucho a los dos chicos. Se sentaron aturdidos en la cama exterior, las cuatro piernas colgando sobre su borde temblando.",
+    "p": "50",
+    "part": "u",
+    "chapter": 6
+  },
+  {
+    "id": "xd016",
+    "s": "u1",
+    "zh": "大街上的男男女女看着他们嘻嘻哈哈地笑，他们知道这一对夫妻都是二婚，知道这两个儿子都是拖油瓶，知道这个新郎在新婚的那一天和六个人打架打得手忙脚乱。",
+    "en": "Men and women in the street laughed at them. Everyone knew the couple had married before, that each had brought a son, and that the groom had fought six men on his wedding day.",
+    "fr": "Des hommes et des femmes dans la rue se sont moqués d'eux. Tout le monde savait que le couple s'était déjà marié, que chacun avait amené un fils, et que le marié avait combattu six hommes le jour de son mariage.",
+    "es": "Hombres y mujeres en la calle se reían de ellos. Todos sabían que la pareja se había casado antes, que cada uno había traído un hijo, y que el novio había luchado seis hombres en su día de boda.",
+    "part": "u",
+    "chapter": 7
+  },
+  {
+    "id": "xd017",
+    "s": "u1",
+    "zh": "李兰知道他们脸上的怪笑是什么意思，知道他们指指点点时都说了些什么话，所以李兰低下了头。",
+    "en": "Li Lan knew what their odd smiles and pointing fingers meant, so she lowered her head.",
+    "fr": "Li Lan savait ce que signifient leurs sourires étranges et leurs doigts pointés, alors elle a baissé la tête.",
+    "es": "Li Lan sabía lo que sus extrañas sonrisas y sus dedos apuntando, así que ella bajó su cabeza.",
+    "p": "55",
+    "part": "u",
+    "chapter": 7
+  },
+  {
+    "id": "xd018",
+    "s": "u1",
+    "zh": "那时候宋凡平脸上挂着微笑，他不知道这是最后一眼看到自己的妻子，李兰留给他的最后印象就是抬起手擦着眼泪的侧影，李光头和宋钢当时的印象是长途客车远去时卷起了滚滚尘土。",
+    "en": "Song Fanping smiled, unaware that this was the last time he would see his wife. His final image of Li Lan was her profile as she wiped away tears; the boys remembered the dust billowing behind the departing bus.",
+    "fr": "Song Fanping sourit, ignorant que c'était la dernière fois qu'il voyait sa femme. Sa dernière image de Li Lan était son profil alors qu'elle essuyait des larmes; les garçons se souvenaient de la poussière qui se répandait derrière le bus qui partait.",
+    "es": "Song Fanping sonrió, sin darse cuenta de que esta fue la última vez que vería a su esposa. Su imagen final de Li Lan era su perfil mientras limpiaba lágrimas; los chicos recordaban el polvo que se hundía detrás del autobús que salía.",
+    "part": "u",
+    "chapter": 8
+  },
+  {
+    "id": "xd019",
+    "s": "u2",
+    "zh": "越来越多的人走到大街上大狗小狗似的喊叫和唱歌，他们喊着革命的口号，唱着革命的歌曲；越来越多的大字报让墙壁越来越厚，风吹过去时墙壁发出了树叶的响声。",
+    "en": "More and more people filled the streets, shouting slogans and singing revolutionary songs. Posters thickened the walls until the wind made them rustle like leaves.",
+    "fr": "De plus en plus de gens remplissent les rues, criant des slogans et chantant des chansons révolutionnaires. Les affiches épaissirent les murs jusqu'à ce que le vent les fasse rougir comme des feuilles.",
+    "es": "Cada vez más personas llenaron las calles, gritando consignas y cantando canciones revolucionarias. Los carteles engrosaron las paredes hasta que el viento las hizo frotar como hojas.",
+    "part": "u",
+    "chapter": 9
+  },
+  {
+    "id": "xd020",
+    "s": "u2",
+    "zh": "这是宋凡平最辉煌的一天，游行结束以后人们各自回家，宋凡平拉着李光头和宋钢的手仍然走在大街上，很多人在街上叫着宋凡平的名字，宋凡平嘴里嗯嗯地回答他们，有些人还走上来和宋凡平握一下手。",
+    "en": "It was Song Fanping's most glorious day. After the march, he walked through town holding both boys' hands while people called his name and came over to shake his hand.",
+    "fr": "C'était le jour le plus glorieux de Song Fanping. Après la marche, il a traversé la ville en tenant la main des deux garçons tandis que les gens appelaient son nom et sont venus lui serrer la main.",
+    "es": "Fue el día más glorioso de Song Fanping. Después de la marcha, caminaba por la ciudad sosteniendo las manos de los dos chicos mientras la gente llamaba su nombre y venía a estrechar la mano.",
+    "part": "u",
+    "chapter": 9
+  },
+  {
+    "id": "xd021",
+    "s": "u2",
+    "zh": "他的回答让那些人的头像是啄木鸟一样点个没完没了，让那些人的嘴巴像是牙疼似的哎呀哎哟赞叹不已。",
+    "en": "His answer made their heads bob like woodpeckers and their mouths exclaim in endless astonishment.",
+    "fr": "Sa réponse a fait leurs têtes bob comme des pics et leurs bouches s'exclament dans l'étonnement sans fin.",
+    "es": "Su respuesta hizo que sus cabezas bob como leñadores y sus bocas exclamen en una eterna asombro.",
+    "part": "u",
+    "chapter": 9
+  },
+  {
+    "id": "xd022",
+    "s": "u2",
+    "zh": "李光头和宋钢激动得尖声喊叫，宋凡平吓得伸手捂住了他们的嘴，他惊恐的脸色把他们也吓住了。",
+    "en": "Li Guangtou and Song Gang cried out in excitement. Song Fanping clapped his hands over their mouths; the fear on his face frightened them too.",
+    "fr": "Li Guangtou et Song Gang ont crié dans l'excitation. Song Fanping a frappé ses mains sur leurs bouches; la peur sur son visage les a aussi effrayés.",
+    "es": "Li Guangtou y Song Gang gritaron con emoción. Song Fanping aplazó sus manos sobre sus bocas; el miedo en su rostro los asustó también.",
+    "part": "u",
+    "chapter": 9
+  },
+  {
+    "id": "xd023",
+    "s": "u2",
+    "zh": "当走过去的人不小心撞了他一下，当吐痰的人不小心吐到了他的脚上，他们才会认真看他一眼。",
+    "en": "Only when someone bumped into him or spat on his foot did they look at him properly.",
+    "fr": "C'est seulement quand quelqu'un l'a frappé ou a craché sur son pied qu'il l'a regardé correctement.",
+    "es": "Sólo cuando alguien se golpeó con él o escupió en su pie lo miraron correctamente.",
+    "part": "u",
+    "chapter": 12
+  },
+  {
+    "id": "xd024",
+    "s": "u2",
+    "zh": "两个孩子把酱油倒进热气蒸腾的米饭里，搅拌均匀以后，米饭们像是涂上了油彩一样又黑又红又亮，酱油的香味在米饭的热气里扩散开来，飘满了整个屋子。",
+    "en": "The boys poured soy sauce into the steaming rice and stirred it until it shone dark red and black. Its fragrance rose with the steam and filled the room.",
+    "fr": "Les garçons versèrent de la sauce de soja dans le riz à la vapeur et le remuant jusqu'à ce qu'il brille rouge foncé et noir. Son parfum s'est levé avec la vapeur et a rempli la pièce.",
+    "es": "Los chicos vierten salsa de soja en el arroz de vapor y lo revolvieron hasta que brillaba rojo oscuro y negro. Su fragancia se alza con el vapor y llena la habitación.",
+    "part": "u",
+    "chapter": 13
+  },
+  {
+    "id": "xd025",
+    "s": "u2",
+    "zh": "刚说完宋钢的脸上就流满了眼泪，他放下碗，低头抽泣起来，一边抽泣一边还将嘴里的米饭咽了下去。",
+    "en": "As soon as he finished speaking, tears streamed down Song Gang's face. He set down his bowl and sobbed, still swallowing the rice in his mouth.",
+    "fr": "Dès qu'il a fini de parler, les larmes ont coulé sur le visage de Song Gang. Il a posé son bol et a sangloté, en avalant toujours le riz dans sa bouche.",
+    "es": "Tan pronto como terminó de hablar, las lágrimas bajaron la cara de Song Gang. Él puso su tazón y se abucheó, todavía tragando el arroz en su boca.",
+    "part": "u",
+    "chapter": 13
+  },
+  {
+    "id": "xd026",
+    "s": "u2",
+    "zh": "太阳开始升起的时候，一夜没睡的宋凡平打了几个哈欠，他让两个孩子上床去睡觉，李光头和宋钢摇摇头仍然坐在门槛上，于是他就抬脚从他们中间跨了出去，他要去坐早班汽车，去上海迎接他的妻子。",
+    "en": "At sunrise, Song Fanping, awake all night, told the boys to go to bed. They shook their heads and stayed on the doorstep. He stepped over them to catch the first bus to Shanghai and bring his wife home.",
+    "fr": "Au lever du soleil, Song Fanping, éveillé toute la nuit, a dit aux garçons d'aller se coucher. Ils secouèrent la tête et restèrent à la porte. Il a marché sur eux pour prendre le premier bus pour Shanghai et ramener sa femme à la maison.",
+    "es": "Al amanecer, Song Fanping, despierto toda la noche, les dijo a los chicos que se fueran a la cama. Ellos sacudieron sus cabezas y se quedaron en la puerta. Los pisó para coger el primer autobús a Shanghai y traer a su esposa a casa.",
+    "part": "u",
+    "chapter": 15
+  },
+  {
+    "id": "xd027",
+    "s": "u2",
+    "zh": "几根木棍迎面打来，宋凡平本能地举起右胳膊阻挡打来的木棍，木棍砸在了他的右胳膊上，让他觉得手臂的骨头仿佛断了似的疼痛，他仍然挥舞着右胳膊阻挡打来的木棍，宋凡平走进了候车室，走向了售票的窗口。",
+    "en": "Several sticks swung at Song Fanping. He raised his right arm to block them; the blows felt as if they had broken the bone. Still fending them off, he made his way into the waiting room and toward the ticket window.",
+    "fr": "Plusieurs bâtons balayés à Song Fanping. Il leva le bras droit pour les bloquer; les coups se sentaient comme s'ils avaient brisé l'os. Toujours en train de les éloigner, il a fait son chemin dans la salle d'attente et vers la fenêtre du billet.",
+    "es": "Varios palos cayeron en Song Fanping. Él levantó su brazo derecho para bloquearlos; los golpes se sentían como si hubieran roto el hueso. Sigo fingiéndolos, entró en la sala de espera y hacia la ventana del ticket.",
+    "part": "u",
+    "chapter": 16
+  },
+  {
+    "id": "xd028",
+    "s": "u2",
+    "zh": "这些人站在候车室的门外偷偷往里面张望，没有一个人敢走进去，直到去上海的长途汽车开始检票了，这些人才小心翼翼地走了进来，胆战心惊地看着围坐在吊扇下休息的六个红袖章。",
+    "en": "People peered into the waiting room from outside, afraid to enter. Only when boarding began did they creep in, watching the six men with red armbands under the ceiling fan with dread.",
+    "fr": "Les gens ont regardé dans la salle d'attente de l'extérieur, peur d'entrer. Ce n'est qu'au début de l'embarquement qu'ils se sont introduits, regardant les six hommes avec des brassards rouges sous le ventilateur du plafond avec peur.",
+    "es": "La gente miraba a la sala de espera desde afuera, temía entrar. Sólo cuando comenzó el internado se arrastraron, viendo a los seis hombres con bandas rojas bajo el ventilador del techo con temor.",
+    "part": "u",
+    "chapter": 16
+  },
+  {
+    "id": "xd029",
+    "s": "u2",
+    "zh": "从不屈服的宋凡平这时候太想活下去了，他用尽了力气跪了起来，他吐着满嘴的鲜血，右手捧着呼呼流血的腹部，流着眼泪求他们别再打他了，他的眼泪里都是鲜血。",
+    "en": "Song Fanping, who had never yielded, desperately wanted to live. He struggled to his knees, blood spilling from his mouth, clutched his bleeding stomach, and wept as he begged them to stop. Even his tears were bloody.",
+    "fr": "Song Fanping, qui n'avait jamais cédé, voulait désespérément vivre. Il se hissa à genoux, le sang à la bouche, serra son ventre ensanglanté et les supplia en pleurant d'arrêter. Même ses larmes étaient mêlées de sang.",
+    "es": "Song Fanping, que nunca había cedido, desesperadamente quería vivir. Luchó hasta sus rodillas, derramando sangre de su boca, agarró su estómago sangrado, y lloró mientras les rogó que pararan. Incluso sus lágrimas estaban sangrientas.",
+    "part": "u",
+    "chapter": 16
+  },
+  {
+    "id": "xd030",
+    "s": "u2",
+    "zh": "这六个红袖章像是干了一天力气活的码头工人那样疲惫不堪，他们走进苏妈的点心店坐下来时，累得谁都不想说话了。",
+    "en": "The six men with red armbands were as exhausted as dockworkers after a day's labor. When they sat down in Su Ma's snack shop, none had the energy to speak.",
+    "fr": "Les six hommes avec des brassards rouges étaient aussi épuisés que les dockers après une journée de travail. Lorsqu'ils se sont assis dans le snack de Su Ma, aucun n'a eu l'énergie de parler.",
+    "es": "Los seis hombres con brazaletes rojos estaban tan agotados como obreros después de un día de trabajo. Cuando se sentaron en la cafetería de Su Ma, nadie tenía la energía para hablar.",
+    "part": "u",
+    "chapter": 16
+  },
+  {
+    "id": "xd031",
+    "s": "u2",
+    "zh": "他们睡醒的时候已经是中午了，他们兴高采烈，虽然宋凡平说要到太阳落山的时候才会到家，可是两个孩子等不及了，他们中午就走向了车站，他们要在那里等待宋凡平和李兰乘坐的汽车驶进车站。",
+    "en": "The boys woke at noon in high spirits. Song Fanping had said he would be home at sunset, but they could not wait: they went to the station at midday to meet him and Li Lan.",
+    "fr": "Les garçons se réveillèrent à midi en haute humeur. Song Fanping avait dit qu'il serait chez lui au coucher du soleil, mais ils ne pouvaient pas attendre: ils sont allés à la gare à midi pour le rencontrer et Li Lan.",
+    "es": "Los chicos se despertaron al mediodía con espíritus altos. Song Fanping había dicho que estaría en casa al atardecer, pero no podían esperar: fueron a la estación al mediodía para reunirse con él y Li Lan.",
+    "part": "u",
+    "chapter": 17
+  },
+  {
+    "id": "xd032",
+    "s": "u2",
+    "zh": "苏妈看到两个哭泣的孩子站在门口，打量着李光头和宋钢身上的衣服说：“你们不是来要饭的吧？”",
+    "en": "Seeing the two boys crying at her door, Su Ma inspected their clothes and asked, 'You aren't here to beg, are you?'",
+    "fr": "Voyant les deux garçons qui pleuraient à sa porte, Su Ma a inspecté leurs vêtements et a demandé : « Vous n'êtes pas là pour supplier, n'est-ce pas ? »",
+    "es": "Al ver a los dos chicos llorando a su puerta, Su Ma inspeccionó su ropa y preguntó: 'No estás aquí para rogar, ¿verdad?'",
+    "part": "u",
+    "chapter": 17
+  },
+  {
+    "id": "xd033",
+    "s": "u2",
+    "zh": "“你们看看，你们看看，我的裤子，我的凉鞋，我的丝袜……他妈的这叫什么事？”",
+    "en": "'Look at this! My trousers, my sandals, my stockings... What the hell is this supposed to be?'",
+    "fr": "Regardez ça ! Mon pantalon, mes sandales, mes bas... Qu'est-ce que c'est censé être ?",
+    "es": "¡Mira esto! Mis pantalones, mis sandalias, mis medias... ¿Qué demonios se supone que es esto?",
+    "part": "u",
+    "chapter": 17
+  },
+  {
+    "id": "xd034",
+    "s": "u2",
+    "zh": "李光头和宋钢看着那些在窗口和门前晃动的脑袋和身体，听着他们嗡嗡地说话，他们说着宋凡平是一个什么人，又说着宋凡平是怎样死去的；当有人说这两个孩子真可怜时，宋钢哇哇地哭了两声，李光头也跟着哇哇地哭了两声，然后继续害怕地看着他们。",
+    "en": "Li Guangtou and Song Gang watched the heads shifting at the doors and windows and listened to the murmur: what kind of man Song Fanping had been, how he had died. Whenever someone said the children were pitiful, they cried a little, then went on staring fearfully at the crowd.",
+    "fr": "Li Guangtou et Song Gang ont regardé les têtes se déplacer aux portes et aux fenêtres et ont écouté le murmure: quel genre d'homme Song Fanping avait été, comment il était mort. Chaque fois que quelqu'un disait que les enfants étaient pitoyables, ils criaient un peu, puis ils regardaient la foule avec crainte.",
+    "es": "Li Guangtou y Song Gang vieron las cabezas cambiando a las puertas y ventanas y escucharon el murmullo: qué clase de hombre había sido Song Fanping, cómo había muerto. Cada vez que alguien dijo que los niños eran piadosos, gritaban un poco, luego siguieron mirando con miedo a la multitud.",
+    "part": "u",
+    "chapter": 17
+  },
+  {
+    "id": "xd035",
+    "s": "u3",
+    "zh": "李兰凌晨的时候就已经站在了医院的大门口，虽然宋凡平在信里说自己中午才能到上海，可是两个多月的分别让李兰的思念像浪涛一样汹涌澎湃，天没亮她就醒来了，坐在病床上等待着晨光的到来。",
+    "en": "Li Lan stood outside the hospital before dawn. Although Song Fanping's letter said he would arrive at noon, more than two months apart had made her longing surge like waves. She had woken before daylight to wait for morning.",
+    "fr": "Li Lan se tenait devant l'hôpital avant l'aube. Bien que la lettre de Song Fanping ait dit qu'il arriverait à midi, plus de deux mois d'intervalle avaient fait sa vague de désir comme des vagues. Elle s'était réveillée avant le jour pour attendre le matin.",
+    "es": "Li Lan estaba fuera del hospital antes del amanecer. Aunque la carta de Song Fanping decía que llegaría al mediodía, más de dos meses de distancia la había hecho oleada de anhelo. Se había despertado antes de la luz del día para esperar por la mañana.",
+    "part": "u",
+    "chapter": 18
+  },
+  {
+    "id": "xd036",
+    "s": "u3",
+    "zh": "那个医院的门房已经认出李兰了，他一个上午都在奇怪地看着这个天亮前把他吓得尿了裤子的女人，他看到她激动地看着游行队伍里的每一个人，应该说是每一个走过的人。",
+    "en": "The hospital doorman recognized Li Lan. All morning he watched the woman who had frightened him before dawn, seeing her peer eagerly at every person passing in the procession.",
+    "fr": "Le portier de l'hôpital a reconnu Li Lan. Tout le matin, il regarda la femme qui l'avait effrayé avant l'aube, voyant son pair avidement à chaque personne passant dans la procession.",
+    "es": "El portero del hospital reconoció a Li Lan. Toda la mañana vio a la mujer que lo había asustado antes del amanecer, viendo a su par con entusiasmo a cada persona que pasaba en la procesión.",
+    "part": "u",
+    "chapter": 18
+  },
+  {
+    "id": "xd037",
+    "s": "u3",
+    "zh": "随着时间的流逝，李兰越来越疲惫，饥渴让她没有力气继续站着了，她在传达室的台阶上坐了下来，身体靠在门框上，她的头颅仍然挺立，眼睛仍然在张望。",
+    "en": "As time passed, Li Lan grew weak with hunger and thirst. She sat on the steps by the gatehouse, leaning against the doorframe, but kept her head raised and her eyes searching.",
+    "fr": "Avec le temps, Li Lan est devenu faible avec la faim et la soif. Elle s'assit sur les marches près de la porte, se penchant contre le cadre de la porte, mais garda la tête levée et les yeux à la recherche.",
+    "es": "A medida que pasaba el tiempo, Li Lan se debilitaba con hambre y sed. Ella se sentó en los escalones junto a la puerta, inclinándose contra la puerta, pero mantuvo su cabeza levantada y sus ojos buscando.",
+    "part": "u",
+    "chapter": 18
+  },
+  {
+    "id": "xd038",
+    "s": "u3",
+    "zh": "坐在里屋床上的李光头和宋钢听到李兰声音震动地说：“盖吧。”",
+    "en": "Sitting on the bed in the inner room, Li Guangtou and Song Gang heard Li Lan say in a trembling voice, 'Put the lid on.'",
+    "fr": "Assis sur le lit dans la chambre intérieure, Li Guangtou et Song Gang ont entendu Li Lan dire d'une voix tremblante, 'Met le couvercle sur.'",
+    "es": "Sentado en la cama en la habitación interior, Li Guangtou y Song Gang escucharon Li Lan decir en una voz temblante, 'Pon la tapa encendido.'",
+    "part": "u",
+    "chapter": 19
+  },
+  {
+    "id": "xd039",
+    "s": "u3",
+    "zh": "李兰向前走去，她捧着照片的手抖个不停，她努力压制着自己，不让自己的手从纸袋里抽出他们的全家福。",
+    "en": "Li Lan walked on, her hands shaking around the photograph. She fought the urge to pull the family portrait out of its paper bag.",
+    "fr": "Li Lan marcha, les mains tremblant autour de la photo. Elle s'est battue pour retirer le portrait de famille de son sac en papier.",
+    "es": "Li Lan siguió adelante, sus manos temblando alrededor de la fotografía. Luchó por el impulso de sacar el retrato familiar de su bolsa de papel.",
+    "part": "u",
+    "chapter": 20
+  },
+  {
+    "id": "xd040",
+    "s": "u3",
+    "zh": "李光头和宋钢拉着李兰向前走去时，一会把头伸到李兰的前面，一会又把头转到李兰的身后，他们不断地去看看对方，不断地向对方笑一笑。",
+    "en": "As they walked beside Li Lan, the boys kept darting their heads in front of and behind her, looking across at each other and smiling.",
+    "fr": "Alors qu'ils marchaient à côté de Li Lan, les garçons continuaient de s'éparpiller la tête devant et derrière elle, regardant les uns les autres et souriant.",
+    "es": "Mientras caminaban junto a Li Lan, los chicos seguían atando sus cabezas delante y detrás de ella, mirando el uno al otro y sonriendo.",
+    "part": "u",
+    "chapter": 20
+  },
+  {
+    "id": "xd041",
+    "s": "u3",
+    "zh": "他穿着满是补丁的裤子和汗衫站在门外，不说一句话，老泪纵横地看着屋里的棺材。",
+    "en": "In patched trousers and a worn undershirt, he stood outside the door without a word, tears streaming down his old face as he looked at the coffin.",
+    "fr": "Dans un pantalon patché et un sous-vêtement usé, il se tenait devant la porte sans un mot, larmes coulant sur son vieux visage en regardant le cercueil.",
+    "es": "En pantalón parcheado y una camisa desgastada, estaba fuera de la puerta sin una palabra, las lágrimas fluyendo por su vieja cara mientras miraba el ataúd.",
+    "part": "u",
+    "chapter": 21
+  },
+  {
+    "id": "xd042",
+    "s": "u3",
+    "zh": "他说完转回身来，挥手给了李兰一巴掌，李兰的头甩了一下，她的嘴角流出了鲜血，可她骄傲地笑了，继续昂首看着他。",
+    "en": "He turned and slapped Li Lan. Her head jerked, blood ran from the corner of her mouth, yet she smiled proudly and kept her head high.",
+    "fr": "Il s'est retourné et a giflé Li Lan. Sa tête branlée, le sang courut du coin de sa bouche, mais elle sourit fièrement et garda la tête haute.",
+    "es": "Se volvió y golpeó a Li Lan. Su cabeza se tiró, la sangre corría desde la esquina de su boca, pero sonrió orgullosamente y mantuvo su cabeza alta.",
+    "part": "u",
+    "chapter": 21
+  },
+  {
+    "id": "xd043",
+    "s": "u3",
+    "zh": "两个孩子用手捂住了嘴巴，他们止住了哭声，可是止不住眼泪。",
+    "en": "The two boys covered their mouths. They stopped crying aloud, but could not stop their tears.",
+    "fr": "Les deux garçons se couvraient la bouche. Ils arrêtèrent de pleurer à haute voix, mais ne purent arrêter leurs larmes.",
+    "es": "Los dos chicos cubrieron sus bocas. Dejaron de llorar en voz alta, pero no pudieron detener sus lágrimas.",
+    "part": "u",
+    "chapter": 21
+  },
+  {
+    "id": "xd044",
+    "s": "u3",
+    "zh": "宋钢的爷爷拉着宋钢的手，他也不知道自己为什么留下来了？",
+    "en": "Song Gang's grandfather held his hand. He did not know why he had stayed.",
+    "fr": "Le grand-père de Song Gang tenait sa main. Il ne savait pas pourquoi il était resté.",
+    "es": "El abuelo de Song Gang tenía la mano. No sabía por qué se había quedado.",
+    "p": "164",
+    "part": "u",
+    "chapter": 21
+  },
+  {
+    "id": "xd045",
+    "s": "u3",
+    "zh": "孙伟喜欢自己的长头发，他每天起码两次走下街边的台阶，蹲在河边弄一些水上来，把额前的头发弄得服服帖帖，然后对着河水里模糊的影子甩一甩他的长头发，吹两声得意洋洋的口哨。",
+    "en": "Sun Wei loved his long hair. At least twice a day he crouched by the river, used the water to smooth his fringe, then tossed his hair at his blurred reflection and whistled with delight.",
+    "fr": "Sun Wei aimait ses longs cheveux. Au moins deux fois par jour, il s'accroupit au bord de la rivière, se servit de l'eau pour lisser sa frange, puis jeta ses cheveux à son reflet flou et siffla avec joie.",
+    "es": "Sun Wei amaba su cabello largo. Al menos dos veces al día se agachó por el río, usó el agua para suavizar su franja, luego tiró su cabello a su reflejo borroso y azotado con deleite.",
+    "p": "169",
+    "part": "u",
+    "chapter": 22
+  },
+  {
+    "id": "xd046",
+    "s": "u3",
+    "zh": "当她走出南门的时候，她的裤子没有了，她当时正是月经来潮，走过木桥时鲜血顺着双腿流了下来，让赵胜利和刘成功看得目瞪口呆。",
+    "en": "By the time she reached the south gate, her trousers were gone. She was menstruating; blood ran down her legs as she crossed the wooden bridge, leaving Zhao Shengli and Liu Chenggong speechless.",
+    "fr": "Quand elle a atteint la porte sud, son pantalon a disparu. Elle était menstruatrice; le sang coulait sur ses jambes en traversant le pont en bois, laissant Zhao Shengli et Liu Chenggong sans voix.",
+    "es": "Para cuando llegó a la puerta sur, sus pantalones se habían ido. Estaba menstruando; la sangre corría por las piernas mientras cruzaba el puente de madera, dejando Zhao Shengli y Liu Chenggong sin palabras.",
+    "part": "u",
+    "chapter": 22
+  },
+  {
+    "id": "xd047",
+    "s": "u3",
+    "zh": "这个男人浑身上下都破烂了，站着的时候疼痛，坐着的时候疼痛，躺着的时候疼痛，动的时候疼痛，不动的时候也疼痛。",
+    "en": "The man's body was battered from head to toe. Standing hurt, sitting hurt, lying down hurt; moving hurt, and so did keeping still.",
+    "fr": "Le corps de l'homme a été battu de la tête aux pieds. Être debout blessé, assis blessé, couché blessé, se déplacer blessé, et rester immobile.",
+    "es": "El cuerpo del hombre fue golpeado de pies a cabeza. Permanecer herido, estar herido, acostarse herido; moverse herido, y así se mantuvo quieto.",
+    "part": "u",
+    "chapter": 22
+  },
+  {
+    "id": "xd048",
+    "s": "u3",
+    "zh": "宋钢脚步轻轻地走出了小巷，走上了大街，他在大街上东张西望地走着，他看着熟悉的房屋、熟悉的梧桐树；看到有些人在打架，有些人在哭，有些人在笑；这里面有一些他熟悉的人，他对着他们微笑，他们却没有答理他。",
+    "en": "Song Gang walked quietly out of the alley and into the street. He looked at the familiar houses and plane trees, at people fighting, crying, laughing. He smiled at some he knew, but they ignored him.",
+    "fr": "Song Gang est sorti tranquillement de l'allée et est entré dans la rue. Il regarda les maisons et les platanes familiers, les gens qui se battaient, pleuraient, riaient. Il sourit à certains qu'il connaissait, mais ils l'ignoraient.",
+    "es": "Song Gang salió tranquilamente del callejón y a la calle. Miró las casas familiares y los árboles de avión, a la gente luchando, llorando, riendo. Sonrió a algunos que conocía, pero lo ignoraron.",
+    "p": "183",
+    "part": "u",
+    "chapter": 23
+  },
+  {
+    "id": "xd049",
+    "s": "u3",
+    "zh": "李兰的嘴角始终挂着骄傲的微笑，虽然和宋凡平只有短短的一年零两个月的夫妻生活，可是在李兰的内心深处比一生还要漫长。",
+    "en": "Li Lan always wore a proud smile. Her marriage to Song Fanping had lasted only a year and two months, yet deep in her heart it felt longer than a lifetime.",
+    "fr": "Li Lan portait toujours un sourire fier. Son mariage avec Song Fanping n'avait duré qu'un an et deux mois, mais au fond de son cœur, il s'est senti plus long qu'une vie.",
+    "es": "Li Lan siempre llevaba una sonrisa orgullosa. Su matrimonio con Song Fanping había durado sólo un año y dos meses, pero profundamente en su corazón se sentía más tiempo que una vida.",
+    "part": "u",
+    "chapter": 24
+  },
+  {
+    "id": "xd050",
+    "s": "u3",
+    "zh": "这两位文豪曾经几次深更半夜时去一间屋子偷书，这些书籍都是文革中搜罗来的，又被查封了起来，李光头几次都在外面替他们望风，描绘林红屁股的很多美妙词语都是从这些偷来的书中发现的。",
+    "en": "The two self-styled writers had stolen books confiscated during the Cultural Revolution. Li Guangtou had kept watch for them, and they had found many of the fine words used to describe Lin Hong in those books.",
+    "fr": "Les deux scénaristes ont volé des livres confisqués pendant la Révolution culturelle. Li Guangtou avait veillé sur eux, et ils avaient trouvé beaucoup des beaux mots utilisés pour décrire Lin Hong dans ces livres.",
+    "es": "Los dos escritores de estilo propio habían robado libros confiscados durante la Revolución Cultural. Li Guangtou les había vigilado, y habían encontrado muchas de las buenas palabras usadas para describir Lin Hong en esos libros.",
+    "part": "u",
+    "chapter": 24
+  },
+  {
+    "id": "xd051",
+    "s": "u3",
+    "zh": "李光头的种种劣迹点点滴滴地传到了李兰的耳中，让李兰的头垂得越来越低，她曾经承受了第一个丈夫的丑闻，现在又要来承受儿子的丑闻。",
+    "en": "Word of Li Guangtou's misdeeds reached Li Lan little by little, and she bowed her head lower and lower. She had already borne the scandal of her first husband; now she had to bear her son's.",
+    "fr": "Le mot des méfaits de Li Guangtou atteint peu à peu Li Lan, et elle fléchit la tête en bas. Elle avait déjà porté le scandale de son premier mari ; maintenant elle devait porter celui de son fils.",
+    "es": "La palabra de los malhechores de Li Guangtou llegó poco a poco a Li Lan, y se inclinó la cabeza abajo y abajo. Ya había soportado el escándalo de su primer marido; ahora tenía que soportar el de su hijo.",
+    "part": "u",
+    "chapter": 24
+  },
+  {
+    "id": "xd052",
+    "s": "u3",
+    "zh": "从家里走到澡堂也就是一里路，李兰走了有一个多小时，每次她靠着树休息时，李光头都是耐心地站在一边，一脸成熟地讲述着很多发生在刘镇的事，这些事都是李兰从来没有听说过的。",
+    "en": "The bathhouse was only half a kilometer from home, but Li Lan took more than an hour to get there. Each time she rested against a tree, Li Guangtou waited patiently and talked of things that had happened in Liu Town, things she had never heard of.",
+    "fr": "Le bain n'était qu'à un demi-kilomètre de la maison, mais Li Lan a pris plus d'une heure pour y arriver. Chaque fois qu'elle se reposait contre un arbre, Li Guangtou attendait patiemment et parlait de ce qui s'était passé à Liu Town, ce dont elle n'avait jamais entendu parler.",
+    "es": "El baño estaba a sólo medio kilómetro de casa, pero Li Lan tomó más de una hora para llegar allí. Cada vez que descansaba contra un árbol, Li Guangtou esperó pacientemente y habló de cosas que habían pasado en Liu Town, cosas de las que nunca había oído hablar.",
+    "part": "u",
+    "chapter": 24
+  },
+  {
+    "id": "xd053",
+    "s": "l1",
+    "zh": "宋钢是一百个不愿意，李光头大发雷霆之后，宋钢只好硬着头皮来了。",
+    "en": "Song Gang did not want to come at all, but after Li Guangtou flew into a rage he had to steel himself and show up.",
+    "fr": "Song Gang ne voulait pas venir du tout, mais après Li Guangtou a volé dans une rage il a dû s'acier lui-même et se montrer.",
+    "es": "Song Gang no quería venir en absoluto, pero después de que Li Guangtou volara en una rabia que tenía que acero y aparecer.",
+    "part": "l",
+    "chapter": 6
+  },
+  {
+    "id": "xd054",
+    "s": "l1",
+    "zh": "宋钢听明白了前半句话，没明白后半句话，林红转过身来时，宋钢已经走出去了。",
+    "en": "Song Gang understood the first half of what she said, but not the second. By the time Lin Hong turned around, he had left.",
+    "fr": "Song Gang a compris la première moitié de ce qu'elle a dit, mais pas la seconde. Quand Lin Hong s'est retourné, il était parti.",
+    "es": "Song Gang entendió la primera mitad de lo que dijo, pero no la segunda. Para cuando Lin Hong se dio la vuelta, se había ido.",
+    "part": "l",
+    "chapter": 6
+  },
+  {
+    "id": "xd055",
+    "s": "l1",
+    "zh": "宋钢太想去和林红见面了，他几次走到了门口，打开屋门后他又想到了李光头，他的双腿就跨不出去了，他迷惘地看了看屋外的蒙蒙细雨，又把屋门关上。",
+    "en": "Song Gang longed to see Lin Hong. Several times he reached the door and opened it, only to remember Li Guangtou. His legs would not carry him out. He gazed at the fine rain outside and closed the door again.",
+    "fr": "Song Gang a voulu voir Lin Hong. Plusieurs fois, il a atteint la porte et l'a ouverte, seulement pour se rappeler Li Guangtou. Ses jambes ne l'emporteraient pas. Il regarda la belle pluie dehors et referma la porte.",
+    "es": "Song Gang anhelaba ver Lin Hong. Varias veces llegó a la puerta y la abrió, sólo para recordar Li Guangtou. Sus piernas no lo llevarían a cabo. Miró a la fina lluvia afuera y cerró la puerta de nuevo.",
+    "part": "l",
+    "chapter": 7
+  },
+  {
+    "id": "xd056",
+    "s": "l1",
+    "zh": "他把林红的手帕举到黑暗的眼前，告别似的看了一眼，坚定地放进了口袋，然后他长长地出了一口气，他觉得自己轻松了很多。",
+    "en": "He held Lin Hong's handkerchief up before his eyes in the dark, looked at it as if saying farewell, and put it firmly in his pocket. Then he let out a long breath and felt much lighter.",
+    "fr": "Il tenait le mouchoir de Lin Hong devant ses yeux dans l'obscurité, le regardait comme s'il disait adieu, et le mettait fermement dans sa poche. Puis il a laissé un long souffle et s'est senti beaucoup plus léger.",
+    "es": "Sostuvo el pañuelo de Lin Hong ante sus ojos en la oscuridad, lo miró como si dijera adiós, y lo puso firmemente en su bolsillo. Luego dejó salir un largo aliento y sintió mucho más ligero.",
+    "part": "l",
+    "chapter": 7
+  },
+  {
+    "id": "xd057",
+    "s": "l1",
+    "zh": "看到宋钢低垂着头一言不发，李光头摆摆手说：“行啦，你该走啦。”",
+    "en": "Seeing Song Gang standing silent with his head down, Li Guangtou waved him away: 'All right, you should go.'",
+    "fr": "Voyant Song Gang se tenir silencieux avec la tête baissée, Li Guangtou l'a agité: 'D'accord, vous devriez y aller.'",
+    "es": "Al ver a Song Gang en silencio con su cabeza hacia abajo, Li Guangtou le saludó: 'Muy bien, deberías irte'.",
+    "p": "297",
+    "part": "l",
+    "chapter": 7
+  },
+  {
+    "id": "xd058",
+    "s": "l1",
+    "zh": "在幸福里晕头转向的宋钢买了一辆亮闪闪的永久牌自行车，这差不多花去了他全部的积蓄。",
+    "en": "Dizzy with happiness, Song Gang bought a gleaming Forever-brand bicycle. It cost nearly all his savings.",
+    "fr": "Étourdi de bonheur, Song Gang a acheté un vélo de marque Forever. Ça a coûté presque toutes ses économies.",
+    "es": "Mareado con felicidad, Song Gang compró una bicicleta de marca Forever. Costó casi todos sus ahorros.",
+    "part": "l",
+    "chapter": 10
+  },
+  {
+    "id": "xd059",
+    "s": "l1",
+    "zh": "林红的叔叔万般无奈，咬咬牙将本来应该给县人武部部长的永久牌自行车，给了林红那个亲爱的宋钢。",
+    "en": "Lin Hong's uncle finally gave Song Gang the Forever-brand bicycle that had been intended for the county militia chief.",
+    "fr": "L'oncle de Lin Hong a finalement donné à Song Gang le vélo de marque Forever destiné au chef de milice du comté.",
+    "es": "El tío de Lin Hong finalmente dio a Song Gang la bicicleta Forever-brand que había sido destinada para el jefe de la milicia del condado.",
+    "part": "l",
+    "chapter": 10
+  },
+  {
+    "id": "xd060",
+    "s": "l1",
+    "zh": "宋钢骑着亮闪闪的永久牌，带着美丽的林红，遇到谁都要打上一阵子铃声，就是见了李光头他不打铃了。",
+    "en": "Song Gang rode his shiny Forever bicycle with beautiful Lin Hong behind him and rang its bell at everyone he met. Only when he saw Li Guangtou did he leave it silent.",
+    "fr": "Song Gang a monté son vélo Forever brillant avec la belle Lin Hong derrière lui et a sonné sa cloche à tout le monde qu'il a rencontré. C'est seulement quand il a vu Li Guangtou qu'il l'a laissée silencieuse.",
+    "es": "Song Gang cabalgó su brillante bicicleta para siempre con hermosa Lin Hong detrás de él y sonó su campana a todos los que conoció. Sólo cuando vio a Li Guangtou lo dejó en silencio.",
+    "part": "l",
+    "chapter": 10
+  },
+  {
+    "id": "xd061",
+    "s": "l1",
+    "zh": "接下去他开始鼓励自己了，满嘴唾沫地说：“老子以后弄一辆超大型永久牌，前面坐西施，后面载貂蝉，怀里抱个王昭君，背上驮个杨贵妃。老子带着这古代四大美女骑上他妈的七七四十九天，从当代骑到古代去，再从古代骑到当代来，老子高兴了还要骑到未来去……”",
+    "en": "Then he cheered himself up, spraying spit as he spoke: 'One day I'll get an enormous Forever bicycle. Xishi will sit in front, Diaochan behind, Wang Zhaojun in my arms and Yang Guifei on my back. I'll ride with those four beauties of antiquity for forty-nine damn days, from the present into the past and back again. If I feel like it, I'll ride into the future too...'",
+    "fr": "Puis il se remonta le moral en parlant avec exaltation : « Un jour, j'aurai un immense vélo de marque Forever. Xishi sera devant, Diaochan derrière, Wang Zhaojun dans mes bras et Yang Guifei sur mon dos. Je roulerai avec ces quatre beautés anciennes pendant quarante-neuf jours, du présent vers le passé et retour ; si l'envie m'en prend, jusqu'à l'avenir ! »",
+    "es": "Entonces se animó diciendo con entusiasmo: «Algún día tendré una bicicleta enorme de la marca Forever. Xishi irá delante, Diaochan detrás, Wang Zhaojun en mis brazos y Yang Guifei a la espalda. Pedalearé con esas cuatro bellezas antiguas durante cuarenta y nueve días, del presente al pasado y de vuelta; si me apetece, ¡hasta el futuro!»",
+    "part": "l",
+    "chapter": 10
+  },
+  {
+    "id": "xd062",
+    "s": "l1",
+    "zh": "刚开始李光头的身体不断左右摇晃，宋钢一边推着，一边还要伸手去扶住李光头，不让他掉下来。",
+    "en": "At first Li Guangtou swayed from side to side. Song Gang pushed the bicycle while reaching out to steady him so he would not fall.",
+    "fr": "Au début, Li Guangtou oscillait d'un côté à l'autre. Song Gang a poussé le vélo tout en cherchant à le stabiliser afin qu'il ne tombe pas.",
+    "es": "Al principio Li Guangtou se balanceó de lado a lado. Song Gang empujó la bicicleta mientras alcanzaba para mantenerlo firme para no caer.",
+    "part": "l",
+    "chapter": 11
+  },
+  {
+    "id": "xd063",
+    "s": "l1",
+    "zh": "林红和宋钢在人民饭店摆了七桌酒席，林红的亲友占了六桌，宋钢的只有一桌。",
+    "en": "Lin Hong and Song Gang hosted seven tables at the People's Restaurant: six for her relatives and friends, one for his.",
+    "fr": "Lin Hong et Song Gang ont accueilli sept tables au restaurant People's : six pour ses parents et amis, une pour les siens.",
+    "es": "Lin Hong y Song Gang alojaban siete mesas en el Restaurante del Pueblo: seis para sus familiares y amigos, uno para el suyo.",
+    "part": "l",
+    "chapter": 11
+  },
+  {
+    "id": "xd064",
+    "s": "l1",
+    "zh": "医生当然认识大名鼎鼎的李光头，李光头走进来劈头盖脸就要医生给他结扎。",
+    "en": "The doctor knew the famous Li Guangtou. As soon as he entered, Li Guangtou demanded a vasectomy.",
+    "fr": "Le docteur connaissait la célèbre Li Guangtou. Dès son entrée, Li Guangtou a exigé une vasectomie.",
+    "es": "El médico conocía el famoso Li Guangtou. Tan pronto como entró, Li Guangtou exigió una vasectomía.",
+    "part": "l",
+    "chapter": 11
+  },
+  {
+    "id": "xd065",
+    "s": "l1",
+    "zh": "李光头越走越远的时候，小关剪刀身边的群众越聚越多，群众兴致勃勃地议论着远去的李光头，纷纷说自己度过了愉快的一天。",
+    "en": "As Li Guangtou receded into the distance, more people gathered around Young Guan. They eagerly discussed him, all saying the day had been thoroughly entertaining.",
+    "fr": "Alors que Li Guangtou reculait dans la distance, plus de personnes se rassemblaient autour de le jeune Guan. Ils l'ont discuté avec empressement, disant que la journée avait été très divertissante.",
+    "es": "Mientras Li Guangtou se recogió en la distancia, más gente se reunió alrededor de el joven Guan. Lo discutieron ansiosamente, diciendo que el día había sido muy entretenido.",
+    "part": "l",
+    "chapter": 11
+  },
+  {
+    "id": "xd066",
+    "s": "l1",
+    "zh": "三个傻子本来就乐呵呵，见到四个瞎子也乐呵呵，三个傻子不甘示弱，干脆放声大笑。",
+    "en": "The three fools were already grinning. When they saw the four blind men grinning too, they refused to be outdone and burst into loud laughter.",
+    "fr": "Les trois imbéciles souriaient déjà. Quand ils virent les quatre aveugles sourire aussi, ils refusèrent d'être dépassés et éclatèrent de rires.",
+    "es": "Los tres tontos ya estaban sonriendo. Cuando vieron a los cuatro ciegos sonriendo también, se negaron a ser superados y estallaron en gran risa.",
+    "part": "l",
+    "chapter": 12
+  },
+  {
+    "id": "xd067",
+    "s": "l1",
+    "zh": "“对李光头这种无法无天的人，不能用‘辞职’这两个字，一定要用‘开除’。”",
+    "en": "'With someone as lawless as Li Guangtou, you cannot say \"resign.\" You must say \"dismissed.\"'",
+    "fr": "\"Avec quelqu'un d'aussi inoffensif que Li Guangtou, vous ne pouvez pas dire \"resigne\". Vous devez dire \"renoncé\".",
+    "es": "Con alguien tan legal como Li Guangtou, no puedes decir \"resignación\". Debes decir \"desestimado\".",
+    "part": "l",
+    "chapter": 12
+  },
+  {
+    "id": "xd068",
+    "s": "l1",
+    "zh": "拥有了五千元人民币创业资金的李光头，再接再厉地又拿下了磨剪刀铺的小关剪刀和撑着油布雨伞拔牙的余拔牙。",
+    "en": "With five thousand yuan in startup money, Li Guangtou pressed on and recruited Young Guan at the scissor-grinding shop and Yu the Tooth-Puller, who worked beneath an oilcloth umbrella.",
+    "fr": "Avec cinq mille yuans en argent de démarrage, Li Guangtou a pressé et recruté le jeune Guan à la boutique de ciseaux et Yu l’Arracheur de dents, qui travaillait sous un parapluie en nappe d'huile.",
+    "es": "Con cinco mil yuanes para empezar, Li Guangtou siguió adelante y reclutó al joven Guan, del taller de afilar tijeras, y a Yu el Sacamuelas, que trabajaba bajo un paraguas de tela encerada.",
+    "part": "l",
+    "chapter": 13
+  },
+  {
+    "id": "xd069",
+    "s": "l2",
+    "zh": "林红无声地站在屋子中央，这时候她才想起来李光头已经是个要饭的叫花子了，在此之前她完全忘记了李光头的存在，她的世界里只有宋钢，没有别人，现在李光头这个混蛋又闯进来了。",
+    "en": "Lin Hong stood silently in the middle of the room. Only now did she remember that Li Guangtou had become a beggar. Until then her world had held only Song Gang; now that bastard Li Guangtou had barged back in.",
+    "fr": "Lin Hong se tenait silencieusement au milieu de la pièce. C'est seulement maintenant qu'elle se souvient que Li Guangtou était devenu un mendiant. Jusque-là, son monde n'avait tenu que Song Gang ; maintenant ce salaud Li Guangtou avait fait irruption.",
+    "es": "Lin Hong estaba silenciosamente en medio de la habitación. Sólo ahora recordaba que Li Guangtou se había convertido en un mendigo. Hasta entonces su mundo sólo había mantenido a Song Gang; ahora ese bastardo Li Guangtou había vuelto a entrar.",
+    "part": "l",
+    "chapter": 19
+  },
+  {
+    "id": "xd070",
+    "s": "l2",
+    "zh": "林红说出了“后妈”，宋钢突然伤心地叫了起来，林红吃惊之后，觉得自己可能是说错了，她不再说话，于是屋子陷入到沉默之中。",
+    "en": "When Lin Hong said 'stepmother,' Song Gang cried out in pain. She realized she might have said the wrong thing and fell silent. The room went quiet.",
+    "fr": "Quand Lin Hong a dit 'successeur', Song Gang a crié dans la douleur. Elle s'est rendue compte qu'elle aurait pu dire la mauvaise chose et s'est mue. La chambre est devenue calme.",
+    "es": "Cuando Lin Hong dijo ' madrastra', Song Gang gritó con dolor. Se dio cuenta de que podría haber dicho lo incorrecto y se quedó callada. La habitación se calló.",
+    "part": "l",
+    "chapter": 19
+  },
+  {
+    "id": "xd071",
+    "s": "l2",
+    "zh": "这一次林红期待着能够摸到它们，当她确信钱和粮票都没有以后，突然惊慌起来，她有些害怕地看着宋钢，希望宋钢告诉她，这一次是他自己花掉的。",
+    "en": "This time Lin Hong expected to find the money and grain coupons. When she was certain they were gone, she panicked and looked to Song Gang, hoping he would say he had spent them himself.",
+    "fr": "Cette fois, Lin Hong s'attendait à trouver l'argent et les coupons de grain. Quand elle était certaine qu'ils étaient partis, elle a paniqué et a regardé Song Gang, espérant qu'il dirait qu'il les avait dépensés lui-même.",
+    "es": "Esta vez Lin Hong esperaba encontrar el dinero y los cupones de grano. Cuando estaba segura de que se habían ido, se asustó y miró a Song Gang, esperando que dijera que se los había gastado.",
+    "part": "l",
+    "chapter": 19
+  },
+  {
+    "id": "xd072",
+    "s": "l2",
+    "zh": "林红气得咬住了嘴唇，过去了很长时间，屋子里变得漆黑一团，宋钢还是一动不动地坐在那里，好像是在等待着林红睡醒了起床一起吃饭。",
+    "en": "Lin Hong bit her lip in anger. Long afterward, when the room had gone dark, Song Gang still sat motionless, as if waiting for her to wake up and eat with him.",
+    "fr": "Lin Hong a mordu sa lèvre en colère. Longtemps après, quand la chambre était tombée, Song Gang restait immobile, comme si elle attendait de se réveiller et de manger avec lui.",
+    "es": "Lin Hong le mordió el labio en ira. Mucho después, cuando la habitación se había oscurecido, Song Gang todavía estaba inmóvil, como si esperara que ella despertara y comiera con él.",
+    "part": "l",
+    "chapter": 19
+  },
+  {
+    "id": "xd073",
+    "s": "l2",
+    "zh": "过了一会，看到林红擦起了眼泪，宋钢才转身找出了那块外国手表，结结巴巴地告诉林红，他本来已经不和李光头交往了，因为那天骑车从县政府大门口经过，李光头叫住他，给了他这块手表，让他重新想起了往日的兄弟情谊。",
+    "en": "When Lin Hong began wiping her tears, Song Gang brought out the foreign watch. Stammering, he explained that he had stopped seeing Li Guangtou, but his brother had called to him outside the county government building and given him the watch, reviving their old bond.",
+    "fr": "Quand Lin Hong a commencé à essuyer ses larmes, Song Gang a sorti la montre étrangère. Stupéfiant, il a expliqué qu'il avait cessé de voir Li Guangtou, mais son frère l'avait appelé à l'extérieur du bâtiment du gouvernement du comté et lui a donné la montre, ravivant leur ancien lien.",
+    "es": "Cuando Lin Hong empezó a secarse las lágrimas, Song Gang sacó el reloj extranjero. Tartamudeando, explicó que había dejado de tratar con Li Guangtou, pero su hermano lo había llamado junto al edificio del gobierno del condado y le había dado el reloj, reavivando sus antiguos lazos.",
+    "part": "l",
+    "chapter": 20
+  },
+  {
+    "id": "xd074",
+    "s": "l2",
+    "zh": "她说结婚以后省吃俭用，就是为了存钱给宋钢买一块钻石牌手表，没想到李光头用一块别人扔掉的破烂手表，就把宋钢收买了。",
+    "en": "She said they had saved every penny since marrying so she could buy Song Gang a Diamond-brand watch. Yet Li Guangtou had won him over with a discarded foreign watch.",
+    "fr": "Elle a dit qu'ils avaient économisé tous les centimes depuis leur mariage pour qu'elle puisse acheter Song Gang une montre de marque Diamond. Pourtant, Li Guangtou l'avait gagné avec une montre étrangère rejetée.",
+    "es": "Dijo que habían salvado cada centavo desde que se casaron para poder comprarle a Song Gang un reloj de marca de diamante. Pero Li Guangtou lo había ganado con un reloj extranjero descartado.",
+    "part": "l",
+    "chapter": 20
+  },
+  {
+    "id": "xd075",
+    "s": "l2",
+    "zh": "林红看到宋钢脸上凝重的表情，知道他心里的难受，毕竟他和李光头的兄弟往事太多了，藕断丝连在所难免，林红没有去责怪他，心想过些日子就会好了。",
+    "en": "Lin Hong saw how troubled Song Gang was. He and Li Guangtou shared too much history for their bond to break cleanly. She did not blame him, thinking it would pass in time.",
+    "fr": "Lin Hong a vu à quel point Song Gang était troublé. Lui et Li Guangtou ont partagé trop d'histoire pour qu'ils rompent leur lien. Elle ne lui en voulait pas, pensant que ça passerait à temps.",
+    "es": "Lin Hong vio lo problemático que era Song Gang. Él y Li Guangtou compartieron demasiada historia por su vínculo para romper limpiamente. Ella no lo culpó, pensando que pasaría a tiempo.",
+    "part": "l",
+    "chapter": 20
+  },
+  {
+    "id": "xd076",
+    "s": "l2",
+    "zh": "他盘腿坐在地上，专门花了两个小时对付了那块外国手表，满头大汗地安上去了三根长短不一的细铁丝，然后神气活现地戴在手腕上。",
+    "en": "He sat cross-legged on the floor and spent two hours wrestling with the foreign watch. Sweating, he fitted three pieces of wire of different lengths, then wore it proudly on his wrist.",
+    "fr": "Il a passé deux heures à lutter contre la montre étrangère. Sweating, il a monté trois morceaux de fil de différentes longueurs, puis l'a porté fièrement sur son poignet.",
+    "es": "Se sentó cruzado en el piso y pasó dos horas luchando con el reloj extranjero. Sweating, colocó tres pedazos de alambre de diferentes longitudes, luego lo usó orgullosamente en su muñeca.",
+    "part": "l",
+    "chapter": 21
+  },
+  {
+    "id": "xd077",
+    "s": "l2",
+    "zh": "陶青知道李光头是个什么货色，没有梯子他想着要往上爬，给了他梯子，他就要你背着他往上爬了。",
+    "en": "Tao Qing knew what Li Guangtou was like: without a ladder he would still try to climb, and if you gave him one he would expect you to carry him up.",
+    "fr": "Tao Qing savait à quoi ressemblait Li Guangtou : sans échelle, il essaierait encore de grimper, et si vous lui en donnez un, il s'attendrait à ce que vous le transportiez.",
+    "es": "Tao Qing sabía cómo era Li Guangtou: sin una escalera todavía intentaría subir, y si le dieras uno esperaría que lo llevaras.",
+    "part": "l",
+    "chapter": 22
+  },
+  {
+    "id": "xd078",
+    "s": "l2",
+    "zh": "县办主任脸上挂着亲热的笑，嘴里说着亲热的话，跟在李光头屁股后面，在破烂山里走来走去。",
+    "en": "The county office director smiled warmly and spoke warmly as he followed Li Guangtou around the mountain of scrap.",
+    "fr": "Le directeur du bureau du comté sourit chaleureusement et parla chaleureusement en suivant Li Guangtou autour de la montagne de ferraille.",
+    "es": "El director de la oficina del condado sonrió calurosamente y habló calurosamente mientras seguía a Li Guangtou alrededor de la montaña de chatarra.",
+    "part": "l",
+    "chapter": 22
+  },
+  {
+    "id": "xd079",
+    "s": "l2",
+    "zh": "那豆浆还少得可怜，不像我们刘镇的豆浆是满满一大碗，日本喝豆浆的碗比我们刘镇喝茶的茶盅还要小，那油条更是细得跟筷子似的。",
+    "en": "The soy milk was meager compared with the full bowls in Liu Town. The Japanese cup was smaller than one of our tea bowls, and the fried dough sticks were as thin as chopsticks.",
+    "fr": "Le lait de soja était maigre par rapport aux bols pleins de Liu Town. La tasse japonaise était plus petite qu'un de nos bols de thé, et les bâtonnets de pâte frite étaient aussi fins que des baguettes.",
+    "es": "La leche de soja era escasa comparada con los tazones llenos de Liu Town. La taza japonesa era más pequeña que uno de nuestros cuencos de té, y las porras fritas eran tan finas como palillos.",
+    "p": "415",
+    "part": "l",
+    "chapter": 24
+  },
+  {
+    "id": "xd080",
+    "s": "l2",
+    "zh": "那些日本垃圾西装上都标有家族的姓氏，标在胸前内侧口袋上。",
+    "en": "The discarded Japanese suits bore family surnames, printed inside their breast pockets.",
+    "fr": "Les costumes japonais jetés portaient des noms de famille, imprimés dans leurs poches de poitrine.",
+    "es": "Los trajes japoneses descartados llevaban apellidos familiares, impresos dentro de sus bolsillos de pecho.",
+    "part": "l",
+    "chapter": 25
+  },
+  {
+    "id": "xd081",
+    "s": "l2",
+    "zh": "余拔牙得意地说，“和‘松下’和‘三洋’两家比起来，‘福田’确实是无名小卒。”",
+    "en": "Yu the Tooth-Puller said proudly, 'Compared with Panasonic and Sanyo, Fukuda really is a nobody.'",
+    "fr": "Yu l’Arracheur de dents a dit fièrement : « Par rapport à Panasonic et Sanyo, Fukuda n'est vraiment personne. »",
+    "es": "Yu el Sacamuelas dijo con orgullo, 'Comparado con Panasonic y Sanyo, Fukuda realmente es un nadie.'",
+    "part": "l",
+    "chapter": 25
+  },
+  {
+    "id": "xd082",
+    "s": "l2",
+    "zh": "陶青眼睁睁看着“中曾根”套到县长身上去了，心里一百个不高兴，脸上还要赔着笑容，嘴里还要一声声夸奖县长穿上“中曾根”如何合体合身。",
+    "en": "Tao Qing watched as the suit labeled 'Nakasone' went onto the county chief. He was furious inside, but kept smiling and praising how well it fit.",
+    "fr": "Tao Qing a vu le costume marqué \"Nakasone\" aller sur le chef du comté. Il était furieux à l'intérieur, mais n'arrêtait pas de sourire et de louer à quel point il convenait.",
+    "es": "Tao Qing vio cómo el traje marcado «Nakasone» acababa en manos del jefe del condado. Por dentro estaba furioso, pero siguió sonriendo y alabando lo bien que le quedaba.",
+    "part": "l",
+    "chapter": 25
+  },
+  {
+    "id": "xd083",
+    "s": "l2",
+    "zh": "李光头伤心了，他冲着宋钢和林红离去的自行车最后喊道：“宋钢，你这个王八蛋，你把我们小时候的事忘光啦？”",
+    "en": "Li Guangtou was hurt. He called after Song Gang and Lin Hong as they cycled away: 'Song Gang, you bastard! Have you forgotten our childhood?'",
+    "fr": "Li Guangtou a été blessé. Il a appelé après Song Gang et Lin Hong alors qu'ils s'éloignaient : \"Song Gang, enfoiré ! Avez-vous oublié notre enfance?",
+    "es": "Li Guangtou se sintió herido. Gritó tras Song Gang y Lin Hong mientras se alejaban en bicicleta: «¡Song Gang, cabrón! ¿Has olvidado nuestra infancia?»",
+    "part": "l",
+    "chapter": 26
+  },
+  {
+    "id": "xd084",
+    "s": "l2",
+    "zh": "后悔的还有苏妈，李光头第二次鲲鹏展翅离开刘镇时，问过苏妈要不要加入。",
+    "en": "Su Ma had regrets too: when Li Guangtou spread his wings and left Liu Town for a second time, he had asked whether she wanted to join him.",
+    "fr": "Su Ma avait aussi des regrets : quand Li Guangtou a étendu ses ailes et a quitté Liu Town pour une deuxième fois, il avait demandé si elle voulait le rejoindre.",
+    "es": "Su Ma también se arrepintió: cuando Li Guangtou extendió sus alas y dejó Liu Town por segunda vez, había preguntado si quería unirse a él.",
+    "part": "l",
+    "chapter": 26
+  },
+  {
+    "id": "xd085",
+    "s": "l2",
+    "zh": "“古人云‘行商坐贾’，生意做到坐下来的时候才是‘贾’，才真正做成大生意了，跑来跑去的只能做小生意，只是‘商’。”",
+    "en": "'The ancients spoke of traveling merchants and settled traders. Only when your business lets you sit still have you become a real trader; if you must keep running around, your business is still small.'",
+    "fr": "Les anciens parlaient de marchands itinérants et de commerçants établis. Ce n'est que lorsque votre entreprise vous permet de rester assis que vous devenez un véritable trader; si vous devez continuer à courir, votre entreprise est encore petite.»",
+    "es": "Los antiguos hablaban de comerciantes itinerantes y comerciantes establecidos. Sólo cuando tu negocio te permite sentarte todavía te conviertes en un verdadero comerciante; si debes seguir corriendo, tu negocio sigue siendo pequeño.",
+    "part": "l",
+    "chapter": 26
+  },
+  {
+    "id": "xd086",
+    "s": "l2",
+    "zh": "那个群众笑了又笑，逢人就说李光头雇用了一个司机，可是没有汽车，李光头和他的司机坐着长途汽车去上海了。",
+    "en": "The onlooker laughed and told everyone that Li Guangtou had hired a driver without owning a car: he and his driver took a long-distance bus to Shanghai.",
+    "fr": "Le spectateur a ri et a dit à tout le monde que Li Guangtou avait engagé un chauffeur sans posséder de voiture : lui et son chauffeur ont pris un bus longue distance pour Shanghai.",
+    "es": "El onlooker se rió y le dijo a todos que Li Guangtou había contratado a un conductor sin poseer un coche: él y su conductor tomaron un autobús de larga distancia a Shanghai.",
+    "part": "l",
+    "chapter": 26
+  },
+  {
+    "id": "xd087",
+    "s": "l3",
+    "zh": "这时的林红是在强作欢笑，针织厂连续几年效益不好，现在开始裁员了。",
+    "en": "Lin Hong was forcing a smile. The knitting factory had struggled for years and had now begun laying off workers.",
+    "fr": "Lin Hong forçait un sourire. L'usine de tricot a lutté pendant des années et a commencé à licencier des ouvriers.",
+    "es": "Lin Hong estaba forzando una sonrisa. La fábrica de tejer había luchado durante años y ahora había comenzado a despedir a los trabajadores.",
+    "p": "443",
+    "part": "l",
+    "chapter": 29
+  },
+  {
+    "id": "xd088",
+    "s": "l3",
+    "zh": "宋钢低头不语，心想当初自己绝情绝义要和李光头一刀两断，现在李光头成功了有钱了，自己再上门去哀求他，这样的事做不出来。",
+    "en": "Song Gang kept silent. He had cut Li Guangtou off so decisively that now, when his brother was rich and successful, he could not bring himself to beg for help.",
+    "fr": "Song Gang est resté silencieux. Il avait coupé Li Guangtou si résolument que maintenant, lorsque son frère était riche et réussi, il ne pouvait pas se faire supplier d'aide.",
+    "es": "Song Gang calló. Había cortado a Li Guangtou tan decisivamente que ahora, cuando su hermano era rico y exitoso, no podía traerse a sí mismo para pedir ayuda.",
+    "part": "l",
+    "chapter": 29
+  },
+  {
+    "id": "xd089",
+    "s": "l3",
+    "zh": "宋钢第二天早晨醒来时，看到林红已经起床了，正在卫生间里漱口洗脸。",
+    "en": "When Song Gang woke the next morning, Lin Hong had already risen and was washing her face and rinsing her mouth in the bathroom.",
+    "fr": "Lorsque Song Gang s'est réveillé le lendemain matin, Lin Hong s'était déjà levé et se lavait le visage et rinçait la bouche dans la salle de bains.",
+    "es": "Cuando Song Gang despertó la mañana siguiente, Lin Hong ya se había levantado y lavaba su cara y lavaba su boca en el baño.",
+    "part": "l",
+    "chapter": 29
+  },
+  {
+    "id": "xd090",
+    "s": "l3",
+    "zh": "偶尔有一份工作需要宋钢去代理一天，宋钢也会戴着口罩出门，他不愿意把肺病传染给其他人。",
+    "en": "If Song Gang was offered even a single day's work, he went out wearing a mask. He did not want to pass his lung disease to anyone else.",
+    "fr": "Si Song Gang a été offert même une seule journée de travail, il est sorti porter un masque. Il ne voulait transmettre sa maladie pulmonaire à personne d'autre.",
+    "es": "Si Song Gang fue ofrecido incluso un solo día de trabajo, salió usando una máscara. No quería transmitir su enfermedad pulmonar a nadie más.",
+    "part": "l",
+    "chapter": 29
+  },
+  {
+    "id": "xd091",
+    "s": "l3",
+    "zh": "群众里的有些男性为林红辩护，他们说谁也没有先见之明，就是算命先生，也只会算别人的命，算不了自己的命。",
+    "en": "Some men in the crowd defended Lin Hong: nobody could foresee the future, they said, and even a fortune-teller could predict others' fate but not his own.",
+    "fr": "Certains hommes de la foule défendaient Lin Hong: personne ne pouvait prévoir l'avenir, disaient-ils, et même un vendeur de fortune pouvait prédire le destin des autres, mais pas le sien.",
+    "es": "Algunos hombres de la multitud defendieron Lin Hong: nadie podía prever el futuro, dijeron, e incluso un adivinador podría predecir el destino de otros pero no el suyo.",
+    "part": "l",
+    "chapter": 30
+  },
+  {
+    "id": "xd092",
+    "s": "l3",
+    "zh": "“这个王八蛋刘作家真有才华，一把钥匙就把刘镇有史以来最大的冤假错案平反啦！”",
+    "en": "'That bastard Liu the Writer really is talented! With one key he overturned the worst miscarriage of justice Liu Town has ever seen!'",
+    "fr": "Ce salaud de Liu l’Écrivain est vraiment doué ! Avec une clé, il a renversé la pire fausse couche de justice que Liu Town ait jamais vue! »",
+    "es": "«¡Ese cabrón de Liu el Escritor sí que tiene talento! ¡Con una sola llave ha corregido la mayor injusticia judicial que ha visto Liu Town!»",
+    "part": "l",
+    "chapter": 31
+  },
+  {
+    "id": "xd093",
+    "s": "l3",
+    "zh": "刘作家满脸的微笑，请赵诗人不要生气，他说：“你这个年纪生气很容易中风。”",
+    "en": "Liu the Writer smiled broadly and told Zhao the Poet not to be angry: 'At your age, anger can easily bring on a stroke.'",
+    "fr": "Liu l’Écrivain sourit largement et dit à Zhao le Poète de ne pas être en colère: 'À votre âge, la colère peut facilement provoquer un accident vasculaire cérébral.'",
+    "es": "Liu el Escritor sonrió ampliamente y le dijo a Zhao el Poeta que no se enoje: \"A su edad, la ira puede traer fácilmente un golpe\".",
+    "part": "l",
+    "chapter": 31
+  },
+  {
+    "id": "xd094",
+    "s": "l3",
+    "zh": "说到童年，李光头总是声泪俱下，然后抹一把眼泪，大声感谢改革开放，感谢党和政府，感谢全县人民，感谢说完了就开始讲述自己如何创业，如何成就今天这番伟大事业。",
+    "en": "Whenever he spoke of childhood, Li Guangtou wept. He wiped his eyes, loudly thanked reform and opening up, the Party, the government and everyone in the county, then launched into the story of how he had built his business.",
+    "fr": "Chaque fois qu'il parlait d'enfance, Li Guangtou pleurait. Il essuya les yeux, remercia vivement la réforme et l'ouverture, le Parti, le gouvernement et tout le monde dans le comté, puis lança l'histoire de la façon dont il avait construit son entreprise.",
+    "es": "Cuando hablaba de la infancia, Li Guangtou lloró. Él limpió sus ojos, agradeció en voz alta la reforma y la apertura, el Partido, el gobierno y todo el mundo en el condado, luego lanzó a la historia de cómo había construido su negocio.",
+    "part": "l",
+    "chapter": 31
+  },
+  {
+    "id": "xd095",
+    "s": "l3",
+    "zh": "他眯着眼睛跟人谈生意，人家以为他睡着了，可他比谁都清醒。",
+    "en": "He half-closed his eyes when discussing business. People thought he was asleep, but he was more alert than any of them.",
+    "fr": "Il a fermé les yeux en parlant affaires. Les gens pensaient qu'il dormait, mais il était plus alerte que les autres.",
+    "es": "Se cerró los ojos al hablar de negocios. La gente pensaba que estaba dormido, pero estaba más alerta que cualquiera de ellos.",
+    "part": "l",
+    "chapter": 31
+  },
+  {
+    "id": "xd096",
+    "s": "l3",
+    "zh": "宋钢走上了大街，走向了李光头的公司，我们刘镇最贫穷的人走向了最富有的人，他们曾经是兄弟，现在仍然是兄弟。",
+    "en": "Song Gang went out into the street toward Li Guangtou's company. The poorest man in Liu Town walked toward its richest. They had once been brothers, and they were brothers still.",
+    "fr": "Song Gang est allé dans la rue vers la compagnie de Li Guangtou. L'homme le plus pauvre de Liu Town marchait vers ses plus riches. Ils avaient autrefois été frères, et ils étaient encore frères.",
+    "es": "Song Gang salió a la calle hacia la compañía de Li Guangtou. El hombre más pobre de Liu Town caminaba hacia su más rico. Habían sido hermanos una vez, y aún eran hermanos.",
+    "p": "467",
+    "part": "l",
+    "chapter": 32
+  },
+  {
+    "id": "xd097",
+    "s": "l3",
+    "zh": "刘新闻绕口令似的说：“美丽端庄、健康婀娜、气质出众、才韵内敛、善解人意、温柔体贴、尊老爱幼、清纯忠贞、无性经历……”",
+    "en": "Liu the Journalist reeled off the list: 'Beautiful and dignified, healthy and graceful, cultured and talented, understanding, gentle, respectful to elders, loving to children, innocent, faithful, with no sexual experience...'",
+    "fr": "Liu le journaliste a quitté la liste : 'Beau et digne, sain et gracieux, cultivé et talentueux, compréhensif, doux, respectueux des aînés, aimant les enfants, innocent, fidèle, sans expérience sexuelle...'",
+    "es": "Liu el periodista se retiró de la lista: 'Hermoso y digno, sano y agraciado, cultivado y talentoso, comprensivo, amable, respetuoso con los ancianos, amando a los niños, inocentes, fieles, sin experiencia sexual...'",
+    "part": "l",
+    "chapter": 34
+  },
+  {
+    "id": "xd098",
+    "s": "l3",
+    "zh": "最后一个记者提问：“处美人大赛的冠军是否会成为你们李总的新娘？”",
+    "en": "The last reporter asked, 'Will the winner of the Virgin Beauty Contest become Mr. Li's bride?'",
+    "fr": "Le dernier journaliste a demandé, \"Le gagnant du concours de beauté vierge deviendra-t-il la mariée de M. Li?\"",
+    "es": "El último reportero preguntó: \"¿El ganador del Concurso de Belleza Virgen se convertirá en la novia del Sr. Li?\"",
+    "part": "l",
+    "chapter": 34
+  },
+  {
+    "id": "xd099",
+    "s": "l3",
+    "zh": "周游仍然摇着头说：“我不喝矿泉水，那是骗人的，里面没有什么矿物质了，矿物质含量最高的就是凉水。”",
+    "en": "Zhou You shook his head again. 'I don't drink mineral water. It's a fraud; there's hardly any minerals in it. Tap water has the most.'",
+    "fr": "Zhou You s'est encore serré la tête. Je ne bois pas d'eau minérale. C'est une fraude, il n'y a pratiquement pas de minéraux dedans. L'eau du robinet a le plus.",
+    "es": "Zhou You volvió a sacudir la cabeza. No bebo agua mineral. Es un fraude; apenas hay minerales en él. El agua del grifo tiene más.",
+    "part": "l",
+    "chapter": 35
+  },
+  {
+    "id": "xd100",
+    "s": "l3",
+    "zh": "这个江湖骗子花去了身上仅有的五元钱以后，声称要试吃带吸管的小包子，将今后几天吃的都提前骗到手了。",
+    "en": "After spending his last five yuan, the swindler claimed he needed to sample the little buns with straws. He tricked them into feeding him for days to come.",
+    "fr": "Après avoir passé ses cinq derniers yuans, l'escroc a affirmé qu'il avait besoin de goûter les petits pains avec des pailles. Il les a entraînés à le nourrir pendant des jours.",
+    "es": "Después de pasar sus últimos cinco yuan, el estafador afirmó que necesitaba probar los pequeños bollos con paja. Los engañó para alimentarlo durante días.",
+    "part": "l",
+    "chapter": 35
+  },
+  {
+    "id": "xd101",
+    "s": "l3",
+    "zh": "这次周游把赵诗人镇住了，赵诗人不敢再自作聪明，他不耻下问：“你刚才说的是哪国话？”",
+    "en": "Zhou You had finally silenced Zhao the Poet. Afraid to sound clever again, Zhao asked, 'What country was that language from?'",
+    "fr": "Zhou You avait finalement fait taire Zhao le Poète. Peur de redevenir intelligent, Zhao demanda : « De quel pays était cette langue ? »",
+    "es": "Zhou You había finalmente silenciado Zhao el Poeta. Miedo a sonar inteligente de nuevo, Zhao preguntó, '¿De qué país era ese lenguaje?'",
+    "part": "l",
+    "chapter": 35
+  },
+  {
+    "id": "xd102",
+    "s": "l3",
+    "zh": "赵诗人正要说好，周游却谢绝了，他说：“没关系，这里比阿拉伯的沙漠、拉丁美洲的丛林舒服多了。”",
+    "en": "Zhao the Poet was about to agree, but Zhou You declined: 'No thanks. This place is much more comfortable than the Arabian desert or the jungles of Latin America.'",
+    "fr": "Zhao le Poète était sur le point d'être d'accord, mais Zhou You a refusé : « Non merci. Cet endroit est beaucoup plus confortable que le désert arabe ou les jungles d'Amérique latine.»",
+    "es": "Zhao el Poeta estaba a punto de estar de acuerdo, pero Zhou You rechazó: 'No gracias. Este lugar es mucho más cómodo que el desierto árabe o las selvas de América Latina.'",
+    "part": "l",
+    "chapter": 35
+  },
+  {
+    "id": "xd103",
+    "s": "l3",
+    "zh": "赵诗人马上纠正道：“先是一身冷汗，一二三，三秒钟后就快活得浑身冒热汗啦！”",
+    "en": "Zhao the Poet promptly corrected him: 'First you break out in a cold sweat. One, two, three—three seconds later you're so delighted you start sweating with heat!'",
+    "fr": "Zhao le Poète l'a rapidement corrigé: «D'abord, vous éclatez dans une sueur froide. Un, deux, trois — trois secondes plus tard, vous êtes si heureux de commencer à transpirer avec de la chaleur! »",
+    "es": "Zhao el Poeta le corrigió rápidamente: 'Primero usted sale en un sudor frío. Uno, dos, tres, tres segundos después estás tan encantado de empezar a sudar con calor!",
+    "part": "l",
+    "chapter": 36
+  },
+  {
+    "id": "xd104",
+    "s": "l3",
+    "zh": "三个人在大街上的表演当天就传到林红耳朵里了，林红气得浑身发抖，回到家里本来是要大发脾气的，看到宋钢坐在沙发上忐忑不安的可怜模样，她心又软了，心想宋钢是为了给家里多挣钱，她摇摇头走到了屋外，看到赵诗人神气活现地走了过来，林红的怒火全冲着他去了。",
+    "en": "Word of the three men's street performance reached Lin Hong that day. Furious, she went home ready to explode. But the sight of Song Gang sitting miserably on the sofa softened her: he was only trying to earn more for the family. Outside, she saw Zhao the Poet swaggering toward her, and all her anger turned on him.",
+    "fr": "La nouvelle de la performance des trois hommes dans la rue a atteint Lin Hong ce jour-là. Furieux, elle est rentrée prête à exploser. Mais la vue de Song Gang assis sur le canapé l'a ramollie : il essayait seulement de gagner plus pour la famille. Dehors, elle vit Zhao le Poète s'élancer vers elle, et toute sa colère se retourna sur lui.",
+    "es": "La actuación callejera de los tres hombres llegó a oídos de Lin Hong aquel mismo día. Furiosa, volvió a casa dispuesta a estallar. Pero al ver a Song Gang abatido en el sofá se ablandó: solo intentaba ganar más para la familia. Fuera vio acercarse a Zhao el Poeta con aire triunfal, y toda su ira se volvió contra él.",
+    "part": "l",
+    "chapter": 36
+  }
+];
+
+/* ============================================================
+   Likes + moderated comments — same Worker as the other notes.
+   Leaving the placeholder (or '') renders the page without any
+   interactive parts; the notes themselves still work offline.
+   ============================================================ */
+const API = 'https://reading-notes-api.YOUR-SUBDOMAIN.workers.dev';
+const PAGE_ID = 'xiongdi';
+const API_ON = /^https?:\/\//.test(API) && !API.includes('YOUR-SUBDOMAIN');
+
+UI.pref = {en:'preface', zh:'自序', fr:'préface', es:'prefacio'};
+UI.modNote = {
+  en:'Anyone may like a passage or leave a comment on it. Likes appear at once; comments are read and approved by me before they are shown.',
+  zh:'任何人都可以给某一条点讚或留言。点讚即时生效；留言经我阅读并审核通过后才会显示。',
+  fr:'Chacun peut aimer un passage ou y laisser un commentaire. Les « j’aime » apparaissent aussitôt ; les commentaires sont lus et validés par moi avant d’être affichés.',
+  es:'Cualquiera puede dar «me gusta» a un pasaje o dejar un comentario. Los «me gusta» aparecen al instante; los comentarios los leo y apruebo yo antes de mostrarse.'
+};
+UI.like     = {en:'Like', zh:'点讚', fr:'J’aime', es:'Me gusta'};
+UI.liked    = {en:'Liked', zh:'已讚', fr:'Aimé', es:'Te gusta'};
+UI.cmt      = {en:'Comments', zh:'留言', fr:'Commentaires', es:'Comentarios'};
+UI.cmtNone  = {en:'No comments on this passage yet.', zh:'这一条还没有留言。', fr:'Aucun commentaire sur ce passage.', es:'Aún no hay comentarios en este pasaje.'};
+UI.fName    = {en:'Name or nickname', zh:'昵称', fr:'Nom ou pseudonyme', es:'Nombre o apodo'};
+UI.fEmail   = {en:'Email — optional, never shown', zh:'邮箱 — 选填，不会公开', fr:'E-mail — facultatif, jamais affiché', es:'Correo — opcional, nunca se muestra'};
+UI.fBody    = {en:'What this passage made you think…', zh:'这段让你想到了什么……', fr:'Ce que ce passage vous a inspiré…', es:'Qué te hizo pensar este pasaje…'};
+UI.fSend    = {en:'Send for review', zh:'提交审核', fr:'Envoyer pour validation', es:'Enviar para revisión'};
+UI.fSending = {en:'Sending…', zh:'提交中……', fr:'Envoi…', es:'Enviando…'};
+UI.fQueued  = {en:'Thank you. Your comment is in the review queue and will appear here once approved.', zh:'谢谢。留言已进入审核队列，通过后会显示在这里。', fr:'Merci. Votre commentaire est en attente de validation et apparaîtra ici une fois approuvé.', es:'Gracias. Tu comentario está en la cola de revisión y aparecerá aquí una vez aprobado.'};
+UI.fModNote = {en:'Moderated before publication. Your email is only visible to the site owner.', zh:'发布前需审核。邮箱仅站主可见。', fr:'Modéré avant publication. Votre e-mail n’est visible que par le propriétaire du site.', es:'Moderado antes de publicarse. Tu correo solo lo ve el propietario del sitio.'};
+UI.errName  = {en:'Please enter a name.', zh:'请填昵称。', fr:'Veuillez indiquer un nom.', es:'Indica un nombre.'};
+UI.errBody  = {en:'Please write something first.', zh:'请先写点什么。', fr:'Veuillez d’abord écrire quelque chose.', es:'Escribe algo primero.'};
+UI.errRate  = {en:'That is a lot of comments for one hour — please come back later.', zh:'一小时内留言太多了，请稍后再来。', fr:'Cela fait beaucoup de commentaires en une heure — revenez plus tard.', es:'Son muchos comentarios en una hora; vuelve más tarde.'};
+UI.errNet   = {en:'Could not send — please try again.', zh:'提交失败，请再试一次。', fr:'Envoi impossible — veuillez réessayer.', es:'No se pudo enviar; inténtalo de nuevo.'};
+
+let lang = 'en';
+try {
+  const saved = localStorage.getItem('jg-lang');
+  if (saved === 'zh' || saved === 'fr' || saved === 'es' || saved === 'en') lang = saved;
+} catch (_) {}
+
+let visitor = '';
+try {
+  visitor = localStorage.getItem('jg-visitor') || '';
+  if (!/^[a-z0-9]{8,40}$/.test(visitor)) {
+    visitor = Math.random().toString(36).slice(2, 12) + Date.now().toString(36);
+    localStorage.setItem('jg-visitor', visitor);
+  }
+} catch (_) { visitor = 'anon' + Math.random().toString(36).slice(2, 10); }
+
+let SOCIAL = null;          // {likes:{}, mine:[], comments:{}}
+const OPEN = new Set();     // entry ids whose comment panel is expanded
+
+const $ = (id) => document.getElementById(id);
+const el = (tag, cls) => { const n = document.createElement(tag); if (cls) n.className = cls; return n; };
+const LOCALE = {en:'en-GB', zh:'zh-CN', fr:'fr-FR', es:'es-ES'};
+
+function pageChip(e){
+  const n = el('span','page' + (e.p ? '' : ' approx'));
+  if (e.p){ n.textContent = 'p. ' + e.p; n.title = 'Printed page visible in the photographed copy.'; }
+  else {
+    const part = UI.refPart[lang][e.part === 'u' ? 0 : 1];
+    n.textContent = part + ' · ' + UI.refCh[lang] + (lang === 'zh' ? e.chapter + '章' : ' ' + e.chapter);
+    n.title = 'Section and chapter; the paper page number is not visible in the source photograph.';
+  }
+  return n;
+}
+
+function heartSvg(){
+  const s = document.createElementNS('http://www.w3.org/2000/svg','svg');
+  s.setAttribute('viewBox','0 0 24 24'); s.setAttribute('class','heart'); s.setAttribute('aria-hidden','true');
+  const path = document.createElementNS('http://www.w3.org/2000/svg','path');
+  path.setAttribute('d','M12 20s-7-4.4-7-9.3A4.2 4.2 0 0 1 12 7.6a4.2 4.2 0 0 1 7 3.1C19 15.6 12 20 12 20Z');
+  s.append(path); return s;
+}
+
+/* ---------------------------------------------------------------- comments */
+
+function commentList(eid){
+  const items = (SOCIAL && SOCIAL.comments[eid]) || [];
+  if (!items.length){ const p = el('p','cnone'); p.textContent = UI.cmtNone[lang]; return p; }
+  const ul = el('ul','clist');
+  items.forEach(c => {
+    const li = el('li','citem');
+    const who = el('span','who'); who.textContent = c.name;
+    const at = el('span','at');
+    at.textContent = new Date(c.ts).toLocaleDateString(LOCALE[lang], {year:'numeric', month:'short', day:'numeric'});
+    const body = el('p'); body.textContent = c.body;
+    li.append(who, at, body); ul.append(li);
+  });
+  return ul;
+}
+
+function commentForm(eid){
+  const form = el('form','cform');
+  form.noValidate = true;
+  const opened = Date.now();
+
+  const two = el('div','two');
+  const name = el('input'); name.type = 'text'; name.maxLength = 40;
+  name.placeholder = UI.fName[lang]; name.autocomplete = 'nickname';
+  const mail = el('input'); mail.type = 'email'; mail.maxLength = 120;
+  mail.placeholder = UI.fEmail[lang]; mail.autocomplete = 'email';
+  two.append(name, mail);
+
+  const hp = el('input','hp'); hp.type = 'text'; hp.tabIndex = -1;
+  hp.setAttribute('aria-hidden','true'); hp.autocomplete = 'off'; hp.name = 'website';
+
+  const body = el('textarea'); body.maxLength = 1500; body.placeholder = UI.fBody[lang];
+  const send = el('button','send'); send.type = 'submit'; send.textContent = UI.fSend[lang];
+  const msg = el('p','cmsg');
+  const note = el('p','cmoderation'); note.textContent = UI.fModNote[lang];
+
+  form.append(two, hp, body, send, msg, note);
+
+  form.addEventListener('submit', async (ev) => {
+    ev.preventDefault();
+    msg.className = 'cmsg';
+    if (!name.value.trim()){ msg.classList.add('bad'); msg.textContent = UI.errName[lang]; name.focus(); return; }
+    if (body.value.trim().length < 2){ msg.classList.add('bad'); msg.textContent = UI.errBody[lang]; body.focus(); return; }
+    send.disabled = true; send.textContent = UI.fSending[lang];
+    try {
+      const r = await fetch(API + '/v1/comment', {
+        method:'POST', headers:{'content-type':'application/json'},
+        body: JSON.stringify({
+          page: PAGE_ID, entry: eid, visitor, lang,
+          name: name.value, email: mail.value, body: body.value,
+          website: hp.value, dwell: Date.now() - opened
+        })
+      });
+      if (r.status === 429){ msg.classList.add('bad'); msg.textContent = UI.errRate[lang]; }
+      else if (!r.ok){ msg.classList.add('bad'); msg.textContent = UI.errNet[lang]; }
+      else {
+        msg.classList.add('ok'); msg.textContent = UI.fQueued[lang];
+        name.value = ''; mail.value = ''; body.value = '';
+      }
+    } catch (_) { msg.classList.add('bad'); msg.textContent = UI.errNet[lang]; }
+    send.disabled = false; send.textContent = UI.fSend[lang];
+  });
+
+  return form;
+}
+
+function buildSocial(card, e){
+  const eid = e.id;
+  const row = el('div','social');
+
+  const likeN = (SOCIAL && SOCIAL.likes[eid]) || 0;
+  const mine = !!(SOCIAL && SOCIAL.mine.includes(eid));
+
+  const likeBtn = el('button','likebtn' + (mine ? ' on' : ''));
+  likeBtn.type = 'button';
+  likeBtn.setAttribute('aria-pressed', String(mine));
+  const likeLabel = el('span'); likeLabel.textContent = (mine ? UI.liked : UI.like)[lang];
+  const likeCount = el('span','n'); likeCount.textContent = likeN ? ' ' + likeN : '';
+  likeBtn.append(heartSvg(), likeLabel, likeCount);
+
+  likeBtn.addEventListener('click', async () => {
+    likeBtn.disabled = true;
+    try {
+      const r = await fetch(API + '/v1/like', {
+        method:'POST', headers:{'content-type':'application/json'},
+        body: JSON.stringify({page: PAGE_ID, entry: eid, visitor})
+      });
+      if (r.ok){
+        const d = await r.json();
+        SOCIAL.likes[eid] = d.count;
+        if (d.liked){ if (!SOCIAL.mine.includes(eid)) SOCIAL.mine.push(eid); }
+        else SOCIAL.mine = SOCIAL.mine.filter(x => x !== eid);
+        likeBtn.classList.toggle('on', d.liked);
+        likeBtn.setAttribute('aria-pressed', String(d.liked));
+        likeLabel.textContent = (d.liked ? UI.liked : UI.like)[lang];
+        likeCount.textContent = d.count ? ' ' + d.count : '';
+      }
+    } catch (_) {}
+    likeBtn.disabled = false;
+  });
+
+  const nCmt = ((SOCIAL && SOCIAL.comments[eid]) || []).length;
+  const cmtBtn = el('button','cmtbtn'); cmtBtn.type = 'button';
+  cmtBtn.textContent = UI.cmt[lang] + (nCmt ? ' ' + nCmt : '');
+  cmtBtn.setAttribute('aria-expanded', String(OPEN.has(eid)));
+
+  row.append(likeBtn, cmtBtn);
+
+  const panel = el('div','cpanel');
+  panel.hidden = !OPEN.has(eid);
+  if (OPEN.has(eid)) panel.append(commentList(eid), commentForm(eid));
+
+  cmtBtn.addEventListener('click', () => {
+    const open = panel.hidden;
+    panel.hidden = !open;
+    cmtBtn.setAttribute('aria-expanded', String(open));
+    if (open){
+      OPEN.add(eid);
+      if (!panel.childElementCount) panel.append(commentList(eid), commentForm(eid));
+    } else OPEN.delete(eid);
+  });
+
+  card.append(row, panel);
+}
+
+function mountSocial(){
+  if (!API_ON || !SOCIAL) return;
+  document.querySelectorAll('.entry').forEach(card => {
+    if (card.querySelector('.social')) return;
+    const e = ENTRIES.find(x => x.id === card.dataset.eid);
+    if (e) buildSocial(card, e);
+  });
+}
+
+async function loadSocial(){
+  if (!API_ON) return;
+  try {
+    const r = await fetch(API + '/v1/state?page=' + encodeURIComponent(PAGE_ID) + '&visitor=' + encodeURIComponent(visitor));
+    if (!r.ok) return;
+    const d = await r.json();
+    SOCIAL = {likes: d.likes || {}, mine: d.mine || [], comments: d.comments || {}};
+    const n = $('modnote');
+    if (n){ n.hidden = false; n.querySelector('span').textContent = UI.modNote[lang]; }
+    mountSocial();
+  } catch (_) { /* offline or not deployed yet — page stays static */ }
+}
+
+/* ------------------------------------------------------------------ render */
+
+function renderEntry(e){
+  const card = el('article','entry');
+  card.dataset.eid = e.id;
+  const top = el('div','entry-top');
+  top.append(pageChip(e));
+  card.append(top);
+
+  const q = el('blockquote', lang === 'zh' ? '' : 'latin');
+  q.textContent = e[lang];
+  card.append(q);
+
+  if (lang !== 'zh') {
+    const o = el('div','orig');
+    const lab = el('p','orig-label'); lab.textContent = UI.orig[lang];
+    const t = el('p'); t.textContent = e.zh;
+    o.append(lab, t); card.append(o);
+  }
+
+  if (e.cut) {
+    const c = el('p','cutnote'); c.textContent = UI.cut[lang];
+    card.append(c);
+  }
+
+  return card;
+}
+
+let filter = 'all';
+
+function renderMain(){
+  const main = $('main'); main.replaceChildren();
+  STORIES.forEach(st => {
+    if (filter !== 'all' && filter !== st.id) return;
+    const sec = el('section','story'); sec.dataset.s = st.id;
+    const head = el('div','story-head');
+    const h2 = el('h2','story-title'); h2.textContent = st.t[lang];
+    head.append(h2);
+    if (lang !== 'zh' && st.zh !== st.t[lang]) { const z = el('span','story-zh'); z.textContent = st.zh; head.append(z); }
+    if (st.range) { const r = el('span','range'); r.textContent = st.range; head.append(r); }
+    const sub = el('p','story-sub'); sub.textContent = st.s[lang];
+    sec.append(head, sub);
+    ENTRIES.filter(e => e.s === st.id).forEach(e => sec.append(renderEntry(e)));
+    main.append(sec);
+  });
+  mountSocial();
+}
+
+function renderChrome(){
+  document.documentElement.lang = (lang === 'zh' ? 'zh-Hans' : lang);
+  $('backlink').textContent = UI.back[lang];
+  $('eyebrow').textContent = UI.eyebrow[lang];
+  $('booktitle').textContent = '《兄弟》';
+  $('byline').textContent = UI.byline[lang];
+
+  const f = $('facts'); f.replaceChildren();
+  UI.facts[lang].forEach(([b, t]) => {
+    const li = el('li'); const strong = el('b'); strong.textContent = b;
+    li.append(strong, document.createTextNode(' ' + t)); f.append(li);
+  });
+
+  $('prov-heading').textContent = UI.provHead[lang];
+  $('prov-body').textContent = UI.provBody[lang];
+  const pm = $('prov-meta'); pm.replaceChildren();
+  UI.provRows[lang].forEach(([label,value]) => {
+    const dt = el('dt'); dt.textContent = label;
+    const dd = el('dd'); dd.textContent = value;
+    pm.append(dt,dd);
+  });
+  const mn = $('modnote');
+  if (mn && SOCIAL) { mn.hidden = false; mn.querySelector('span').textContent = UI.modNote[lang]; }
+
+  const fl = $('filters'); fl.replaceChildren();
+  const mk = (id, label) => {
+    const b = el('button'); b.type = 'button'; b.textContent = label;
+    b.setAttribute('aria-pressed', String(filter === id));
+    b.addEventListener('click', () => { filter = id; renderChrome(); renderMain(); window.scrollTo({top:0, behavior:'smooth'}); });
+    fl.append(b);
+  };
+  mk('all', UI.all[lang]);
+  STORIES.forEach(st => mk(st.id, st.t[lang]));
+
+  $('signature').textContent = UI.sig[lang];
+
+  document.querySelectorAll('.langbar button[data-l]').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.l === lang)));
+}
+
+document.querySelectorAll('.langbar button[data-l]').forEach(b => {
+  b.addEventListener('click', () => {
+    lang = b.dataset.l;
+    try { localStorage.setItem('jg-lang', lang); } catch (_) {}
+    renderChrome(); renderMain();
+  });
+});
+
+renderChrome();
+renderMain();
+loadSocial();
+</script>
+</body>
+</html>
