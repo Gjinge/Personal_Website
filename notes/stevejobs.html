@@ -1,0 +1,543 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light">
+<title>史蒂夫·乔布斯传 · Reading Notes — Walter Isaacson</title>
+<meta name="description" content="Four-language reading notes on Walter Isaacson’s Steve Jobs: 47 passages from photographed Chinese pages.">
+<style>
+:root{
+  --bg:#faf8f3; --panel:#fffdf9; --panel-2:#fffdf9; --line:#e4ded2; --line-soft:#efe9dd; --line-hi:#d8cfbc;
+  --ink:#1b1a17; --muted:#6f6a60; --dim:#8d8880;
+  --accent:#8a6a12; --accent-2:#b07d18; --mark:#a1541c; --warn:#6f5aa0;
+  --like:#c03a63; --ok:#2f7d55;
+  --chip-bg:#fcf2d2; --chip-border:rgba(246,214,107,.65); --chip-ink:#7a5c07;
+  --quote-rule:#e2d7b8; --toc-bg:rgba(250,248,243,.93);
+  --prov-bg:rgba(111,90,160,.07); --prov-border:rgba(111,90,160,.30); --prov-ink:#4a4459; --code-bg:rgba(111,90,160,.10);
+  --input-bg:#ffffff; --btn-bg:#f6d66b; --btn-border:#e8c85a; --on-btn:#1b1a17;
+  --glow-a:rgba(246,214,107,.16); --glow-b:rgba(200,170,120,.10);
+  --note-bg:rgba(161,84,28,.07); --note-border:rgba(161,84,28,.28); --note-ink:#5a3418; --note-orig:#7a5a45;
+  --serif:"Iowan Old Style","Palatino Linotype",Palatino,Georgia,"Times New Roman","Noto Serif CJK SC","Source Han Serif SC","Songti SC",serif;
+  --sans:"Segoe UI",system-ui,-apple-system,"Noto Sans CJK SC","PingFang SC","Hiragino Sans GB","Microsoft YaHei",Arial,sans-serif;
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:var(--sans);line-height:1.75;
+  -webkit-font-smoothing:antialiased;
+  background-image:radial-gradient(1200px 600px at 15% -10%,var(--glow-a),transparent 60%),
+                   radial-gradient(900px 500px at 95% 8%,var(--glow-b),transparent 60%);
+  background-attachment:fixed;}
+.wrap{max-width:900px;margin:0 auto;padding:16px}
+a{color:var(--accent)}
+
+/* ---------- language bar ---------- */
+.langbar{display:flex;justify-content:flex-end;gap:6px;padding-block:14px 0;flex-wrap:wrap}
+.langbar a.back{margin-right:auto;font-size:.8rem;color:var(--muted);text-decoration:none;align-self:center}
+.langbar a.back:hover{color:var(--ink)}
+.langbar button{background:transparent;border:1px solid var(--line);color:var(--muted);border-radius:999px;
+  padding:5px 12px;font-size:.76rem;letter-spacing:.05em;cursor:pointer;font-family:inherit;transition:.15s}
+.langbar button:hover{color:var(--ink);border-color:var(--accent)}
+.langbar button[aria-pressed="true"]{background:var(--ink);border-color:var(--ink);color:var(--bg);font-weight:600}
+
+/* ---------- header ---------- */
+header.hero{padding-block:34px 28px;border-bottom:1px solid var(--line)}
+.eyebrow{font-size:.74rem;letter-spacing:.22em;text-transform:uppercase;color:var(--dim);margin:0 0 14px}
+h1{font-family:var(--serif);font-size:clamp(1.9rem,6vw,3rem);line-height:1.25;margin:0 0 6px;font-weight:600}
+h1 .by{display:block;font-family:var(--sans);font-size:.9rem;font-weight:400;letter-spacing:.16em;color:var(--muted);margin-top:12px}
+.hero-note{color:var(--muted);max-width:62ch;margin:18px 0 0;font-size:.95rem}
+.facts{display:flex;flex-wrap:wrap;gap:10px;margin-top:26px;padding:0;list-style:none}
+.facts li{background:var(--panel);border:1px solid var(--line);border-radius:999px;
+  padding:7px 14px;font-size:.8rem;color:var(--muted)}
+.facts b{color:var(--ink);font-weight:600}
+
+/* ---------- provenance banner ---------- */
+.provenance{margin-top:26px;border:1px solid var(--prov-border);background:var(--prov-bg);
+  border-radius:14px;padding:18px 20px}
+.provenance h2{font-family:var(--sans);font-size:.78rem;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--warn);margin:0 0 10px;font-weight:700;display:flex;align-items:center;gap:8px}
+.provenance h2 svg{width:15px;height:15px;flex:0 0 auto;stroke:currentColor;fill:none;stroke-width:1.8}
+.provenance p{margin:0 0 8px;font-size:.88rem;color:var(--prov-ink)}
+.provenance p:last-child{margin-bottom:0}
+
+/* ---------- toc / filter ---------- */
+nav.toc{position:sticky;top:0;z-index:5;background:var(--toc-bg);backdrop-filter:blur(10px);
+  border-bottom:1px solid var(--line);margin-inline:-16px;padding:10px 16px}
+.toc-row{max-width:900px;margin:0 auto;display:flex;gap:8px;overflow-x:auto;scrollbar-width:thin;padding-bottom:2px}
+.toc-row button{flex:0 0 auto;background:transparent;border:1px solid var(--line);color:var(--muted);
+  border-radius:999px;padding:6px 13px;font-size:.8rem;cursor:pointer;font-family:inherit;white-space:nowrap;transition:.15s}
+.toc-row button:hover{color:var(--ink);border-color:var(--accent)}
+.toc-row button[aria-pressed="true"]{background:var(--btn-bg);border-color:var(--btn-border);color:var(--on-btn);font-weight:600}
+
+/* ---------- story ---------- */
+section.story{padding-block:44px 8px;border-bottom:1px solid var(--line)}
+section.story:last-of-type{border-bottom:0}
+.story-head{display:flex;flex-wrap:wrap;align-items:baseline;gap:12px;margin-bottom:4px}
+h2.story-title{font-family:var(--serif);font-size:clamp(1.35rem,4vw,1.8rem);margin:0;font-weight:600}
+.story-zh{font-family:var(--serif);color:var(--muted);font-size:1rem}
+.range{font-size:.78rem;color:var(--dim);letter-spacing:.06em}
+.story-sub{color:var(--muted);font-size:.88rem;margin:8px 0 26px;max-width:62ch}
+
+/* ---------- entry ---------- */
+.entry{background:var(--panel-2);border:1px solid var(--line);border-radius:14px;padding:20px 22px;margin-bottom:16px}
+.entry:hover{border-color:var(--line-hi)}
+.entry-top{display:flex;flex-wrap:wrap;align-items:center;gap:8px;margin-bottom:12px}
+.page{font-family:var(--serif);font-size:.82rem;color:var(--chip-ink);border:1px solid var(--chip-border);
+  background:var(--chip-bg);border-radius:6px;padding:2px 9px;letter-spacing:.04em}
+.page.approx{color:var(--muted);border-color:var(--line);background:transparent}
+blockquote{margin:0;font-family:var(--serif);font-size:1.02rem;line-height:2;color:var(--ink);
+  border-left:2px solid var(--quote-rule);padding-left:16px}
+blockquote.latin{line-height:1.85}
+blockquote em{font-style:italic;color:var(--dim)}
+.cutnote{margin:12px 0 0;font-size:.78rem;color:var(--dim);font-style:italic}
+blockquote b{color:var(--ink);font-weight:600}
+.orig{margin:14px 0 0;border-left:2px solid var(--line);padding-left:16px}
+.orig-label{font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:var(--dim);margin:0 0 6px;
+  display:flex;align-items:center;gap:6px}
+.orig-label::before{content:"";width:14px;height:1px;background:var(--dim);display:inline-block}
+.orig p{margin:0;font-family:var(--serif);font-size:.94rem;line-height:1.95;color:var(--muted)}
+
+/* ---------- footer ---------- */
+footer{padding-block:40px 60px;color:var(--dim);font-size:.82rem;border-top:1px solid var(--line);margin-top:40px}
+footer p{margin:0 0 8px;max-width:72ch}
+
+/* ---------- likes + comments ---------- */
+.modnote{margin:14px 0 0;font-size:.82rem;color:var(--muted);display:flex;gap:8px;align-items:flex-start}
+.modnote[hidden]{display:none}
+.modnote svg{width:14px;height:14px;flex:0 0 auto;margin-top:5px;stroke:var(--ok);fill:none;stroke-width:1.8}
+.social{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-top:14px;
+  padding-top:13px;border-top:1px solid var(--line-soft)}
+.social button{background:transparent;border:1px solid var(--line);color:var(--muted);border-radius:999px;
+  padding:5px 13px;font-size:.78rem;font-family:inherit;cursor:pointer;display:inline-flex;align-items:center;
+  gap:6px;transition:.15s}
+.social button:hover{color:var(--ink);border-color:var(--accent)}
+.social button:disabled{opacity:.5;cursor:default}
+.social .heart{width:13px;height:13px;stroke:currentColor;fill:none;stroke-width:1.9}
+.social .likebtn.on{color:var(--like);border-color:rgba(192,58,99,.35);background:rgba(192,58,99,.07)}
+.social .likebtn.on .heart{fill:currentColor;stroke:currentColor}
+.social .n{font-variant-numeric:tabular-nums;opacity:.85}
+.social .spacer{flex:1}
+.cpanel{margin-top:14px;border-top:1px dashed var(--line);padding-top:14px}
+.cpanel[hidden]{display:none}
+.clist{margin:0 0 14px;padding:0;list-style:none;display:flex;flex-direction:column;gap:10px}
+.citem{background:var(--panel-2);border:1px solid var(--line-soft);border-radius:10px;padding:11px 13px}
+.citem .who{font-size:.78rem;color:var(--accent);font-weight:600}
+.citem .at{font-size:.72rem;color:var(--dim);margin-left:8px}
+.citem p{margin:5px 0 0;font-size:.9rem;white-space:pre-wrap;color:var(--ink)}
+.cnone{color:var(--dim);font-size:.84rem;margin:0 0 14px}
+.cform{display:flex;flex-direction:column;gap:8px}
+.cform .two{display:flex;gap:8px;flex-wrap:wrap}
+.cform .two>*{flex:1 1 180px;min-width:0}
+.cform input,.cform textarea{background:var(--input-bg);border:1px solid var(--line);color:var(--ink);
+  border-radius:8px;padding:9px 11px;font-family:inherit;font-size:.86rem;width:100%}
+.cform textarea{min-height:84px;resize:vertical;line-height:1.65}
+.cform input:focus,.cform textarea:focus{outline:none;border-color:var(--accent)}
+.cform .hp{position:absolute;left:-9999px;width:1px;height:1px;opacity:0}
+.cform .send{align-self:flex-start;background:var(--btn-bg);border:1px solid var(--btn-border);color:var(--on-btn);
+  font-weight:600;border-radius:999px;padding:7px 18px;font-size:.82rem;font-family:inherit;cursor:pointer}
+.cform .send:disabled{opacity:.55;cursor:default}
+.cmsg{font-size:.82rem;min-height:1.3em;margin:0}
+.cmsg.ok{color:var(--ok)}
+.cmsg.bad{color:var(--mark)}
+.cmoderation{font-size:.74rem;color:var(--dim);margin:0}
+
+.mynote{margin:14px 0 0;padding:11px 14px;border-radius:10px;background:rgba(161,84,28,.07);
+  border:1px solid rgba(161,84,28,.28);font-size:.9rem;color:#5a3418}
+.mynote b{color:var(--mark);font-weight:600;letter-spacing:.06em;font-size:.72rem;display:block;margin-bottom:3px;text-transform:uppercase}
+.mynote .note-orig{display:block;margin-top:5px;font-family:var(--serif);color:#7a5a45;font-size:.88rem}
+.ctx{margin:16px 0 0;padding:14px 16px;border-radius:10px;background:var(--panel-2);border:1px solid var(--line-soft)}
+.ctx-label{font-size:.68rem;letter-spacing:.16em;text-transform:uppercase;color:var(--dim);margin:0 0 7px;display:flex;align-items:center;gap:6px}
+.ctx-label::before{content:"";width:14px;height:1px;background:var(--dim);display:inline-block}
+.ctx p{margin:0;font-size:.88rem;line-height:1.85;color:var(--muted)}
+.ctx p.zh{margin-top:9px;font-family:var(--serif);font-size:.9rem;line-height:1.9;color:var(--dim)}
+@media (max-width:560px){
+  .entry{padding:16px 15px;border-radius:12px}
+  blockquote{font-size:.98rem;line-height:1.95;padding-left:13px}
+  .provenance{padding:15px 16px}
+}
+@media print{
+  body{background:#fff;color:#000}
+  nav.toc,.langbar{display:none}
+  .entry{break-inside:avoid;border-color:#ccc;background:#fff}
+}
+.prov-details{display:grid;grid-template-columns:minmax(105px,145px) minmax(0,1fr);gap:6px 14px;
+  border-top:1px solid var(--prov-border);margin:13px 0 0;padding-top:13px;
+  font-size:.78rem;line-height:1.5;color:var(--prov-ink)}
+.prov-details dt{font-weight:700}
+.prov-details dd{margin:0;overflow-wrap:anywhere}
+@media(max-width:480px){.prov-details{grid-template-columns:95px minmax(0,1fr);gap:8px}}
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <div class="langbar">
+    <a class="back" href="../reading.html" id="backlink">← Reading Notes</a>
+    <button type="button" data-l="en" aria-pressed="true">English</button>
+    <button type="button" data-l="zh" aria-pressed="false">简体中文</button>
+    <button type="button" data-l="fr" aria-pressed="false">Français</button>
+    <button type="button" data-l="es" aria-pressed="false">Español</button>
+  </div>
+
+  <header class="hero">
+    <p class="eyebrow" id="eyebrow"></p>
+    <h1><span id="booktitle"></span><span class="by" id="byline"></span></h1>
+    <ul class="facts" id="facts"></ul>
+
+    <section class="provenance" aria-labelledby="prov-title">
+      <h2 id="prov-title">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M12 3v18M3 7h6M15 7h6M6 12l-3 5h6ZM18 12l-3 5h6Z"/></svg>
+        <span id="prov-heading"></span>
+      </h2>
+      <p id="prov-body"></p>
+      <dl class="prov-details" id="prov-details"></dl>
+      <p class="modnote" id="modnote" hidden>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M20 6 9 17l-5-5"/></svg>
+        <span></span>
+      </p>
+    </section>
+  </header>
+
+  <nav class="toc" aria-label="Sections"><div class="toc-row" id="filters"></div></nav>
+
+  <main id="main"><noscript><h2>《史蒂夫·乔布斯传》 · Reading Notes</h2><section class="story"><h3>Early years and Woz</h3><article class="entry"><blockquote class="latin">Only hardware people would want to play this game; software people are too timid.</blockquote><div class="orig"><p>搞硬件的人才愿意玩这个游戏，搞软件的都太胆小了。</p></div></article><article class="entry"><blockquote class="latin">His challenge to himself was to build it with as few components as possible.</blockquote><div class="orig"><p>他为自己定的挑战是：使用最少的元器件来实现。</p></div></article><article class="entry"><p class="page">p. 23</p><blockquote class="latin">I did not buy large speakers. I bought an excellent pair of headphones and would lie in bed listening for hours.</blockquote><div class="orig"><p>我没有买大的扬声器，而是买了一副很棒的耳机，我会躺在床上听上好几个小时。</p></div></article><article class="entry"><p class="page">p. 25</p><blockquote class="latin">After Woz called, Jobs immediately realized that they had to find that technical journal.</blockquote><div class="orig"><p>乔布斯接到沃兹的电话后，立刻意识到他们必须马上找到那本技术期刊。</p></div></article><article class="entry"><p class="page">p. 25</p><blockquote class="latin">But they went inside through a door that was rarely locked.</blockquote><div class="orig"><p>但他们穿过一扇很少上锁的门进到了里面。</p></div></article><article class="entry"><blockquote class="latin">The parts cost forty dollars in all; Jobs decided to sell it for one hundred and fifty.</blockquote><div class="orig"><p>所有的零部件价值40美元，乔布斯决定以150美元的价格出售。</p></div></article><article class="entry"><blockquote class="latin">Friedland was one of the few people in Jobs’s life who could captivate him with his own charisma.</blockquote><div class="orig"><p>弗里德兰是乔布斯一生中少有的能以自己的魅力蛊惑他的人。</p></div></article></section><section class="story"><h3>Early Apple</h3><article class="entry"><p class="page">p. 97</p><blockquote class="latin">As a manager, Jobs could be irritable, harsh, and ruthless toward his subordinates.</blockquote><div class="orig"><p>作为管理人员，乔布斯有时候对待下属是脾气暴躁、严苛无情的。</p></div></article><article class="entry"><p class="page">p. 97</p><blockquote class="latin">Idealism left a permanent mark on the hearts of most of them.</blockquote><div class="orig"><p>大多数人的心里都永远打上了理想主义的烙印。</p></div></article><article class="entry"><blockquote class="latin">Fine. I will give him nothing.</blockquote><div class="orig"><p>好的。我什么都不给他。</p></div></article><article class="entry"><blockquote class="latin">He sold 2,000 of his options to forty midlevel employees at a very low price.</blockquote><div class="orig"><p>他就把自己期权中的2 000份以极低的价格卖给了40名中层员工。</p></div></article></section><section class="story"><h3>Macintosh</h3><article class="entry"><blockquote class="latin">You are wasting your time doing that!</blockquote><div class="orig"><p>你这么做就是浪费时间！</p></div></article><article class="entry"><blockquote class="latin">The whole project was bound to succeed; every detail had been considered.</blockquote><div class="orig"><p>整个项目必定会取得成功，方方面面都已经考虑周到了。</p></div></article><article class="entry"><blockquote class="latin">When he was there, reality was malleable. He could make almost anyone believe almost anything.</blockquote><div class="orig"><p>有他在的时候，现实都是可塑的。他能让任何人相信几乎任何事情。</p></div></article><article class="entry"><blockquote class="latin">Even when you were keenly aware of the reality distortion field, it could still work on you.</blockquote><div class="orig"><p>即使你敏锐地意识到了现实扭曲力场，它还是可以在你身上产生作用。</p></div></article><article class="entry"><blockquote class="latin">Even in small acts of rebellion, such as driving without a license plate or parking in a disabled space, he behaved as though rules and reality did not bind him.</blockquote><div class="orig"><p>即使平时一些小小的叛逆行为，比如汽车不装牌照，或是将车停在残疾人停车位上，他也表现得好像完全不受规则和现实的约束。</p></div></article><article class="entry"><blockquote class="latin">People were either enlightened or fools; their work was either the best or utter rubbish.</blockquote><div class="orig"><p>人要么就是“受到过启示的”，要么就是“饭桶”；人们的工作成果要么是“最棒的”，要么就是“完全的垃圾”。</p></div></article><article class="entry"><p class="page">p. 155</p><blockquote class="latin">They founded Apple, but you and I are creating the future now.</blockquote><div class="orig"><p>他们创立了苹果，但是我和你正在创造未来。</p></div></article><article class="entry"><blockquote class="latin">Will we let IBM dominate the entire computer industry? Will we let IBM control the whole information age?</blockquote><div class="orig"><p>我们能让IBM主宰整个电脑产业吗？我们能让IBM控制整个信息时代吗？</p></div></article><article class="entry"><p class="page">p. 162</p><blockquote class="latin">Keep working at it and keep getting better.</blockquote><div class="orig"><p>坚持努力，越做越好。</p></div></article><article class="entry"><blockquote class="latin">Jobs’s decision to abandon bundled sales ultimately hurt Apple more than Microsoft.</blockquote><div class="orig"><p>乔布斯退出捆绑销售的决定，最终让苹果比微软更受伤。</p></div></article><article class="entry"><blockquote class="latin">Through their persistent efforts, Windows later came to dominate personal computer operating systems.</blockquote><div class="orig"><p>Windows操作系统因为他们的不懈努力，后来主宰了个人电脑操作系统领域。</p></div></article><article class="entry"><blockquote class="latin">First rate players want to work only with other first rate players, which means you cannot tolerate second rate players.</blockquote><div class="orig"><p>一流队员只喜欢同一流队员合作，这就意味着你不能容忍二流队员。</p></div></article><article class="entry"><blockquote class="latin">He must have thought that ordinary rules did not apply to him.</blockquote><div class="orig"><p>他肯定认为常规对自己无效。</p></div></article><article class="entry"><blockquote class="latin">I used to be hot tempered and a jerk myself, so I could recognize that side of Steve.</blockquote><div class="orig"><p>我以前也是个火气大的人，是个浑球。所以我也能看出史蒂夫身上的这种性格。</p></div></article><article class="entry"><blockquote class="latin">Jobs did not take a single gift home.</blockquote><div class="orig"><p>乔布斯一件礼物都没拿回家。</p></div></article></section><section class="story"><h3>NeXT</h3><article class="entry"><blockquote class="latin">Compared with later persuading Apple to allow Esslinger to work for NeXT, this was easy.</blockquote><div class="orig"><p>与接下来说服苹果允许艾斯林格为NeXT工作相比，这算是很容易的事情了。</p></div></article><article class="entry"><p class="page">p. 208</p><blockquote class="latin">Jobs’s passion for perfection had gone out of control.</blockquote><div class="orig"><p>乔布斯对于完美的热情已然失控。</p></div></article><article class="entry"><p class="page">p. 208</p><blockquote class="latin">Jobs insisted that the magnesium case be matte black, which would make any flaws more visible.</blockquote><div class="orig"><p>乔布斯坚持镁合金外壳应该是亚光黑色，而这样，如果有瑕疵就会更明显。</p></div></article><article class="entry"><blockquote class="latin">Jobs made this staircase a signature feature of Apple’s retail stores.</blockquote><div class="orig"><p>乔布斯把这款楼梯变成了苹果零售店的特色。</p></div></article><article class="entry"><p class="page">p. 211</p><blockquote class="latin">His use of charm and public humiliation was very effective in most cases.</blockquote><div class="orig"><p>他对施展魅力和公开羞辱这两种方式的运用，在大多数情况下非常奏效。</p></div></article><article class="entry"><p class="page">p. 211</p><blockquote class="latin">Perhaps the greatest common thread between Apple and his life afterward was Jobs’s reality distortion field.</blockquote><div class="orig"><p>也许苹果和后苹果生活之间的最大共同点，便是乔布斯的现实扭曲力场。</p></div></article><article class="entry"><blockquote class="latin">The optical drive was too slow, the case was too damn expensive, and the whole thing was absurd.</blockquote><div class="orig"><p>光驱的反应时间太长，机箱太他妈贵，整个东西太荒谬。</p></div></article><article class="entry"><p class="page">p. 217</p><blockquote class="latin">NeXT received a licensing fee but never got the chance to change the world.</blockquote><div class="orig"><p>NeXT公司得到了一笔授权费，但始终没有得到改变世界的机会。</p></div></article><article class="entry"><blockquote class="latin">He decided to demonstrate it live, though he knew it would be like walking a tightrope without a safety net.</blockquote><div class="orig"><p>他决定现场示范，尽管他知道，这会像走钢丝而没有安全网一样。</p></div></article></section><section class="story"><h3>Pixar</h3><article class="entry"><p class="page">p. 261</p><blockquote class="latin">I really am a tyrant. But I am usually right.</blockquote><div class="orig"><p>我也确实是个暴君。但我通常是正确的。</p></div></article><article class="entry"><p class="page">p. 261</p><blockquote class="latin">In the end, he prevailed.</blockquote><div class="orig"><p>最终他胜利了。</p></div></article><article class="entry"><blockquote class="latin">It also featured the playful hopping lamp, a tribute to Lasseter’s first award winning animated short.</blockquote><div class="orig"><p>其中还出现了顽皮跳跳灯（向拉塞特的第一部获奖动画短片致敬）。</p></div></article><article class="entry"><blockquote class="latin">Only Jobs could keep at it so relentlessly.</blockquote><div class="orig"><p>只有乔布斯能那么疯狂地没完没了。</p></div></article><article class="entry"><blockquote class="latin">It recouped its costs in the first week of release.</blockquote><div class="orig"><p>第一周上映就收回了成本。</p></div></article><article class="entry"><blockquote class="latin">Pixar needed capital. That called for a successful initial public offering.</blockquote><div class="orig"><p>皮克斯必须有资金。这就需要一次成功的IPO。</p></div></article><article class="entry"><blockquote class="latin">I have never done this for the money.</blockquote><div class="orig"><p>我做这个从来都不是为了钱。</p></div></article><article class="entry"><blockquote class="latin">He created the two greatest brands of his era: Apple and Pixar.</blockquote><div class="orig"><p>他创造了他的时代中最好的两个品牌——苹果和皮克斯。</p></div></article></section><section class="story"><h3>iPhone 4</h3><article class="entry"><blockquote class="latin">You will be in a room with the world’s best people and see how everything works.</blockquote><div class="orig"><p>你将会和世界上最优秀的人才共处一室，看看一切是如何运作的。</p></div></article><article class="entry"><blockquote class="latin">The iPhone 4 return rate was only 1.7 percent, less than one third of the rate for the iPhone 3GS and most other phones.</blockquote><div class="orig"><p>iPhone 4的退货率只有1.7%，还不到iPhone 3GS和大多数其他手机退货率的1/3。</p></div></article><article class="entry"><blockquote class="latin">With a bold performance, Jobs projected conviction, righteousness and innocence, deflecting the issue and criticism toward other smartphone makers.</blockquote><div class="orig"><p>通过一场大胆的表演，乔布斯向人们展示了他的坚定、正义及无辜，从而成功地回避了问题，消除了批评，并将火引到了其他智能手机厂商身上。</p></div></article><article class="entry"><blockquote class="latin">His gaunt, severe appearance, his authoritarian manner, religious influence and godlike status gave him the power to decide what mattered and what did not.</blockquote><div class="orig"><p>他冷酷瘦削的外表，他的专制，宗教般的影响力，神一样的地位，使他有特权决定什么东西重要什么东西微不足道。</p></div></article></section></noscript></main>
+
+  <footer>
+    <p style="margin-top:18px" id="signature"></p>
+  </footer>
+
+</div>
+
+<script>
+const LANGS = ['en','zh','fr','es'];
+
+const UI = {"back":{"en":"← Reading Notes","zh":"← 读书笔记","fr":"← Notes de lecture","es":"← Notas de lectura"},"eyebrow":{"en":"Reading notes · Walter Isaacson","zh":"读书笔记 · 史蒂夫·乔布斯传","fr":"Notes de lecture · Walter Isaacson","es":"Notas de lectura · Walter Isaacson"},"byline":{"en":"Walter Isaacson · Steve Jobs · photographed Chinese edition","zh":"［美］沃尔特·艾萨克森 著 · 中文纸质本","fr":"Walter Isaacson · Steve Jobs · édition chinoise photographiée","es":"Walter Isaacson · Steve Jobs · edición china fotografiada"},"facts":{"en":[["20 Mar – 14 Apr 2025","read"],["Chinese print edition","reading edition"]],"zh":[["2025 年 3 月 20 日 – 4 月 14 日","阅读期间"],["中文纸质本","纸质底本"]],"fr":[["20 mars – 14 avr. 2025","lecture"],["édition chinoise imprimée","édition lue"]],"es":[["20 mar. – 14 abr. 2025","lectura"],["edición impresa en chino","edición leída"]]},"provHead":{"en":"Translation notice","zh":"翻译说明","fr":"Avis de traduction","es":"Aviso de traducción"},"provBody":{"en":"The original work was written in English. Chinese quotations were transcribed from photographs of a printed Chinese translation; the edition and translator cannot be identified from the supplied pages. The supplied English MOBI was not used to determine Chinese wording. English passages and margin-note translations were edited with OpenAI Codex (GPT-6); French and Spanish were generated with Argos Translate 1.11.0 and reviewed for obvious errors on 23 September 2026. These are retranslations of the Chinese reading edition, not Isaacson’s English original. They have not been professionally edited. Chinese appears beneath each translation and governs where wording differs.","zh":"原著为英文；中文引文据中文纸质译本照片录入。所给照片未显示可核实的版次及译者；附带英文 MOBI 未用于确定中文措辞。英文及手写批注译文由 OpenAI Codex（GPT-6）整理；法文、西班牙文经 Argos Translate 1.11.0 生成，并于 2026 年 9 月 23 日校订明显误译。外文据中译本转译，并非艾萨克森英文原文，未经专业译者润色。每条译文附中文，以中文为准。","fr":"L’œuvre originale est en anglais. Les citations chinoises viennent de photographies d’une traduction imprimée ; les pages fournies ne permettent pas d’identifier l’édition ni le traducteur. Le MOBI anglais n’a pas servi à établir le libellé chinois. Les textes anglais et les annotations ont été révisés avec OpenAI Codex (GPT-6) ; le français et l’espagnol ont été générés avec Argos Translate 1.11.0 puis corrigés le 23 septembre 2026. Il s’agit de retraductions du chinois, et non du texte anglais original. Aucune révision professionnelle n’a été effectuée. Le chinois fait foi.","es":"La obra original está en inglés. Las citas chinas proceden de fotografías de una traducción impresa; las páginas no permiten identificar la edición ni al traductor. El MOBI inglés no se utilizó para fijar la redacción china. Los textos ingleses y las notas se revisaron con OpenAI Codex (GPT-6); el francés y el español se generaron con Argos Translate 1.11.0 y se corrigieron el 23 de septiembre de 2026. Son retraducciones del chino, no el texto inglés original. No hubo revisión profesional. Prevalece el chino."},"all":{"en":"All sections","zh":"全部","fr":"Tout","es":"Todo"},"orig":{"en":"Chinese source text","zh":"中文原文","fr":"Texte chinois","es":"Texto chino"},"myNote":{"en":"My margin note","zh":"我的批注","fr":"Ma note en marge","es":"Mi nota al margen"},"approx":{"en":"location estimated","zh":"位置推定","fr":"emplacement estimé","es":"ubicación estimada"},"kinds":{"u":{"en":"underline","zh":"划线","fr":"souligné","es":"subrayado"},"b":{"en":"boxed","zh":"方框","fr":"encadré","es":"recuadrado"},"c":{"en":"circled","zh":"圈注","fr":"entouré","es":"rodeado"}},"sig":{"en":"Compiled September 2026 · Jinge Guo","zh":"整理于 2026 年 9 月 · 郭晋阁","fr":"Compilé en septembre 2026 · Jinge Guo","es":"Recopilado en septiembre de 2026 · Jinge Guo"},"provVals":{"en":["English","Walter Isaacson, Steve Jobs; photographed Chinese print translation (edition and translator unconfirmed)","OpenAI Codex (GPT-6); Argos Translate 1.11.0; machine translation, not professionally edited","23 September 2026"],"zh":["英文","沃尔特·艾萨克森《史蒂夫·乔布斯传》中文纸质译本照片（版次、译者待核）","OpenAI Codex（GPT-6）与 Argos Translate 1.11.0 机器转译，未经专业润色","2026 年 9 月 23 日"],"fr":["anglais","Walter Isaacson, Steve Jobs ; traduction chinoise imprimée photographiée (édition et traducteur non confirmés)","OpenAI Codex (GPT-6) et Argos Translate 1.11.0 ; traduction automatique non révisée par un professionnel","23 septembre 2026"],"es":["inglés","Walter Isaacson, Steve Jobs; traducción china impresa fotografiada (edición y traductor sin confirmar)","OpenAI Codex (GPT-6) y Argos Translate 1.11.0; traducción automática sin revisión profesional","23 de septiembre de 2026"]},"provKeys":{"en":["Original language","Reading copy","Translation","Translated on"],"zh":["原文语言","底本","翻译者","翻译日期"],"fr":["Langue originale","Exemplaire lu","Traduction","Date de traduction"],"es":["Lengua original","Ejemplar leído","Traducción","Fecha de traducción"]}};
+
+const STORIES = [{"id":"origins","zh":"早年与沃兹","range":"","t":{"en":"Early years and Woz","zh":"早年与沃兹","fr":"Jeunesse et Woz","es":"Primeros años y Woz"},"s":{"en":"Electronics, music, and the blue box.","zh":"电子、音乐与蓝盒子。","fr":"Électronique, musique et blue box.","es":"Electrónica, música y caja azul."}},{"id":"apple","zh":"苹果早期","range":"","t":{"en":"Early Apple","zh":"苹果早期","fr":"Les débuts d’Apple","es":"Los inicios de Apple"},"s":{"en":"Idealism, management, and the IPO.","zh":"理想主义、管理与上市。","fr":"Idéalisme, gestion et introduction en bourse.","es":"Idealismo, gestión y salida a bolsa."}},{"id":"mac","zh":"麦金塔","range":"","t":{"en":"Macintosh","zh":"麦金塔","fr":"Macintosh","es":"Macintosh"},"s":{"en":"The Mac team, reality distortion, and rivals.","zh":"Mac 团队、现实扭曲力场与竞争对手。","fr":"Équipe Mac, distorsion de la réalité et rivaux.","es":"Equipo Mac, distorsión de la realidad y rivales."}},{"id":"next","zh":"NeXT","range":"","t":{"en":"NeXT","zh":"NeXT","fr":"NeXT","es":"NeXT"},"s":{"en":"Perfection, teams, and a new company.","zh":"完美主义、团队与新公司。","fr":"Perfection, équipes et nouvelle entreprise.","es":"Perfección, equipos y nueva empresa."}},{"id":"pixar","zh":"皮克斯","range":"","t":{"en":"Pixar","zh":"皮克斯","fr":"Pixar","es":"Pixar"},"s":{"en":"Film negotiations, Toy Story, and an IPO.","zh":"电影谈判、《玩具总动员》与上市。","fr":"Négociations, Toy Story et introduction en bourse.","es":"Negociaciones, Toy Story y salida a bolsa."}},{"id":"iphone","zh":"iPhone 4","range":"","t":{"en":"iPhone 4","zh":"iPhone 4","fr":"iPhone 4","es":"iPhone 4"},"s":{"en":"Leadership and the antenna crisis.","zh":"领导方式与天线事件。","fr":"Direction et crise de l’antenne.","es":"Liderazgo y crisis de la antena."}}];
+
+const ENTRIES = [{"s":"origins","ch":"","k":["u"],"zh":"搞硬件的人才愿意玩这个游戏，搞软件的都太胆小了。","en":"Only hardware people would want to play this game; software people are too timid.","id":"sj001","fr":"Seuls les gens du matériel voudraient jouer à ce jeu; les gens du logiciel sont trop timides.","es":"Sólo la gente del hardware querría jugar este juego; la gente del software es demasiado tímida."},{"s":"origins","ch":"","k":["u"],"zh":"他为自己定的挑战是：使用最少的元器件来实现。","en":"His challenge to himself was to build it with as few components as possible.","id":"sj002","fr":"Son défi pour lui-même était de le construire avec le moins de composants possible.","es":"Su desafío a sí mismo era construirlo con los pocos componentes posibles."},{"s":"origins","ch":"p. 23","k":["c"],"zh":"我没有买大的扬声器，而是买了一副很棒的耳机，我会躺在床上听上好几个小时。","en":"I did not buy large speakers. I bought an excellent pair of headphones and would lie in bed listening for hours.","id":"sj003","fr":"Je n’ai pas acheté de grandes enceintes ; j’ai acheté un très bon casque et je restais allongé dans mon lit à écouter pendant des heures.","es":"No compré altavoces grandes; compré unos auriculares excelentes y me quedaba horas escuchando en la cama."},{"s":"origins","ch":"p. 25","k":["u"],"zh":"乔布斯接到沃兹的电话后，立刻意识到他们必须马上找到那本技术期刊。","en":"After Woz called, Jobs immediately realized that they had to find that technical journal.","id":"sj004","fr":"Après que Woz a appelé, Jobs a immédiatement réalisé qu'ils devaient trouver ce journal technique.","es":"Después de que Woz llamó, Jobs inmediatamente se dio cuenta de que tenían que encontrar esa revista técnica."},{"s":"origins","ch":"p. 25","k":["c"],"zh":"但他们穿过一扇很少上锁的门进到了里面。","en":"But they went inside through a door that was rarely locked.","id":"sj005","fr":"Mais ils sont entrés par une porte qui était rarement verrouillée.","es":"Pero entraron por una puerta que rara vez estaba cerrada."},{"s":"origins","ch":"","k":["u"],"zh":"所有的零部件价值40美元，乔布斯决定以150美元的价格出售。","en":"The parts cost forty dollars in all; Jobs decided to sell it for one hundred and fifty.","id":"sj006","fr":"Les composants coûtaient quarante dollars au total ; Jobs décida de vendre l’appareil cent cinquante dollars.","es":"Las piezas costaban cuarenta dólares en total; Jobs decidió vender el aparato por ciento cincuenta."},{"s":"origins","ch":"","k":["u"],"zh":"弗里德兰是乔布斯一生中少有的能以自己的魅力蛊惑他的人。","en":"Friedland was one of the few people in Jobs’s life who could captivate him with his own charisma.","n":{"zh":"电子居然只是他的一部分？","en":"Was electronics only one part of him?","fr":"L'électronique n'était qu'une partie de lui ?","es":"¿La electrónica era sólo una parte de él?"},"id":"sj007","fr":"Friedland était l'une des rares personnes de la vie de Jobs à pouvoir le captiver avec son propre charisme.","es":"Friedland era una de las pocas personas en la vida de Jobs que podían cautivarlo con su propio carisma."},{"s":"apple","ch":"p. 97","k":["u"],"zh":"作为管理人员，乔布斯有时候对待下属是脾气暴躁、严苛无情的。","en":"As a manager, Jobs could be irritable, harsh, and ruthless toward his subordinates.","id":"sj008","fr":"En tant que dirigeant, Jobs pouvait être colérique, dur et impitoyable envers ses subordonnés.","es":"Como directivo, Jobs podía ser irritable, severo y despiadado con sus subordinados."},{"s":"apple","ch":"p. 97","k":["c"],"zh":"大多数人的心里都永远打上了理想主义的烙印。","en":"Idealism left a permanent mark on the hearts of most of them.","n":{"zh":"和我生活导师说的一样。","en":"Just as my life mentor said.","fr":"Comme mon mentor l'a dit.","es":"Como dijo mi mentor de vida."},"id":"sj009","fr":"L'idéalisme a laissé une marque permanente au cœur de la plupart d'entre eux.","es":"El idealismo dejó una marca permanente en los corazones de la mayoría de ellos."},{"s":"apple","ch":"","k":["u"],"zh":"好的。我什么都不给他。","en":"Fine. I will give him nothing.","n":{"zh":"混蛋，冷酷。","en":"A jerk. Cold-hearted.","fr":"Un salaud. Sans cœur.","es":"Un canalla. Insensible."},"id":"sj010","fr":"Très bien. Je ne lui donnerai rien.","es":"Bien. No le daré nada."},{"s":"apple","ch":"","k":["b"],"zh":"他就把自己期权中的2 000份以极低的价格卖给了40名中层员工。","en":"He sold 2,000 of his options to forty midlevel employees at a very low price.","id":"sj011","fr":"Il a vendu 2 000 de ses options à quarante employés de niveau intermédiaire à un prix très bas.","es":"Vendió 2.000 de sus opciones a cuarenta empleados de nivel medio a un precio muy bajo."},{"s":"mac","ch":"","k":["u"],"zh":"你这么做就是浪费时间！","en":"You are wasting your time doing that!","n":{"zh":"强硬迅速行动，猛推进度。","en":"Act forcefully and quickly; push the schedule hard.","fr":"Agir vite et fermement ; accélérer le projet.","es":"Actuar con rapidez y firmeza; acelerar el proyecto."},"id":"sj012","fr":"Vous perdez votre temps à faire ça !","es":"¡Estás perdiendo el tiempo haciendo eso!"},{"s":"mac","ch":"","k":["u"],"zh":"整个项目必定会取得成功，方方面面都已经考虑周到了。","en":"The whole project was bound to succeed; every detail had been considered.","id":"sj013","fr":"Le projet entier allait forcément réussir ; tous les détails avaient été pris en compte.","es":"Todo el proyecto estaba destinado a triunfar; se habían considerado todos los detalles."},{"s":"mac","ch":"","k":["u"],"zh":"有他在的时候，现实都是可塑的。他能让任何人相信几乎任何事情。","en":"When he was there, reality was malleable. He could make almost anyone believe almost anything.","id":"sj014","fr":"Quand il était là, la réalité était malléable. Il pouvait faire croire à presque n'importe qui presque n'importe quoi.","es":"Cuando estaba allí, la realidad era maleable. Podría hacer que casi nadie crea casi nada."},{"s":"mac","ch":"","k":["u"],"zh":"即使你敏锐地意识到了现实扭曲力场，它还是可以在你身上产生作用。","en":"Even when you were keenly aware of the reality distortion field, it could still work on you.","id":"sj015","fr":"Même quand vous étiez très conscient du champ de distorsion de la réalité, il pouvait encore travailler sur vous.","es":"Incluso cuando usted estaba muy consciente del campo de distorsión de la realidad, todavía podría funcionar en usted."},{"s":"mac","ch":"","k":["u"],"zh":"即使平时一些小小的叛逆行为，比如汽车不装牌照，或是将车停在残疾人停车位上，他也表现得好像完全不受规则和现实的约束。","en":"Even in small acts of rebellion, such as driving without a license plate or parking in a disabled space, he behaved as though rules and reality did not bind him.","id":"sj016","fr":"Même dans de petits actes de rébellion, comme la conduite sans plaque d'immatriculation ou le stationnement dans un espace handicapé, il se comportait comme si les règles et la réalité ne le liaient pas.","es":"Incluso en pequeños actos de rebelión, como conducir sin matrícula o estacionamiento en un espacio discapacitado, se comportaba como si las reglas y la realidad no lo ataban."},{"s":"mac","ch":"","k":["u"],"zh":"人要么就是“受到过启示的”，要么就是“饭桶”；人们的工作成果要么是“最棒的”，要么就是“完全的垃圾”。","en":"People were either enlightened or fools; their work was either the best or utter rubbish.","id":"sj017","fr":"Les gens étaient soit « éclairés », soit « bons à rien » ; leur travail était soit « le meilleur », soit « complètement nul ».","es":"Las personas eran «iluminadas» o «inútiles»; su trabajo era «el mejor» o «una basura absoluta»."},{"s":"mac","ch":"p. 155","k":["u"],"zh":"他们创立了苹果，但是我和你正在创造未来。","en":"They founded Apple, but you and I are creating the future now.","id":"sj018","fr":"Ils ont fondé Apple, mais vous et moi créons l'avenir maintenant.","es":"Ellos fundaron Apple, pero tú y yo estamos creando el futuro ahora."},{"s":"mac","ch":"","k":["u"],"zh":"我们能让IBM主宰整个电脑产业吗？我们能让IBM控制整个信息时代吗？","en":"Will we let IBM dominate the entire computer industry? Will we let IBM control the whole information age?","n":{"zh":"口才，演讲。","en":"Eloquence and public speaking.","fr":"Éloquence et discours en public.","es":"Elocuencia y discurso público."},"id":"sj019","fr":"Allions-nous laisser IBM dominer toute l’industrie informatique ? Allions-nous la laisser contrôler toute l’ère de l’information ?","es":"¿Íbamos a dejar que IBM dominara toda la industria informática? ¿Íbamos a dejar que controlara toda la era de la información?"},{"s":"mac","ch":"p. 162","k":["c"],"zh":"坚持努力，越做越好。","en":"Keep working at it and keep getting better.","id":"sj020","fr":"Continuez à y travailler et continuez à aller mieux.","es":"Sigue trabajando en ello y sigue mejorando."},{"s":"mac","ch":"","k":["u"],"zh":"乔布斯退出捆绑销售的决定，最终让苹果比微软更受伤。","en":"Jobs’s decision to abandon bundled sales ultimately hurt Apple more than Microsoft.","n":{"zh":"习惯了。","en":"He was used to it.","fr":"Il était habitué.","es":"Estaba acostumbrado."},"id":"sj021","fr":"La décision de Jobs d’abandonner la vente groupée finit par nuire davantage à Apple qu’à Microsoft.","es":"La decisión de Jobs de abandonar la venta conjunta terminó perjudicando más a Apple que a Microsoft."},{"s":"mac","ch":"","k":["u"],"zh":"Windows操作系统因为他们的不懈努力，后来主宰了个人电脑操作系统领域。","en":"Through their persistent efforts, Windows later came to dominate personal computer operating systems.","id":"sj022","fr":"Grâce à leurs efforts persistants, Windows est plus tard venu à dominer les systèmes d'exploitation informatiques personnels.","es":"A través de sus esfuerzos persistentes, Windows llegó más tarde a dominar los sistemas operativos de ordenador personal."},{"s":"mac","ch":"","k":["b"],"zh":"一流队员只喜欢同一流队员合作，这就意味着你不能容忍二流队员。","en":"First rate players want to work only with other first rate players, which means you cannot tolerate second rate players.","id":"sj023","fr":"Les meilleurs ne veulent travailler qu’avec d’autres personnes de leur niveau ; cela signifie qu’on ne peut tolérer les médiocres.","es":"Los mejores solo quieren trabajar con otros de su nivel; eso significa que no puedes tolerar a los mediocres."},{"s":"mac","ch":"","k":["u"],"zh":"他肯定认为常规对自己无效。","en":"He must have thought that ordinary rules did not apply to him.","id":"sj024","fr":"Il a dû penser que les règles ordinaires ne s'appliquaient pas à lui.","es":"Debe haber pensado que las reglas ordinarias no se aplican a él."},{"s":"mac","ch":"","k":["u"],"zh":"我以前也是个火气大的人，是个浑球。所以我也能看出史蒂夫身上的这种性格。","en":"I used to be hot tempered and a jerk myself, so I could recognize that side of Steve.","n":{"zh":"成事的人身有匪气。","en":"People who get things done have a rebellious streak.","fr":"Les personnes capables d’agir ont un côté rebelle.","es":"Quienes logran cosas tienen una vena rebelde."},"id":"sj025","fr":"J’étais moi aussi colérique et brutal ; je reconnaissais donc ce trait chez Steve.","es":"Yo también había sido irascible y brusco, así que reconocía ese rasgo en Steve."},{"s":"mac","ch":"","k":["u"],"zh":"乔布斯一件礼物都没拿回家。","en":"Jobs did not take a single gift home.","id":"sj026","fr":"Jobs n’a rapporté aucun cadeau chez lui.","es":"Jobs no se llevó a casa ni un solo regalo."},{"s":"next","ch":"","k":["u"],"zh":"与接下来说服苹果允许艾斯林格为NeXT工作相比，这算是很容易的事情了。","en":"Compared with later persuading Apple to allow Esslinger to work for NeXT, this was easy.","id":"sj027","fr":"Comparé à la tâche de convaincre ensuite Apple d’autoriser Esslinger à travailler pour NeXT, cela semblait facile.","es":"Comparado con convencer después a Apple de que permitiera a Esslinger trabajar para NeXT, aquello parecía fácil."},{"s":"next","ch":"p. 208","k":["c"],"zh":"乔布斯对于完美的热情已然失控。","en":"Jobs’s passion for perfection had gone out of control.","id":"sj028","fr":"La passion de Jobs pour la perfection était devenue incontrôlable.","es":"La pasión de Jobs por la perfección se había descontrolado."},{"s":"next","ch":"p. 208","k":["u"],"zh":"乔布斯坚持镁合金外壳应该是亚光黑色，而这样，如果有瑕疵就会更明显。","en":"Jobs insisted that the magnesium case be matte black, which would make any flaws more visible.","id":"sj029","fr":"Jobs exigeait un boîtier en magnésium noir mat, ce qui rendrait le moindre défaut plus visible.","es":"Jobs insistía en que la carcasa de magnesio fuera negra mate, lo que haría más visible cualquier defecto."},{"s":"next","ch":"","k":["u"],"zh":"乔布斯把这款楼梯变成了苹果零售店的特色。","en":"Jobs made this staircase a signature feature of Apple’s retail stores.","n":{"zh":"That’s why people love Apple. They are arts. (But Elon is quite the opposite.)","en":"That’s why people love Apple. They are arts. (But Elon is quite the opposite.)","fr":"C'est pourquoi les gens aiment Apple. Ce sont des arts. (Mais Elon est tout le contraire.)","es":"Por eso la gente ama a Apple. Son artes. (Pero Elon es todo lo contrario.)"},"id":"sj030","fr":"Jobs fit de cet escalier une marque distinctive des Apple Store.","es":"Jobs convirtió aquella escalera en un rasgo distintivo de las tiendas Apple."},{"s":"next","ch":"p. 211","k":["b"],"zh":"他对施展魅力和公开羞辱这两种方式的运用，在大多数情况下非常奏效。","en":"His use of charm and public humiliation was very effective in most cases.","n":{"zh":"神级抖S。","en":"Sadism at a godlike level.","fr":"Sadisme à un niveau divin.","es":"El sadismo a nivel de dios."},"id":"sj031","fr":"Son utilisation du charme et de l'humiliation publique a été très efficace dans la plupart des cas.","es":"Su uso de encanto y humillación pública fue muy eficaz en la mayoría de los casos."},{"s":"next","ch":"p. 211","k":["b"],"zh":"也许苹果和后苹果生活之间的最大共同点，便是乔布斯的现实扭曲力场。","en":"Perhaps the greatest common thread between Apple and his life afterward was Jobs’s reality distortion field.","id":"sj032","fr":"Peut-être le plus grand fil commun entre Apple et sa vie après était Jobs dans le champ de distorsion de la réalité.","es":"Quizás el mayor hilo común entre Apple y su vida después fue el campo de distorsión de la realidad de Jobs."},{"s":"next","ch":"","k":["u"],"zh":"光驱的反应时间太长，机箱太他妈贵，整个东西太荒谬。","en":"The optical drive was too slow, the case was too damn expensive, and the whole thing was absurd.","id":"sj033","fr":"Le lecteur optique réagissait trop lentement, le boîtier coûtait beaucoup trop cher, et l’ensemble était absurde.","es":"La unidad óptica respondía demasiado despacio, la carcasa era condenadamente cara y todo el conjunto era absurdo."},{"s":"next","ch":"p. 217","k":["u"],"zh":"NeXT公司得到了一笔授权费，但始终没有得到改变世界的机会。","en":"NeXT received a licensing fee but never got the chance to change the world.","n":{"zh":"要真如此，全世界只有Mac了。","en":"If that were true, the whole world would have only Macs.","fr":"Si c'était vrai, le monde entier n'aurait que des Macs.","es":"Si eso fuera cierto, todo el mundo tendría solamente Macs."},"id":"sj034","fr":"NeXT a reçu des droits de licence mais n'a jamais eu la chance de changer le monde.","es":"NeXT recibió una cuota de licencia pero nunca tuvo la oportunidad de cambiar el mundo."},{"s":"next","ch":"","k":["b"],"zh":"他决定现场示范，尽管他知道，这会像走钢丝而没有安全网一样。","en":"He decided to demonstrate it live, though he knew it would be like walking a tightrope without a safety net.","id":"sj035","fr":"Il a décidé de le démontrer en direct, bien qu'il savait que ce serait comme marcher une corde serrée sans filet de sécurité.","es":"Decidió demostrarlo en vivo, aunque sabía que sería como caminar una cuerda floja sin una red de seguridad."},{"s":"pixar","ch":"p. 261","k":["u"],"zh":"我也确实是个暴君。但我通常是正确的。","en":"I really am a tyrant. But I am usually right.","id":"sj036","fr":"Je suis vraiment un tyran. Mais j'ai généralement raison.","es":"Realmente soy un tirano. Pero generalmente tengo razón."},{"s":"pixar","ch":"p. 261","k":["c"],"zh":"最终他胜利了。","en":"In the end, he prevailed.","id":"sj037","fr":"En fin de compte, il l'a emporté.","es":"Al final, prevaleció."},{"s":"pixar","ch":"","k":["u"],"zh":"其中还出现了顽皮跳跳灯（向拉塞特的第一部获奖动画短片致敬）。","en":"It also featured the playful hopping lamp, a tribute to Lasseter’s first award winning animated short.","id":"sj038","fr":"On y voyait aussi la petite lampe bondissante, hommage au premier court métrage d’animation primé de Lasseter.","es":"También aparecía la lámpara saltarina, un homenaje al primer cortometraje animado premiado de Lasseter."},{"s":"pixar","ch":"","k":["u"],"zh":"只有乔布斯能那么疯狂地没完没了。","en":"Only Jobs could keep at it so relentlessly.","n":{"zh":"乔布斯：永远死缠烂打。","en":"Jobs: never let go.","fr":"Jobs : ne jamais lâcher prise.","es":"Jobs: no rendirse nunca."},"id":"sj039","fr":"Seul Jobs pouvait s’acharner ainsi sans jamais lâcher prise.","es":"Solo Jobs podía insistir con tanta tenacidad."},{"s":"pixar","ch":"","k":["c"],"zh":"第一周上映就收回了成本。","en":"It recouped its costs in the first week of release.","id":"sj040","fr":"Le film amortit ses coûts dès sa première semaine en salles.","es":"La película recuperó sus costos en su primera semana de estreno."},{"s":"pixar","ch":"","k":["b"],"zh":"皮克斯必须有资金。这就需要一次成功的IPO。","en":"Pixar needed capital. That called for a successful initial public offering.","n":{"zh":"志存高远，自己手里有实力。","en":"Aim high; have real strength of your own.","fr":"Visez haut ; ayez votre propre force.","es":"Apunten alto; tengan una fuerza real propia."},"id":"sj041","fr":"Pixar avait besoin de capitaux. Cela exigeait une offre publique initiale réussie.","es":"Pixar necesitaba capital. Eso pidió una oferta pública inicial exitosa."},{"s":"pixar","ch":"","k":["c"],"zh":"我做这个从来都不是为了钱。","en":"I have never done this for the money.","id":"sj042","fr":"Je n'ai jamais fait ça pour l'argent.","es":"Nunca he hecho esto por el dinero."},{"s":"pixar","ch":"","k":["u"],"zh":"他创造了他的时代中最好的两个品牌——苹果和皮克斯。","en":"He created the two greatest brands of his era: Apple and Pixar.","n":{"zh":"真是","en":"Indeed.","fr":"En effet.","es":"De hecho."},"id":"sj043","fr":"Il créa les deux plus grandes marques de son époque : Apple et Pixar.","es":"Creó las dos mejores marcas de su época: Apple y Pixar."},{"s":"iphone","ch":"","k":["u"],"zh":"你将会和世界上最优秀的人才共处一室，看看一切是如何运作的。","en":"You will be in a room with the world’s best people and see how everything works.","n":{"zh":"爱子心切。","en":"A father’s deep concern for his son.","fr":"Un père est profondément préoccupé par son fils.","es":"La profunda preocupación de un padre por su hijo."},"id":"sj044","fr":"Tu seras dans une pièce avec les meilleurs talents du monde et tu verras comment tout fonctionne.","es":"Estarás en una sala con los mayores talentos del mundo y verás cómo funciona todo."},{"s":"iphone","ch":"","k":["c"],"zh":"iPhone 4的退货率只有1.7%，还不到iPhone 3GS和大多数其他手机退货率的1/3。","en":"The iPhone 4 return rate was only 1.7 percent, less than one third of the rate for the iPhone 3GS and most other phones.","id":"sj045","fr":"Le taux de retour de l’iPhone 4 n’était que de 1,7 %, soit moins du tiers de celui de l’iPhone 3GS et de la plupart des autres téléphones.","es":"La tasa de devoluciones del iPhone 4 era solo del 1,7 %, menos de un tercio de la del iPhone 3GS y de la mayoría de los demás teléfonos."},{"s":"iphone","ch":"","k":["u"],"zh":"通过一场大胆的表演，乔布斯向人们展示了他的坚定、正义及无辜，从而成功地回避了问题，消除了批评，并将火引到了其他智能手机厂商身上。","en":"With a bold performance, Jobs projected conviction, righteousness and innocence, deflecting the issue and criticism toward other smartphone makers.","id":"sj046","fr":"Par une prestation audacieuse, Jobs projeta conviction, droiture et innocence, détourna le débat et reporta les critiques sur les autres fabricants de smartphones.","es":"Con una actuación audaz, Jobs proyectó convicción, rectitud e inocencia, desvió el debate y trasladó las críticas a otros fabricantes de teléfonos inteligentes."},{"s":"iphone","ch":"","k":["u"],"zh":"他冷酷瘦削的外表，他的专制，宗教般的影响力，神一样的地位，使他有特权决定什么东西重要什么东西微不足道。","en":"His gaunt, severe appearance, his authoritarian manner, religious influence and godlike status gave him the power to decide what mattered and what did not.","id":"sj047","fr":"Son visage maigre et sévère, son autoritarisme, son influence quasi religieuse et son statut de dieu lui donnaient le pouvoir de décider ce qui comptait ou non.","es":"Su aspecto delgado y severo, su autoritarismo, su influencia casi religiosa y su condición de dios le daban el poder de decidir qué importaba y qué no."}];
+
+/* ============================================================
+   Likes + moderated comments — same Worker as the other notes.
+   Leaving the placeholder (or '') renders the page without any
+   interactive parts; the notes themselves still work offline.
+   ============================================================ */
+const API = 'https://reading-notes-api.YOUR-SUBDOMAIN.workers.dev';
+const PAGE_ID = 'stevejobs';
+const API_ON = /^https?:\/\//.test(API) && !API.includes('YOUR-SUBDOMAIN');
+
+UI.pref = {en:'preface', zh:'自序', fr:'préface', es:'prefacio'};
+UI.modNote = {
+  en:'Anyone may like a passage or leave a comment on it. Likes appear at once; comments are read and approved by me before they are shown.',
+  zh:'任何人都可以给某一条点讚或留言。点讚即时生效；留言经我阅读并审核通过后才会显示。',
+  fr:'Chacun peut aimer un passage ou y laisser un commentaire. Les « j’aime » apparaissent aussitôt ; les commentaires sont lus et validés par moi avant d’être affichés.',
+  es:'Cualquiera puede dar «me gusta» a un pasaje o dejar un comentario. Los «me gusta» aparecen al instante; los comentarios los leo y apruebo yo antes de mostrarse.'
+};
+UI.like     = {en:'Like', zh:'点讚', fr:'J’aime', es:'Me gusta'};
+UI.liked    = {en:'Liked', zh:'已讚', fr:'Aimé', es:'Te gusta'};
+UI.cmt      = {en:'Comments', zh:'留言', fr:'Commentaires', es:'Comentarios'};
+UI.cmtNone  = {en:'No comments on this passage yet.', zh:'这一条还没有留言。', fr:'Aucun commentaire sur ce passage.', es:'Aún no hay comentarios en este pasaje.'};
+UI.fName    = {en:'Name or nickname', zh:'昵称', fr:'Nom ou pseudonyme', es:'Nombre o apodo'};
+UI.fEmail   = {en:'Email — optional, never shown', zh:'邮箱 — 选填，不会公开', fr:'E-mail — facultatif, jamais affiché', es:'Correo — opcional, nunca se muestra'};
+UI.fBody    = {en:'What this passage made you think…', zh:'这段让你想到了什么……', fr:'Ce que ce passage vous a inspiré…', es:'Qué te hizo pensar este pasaje…'};
+UI.fSend    = {en:'Send for review', zh:'提交审核', fr:'Envoyer pour validation', es:'Enviar para revisión'};
+UI.fSending = {en:'Sending…', zh:'提交中……', fr:'Envoi…', es:'Enviando…'};
+UI.fQueued  = {en:'Thank you. Your comment is in the review queue and will appear here once approved.', zh:'谢谢。留言已进入审核队列，通过后会显示在这里。', fr:'Merci. Votre commentaire est en attente de validation et apparaîtra ici une fois approuvé.', es:'Gracias. Tu comentario está en la cola de revisión y aparecerá aquí una vez aprobado.'};
+UI.fModNote = {en:'Moderated before publication. Your email is only visible to the site owner.', zh:'发布前需审核。邮箱仅站主可见。', fr:'Modéré avant publication. Votre e-mail n’est visible que par le propriétaire du site.', es:'Moderado antes de publicarse. Tu correo solo lo ve el propietario del sitio.'};
+UI.errName  = {en:'Please enter a name.', zh:'请填昵称。', fr:'Veuillez indiquer un nom.', es:'Indica un nombre.'};
+UI.errBody  = {en:'Please write something first.', zh:'请先写点什么。', fr:'Veuillez d’abord écrire quelque chose.', es:'Escribe algo primero.'};
+UI.errRate  = {en:'That is a lot of comments for one hour — please come back later.', zh:'一小时内留言太多了，请稍后再来。', fr:'Cela fait beaucoup de commentaires en une heure — revenez plus tard.', es:'Son muchos comentarios en una hora; vuelve más tarde.'};
+UI.errNet   = {en:'Could not send — please try again.', zh:'提交失败，请再试一次。', fr:'Envoi impossible — veuillez réessayer.', es:'No se pudo enviar; inténtalo de nuevo.'};
+
+let lang = 'en';
+try {
+  const saved = localStorage.getItem('jg-lang');
+  if (saved === 'zh' || saved === 'fr' || saved === 'es' || saved === 'en') lang = saved;
+} catch (_) {}
+
+let visitor = '';
+try {
+  visitor = localStorage.getItem('jg-visitor') || '';
+  if (!/^[a-z0-9]{8,40}$/.test(visitor)) {
+    visitor = Math.random().toString(36).slice(2, 12) + Date.now().toString(36);
+    localStorage.setItem('jg-visitor', visitor);
+  }
+} catch (_) { visitor = 'anon' + Math.random().toString(36).slice(2, 10); }
+
+let SOCIAL = null;          // {likes:{}, mine:[], comments:{}}
+const OPEN = new Set();     // entry ids whose comment panel is expanded
+
+const $ = (id) => document.getElementById(id);
+const el = (tag, cls) => { const n = document.createElement(tag); if (cls) n.className = cls; return n; };
+const LOCALE = {en:'en-GB', zh:'zh-CN', fr:'fr-FR', es:'es-ES'};
+
+function pageChip(e){
+  const n = el('span', 'page' + (e.a || e.np ? ' approx' : ''));
+  n.textContent = e.np ? UI.pref[lang] : (e.a ? '≈ p.' : 'p.') + e.p;
+  return n;
+}
+
+function heartSvg(){
+  const s = document.createElementNS('http://www.w3.org/2000/svg','svg');
+  s.setAttribute('viewBox','0 0 24 24'); s.setAttribute('class','heart'); s.setAttribute('aria-hidden','true');
+  const path = document.createElementNS('http://www.w3.org/2000/svg','path');
+  path.setAttribute('d','M12 20s-7-4.4-7-9.3A4.2 4.2 0 0 1 12 7.6a4.2 4.2 0 0 1 7 3.1C19 15.6 12 20 12 20Z');
+  s.append(path); return s;
+}
+
+/* ---------------------------------------------------------------- comments */
+
+function commentList(eid){
+  const items = (SOCIAL && SOCIAL.comments[eid]) || [];
+  if (!items.length){ const p = el('p','cnone'); p.textContent = UI.cmtNone[lang]; return p; }
+  const ul = el('ul','clist');
+  items.forEach(c => {
+    const li = el('li','citem');
+    const who = el('span','who'); who.textContent = c.name;
+    const at = el('span','at');
+    at.textContent = new Date(c.ts).toLocaleDateString(LOCALE[lang], {year:'numeric', month:'short', day:'numeric'});
+    const body = el('p'); body.textContent = c.body;
+    li.append(who, at, body); ul.append(li);
+  });
+  return ul;
+}
+
+function commentForm(eid){
+  const form = el('form','cform');
+  form.noValidate = true;
+  const opened = Date.now();
+
+  const two = el('div','two');
+  const name = el('input'); name.type = 'text'; name.maxLength = 40;
+  name.placeholder = UI.fName[lang]; name.autocomplete = 'nickname';
+  const mail = el('input'); mail.type = 'email'; mail.maxLength = 120;
+  mail.placeholder = UI.fEmail[lang]; mail.autocomplete = 'email';
+  two.append(name, mail);
+
+  const hp = el('input','hp'); hp.type = 'text'; hp.tabIndex = -1;
+  hp.setAttribute('aria-hidden','true'); hp.autocomplete = 'off'; hp.name = 'website';
+
+  const body = el('textarea'); body.maxLength = 1500; body.placeholder = UI.fBody[lang];
+  const send = el('button','send'); send.type = 'submit'; send.textContent = UI.fSend[lang];
+  const msg = el('p','cmsg');
+  const note = el('p','cmoderation'); note.textContent = UI.fModNote[lang];
+
+  form.append(two, hp, body, send, msg, note);
+
+  form.addEventListener('submit', async (ev) => {
+    ev.preventDefault();
+    msg.className = 'cmsg';
+    if (!name.value.trim()){ msg.classList.add('bad'); msg.textContent = UI.errName[lang]; name.focus(); return; }
+    if (body.value.trim().length < 2){ msg.classList.add('bad'); msg.textContent = UI.errBody[lang]; body.focus(); return; }
+    send.disabled = true; send.textContent = UI.fSending[lang];
+    try {
+      const r = await fetch(API + '/v1/comment', {
+        method:'POST', headers:{'content-type':'application/json'},
+        body: JSON.stringify({
+          page: PAGE_ID, entry: eid, visitor, lang,
+          name: name.value, email: mail.value, body: body.value,
+          website: hp.value, dwell: Date.now() - opened
+        })
+      });
+      if (r.status === 429){ msg.classList.add('bad'); msg.textContent = UI.errRate[lang]; }
+      else if (!r.ok){ msg.classList.add('bad'); msg.textContent = UI.errNet[lang]; }
+      else {
+        msg.classList.add('ok'); msg.textContent = UI.fQueued[lang];
+        name.value = ''; mail.value = ''; body.value = '';
+      }
+    } catch (_) { msg.classList.add('bad'); msg.textContent = UI.errNet[lang]; }
+    send.disabled = false; send.textContent = UI.fSend[lang];
+  });
+
+  return form;
+}
+
+function buildSocial(card, e){
+  const eid = e.id;
+  const row = el('div','social');
+
+  const likeN = (SOCIAL && SOCIAL.likes[eid]) || 0;
+  const mine = !!(SOCIAL && SOCIAL.mine.includes(eid));
+
+  const likeBtn = el('button','likebtn' + (mine ? ' on' : ''));
+  likeBtn.type = 'button';
+  likeBtn.setAttribute('aria-pressed', String(mine));
+  const likeLabel = el('span'); likeLabel.textContent = (mine ? UI.liked : UI.like)[lang];
+  const likeCount = el('span','n'); likeCount.textContent = likeN ? ' ' + likeN : '';
+  likeBtn.append(heartSvg(), likeLabel, likeCount);
+
+  likeBtn.addEventListener('click', async () => {
+    likeBtn.disabled = true;
+    try {
+      const r = await fetch(API + '/v1/like', {
+        method:'POST', headers:{'content-type':'application/json'},
+        body: JSON.stringify({page: PAGE_ID, entry: eid, visitor})
+      });
+      if (r.ok){
+        const d = await r.json();
+        SOCIAL.likes[eid] = d.count;
+        if (d.liked){ if (!SOCIAL.mine.includes(eid)) SOCIAL.mine.push(eid); }
+        else SOCIAL.mine = SOCIAL.mine.filter(x => x !== eid);
+        likeBtn.classList.toggle('on', d.liked);
+        likeBtn.setAttribute('aria-pressed', String(d.liked));
+        likeLabel.textContent = (d.liked ? UI.liked : UI.like)[lang];
+        likeCount.textContent = d.count ? ' ' + d.count : '';
+      }
+    } catch (_) {}
+    likeBtn.disabled = false;
+  });
+
+  const nCmt = ((SOCIAL && SOCIAL.comments[eid]) || []).length;
+  const cmtBtn = el('button','cmtbtn'); cmtBtn.type = 'button';
+  cmtBtn.textContent = UI.cmt[lang] + (nCmt ? ' ' + nCmt : '');
+  cmtBtn.setAttribute('aria-expanded', String(OPEN.has(eid)));
+
+  row.append(likeBtn, cmtBtn);
+
+  const panel = el('div','cpanel');
+  panel.hidden = !OPEN.has(eid);
+  if (OPEN.has(eid)) panel.append(commentList(eid), commentForm(eid));
+
+  cmtBtn.addEventListener('click', () => {
+    const open = panel.hidden;
+    panel.hidden = !open;
+    cmtBtn.setAttribute('aria-expanded', String(open));
+    if (open){
+      OPEN.add(eid);
+      if (!panel.childElementCount) panel.append(commentList(eid), commentForm(eid));
+    } else OPEN.delete(eid);
+  });
+
+  card.append(row, panel);
+}
+
+function mountSocial(){
+  if (!API_ON || !SOCIAL) return;
+  document.querySelectorAll('.entry').forEach(card => {
+    if (card.querySelector('.social')) return;
+    const e = ENTRIES.find(x => x.id === card.dataset.eid);
+    if (e) buildSocial(card, e);
+  });
+}
+
+async function loadSocial(){
+  if (!API_ON) return;
+  try {
+    const r = await fetch(API + '/v1/state?page=' + encodeURIComponent(PAGE_ID) + '&visitor=' + encodeURIComponent(visitor));
+    if (!r.ok) return;
+    const d = await r.json();
+    SOCIAL = {likes: d.likes || {}, mine: d.mine || [], comments: d.comments || {}};
+    const n = $('modnote');
+    if (n){ n.hidden = false; n.querySelector('span').textContent = UI.modNote[lang]; }
+    mountSocial();
+  } catch (_) { /* offline or not deployed yet — page stays static */ }
+}
+
+/* ------------------------------------------------------------------ render */
+
+function renderEntry(e){
+  const card = el('article','entry');
+  card.dataset.eid = e.id;
+  const top = el('div','entry-top');
+  if (e.ch) { const chapter = el('span','page'); chapter.textContent = e.ch; top.append(chapter); }
+  (e.k || []).forEach(code => {
+    const c = el('span','kind'); c.textContent = UI.kinds[code][lang];
+    top.append(c);
+  });
+  card.append(top);
+
+  const q = el('blockquote', lang === 'zh' ? '' : 'latin');
+  q.textContent = e[lang];
+  card.append(q);
+
+  if (lang !== 'zh') {
+    const o = el('div','orig');
+    const lab = el('p','orig-label'); lab.textContent = UI.orig[lang];
+    const t = el('p'); t.textContent = e.zh;
+    o.append(lab, t); card.append(o);
+  }
+
+  if (e.n) {
+    const m = el('p','mynote');
+    const bl = el('b'); bl.textContent = UI.myNote[lang];
+    m.append(bl, document.createTextNode(e.n[lang]));
+    if (lang !== 'zh') { const oz = el('span','note-orig'); oz.textContent = e.n.zh; m.append(oz); }
+    card.append(m);
+  }
+
+  return card;
+}
+
+let filter = 'all';
+
+function renderMain(){
+  const main = $('main'); main.replaceChildren();
+  STORIES.forEach(st => {
+    if (filter !== 'all' && filter !== st.id) return;
+    const sec = el('section','story'); sec.dataset.s = st.id;
+    const head = el('div','story-head');
+    const h2 = el('h2','story-title'); h2.textContent = st.t[lang];
+    head.append(h2);
+    if (lang !== 'zh' && st.zh !== st.t[lang]) { const z = el('span','story-zh'); z.textContent = st.zh; head.append(z); }
+    if (st.range) { const r = el('span','range'); r.textContent = st.range; head.append(r); }
+    const sub = el('p','story-sub'); sub.textContent = st.s[lang];
+    sec.append(head, sub);
+    ENTRIES.filter(e => e.s === st.id).forEach(e => sec.append(renderEntry(e)));
+    main.append(sec);
+  });
+  mountSocial();
+}
+
+function renderChrome(){
+  document.documentElement.lang = (lang === 'zh' ? 'zh-Hans' : lang);
+  $('backlink').textContent = UI.back[lang];
+  $('eyebrow').textContent = UI.eyebrow[lang];
+  $('booktitle').textContent = '《史蒂夫·乔布斯传》';
+  $('byline').textContent = UI.byline[lang];
+
+  const f = $('facts'); f.replaceChildren();
+  UI.facts[lang].forEach(([b, t]) => {
+    const li = el('li'); const strong = el('b'); strong.textContent = b;
+    li.append(strong, document.createTextNode(' ' + t)); f.append(li);
+  });
+
+  $('prov-heading').textContent = UI.provHead[lang];
+  $('prov-body').textContent = UI.provBody[lang];
+  const pd = $('prov-details'); pd.replaceChildren();
+  UI.provKeys[lang].forEach((label, i) => {
+    const dt = el('dt'); dt.textContent = label;
+    const dd = el('dd'); dd.textContent = UI.provVals[lang][i];
+    pd.append(dt, dd);
+  });
+  const mn = $('modnote');
+  if (mn && SOCIAL) { mn.hidden = false; mn.querySelector('span').textContent = UI.modNote[lang]; }
+
+  const fl = $('filters'); fl.replaceChildren();
+  const mk = (id, label) => {
+    const b = el('button'); b.type = 'button'; b.textContent = label;
+    b.setAttribute('aria-pressed', String(filter === id));
+    b.addEventListener('click', () => { filter = id; renderChrome(); renderMain(); window.scrollTo({top:0, behavior:'smooth'}); });
+    fl.append(b);
+  };
+  mk('all', UI.all[lang]);
+  STORIES.forEach(st => mk(st.id, st.t[lang]));
+
+  $('signature').textContent = UI.sig[lang];
+
+  document.querySelectorAll('.langbar button[data-l]').forEach(b => b.setAttribute('aria-pressed', String(b.dataset.l === lang)));
+}
+
+document.querySelectorAll('.langbar button[data-l]').forEach(b => {
+  b.addEventListener('click', () => {
+    lang = b.dataset.l;
+    try { localStorage.setItem('jg-lang', lang); } catch (_) {}
+    renderChrome(); renderMain();
+  });
+});
+
+renderChrome();
+renderMain();
+loadSocial();
+</script>
+</body>
+</html>

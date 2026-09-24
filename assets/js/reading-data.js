@@ -6,6 +6,15 @@
 //   cover      — site-relative image path; omit and a typographic cover is drawn
 window.readingNotes = [
   {
+    title: '史蒂夫·乔布斯传',
+    author: '沃尔特·艾萨克森 Walter Isaacson',
+    finished: '2025-04-14',
+    read: '20 Mar – 14 Apr 2025',
+    highlights: 47,
+    cover: 'assets/img/covers/stevejobs.jpg',
+    url: 'notes/stevejobs.html'
+  },
+  {
     title: '一往无前',
     author: '范海涛 Fan Haitao',
     finished: '2025-03-01',

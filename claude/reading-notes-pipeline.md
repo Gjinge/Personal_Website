@@ -35,3 +35,15 @@ After a notes page is published, keep both values stable. Add new entries with n
 - One clearly legible handwritten note is attached to `m003`: `快速失败，迅速迭代`. Unclear handwriting was omitted from the public page, with no placeholder. Its source should be checked before any later addition.
 - English was translated from the printed Chinese selection with OpenAI Codex (GPT-6); French and Spanish were generated from that English with Argos Translate 1.11.0 on 23 September 2026. None of those texts is presented as a quotation from Isaacson's English original. Chinese is authoritative.
 - Album dates indicate 16 December 2024–4 January 2025; the displayed reading period is based on those dates.
+
+
+## 《史蒂夫·乔布斯传》
+
+- Page: `notes/stevejobs.html`; `PAGE_ID = 'stevejobs'`. Shelf metadata is in `assets/js/reading-data.js`.
+- Source: 50 photographed pages in `H:\Pictures\大一下\Steve Jobs`, plus an English `Steve Jobs` MOBI. The printed Chinese photos govern every Chinese quotation. The supplied photos do not identify the Chinese translator or edition. The MOBI was not used to establish Chinese wording.
+- 47 passages from 38 distinct photos, IDs `sj001`–`sj047`: early years/Woz 7; early Apple 4; Macintosh 15; NeXT 9; Pixar 8; iPhone 4 4. These IDs become permanent once published. Preserve existing IDs if more passages are added.
+- Fourteen legible handwritten notes are attached. Unclear handwriting was omitted from the public page; privately revisit album photo indices 3, 21, 26, 30, 35, 40, 42, 46, and 50 before adding it. Photo 21 visibly shows p. 155 and photo 35 p. 208; the other listed photos do not show a complete readable printed page number. No public placeholder was inserted.
+- Fourteen entries display directly visible printed page numbers. The partly cut page on photo 29 is not claimed as p. 172. Other entries omit page numbers instead of inventing them.
+- Duplicates, chapter portraits, an unrelated desk photograph, a standalone handwritten study sheet, and unmarked pages were excluded. The photo-indexed source audit stays outside the website repository.
+- English passages and note translations were edited with OpenAI Codex (GPT-6). French and Spanish were generated from English with Argos Translate 1.11.0 and obvious name/terminology mistakes corrected on 23 September 2026. These are retranslations of the Chinese reading copy, not quotations from Isaacson's English original. Chinese governs.
+- The album has no cover photograph. The shelf cover is an EXIF-free 480 × 720 derivative of the small embedded cover in the supplied English MOBI; the source is 158 × 240, so the image may look soft. Album dates support the displayed 20 March–14 April 2025 reading period; `finished: 2025-04-14` is inferred from the last photograph.
