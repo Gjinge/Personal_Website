@@ -77,8 +77,8 @@ body.has-cover:not(.is-past-cover) .site-header :is(nav a, .wordmark, .icon-butt
 body.has-cover:not(.is-past-cover) .site-header nav a:hover { color: #fff; }
 body.has-cover:not(.is-past-cover) .lang-switch { border-color: rgba(241, 232, 216, .35); }
 .cover-title { font-weight: 500; letter-spacing: -.01em; }
-.cover-sub-typed { color: #f1e8d8; }
-.cover-caret { background: #f1e8d8; box-shadow: none; }
+.cover-sub-typed { color: #8cc8ff; }
+.cover-caret { background: #8cc8ff; box-shadow: none; }
 .cover-arrow { border-color: rgba(241, 232, 216, .35); background: rgba(18, 12, 6, .3); color: #f1e8d8; }
 .cover-arrow:hover { border-color: #f1e8d8; color: #fff; }
 .cover-credit { font-size: 11px; color: rgba(241, 232, 216, .5); }

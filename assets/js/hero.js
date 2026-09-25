@@ -29,8 +29,8 @@
   if (!out) return;
 
   const SENTENCES = [
-    'Visiting undergraduate at UW–Madison (Fall 2026).',
-    'Information engineering undergraduate at SUSTech.'
+    'Information engineering undergraduate at SUSTech.',
+    'Visiting undergraduate at UW–Madison (Fall 2026).'
   ];
   const TYPE = 35, ERASE = 20, HOLD = 2000, GAP = 300;
 
