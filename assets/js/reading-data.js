@@ -56,7 +56,7 @@ window.readingNotes = [
     finished: '2025-03-07',
     read: '5–7 Mar 2025',
     highlights: 25,
-    cover: 'assets/img/covers/jingzi.jpg',
+    cover: 'assets/img/covers/jingzi.jpg?v=20260925',
     url: 'notes/jingzi.html'
   },
   {
@@ -75,7 +75,7 @@ window.readingNotes = [
     read: '20 Jan – 2 Feb 2025',
     pages: 280,
     highlights: 59,
-    cover: 'assets/img/covers/linkenzhuan.jpg',
+    cover: 'assets/img/covers/linkenzhuan.jpg?v=20260925',
     url: 'notes/linkenzhuan.html'
   },
   {

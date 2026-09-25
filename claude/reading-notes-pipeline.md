@@ -17,6 +17,10 @@ After a notes page is published, keep both values stable. Add new entries with n
 - The three non-Chinese languages are machine translations of the Chinese reading edition, not translations from the original French. The Chinese quote remains visible under each translation and is authoritative.
 - The site cover comes from the supplied EPUB. The private source audit and photos remain outside the website repository.
 
+## 《镜子》与《林肯传》书架封面
+
+- On 25 September 2026, the owner supplied `H:\OneDrive\Desktop\9787500862710_1e23893b-ee28-49a9-8d5e-d2d4ab06eb6f.jpg` for 《镜子》 and `H:\OneDrive\Desktop\images.jpg` for 《林肯传》. The site copies are `assets/img/covers/jingzi.jpg` (557 × 800) and `assets/img/covers/linkenzhuan.jpg` (187 × 270). EXIF metadata was removed. The Lincoln source is small and may look soft on high-density screens.
+
 ## 《一往无前》
 
 - Page: `notes/yiwangwuqian.html`; `PAGE_ID = 'yiwangwuqian'`.
