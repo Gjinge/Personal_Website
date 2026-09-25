@@ -38,7 +38,7 @@ window.readingNotes = [
     finished: '2025-01-04',
     read: '16 Dec 2024 – 4 Jan 2025',
     highlights: 127,
-    cover: 'assets/img/covers/elonmusk.jpg',
+    cover: 'assets/img/covers/elonmusk.jpg?v=20260925',
     url: 'notes/elonmusk.html'
   },
   {

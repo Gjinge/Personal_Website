@@ -29,7 +29,8 @@ After a notes page is published, keep both values stable. Add new entries with n
 ## 《埃隆·马斯克传》
 
 - Page: `notes/elonmusk.html`; `PAGE_ID = 'elonmusk'`.
-- Source: 337 photographed pages of the printed Chinese translation by 孙思远、刘家琦; the supplied English EPUB was consulted for context, not substituted for the printed Chinese wording. Thirteen unrelated images/screenshots and unclear or duplicate passages were excluded. The cover was cropped from a photographed book cover.
+- Source: 337 photographed pages of the printed Chinese translation by 孙思远、刘家琦; the supplied English EPUB was consulted for context, not substituted for the printed Chinese wording. Thirteen unrelated images/screenshots and unclear or duplicate passages were excluded.
+- Shelf cover: the clean 1400 × 2138 English-edition cover downloaded from Simon & Schuster's high-resolution press resource (`https://d28hgpri8am2if.cloudfront.net/book_images/onix/cvr9781982181307/elon-musk-9781982181307_hr.jpg`), matching the owner's supplied reference image. It replaced the previous cropped photograph on 25 September 2026. The photographed Chinese copy still governs the notes' quoted text.
 - 127 excerpts, IDs `m001`–`m127`: founding/rockets 21, growth/relationships 28, engineering/exploration 33, Twitter 33, AI/future 12. These IDs are permanent once published.
 - Twenty-four selected excerpts have directly visible printed page numbers. All others omit a page number; none is inferred.
 - One clearly legible handwritten note is attached to `m003`: `快速失败，迅速迭代`. Unclear handwriting was omitted from the public page, with no placeholder. Its source should be checked before any later addition.
