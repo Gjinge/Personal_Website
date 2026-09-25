@@ -104,7 +104,8 @@ content page — update them together. `assets/js/i18n.js` deliberately skips th
 - Commit, push, and report the commit hash and what the owner should look at on the live site.
 
 ## Approved visual system (2026-09-20)
-Read `design.md` before visual changes. Main-site overrides live in `assets/css/hallmark.css`,
+Read `design.md` before visual changes — especially its "Warm layer" section, which is the current look
+(`assets/css/warm.css`, linked last on every main page). Earlier main-site overrides live in `assets/css/hallmark.css`,
 loaded after the original stylesheet; tokens live in `tokens.css`. Cream reading pages embed
 scoped overrides and have noscript fallbacks. Keep those fallbacks synchronized with entry data.
 The mobile menu is created in main.js and uses the same translation hashes as other runtime labels.

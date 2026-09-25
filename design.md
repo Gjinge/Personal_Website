@@ -58,3 +58,11 @@ Use `tokens.css` directly, including the light variant. Self-contained reading t
   --radius: .25rem;
 }
 ```
+
+## Warm layer (2026-09-25, supersedes the Midnight/cyan palette)
+Owner feedback: the site "felt AI-generated". `assets/css/warm.css` is linked last on every main-site page and overrides colours and type; `styles.css`, `hallmark.css` and `tokens.css` stay untouched underneath (rollback = remove that one `<link>` per page).
+- Palette from the Louvre cover and the cream reading pages. Dark (default): bg `#15110d`, ink `#ece4d6`, muted `#ada28f`, rule `#352c23`, accent ochre `#d9ae62`. Light: bg `#faf8f3`, ink `#1b1a17`, muted `#625c52`, rule `#e4ded2`, accent `#8a6a12`. All text pairs ≥ 4.7:1.
+- Serif headings (Iowan / Palatino Linotype / TeX Gyre Pagella → Songti / Noto Serif CJK → YaHei), sans body. No monospace outside code blocks.
+- Removed on purpose — do not reintroduce: research-constellation SVG, JG monogram box, uppercase mono eyebrows, 01–06 section numbers, coloured trailing periods on headings, slogan headings ("Explore, create, reflect." etc.), research-interest pill tags, keyword lines, card chrome/glows/grid background, ↗ on internal links (external links keep it).
+- Photography and Social are unlinked from the nav/homepage until they have real content; the pages still exist.
+- Header text over the cover painting is always light, in both themes.

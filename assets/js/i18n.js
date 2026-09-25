@@ -33,14 +33,32 @@
   function blocked(el) {
     return SKIP.has(tag(el)) || el.classList.contains('source-code') || el.classList.contains('reading-progress');
   }
+  // A translation's markup was written for one page, but the same English text can appear
+  // on pages at different depths (or twice on one page with different targets). Keep each
+  // link's original href/aria-current, matched by position, so translated links never move.
+  function swap(node, html) {
+    const before = [...node.querySelectorAll('a')].map(a => [a.getAttribute('href'), a.getAttribute('aria-current')]);
+    node.innerHTML = html;
+    const after = [...node.querySelectorAll('a')];
+    // Same text used as a plain heading on one page and as a link on another.
+    if (!before.length && after.length) { after.forEach(a => a.replaceWith(...a.childNodes)); return; }
+    if (after.length !== before.length) return;
+    after.forEach((a, i) => {
+      const [href, current] = before[i];
+      if (href !== null) a.setAttribute('href', href);
+      if (current !== null) a.setAttribute('aria-current', current); else a.removeAttribute('aria-current');
+    });
+  }
   function apply(node) {
     if (blocked(node)) return;
     const kids = [...node.children];
+    // Navigation is translated link by link, so every page keeps its own relative hrefs.
+    if (tag(node) === 'NAV') { kids.forEach(apply); return; }
     if (!kids.some(c => !INLINE.has(tag(c)))) {
       const text = (node.textContent || '').replace(/\s+/g, ' ').trim();
       if (text && /[A-Za-z]/.test(text)) {
         const hit = table[key(text)];
-        if (hit !== undefined) node.innerHTML = hit;
+        if (hit !== undefined) swap(node, hit);
         return;
       }
     }
@@ -76,7 +94,7 @@
     return new Promise(resolve => {
       const depth = (document.querySelector('link[rel="stylesheet"]').getAttribute('href') || '').replace(/assets\/css\/styles\.css$/, '');
       const script = document.createElement('script');
-      script.src = `${depth}assets/js/i18n/${lang}.js?v=2`;
+      script.src = `${depth}assets/js/i18n/${lang}.js?v=3`;
       script.onload = () => { table = window.JG_I18N_DATA || {}; resolve(); };
       script.onerror = () => { table = {}; resolve(); };
       document.head.append(script);

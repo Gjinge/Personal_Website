@@ -12,7 +12,7 @@
     const themeLabel = t(light ? 'Switch to dark theme' : 'Switch to light theme');
     themeButton.setAttribute('aria-label', themeLabel);
     themeButton.title = themeLabel;
-    document.querySelector('meta[name="theme-color"]').content = light ? '#f3f6fc' : '#080d17';
+    document.querySelector('meta[name="theme-color"]').content = light ? '#faf8f3' : '#15110d';
     motionButton.hidden = reducedMotion.matches;
     const motionLabel = t(root.dataset.motion === 'paused' ? 'Resume decorative motion' : 'Pause decorative motion');
     motionButton.setAttribute('aria-label', motionLabel);
