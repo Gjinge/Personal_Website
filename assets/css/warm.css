@@ -147,6 +147,15 @@ footer { font-size: 13px; }
 .source-code { color: var(--ink); font-family: Consolas, "SFMono-Regular", "Liberation Mono", monospace; }
 .data-table td { font-family: inherit; font-variant-numeric: tabular-nums; }
 
+.repo-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 32px; }
+.repo-grid-followup { margin-top: 32px; }
+.repo-card { min-width: 0; padding: 20px 0 22px; border-top: 1px solid var(--rule); }
+.repo-card h3 { margin: 0 0 8px; font-size: clamp(18px, 2vw, 22px); line-height: 1.3; overflow-wrap: anywhere; }
+.repo-card h3 a { color: var(--ink); text-decoration: none; }
+.repo-card h3 a:hover { color: var(--accent); }
+.repo-card p { margin: 0 0 12px; max-width: 60ch; color: var(--muted); font-size: 14px; line-height: 1.65; }
+.repo-card .repo-tags { margin-bottom: 0; font-size: 12px; }
+
 @media (max-width: 1050px) {
   .content-section { grid-template-columns: 160px minmax(0, 1fr); gap: 28px; }
 }
@@ -154,6 +163,7 @@ footer { font-size: 13px; }
   body.has-cover .site-header, body.has-cover main, body.has-cover footer { width: calc(100% - 64px); }
 }
 @media (max-width: 760px) {
+  .repo-grid { grid-template-columns: minmax(0, 1fr); }
   body.has-cover .site-header, body.has-cover main, body.has-cover footer { width: calc(100% - 40px); }
   .hero { padding: 48px 0 32px; }
   .intro { font-size: 16px; }

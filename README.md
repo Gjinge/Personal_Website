@@ -11,10 +11,12 @@ index.html                  Page content and metadata
 projects/index.html         Main project cards at /projects/
 projects/unity/index.html   Unity overview: two games and grouped code notes
 projects/fpga-gomoku/index.html  FPGA Gomoku (VHDL) project page
+projects/world-time-wallpaper/index.html  World Time Wallpaper project page
 projects/*/index.html       Game details and redirects for former exercise pages
 projects.html, unity-*.html  Redirects for older project URLs
 source/unity/               Project Assets, Packages, ProjectSettings, and manifests
 source/fpga-gomoku/         VHDL sources, constraints, .coe image data, Vivado reports, bitstream, project file
+source/world-time-wallpaper/ Rainmeter skin, Python generator, PowerShell startup scripts, and license
 assets/downloads/           Per-project source ZIPs and the FPGA project report
 photography.html            Photo collections and fullscreen viewer
 social.html                 Personal social accounts and channels
@@ -94,7 +96,11 @@ window.portfolio = {
 - Update shared navigation in all content HTML pages together. Theme controls use the same preferences across pages.
 - Photos and account cards require JavaScript for rendering; an explanatory message is shown when it is disabled.
 
-## Unity projects
+## Projects
+
+**World Time Wallpaper** (`projects/world-time-wallpaper/`) combines a NASA Earth city-lights wallpaper with ten Rainmeter city clocks. Its project card uses a static preview; the detail page distinguishes that image from the live Windows overlay. Source is mirrored in `source/world-time-wallpaper/` from the local working project, including its MIT license. The skin uses fixed UTC offsets, so daylight saving changes require manual updates for affected cities.
+
+The Projects index also links to the public `Sudaweiye` repositories for BB_Downloader, XDigestReporter, AI-Diary-Tool, calendar-analyzer, youtube-course-packager, and the Shenzhen University game-development coursework. These are short catalogue entries linked to their original repositories, not local source copies. The World Time Wallpaper card links to its original repository as well as the local detail page.
 
 `projects/` lists one card per main project. **FPGA Gomoku** (`projects/fpga-gomoku/`) is a four-person Digital System Design course project in VHDL: 640x480 VGA rendering, PS/2 mouse input, a 15x15 board held in two 225-bit vectors, undo via a move stack, win detection, and a heuristic AI opponent, targeting a Nexys 4 DDR board (Artix-7 `xc7a100tcsg324-1`, Vivado 2020.2, top module `vga_ctrl`). The page carries two photographs of the VGA output, the module and implementation tables, an AI scoring excerpt, a link to `source/fpga-gomoku/`, a source ZIP, and the project report.
 
